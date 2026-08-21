@@ -54,9 +54,9 @@ export default function Header() {
     {
       title: "Platform",
       items: [
-        { name: "Banking Operations", href: "/platform#banking-operations" },
-        { name: "Islamic Financing & Treasury", href: "/platform#financing" },
-        { name: "Compliance & Shariah Governance", href: "/platform#compliance" },
+        { name: "Banking Operations", href: "/platform/banking-operations" },
+        { name: "Islamic Financing & Treasury", href: "/platform/financing" },
+        { name: "Compliance & Shariah Governance", href: "/platform/compliance" },
         { name: "GL & Financial Reporting", href: "/platform#gl-reporting" },
         { name: "Agent & Field Banking", href: "/platform#agent-banking" },
         { name: "Administration & EOD", href: "/platform#administration" },
@@ -92,12 +92,12 @@ export default function Header() {
   ];
 
   const platformItems = [
-    { name: "Banking Operations", desc: "CNI/Passport verification, Njangi groups, SYSTAC transfers.", href: "/platform#banking-operations", icon: Users },
-    { name: "Islamic Financing & Treasury", desc: "Murabaha, Mudarabah, Musharakah, Ijara, Salam, Istisna.", href: "/platform#financing", icon: Coins },
-    { name: "Compliance & Shariah Governance", desc: "ACE dashboard, Fatwa repository, COBAC returns.", href: "/platform#compliance", icon: ShieldCheck },
-    { name: "GL & Financial Reporting", desc: "AAOIFI chart of accounts, real-time trial balance.", href: "/platform#gl-reporting", icon: ChartLineUp },
-    { name: "Agent & Field Banking", desc: "Offline transactions, geo-tagging, commission ledger.", href: "/platform#agent-banking", icon: UserGear },
-    { name: "Administration & EOD", desc: "RBAC, maker-checker, automated EOD batch processing.", href: "/platform#administration", icon: Notebook },
+    { name: "Banking Operations", desc: "CNI/Passport verification, Njangi groups, SYSTAC transfers.", href: "/platform/banking-operations", icon: Users },
+    { name: "Islamic Financing & Treasury", desc: "Murabaha, Mudarabah, Musharakah, Ijara, Salam, Istisna.", href: "/platform/financing", icon: Coins },
+    { name: "Compliance & Shariah Governance", desc: "ACE dashboard, Fatwa repository, COBAC returns.", href: "/platform/compliance", icon: ShieldCheck },
+    { name: "GL & Financial Reporting", desc: "AAOIFI chart of accounts, real-time trial balance.", href: "/platform/gl-reporting", icon: ChartLineUp },
+    { name: "Agent & Field Banking", desc: "Offline transactions, geo-tagging, commission ledger.", href: "/platform/agent-banking", icon: UserGear },
+    { name: "Administration & EOD", desc: "RBAC, maker-checker, automated EOD batch processing.", href: "/platform/administration", icon: Notebook },
   ];
 
   const solutionItems = [

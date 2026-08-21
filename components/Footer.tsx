@@ -60,11 +60,11 @@ export default function Footer() {
               Platform
             </h4>
             <ul className="space-y-2.5 sm:space-y-3 text-sm text-white/70">
-              <li><Link href="/platform#banking-operations" className="hover:text-tikari-gold transition-colors">Banking Operations</Link></li>
-              <li><Link href="/platform#financing" className="hover:text-tikari-gold transition-colors">Islamic Financing</Link></li>
-              <li><Link href="/platform#compliance" className="hover:text-tikari-gold transition-colors">Compliance & Shariah</Link></li>
-              <li><Link href="/platform#gl-reporting" className="hover:text-tikari-gold transition-colors">GL & Reporting</Link></li>
-              <li><Link href="/platform#agent-banking" className="hover:text-tikari-gold transition-colors">Agent Banking</Link></li>
+              <li><Link href="/platform/banking-operations" className="hover:text-tikari-gold transition-colors">Banking Operations</Link></li>
+              <li><Link href="/platform/financing" className="hover:text-tikari-gold transition-colors">Islamic Financing</Link></li>
+              <li><Link href="/platform/compliance" className="hover:text-tikari-gold transition-colors">Compliance & Shariah</Link></li>
+              <li><Link href="/platform/gl-reporting" className="hover:text-tikari-gold transition-colors">GL & Reporting</Link></li>
+              <li><Link href="/platform/agent-banking" className="hover:text-tikari-gold transition-colors">Agent Banking</Link></li>
             </ul>
           </div>
 

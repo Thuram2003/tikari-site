@@ -7,7 +7,7 @@ export default function PlatformOverviewSection() {
     {
       title: "Banking Operations",
       desc: "Customer and KYC, Wadiah accounts, Njangi/Tontine groups, teller operations, interbank transfers, and agent float.",
-      link: "/platform/operations",
+      link: "/platform/banking-operations",
       image: "/women-market.jpg"
     },
     {
