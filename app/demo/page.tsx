@@ -61,11 +61,9 @@ export default function DemoPage() {
         </div>
       </section>
 
-      {/* Main split 2-column layout */}
       <section className="py-16 px-6 md:px-12 max-w-7xl mx-auto w-full">
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           
-          {/* Column 1: Product Context & Information */}
           <div className="space-y-8">
             <div className="space-y-4">
               <h2 className="text-3xl font-bold text-tikari-green-dark">

@@ -39,14 +39,6 @@ export default function HeroSection() {
               Book a demo
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
-            <Button 
-              variant="outline" 
-              size="lg" 
-              href="/platform"
-              className="rounded-none font-medium"
-            >
-              Explore the platform
-            </Button>
           </div>
 
           {/* Trust Badges */}
