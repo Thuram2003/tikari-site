@@ -1,6 +1,8 @@
 @import "tailwindcss";
 
-/* 1. LOCAL FONT SETUP (Pinpoint HQ Authentic Fonts) */
+/* ─────────────────────────────────────────────
+   LOCAL FONT SETUP (GT Walsheim & GT Sectra)
+   ───────────────────────────────────────────── */
 @font-face {
   font-family: 'GT Walsheim';
   src: url('/font/69a5b69c5dee8b3e0952e517_GT-Walsheim-Pro-Regular.woff2') format('woff2');
@@ -20,13 +22,12 @@
 @font-face {
   font-family: 'GT Sectra';
   src: url('/font/69a6f29903620716f536f082_GT-Sectra-Fine-Medium.woff2') format('woff2');
-  font-weight: 500;
-  font-style: normal;
+  font-weight: 200;
+  font-style: regular;
   font-display: swap;
 }
 
 @theme {
-  /* TIKARI Colors from Logo SVG & Design Requirements */
   --color-tikari-green-dark: #0D2818;
   --color-tikari-green: #1B4332;
   --color-tikari-green-light: #2D6A4F;
@@ -38,35 +39,42 @@
   --color-tikari-gold: #CEA058;
   --color-tikari-gold-light: #F4D35E;
 
-  /* Font mappings */
   --font-sans: 'GT Walsheim', system-ui, sans-serif;
   --font-serif: 'GT Sectra', Georgia, serif;
 
-  /* Accent mappings */
   --color-primary: var(--color-tikari-green);
   --color-secondary: var(--color-tikari-sage-light);
   --color-accent: var(--color-tikari-gold);
   --color-background: var(--color-tikari-cream-light);
   --color-foreground: var(--color-tikari-green-dark);
 
-  /* Softer Custom Shadows (no hard blocks, like kasongo/wallanda) */
   --shadow-glow: 0 10px 30px -10px rgba(27, 67, 50, 0.08);
   --shadow-premium: 0 20px 40px -15px rgba(206, 160, 88, 0.12);
   --shadow-soft: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
 }
 
-body {
-  background-color: var(--color-tikari-cream-light);
-  color: var(--color-tikari-green-dark);
-  font-family: var(--font-sans);
-  overflow-x: hidden;
+@layer base {
+  body {
+    background-color: var(--color-tikari-cream-light);
+    color: var(--color-tikari-green-dark);
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-serif);
+    font-weight: 100;
+  }
 }
 
-/* Softer card component styling with rounded corners & thin, high-compliance borders */
 .premium-card {
   background-color: #ffffff;
   border: 1px solid rgba(27, 67, 50, 0.08);
-  border-radius: 1.5rem; /* rounded-3xl / 24px */
   box-shadow: var(--shadow-glow);
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }

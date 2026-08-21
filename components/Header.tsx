@@ -2,28 +2,40 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { 
-  Handshake, 
-  Coins, 
-  Notebook, 
-  ShieldCheck, 
-  ChartLineUp, 
-  Users, 
-  UserGear, 
-  BuildingOffice, 
-  GraduationCap, 
-  BookOpen, 
-  Question, 
-  TerminalWindow, 
-  Bookmark, 
-  UserList, 
-  Certificate, 
-  MapPin, 
-  ArrowRight 
+import { useState, useEffect } from "react";
+import { ArrowRight } from "@phosphor-icons/react/dist/ssr";
+import {
+  Handshake,
+  Coins,
+  Notebook,
+  ShieldCheck,
+  ChartLineUp,
+  Users,
+  UserGear,
+  BuildingOffice,
+  GraduationCap,
+  BookOpen,
+  Question,
+  Bookmark,
+  UserList,
+  Certificate,
+  MapPin,
 } from "@phosphor-icons/react";
 import MegaMenu from "./MegaMenu";
+import { Button } from "@/components/ui";
 
 export default function Header() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 40);
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const platformTabs = [
     { id: "financing", label: "Islamic Financing" },
     { id: "operations", label: "Banking Operations" },
@@ -48,7 +60,7 @@ export default function Header() {
       { name: "Four-Eyes Principle", desc: "Dual audit approval maker-checker pipelines.", href: "/platform#foureyes", icon: ShieldCheck },
     ],
     security: [
-      { name: "Data Masking", desc: "Biometric layers and BVN/NIN masking.", href: "/platform#security", icon: ShieldCheck },
+      { name: "Data Masking", desc: "Biometric layers and ID masking.", href: "/platform#security", icon: ShieldCheck },
     ],
   };
 
@@ -61,7 +73,7 @@ export default function Header() {
 
   const resourceItems = [
     { name: "Shariah Finance 101", desc: "Guides to Murabaha, AAOIFI, and Islamic principles.", href: "/resources#education", icon: GraduationCap },
-    { name: "Regulatory Updates", desc: "CBN NIFI regulations & NDIC standards.", href: "/resources#compliance", icon: Bookmark },
+    { name: "Regulatory Updates", desc: "BEAC regulations & compliance standards.", href: "/resources#compliance", icon: Bookmark },
     { name: "Live Calculators", desc: "Estimator tools for Murabaha and Zakat.", href: "/resources#tools", icon: BookOpen },
     { name: "Help Center", desc: "Tutorials, FAQs, and KYC step-by-step guides.", href: "/resources#faq", icon: Question },
   ];
@@ -74,11 +86,16 @@ export default function Header() {
   ];
 
   return (
-    <header className="sticky top-0 z-40 w-full bg-white/90 backdrop-blur-md border-b-2 border-tikari-green/10">
+    <header
+      className={`fixed top-0 z-50 w-full transition-all duration-500 ease-out ${scrolled
+          ? "bg-white/95 backdrop-blur-md border-b border-tikari-green/10"
+          : "bg-transparent border-b border-transparent"
+        }`}
+    >
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        
-        {/* Logo and Brand Name */}
-        <Link href="/" className="flex items-center group">
+
+        {/* Logo */}
+        <Link href="/" className="flex items-center group relative z-10">
           <Image
             src="/logo.svg"
             alt="TIKARI Logo"
@@ -89,9 +106,10 @@ export default function Header() {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-6">
+        <nav className="hidden md:flex items-center gap-1">
           <MegaMenu
             label="Platform"
+            scrolled={scrolled}
             tabs={platformTabs}
             items={platformItems}
             featuredItem={{
@@ -103,6 +121,7 @@ export default function Header() {
           />
           <MegaMenu
             label="Solution"
+            scrolled={scrolled}
             items={solutionItems}
             featuredItem={{
               badge: "SME Support",
@@ -113,6 +132,7 @@ export default function Header() {
           />
           <MegaMenu
             label="Resources"
+            scrolled={scrolled}
             items={resourceItems}
             featuredItem={{
               badge: "Live Tool",
@@ -123,6 +143,7 @@ export default function Header() {
           />
           <MegaMenu
             label="Company"
+            scrolled={scrolled}
             items={companyItems}
             featuredItem={{
               badge: "Trust Board",
@@ -133,17 +154,17 @@ export default function Header() {
           />
         </nav>
 
-        {/* Book Demo Persistent CTA Button */}
+        {/* Right Actions */}
         <div>
-          <Link
+          <Button
+            variant="secondary"
+            size="sm"
             href="/demo"
-            className="inline-flex items-center gap-1.5 px-5 py-2.5 text-xs font-bold uppercase tracking-wider bg-tikari-gold hover:bg-tikari-gold-dark text-tikari-green-dark rounded-xl transition-all shadow-soft"
+            className="uppercase tracking-wider"
           >
             Book Demo
-            <ArrowRight className="h-3 w-3" />
-          </Link>
+          </Button>
         </div>
-
       </div>
     </header>
   );

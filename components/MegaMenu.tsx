@@ -18,6 +18,7 @@ interface MegaMenuTab {
 
 interface MegaMenuProps {
   label: string;
+  scrolled: boolean;
   tabs?: MegaMenuTab[];
   items: Record<string, MegaMenuItem[]> | MegaMenuItem[];
   featuredItem?: {
@@ -29,7 +30,7 @@ interface MegaMenuProps {
   };
 }
 
-export default function MegaMenu({ label, tabs, items, featuredItem }: MegaMenuProps) {
+export default function MegaMenu({ label, scrolled, tabs, items, featuredItem }: MegaMenuProps) {
   const [open, setOpen] = useState(false);
   const [activeTab, setActiveTab] = useState(tabs && tabs.length > 0 ? tabs[0].id : "");
   const timerRef = useRef<NodeJS.Timeout | null>(null);
@@ -50,7 +51,7 @@ export default function MegaMenu({ label, tabs, items, featuredItem }: MegaMenuP
   const handleLeave = () => {
     timerRef.current = setTimeout(() => {
       setOpen(false);
-    }, 150);
+    }, 200);
   };
 
   const handleTabChange = (tabId: string) => {
@@ -73,29 +74,40 @@ export default function MegaMenu({ label, tabs, items, featuredItem }: MegaMenuP
       onMouseEnter={handleEnter}
       onMouseLeave={handleLeave}
     >
-      <button className="flex items-center gap-1.5 text-xs font-bold tracking-wider uppercase text-tikari-green-dark hover:text-tikari-gold transition-colors py-5 cursor-pointer">
+      <button
+        className={`flex items-center gap-1 text-xs font-bold tracking-wider uppercase transition-colors duration-500 py-5 px-3 cursor-pointer ${open
+            ? "text-tikari-gold"
+            : scrolled
+              ? "text-tikari-green-dark hover:text-tikari-gold"
+              : "text-white/90 hover:text-white"
+          }`}
+      >
         {label}
-        <CaretDown className={`h-3 w-3 text-tikari-sage transition-transform duration-200 ${open ? 'rotate-180' : ''}`} />
+        <CaretDown
+          className={`h-3 w-3 transition-transform duration-300 ${open ? "rotate-180" : ""}`}
+          weight="bold"
+        />
       </button>
 
       {open && (
         <div
-          className="fixed left-1/2 -translate-x-1/2 top-16 z-50 w-[min(960px,calc(100vw-2rem))] bg-white border border-tikari-green/10 rounded-xl shadow-premium flex max-h-[calc(100vh-5rem)] overflow-hidden"
+          className="fixed left-1/2 -translate-x-1/2 top-16 z-50 w-[min(960px,calc(100vw-2rem))] bg-white border border-tikari-green/10 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.18)] flex max-h-[calc(100vh-5rem)] overflow-hidden"
+          style={{ borderRadius: 0 }}
           onMouseEnter={handleEnter}
           onMouseLeave={handleLeave}
         >
-          {/* Tabs Sidebar (Platform navigation) */}
+          {/* Tabs Sidebar */}
           {hasSidebar && tabs && (
-            <div className="w-[220px] bg-tikari-cream/20 border-r border-tikari-green/10 p-4 space-y-1 shrink-0">
+            <div className="w-[220px] bg-tikari-cream/30 border-r border-tikari-green/10 p-4 space-y-0.5 shrink-0">
               {tabs.map((tab) => (
                 <button
                   key={tab.id}
                   onMouseEnter={() => handleTabChange(tab.id)}
-                  className={`w-full text-left px-3 py-2.5 text-[11px] font-bold tracking-wider uppercase rounded-xl transition-all duration-200 cursor-pointer ${
-                    activeTab === tab.id
-                      ? "bg-tikari-green/10 text-tikari-green font-extrabold border-l-4 border-tikari-gold"
-                      : "text-tikari-green-dark/75 hover:bg-tikari-green/5 hover:text-tikari-green"
-                  }`}
+                  className={`w-full text-left px-3 py-2.5 text-[11px] font-bold tracking-wider uppercase transition-all duration-200 cursor-pointer ${activeTab === tab.id
+                      ? "bg-tikari-green/8 text-tikari-green-dark border-l-[3px] border-tikari-gold"
+                      : "text-tikari-green-dark/70 hover:bg-tikari-green/5 hover:text-tikari-green-dark"
+                    }`}
+                  style={{ borderRadius: 0 }}
                 >
                   {tab.label}
                 </button>
@@ -112,20 +124,19 @@ export default function MegaMenu({ label, tabs, items, featuredItem }: MegaMenuP
                   <Link
                     key={index}
                     href={item.href}
-                    className="group p-3 rounded-xl border border-transparent hover:border-tikari-gold/30 hover:bg-tikari-cream/10 transition-all duration-200"
+                    className="group flex items-start gap-3 p-3 border border-transparent hover:border-tikari-gold/20 hover:bg-tikari-cream/20 transition-all duration-200"
+                    style={{ borderRadius: 0 }}
                   >
-                    <div className="flex items-start gap-3">
-                      <div className="mt-0.5 p-2 rounded-lg bg-tikari-sage-light text-tikari-green group-hover:bg-tikari-gold group-hover:text-white transition-colors shrink-0">
-                        <ItemIcon className="h-4 w-4" />
-                      </div>
-                      <div className="min-w-0">
-                        <h4 className="text-[12px] font-bold text-tikari-green-dark group-hover:text-tikari-green transition-colors mb-0.5 uppercase tracking-wider">
-                          {item.name}
-                        </h4>
-                        <p className="text-[11px] text-tikari-green-dark/70 leading-relaxed">
-                          {item.desc}
-                        </p>
-                      </div>
+                    <div className="mt-0.5 p-2 bg-tikari-sage-light text-tikari-green group-hover:bg-tikari-gold group-hover:text-white transition-colors shrink-0">
+                      <ItemIcon className="h-4 w-4" weight="duotone" />
+                    </div>
+                    <div className="min-w-0">
+                      <h4 className="text-[12px] font-bold text-tikari-green-dark group-hover:text-tikari-green transition-colors mb-0.5 uppercase tracking-wider">
+                        {item.name}
+                      </h4>
+                      <p className="text-[11px] text-tikari-green-dark/70 leading-relaxed">
+                        {item.desc}
+                      </p>
                     </div>
                   </Link>
                 );
@@ -133,11 +144,11 @@ export default function MegaMenu({ label, tabs, items, featuredItem }: MegaMenuP
             </div>
           </div>
 
-          {/* Featured Side Panel (Pinpoint style sidebar) */}
+          {/* Featured Side Panel */}
           {featuredItem && (
             <div className="w-[280px] bg-tikari-cream/40 border-l border-tikari-green/10 p-6 flex flex-col justify-between shrink-0">
               <div>
-                <span className="inline-block px-2.5 py-0.5 text-[9px] font-extrabold tracking-widest uppercase bg-tikari-gold text-white rounded-none mb-3">
+                <span className="inline-block px-2.5 py-0.5 text-[9px] font-extrabold tracking-widest uppercase bg-tikari-gold text-white mb-3">
                   {featuredItem.badge}
                 </span>
                 <h4 className="text-xs font-bold text-tikari-green-dark mb-2 uppercase tracking-wide leading-tight font-serif">
@@ -149,7 +160,8 @@ export default function MegaMenu({ label, tabs, items, featuredItem }: MegaMenuP
               </div>
               <Link
                 href={featuredItem.href}
-                className="inline-flex items-center justify-center w-full px-4 py-2.5 text-[11px] font-bold uppercase tracking-wider text-white bg-tikari-green rounded-none hover:bg-tikari-green-light transition-all"
+                className="inline-flex items-center justify-center w-full px-4 py-2.5 text-[11px] font-bold uppercase tracking-wider text-white bg-tikari-green hover:bg-tikari-green-light transition-all"
+                style={{ borderRadius: 0 }}
               >
                 Learn More →
               </Link>
