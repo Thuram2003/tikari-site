@@ -12,6 +12,7 @@ import {
   ChartLineUp,
   Users,
   UserGear,
+  Bank,
   BuildingOffice,
   GraduationCap,
   BookOpen,
@@ -65,10 +66,10 @@ export default function Header() {
     {
       title: "Solution",
       items: [
-        { name: "For Individuals", href: "/solution#individuals" },
-        { name: "For Businesses & SMEs", href: "/solution#smes" },
-        { name: "For Cooperatives", href: "/solution#cooperatives" },
-        { name: "For Institutions", href: "/solution#institutions" },
+        { name: "Microfinance Banks", href: "/solutions/microfinance" },
+        { name: "Community Banks", href: "/solutions/community-banks" },
+        { name: "Cooperatives & Islamic Windows", href: "/solutions/cooperatives" },
+        { name: "For Businesses & SMEs", href: "/solutions/smes" },
       ]
     },
     {
@@ -101,10 +102,10 @@ export default function Header() {
   ];
 
   const solutionItems = [
-    { name: "For Individuals", desc: "Wadiah + Mudarabah savings without Riba.", href: "/solution#individuals", icon: Users },
-    { name: "For Businesses & SMEs", desc: "Murabaha inventory & working capital.", href: "/solution#smes", icon: BuildingOffice },
-    { name: "For Cooperatives", desc: "Digital group savings and rotative ledger.", href: "/solution#cooperatives", icon: Handshake },
-    { name: "For Institutions", desc: "Migration services to native AAOIFI cores.", href: "/solution#institutions", icon: Certificate },
+    { name: "Microfinance Banks", desc: "Unit, Regional, and National MFB licences.", href: "/solutions/microfinance", icon: Bank },
+    { name: "Community Banks", desc: "Community development banks and cooperatives.", href: "/solutions/community-banks", icon: Handshake },
+    { name: "Cooperatives & Islamic Windows", desc: "Njangi groups and ring-fenced operations.", href: "/solutions/cooperatives", icon: Users },
+    { name: "For Businesses & SMEs", desc: "Murabaha inventory & working capital.", href: "/solutions/smes", icon: BuildingOffice },
   ];
 
   const resourceItems = [
@@ -160,10 +161,10 @@ export default function Header() {
               scrolled={scrolled}
               items={solutionItems}
               featuredItem={{
-                badge: "SME Support",
-                title: "Halal Working Capital",
-                desc: "Get Shariah-compliant inventory financing within 48 hours.",
-                href: "/solution",
+                badge: "Community Scale",
+                title: "Islamic Banking for Communities",
+                desc: "Full compliance tools for community banks, cooperatives, and Islamic windows.",
+                href: "/solutions/community-banks",
               }}
             />
             <MegaMenu
