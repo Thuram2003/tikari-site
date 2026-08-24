@@ -75,19 +75,17 @@ export default function Header() {
     {
       title: "Resources",
       items: [
-        { name: "Shariah Finance 101", href: "/resources#education" },
-        { name: "Regulatory Updates", href: "/resources#compliance" },
-        { name: "Live Calculators", href: "/resources#tools" },
-        { name: "Help Center", href: "/resources#faq" },
+        { name: "Shariah Finance 101", href: "/resources/education" },
+        { name: "Regulatory Updates", href: "/resources/compliance" },
+        { name: "Help Center", href: "/resources/support" },
       ]
     },
     {
       title: "Company",
       items: [
-        { name: "About TIKARI", href: "/company#about" },
-        { name: "Shariah Board", href: "/company#scholars" },
-        { name: "Leadership", href: "/company#team" },
-        { name: "Contact & Offices", href: "/company#contact" },
+        { name: "About TIKARI", href: "/about" },
+        { name: "Shariah Board", href: "/about#scholars" },
+        { name: "Contact Us", href: "/contact" },
       ]
     },
   ];
@@ -109,17 +107,15 @@ export default function Header() {
   ];
 
   const resourceItems = [
-    { name: "Shariah Finance 101", desc: "Guides to Murabaha, AAOIFI, and Islamic principles.", href: "/resources#education", icon: GraduationCap },
-    { name: "Regulatory Updates", desc: "BEAC regulations & compliance standards.", href: "/resources#compliance", icon: Bookmark },
-    { name: "Live Calculators", desc: "Estimator tools for Murabaha and Zakat.", href: "/resources#tools", icon: BookOpen },
-    { name: "Help Center", desc: "Tutorials, FAQs, and KYC step-by-step guides.", href: "/resources#faq", icon: Question },
+    { name: "Shariah Finance 101", desc: "Guides to Murabaha, AAOIFI, and Islamic principles.", href: "/resources/education", icon: GraduationCap },
+    { name: "Regulatory Updates", desc: "BEAC regulations & compliance standards.", href: "/resources/compliance", icon: Bookmark },
+    { name: "Help Center", desc: "Tutorials, FAQs, and support channels.", href: "/resources/support", icon: Question },
   ];
 
   const companyItems = [
-    { name: "About TIKARI", desc: "Our mission, vision, and the legend of the camel.", href: "/company#about", icon: Bookmark },
-    { name: "Shariah Board", desc: "Credentials of our verifying Islamic scholars.", href: "/company#scholars", icon: UserList },
-    { name: "Leadership", desc: "The executives backing our core compliance system.", href: "/company#team", icon: Users },
-    { name: "Contact & Offices", desc: "Reach us in our headquarters.", href: "/company#contact", icon: MapPin },
+    { name: "About TIKARI", desc: "Our mission, vision, and the legend of the camel.", href: "/about", icon: Bookmark },
+    { name: "Shariah Board", desc: "Credentials of our verifying Islamic scholars.", href: "/about#scholars", icon: UserList },
+    { name: "Contact Us", desc: "Get in touch with our team.", href: "/contact", icon: MapPin },
   ];
 
   return (
@@ -172,10 +168,10 @@ export default function Header() {
               scrolled={scrolled}
               items={resourceItems}
               featuredItem={{
-                badge: "Live Tool",
-                title: "Murabaha Calculator",
-                desc: "Calculate cost markups and installment schedules dynamically.",
-                href: "/resources#tools",
+                badge: "Support",
+                title: "24/7 Help Center",
+                desc: "Access tutorials, FAQs, and direct support channels for your institution.",
+                href: "/resources/support",
               }}
             />
             <MegaMenu

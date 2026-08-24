@@ -88,11 +88,11 @@ export default function Footer() {
               Resources
             </h4>
             <ul className="space-y-2.5 sm:space-y-3 text-sm text-white/70">
-              <li><Link href="/resources#education" className="hover:text-tikari-gold transition-colors">Islamic Finance Guide</Link></li>
-              <li><Link href="/resources#regulations" className="hover:text-tikari-gold transition-colors">BEAC Regulations</Link></li>
-              <li><Link href="/resources#calculators" className="hover:text-tikari-gold transition-colors">Financial Calculators</Link></li>
-              <li><Link href="/faq" className="hover:text-tikari-gold transition-colors">FAQ</Link></li>
-              <li><Link href="/help" className="hover:text-tikari-gold transition-colors">Help Center</Link></li>
+              <li><Link href="/resources/education" className="hover:text-tikari-gold transition-colors">Shariah Finance 101</Link></li>
+              <li><Link href="/resources/compliance" className="hover:text-tikari-gold transition-colors">Regulatory Updates</Link></li>
+              <li><Link href="/resources/support" className="hover:text-tikari-gold transition-colors">Help Center</Link></li>
+              <li><Link href="/demo" className="hover:text-tikari-gold transition-colors">Book a Demo</Link></li>
+              <li><Link href="/contact" className="hover:text-tikari-gold transition-colors">Contact Support</Link></li>
             </ul>
           </div>
 
