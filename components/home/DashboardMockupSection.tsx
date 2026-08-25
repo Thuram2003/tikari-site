@@ -15,16 +15,16 @@ export default function DashboardMockupSection() {
         </div>
 
         {/* Dashboard Frame */}
-        <div className="bg-[#0B1E13] border border-tikari-gold/20 shadow-2xl p-6 md:p-8 rounded-none max-w-6xl mx-auto">
+        <div className="bg-[#0B1E13] border border-tikari-gold/20 shadow-2xl p-6 md:p-8 rounded-md max-w-6xl mx-auto">
           {/* Header Bar */}
           <div className="flex flex-col md:flex-row md:items-center justify-between pb-6 border-b border-tikari-green/30 gap-4 mb-8">
             <div className="flex items-center gap-3">
-              <div className="w-3 h-3 bg-red-500 rounded-none"></div>
-              <div className="w-3 h-3 bg-yellow-500 rounded-none"></div>
-              <div className="w-3 h-3 bg-green-500 rounded-none"></div>
+              <div className="w-3 h-3 bg-red-500 rounded-md"></div>
+              <div className="w-3 h-3 bg-yellow-500 rounded-md"></div>
+              <div className="w-3 h-3 bg-green-500 rounded-md"></div>
               <span className="text-xs text-tikari-sage ml-2 font-mono">app.tikari.cm/dashboard</span>
             </div>
-            <div className="text-sm font-semibold text-tikari-gold bg-tikari-green-dark px-3 py-1 border border-tikari-gold/20 rounded-none">
+            <div className="text-sm font-semibold text-tikari-gold bg-tikari-green-dark px-3 py-1 border border-tikari-gold/20 rounded-md">
               Executive Dashboard
             </div>
           </div>
@@ -32,7 +32,7 @@ export default function DashboardMockupSection() {
           {/* Top Level Cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
             {/* Stat 1 */}
-            <div className="bg-[#0D2818] border border-tikari-green/40 p-5 rounded-none space-y-2">
+            <div className="bg-[#0D2818] border border-tikari-green/40 p-5 rounded-md space-y-2">
               <span className="text-xs text-tikari-sage uppercase tracking-wider font-semibold block">Total AUM</span>
               <div className="flex items-baseline gap-2">
                 <span className="text-3xl font-bold text-white">FCFA 4.82B</span>
@@ -44,7 +44,7 @@ export default function DashboardMockupSection() {
             </div>
 
             {/* Stat 2 */}
-            <div className="bg-[#0D2818] border border-tikari-green/40 p-5 rounded-none space-y-2">
+            <div className="bg-[#0D2818] border border-tikari-green/40 p-5 rounded-md space-y-2">
               <span className="text-xs text-tikari-sage uppercase tracking-wider font-semibold block">Active Customers</span>
               <div className="flex items-baseline gap-2">
                 <span className="text-3xl font-bold text-white">18,304</span>
@@ -56,7 +56,7 @@ export default function DashboardMockupSection() {
             </div>
 
             {/* Stat 3 */}
-            <div className="bg-[#0D2818] border border-tikari-green/40 p-5 rounded-none space-y-2">
+            <div className="bg-[#0D2818] border border-tikari-green/40 p-5 rounded-md space-y-2">
               <span className="text-xs text-tikari-sage uppercase tracking-wider font-semibold block">PAR &gt; 30 Days</span>
               <div className="flex items-baseline gap-2">
                 <span className="text-3xl font-bold text-white">2.1%</span>
@@ -68,7 +68,7 @@ export default function DashboardMockupSection() {
             </div>
 
             {/* Stat 4 */}
-            <div className="bg-[#0D2818] border border-tikari-green/40 p-5 rounded-none space-y-2">
+            <div className="bg-[#0D2818] border border-tikari-green/40 p-5 rounded-md space-y-2">
               <span className="text-xs text-tikari-sage uppercase tracking-wider block font-semibold">Mudarabah Pool Return</span>
               <div className="flex items-baseline gap-2">
                 <span className="text-3xl font-bold text-tikari-gold">8.4%</span>
@@ -82,7 +82,7 @@ export default function DashboardMockupSection() {
             {/* Financing Portfolio & PAR Trend */}
             <div className="lg:col-span-8 space-y-8">
               {/* Portfolio Mix */}
-              <div className="bg-[#0D2818] border border-tikari-green/40 p-6 rounded-none">
+              <div className="bg-[#0D2818] border border-tikari-green/40 p-6 rounded-md">
                 <h4 className="text-sm font-bold text-tikari-gold uppercase tracking-wider mb-4">Financing Portfolio Breakdown</h4>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                   <div className="border-l-2 border-tikari-gold pl-3 py-1">
@@ -104,7 +104,7 @@ export default function DashboardMockupSection() {
                 </div>
 
                 {/* Progress bar visual */}
-                <div className="flex h-3 mt-6 bg-tikari-green-dark border border-tikari-green/30 rounded-none overflow-hidden">
+                <div className="flex h-3 mt-6 bg-tikari-green-dark border border-tikari-green/30 rounded-md overflow-hidden">
                   <div style={{ width: '52%' }} className="bg-tikari-gold" />
                   <div style={{ width: '22%' }} className="bg-[#8EA89D]" />
                   <div style={{ width: '14%' }} className="bg-emerald-500" />
@@ -113,7 +113,7 @@ export default function DashboardMockupSection() {
               </div>
 
               {/* PAR Trend Visual */}
-              <div className="bg-[#0D2818] border border-tikari-green/40 p-6 rounded-none">
+              <div className="bg-[#0D2818] border border-tikari-green/40 p-6 rounded-md">
                 <div className="flex items-center justify-between mb-4">
                   <h4 className="text-sm font-bold text-tikari-gold uppercase tracking-wider">PAR Trend past 6 months</h4>
                   <span className="text-xs text-emerald-400 font-semibold">PAR &gt;30 days improving: from 4.8% to 2.1%</span>
@@ -141,7 +141,7 @@ export default function DashboardMockupSection() {
 
             {/* Checker Panel (Pending Approvals) */}
             <div className="lg:col-span-4 space-y-6">
-              <div className="bg-[#0D2818] border border-tikari-green/40 p-6 rounded-none h-full flex flex-col justify-between">
+              <div className="bg-[#0D2818] border border-tikari-green/40 p-6 rounded-md h-full flex flex-col justify-between">
                 <div>
                   <div className="flex items-center justify-between pb-4 border-b border-tikari-green/30 mb-4">
                     <h4 className="text-sm font-bold text-tikari-gold uppercase tracking-wider">Pending Approvals</h4>
@@ -150,42 +150,42 @@ export default function DashboardMockupSection() {
 
                   <div className="space-y-4">
                     {/* Item 1 */}
-                    <div className="p-3 bg-[#0B1E13] border border-tikari-green/40 rounded-none flex items-start gap-3">
+                    <div className="p-3 bg-[#0B1E13] border border-tikari-green/40 rounded-md flex items-start gap-3">
                       <Clock className="h-5 w-5 text-tikari-gold shrink-0 mt-0.5" />
                       <div className="space-y-1">
                         <p className="text-xs font-bold text-white">Murabaha disbursement</p>
                         <p className="text-xs text-tikari-gold font-mono">FCFA 2,450,000</p>
                         <p className="text-[10px] text-tikari-sage">Checker: A. Danladi</p>
                       </div>
-                      <span className="ml-auto text-[10px] bg-tikari-gold/10 text-tikari-gold border border-tikari-gold/20 px-1.5 py-0.5 rounded-none font-semibold">Pending</span>
+                      <span className="ml-auto text-[10px] bg-tikari-gold/10 text-tikari-gold border border-tikari-gold/20 px-1.5 py-0.5 rounded-md font-semibold">Pending</span>
                     </div>
 
                     {/* Item 2 */}
-                    <div className="p-3 bg-[#0B1E13] border border-tikari-green/40 rounded-none flex items-start gap-3">
+                    <div className="p-3 bg-[#0B1E13] border border-tikari-green/40 rounded-md flex items-start gap-3">
                       <User className="h-5 w-5 text-tikari-gold shrink-0 mt-0.5" />
                       <div className="space-y-1">
                         <p className="text-xs font-bold text-white">Account opening</p>
                         <p className="text-xs text-tikari-gold font-mono">New Tier 2</p>
                         <p className="text-[10px] text-tikari-sage">Checker: F. Abubakar</p>
                       </div>
-                      <span className="ml-auto text-[10px] bg-tikari-gold/10 text-tikari-gold border border-tikari-gold/20 px-1.5 py-0.5 rounded-none font-semibold">Pending</span>
+                      <span className="ml-auto text-[10px] bg-tikari-gold/10 text-tikari-gold border border-tikari-gold/20 px-1.5 py-0.5 rounded-md font-semibold">Pending</span>
                     </div>
 
                     {/* Item 3 */}
-                    <div className="p-3 bg-[#0B1E13] border border-tikari-green/40 rounded-none flex items-start gap-3">
+                    <div className="p-3 bg-[#0B1E13] border border-tikari-green/40 rounded-md flex items-start gap-3">
                       <Clock className="h-5 w-5 text-tikari-gold shrink-0 mt-0.5" />
                       <div className="space-y-1">
                         <p className="text-xs font-bold text-white">BEAC transfer</p>
                         <p className="text-xs text-tikari-gold font-mono">FCFA 850,000</p>
                         <p className="text-[10px] text-tikari-sage">Checker: Z. Yusuf</p>
                       </div>
-                      <span className="ml-auto text-[10px] bg-tikari-gold/10 text-tikari-gold border border-tikari-gold/20 px-1.5 py-0.5 rounded-none font-semibold">Pending</span>
+                      <span className="ml-auto text-[10px] bg-tikari-gold/10 text-tikari-gold border border-tikari-gold/20 px-1.5 py-0.5 rounded-md font-semibold">Pending</span>
                     </div>
                   </div>
                 </div>
 
                 <div className="pt-6">
-                  <button className="w-full bg-tikari-gold hover:bg-tikari-gold-dark text-tikari-green-dark py-2.5 text-xs font-bold uppercase tracking-wider rounded-none transition-all">
+                  <button className="w-full bg-tikari-gold hover:bg-tikari-gold-dark text-tikari-green-dark py-2.5 text-xs font-bold uppercase tracking-wider rounded-md transition-all">
                     Go to Verification Center
                   </button>
                 </div>

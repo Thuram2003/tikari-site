@@ -60,7 +60,7 @@ export default function PlatformOverviewSection() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {modules.map((mod, idx) => (
-            <Card key={idx} className="border-tikari-green/20 overflow-hidden hover:shadow-xl transition-all rounded-none flex flex-col justify-between">
+            <Card key={idx} className="border-tikari-green/20 overflow-hidden hover:shadow-xl transition-all rounded-md flex flex-col justify-between">
               <div>
                 <div className="relative h-48 w-full">
                   <Image
@@ -83,7 +83,7 @@ export default function PlatformOverviewSection() {
                   variant="ghost" 
                   size="sm" 
                   href={mod.link} 
-                  className="rounded-none text-tikari-green p-0 hover:bg-transparent font-bold flex items-center gap-1"
+                  className="rounded-md text-tikari-green p-0 hover:bg-transparent font-bold flex items-center gap-1"
                 >
                   Explore <ArrowRight className="h-4 w-4" />
                 </Button>

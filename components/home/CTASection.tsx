@@ -33,7 +33,7 @@ export default function CTASection() {
             variant="secondary" 
             size="lg" 
             href="/demo"
-            className="rounded-none font-bold"
+            className="rounded-md font-bold"
           >
             {t("bookDemo")}
             <ArrowRight className="ml-2 h-5 w-5" />
@@ -42,7 +42,7 @@ export default function CTASection() {
             variant="outline" 
             size="lg" 
             href="/platform"
-            className="rounded-none font-bold"
+            className="rounded-md font-bold"
           >
             {t("explorePlatform")}
           </Button>

@@ -44,7 +44,7 @@ export default function FAQPage() {
       <main className="max-w-4xl mx-auto px-6 md:px-12 py-16">
         <div className="space-y-8">
           {faqs.map((faq, idx) => (
-            <div key={idx} className="p-6 bg-tikari-cream-light border border-tikari-green/10 rounded-none shadow-sm space-y-3">
+            <div key={idx} className="p-6 bg-tikari-cream-light border border-tikari-green/10 rounded-md shadow-sm space-y-3">
               <div className="flex items-start gap-3">
                 <HelpCircle className="h-5 w-5 text-tikari-gold shrink-0 mt-0.5" />
                 <h3 className="text-lg font-bold text-tikari-green-dark">{faq.q}</h3>
@@ -54,7 +54,7 @@ export default function FAQPage() {
           ))}
         </div>
 
-        <div className="mt-12 p-6 bg-tikari-green-dark text-white rounded-none border border-tikari-gold/20 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="mt-12 p-6 bg-tikari-green-dark text-white rounded-md border border-tikari-gold/20 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-3">
             <Info className="h-6 w-6 text-tikari-gold shrink-0" />
             <div>
@@ -64,7 +64,7 @@ export default function FAQPage() {
           </div>
           <a 
             href="/demo" 
-            className="bg-tikari-gold hover:bg-tikari-gold-dark text-tikari-green-dark px-5 py-2.5 text-xs font-bold uppercase tracking-wider rounded-none shrink-0 transition-all text-center"
+            className="bg-tikari-gold hover:bg-tikari-gold-dark text-tikari-green-dark px-5 py-2.5 text-xs font-bold uppercase tracking-wider rounded-md shrink-0 transition-all text-center"
           >
             Request a Demo
           </a>

@@ -429,7 +429,7 @@ export default function SupportPage() {
               variant="secondary"
               size="lg"
               href="mailto:support@tikari.cm"
-              className="group bg-tikari-green-dark text-white hover:bg-tikari-green rounded-none"
+              className="group bg-tikari-green-dark text-white hover:bg-tikari-green rounded-md"
             >
               Email Support
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" weight="bold" />
@@ -439,7 +439,7 @@ export default function SupportPage() {
               variant="secondary"
               size="lg"
               href="/demo"
-              className="group bg-white/10 text-tikari-green-dark hover:bg-white/20 border-2 border-tikari-green-dark/20 rounded-none"
+              className="group bg-white/10 text-tikari-green-dark hover:bg-white/20 border-2 border-tikari-green-dark/20 rounded-md"
             >
               Schedule a Demo
             </Button>

@@ -37,7 +37,7 @@ export default function HeroSection() {
               variant="secondary" 
               size="lg" 
               href="/demo"
-              className="rounded-none font-medium"
+              className="rounded-md font-medium"
             >
               {t("bookDemo")}
               <ArrowRight className="ml-2 h-5 w-5" />

@@ -421,7 +421,7 @@ export default function WhatIsIslamicFinancePage() {
                         variant="secondary"
                         size="lg"
                         href="/demo"
-                        className="bg-tikari-green-dark text-white hover:bg-tikari-green rounded-none"
+                        className="bg-tikari-green-dark text-white hover:bg-tikari-green rounded-md"
                       >
                         Book a Demo
                         <ArrowRight className="ml-2 h-4 w-4" weight="bold" />

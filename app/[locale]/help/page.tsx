@@ -36,8 +36,8 @@ export default function HelpCenterPage() {
         
         <div className="grid md:grid-cols-3 gap-8">
           {categories.map((cat, idx) => (
-            <div key={idx} className="bg-tikari-cream-light border border-tikari-green/10 p-6 rounded-none space-y-4 shadow-sm hover:border-tikari-gold transition-all">
-              <div className="w-12 h-12 bg-tikari-green-dark text-tikari-gold flex items-center justify-center rounded-none">
+            <div key={idx} className="bg-tikari-cream-light border border-tikari-green/10 p-6 rounded-md space-y-4 shadow-sm hover:border-tikari-gold transition-all">
+              <div className="w-12 h-12 bg-tikari-green-dark text-tikari-gold flex items-center justify-center rounded-md">
                 <cat.icon className="h-6 w-6" />
               </div>
               <h3 className="text-lg font-bold text-tikari-green-dark">{cat.title}</h3>
@@ -47,7 +47,7 @@ export default function HelpCenterPage() {
         </div>
 
         {/* Contact Support */}
-        <div className="border border-tikari-green/10 p-8 md:p-12 bg-white rounded-none grid md:grid-cols-2 gap-8 items-center">
+        <div className="border border-tikari-green/10 p-8 md:p-12 bg-white rounded-md grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-4">
             <h2 className="text-3xl font-bold text-tikari-green-dark">Still need assistance?</h2>
             <p className="text-sm text-tikari-sage leading-relaxed">

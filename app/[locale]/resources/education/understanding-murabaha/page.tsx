@@ -234,7 +234,7 @@ export default function UnderstandingMurabahaPage() {
                     ].map((item, idx) => (
                       <div
                         key={idx}
-                        className="flex gap-5 p-6 bg-white border border-tikari-green/15 rounded-none"
+                        className="flex gap-5 p-6 bg-white border border-tikari-green/15 rounded-md"
                       >
                         <div className="flex-shrink-0">
                           <div className="w-10 h-10 rounded-full bg-tikari-gold flex items-center justify-center text-tikari-green-dark font-bold text-sm">
@@ -284,7 +284,7 @@ export default function UnderstandingMurabahaPage() {
                   <li><strong>Administrative costs:</strong> Operational expenses of executing the transaction</li>
                 </ul>
 
-                <div className="not-prose my-8 p-6 bg-tikari-gold/10 border border-tikari-gold/30 rounded-none">
+                <div className="not-prose my-8 p-6 bg-tikari-gold/10 border border-tikari-gold/30 rounded-md">
                   <h4 className="text-lg font-bold text-tikari-green-dark mb-2 flex items-center gap-2">
                     <Calculator className="h-6 w-6" weight="bold" />
                     Murabaha Pricing Example
@@ -346,7 +346,7 @@ export default function UnderstandingMurabahaPage() {
                   <li><strong>Internal risk assessment:</strong> Credit evaluation and approval documentation</li>
                 </ul>
 
-                <div className="not-prose my-12 p-7 bg-tikari-cream/40 border-l-4 border-tikari-gold rounded-none">
+                <div className="not-prose my-12 p-7 bg-tikari-cream/40 border-l-4 border-tikari-gold rounded-md">
                   <div className="flex items-start gap-5">
                     <FileText className="h-7 w-7 text-tikari-green-dark flex-shrink-0 mt-0.5" weight="bold" />
                     <div>
@@ -579,7 +579,7 @@ export default function UnderstandingMurabahaPage() {
                         variant="secondary"
                         size="lg"
                         href="/demo"
-                        className="bg-tikari-green-dark text-white hover:bg-tikari-green rounded-none"
+                        className="bg-tikari-green-dark text-white hover:bg-tikari-green rounded-md"
                       >
                         Book a Demo
                         <ArrowRight className="ml-2 h-4 w-4" weight="bold" />
