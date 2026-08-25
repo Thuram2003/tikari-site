@@ -3,8 +3,11 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { ArrowLeft, ArrowRight, Quote } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function TestimonialSection() {
+  const t = useTranslations("home.testimonials");
+  
   const [activeSlide, setActiveSlide] = useState(0);
   const [windowWidth, setWindowWidth] = useState(1200);
 
@@ -182,13 +185,13 @@ export default function TestimonialSection() {
         {/* Section Header */}
         <div className="text-center max-w-4xl mx-auto px-6 space-y-4">
           <div className="inline-block px-4 py-1.5 bg-tikari-sage-light border border-tikari-green/10">
-            <span className="text-xs uppercase tracking-widest text-tikari-green-dark font-bold">Client Success Stories</span>
+            <span className="text-xs uppercase tracking-widest text-tikari-green-dark font-bold">{t("badge")}</span>
           </div>
           <h2 className="text-3xl lg:text-5xl font-bold text-tikari-green-dark leading-tight">
-            Trusted Across Cameroon's<br />Islamic Finance Sector
+            {t("title")}
           </h2>
           <p className="text-base lg:text-lg text-tikari-sage max-w-2xl mx-auto">
-            See how Shariah-compliant institutions achieve operational excellence with TIKARI.
+            {t("subtitle")}
           </p>
         </div>
 
@@ -230,7 +233,7 @@ export default function TestimonialSection() {
                     <div className="text-left sm:text-right shrink-0">
                       <div className="inline-flex items-center gap-1.5 px-2.5 py-1.5 bg-tikari-sage-light border border-tikari-green/10">
                         <span className="text-xl font-bold text-tikari-green-dark font-mono">{item.yearsWithTikari}</span>
-                        <span className="text-[9px] text-tikari-sage uppercase tracking-wider leading-tight">Years<br/>Partner</span>
+                        <span className="text-[9px] text-tikari-sage uppercase tracking-wider leading-tight">{t("yearsPartner")}</span>
                       </div>
                     </div>
                   </div>
@@ -318,7 +321,7 @@ export default function TestimonialSection() {
               <button
                 onClick={handlePrev}
                 disabled={!canGoPrev}
-                aria-label="Previous testimonial"
+                aria-label={t("prev")}
                 className={`w-10 h-10 border-2 flex items-center justify-center transition-all bg-white ${
                   canGoPrev
                     ? "border-tikari-green/20 hover:border-tikari-green hover:bg-tikari-green-dark hover:text-white text-tikari-green-dark cursor-pointer"
@@ -330,7 +333,7 @@ export default function TestimonialSection() {
               <button
                 onClick={handleNext}
                 disabled={!canGoNext}
-                aria-label="Next testimonial"
+                aria-label={t("next")}
                 className={`w-10 h-10 border-2 flex items-center justify-center transition-all bg-white ${
                   canGoNext
                     ? "border-tikari-green/20 hover:border-tikari-green hover:bg-tikari-green-dark hover:text-white text-tikari-green-dark cursor-pointer"

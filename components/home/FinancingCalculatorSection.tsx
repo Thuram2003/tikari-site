@@ -3,9 +3,12 @@
 import { useState } from "react";
 import Image from "next/image";
 import { Check } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui";
 
 export default function FinancingCalculatorSection() {
+  const t = useTranslations("home.calculator");
+  
   const [assetCost, setAssetCost] = useState(3500000);
   const [markupRate, setMarkupRate] = useState(12.5);
   const [tenor, setTenor] = useState(24);
@@ -26,7 +29,7 @@ export default function FinancingCalculatorSection() {
             <div className="relative h-[450px] lg:h-[600px] w-full overflow-hidden">
               <Image
                 src="/muslim-meeting.jpg"
-                alt="Islamic finance professional in Cameroon"
+                alt={t("financing.imageAlt")}
                 fill
                 className="object-cover"
               />
@@ -39,25 +42,25 @@ export default function FinancingCalculatorSection() {
             <div className="space-y-8">
               <div className="space-y-5">
                 <div className="inline-flex items-center px-3 py-1 bg-white/5 border border-white/10">
-                  <span className="text-xs uppercase tracking-widest text-white/60 font-medium">Islamic Financing</span>
+                  <span className="text-xs uppercase tracking-widest text-white/60 font-medium">{t("financing.badge")}</span>
                 </div>
                 
                 <h2 className="text-4xl lg:text-5xl font-bold text-white leading-[1.1]">
-                  Murabaha to Musharakah with built-in Shariah controls
+                  {t("financing.title")}
                 </h2>
                 
                 <p className="text-base lg:text-lg text-white/60 leading-relaxed">
-                  Each financing type has the right mechanics built in. Murabaha tracks cost price, markup, and deferred income per AAOIFI FAS 2. Mudarabah pools manage profit-sharing ratios. Diminishing Musharakah generates the buyout schedule and adjusts rental as ownership transfers.
+                  {t("financing.subtitle")}
                 </p>
               </div>
 
               <ul className="space-y-3">
                 {[
-                  "Murabaha, Mudarabah, Musharakah, Ijara, Salam, Istisna",
-                  "Four-eyes maker-checker approval on every disbursement",
-                  "Linked Fatwa reference and Shariah board approval status",
-                  "Early settlement (Ibra) with automatic rebate calculation",
-                  "COBAC prudential classification built into loan lifecycle"
+                  t("financing.features.0"),
+                  t("financing.features.1"),
+                  t("financing.features.2"),
+                  t("financing.features.3"),
+                  t("financing.features.4")
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3 text-sm text-white/70">
                     <Check className="h-5 w-5 text-tikari-gold shrink-0 mt-0.5" strokeWidth={2.5} />
@@ -68,7 +71,7 @@ export default function FinancingCalculatorSection() {
 
               <div className="pt-2">
                 <Button variant="secondary" href="/platform/financing">
-                  Explore Islamic products
+                  {t("financing.button")}
                 </Button>
               </div>
             </div>
@@ -76,15 +79,15 @@ export default function FinancingCalculatorSection() {
             {/* Right: Interactive Calculator */}
             <div className="bg-white/[0.02] border border-white/10 p-8 lg:p-10">
               <div className="flex items-center justify-between pb-5 mb-6 border-b border-white/10">
-                <span className="text-xs font-medium text-white/60 uppercase tracking-wider">Murabaha Calculator</span>
+                <span className="text-xs font-medium text-white/60 uppercase tracking-wider">{t("calculator.title")}</span>
                 <span className="bg-emerald-500/10 text-emerald-400 text-[10px] font-medium px-2.5 py-1 border border-emerald-500/20">
-                  LIVE
+                  {t("calculator.live")}
                 </span>
               </div>
 
               <div className="space-y-6">
                 <div>
-                  <label className="text-xs text-white/50 block mb-3">Asset Cost Price</label>
+                  <label className="text-xs text-white/50 block mb-3">{t("calculator.assetCost")}</label>
                   <input
                     type="range"
                     min="1000000"
@@ -101,7 +104,7 @@ export default function FinancingCalculatorSection() {
 
                 <div className="grid grid-cols-2 gap-4">
                   <div>
-                    <label className="text-xs text-white/50 block mb-2">Markup Rate (%)</label>
+                    <label className="text-xs text-white/50 block mb-2">{t("calculator.markupRate")}</label>
                     <input
                       type="number"
                       min="5"
@@ -113,7 +116,7 @@ export default function FinancingCalculatorSection() {
                     />
                   </div>
                   <div>
-                    <label className="text-xs text-white/50 block mb-2">Tenor (months)</label>
+                    <label className="text-xs text-white/50 block mb-2">{t("calculator.tenor")}</label>
                     <input
                       type="number"
                       min="6"
@@ -128,17 +131,17 @@ export default function FinancingCalculatorSection() {
 
                 <div className="pt-5 border-t border-white/10 space-y-4">
                   <div className="flex justify-between text-sm">
-                    <span className="text-white/50">Total Selling Price</span>
+                    <span className="text-white/50">{t("calculator.totalSellingPrice")}</span>
                     <span className="text-white font-mono">FCFA {Math.round(totalSellingPrice).toLocaleString()}</span>
                   </div>
                   <div className="bg-tikari-gold/10 border border-tikari-gold/20 p-4">
-                    <span className="text-xs text-tikari-gold/80 block mb-1.5">Monthly Instalment</span>
+                    <span className="text-xs text-tikari-gold/80 block mb-1.5">{t("calculator.monthlyInstalment")}</span>
                     <span className="text-2xl font-bold text-white font-mono">FCFA {Math.round(monthlyInstalment).toLocaleString()}</span>
                   </div>
                 </div>
 
                 <div className="text-xs text-white/40 pt-4 border-t border-white/5">
-                  Fatwa Ref: MC-FAT-2024-017 · Shariah Board Approved
+                  {t("calculator.fatwaRef")}
                 </div>
               </div>
             </div>
@@ -155,52 +158,52 @@ export default function FinancingCalculatorSection() {
             {/* Left: GL Table */}
             <div className="bg-white/[0.02] border border-white/10 p-8 lg:p-10">
               <div className="flex items-center justify-between pb-5 mb-6 border-b border-white/10">
-                <span className="text-xs font-medium text-white/60 uppercase tracking-wider">Trial Balance</span>
-                <span className="text-xs text-white/40 font-mono">As at 31 May 2026</span>
+                <span className="text-xs font-medium text-white/60 uppercase tracking-wider">{t("trialBalance.title")}</span>
+                <span className="text-xs text-white/40 font-mono">{t("trialBalance.date")}</span>
               </div>
               
               <div className="overflow-x-auto">
                 <table className="w-full text-xs text-left">
                   <thead>
                     <tr className="border-b border-white/10 text-white/50 font-medium uppercase tracking-wider">
-                      <th className="py-2.5 font-normal">Account</th>
-                      <th className="py-2.5 text-right font-normal">Debit</th>
-                      <th className="py-2.5 text-right font-normal">Credit</th>
+                      <th className="py-2.5 font-normal">{t("trialBalance.account")}</th>
+                      <th className="py-2.5 text-right font-normal">{t("trialBalance.debit")}</th>
+                      <th className="py-2.5 text-right font-normal">{t("trialBalance.credit")}</th>
                     </tr>
                   </thead>
                   <tbody className="font-mono text-white/70">
                     <tr className="border-b border-white/5">
-                      <td className="py-2.5 font-sans text-white/80">Cash at Till</td>
+                      <td className="py-2.5 font-sans text-white/80">{t("trialBalance.rows.cashAtTill")}</td>
                       <td className="py-2.5 text-right">84.2M</td>
                       <td className="py-2.5 text-right text-white/20">0</td>
                     </tr>
                     <tr className="border-b border-white/5">
-                      <td className="py-2.5 font-sans text-white/80">Murabaha Financing</td>
+                      <td className="py-2.5 font-sans text-white/80">{t("trialBalance.rows.murabahaFinancing")}</td>
                       <td className="py-2.5 text-right">1,240.5M</td>
                       <td className="py-2.5 text-right text-white/20">0</td>
                     </tr>
                     <tr className="border-b border-white/5">
-                      <td className="py-2.5 font-sans text-white/80">Ijara Assets</td>
+                      <td className="py-2.5 font-sans text-white/80">{t("trialBalance.rows.ijaraAssets")}</td>
                       <td className="py-2.5 text-right">620.0M</td>
                       <td className="py-2.5 text-right text-white/20">0</td>
                     </tr>
                     <tr className="border-b border-white/5">
-                      <td className="py-2.5 font-sans text-white/80">Wadiah Deposits</td>
+                      <td className="py-2.5 font-sans text-white/80">{t("trialBalance.rows.wadiahDeposits")}</td>
                       <td className="py-2.5 text-right text-white/20">0</td>
                       <td className="py-2.5 text-right">1,450.0M</td>
                     </tr>
                     <tr className="border-b border-white/5">
-                      <td className="py-2.5 font-sans text-white/80">Mudarabah Deposits</td>
+                      <td className="py-2.5 font-sans text-white/80">{t("trialBalance.rows.mudarabahDeposits")}</td>
                       <td className="py-2.5 text-right text-white/20">0</td>
                       <td className="py-2.5 text-right">380.0M</td>
                     </tr>
                     <tr className="border-b border-white/10">
-                      <td className="py-2.5 font-sans text-white/80">Markup Income</td>
+                      <td className="py-2.5 font-sans text-white/80">{t("trialBalance.rows.markupIncome")}</td>
                       <td className="py-2.5 text-right text-white/20">0</td>
                       <td className="py-2.5 text-right">114.7M</td>
                     </tr>
                     <tr className="text-white">
-                      <td className="py-3 font-sans font-medium">Total</td>
+                      <td className="py-3 font-sans font-medium">{t("trialBalance.total")}</td>
                       <td className="py-3 text-right font-medium">1,944.7M</td>
                       <td className="py-3 text-right font-medium">1,944.7M</td>
                     </tr>
@@ -210,7 +213,7 @@ export default function FinancingCalculatorSection() {
 
               <div className="pt-5 mt-5 border-t border-white/10 text-emerald-400 text-xs flex items-center gap-2">
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" /></svg>
-                <span>Debits equal Credits: Ledger balanced</span>
+                <span>{t("trialBalance.balanced")}</span>
               </div>
             </div>
 
@@ -218,26 +221,26 @@ export default function FinancingCalculatorSection() {
             <div className="space-y-8">
               <div className="space-y-5">
                 <div className="inline-flex items-center px-3 py-1 bg-white/5 border border-white/10">
-                  <span className="text-xs uppercase tracking-widest text-white/60 font-medium">Compliance & Reporting</span>
+                  <span className="text-xs uppercase tracking-widest text-white/60 font-medium">{t("compliance.badge")}</span>
                 </div>
                 
                 <h2 className="text-4xl lg:text-5xl font-bold text-white leading-[1.1]">
-                  COBAC returns generated from your ledger
+                  {t("compliance.title")}
                 </h2>
                 
                 <p className="text-base lg:text-lg text-white/60 leading-relaxed">
-                  The General Ledger is built on AAOIFI financial accounting standards from the ground up. Every transaction posts to the correct GL account automatically. COBAC Statement of Financial Position, prudential ratios, credit bureau files. All generated, not compiled.
+                  {t("compliance.subtitle")}
                 </p>
               </div>
 
               <ul className="space-y-3">
                 {[
-                  "AAOIFI FAS-compliant chart of accounts",
-                  "COBAC Statement of Financial Position (deadline: 14th of month)",
-                  "Prudential classification: current, substandard, doubtful, lost",
-                  "Capital adequacy and liquidity ratio dashboards",
-                  "Credit bureau file generation for monthly compliance",
-                  "Zakat calculation and charity fund tracking"
+                  t("compliance.features.0"),
+                  t("compliance.features.1"),
+                  t("compliance.features.2"),
+                  t("compliance.features.3"),
+                  t("compliance.features.4"),
+                  t("compliance.features.5")
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3 text-sm text-white/70">
                     <Check className="h-5 w-5 text-tikari-gold shrink-0 mt-0.5" strokeWidth={2.5} />
@@ -248,7 +251,7 @@ export default function FinancingCalculatorSection() {
 
               <div className="pt-2">
                 <Button variant="secondary" href="/platform/compliance">
-                  Explore compliance tools
+                  {t("compliance.button")}
                 </Button>
               </div>
             </div>

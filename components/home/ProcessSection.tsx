@@ -1,30 +1,33 @@
 import { ArrowRight, Calendar, Database, GitCompare, GraduationCap } from "lucide-react";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 export default function ProcessSection() {
+  const t = useTranslations("home.process");
+  
   const steps = [
     {
       num: "01",
-      title: "Book a demo",
-      desc: "A 45-minute walkthrough of the platform tailored to your institution type (microfinance, Islamic bank, or credit union). No slide deck, we navigate the live system together in Douala or Yaoundé.",
+      title: t("steps.demo.title"),
+      desc: t("steps.demo.desc"),
       icon: Calendar
     },
     {
       num: "02",
-      title: "Data mapping and migration",
-      desc: "Our team reviews your current core system (Symphonie, Delta, or legacy), maps your chart of accounts to the AAOIFI structure, and produces a detailed migration timeline aligned with COBAC requirements.",
+      title: t("steps.migration.title"),
+      desc: t("steps.migration.desc"),
       icon: Database
     },
     {
       num: "03",
-      title: "Parallel run",
-      desc: "You run both your legacy core and TIKARI simultaneously. We verify that every balance, customer record (CNI validation), and financing contract matches exactly before cutover to avoid COBAC reporting discrepancies.",
+      title: t("steps.parallel.title"),
+      desc: t("steps.parallel.desc"),
       icon: GitCompare
     },
     {
       num: "04",
-      title: "Training and go-live",
-      desc: "Role-based training for your team: tellers, operations officers, credit analysts, Shariah compliance officers, COBAC reporting team, and IT admins. We stay on-call for the first 30 days post-launch.",
+      title: t("steps.training.title"),
+      desc: t("steps.training.desc"),
       icon: GraduationCap
     }
   ];
@@ -37,13 +40,13 @@ export default function ProcessSection() {
       <div className="max-w-7xl mx-auto space-y-14 lg:space-y-20 relative z-10">
         <div className="text-center max-w-3xl mx-auto space-y-5">
           <div className="inline-flex items-center px-3.5 py-1.5 bg-tikari-gold/10 border border-tikari-gold/30 backdrop-blur-sm">
-            <span className="text-[11px] uppercase tracking-[0.15em] text-tikari-gold-dark font-semibold">Implementation</span>
+            <span className="text-[11px] uppercase tracking-[0.15em] text-tikari-gold-dark font-semibold">{t("badge")}</span>
           </div>
           <h2 className="text-4xl lg:text-[3.25rem] font-bold text-tikari-green-dark leading-[1.15] tracking-tight">
-            From demo to live in a structured process
+            {t("title")}
           </h2>
           <p className="text-[15px] lg:text-[17px] text-tikari-sage leading-relaxed max-w-2xl mx-auto">
-            We guide you through every stage to ensure a smooth transition with zero interruption to your daily banking operations in Cameroon.
+            {t("subtitle")}
           </p>
         </div>
 
@@ -52,14 +55,14 @@ export default function ProcessSection() {
           <div className="absolute inset-0 bg-tikari-green/5"></div>
           <Image
             src="/meeting.jpg"
-            alt="TIKARI implementation training session with banking team in Cameroon"
+            alt={t("imageCaption")}
             fill
             className="object-cover"
             priority
           />
           <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-tikari-green-dark/90 to-transparent p-6 lg:p-8">
             <p className="text-sm lg:text-base text-white/95 leading-relaxed max-w-3xl">
-              On-site training and implementation support in Douala, Yaoundé, and other CEMAC financial centers
+              {t("imageCaption")}
             </p>
           </div>
         </div>

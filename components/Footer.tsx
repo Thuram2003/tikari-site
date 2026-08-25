@@ -1,10 +1,12 @@
 "use client";
 
-import Link from "next/link";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { ShieldCheck, MapPin, Phone, Envelope } from "@phosphor-icons/react";
 
 export default function Footer() {
+  const t = useTranslations("footer");
   const currentYear = new Date().getFullYear();
 
   return (
@@ -26,14 +28,14 @@ export default function Footer() {
               />
             </Link>
             <p className="text-sm text-white/80 leading-relaxed max-w-md">
-              Cameroon's first faith-based non-interest banking platform. Complete AAOIFI-compliant financial infrastructure engineered for Islamic banking, microfinance, and traditional savings systems.
+              {t("brand.description")}
             </p>
             <div className="flex flex-wrap items-center gap-2 pt-2">
               <div className="text-xs font-bold tracking-wider text-tikari-gold bg-tikari-gold/10 px-3 py-1.5 border border-tikari-gold/30">
-                BEAC Compliant
+                {t("brand.beacCompliant")}
               </div>
               <div className="text-xs font-bold tracking-wider text-tikari-gold bg-tikari-gold/10 px-3 py-1.5 border border-tikari-gold/30">
-                CEMAC Region
+                {t("brand.cemacRegion")}
               </div>
             </div>
 
@@ -41,15 +43,15 @@ export default function Footer() {
             <div className="space-y-3 pt-2 sm:pt-4">
               <div className="flex items-start gap-3 text-sm text-white/70">
                 <MapPin className="h-5 w-5 text-tikari-gold flex-shrink-0 mt-0.5" weight="fill" />
-                <span>Douala, Cameroon</span>
+                <span>{t("brand.location")}</span>
               </div>
               <div className="flex items-center gap-3 text-sm text-white/70">
                 <Phone className="h-5 w-5 text-tikari-gold flex-shrink-0" weight="fill" />
-                <span>+237 677 777 777</span>
+                <span>{t("brand.phone")}</span>
               </div>
               <div className="flex items-center gap-3 text-sm text-white/70">
                 <Envelope className="h-5 w-5 text-tikari-gold flex-shrink-0" weight="fill" />
-                <span>info@tikari.cm</span>
+                <span>{t("brand.email")}</span>
               </div>
             </div>
           </div>
@@ -57,42 +59,40 @@ export default function Footer() {
           {/* Products Column */}
           <div>
             <h4 className="text-sm font-bold text-white mb-4 sm:mb-6">
-              Platform
+              {t("platform.title")}
             </h4>
             <ul className="space-y-2.5 sm:space-y-3 text-sm text-white/70">
-              <li><Link href="/platform/banking-operations" className="hover:text-tikari-gold transition-colors">Banking Operations</Link></li>
-              <li><Link href="/platform/financing" className="hover:text-tikari-gold transition-colors">Islamic Financing</Link></li>
-              <li><Link href="/platform/compliance" className="hover:text-tikari-gold transition-colors">Compliance & Shariah</Link></li>
-              <li><Link href="/platform/gl-reporting" className="hover:text-tikari-gold transition-colors">GL & Reporting</Link></li>
-              <li><Link href="/platform/agent-banking" className="hover:text-tikari-gold transition-colors">Agent Banking</Link></li>
+              <li><Link href="/platform/banking-operations" className="hover:text-tikari-gold transition-colors">{t("platform.bankingOperations")}</Link></li>
+              <li><Link href="/platform/financing" className="hover:text-tikari-gold transition-colors">{t("platform.islamicFinancing")}</Link></li>
+              <li><Link href="/platform/compliance" className="hover:text-tikari-gold transition-colors">{t("platform.compliance")}</Link></li>
+              <li><Link href="/platform/gl-reporting" className="hover:text-tikari-gold transition-colors">{t("platform.glReporting")}</Link></li>
+              <li><Link href="/platform/agent-banking" className="hover:text-tikari-gold transition-colors">{t("platform.agentBanking")}</Link></li>
             </ul>
           </div>
 
           {/* Company Column */}
           <div>
             <h4 className="text-sm font-bold text-white mb-4 sm:mb-6">
-              Company
+              {t("company.title")}
             </h4>
             <ul className="space-y-2.5 sm:space-y-3 text-sm text-white/70">
-              <li><Link href="/about" className="hover:text-tikari-gold transition-colors">About TIKARI</Link></li>
-              <li><Link href="/company#scholars" className="hover:text-tikari-gold transition-colors">Shariah Board</Link></li>
-              <li><Link href="/company#partners" className="hover:text-tikari-gold transition-colors">Bank Partners</Link></li>
-              <li><Link href="/careers" className="hover:text-tikari-gold transition-colors">Careers</Link></li>
-              <li><Link href="/contact" className="hover:text-tikari-gold transition-colors">Contact Us</Link></li>
+              <li><Link href="/about" className="hover:text-tikari-gold transition-colors">{t("company.about")}</Link></li>
+              <li><Link href="/about#scholars" className="hover:text-tikari-gold transition-colors">{t("company.shariahBoard")}</Link></li>
+              <li><Link href="/contact" className="hover:text-tikari-gold transition-colors">{t("company.contact")}</Link></li>
             </ul>
           </div>
 
           {/* Resources Column */}
           <div>
             <h4 className="text-sm font-bold text-white mb-4 sm:mb-6">
-              Resources
+              {t("resources.title")}
             </h4>
             <ul className="space-y-2.5 sm:space-y-3 text-sm text-white/70">
-              <li><Link href="/resources/education" className="hover:text-tikari-gold transition-colors">Shariah Finance 101</Link></li>
-              <li><Link href="/resources/compliance" className="hover:text-tikari-gold transition-colors">Regulatory Updates</Link></li>
-              <li><Link href="/resources/support" className="hover:text-tikari-gold transition-colors">Help Center</Link></li>
-              <li><Link href="/demo" className="hover:text-tikari-gold transition-colors">Book a Demo</Link></li>
-              <li><Link href="/contact" className="hover:text-tikari-gold transition-colors">Contact Support</Link></li>
+              <li><Link href="/resources/education" className="hover:text-tikari-gold transition-colors">{t("resources.education")}</Link></li>
+              <li><Link href="/resources/compliance" className="hover:text-tikari-gold transition-colors">{t("resources.compliance")}</Link></li>
+              <li><Link href="/resources/support" className="hover:text-tikari-gold transition-colors">{t("resources.support")}</Link></li>
+              <li><Link href="/demo" className="hover:text-tikari-gold transition-colors">{t("resources.demo")}</Link></li>
+              <li><Link href="/contact" className="hover:text-tikari-gold transition-colors">{t("resources.contactSupport")}</Link></li>
             </ul>
           </div>
 
@@ -103,26 +103,35 @@ export default function Footer() {
           <div className="flex items-start gap-3 sm:gap-4">
             <ShieldCheck className="h-6 w-6 text-tikari-gold flex-shrink-0 mt-0.5 sm:mt-1" weight="fill" />
             <div>
-              <h5 className="text-sm font-bold text-white mb-2">100% Shariah Compliant and BEAC Approved</h5>
+              <h5 className="text-sm font-bold text-white mb-2">{t("assurance.title")}</h5>
               <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
-                All financial products are certified by our independent Shariah Supervisory Board and operate in full compliance with BEAC (Banque des États de l'Afrique Centrale) regulations governing the CEMAC region.
+                {t("assurance.description")}
               </p>
             </div>
           </div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-6 sm:pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="pt-6 sm:pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 relative z-10">
           <div className="text-xs sm:text-sm text-white/60 text-center sm:text-left">
-            © {currentYear} TIKARI Finance, Cameroon. All rights reserved.
+            © {currentYear} {t("legal.copyright")}
           </div>
           <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 text-xs sm:text-sm text-white/60">
-            <Link href="/privacy" className="hover:text-tikari-gold transition-colors">Privacy Policy</Link>
-            <Link href="/terms" className="hover:text-tikari-gold transition-colors">Terms of Service</Link>
-            <Link href="/security" className="hover:text-tikari-gold transition-colors">Security</Link>
+            <Link href="/privacy" className="hover:text-tikari-gold transition-colors">{t("legal.privacy")}</Link>
+            <Link href="/terms" className="hover:text-tikari-gold transition-colors">{t("legal.terms")}</Link>
+            <Link href="/security" className="hover:text-tikari-gold transition-colors">{t("legal.security")}</Link>
           </div>
         </div>
 
+      </div>
+
+      {/* Giant branding text - Outside max-w container for full width */}
+      <div className="w-full pt-8 sm:pt-10 relative z-0 overflow-hidden">
+        <div className="text-center flex flex-col items-center leading-[0.85]">
+          <h1 className="font-bold text-[10vw] md:text-[6vw] lg:text-[12vw] tracking-widest uppercase text-tikari-green/30">
+            TIKARI
+          </h1>
+        </div>
       </div>
     </footer>
   );

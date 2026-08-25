@@ -13,119 +13,128 @@ import {
   Clock
 } from "@phosphor-icons/react";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui";
 
 export default function PlatformPage() {
+  const t = useTranslations("platform.main");
+  
   const modules = [
     {
-      category: "Banking Operations",
-      description: "Customer onboarding with CNI/Passport verification, tiered KYC (Tier 1-3), account management, Njangi group banking, teller operations, SYSTAC/SYGMA payment gateway, and agent banking.",
+      category: t("modules.bankingOperations.category"),
+      description: t("modules.bankingOperations.description"),
       icon: Users,
       features: [
-        "CNI/Passport biometric verification",
-        "Njangi & Tontine group cycles",
-        "SYSTAC/SYGMA real-time transfers",
-        "Agent & field officer portal",
-        "Multi-branch teller operations"
+        t("modules.bankingOperations.features.0"),
+        t("modules.bankingOperations.features.1"),
+        t("modules.bankingOperations.features.2"),
+        t("modules.bankingOperations.features.3"),
+        t("modules.bankingOperations.features.4")
       ],
+      explore: t("modules.bankingOperations.explore"),
       exploreLink: "/platform/banking-operations"
     },
     {
-      category: "Islamic Financing & Treasury",
-      description: "Native support for all six Shariah-compliant financing structures. Each product has its own GL logic, profit-sharing mechanics, and Shariah validation workflow. Not a loan with a renamed field.",
+      category: t("modules.financing.category"),
+      description: t("modules.financing.description"),
       icon: Coins,
       features: [
-        "Murabaha (cost-plus sale)",
-        "Mudarabah (profit-sharing)",
-        "Musharakah (partnership)",
-        "Ijara (leasing)",
-        "Salam & Istisna (forward contracts)"
+        t("modules.financing.features.0"),
+        t("modules.financing.features.1"),
+        t("modules.financing.features.2"),
+        t("modules.financing.features.3"),
+        t("modules.financing.features.4")
       ],
+      explore: t("modules.financing.explore"),
       exploreLink: "/platform/financing"
     },
     {
-      category: "Compliance & Shariah Governance",
-      description: "The ACE (Audit & Compliance Executives) and Shariah Supervisory Board are first-class users. Fatwa repository, product screening, AML/CFT transaction monitoring, and all COBAC prudential returns generated from the GL directly.",
+      category: t("modules.compliance.category"),
+      description: t("modules.compliance.description"),
       icon: ShieldCheck,
       features: [
-        "Fatwa repository & product approval",
-        "ACE dashboard & audit trail",
-        "AML/CFT transaction screening (GABAC)",
-        "12 COBAC returns (auto-generated)",
-        "AAOIFI FAS compliance tagging"
+        t("modules.compliance.features.0"),
+        t("modules.compliance.features.1"),
+        t("modules.compliance.features.2"),
+        t("modules.compliance.features.3"),
+        t("modules.compliance.features.4")
       ],
+      explore: t("modules.compliance.explore"),
       exploreLink: "/platform/compliance"
     },
     {
-      category: "GL & Financial Reporting",
-      description: "A true double-entry general ledger built on AAOIFI financial accounting standards. Chart of accounts pre-configured for non-interest banks. Trial balance, income statement, and balance sheet in real time.",
+      category: t("modules.glReporting.category"),
+      description: t("modules.glReporting.description"),
       icon: ChartLineUp,
       features: [
-        "AAOIFI-configured chart of accounts",
-        "Real-time trial balance",
-        "Deferred income schedules (FAS 2, 3)",
-        "Profit pool distribution (Mudarabah)",
-        "Under-10-minute EOD close"
+        t("modules.glReporting.features.0"),
+        t("modules.glReporting.features.1"),
+        t("modules.glReporting.features.2"),
+        t("modules.glReporting.features.3"),
+        t("modules.glReporting.features.4")
       ],
+      explore: t("modules.glReporting.explore"),
       exploreLink: "/platform/gl-reporting"
     },
     {
-      category: "Agent & Field Banking",
-      description: "Extend your reach without building branches in Douala, Yaoundé, or Bafoussam. Agent portal with offline-capable transaction posting, geo-tagging, and real-time reconciliation back to the core. Full audit trail for every agent action.",
+      category: t("modules.agentBanking.category"),
+      description: t("modules.agentBanking.description"),
       icon: UserGear,
       features: [
-        "Agent onboarding & CNI KYC",
-        "Offline transaction queueing",
-        "Geo-tagged field collections",
-        "Cash-in / cash-out reconciliation",
-        "Agent commission ledger (FCFA)"
+        t("modules.agentBanking.features.0"),
+        t("modules.agentBanking.features.1"),
+        t("modules.agentBanking.features.2"),
+        t("modules.agentBanking.features.3"),
+        t("modules.agentBanking.features.4")
       ],
+      explore: t("modules.agentBanking.explore"),
       exploreLink: "/platform/agent-banking"
     },
     {
-      category: "Administration & EOD Processes",
-      description: "System administration, user and role management (RBAC), scheduled jobs, end-of-day batch processing, backup and disaster recovery, and COBAC regulatory reporting scheduler.",
+      category: t("modules.administration.category"),
+      description: t("modules.administration.description"),
       icon: Notebook,
       features: [
-        "Role-based access (RBAC)",
-        "Four-eyes maker-checker approval",
-        "Automated EOD batch run",
-        "Audit log (immutable)",
-        "Backup & DR scheduler"
+        t("modules.administration.features.0"),
+        t("modules.administration.features.1"),
+        t("modules.administration.features.2"),
+        t("modules.administration.features.3"),
+        t("modules.administration.features.4")
       ],
+      explore: t("modules.administration.explore"),
       exploreLink: "/platform/administration"
     }
   ];
 
   const integrations = [
     {
-      name: "SYSTAC / SYGMA",
-      description: "Real-time interbank transfers",
+      name: t("integrations.items.systac.name"),
+      description: t("integrations.items.systac.description"),
       icon: Globe
     },
     {
-      name: "COBAC Reporting API",
-      description: "12 prudential returns",
+      name: t("integrations.items.cobac.name"),
+      description: t("integrations.items.cobac.description"),
       icon: ChartLineUp
     },
     {
-      name: "CNI / Passport",
-      description: "Identity verification",
+      name: t("integrations.items.cni.name"),
+      description: t("integrations.items.cni.description"),
       icon: ShieldCheck
     },
     {
-      name: "FOGADAC",
-      description: "Deposit insurance reporting",
+      name: t("integrations.items.fogadac.name"),
+      description: t("integrations.items.fogadac.description"),
       icon: CheckCircle
     },
     {
-      name: "GABAC",
-      description: "STR / CTR filing (AML/CFT)",
+      name: t("integrations.items.gabac.name"),
+      description: t("integrations.items.gabac.description"),
       icon: Notebook
     },
     {
-      name: "BEAC",
-      description: "Central bank compliance",
+      name: t("integrations.items.beac.name"),
+      description: t("integrations.items.beac.description"),
       icon: Clock
     }
   ];
@@ -140,13 +149,13 @@ export default function PlatformPage() {
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="max-w-4xl">
             <div className="inline-flex items-center px-3.5 py-1.5 bg-tikari-gold/10 border border-tikari-gold/30 backdrop-blur-sm mb-6">
-              <span className="text-[11px] uppercase tracking-[0.15em] text-tikari-gold font-semibold">ALL MODULES</span>
+              <span className="text-[11px] uppercase tracking-[0.15em] text-tikari-gold font-semibold">{t("hero.badge")}</span>
             </div>
             <h1 className="text-4xl lg:text-[3.5rem] font-bold leading-[1.1] tracking-tight mb-6">
-              Everything in a single tenancy
+              {t("hero.title")}
             </h1>
             <p className="text-[17px] lg:text-[19px] text-white/80 leading-relaxed mb-8 max-w-3xl">
-              No bolt-on modules. No per-feature licenses. Every capability below is included in the TIKARI platform, engineered for Cameroon's Islamic banking and microfinance sector.
+              {t("hero.subtitle")}
             </p>
             <Button
               variant="primary"
@@ -154,7 +163,7 @@ export default function PlatformPage() {
               href="/demo"
               className="group"
             >
-              Schedule a Demo
+              {t("hero.scheduleDemo")}
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" weight="bold" />
             </Button>
           </div>
@@ -205,7 +214,7 @@ export default function PlatformPage() {
                     href={module.exploreLink}
                     className="inline-flex items-center gap-2 text-tikari-green font-semibold text-[15px] hover:gap-3 transition-all group"
                   >
-                    <span>Explore {module.category}</span>
+                    <span>{module.explore}</span>
                     <ArrowRight 
                       className="h-5 w-5 group-hover:translate-x-1 transition-transform" 
                       weight="bold" 
@@ -225,13 +234,13 @@ export default function PlatformPage() {
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-12 lg:mb-16">
             <div className="inline-flex items-center px-3.5 py-1.5 bg-tikari-gold/10 border border-tikari-gold/30 backdrop-blur-sm mb-6">
-              <span className="text-[11px] uppercase tracking-[0.15em] text-tikari-gold font-semibold">INTEGRATIONS</span>
+              <span className="text-[11px] uppercase tracking-[0.15em] text-tikari-gold font-semibold">{t("integrations.badge")}</span>
             </div>
             <h2 className="text-3xl lg:text-4xl font-bold mb-6 leading-tight">
-              Wired into the Cameroonian financial infrastructure
+              {t("integrations.title")}
             </h2>
             <p className="text-[15px] lg:text-[17px] text-white/75 leading-relaxed">
-              TIKARI connects natively to SYSTAC/SYGMA for real-time payments, the COBAC reporting API, CNI/Passport identity verification, FOGADAC reporting, and GABAC AML/CFT filing. No middleware required.
+              {t("integrations.subtitle")}
             </p>
           </div>
 
@@ -263,7 +272,7 @@ export default function PlatformPage() {
               href="/demo"
               className="group bg-white text-tikari-green-dark hover:bg-tikari-cream-light"
             >
-              See it in a demo
+              {t("integrations.seeDemo")}
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" weight="bold" />
             </Button>
           </div>

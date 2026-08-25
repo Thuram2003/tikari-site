@@ -1,42 +1,45 @@
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { Button, Card } from "@/components/ui";
 
 export default function PlatformOverviewSection() {
+  const t = useTranslations("home.platformOverview");
+  
   const modules = [
     {
-      title: "Banking Operations",
-      desc: "Customer and KYC, Wadiah accounts, Njangi/Tontine groups, teller operations, interbank transfers, and agent float.",
+      title: t("modules.banking.title"),
+      desc: t("modules.banking.desc"),
       link: "/platform/banking-operations",
       image: "/women-market.jpg"
     },
     {
-      title: "Islamic Financing",
-      desc: "Murabaha, Mudarabah, Musharakah, Ijara, Sukuk, and Takaful, with built-in maker-checker and profit-sharing mechanics.",
+      title: t("modules.financing.title"),
+      desc: t("modules.financing.desc"),
       link: "/platform/financing",
       image: "/handshake.jpg"
     },
     {
-      title: "Compliance & Shariah",
-      desc: "AML/CFT screening, COBAC returns, AAOIFI GL, ACE meeting management, Fatwa repository, and sanctions/PEP checks.",
+      title: t("modules.compliance.title"),
+      desc: t("modules.compliance.desc"),
       link: "/platform/compliance",
       image: "/compliance.jpg"
     },
     {
-      title: "General Ledger & Reporting",
-      desc: "Trial balance, income statement, COBAC balance sheet, prudential classification, capital adequacy, all from one ledger.",
+      title: t("modules.gl.title"),
+      desc: t("modules.gl.desc"),
       link: "/platform",
       image: "/personOffice.jpg"
     },
     {
-      title: "Agent Banking",
-      desc: "Agent onboarding, float management, commission calculation, and cash-in/cash-out with real-time float adjustment.",
+      title: t("modules.agent.title"),
+      desc: t("modules.agent.desc"),
       link: "/platform/agent",
       image: "/mulsimwoman.jpg"
     },
     {
-      title: "Administration & EOD",
-      desc: "User and role management, RBAC, full audit trail, automated end-of-day batch, month-end, and year-end close.",
+      title: t("modules.admin.title"),
+      desc: t("modules.admin.desc"),
       link: "/platform",
       image: "/meeting.jpg"
     }
@@ -46,12 +49,12 @@ export default function PlatformOverviewSection() {
     <section className="w-full py-24 px-6 md:px-12 bg-white">
       <div className="max-w-7xl mx-auto space-y-12">
         <div className="text-center max-w-3xl mx-auto space-y-4">
-          <span className="text-xs uppercase tracking-wider text-tikari-gold font-bold">The Platform</span>
+          <span className="text-xs uppercase tracking-wider text-tikari-gold font-bold">{t("badge")}</span>
           <h2 className="text-4xl md:text-5xl font-bold text-tikari-green-dark">
-            One core. Every module a bank needs.
+            {t("title")}
           </h2>
           <p className="text-lg text-tikari-sage leading-relaxed">
-            TIKARI covers the full lifecycle of a non-interest bank, from customer onboarding and KYC through to COBAC returns and year-end Zakat calculation. Everything talks to the same GL, the same audit trail, and the same maker-checker engine.
+            {t("subtitle")}
           </p>
         </div>
 

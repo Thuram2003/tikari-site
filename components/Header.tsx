@@ -1,8 +1,9 @@
 "use client";
 
-import Link from "next/link";
-import Image from "next/image";
 import { useState, useEffect } from "react";
+import Image from "next/image";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { ArrowRight, X, List } from "@phosphor-icons/react/dist/ssr";
 import {
   Handshake,
@@ -27,6 +28,7 @@ import MegaMenu from "./MegaMenu";
 import { Button } from "@/components/ui";
 
 export default function Header() {
+  const t = useTranslations("header");
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mobileExpandedSection, setMobileExpandedSection] = useState<string | null>(null);
@@ -53,69 +55,69 @@ export default function Header() {
 
   const mobileNavSections = [
     {
-      title: "Platform",
+      title: t("platform.title"),
       items: [
-        { name: "Banking Operations", href: "/platform/banking-operations" },
-        { name: "Islamic Financing & Treasury", href: "/platform/financing" },
-        { name: "Compliance & Shariah Governance", href: "/platform/compliance" },
-        { name: "GL & Financial Reporting", href: "/platform#gl-reporting" },
-        { name: "Agent & Field Banking", href: "/platform#agent-banking" },
-        { name: "Administration & EOD", href: "/platform#administration" },
+        { name: t("platform.bankingOperations.name"), href: "/platform/banking-operations" },
+        { name: t("platform.islamicFinancing.name"), href: "/platform/financing" },
+        { name: t("platform.compliance.name"), href: "/platform/compliance" },
+        { name: t("platform.glReporting.name"), href: "/platform#gl-reporting" },
+        { name: t("platform.agentBanking.name"), href: "/platform#agent-banking" },
+        { name: t("platform.administration.name"), href: "/platform#administration" },
       ]
     },
     {
-      title: "Solution",
+      title: t("solution.title"),
       items: [
-        { name: "Microfinance Banks", href: "/solutions/microfinance" },
-        { name: "Community Banks", href: "/solutions/community-banks" },
-        { name: "Cooperatives & Islamic Windows", href: "/solutions/cooperatives" },
-        { name: "For Businesses & SMEs", href: "/solutions/smes" },
+        { name: t("solution.microfinance.name"), href: "/solutions/microfinance" },
+        { name: t("solution.communityBanks.name"), href: "/solutions/community-banks" },
+        { name: t("solution.cooperatives.name"), href: "/solutions/cooperatives" },
+        { name: t("solution.smes.name"), href: "/solutions/smes" },
       ]
     },
     {
-      title: "Resources",
+      title: t("resources.title"),
       items: [
-        { name: "Shariah Finance 101", href: "/resources/education" },
-        { name: "Regulatory Updates", href: "/resources/compliance" },
-        { name: "Help Center", href: "/resources/support" },
+        { name: t("resources.education.name"), href: "/resources/education" },
+        { name: t("resources.compliance.name"), href: "/resources/compliance" },
+        { name: t("resources.support.name"), href: "/resources/support" },
       ]
     },
     {
-      title: "Company",
+      title: t("company.title"),
       items: [
-        { name: "About TIKARI", href: "/about" },
-        { name: "Shariah Board", href: "/about#scholars" },
-        { name: "Contact Us", href: "/contact" },
+        { name: t("company.about.name"), href: "/about" },
+        { name: t("company.shariahBoard.name"), href: "/about#scholars" },
+        { name: t("company.contact.name"), href: "/contact" },
       ]
     },
   ];
 
   const platformItems = [
-    { name: "Banking Operations", desc: "CNI/Passport verification, Njangi groups, SYSTAC transfers.", href: "/platform/banking-operations", icon: Users },
-    { name: "Islamic Financing & Treasury", desc: "Murabaha, Mudarabah, Musharakah, Ijara, Salam, Istisna.", href: "/platform/financing", icon: Coins },
-    { name: "Compliance & Shariah Governance", desc: "ACE dashboard, Fatwa repository, COBAC returns.", href: "/platform/compliance", icon: ShieldCheck },
-    { name: "GL & Financial Reporting", desc: "AAOIFI chart of accounts, real-time trial balance.", href: "/platform/gl-reporting", icon: ChartLineUp },
-    { name: "Agent & Field Banking", desc: "Offline transactions, geo-tagging, commission ledger.", href: "/platform/agent-banking", icon: UserGear },
-    { name: "Administration & EOD", desc: "RBAC, maker-checker, automated EOD batch processing.", href: "/platform/administration", icon: Notebook },
+    { name: t("platform.bankingOperations.name"), desc: t("platform.bankingOperations.desc"), href: "/platform/banking-operations", icon: Users },
+    { name: t("platform.islamicFinancing.name"), desc: t("platform.islamicFinancing.desc"), href: "/platform/financing", icon: Coins },
+    { name: t("platform.compliance.name"), desc: t("platform.compliance.desc"), href: "/platform/compliance", icon: ShieldCheck },
+    { name: t("platform.glReporting.name"), desc: t("platform.glReporting.desc"), href: "/platform/gl-reporting", icon: ChartLineUp },
+    { name: t("platform.agentBanking.name"), desc: t("platform.agentBanking.desc"), href: "/platform/agent-banking", icon: UserGear },
+    { name: t("platform.administration.name"), desc: t("platform.administration.desc"), href: "/platform/administration", icon: Notebook },
   ];
 
   const solutionItems = [
-    { name: "Microfinance Banks", desc: "Unit, Regional, and National MFB licences.", href: "/solutions/microfinance", icon: Bank },
-    { name: "Community Banks", desc: "Community development banks and cooperatives.", href: "/solutions/community-banks", icon: Handshake },
-    { name: "Cooperatives & Islamic Windows", desc: "Njangi groups and ring-fenced operations.", href: "/solutions/cooperatives", icon: Users },
-    { name: "For Businesses & SMEs", desc: "Murabaha inventory & working capital.", href: "/solutions/smes", icon: BuildingOffice },
+    { name: t("solution.microfinance.name"), desc: t("solution.microfinance.desc"), href: "/solutions/microfinance", icon: Bank },
+    { name: t("solution.communityBanks.name"), desc: t("solution.communityBanks.desc"), href: "/solutions/community-banks", icon: Handshake },
+    { name: t("solution.cooperatives.name"), desc: t("solution.cooperatives.desc"), href: "/solutions/cooperatives", icon: Users },
+    { name: t("solution.smes.name"), desc: t("solution.smes.desc"), href: "/solutions/smes", icon: BuildingOffice },
   ];
 
   const resourceItems = [
-    { name: "Shariah Finance 101", desc: "Guides to Murabaha, AAOIFI, and Islamic principles.", href: "/resources/education", icon: GraduationCap },
-    { name: "Regulatory Updates", desc: "BEAC regulations & compliance standards.", href: "/resources/compliance", icon: Bookmark },
-    { name: "Help Center", desc: "Tutorials, FAQs, and support channels.", href: "/resources/support", icon: Question },
+    { name: t("resources.education.name"), desc: t("resources.education.desc"), href: "/resources/education", icon: GraduationCap },
+    { name: t("resources.compliance.name"), desc: t("resources.compliance.desc"), href: "/resources/compliance", icon: Bookmark },
+    { name: t("resources.support.name"), desc: t("resources.support.desc"), href: "/resources/support", icon: Question },
   ];
 
   const companyItems = [
-    { name: "About TIKARI", desc: "Our mission, vision, and the legend of the camel.", href: "/about", icon: Bookmark },
-    { name: "Shariah Board", desc: "Credentials of our verifying Islamic scholars.", href: "/about#scholars", icon: UserList },
-    { name: "Contact Us", desc: "Get in touch with our team.", href: "/contact", icon: MapPin },
+    { name: t("company.about.name"), desc: t("company.about.desc"), href: "/about", icon: Bookmark },
+    { name: t("company.shariahBoard.name"), desc: t("company.shariahBoard.desc"), href: "/about#scholars", icon: UserList },
+    { name: t("company.contact.name"), desc: t("company.contact.desc"), href: "/contact", icon: MapPin },
   ];
 
   return (
@@ -142,46 +144,46 @@ export default function Header() {
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-1">
             <MegaMenu
-              label="Platform"
+              label={t("platform.title")}
               scrolled={scrolled}
               items={platformItems}
               featuredItem={{
-                badge: "Native Ledger",
-                title: "AAOIFI Core Banking Engine",
-                desc: "Engineered from the ground up for strict, zero-interest financial operations.",
+                badge: t("platform.featured.badge"),
+                title: t("platform.featured.title"),
+                desc: t("platform.featured.desc"),
                 href: "/platform",
               }}
             />
             <MegaMenu
-              label="Solution"
+              label={t("solution.title")}
               scrolled={scrolled}
               items={solutionItems}
               featuredItem={{
-                badge: "Community Scale",
-                title: "Islamic Banking for Communities",
-                desc: "Full compliance tools for community banks, cooperatives, and Islamic windows.",
+                badge: t("solution.featured.badge"),
+                title: t("solution.featured.title"),
+                desc: t("solution.featured.desc"),
                 href: "/solutions/community-banks",
               }}
             />
             <MegaMenu
-              label="Resources"
+              label={t("resources.title")}
               scrolled={scrolled}
               items={resourceItems}
               featuredItem={{
-                badge: "Support",
-                title: "24/7 Help Center",
-                desc: "Access tutorials, FAQs, and direct support channels for your institution.",
+                badge: t("resources.featured.badge"),
+                title: t("resources.featured.title"),
+                desc: t("resources.featured.desc"),
                 href: "/resources/support",
               }}
             />
             <MegaMenu
-              label="Company"
+              label={t("company.title")}
               scrolled={scrolled}
               items={companyItems}
               featuredItem={{
-                badge: "Trust Board",
-                title: "Scholar Verified",
-                desc: "Learn about the independent scholars supervising our ledger code.",
+                badge: t("company.featured.badge"),
+                title: t("company.featured.title"),
+                desc: t("company.featured.desc"),
                 href: "/company#scholars",
               }}
             />
@@ -195,14 +197,14 @@ export default function Header() {
               href="/demo"
               className="uppercase tracking-wider hidden sm:inline-flex"
             >
-              Book Demo
+              {t("bookDemo")}
             </Button>
 
             {/* Mobile Menu Button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="lg:hidden p-2 text-tikari-green-dark hover:bg-tikari-green/5 transition-colors"
-              aria-label="Toggle menu"
+              aria-label={t("toggleMenu")}
             >
               {mobileMenuOpen ? (
                 <X className="h-6 w-6" weight="bold" />
@@ -259,7 +261,7 @@ export default function Header() {
                   className="w-full uppercase tracking-wider"
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  Book Demo
+                  {t("bookDemo")}
                 </Button>
               </div>
             </div>

@@ -2,268 +2,272 @@
 
 import { 
   ArrowRight, 
+  Users,
+  GearSix,
+  Buildings,
+  CalendarCheck,
+  Database,
+  ChartLineUp,
   ShieldCheck,
-  Scales,
-  FileText,
-  ClipboardText,
-  MagnifyingGlass,
-  Certificate,
-  ChartBar,
-  FolderOpen,
-  UserCheck,
-  Bank,
+  UserGear,
+  Lock,
+  Clock,
+  FileArchive,
   Warning,
   CheckCircle,
-  Clock,
   ListChecks,
-  Stamp,
-  Eye,
-  Books,
-  Gavel
+  ClipboardText,
+  HardDrives,
+  ArrowsClockwise,
+  CurrencyCircleDollar,
+  Receipt,
+  Calculator
 } from "@phosphor-icons/react";
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui";
+import { useTranslations } from "next-intl";
 
-export default function CompliancePage() {
+export default function AdministrationPage() {
+  const t = useTranslations("platform.administration");
   const sections = [
     {
-      id: "shariah-board",
-      title: "Shariah Supervisory Board (SSB)",
-      subtitle: "Independent Shariah governance with fatwa management and audit oversight",
-      icon: Scales,
+      id: "user-management",
+      title: t("sections.userManagement.title"),
+      subtitle: t("sections.userManagement.subtitle"),
+      icon: Users,
       color: "bg-gradient-to-br from-tikari-green-dark to-tikari-green",
-      image: "/muslim-meeting.jpg",
-      features: [
-        {
-          title: "SSB Composition & Registration",
-          description: "Multi-scholar board with COBAC registration, qualification tracking, and term management",
-          icon: Certificate
-        },
-        {
-          title: "Fatwa Issuance Workflow",
-          description: "Structured fatwa request, deliberation, and approval process with digital signature and archiving",
-          icon: Gavel
-        },
-        {
-          title: "Product Approval Process",
-          description: "Pre-launch Shariah compliance review for all new products with detailed product specification documents",
-          icon: CheckCircle
-        },
-        {
-          title: "Quarterly SSB Reports",
-          description: "Automated quarterly compliance reports to SSB with transaction sampling and exception alerts",
-          icon: FileText
-        },
-        {
-          title: "Annual Shariah Audit",
-          description: "Year-end comprehensive audit of all transactions, contracts, and profit distribution mechanisms",
-          icon: MagnifyingGlass
-        },
-        {
-          title: "Fatwa Database",
-          description: "Searchable repository of all fatwas issued with cross-references to AAOIFI standards",
-          icon: Books
-        }
-      ]
-    },
-    {
-      id: "internal-shariah-audit",
-      title: "Internal Shariah Audit",
-      subtitle: "Continuous monitoring and testing of Shariah compliance across all operations",
-      icon: MagnifyingGlass,
-      color: "bg-gradient-to-br from-tikari-gold/90 to-tikari-gold/70",
-      image: "/compliance.jpg",
-      features: [
-        {
-          title: "Transaction Sampling",
-          description: "Statistical sampling of financing contracts, deposits, and treasury transactions for compliance review",
-          icon: ListChecks
-        },
-        {
-          title: "Contract Review Engine",
-          description: "Automated validation of contract terms against Shariah principles and SSB-approved templates",
-          icon: FileText
-        },
-        {
-          title: "Prohibited Revenue Detection",
-          description: "Real-time flagging of interest-based income, speculative trades, and haram sector exposure",
-          icon: Warning
-        },
-        {
-          title: "Audit Trail Tracking",
-          description: "Immutable audit log of all transactions with user actions, timestamps, and approval chains",
-          icon: Clock
-        },
-        {
-          title: "Non-Compliance Reporting",
-          description: "Exception reporting with root cause analysis, remediation plans, and escalation to SSB",
-          icon: ClipboardText
-        },
-        {
-          title: "Purification Calculation",
-          description: "Automated calculation of non-Shariah-compliant income for charity distribution",
-          icon: ShieldCheck
-        }
-      ]
-    },
-    {
-      id: "cobac-compliance",
-      title: "COBAC Regulatory Compliance",
-      subtitle: "Full adherence to CEMAC prudential norms and COBAC reporting requirements",
-      icon: Bank,
-      color: "bg-tikari-green-dark text-white",
-      image: "/bnw-muslim.jpg",
-      features: [
-        {
-          title: "Capital Adequacy Monitoring",
-          description: "Real-time CAR calculation with Tier 1/Tier 2 capital tracking and COBAC minimum ratio enforcement",
-          icon: ChartBar
-        },
-        {
-          title: "Liquidity Ratios (LCR & NSFR)",
-          description: "Daily liquidity coverage ratio and net stable funding ratio monitoring with buffer alerts",
-          icon: Bank
-        },
-        {
-          title: "Large Exposure Limits",
-          description: "Automatic tracking of single-borrower and group exposure against COBAC concentration limits",
-          icon: Warning
-        },
-        {
-          title: "COBAC Return Filing",
-          description: "Automated generation of monthly, quarterly, and annual regulatory returns to BEAC",
-          icon: FileText
-        },
-        {
-          title: "Provisioning & NPL Classification",
-          description: "COBAC-compliant loan classification (Pass, Special Mention, Substandard, Doubtful, Loss) with provision calculation",
-          icon: Scales
-        },
-        {
-          title: "Governance & Risk Reports",
-          description: "Board-level risk reports covering credit, market, operational, and Shariah non-compliance risks",
-          icon: ClipboardText
-        }
-      ]
-    },
-    {
-      id: "aml-cft",
-      title: "AML/CFT & GABAC Compliance",
-      subtitle: "Anti-money laundering and counter-terrorism financing controls",
-      icon: ShieldCheck,
-      color: "bg-white",
       image: "/people.jpg",
       features: [
         {
-          title: "Customer Due Diligence (CDD)",
-          description: "Enhanced due diligence for high-risk customers with PEP screening and beneficial ownership identification",
-          icon: UserCheck
+          title: t("sections.userManagement.features.userCreation.title"),
+          description: t("sections.userManagement.features.userCreation.description"),
+          icon: UserGear
         },
         {
-          title: "Transaction Monitoring",
-          description: "Real-time screening of transactions against FCFA thresholds with suspicious activity flagging",
-          icon: Eye
+          title: t("sections.userManagement.features.rbac.title"),
+          description: t("sections.userManagement.features.rbac.description"),
+          icon: ShieldCheck
         },
         {
-          title: "GABAC Sanctions Screening",
-          description: "Automated screening against CEMAC-wide sanctions lists and UN consolidated terrorism list",
-          icon: Warning
+          title: t("sections.userManagement.features.branchAssignment.title"),
+          description: t("sections.userManagement.features.branchAssignment.description"),
+          icon: Buildings
         },
         {
-          title: "Suspicious Transaction Reports",
-          description: "STR filing workflow with case management and secure submission to ANIF Cameroon",
-          icon: FileText
+          title: t("sections.userManagement.features.passwordPolicy.title"),
+          description: t("sections.userManagement.features.passwordPolicy.description"),
+          icon: Lock
         },
         {
-          title: "Wire Transfer Monitoring",
-          description: "Cross-border transfer screening with originator and beneficiary information validation",
-          icon: Bank
+          title: t("sections.userManagement.features.sessionManagement.title"),
+          description: t("sections.userManagement.features.sessionManagement.description"),
+          icon: Clock
         },
         {
-          title: "AML Risk Scoring",
-          description: "Customer risk rating based on occupation, transaction patterns, geography, and product usage",
-          icon: ChartBar
+          title: t("sections.userManagement.features.auditTrail.title"),
+          description: t("sections.userManagement.features.auditTrail.description"),
+          icon: ClipboardText
         }
       ]
     },
     {
-      id: "document-management",
-      title: "Contract & Document Management",
-      subtitle: "Digital repository for all Islamic finance contracts and compliance documents",
-      icon: FolderOpen,
+      id: "system-configuration",
+      title: t("sections.systemConfiguration.title"),
+      subtitle: t("sections.systemConfiguration.subtitle"),
+      icon: GearSix,
+      color: "bg-gradient-to-br from-tikari-gold/90 to-tikari-gold/70",
+      image: "/personOffice.jpg",
+      features: [
+        {
+          title: t("sections.systemConfiguration.features.workingDays.title"),
+          description: t("sections.systemConfiguration.features.workingDays.description"),
+          icon: CalendarCheck
+        },
+        {
+          title: t("sections.systemConfiguration.features.transactionLimits.title"),
+          description: t("sections.systemConfiguration.features.transactionLimits.description"),
+          icon: ShieldCheck
+        },
+        {
+          title: t("sections.systemConfiguration.features.profitRates.title"),
+          description: t("sections.systemConfiguration.features.profitRates.description"),
+          icon: ChartLineUp
+        },
+        {
+          title: t("sections.systemConfiguration.features.currency.title"),
+          description: t("sections.systemConfiguration.features.currency.description"),
+          icon: CurrencyCircleDollar
+        },
+        {
+          title: t("sections.systemConfiguration.features.fees.title"),
+          description: t("sections.systemConfiguration.features.fees.description"),
+          icon: Receipt
+        },
+        {
+          title: t("sections.systemConfiguration.features.notifications.title"),
+          description: t("sections.systemConfiguration.features.notifications.description"),
+          icon: ClipboardText
+        }
+      ]
+    },
+    {
+      id: "branch-management",
+      title: t("sections.branchManagement.title"),
+      subtitle: t("sections.branchManagement.subtitle"),
+      icon: Buildings,
+      color: "bg-tikari-green-dark text-white",
+      image: "/meeting.jpg",
+      features: [
+        {
+          title: t("sections.branchManagement.features.registration.title"),
+          description: t("sections.branchManagement.features.registration.description"),
+          icon: Buildings
+        },
+        {
+          title: t("sections.branchManagement.features.hierarchies.title"),
+          description: t("sections.branchManagement.features.hierarchies.description"),
+          icon: ListChecks
+        },
+        {
+          title: t("sections.branchManagement.features.branchLimits.title"),
+          description: t("sections.branchManagement.features.branchLimits.description"),
+          icon: ShieldCheck
+        },
+        {
+          title: t("sections.branchManagement.features.interBranch.title"),
+          description: t("sections.branchManagement.features.interBranch.description"),
+          icon: ArrowsClockwise
+        },
+        {
+          title: t("sections.branchManagement.features.performance.title"),
+          description: t("sections.branchManagement.features.performance.description"),
+          icon: ChartLineUp
+        },
+        {
+          title: t("sections.branchManagement.features.activation.title"),
+          description: t("sections.branchManagement.features.activation.description"),
+          icon: CheckCircle
+        }
+      ]
+    },
+    {
+      id: "eod-processes",
+      title: t("sections.eodProcesses.title"),
+      subtitle: t("sections.eodProcesses.subtitle"),
+      icon: CalendarCheck,
+      color: "bg-white",
+      image: "/bnw-muslim.jpg",
+      features: [
+        {
+          title: t("sections.eodProcesses.features.eoti.title"),
+          description: t("sections.eodProcesses.features.eoti.description"),
+          icon: Clock
+        },
+        {
+          title: t("sections.eodProcesses.features.profitAccrual.title"),
+          description: t("sections.eodProcesses.features.profitAccrual.description"),
+          icon: Calculator
+        },
+        {
+          title: t("sections.eodProcesses.features.markupIncome.title"),
+          description: t("sections.eodProcesses.features.markupIncome.description"),
+          icon: ChartLineUp
+        },
+        {
+          title: t("sections.eodProcesses.features.maintenance.title"),
+          description: t("sections.eodProcesses.features.maintenance.description"),
+          icon: Receipt
+        },
+        {
+          title: t("sections.eodProcesses.features.dormancy.title"),
+          description: t("sections.eodProcesses.features.dormancy.description"),
+          icon: Warning
+        },
+        {
+          title: t("sections.eodProcesses.features.eofi.title"),
+          description: t("sections.eodProcesses.features.eofi.description"),
+          icon: CheckCircle
+        }
+      ]
+    },
+    {
+      id: "backup-archival",
+      title: t("sections.backupArchival.title"),
+      subtitle: t("sections.backupArchival.subtitle"),
+      icon: Database,
       color: "bg-tikari-sage-light/40",
       image: "/handshake.jpg",
       features: [
         {
-          title: "Digital Contract Vault",
-          description: "Secure storage of all financing contracts with version control and e-signature integration",
-          icon: FolderOpen
+          title: t("sections.backupArchival.features.dailyBackup.title"),
+          description: t("sections.backupArchival.features.dailyBackup.description"),
+          icon: HardDrives
         },
         {
-          title: "Template Library",
-          description: "SSB-approved contract templates for Murabaha, Ijara, Mudarabah, and Musharakah with variable fields",
-          icon: FileText
+          title: t("sections.backupArchival.features.archival.title"),
+          description: t("sections.backupArchival.features.archival.description"),
+          icon: FileArchive
         },
         {
-          title: "Customer Consent Records",
-          description: "Digital archiving of customer consent forms, disclosures, and acknowledgments per COBAC requirements",
-          icon: Certificate
+          title: t("sections.backupArchival.features.disasterRecovery.title"),
+          description: t("sections.backupArchival.features.disasterRecovery.description"),
+          icon: ArrowsClockwise
         },
         {
-          title: "Compliance Document Tracking",
-          description: "Centralized tracking of licenses, board resolutions, SSB fatwas, and regulatory approvals",
-          icon: ListChecks
+          title: t("sections.backupArchival.features.retention.title"),
+          description: t("sections.backupArchival.features.retention.description"),
+          icon: CalendarCheck
         },
         {
-          title: "Retention Policy Automation",
-          description: "Automated enforcement of 10-year document retention policy with secure archival and deletion",
-          icon: Clock
+          title: t("sections.backupArchival.features.verification.title"),
+          description: t("sections.backupArchival.features.verification.description"),
+          icon: CheckCircle
         },
         {
-          title: "Audit Trail Retrieval",
-          description: "Quick retrieval of contract history and amendment trail for internal audits and COBAC inspections",
-          icon: MagnifyingGlass
+          title: t("sections.backupArchival.features.auditLogArchival.title"),
+          description: t("sections.backupArchival.features.auditLogArchival.description"),
+          icon: ClipboardText
         }
       ]
     },
     {
-      id: "reporting-analytics",
-      title: "Compliance Reporting & Analytics",
-      subtitle: "Real-time dashboards and regulatory report generation",
-      icon: ChartBar,
+      id: "monitoring-alerts",
+      title: t("sections.monitoringAlerts.title"),
+      subtitle: t("sections.monitoringAlerts.subtitle"),
+      icon: ChartLineUp,
       color: "bg-tikari-gold/8",
-      image: "/meeting.jpg",
+      image: "/compliance.jpg",
       features: [
         {
-          title: "Real-Time Compliance Dashboard",
-          description: "Executive dashboard with CAR, LCR, NPL ratio, Shariah compliance score, and red-flag alerts",
-          icon: ChartBar
+          title: t("sections.monitoringAlerts.features.performance.title"),
+          description: t("sections.monitoringAlerts.features.performance.description"),
+          icon: ChartLineUp
         },
         {
-          title: "AAOIFI Financial Statements",
-          description: "Automated generation of AAOIFI-compliant financial statements with profit equalization reserve disclosure",
-          icon: FileText
+          title: t("sections.monitoringAlerts.features.volumeMonitoring.title"),
+          description: t("sections.monitoringAlerts.features.volumeMonitoring.description"),
+          icon: ListChecks
         },
         {
-          title: "COBAC Return Generator",
-          description: "One-click generation of all required COBAC regulatory returns with pre-validation checks",
-          icon: Bank
+          title: t("sections.monitoringAlerts.features.failedTransactions.title"),
+          description: t("sections.monitoringAlerts.features.failedTransactions.description"),
+          icon: Warning
         },
         {
-          title: "SSB Annual Report",
-          description: "End-of-year Shariah compliance report with statistics on product volumes, exceptions, and purification",
-          icon: Books
+          title: t("sections.monitoringAlerts.features.eodMonitoring.title"),
+          description: t("sections.monitoringAlerts.features.eodMonitoring.description"),
+          icon: CalendarCheck
         },
         {
-          title: "Trend Analysis",
-          description: "Historical trend charts for key ratios, non-compliance events, and risk metrics",
-          icon: ChartBar
+          title: t("sections.monitoringAlerts.features.licenseExpiry.title"),
+          description: t("sections.monitoringAlerts.features.licenseExpiry.description"),
+          icon: Clock
         },
         {
-          title: "Custom Report Builder",
-          description: "Ad-hoc report builder for internal audits, COBAC queries, and management information requests",
-          icon: ClipboardText
+          title: t("sections.monitoringAlerts.features.anomalies.title"),
+          description: t("sections.monitoringAlerts.features.anomalies.description"),
+          icon: ShieldCheck
         }
       ]
     }
@@ -280,10 +284,10 @@ export default function CompliancePage() {
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="max-w-4xl">
             <h1 className="text-4xl lg:text-[3.75rem] font-bold leading-[1.05] tracking-tight mb-6">
-              Compliance & Shariah Governance
+              {t("hero.title")}
             </h1>
             <p className="text-[17px] lg:text-[19px] text-white/85 leading-relaxed max-w-3xl">
-              Independent Shariah Supervisory Board oversight, COBAC regulatory compliance, GABAC AML/CFT controls, and AAOIFI reporting standards. Built for Cameroon's Islamic banking regulatory environment.
+              {t("hero.subtitle")}
             </p>
           </div>
         </div>
@@ -395,10 +399,10 @@ export default function CompliancePage() {
         
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <h2 className="text-3xl lg:text-[2.75rem] font-bold mb-6 leading-[1.15] tracking-tight">
-            See Compliance Operations in Action
+            {t("cta.title")}
           </h2>
           <p className="text-[16px] lg:text-[18px] text-tikari-green-dark/75 leading-relaxed mb-10 max-w-2xl mx-auto">
-            Schedule a personalized demo to see how TIKARI manages Shariah Supervisory Board operations, COBAC regulatory compliance, and GABAC AML/CFT controls for Cameroon's Islamic banking environment.
+            {t("cta.subtitle")}
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -408,7 +412,7 @@ export default function CompliancePage() {
               href="/demo"
               className="group bg-tikari-green-dark text-white hover:bg-tikari-green rounded-none"
             >
-              Schedule a Demo
+              {t("cta.scheduleDemo")}
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" weight="bold" />
             </Button>
             
@@ -418,7 +422,7 @@ export default function CompliancePage() {
               href="/platform"
               className="group bg-white/90 text-tikari-green-dark hover:bg-white border-2 border-tikari-green-dark/20 rounded-none"
             >
-              Explore Other Modules
+              {t("cta.exploreModules")}
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" weight="bold" />
             </Button>
           </div>

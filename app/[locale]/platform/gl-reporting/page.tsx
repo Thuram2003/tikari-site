@@ -2,268 +2,270 @@
 
 import { 
   ArrowRight, 
-  MapPin,
-  UserCircle,
-  DeviceMobile,
-  Coins,
+  ChartBar,
+  ListNumbers,
+  BookOpen,
   Receipt,
+  FileText,
   ChartLineUp,
   Bank,
+  Coins,
+  Calculator,
+  Calendar,
+  PresentationChart,
+  Scales,
   CheckCircle,
-  ShieldCheck,
-  Users,
-  WifiHigh,
-  Wallet,
+  TrendUp,
   CurrencyCircleDollar,
-  Storefront,
-  FileText,
+  Notebook,
   ClipboardText,
-  Fingerprint,
-  Calendar
+  Archive
 } from "@phosphor-icons/react";
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui";
+import { useTranslations } from "next-intl";
 
-export default function AgentBankingPage() {
+export default function GLReportingPage() {
+  const t = useTranslations("platform.glReporting");
   const sections = [
     {
-      id: "agent-network",
-      title: "Agent Network Management",
-      subtitle: "Recruit, onboard, and manage branchless banking agents across Cameroon",
-      icon: Storefront,
+      id: "chart-of-accounts",
+      title: t("sections.chartOfAccounts.title"),
+      subtitle: t("sections.chartOfAccounts.subtitle"),
+      icon: ListNumbers,
       color: "bg-gradient-to-br from-tikari-green-dark to-tikari-green",
-      image: "/woman-market.jpg",
+      image: "/personOffice.jpg",
       features: [
         {
-          title: "Agent Recruitment & KYC",
-          description: "Comprehensive agent onboarding with CNI verification, trade license checks, and business location validation",
-          icon: UserCircle
+          title: t("sections.chartOfAccounts.features.cobacCoa.title"),
+          description: t("sections.chartOfAccounts.features.cobacCoa.description"),
+          icon: ListNumbers
         },
         {
-          title: "Agent Categorization",
-          description: "Multi-tier agent structure from kiosk agents to super-agents with cascading commission and float management",
-          icon: Users
+          title: t("sections.chartOfAccounts.features.islamicExtensions.title"),
+          description: t("sections.chartOfAccounts.features.islamicExtensions.description"),
+          icon: Bank
         },
         {
-          title: "Geo-Location Tagging",
-          description: "GPS-based agent location tracking with coverage area mapping for branch expansion planning",
-          icon: MapPin
-        },
-        {
-          title: "Device Registration",
-          description: "Register agent POS terminals and mobile devices with IMEI tracking and device lock/unlock controls",
-          icon: DeviceMobile
-        },
-        {
-          title: "Float Authorization",
-          description: "Set agent cash and e-money float limits with dynamic limit adjustment based on transaction volume",
+          title: t("sections.chartOfAccounts.features.multiCurrency.title"),
+          description: t("sections.chartOfAccounts.features.multiCurrency.description"),
           icon: CurrencyCircleDollar
         },
         {
-          title: "Performance Monitoring",
-          description: "Real-time dashboards tracking agent transaction volumes, success rates, and customer complaints",
+          title: t("sections.chartOfAccounts.features.hierarchies.title"),
+          description: t("sections.chartOfAccounts.features.hierarchies.description"),
           icon: ChartLineUp
+        },
+        {
+          title: t("sections.chartOfAccounts.features.profitPools.title"),
+          description: t("sections.chartOfAccounts.features.profitPools.description"),
+          icon: Coins
+        },
+        {
+          title: t("sections.chartOfAccounts.features.customCreation.title"),
+          description: t("sections.chartOfAccounts.features.customCreation.description"),
+          icon: CheckCircle
         }
       ]
     },
     {
-      id: "mobile-money",
-      title: "Mobile Money Integration",
-      subtitle: "MTN Mobile Money and Orange Money interoperability for deposits and withdrawals",
-      icon: DeviceMobile,
+      id: "journal-entries",
+      title: t("sections.journalEntries.title"),
+      subtitle: t("sections.journalEntries.subtitle"),
+      icon: BookOpen,
       color: "bg-gradient-to-br from-tikari-gold/90 to-tikari-gold/70",
-      image: "/people.jpg",
+      image: "/meeting.jpg",
       features: [
         {
-          title: "MTN Mobile Money API",
-          description: "Direct integration with MTN MoMo for account-to-wallet transfers and wallet-to-account deposits",
-          icon: DeviceMobile
+          title: t("sections.journalEntries.features.automatedPosting.title"),
+          description: t("sections.journalEntries.features.automatedPosting.description"),
+          icon: CheckCircle
         },
         {
-          title: "Orange Money API",
-          description: "Real-time Orange Money integration for cash-in and cash-out transactions in FCFA",
-          icon: Wallet
+          title: t("sections.journalEntries.features.manualEntry.title"),
+          description: t("sections.journalEntries.features.manualEntry.description"),
+          icon: Notebook
         },
         {
-          title: "Transaction Reconciliation",
-          description: "Automated matching of mobile money transactions with agent float and customer account updates",
-          icon: Receipt
+          title: t("sections.journalEntries.features.makerChecker.title"),
+          description: t("sections.journalEntries.features.makerChecker.description"),
+          icon: Scales
         },
         {
-          title: "BEAC E-Money Compliance",
-          description: "Full compliance with BEAC electronic money regulations for mobile money partnerships",
-          icon: ShieldCheck
+          title: t("sections.journalEntries.features.recurring.title"),
+          description: t("sections.journalEntries.features.recurring.description"),
+          icon: Calendar
         },
         {
-          title: "Interoperability Support",
-          description: "Cross-network transfers between MTN and Orange Money via BEAC interoperability switch",
-          icon: WifiHigh
+          title: t("sections.journalEntries.features.reversal.title"),
+          description: t("sections.journalEntries.features.reversal.description"),
+          icon: Archive
         },
         {
-          title: "Wallet Linking",
-          description: "Link customer bank accounts to mobile money wallets for seamless fund transfers",
-          icon: Bank
+          title: t("sections.journalEntries.features.batchPosting.title"),
+          description: t("sections.journalEntries.features.batchPosting.description"),
+          icon: ClipboardText
         }
       ]
     },
     {
-      id: "field-operations",
-      title: "Field Operations & Collections",
-      subtitle: "Mobile-first field banking with offline transaction capability",
-      icon: MapPin,
+      id: "financial-statements",
+      title: t("sections.financialStatements.title"),
+      subtitle: t("sections.financialStatements.subtitle"),
+      icon: PresentationChart,
       color: "bg-tikari-green-dark text-white",
-      image: "/women-market.jpg",
+      image: "/bnw-muslim.jpg",
       features: [
         {
-          title: "Offline Transaction Mode",
-          description: "Queue transactions locally during network outages with automatic sync when connectivity returns",
-          icon: WifiHigh
+          title: t("sections.financialStatements.features.position.title"),
+          description: t("sections.financialStatements.features.position.description"),
+          icon: FileText
         },
         {
-          title: "GPS-Tagged Collections",
-          description: "Every field transaction stamped with GPS coordinates and timestamp for audit trail",
-          icon: MapPin
+          title: t("sections.financialStatements.features.income.title"),
+          description: t("sections.financialStatements.features.income.description"),
+          icon: ChartLineUp
         },
         {
-          title: "Customer Visit Tracking",
-          description: "Field officer route planning with scheduled customer visits and visit completion tracking",
+          title: t("sections.financialStatements.features.cashFlow.title"),
+          description: t("sections.financialStatements.features.cashFlow.description"),
+          icon: CurrencyCircleDollar
+        },
+        {
+          title: t("sections.financialStatements.features.equity.title"),
+          description: t("sections.financialStatements.features.equity.description"),
+          icon: TrendUp
+        },
+        {
+          title: t("sections.financialStatements.features.notes.title"),
+          description: t("sections.financialStatements.features.notes.description"),
           icon: ClipboardText
         },
         {
-          title: "Biometric Authentication",
-          description: "Fingerprint capture for customer identification and transaction authorization in the field",
-          icon: Fingerprint
-        },
-        {
-          title: "Njangi Group Collections",
-          description: "Mobile collection interface for Njangi group contributions with group member attendance tracking",
-          icon: Users
-        },
-        {
-          title: "Field Cash Management",
-          description: "Track field officer cash holdings with beginning/ending cash counts and vault deposit workflows",
-          icon: Coins
+          title: t("sections.financialStatements.features.comparative.title"),
+          description: t("sections.financialStatements.features.comparative.description"),
+          icon: ChartBar
         }
       ]
     },
     {
-      id: "cash-in-cash-out",
-      title: "Cash-In / Cash-Out Operations",
-      subtitle: "Agent-facilitated deposit and withdrawal transactions",
-      icon: Coins,
+      id: "ifrs-aaoifi",
+      title: t("sections.ifrsAaoifi.title"),
+      subtitle: t("sections.ifrsAaoifi.subtitle"),
+      icon: CheckCircle,
       color: "bg-white",
       image: "/handshake.jpg",
       features: [
         {
-          title: "Customer Deposit (Cash-In)",
-          description: "Agents accept cash deposits and credit customer accounts in real-time with SMS confirmation",
-          icon: Coins
-        },
-        {
-          title: "Customer Withdrawal (Cash-Out)",
-          description: "Agent-facilitated withdrawals with OTP verification and daily customer withdrawal limits",
-          icon: Wallet
-        },
-        {
-          title: "Agent Float Management",
-          description: "Real-time tracking of agent cash position with low-balance alerts and float rebalancing",
+          title: t("sections.ifrsAaoifi.features.ifrs9.title"),
+          description: t("sections.ifrsAaoifi.features.ifrs9.description"),
           icon: Bank
         },
         {
-          title: "Transaction Limits",
-          description: "Per-transaction and daily limits for cash-in/cash-out based on agent tier and customer KYC level",
-          icon: ShieldCheck
+          title: t("sections.ifrsAaoifi.features.aaoifiMapping.title"),
+          description: t("sections.ifrsAaoifi.features.aaoifiMapping.description"),
+          icon: Scales
         },
         {
-          title: "Receipt Generation",
-          description: "Instant digital and SMS receipt for every transaction with transaction ID and agent details",
+          title: t("sections.ifrsAaoifi.features.fairValue.title"),
+          description: t("sections.ifrsAaoifi.features.fairValue.description"),
+          icon: TrendUp
+        },
+        {
+          title: t("sections.ifrsAaoifi.features.revenue.title"),
+          description: t("sections.ifrsAaoifi.features.revenue.description"),
           icon: Receipt
         },
         {
-          title: "Reversal Workflow",
-          description: "Agent-initiated reversal requests with supervisor approval and customer notification",
+          title: t("sections.ifrsAaoifi.features.leaseAccounting.title"),
+          description: t("sections.ifrsAaoifi.features.leaseAccounting.description"),
           icon: FileText
+        },
+        {
+          title: t("sections.ifrsAaoifi.features.checklists.title"),
+          description: t("sections.ifrsAaoifi.features.checklists.description"),
+          icon: CheckCircle
         }
       ]
     },
     {
-      id: "commission-management",
-      title: "Commission & Incentive Management",
-      subtitle: "Automated agent commission calculation and payout in FCFA",
-      icon: ChartLineUp,
+      id: "profit-distribution",
+      title: t("sections.profitDistribution.title"),
+      subtitle: t("sections.profitDistribution.subtitle"),
+      icon: Coins,
       color: "bg-tikari-sage-light/40",
       image: "/money.jpg",
       features: [
         {
-          title: "Tiered Commission Structure",
-          description: "Define commission rates by transaction type, value bands, and agent performance tiers",
-          icon: ChartLineUp
+          title: t("sections.profitDistribution.features.poolCalculation.title"),
+          description: t("sections.profitDistribution.features.poolCalculation.description"),
+          icon: Calculator
         },
         {
-          title: "Real-Time Accrual",
-          description: "Commission earned accrued instantly on transaction completion with running balance visibility",
+          title: t("sections.profitDistribution.features.mudaribShare.title"),
+          description: t("sections.profitDistribution.features.mudaribShare.description"),
+          icon: Scales
+        },
+        {
+          title: t("sections.profitDistribution.features.investorDistribution.title"),
+          description: t("sections.profitDistribution.features.investorDistribution.description"),
           icon: Coins
         },
         {
-          title: "Monthly Payout Cycle",
-          description: "Automated monthly commission payout to agent accounts with detailed commission statement",
-          icon: Calendar
+          title: t("sections.profitDistribution.features.per.title"),
+          description: t("sections.profitDistribution.features.per.description"),
+          icon: Bank
         },
         {
-          title: "Performance Bonuses",
-          description: "Volume-based incentives for agents exceeding monthly transaction or customer acquisition targets",
-          icon: Receipt
+          title: t("sections.profitDistribution.features.irr.title"),
+          description: t("sections.profitDistribution.features.irr.description"),
+          icon: CheckCircle
         },
         {
-          title: "Commission Deductions",
-          description: "Automatic deduction for chargebacks, reversals, and penalty fees from commission balance",
-          icon: FileText
-        },
-        {
-          title: "Commission Reports",
-          description: "Agent-level and network-wide commission analytics with trend analysis and forecasting",
+          title: t("sections.profitDistribution.features.reports.title"),
+          description: t("sections.profitDistribution.features.reports.description"),
           icon: ClipboardText
         }
       ]
     },
     {
       id: "regulatory-reporting",
-      title: "Agent Banking Compliance & Reporting",
-      subtitle: "COBAC agent banking regulations and BEAC reporting",
-      icon: ShieldCheck,
+      title: t("sections.regulatoryReporting.title"),
+      subtitle: t("sections.regulatoryReporting.subtitle"),
+      icon: ChartBar,
       color: "bg-tikari-gold/8",
-      image: "/compliance.jpg",
+      image: "/muslim-woman.jpg",
       features: [
         {
-          title: "COBAC Agent Banking Norms",
-          description: "Full compliance with COBAC regulations on agent banking and branchless banking operations",
-          icon: ShieldCheck
-        },
-        {
-          title: "Agent AML/CFT Screening",
-          description: "Continuous monitoring of agent transactions for suspicious patterns and GABAC compliance",
-          icon: CheckCircle
-        },
-        {
-          title: "BEAC E-Money Returns",
-          description: "Automated submission of electronic money transaction reports to BEAC per regulatory schedule",
-          icon: Bank
-        },
-        {
-          title: "Agent Activity Reports",
-          description: "Daily, weekly, and monthly agent activity summaries for internal audit and COBAC inspection",
-          icon: ClipboardText
-        },
-        {
-          title: "Customer Complaint Tracking",
-          description: "Centralized complaint logging with agent investigation workflow and resolution SLA tracking",
+          title: t("sections.regulatoryReporting.features.cobacReturns.title"),
+          description: t("sections.regulatoryReporting.features.cobacReturns.description"),
           icon: FileText
         },
         {
-          title: "Geographic Expansion Analysis",
-          description: "Coverage maps showing agent density and underserved areas for strategic network expansion",
-          icon: MapPin
+          title: t("sections.regulatoryReporting.features.trialBalance.title"),
+          description: t("sections.regulatoryReporting.features.trialBalance.description"),
+          icon: ListNumbers
+        },
+        {
+          title: t("sections.regulatoryReporting.features.glInquiry.title"),
+          description: t("sections.regulatoryReporting.features.glInquiry.description"),
+          icon: BookOpen
+        },
+        {
+          title: t("sections.regulatoryReporting.features.budgetAnalysis.title"),
+          description: t("sections.regulatoryReporting.features.budgetAnalysis.description"),
+          icon: ChartBar
+        },
+        {
+          title: t("sections.regulatoryReporting.features.branchPl.title"),
+          description: t("sections.regulatoryReporting.features.branchPl.description"),
+          icon: Bank
+        },
+        {
+          title: t("sections.regulatoryReporting.features.dashboards.title"),
+          description: t("sections.regulatoryReporting.features.dashboards.description"),
+          icon: PresentationChart
         }
       ]
     }
@@ -280,10 +282,10 @@ export default function AgentBankingPage() {
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="max-w-4xl">
             <h1 className="text-4xl lg:text-[3.75rem] font-bold leading-[1.05] tracking-tight mb-6">
-              Agent & Field Banking
+              {t("hero.title")}
             </h1>
             <p className="text-[17px] lg:text-[19px] text-white/85 leading-relaxed max-w-3xl">
-              Comprehensive branchless banking platform with agent network management, MTN Mobile Money and Orange Money integration, field operations, and COBAC agent banking compliance for Cameroon's financial inclusion.
+              {t("hero.subtitle")}
             </p>
           </div>
         </div>
@@ -395,10 +397,10 @@ export default function AgentBankingPage() {
         
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <h2 className="text-3xl lg:text-[2.75rem] font-bold mb-6 leading-[1.15] tracking-tight">
-            See Agent Banking in Action
+            {t("cta.title")}
           </h2>
           <p className="text-[16px] lg:text-[18px] text-tikari-green-dark/75 leading-relaxed mb-10 max-w-2xl mx-auto">
-            Schedule a personalized demo to see how TIKARI manages agent networks, MTN/Orange Money integration, field operations, and COBAC agent banking compliance for Cameroon's branchless banking needs.
+            {t("cta.subtitle")}
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -408,7 +410,7 @@ export default function AgentBankingPage() {
               href="/demo"
               className="group bg-tikari-green-dark text-white hover:bg-tikari-green rounded-none"
             >
-              Schedule a Demo
+              {t("cta.scheduleDemo")}
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" weight="bold" />
             </Button>
             
@@ -418,7 +420,7 @@ export default function AgentBankingPage() {
               href="/platform"
               className="group bg-white/90 text-tikari-green-dark hover:bg-white border-2 border-tikari-green-dark/20 rounded-none"
             >
-              Explore Other Modules
+              {t("cta.exploreModules")}
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" weight="bold" />
             </Button>
           </div>

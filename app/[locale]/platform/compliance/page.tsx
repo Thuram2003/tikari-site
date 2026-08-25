@@ -2,270 +2,270 @@
 
 import { 
   ArrowRight, 
-  Users,
-  GearSix,
-  Buildings,
-  CalendarCheck,
-  Database,
-  ChartLineUp,
   ShieldCheck,
-  UserGear,
-  Lock,
-  Clock,
-  FileArchive,
+  Scales,
+  FileText,
+  ClipboardText,
+  MagnifyingGlass,
+  Certificate,
+  ChartBar,
+  FolderOpen,
+  UserCheck,
+  Bank,
   Warning,
   CheckCircle,
+  Clock,
   ListChecks,
-  ClipboardText,
-  HardDrives,
-  ArrowsClockwise,
-  CurrencyCircleDollar,
-  Receipt,
-  Calculator
+  Stamp,
+  Eye,
+  Books,
+  Gavel
 } from "@phosphor-icons/react";
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui";
+import { useTranslations } from "next-intl";
 
-export default function AdministrationPage() {
+export default function CompliancePage() {
+  const t = useTranslations("platform.compliance");
   const sections = [
     {
-      id: "user-management",
-      title: "User & Role Management",
-      subtitle: "Hierarchical user access control with role-based permissions",
-      icon: Users,
+      id: "shariah-board",
+      title: t("sections.shariahBoard.title"),
+      subtitle: t("sections.shariahBoard.subtitle"),
+      icon: Scales,
       color: "bg-gradient-to-br from-tikari-green-dark to-tikari-green",
-      image: "/people.jpg",
+      image: "/muslim-meeting.jpg",
       features: [
         {
-          title: "User Creation & Profiles",
-          description: "Create staff users with personal details, contact information, and employment status tracking",
-          icon: UserGear
+          title: t("sections.shariahBoard.features.composition.title"),
+          description: t("sections.shariahBoard.features.composition.description"),
+          icon: Certificate
         },
         {
-          title: "Role-Based Access Control",
-          description: "Pre-defined roles (Teller, Branch Manager, Shariah Officer, Auditor) with granular permissions",
-          icon: ShieldCheck
+          title: t("sections.shariahBoard.features.fatwaWorkflow.title"),
+          description: t("sections.shariahBoard.features.fatwaWorkflow.description"),
+          icon: Gavel
         },
         {
-          title: "Branch & Department Assignment",
-          description: "Assign users to specific branches and departments with multi-branch access for supervisors",
-          icon: Buildings
+          title: t("sections.shariahBoard.features.productApproval.title"),
+          description: t("sections.shariahBoard.features.productApproval.description"),
+          icon: CheckCircle
         },
         {
-          title: "Password Policy Enforcement",
-          description: "Configurable password complexity, expiration, and lockout policies per COBAC security guidelines",
-          icon: Lock
+          title: t("sections.shariahBoard.features.quarterlyReports.title"),
+          description: t("sections.shariahBoard.features.quarterlyReports.description"),
+          icon: FileText
         },
         {
-          title: "Session Management",
-          description: "Active session monitoring with idle timeout, forced logout, and concurrent session limits",
-          icon: Clock
+          title: t("sections.shariahBoard.features.annualAudit.title"),
+          description: t("sections.shariahBoard.features.annualAudit.description"),
+          icon: MagnifyingGlass
         },
         {
-          title: "Audit Trail Logging",
-          description: "Complete user activity log including login/logout, transactions, and configuration changes",
-          icon: ClipboardText
+          title: t("sections.shariahBoard.features.fatwaDatabase.title"),
+          description: t("sections.shariahBoard.features.fatwaDatabase.description"),
+          icon: Books
         }
       ]
     },
     {
-      id: "system-configuration",
-      title: "System Configuration & Parameters",
-      subtitle: "Core system settings for Islamic banking operations",
-      icon: GearSix,
+      id: "internal-shariah-audit",
+      title: t("sections.internalAudit.title"),
+      subtitle: t("sections.internalAudit.subtitle"),
+      icon: MagnifyingGlass,
       color: "bg-gradient-to-br from-tikari-gold/90 to-tikari-gold/70",
-      image: "/personOffice.jpg",
+      image: "/compliance.jpg",
       features: [
         {
-          title: "Working Days Calendar",
-          description: "Configure bank working days, public holidays in Cameroon, and weekend days for transaction processing",
-          icon: CalendarCheck
-        },
-        {
-          title: "Transaction Limits",
-          description: "Set daily transaction limits by customer tier, product type, and channel (branch, agent, mobile)",
-          icon: ShieldCheck
-        },
-        {
-          title: "Profit Rate Configuration",
-          description: "Maintain profit rate benchmarks for Murabaha, Mudarabah, and Ijara products with historical tracking",
-          icon: ChartLineUp
-        },
-        {
-          title: "Currency & Exchange Rates",
-          description: "Primary FCFA accounting with foreign currency support and BEAC exchange rate synchronization",
-          icon: CurrencyCircleDollar
-        },
-        {
-          title: "Fee & Charge Templates",
-          description: "Configure bank fees for account maintenance, transfers, SMS alerts, and Shariah-compliant service charges",
-          icon: Receipt
-        },
-        {
-          title: "Notification Templates",
-          description: "SMS and email templates for transaction alerts, payment reminders, and Shariah compliance notices",
-          icon: ClipboardText
-        }
-      ]
-    },
-    {
-      id: "branch-management",
-      title: "Branch & Network Management",
-      subtitle: "Multi-branch setup with centralized control and local autonomy",
-      icon: Buildings,
-      color: "bg-tikari-green-dark text-white",
-      image: "/meeting.jpg",
-      features: [
-        {
-          title: "Branch Registration",
-          description: "Register branches with full address, BEAC interbank codes, and COBAC branch registration numbers",
-          icon: Buildings
-        },
-        {
-          title: "Branch Hierarchies",
-          description: "Define head office, regional offices, and branch structure with reporting relationships",
+          title: t("sections.internalAudit.features.sampling.title"),
+          description: t("sections.internalAudit.features.sampling.description"),
           icon: ListChecks
         },
         {
-          title: "Branch-Level Limits",
-          description: "Set lending limits, cash holding limits, and approval thresholds per branch",
-          icon: ShieldCheck
+          title: t("sections.internalAudit.features.contractReview.title"),
+          description: t("sections.internalAudit.features.contractReview.description"),
+          icon: FileText
         },
         {
-          title: "Inter-Branch Accounting",
-          description: "Automated inter-branch GL postings for fund transfers and central treasury allocation",
-          icon: ArrowsClockwise
-        },
-        {
-          title: "Branch Performance Tracking",
-          description: "Compare branch performance on deposits, financing disbursements, and profitability metrics",
-          icon: ChartLineUp
-        },
-        {
-          title: "Branch Activation/Suspension",
-          description: "Activate new branches and temporarily suspend branches for maintenance or regulatory issues",
-          icon: CheckCircle
-        }
-      ]
-    },
-    {
-      id: "eod-processes",
-      title: "End-of-Day (EOD) Processes",
-      subtitle: "Automated batch processes for daily close and account updates",
-      icon: CalendarCheck,
-      color: "bg-white",
-      image: "/bnw-muslim.jpg",
-      features: [
-        {
-          title: "EOTI (End of Transaction Input)",
-          description: "Mark end of customer-facing transactions with final batch cutoff time and transaction freeze",
-          icon: Clock
-        },
-        {
-          title: "Profit Accrual Calculation",
-          description: "Daily profit accrual for Mudarabah investment accounts with pool-wise profit allocation",
-          icon: Calculator
-        },
-        {
-          title: "Markup Income Recognition",
-          description: "Accrue Murabaha and Ijara markup income with effective interest rate method",
-          icon: ChartLineUp
-        },
-        {
-          title: "Account Maintenance Charges",
-          description: "Auto-debit monthly account maintenance fees from customer accounts per product terms",
-          icon: Receipt
-        },
-        {
-          title: "Dormancy Marking",
-          description: "Automated flagging of accounts with no transactions beyond dormancy threshold period",
+          title: t("sections.internalAudit.features.prohibitedRevenue.title"),
+          description: t("sections.internalAudit.features.prohibitedRevenue.description"),
           icon: Warning
         },
         {
-          title: "EOFI (End of Financial Input)",
-          description: "Complete day-end with trial balance generation, backup, and open next business day",
-          icon: CheckCircle
+          title: t("sections.internalAudit.features.auditTrail.title"),
+          description: t("sections.internalAudit.features.auditTrail.description"),
+          icon: Clock
+        },
+        {
+          title: t("sections.internalAudit.features.nonCompliance.title"),
+          description: t("sections.internalAudit.features.nonCompliance.description"),
+          icon: ClipboardText
+        },
+        {
+          title: t("sections.internalAudit.features.purification.title"),
+          description: t("sections.internalAudit.features.purification.description"),
+          icon: ShieldCheck
         }
       ]
     },
     {
-      id: "backup-archival",
-      title: "Backup & Data Archival",
-      subtitle: "Automated backup and regulatory data retention compliance",
-      icon: Database,
+      id: "cobac-compliance",
+      title: t("sections.cobacCompliance.title"),
+      subtitle: t("sections.cobacCompliance.subtitle"),
+      icon: Bank,
+      color: "bg-tikari-green-dark text-white",
+      image: "/bnw-muslim.jpg",
+      features: [
+        {
+          title: t("sections.cobacCompliance.features.capitalAdequacy.title"),
+          description: t("sections.cobacCompliance.features.capitalAdequacy.description"),
+          icon: ChartBar
+        },
+        {
+          title: t("sections.cobacCompliance.features.liquidityRatios.title"),
+          description: t("sections.cobacCompliance.features.liquidityRatios.description"),
+          icon: Bank
+        },
+        {
+          title: t("sections.cobacCompliance.features.largeExposure.title"),
+          description: t("sections.cobacCompliance.features.largeExposure.description"),
+          icon: Warning
+        },
+        {
+          title: t("sections.cobacCompliance.features.returnFiling.title"),
+          description: t("sections.cobacCompliance.features.returnFiling.description"),
+          icon: FileText
+        },
+        {
+          title: t("sections.cobacCompliance.features.provisioning.title"),
+          description: t("sections.cobacCompliance.features.provisioning.description"),
+          icon: Scales
+        },
+        {
+          title: t("sections.cobacCompliance.features.riskReports.title"),
+          description: t("sections.cobacCompliance.features.riskReports.description"),
+          icon: ClipboardText
+        }
+      ]
+    },
+    {
+      id: "aml-cft",
+      title: t("sections.amlCft.title"),
+      subtitle: t("sections.amlCft.subtitle"),
+      icon: ShieldCheck,
+      color: "bg-white",
+      image: "/people.jpg",
+      features: [
+        {
+          title: t("sections.amlCft.features.cdd.title"),
+          description: t("sections.amlCft.features.cdd.description"),
+          icon: UserCheck
+        },
+        {
+          title: t("sections.amlCft.features.transactionMonitoring.title"),
+          description: t("sections.amlCft.features.transactionMonitoring.description"),
+          icon: Eye
+        },
+        {
+          title: t("sections.amlCft.features.sanctionsScreening.title"),
+          description: t("sections.amlCft.features.sanctionsScreening.description"),
+          icon: Warning
+        },
+        {
+          title: t("sections.amlCft.features.str.title"),
+          description: t("sections.amlCft.features.str.description"),
+          icon: FileText
+        },
+        {
+          title: t("sections.amlCft.features.wireTransfer.title"),
+          description: t("sections.amlCft.features.wireTransfer.description"),
+          icon: Bank
+        },
+        {
+          title: t("sections.amlCft.features.riskScoring.title"),
+          description: t("sections.amlCft.features.riskScoring.description"),
+          icon: ChartBar
+        }
+      ]
+    },
+    {
+      id: "document-management",
+      title: t("sections.documentManagement.title"),
+      subtitle: t("sections.documentManagement.subtitle"),
+      icon: FolderOpen,
       color: "bg-tikari-sage-light/40",
       image: "/handshake.jpg",
       features: [
         {
-          title: "Automated Daily Backup",
-          description: "Scheduled full and incremental database backups with encryption and remote storage",
-          icon: HardDrives
+          title: t("sections.documentManagement.features.digitalVault.title"),
+          description: t("sections.documentManagement.features.digitalVault.description"),
+          icon: FolderOpen
         },
         {
-          title: "Transaction Archival",
-          description: "Move closed transactions older than 2 years to archival storage while maintaining query access",
-          icon: FileArchive
+          title: t("sections.documentManagement.features.templateLibrary.title"),
+          description: t("sections.documentManagement.features.templateLibrary.description"),
+          icon: FileText
         },
         {
-          title: "Disaster Recovery Plan",
-          description: "Documented DR procedures with backup restoration testing and recovery time objectives (RTO)",
-          icon: ArrowsClockwise
+          title: t("sections.documentManagement.features.consentRecords.title"),
+          description: t("sections.documentManagement.features.consentRecords.description"),
+          icon: Certificate
         },
         {
-          title: "10-Year Retention Policy",
-          description: "COBAC-mandated 10-year retention of all customer records, contracts, and financial statements",
-          icon: CalendarCheck
+          title: t("sections.documentManagement.features.complianceTracking.title"),
+          description: t("sections.documentManagement.features.complianceTracking.description"),
+          icon: ListChecks
         },
         {
-          title: "Backup Verification",
-          description: "Automated backup integrity checks with monthly test restorations to verify recoverability",
-          icon: CheckCircle
+          title: t("sections.documentManagement.features.retentionPolicy.title"),
+          description: t("sections.documentManagement.features.retentionPolicy.description"),
+          icon: Clock
         },
         {
-          title: "Audit Log Archival",
-          description: "Secure long-term storage of audit logs for internal audits and COBAC inspections",
-          icon: ClipboardText
+          title: t("sections.documentManagement.features.auditRetrieval.title"),
+          description: t("sections.documentManagement.features.auditRetrieval.description"),
+          icon: MagnifyingGlass
         }
       ]
     },
     {
-      id: "monitoring-alerts",
-      title: "System Monitoring & Alerts",
-      subtitle: "Real-time system health monitoring and proactive alerting",
-      icon: ChartLineUp,
+      id: "reporting-analytics",
+      title: t("sections.reportingAnalytics.title"),
+      subtitle: t("sections.reportingAnalytics.subtitle"),
+      icon: ChartBar,
       color: "bg-tikari-gold/8",
-      image: "/compliance.jpg",
+      image: "/meeting.jpg",
       features: [
         {
-          title: "System Performance Metrics",
-          description: "Monitor CPU, memory, disk usage, and database performance with threshold-based alerts",
-          icon: ChartLineUp
+          title: t("sections.reportingAnalytics.features.dashboard.title"),
+          description: t("sections.reportingAnalytics.features.dashboard.description"),
+          icon: ChartBar
         },
         {
-          title: "Transaction Volume Monitoring",
-          description: "Track hourly transaction volumes with anomaly detection for unusual spikes or drops",
-          icon: ListChecks
+          title: t("sections.reportingAnalytics.features.aaoifiStatements.title"),
+          description: t("sections.reportingAnalytics.features.aaoifiStatements.description"),
+          icon: FileText
         },
         {
-          title: "Failed Transaction Alerts",
-          description: "Real-time notifications for failed transactions, timeout errors, and integration failures",
-          icon: Warning
+          title: t("sections.reportingAnalytics.features.cobacGenerator.title"),
+          description: t("sections.reportingAnalytics.features.cobacGenerator.description"),
+          icon: Bank
         },
         {
-          title: "EOD Process Monitoring",
-          description: "Dashboard showing EOD batch job status, completion time, and exception handling",
-          icon: CalendarCheck
+          title: t("sections.reportingAnalytics.features.ssbReport.title"),
+          description: t("sections.reportingAnalytics.features.ssbReport.description"),
+          icon: Books
         },
         {
-          title: "License & Certificate Expiry",
-          description: "Proactive alerts for expiring SSL certificates, software licenses, and COBAC approvals",
-          icon: Clock
+          title: t("sections.reportingAnalytics.features.trendAnalysis.title"),
+          description: t("sections.reportingAnalytics.features.trendAnalysis.description"),
+          icon: ChartBar
         },
         {
-          title: "User Activity Anomalies",
-          description: "Detect unusual user behavior including off-hours access, excessive failed logins, and privilege misuse",
-          icon: ShieldCheck
+          title: t("sections.reportingAnalytics.features.customBuilder.title"),
+          description: t("sections.reportingAnalytics.features.customBuilder.description"),
+          icon: ClipboardText
         }
       ]
     }
@@ -282,10 +282,10 @@ export default function AdministrationPage() {
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="max-w-4xl">
             <h1 className="text-4xl lg:text-[3.75rem] font-bold leading-[1.05] tracking-tight mb-6">
-              Administration & EOD Processes
+              {t("hero.title")}
             </h1>
             <p className="text-[17px] lg:text-[19px] text-white/85 leading-relaxed max-w-3xl">
-              Complete system administration with user management, branch setup, end-of-day batch processes, automated backups, and real-time monitoring. Built for COBAC compliance and multi-branch Islamic banking operations in FCFA.
+              {t("hero.subtitle")}
             </p>
           </div>
         </div>
@@ -397,10 +397,10 @@ export default function AdministrationPage() {
         
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <h2 className="text-3xl lg:text-[2.75rem] font-bold mb-6 leading-[1.15] tracking-tight">
-            See Administration in Action
+            {t("cta.title")}
           </h2>
           <p className="text-[16px] lg:text-[18px] text-tikari-green-dark/75 leading-relaxed mb-10 max-w-2xl mx-auto">
-            Schedule a personalized demo to see how TIKARI handles user management, system configuration, EOD batch processes, and multi-branch administration for Cameroon's Islamic banking operations.
+            {t("cta.subtitle")}
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -410,7 +410,7 @@ export default function AdministrationPage() {
               href="/demo"
               className="group bg-tikari-green-dark text-white hover:bg-tikari-green rounded-none"
             >
-              Schedule a Demo
+              {t("cta.scheduleDemo")}
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" weight="bold" />
             </Button>
             
@@ -420,7 +420,7 @@ export default function AdministrationPage() {
               href="/platform"
               className="group bg-white/90 text-tikari-green-dark hover:bg-white border-2 border-tikari-green-dark/20 rounded-none"
             >
-              Explore Other Modules
+              {t("cta.exploreModules")}
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" weight="bold" />
             </Button>
           </div>

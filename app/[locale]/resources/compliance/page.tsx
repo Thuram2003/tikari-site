@@ -169,10 +169,6 @@ export default function CompliancePage() {
         
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="max-w-4xl">
-            <div className="inline-flex items-center gap-2 bg-tikari-gold/20 text-tikari-gold px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-tikari-gold/30">
-              <FileText weight="bold" className="h-4 w-4" />
-              Compliance Hub
-            </div>
             
             <h1 className="text-4xl lg:text-[3.75rem] font-bold leading-[1.05] tracking-tight mb-6">
               Regulatory Updates
@@ -186,17 +182,15 @@ export default function CompliancePage() {
                 variant="secondary"
                 size="lg"
                 href="#frameworks"
-                className="group bg-tikari-gold text-tikari-green-dark hover:bg-tikari-gold/90 rounded-none"
               >
                 View Regulations
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" weight="bold" />
               </Button>
               
               <Button
-                variant="secondary"
+                variant="cream"
                 size="lg"
                 href="#documents"
-                className="group bg-white/10 text-white hover:bg-white/20 border-2 border-white/20 rounded-none"
               >
                 Download Resources
               </Button>
@@ -223,14 +217,14 @@ export default function CompliancePage() {
               return (
                 <div 
                   key={idx}
-                  className={`bg-white border-2 ${framework.color} hover:shadow-xl transition-all duration-300`}
+                  className={`bg-white border ${framework.color} hover:shadow-xl transition-all duration-300 rounded-lg overflow-hidden`}
                 >
                   <div className="p-8">
                     <div className="flex flex-col lg:flex-row lg:items-start gap-6">
                       {/* Left: Icon and Title */}
                       <div className="lg:w-2/5">
                         <div className="flex items-start gap-4 mb-4">
-                          <div className="p-3 bg-tikari-green/10">
+                          <div className="p-3 bg-tikari-green/10 rounded-md">
                             <Icon className="h-7 w-7 text-tikari-green-dark" weight="bold" />
                           </div>
                           <div>
@@ -256,7 +250,7 @@ export default function CompliancePage() {
                           {framework.updates.map((update, i) => (
                             <div 
                               key={i}
-                              className="flex items-start gap-4 p-4 bg-tikari-cream/30 border border-tikari-green/10 hover:border-tikari-green/30 transition-colors"
+                              className="flex items-start gap-4 p-4 bg-tikari-cream/30 border border-tikari-green/10 hover:border-tikari-green/30 transition-colors rounded-md"
                             >
                               <Calendar className="h-5 w-5 text-tikari-green-dark mt-0.5 flex-shrink-0" weight="bold" />
                               <div className="flex-1">
@@ -306,7 +300,7 @@ export default function CompliancePage() {
             {complianceDocuments.map((doc, idx) => (
               <div 
                 key={idx}
-                className="bg-white border-2 border-tikari-green/20 hover:border-tikari-gold hover:shadow-xl transition-all duration-300 group"
+                className="bg-white border border-tikari-green/20 hover:border-tikari-gold hover:shadow-xl transition-all duration-300 group rounded-lg overflow-hidden"
               >
                 <div className="p-6">
                   <div className="flex items-start justify-between mb-4">
@@ -328,10 +322,10 @@ export default function CompliancePage() {
                     <span className="font-semibold">{doc.format}</span>
                   </div>
                   
-                  <button className="w-full flex items-center justify-center gap-2 py-2.5 bg-tikari-green-dark text-white hover:bg-tikari-green transition-colors group-hover:bg-tikari-gold group-hover:text-tikari-green-dark">
+                  <Button className="w-full flex items-center justify-center gap-2 py-2.5" >
                     <Download className="h-4 w-4" weight="bold" />
                     <span className="text-sm font-semibold">Download</span>
-                  </button>
+                  </Button>
                 </div>
               </div>
             ))}
@@ -355,7 +349,7 @@ export default function CompliancePage() {
             {webinars.map((webinar, idx) => (
               <div 
                 key={idx}
-                className="bg-white border-2 border-tikari-green/20 hover:border-tikari-green hover:shadow-xl transition-all duration-300"
+                className="bg-white border border-tikari-green/20 hover:border-tikari-green hover:shadow-xl transition-all duration-300 rounded-lg overflow-hidden"
               >
                 <div className="p-6">
                   <div className="flex items-center gap-3 mb-4">
@@ -388,9 +382,9 @@ export default function CompliancePage() {
                     ))}
                   </div>
                   
-                  <button className="w-full py-2.5 bg-tikari-green-dark text-white hover:bg-tikari-green transition-colors text-sm font-semibold">
+                  <Button className="w-full py-2.5">
                     {webinar.status === 'Upcoming' ? 'Register Now' : 'Watch Recording'}
-                  </button>
+                  </Button>
                 </div>
               </div>
             ))}
@@ -410,20 +404,18 @@ export default function CompliancePage() {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
-              variant="secondary"
+              variant="primary"
               size="lg"
               href="/resources/support"
-              className="group bg-tikari-green-dark text-white hover:bg-tikari-green rounded-none"
             >
               Contact Compliance Team
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" weight="bold" />
             </Button>
             
             <Button
-              variant="secondary"
+              variant="cream"
               size="lg"
               href="/demo"
-              className="group bg-white/10 text-tikari-green-dark hover:bg-white/20 border-2 border-tikari-green-dark/20 rounded-none"
             >
               Book a Demo
             </Button>

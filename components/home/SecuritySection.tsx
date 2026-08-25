@@ -1,36 +1,39 @@
 import { Eye, ShieldCheck, Lock, UserCheck, AlertTriangle, BarChart3 } from "lucide-react";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 export default function SecuritySection() {
+  const t = useTranslations("home.security");
+  
   const securityItems = [
     {
-      title: "Four-eyes principle",
-      desc: "Every financial operation goes through maker-checker approval. No single user can initiate and approve the same transaction, reducing operational and compliance risks under COBAC supervision.",
+      title: t("items.fourEyes.title"),
+      desc: t("items.fourEyes.desc"),
       icon: UserCheck
     },
     {
-      title: "Immutable audit trail",
-      desc: "Every user action modifying data is logged with timestamp, user ID, IP address, and complete before and after state. Instantly exportable for COBAC regulatory audits and internal Shariah Board reviews.",
+      title: t("items.audit.title"),
+      desc: t("items.audit.desc"),
       icon: ShieldCheck
     },
     {
-      title: "Granular RBAC",
-      desc: "14 pre-built banking roles including System Admin, Branch Manager, Credit Officer, Shariah Compliance Officer, Internal Shariah Auditor, ACE Member, Teller, and Agent Banking Representative with customizable permission controls.",
+      title: t("items.rbac.title"),
+      desc: t("items.rbac.desc"),
       icon: Lock
     },
     {
-      title: "Sensitive data controls",
-      desc: "CNI (Carte Nationale d'Identité), Passport, and account details are masked by default. Reveal operations require specific privileges, are logged to audit trails, and auto-hide after 30 seconds.",
+      title: t("items.sensitive.title"),
+      desc: t("items.sensitive.desc"),
       icon: Eye
     },
     {
-      title: "AML/CFT monitoring",
-      desc: "Real-time transaction compliance rules for velocity, amount anomaly, structuring, dormant account activity, PEP screening, and sanctions lists in accordance with CEMAC directives and GABAC recommendations.",
+      title: t("items.aml.title"),
+      desc: t("items.aml.desc"),
       icon: AlertTriangle
     },
     {
-      title: "Regulatory compliance posture",
-      desc: "Capital adequacy ratio metrics, liquidity ratio alerts, large exposure tracking, FOGADAC premium submissions, and COBAC prudential return logs visible in real time to authorized compliance officers.",
+      title: t("items.compliance.title"),
+      desc: t("items.compliance.desc"),
       icon: BarChart3
     }
   ];
@@ -40,13 +43,13 @@ export default function SecuritySection() {
       <div className="max-w-7xl mx-auto space-y-14 lg:space-y-16">
         <div className="text-center max-w-3xl mx-auto space-y-5">
           <div className="inline-flex items-center px-3.5 py-1.5 bg-tikari-gold/10 border border-tikari-gold/30">
-            <span className="text-[11px] uppercase tracking-[0.15em] text-tikari-gold-dark font-semibold">Security & Control</span>
+            <span className="text-[11px] uppercase tracking-[0.15em] text-tikari-gold-dark font-semibold">{t("badge")}</span>
           </div>
           <h2 className="text-4xl lg:text-[3.25rem] font-bold text-tikari-green-dark leading-[1.15] tracking-tight">
-            Audit-ready from day one
+            {t("title")}
           </h2>
           <p className="text-[15px] lg:text-[17px] text-tikari-sage leading-relaxed max-w-2xl mx-auto">
-            Protect your institution with comprehensive, banking-grade security and Shariah-compliant audit trails designed to withstand strict COBAC regulatory review.
+            {t("subtitle")}
           </p>
         </div>
 
@@ -57,14 +60,14 @@ export default function SecuritySection() {
             <div className="absolute inset-0 bg-tikari-green/5"></div>
             <Image
               src="/bnw-muslim.jpg"
-              alt="COBAC compliance and regulatory audit readiness"
+              alt={t("imageCaption")}
               fill
               className="object-cover"
               priority
             />
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-tikari-green-dark/90 to-transparent p-6">
               <p className="text-sm text-white/90 leading-relaxed">
-                COBAC-compliant audit trails and Shariah Board governance workflows built into every transaction
+                {t("imageCaption")}
               </p>
             </div>
           </div>

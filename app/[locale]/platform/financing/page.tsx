@@ -21,246 +21,249 @@ import {
 } from "@phosphor-icons/react";
 import Link from "next/link";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui";
 
 export default function FinancingPage() {
+  const t = useTranslations("platform.financing");
+  
   const sections = [
     {
       id: "murabaha",
-      title: "Murabaha (Cost-Plus Financing)",
-      subtitle: "Asset purchase financing with transparent markup disclosure",
+      title: t("sections.murabaha.title"),
+      subtitle: t("sections.murabaha.subtitle"),
       icon: Storefront,
       color: "bg-gradient-to-br from-tikari-green-dark to-tikari-green",
       image: "/personOffice.jpg",
       features: [
         {
-          title: "Asset Procurement Workflow",
-          description: "Bank purchases asset from supplier on behalf of customer with full procurement documentation",
+          title: t("sections.murabaha.features.assetProcurement.title"),
+          description: t("sections.murabaha.features.assetProcurement.description"),
           icon: Package
         },
         {
-          title: "Transparent Markup Calculation",
-          description: "Clear disclosure of cost price, markup percentage, and total selling price in FCFA",
+          title: t("sections.murabaha.features.transparentMarkup.title"),
+          description: t("sections.murabaha.features.transparentMarkup.description"),
           icon: Receipt
         },
         {
-          title: "Deferred Payment Structure",
-          description: "Flexible installment schedules with equal or reducing payments over contract term",
+          title: t("sections.murabaha.features.deferredPayment.title"),
+          description: t("sections.murabaha.features.deferredPayment.description"),
           icon: ChartLineUp
         },
         {
-          title: "GL Split Posting",
-          description: "Separate GL accounts for asset cost, markup income, and receivable with AAOIFI-compliant structure",
+          title: t("sections.murabaha.features.glSplit.title"),
+          description: t("sections.murabaha.features.glSplit.description"),
           icon: Bank
         },
         {
-          title: "Supplier Integration",
-          description: "Direct supplier payment with three-party contract documentation and delivery verification",
+          title: t("sections.murabaha.features.supplierIntegration.title"),
+          description: t("sections.murabaha.features.supplierIntegration.description"),
           icon: Handshake
         },
         {
-          title: "Shariah Validation",
-          description: "Automated compliance checks ensuring asset ownership transfer and markup reasonability",
+          title: t("sections.murabaha.features.shariahValidation.title"),
+          description: t("sections.murabaha.features.shariahValidation.description"),
           icon: ShieldCheck
         }
       ]
     },
     {
       id: "mudarabah",
-      title: "Mudarabah (Profit-Sharing Partnership)",
-      subtitle: "Investment partnership with capital provider and entrepreneur",
+      title: t("sections.mudarabah.title"),
+      subtitle: t("sections.mudarabah.subtitle"),
       icon: Handshake,
       color: "bg-gradient-to-br from-tikari-gold/90 to-tikari-gold/70",
       image: "/muslim-meeting.jpg",
       features: [
         {
-          title: "Partnership Constitution",
-          description: "Define capital provider (Rabb-ul-Maal) and entrepreneur (Mudarib) with clear profit-sharing ratio",
+          title: t("sections.mudarabah.features.partnershipConstitution.title"),
+          description: t("sections.mudarabah.features.partnershipConstitution.description"),
           icon: FileText
         },
         {
-          title: "Capital Deployment Tracking",
-          description: "Monitor fund utilization with milestone-based disbursement and activity reporting",
+          title: t("sections.mudarabah.features.capitalDeployment.title"),
+          description: t("sections.mudarabah.features.capitalDeployment.description"),
           icon: TrendUp
         },
         {
-          title: "Profit Distribution Logic",
-          description: "Automated profit calculation and distribution based on pre-agreed ratio at contract maturity",
+          title: t("sections.mudarabah.features.profitDistribution.title"),
+          description: t("sections.mudarabah.features.profitDistribution.description"),
           icon: ChartLineUp
         },
         {
-          title: "Loss Allocation Rules",
-          description: "Capital loss borne by bank (Rabb-ul-Maal) unless due to Mudarib negligence or misconduct",
+          title: t("sections.mudarabah.features.lossAllocation.title"),
+          description: t("sections.mudarabah.features.lossAllocation.description"),
           icon: Scales
         },
         {
-          title: "Periodic Reporting",
-          description: "Quarterly financial statements from Mudarib with audited final accounts at contract end",
+          title: t("sections.mudarabah.features.periodicReporting.title"),
+          description: t("sections.mudarabah.features.periodicReporting.description"),
           icon: ClipboardText
         },
         {
-          title: "Investment Pool Ledgers",
-          description: "Separate GL pools for restricted and unrestricted Mudarabah with investor profit allocation",
+          title: t("sections.mudarabah.features.investmentPool.title"),
+          description: t("sections.mudarabah.features.investmentPool.description"),
           icon: Bank
         }
       ]
     },
     {
       id: "musharakah",
-      title: "Musharakah (Joint Venture Financing)",
-      subtitle: "Equity partnership with shared capital and management",
+      title: t("sections.musharakah.title"),
+      subtitle: t("sections.musharakah.subtitle"),
       icon: ChartLineUp,
       color: "bg-tikari-green-dark text-white",
       image: "/meeting.jpg",
       features: [
         {
-          title: "Joint Capital Contribution",
-          description: "Multi-party capital injection with percentage ownership and voting rights per partner",
+          title: t("sections.musharakah.features.jointCapital.title"),
+          description: t("sections.musharakah.features.jointCapital.description"),
           icon: CurrencyCircleDollar
         },
         {
-          title: "Diminishing Musharakah",
-          description: "Progressive ownership transfer as customer buys out bank's equity stake over time",
+          title: t("sections.musharakah.features.diminishing.title"),
+          description: t("sections.musharakah.features.diminishing.description"),
           icon: TrendUp
         },
         {
-          title: "Profit & Loss Sharing",
-          description: "Profit distribution by agreement; loss allocation strictly in proportion to capital contribution",
+          title: t("sections.musharakah.features.profitLossSharing.title"),
+          description: t("sections.musharakah.features.profitLossSharing.description"),
           icon: Scales
         },
         {
-          title: "Management Rights",
-          description: "Partner participation in business decisions with veto rights on major financial commitments",
+          title: t("sections.musharakah.features.managementRights.title"),
+          description: t("sections.musharakah.features.managementRights.description"),
           icon: Handshake
         },
         {
-          title: "Exit Strategy Workflow",
-          description: "Pre-defined exit mechanisms including buyout, dissolution, or third-party sale with valuation rules",
+          title: t("sections.musharakah.features.exitStrategy.title"),
+          description: t("sections.musharakah.features.exitStrategy.description"),
           icon: CheckCircle
         },
         {
-          title: "Equity Ledger Tracking",
-          description: "Real-time tracking of each partner's equity balance, profit share, and capital calls",
+          title: t("sections.musharakah.features.equityLedger.title"),
+          description: t("sections.musharakah.features.equityLedger.description"),
           icon: Bank
         }
       ]
     },
     {
       id: "ijara",
-      title: "Ijara (Shariah-Compliant Leasing)",
-      subtitle: "Asset leasing with transfer or return options at term end",
+      title: t("sections.ijara.title"),
+      subtitle: t("sections.ijara.subtitle"),
       icon: Buildings,
       color: "bg-white",
       image: "/handshake.jpg",
       features: [
         {
-          title: "Operating & Finance Lease",
-          description: "Support for Ijara (operating lease) and Ijara Muntahia Bittamleek (lease-to-own) structures",
+          title: t("sections.ijara.features.operatingFinance.title"),
+          description: t("sections.ijara.features.operatingFinance.description"),
           icon: Buildings
         },
         {
-          title: "Asset Registration",
-          description: "Bank ownership registration with depreciation schedule and residual value tracking",
+          title: t("sections.ijara.features.assetRegistration.title"),
+          description: t("sections.ijara.features.assetRegistration.description"),
           icon: FileText
         },
         {
-          title: "Rental Calculation Engine",
-          description: "Fixed or variable rental with market-linked indexation and scheduled rental reviews",
+          title: t("sections.ijara.features.rentalCalculation.title"),
+          description: t("sections.ijara.features.rentalCalculation.description"),
           icon: Receipt
         },
         {
-          title: "Maintenance Obligations",
-          description: "Clear allocation of maintenance costs between lessor (bank) and lessee (customer) in contract",
+          title: t("sections.ijara.features.maintenanceObligations.title"),
+          description: t("sections.ijara.features.maintenanceObligations.description"),
           icon: CheckCircle
         },
         {
-          title: "Early Termination Handling",
-          description: "Penalty-free termination with fair asset valuation and refund of advance rentals",
+          title: t("sections.ijara.features.earlyTermination.title"),
+          description: t("sections.ijara.features.earlyTermination.description"),
           icon: Scales
         },
         {
-          title: "Purchase Option at Maturity",
-          description: "End-of-term purchase at market value or pre-agreed nominal price for Muntahia Bittamleek",
+          title: t("sections.ijara.features.purchaseOption.title"),
+          description: t("sections.ijara.features.purchaseOption.description"),
           icon: ShieldCheck
         }
       ]
     },
     {
       id: "salam-istisna",
-      title: "Salam & Istisna (Forward Contracts)",
-      subtitle: "Agricultural advance purchase and manufacturing project finance",
+      title: t("sections.salamIstisna.title"),
+      subtitle: t("sections.salamIstisna.subtitle"),
       icon: Package,
       color: "bg-tikari-sage-light/40",
       image: "/women-market.jpg",
       features: [
         {
-          title: "Salam (Agricultural Finance)",
-          description: "Advance payment for future crop delivery with quality and quantity specifications",
+          title: t("sections.salamIstisna.features.salam.title"),
+          description: t("sections.salamIstisna.features.salam.description"),
           icon: Package
         },
         {
-          title: "Istisna (Manufacturing Finance)",
-          description: "Progress-based financing for asset construction with milestone delivery and inspection",
+          title: t("sections.salamIstisna.features.istisna.title"),
+          description: t("sections.salamIstisna.features.istisna.description"),
           icon: Hammer
         },
         {
-          title: "Commodity Specification",
-          description: "Detailed description of deliverable goods including grade, quantity, delivery date, and location",
+          title: t("sections.salamIstisna.features.commoditySpec.title"),
+          description: t("sections.salamIstisna.features.commoditySpec.description"),
           icon: FileText
         },
         {
-          title: "Parallel Salam/Istisna",
-          description: "Back-to-back contracts with onward sale to third party for bank risk mitigation",
+          title: t("sections.salamIstisna.features.parallel.title"),
+          description: t("sections.salamIstisna.features.parallel.description"),
           icon: Handshake
         },
         {
-          title: "Delivery & Inspection Workflow",
-          description: "Multi-stage delivery verification with quality checks and acceptance documentation",
+          title: t("sections.salamIstisna.features.deliveryInspection.title"),
+          description: t("sections.salamIstisna.features.deliveryInspection.description"),
           icon: CheckCircle
         },
         {
-          title: "Inventory & Receivables GL",
-          description: "Pre-delivery inventory tracking and post-delivery receivable recognition per AAOIFI FAS",
+          title: t("sections.salamIstisna.features.inventoryReceivables.title"),
+          description: t("sections.salamIstisna.features.inventoryReceivables.description"),
           icon: Bank
         }
       ]
     },
     {
       id: "treasury",
-      title: "Treasury & Liquidity Management",
-      subtitle: "Shariah-compliant liquidity and interbank operations",
+      title: t("sections.treasury.title"),
+      subtitle: t("sections.treasury.subtitle"),
       icon: Bank,
       color: "bg-tikari-gold/8",
       image: "/money.jpg",
       features: [
         {
-          title: "Sukuk Portfolio Management",
-          description: "Track sovereign and corporate Sukuk holdings with coupon accrual and maturity management",
+          title: t("sections.treasury.features.sukukPortfolio.title"),
+          description: t("sections.treasury.features.sukukPortfolio.description"),
           icon: Receipt
         },
         {
-          title: "Commodity Murabaha (Tawarruq)",
-          description: "Short-term liquidity through commodity trading with Shariah-compliant metal brokers",
+          title: t("sections.treasury.features.commodityMurabaha.title"),
+          description: t("sections.treasury.features.commodityMurabaha.description"),
           icon: Coins
         },
         {
-          title: "Interbank Wakala Placements",
-          description: "Place surplus funds with Islamic banks as agent with agreed profit-sharing ratio",
+          title: t("sections.treasury.features.interbankWakala.title"),
+          description: t("sections.treasury.features.interbankWakala.description"),
           icon: Handshake
         },
         {
-          title: "COBAC Reserve Compliance",
-          description: "Automated reserve calculation and placement with BEAC per COBAC liquidity ratios",
+          title: t("sections.treasury.features.cobacReserve.title"),
+          description: t("sections.treasury.features.cobacReserve.description"),
           icon: ShieldCheck
         },
         {
-          title: "Profit Rate Risk Hedging",
-          description: "Shariah-compliant hedging instruments for benchmark rate exposure management",
+          title: t("sections.treasury.features.profitRateRisk.title"),
+          description: t("sections.treasury.features.profitRateRisk.description"),
           icon: ChartLineUp
         },
         {
-          title: "Liquidity Coverage Ratio",
-          description: "Real-time LCR monitoring with HQLA classification and inflow/outflow projections",
+          title: t("sections.treasury.features.liquidityCoverage.title"),
+          description: t("sections.treasury.features.liquidityCoverage.description"),
           icon: TrendUp
         }
       ]
@@ -278,10 +281,10 @@ export default function FinancingPage() {
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="max-w-4xl">
             <h1 className="text-4xl lg:text-[3.75rem] font-bold leading-[1.05] tracking-tight mb-6">
-              Islamic Financing & Treasury
+              {t("hero.title")}
             </h1>
             <p className="text-[17px] lg:text-[19px] text-white/85 leading-relaxed max-w-3xl">
-              Native support for all six Shariah-compliant financing structures with dedicated GL logic, profit-sharing mechanics, and Shariah validation workflows. Built for COBAC returns and AAOIFI standards in FCFA.
+              {t("hero.subtitle")}
             </p>
           </div>
         </div>
@@ -393,10 +396,10 @@ export default function FinancingPage() {
         
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <h2 className="text-3xl lg:text-[2.75rem] font-bold mb-6 leading-[1.15] tracking-tight">
-            See Shariah Financing in Action
+            {t("cta.title")}
           </h2>
           <p className="text-[16px] lg:text-[18px] text-tikari-green-dark/75 leading-relaxed mb-10 max-w-2xl mx-auto">
-            Schedule a personalized demo to see how TIKARI handles Murabaha, Mudarabah, Musharakah, Ijara, Salam, and Istisna financing with full AAOIFI compliance.
+            {t("cta.subtitle")}
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -406,7 +409,7 @@ export default function FinancingPage() {
               href="/demo"
               className="group bg-tikari-green-dark text-white hover:bg-tikari-green rounded-none"
             >
-              Schedule a Demo
+              {t("cta.scheduleDemo")}
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" weight="bold" />
             </Button>
             
@@ -416,7 +419,7 @@ export default function FinancingPage() {
               href="/platform"
               className="group bg-white/90 text-tikari-green-dark hover:bg-white border-2 border-tikari-green-dark/20 rounded-none"
             >
-              Explore Other Modules
+              {t("cta.exploreModules")}
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" weight="bold" />
             </Button>
           </div>

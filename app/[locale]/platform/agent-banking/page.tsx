@@ -2,263 +2,270 @@
 
 import { 
   ArrowRight, 
-  UserCircle,
-  Bank,
-  Users,
-  CashRegister,
-  ArrowsLeftRight,
   MapPin,
-  CheckCircle,
-  IdentificationCard,
-  Fingerprint,
-  ChartLineUp,
-  Handshake,
+  UserCircle,
+  DeviceMobile,
   Coins,
-  ShieldCheck
+  Receipt,
+  ChartLineUp,
+  Bank,
+  CheckCircle,
+  ShieldCheck,
+  Users,
+  WifiHigh,
+  Wallet,
+  CurrencyCircleDollar,
+  Storefront,
+  FileText,
+  ClipboardText,
+  Fingerprint,
+  Calendar
 } from "@phosphor-icons/react";
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui";
+import { useTranslations } from "next-intl";
 
-export default function BankingOperationsPage() {
+export default function AgentBankingPage() {
+  const t = useTranslations("platform.agentBanking");
   const sections = [
     {
-      id: "kyc",
-      title: "Customer Onboarding & KYC",
-      subtitle: "Three-tier identity verification with Cameroon national standards",
-      icon: UserCircle,
+      id: "agent-network",
+      title: t("sections.agentNetwork.title"),
+      subtitle: t("sections.agentNetwork.subtitle"),
+      icon: Storefront,
       color: "bg-gradient-to-br from-tikari-green-dark to-tikari-green",
-      image: "/muslim-woman.jpg",
-      features: [
-        {
-          title: "Three-tier KYC",
-          description: "Tier 1: basic identification; Tier 2: CNI-verified; Tier 3: full passport + proof of address",
-          icon: IdentificationCard
-        },
-        {
-          title: "CNI Verification",
-          description: "Real-time verification against national identity database for Cameroon citizens",
-          icon: ShieldCheck
-        },
-        {
-          title: "Passport Verification",
-          description: "International passport verification for foreign nationals and diaspora customers",
-          icon: IdentificationCard
-        },
-        {
-          title: "Biometric Capture",
-          description: "Fingerprint and facial recognition support for enhanced security and customer deduplication",
-          icon: Fingerprint
-        },
-        {
-          title: "KYC Upgrade Workflow",
-          description: "Seamless tier upgrade process with maker-checker approval for compliance",
-          icon: CheckCircle
-        },
-        {
-          title: "Customer Deduplication",
-          description: "Automated duplicate detection on onboarding using CNI, phone, and biometric data",
-          icon: Users
-        }
-      ]
-    },
-    {
-      id: "accounts",
-      title: "Account Management",
-      subtitle: "Shariah-compliant savings and investment accounts",
-      icon: Bank,
-      color: "bg-gradient-to-br from-tikari-gold/90 to-tikari-gold/70",
-      image: "/personOffice.jpg",
-      features: [
-        {
-          title: "Wadiah Yad Dhamanah",
-          description: "Safe custody demand deposit accounts with full capital guarantee",
-          icon: Bank
-        },
-        {
-          title: "Mudarabah Investment Accounts",
-          description: "Profit-sharing investment accounts with transparent pool distribution",
-          icon: ChartLineUp
-        },
-        {
-          title: "Youth & Minor Savings",
-          description: "Dedicated accounts for young savers with parental mandate management",
-          icon: Users
-        },
-        {
-          title: "Joint Accounts",
-          description: "Multi-signatory accounts with flexible operation rules and mandate controls",
-          icon: Handshake
-        },
-        {
-          title: "Dormancy Detection",
-          description: "Automated flagging and reactivation workflow for inactive accounts",
-          icon: CheckCircle
-        },
-        {
-          title: "Mandate Management",
-          description: "Digital signatory management with specimen signature and approval matrix",
-          icon: ShieldCheck
-        }
-      ]
-    },
-    {
-      id: "njangi",
-      title: "Njangi & Group Banking",
-      subtitle: "Digitized Tontine operations for rotating savings groups",
-      icon: Users,
-      color: "bg-gradient-to-br from-tikari-sage to-tikari-green/40",
-      image: "/women-market.jpg",
-      features: [
-        {
-          title: "Group Constitution",
-          description: "Register groups with member details, rotation schedule, and contribution rules",
-          icon: Users
-        },
-        {
-          title: "Rotating Savings Cycles",
-          description: "Automated cycle management with rotation tracking and disbursement scheduling",
-          icon: ArrowsLeftRight
-        },
-        {
-          title: "Automatic Disbursement",
-          description: "Auto-credit to rotation recipient on cycle completion with full audit trail",
-          icon: Coins
-        },
-        {
-          title: "Variable & Fixed Contributions",
-          description: "Support for both fixed monthly contributions and variable member deposits",
-          icon: ChartLineUp
-        },
-        {
-          title: "Group Loan Facilities",
-          description: "Musharakah-structured group financing with collective liability",
-          icon: Handshake
-        },
-        {
-          title: "Field Officer Tracking",
-          description: "Mobile collection tracking with GPS tagging and real-time reconciliation",
-          icon: MapPin
-        }
-      ]
-    },
-    {
-      id: "teller",
-      title: "Teller Operations",
-      subtitle: "Branch cash management and over-the-counter transactions",
-      icon: CashRegister,
-      color: "bg-gradient-to-br from-tikari-cream to-tikari-cream-light",
-      image: "/handshake.jpg",
-      features: [
-        {
-          title: "Cash Deposit & Withdrawal",
-          description: "Real-time posting with denomination breakdown and receipt printing",
-          icon: Coins
-        },
-        {
-          title: "Session Management",
-          description: "Teller session open/close with beginning and ending cash counts",
-          icon: CashRegister
-        },
-        {
-          title: "Vault Reconciliation",
-          description: "End-of-day cash count with variance reporting and supervisor approval",
-          icon: CheckCircle
-        },
-        {
-          title: "OTC Transfer Initiation",
-          description: "Over-the-counter SYSTAC/SYGMA transfer initiation with real-time confirmation",
-          icon: ArrowsLeftRight
-        },
-        {
-          title: "Till Limit Enforcement",
-          description: "Automated till limit controls with excess cash vault deposit workflow",
-          icon: ShieldCheck
-        },
-        {
-          title: "Maker-Checker Controls",
-          description: "Dual authorization for transactions above threshold with supervisor override",
-          icon: CheckCircle
-        }
-      ]
-    },
-    {
-      id: "interbank",
-      title: "SYSTAC/SYGMA & Interbank",
-      subtitle: "Real-time interbank transfers via BEAC-approved channels",
-      icon: ArrowsLeftRight,
-      color: "bg-gradient-to-br from-tikari-green to-tikari-green-dark",
-      image: "/meeting.jpg",
-      features: [
-        {
-          title: "SYSTAC Real-Time Transfers",
-          description: "Direct integration with SYSTAC for instant interbank transfers in FCFA",
-          icon: ArrowsLeftRight
-        },
-        {
-          title: "SYGMA Bulk Payments",
-          description: "Batch payment processing via SYGMA for salary and supplier payments",
-          icon: Coins
-        },
-        {
-          title: "Inward Credit Posting",
-          description: "Automated posting of incoming transfers with instant customer notification",
-          icon: CheckCircle
-        },
-        {
-          title: "Return Handling",
-          description: "Automated return processing with customer notification and reversal workflow",
-          icon: ArrowsLeftRight
-        },
-        {
-          title: "BEAC Interbank Channels",
-          description: "Support for all BEAC-approved interbank settlement channels",
-          icon: Bank
-        },
-        {
-          title: "Transaction Limit Controls",
-          description: "Per-tier customer limits aligned with COBAC prudential guidelines",
-          icon: ShieldCheck
-        }
-      ]
-    },
-    {
-      id: "agent",
-      title: "Agent & Field Banking",
-      subtitle: "Branchless banking through verified agent networks",
-      icon: MapPin,
-      color: "bg-gradient-to-br from-tikari-gold to-tikari-gold/80",
       image: "/woman-market.jpg",
       features: [
         {
-          title: "Agent Onboarding & KYC",
-          description: "Comprehensive agent verification with CNI, trade license, and location checks",
+          title: t("sections.agentNetwork.features.recruitment.title"),
+          description: t("sections.agentNetwork.features.recruitment.description"),
           icon: UserCircle
         },
         {
-          title: "Agent Web Portal",
-          description: "Browser-based portal for cash-in, cash-out, and balance inquiry operations",
-          icon: ShieldCheck
+          title: t("sections.agentNetwork.features.categorization.title"),
+          description: t("sections.agentNetwork.features.categorization.description"),
+          icon: Users
         },
         {
-          title: "Offline Transaction Queue",
-          description: "Queue transactions locally during network outages with auto-sync on reconnection",
-          icon: CheckCircle
-        },
-        {
-          title: "Geo-Tagged Collections",
-          description: "GPS-stamped field collections with location-based audit trail",
+          title: t("sections.agentNetwork.features.geoLocation.title"),
+          description: t("sections.agentNetwork.features.geoLocation.description"),
           icon: MapPin
         },
         {
-          title: "Cash Reconciliation",
-          description: "Real-time agent float tracking with settlement and rebalancing workflows",
+          title: t("sections.agentNetwork.features.deviceRegistration.title"),
+          description: t("sections.agentNetwork.features.deviceRegistration.description"),
+          icon: DeviceMobile
+        },
+        {
+          title: t("sections.agentNetwork.features.floatAuthorization.title"),
+          description: t("sections.agentNetwork.features.floatAuthorization.description"),
+          icon: CurrencyCircleDollar
+        },
+        {
+          title: t("sections.agentNetwork.features.performanceMonitoring.title"),
+          description: t("sections.agentNetwork.features.performanceMonitoring.description"),
+          icon: ChartLineUp
+        }
+      ]
+    },
+    {
+      id: "mobile-money",
+      title: t("sections.mobileMoney.title"),
+      subtitle: t("sections.mobileMoney.subtitle"),
+      icon: DeviceMobile,
+      color: "bg-gradient-to-br from-tikari-gold/90 to-tikari-gold/70",
+      image: "/people.jpg",
+      features: [
+        {
+          title: t("sections.mobileMoney.features.mtnApi.title"),
+          description: t("sections.mobileMoney.features.mtnApi.description"),
+          icon: DeviceMobile
+        },
+        {
+          title: t("sections.mobileMoney.features.orangeApi.title"),
+          description: t("sections.mobileMoney.features.orangeApi.description"),
+          icon: Wallet
+        },
+        {
+          title: t("sections.mobileMoney.features.reconciliation.title"),
+          description: t("sections.mobileMoney.features.reconciliation.description"),
+          icon: Receipt
+        },
+        {
+          title: t("sections.mobileMoney.features.beacCompliance.title"),
+          description: t("sections.mobileMoney.features.beacCompliance.description"),
+          icon: ShieldCheck
+        },
+        {
+          title: t("sections.mobileMoney.features.interoperability.title"),
+          description: t("sections.mobileMoney.features.interoperability.description"),
+          icon: WifiHigh
+        },
+        {
+          title: t("sections.mobileMoney.features.walletLinking.title"),
+          description: t("sections.mobileMoney.features.walletLinking.description"),
+          icon: Bank
+        }
+      ]
+    },
+    {
+      id: "field-operations",
+      title: t("sections.fieldOperations.title"),
+      subtitle: t("sections.fieldOperations.subtitle"),
+      icon: MapPin,
+      color: "bg-tikari-green-dark text-white",
+      image: "/women-market.jpg",
+      features: [
+        {
+          title: t("sections.fieldOperations.features.offlineMode.title"),
+          description: t("sections.fieldOperations.features.offlineMode.description"),
+          icon: WifiHigh
+        },
+        {
+          title: t("sections.fieldOperations.features.gpsTagged.title"),
+          description: t("sections.fieldOperations.features.gpsTagged.description"),
+          icon: MapPin
+        },
+        {
+          title: t("sections.fieldOperations.features.visitTracking.title"),
+          description: t("sections.fieldOperations.features.visitTracking.description"),
+          icon: ClipboardText
+        },
+        {
+          title: t("sections.fieldOperations.features.biometric.title"),
+          description: t("sections.fieldOperations.features.biometric.description"),
+          icon: Fingerprint
+        },
+        {
+          title: t("sections.fieldOperations.features.njangiCollections.title"),
+          description: t("sections.fieldOperations.features.njangiCollections.description"),
+          icon: Users
+        },
+        {
+          title: t("sections.fieldOperations.features.fieldCash.title"),
+          description: t("sections.fieldOperations.features.fieldCash.description"),
+          icon: Coins
+        }
+      ]
+    },
+    {
+      id: "cash-in-cash-out",
+      title: t("sections.cashInOut.title"),
+      subtitle: t("sections.cashInOut.subtitle"),
+      icon: Coins,
+      color: "bg-white",
+      image: "/handshake.jpg",
+      features: [
+        {
+          title: t("sections.cashInOut.features.cashIn.title"),
+          description: t("sections.cashInOut.features.cashIn.description"),
           icon: Coins
         },
         {
-          title: "Commission Ledger",
-          description: "Automated commission calculation and posting to agent accounts in FCFA",
+          title: t("sections.cashInOut.features.cashOut.title"),
+          description: t("sections.cashInOut.features.cashOut.description"),
+          icon: Wallet
+        },
+        {
+          title: t("sections.cashInOut.features.floatManagement.title"),
+          description: t("sections.cashInOut.features.floatManagement.description"),
+          icon: Bank
+        },
+        {
+          title: t("sections.cashInOut.features.limits.title"),
+          description: t("sections.cashInOut.features.limits.description"),
+          icon: ShieldCheck
+        },
+        {
+          title: t("sections.cashInOut.features.receipt.title"),
+          description: t("sections.cashInOut.features.receipt.description"),
+          icon: Receipt
+        },
+        {
+          title: t("sections.cashInOut.features.reversal.title"),
+          description: t("sections.cashInOut.features.reversal.description"),
+          icon: FileText
+        }
+      ]
+    },
+    {
+      id: "commission-management",
+      title: t("sections.commissionManagement.title"),
+      subtitle: t("sections.commissionManagement.subtitle"),
+      icon: ChartLineUp,
+      color: "bg-tikari-sage-light/40",
+      image: "/money.jpg",
+      features: [
+        {
+          title: t("sections.commissionManagement.features.tiered.title"),
+          description: t("sections.commissionManagement.features.tiered.description"),
           icon: ChartLineUp
+        },
+        {
+          title: t("sections.commissionManagement.features.realTimeAccrual.title"),
+          description: t("sections.commissionManagement.features.realTimeAccrual.description"),
+          icon: Coins
+        },
+        {
+          title: t("sections.commissionManagement.features.monthlyPayout.title"),
+          description: t("sections.commissionManagement.features.monthlyPayout.description"),
+          icon: Calendar
+        },
+        {
+          title: t("sections.commissionManagement.features.bonuses.title"),
+          description: t("sections.commissionManagement.features.bonuses.description"),
+          icon: Receipt
+        },
+        {
+          title: t("sections.commissionManagement.features.deductions.title"),
+          description: t("sections.commissionManagement.features.deductions.description"),
+          icon: FileText
+        },
+        {
+          title: t("sections.commissionManagement.features.reports.title"),
+          description: t("sections.commissionManagement.features.reports.description"),
+          icon: ClipboardText
+        }
+      ]
+    },
+    {
+      id: "regulatory-reporting",
+      title: t("sections.regulatoryReporting.title"),
+      subtitle: t("sections.regulatoryReporting.subtitle"),
+      icon: ShieldCheck,
+      color: "bg-tikari-gold/8",
+      image: "/compliance.jpg",
+      features: [
+        {
+          title: t("sections.regulatoryReporting.features.cobacNorms.title"),
+          description: t("sections.regulatoryReporting.features.cobacNorms.description"),
+          icon: ShieldCheck
+        },
+        {
+          title: t("sections.regulatoryReporting.features.amlScreening.title"),
+          description: t("sections.regulatoryReporting.features.amlScreening.description"),
+          icon: CheckCircle
+        },
+        {
+          title: t("sections.regulatoryReporting.features.beacReturns.title"),
+          description: t("sections.regulatoryReporting.features.beacReturns.description"),
+          icon: Bank
+        },
+        {
+          title: t("sections.regulatoryReporting.features.activityReports.title"),
+          description: t("sections.regulatoryReporting.features.activityReports.description"),
+          icon: ClipboardText
+        },
+        {
+          title: t("sections.regulatoryReporting.features.complaints.title"),
+          description: t("sections.regulatoryReporting.features.complaints.description"),
+          icon: FileText
+        },
+        {
+          title: t("sections.regulatoryReporting.features.expansionAnalysis.title"),
+          description: t("sections.regulatoryReporting.features.expansionAnalysis.description"),
+          icon: MapPin
         }
       ]
     }
@@ -274,13 +281,11 @@ export default function BankingOperationsPage() {
         
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="max-w-4xl">
-
-            
             <h1 className="text-4xl lg:text-[3.75rem] font-bold leading-[1.05] tracking-tight mb-6">
-              Banking Operations
+              {t("hero.title")}
             </h1>
             <p className="text-[17px] lg:text-[19px] text-white/85 leading-relaxed max-w-3xl">
-              End-to-end banking operations from customer onboarding to interbank transfers. Built for Cameroon's regulatory environment with CNI/Passport verification, Njangi group banking, and SYSTAC/SYGMA integration.
+              {t("hero.subtitle")}
             </p>
           </div>
         </div>
@@ -292,7 +297,7 @@ export default function BankingOperationsPage() {
           const isEven = idx % 2 === 0;
           const Icon = section.icon;
           
-          // Different background colors for each section like main page
+          // Different background colors for each section
           const getBgClass = () => {
             switch(idx) {
               case 0: return 'bg-white';
@@ -392,10 +397,10 @@ export default function BankingOperationsPage() {
         
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <h2 className="text-3xl lg:text-[2.75rem] font-bold mb-6 leading-[1.15] tracking-tight">
-            See Banking Operations in Action
+            {t("cta.title")}
           </h2>
           <p className="text-[16px] lg:text-[18px] text-tikari-green-dark/75 leading-relaxed mb-10 max-w-2xl mx-auto">
-            Schedule a personalized demo to see how TIKARI handles customer onboarding, Njangi operations, and interbank transfers for Cameroon's Islamic banking sector.
+            {t("cta.subtitle")}
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -405,7 +410,7 @@ export default function BankingOperationsPage() {
               href="/demo"
               className="group bg-tikari-green-dark text-white hover:bg-tikari-green rounded-none"
             >
-              Schedule a Demo
+              {t("cta.scheduleDemo")}
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" weight="bold" />
             </Button>
             
@@ -415,7 +420,7 @@ export default function BankingOperationsPage() {
               href="/platform"
               className="group bg-white/90 text-tikari-green-dark hover:bg-white border-2 border-tikari-green-dark/20 rounded-none"
             >
-              Explore Other Modules
+              {t("cta.exploreModules")}
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" weight="bold" />
             </Button>
           </div>
