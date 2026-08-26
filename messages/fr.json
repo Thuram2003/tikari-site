@@ -121,7 +121,7 @@
           "Approbation maker-checker à quatre yeux sur chaque décaissement",
           "Référence Fatwa liée et statut d'approbation du conseil Shariah",
           "Règlement anticipé (Ibra) avec calcul automatique de remise",
-          "Classification prudentielle COBAC intégrée au cycle de vie du prêt"
+          "Classification prudentielle conforme aux exigences réglementaires intégrée au cycle de vie du prêt"
         ],
         "button": "Explorer les produits islamiques"
       },
@@ -137,11 +137,11 @@
       },
       "compliance": {
         "badge": "Conformité et Reporting",
-        "title": "Déclarations COBAC générées depuis votre grand livre",
-        "subtitle": "Le Grand Livre est construit sur les normes comptables financières AAOIFI dès le départ. Chaque transaction est enregistrée automatiquement sur le bon compte GL. État de la Situation Financière COBAC, ratios prudentiels, fichiers du bureau de crédit. Tout est généré, pas compilé.",
+        "title": "Déclarations réglementaires générées à partir de votre grand livre",
+        "subtitle": "Le grand livre est conçu dès sa base en conformité avec les normes de comptabilité financière de l'AAOIFI. Chaque opération est automatiquement comptabilisée dans le compte du grand livre approprié. L'état de la situation financière conforme aux exigences réglementaires, les ratios prudentiels et les fichiers destinés aux bureaux de crédit sont tous générés automatiquement, et non simplement compilés.",
         "features": [
           "Plan comptable conforme AAOIFI FAS",
-          "État de la Situation Financière COBAC (échéance: 14 du mois)",
+          "État de la situation financière et reporting de la banque centrale",
           "Classification prudentielle: courant, médiocre, douteux, perdu",
           "Tableaux de bord d'adéquation des fonds propres et ratio de liquidité",
           "Génération de fichiers du bureau de crédit pour conformité mensuelle",
@@ -170,11 +170,11 @@
     "operations": {
       "badge": "Opérations Bancaires",
       "title": "Gérez les groupes Njangi, le flottant d'agents et les transferts interbancaires dans un seul système",
-      "subtitle": "La banque sans intérêt au Cameroun n'est pas seulement Murabaha. Elle inclut les groupes d'épargne rotatifs Njangi, les réseaux d'agents communautaires et les clients mobiles prioritaires avec des comptes CNI ou Passeport de niveau 1. TIKARI a été conçu pour cette réalité, pas adapté à elle.",
+      "subtitle": "La banque sans intérêts en Afrique ne se limite pas à la Mourabaha. Elle englobe les groupes d'épargne rotative traditionnels (Njangis/tontines), les réseaux d'agents communautaires et une clientèle privilégiant le mobile, disposant de comptes ouverts sur la base d'une carte d'identité nationale ou d'un passeport. TIKARI a été conçue pour cette réalité, et non simplement adaptée à celle-ci.",
       "features": [
         "Gestion de groupes Njangi avec suivi de rotation et statut de contribution",
         "Épargne de garde Wadiah avec comptes courants, cibles et groupes",
-        "KYC Niveau 1/2/3 avec vérification d'identité en ligne via API BEAC/GIMAC",
+        "KYC niveaux 1, 2 et 3 avec vérification d'identité intégrée via carte d'identité nationale et API régionales.",
         "Transferts interbancaires avec enquête de nom avant autorisation",
         "Banque d'agents avec intégration, flottant et règlement des commissions",
         "Module caissier pour dépôt, retrait et rapprochement de fin de journée"
@@ -333,13 +333,13 @@
       "hero": {
         "badge": "TOUS LES MODULES",
         "title": "Tout dans une seule architecture",
-        "subtitle": "Pas de modules additionnels. Pas de licences par fonctionnalité. Chaque capacité ci-dessous est incluse dans la plateforme TIKARI, conçue pour le secteur bancaire islamique et de microfinance du Cameroun.",
+        "subtitle": "Pas de modules ajoutés séparément. Pas de licences par fonctionnalité. Toutes les capacités ci-dessous sont incluses dans la plateforme TIKARI, conçue pour le secteur de la banque islamique et de la microfinance en Afrique.",
         "scheduleDemo": "Planifier une Démo"
       },
       "modules": {
         "bankingOperations": {
           "category": "Opérations Bancaires",
-          "description": "Intégration client avec vérification CNI/Passeport, KYC échelonné (Niveau 1-3), gestion de comptes, banque de groupe Njangi, opérations de caisse, passerelle de paiement SYSTAC/SYGMA et banque d'agents.",
+          "description": "Parcours d'intégration client avec vérification de pièce d'identité nationale ou de passeport, procédure KYC à plusieurs niveaux (niveaux 1 à 3), gestion de comptes, services bancaires pour groupes de type « Njangi » ou tontine, opérations de guichet, passerelles de paiement interbancaires régionales et services bancaires via agents.",
           "features": [
             "Vérification biométrique CNI/Passeport",
             "Cycles de groupe Njangi & Tontine",
@@ -412,8 +412,8 @@
       },
       "integrations": {
         "badge": "INTÉGRATIONS",
-        "title": "Connecté à l'infrastructure financière camerounaise",
-        "subtitle": "TIKARI se connecte nativement à SYSTAC/SYGMA pour les paiements en temps réel, à l'API de reporting COBAC, à la vérification d'identité CNI/Passeport, au reporting FOGADAC et au dépôt GABAC AML/CFT. Aucun middleware requis.",
+        "title": "Connecté aux infrastructures financières régionales",
+        "subtitle": "TIKARI se connecte nativement aux systèmes régionaux de virement interbancaire pour les paiements en temps réel, aux API de reporting des banques centrales, aux bases de données nationales de vérification d'identité ainsi qu'aux systèmes de conformité LCB-FT. Aucun intergiciel (middleware) n'est requis.",
         "seeDemo": "Voir dans une démo",
         "items": {
           "systac": {
@@ -446,16 +446,16 @@
     "bankingOperations": {
       "hero": {
         "title": "Opérations Bancaires",
-        "subtitle": "Opérations bancaires de bout en bout, de l'intégration client aux transferts interbancaires. Conçu pour l'environnement réglementaire du Cameroun avec vérification CNI/Passeport, banque de groupe Njangi et intégration SYSTAC/SYGMA."
+        "subtitle": "Opérations bancaires de bout en bout, de l'intégration des clients aux virements interbancaires. Conçue pour des environnements réglementaires variés, la solution intègre une vérification d'identité à plusieurs niveaux, un système bancaire de groupe par rotation et des intégrations de paiement régionales."
       },
       "sections": {
         "kyc": {
           "title": "Intégration Client & KYC",
-          "subtitle": "Vérification d'identité à trois niveaux avec les normes nationales camerounaises",
+          "subtitle": "Vérification d'identité à trois niveaux conforme aux normes réglementaires régionales",
           "features": {
             "threeTierKyc": {
               "title": "KYC à Trois Niveaux",
-              "description": "Niveau 1 : identification de base ; Niveau 2 : vérifié CNI ; Niveau 3 : passeport complet + justificatif de domicile"
+              "description": "Niveau 1 : identification de base ; Niveau 2 : vérification via une pièce d'identité nationale ; Niveau 3 : passeport complet + justificatif de domicile"
             },
             "cniVerification": {
               "title": "Vérification CNI",
@@ -463,7 +463,7 @@
             },
             "passportVerification": {
               "title": "Vérification de Passeport",
-              "description": "Vérification de passeport international pour ressortissants étrangers et clients de la diaspora"
+              "description": "Vérification en temps réel auprès des bases de données nationales d'identité pour les pays pris en charge"
             },
             "biometricCapture": {
               "title": "Capture Biométrique",
@@ -571,7 +571,7 @@
         },
         "interbank": {
           "title": "SYSTAC/SYGMA & Interbancaire",
-          "subtitle": "Transferts interbancaires en temps réel via canaux approuvés BEAC",
+          "subtitle": "Transferts interbancaires en temps réel via des canaux approuvés par la banque centrale",
           "features": {
             "systac": {
               "title": "Transferts en Temps Réel SYSTAC",
@@ -590,12 +590,12 @@
               "description": "Traitement automatisé des retours avec notification client et flux d'annulation"
             },
             "beac": {
-              "title": "Canaux Interbancaires BEAC",
-              "description": "Support pour tous les canaux de règlement interbancaire approuvés BEAC"
+              "title": "Canaux interbancaires de la banque centrale",
+              "description": "Prise en charge de tous les canaux de règlement interbancaire approuvés par les banques centrales"
             },
             "limits": {
               "title": "Contrôles de Limite de Transaction",
-              "description": "Limites client par niveau alignées sur les directives prudentielles COBAC"
+              "description": "Limites par palier applicables à la clientèle, alignées sur les directives prudentielles réglementaires"
             }
           }
         },
@@ -640,7 +640,7 @@
     "financing": {
       "hero": {
         "title": "Financement Islamique & Trésorerie",
-        "subtitle": "Support natif pour les six structures de financement conformes Shariah avec logique GL dédiée, mécaniques de partage des bénéfices et flux de validation Shariah. Conçu pour les déclarations COBAC et les normes AAOIFI en FCFA."
+        "subtitle": "Prise en charge native des six structures de financement conformes à la Charia, incluant une logique de grand livre dédiée, des mécanismes de partage des profits et des workflows de validation de conformité à la Charia. Conçu pour répondre aux exigences de reporting réglementaire et aux normes de l'AAOIFI."
       },
       "sections": {
         "murabaha": {
