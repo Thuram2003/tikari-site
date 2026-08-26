@@ -31,12 +31,12 @@ export default function Footer() {
               {t("brand.description")}
             </p>
             <div className="flex flex-wrap items-center gap-2 pt-2">
-              <div className="text-xs font-bold tracking-wider text-tikari-gold bg-tikari-gold/10 px-3 py-1.5 border border-tikari-gold/30">
+              <Link href="/jurisdictions" className="text-xs font-bold tracking-wider text-tikari-gold bg-tikari-gold/10 px-3 py-1.5 border border-tikari-gold/30 hover:bg-tikari-gold hover:text-tikari-green-dark transition-all duration-300">
                 {t("brand.beacCompliant")}
-              </div>
-              <div className="text-xs font-bold tracking-wider text-tikari-gold bg-tikari-gold/10 px-3 py-1.5 border border-tikari-gold/30">
+              </Link>
+              <Link href="/jurisdictions" className="text-xs font-bold tracking-wider text-tikari-gold bg-tikari-gold/10 px-3 py-1.5 border border-tikari-gold/30 hover:bg-tikari-gold hover:text-tikari-green-dark transition-all duration-300">
                 {t("brand.cemacRegion")}
-              </div>
+              </Link>
             </div>
 
             {/* Contact Info */}
@@ -67,6 +67,7 @@ export default function Footer() {
               <li><Link href="/platform/compliance" className="hover:text-tikari-gold transition-colors">{t("platform.compliance")}</Link></li>
               <li><Link href="/platform/gl-reporting" className="hover:text-tikari-gold transition-colors">{t("platform.glReporting")}</Link></li>
               <li><Link href="/platform/agent-banking" className="hover:text-tikari-gold transition-colors">{t("platform.agentBanking")}</Link></li>
+              <li><Link href="/platform/administration" className="hover:text-tikari-gold transition-colors">{t("platform.administration")}</Link></li>
             </ul>
           </div>
 
@@ -90,6 +91,7 @@ export default function Footer() {
             <ul className="space-y-2.5 sm:space-y-3 text-sm text-white/70">
               <li><Link href="/resources/education" className="hover:text-tikari-gold transition-colors">{t("resources.education")}</Link></li>
               <li><Link href="/resources/compliance" className="hover:text-tikari-gold transition-colors">{t("resources.compliance")}</Link></li>
+              <li><Link href="/jurisdictions" className="hover:text-tikari-gold transition-colors">{t("resources.jurisdictions")}</Link></li>
               <li><Link href="/resources/support" className="hover:text-tikari-gold transition-colors">{t("resources.support")}</Link></li>
               <li><Link href="/demo" className="hover:text-tikari-gold transition-colors">{t("resources.demo")}</Link></li>
               <li><Link href="/contact" className="hover:text-tikari-gold transition-colors">{t("resources.contactSupport")}</Link></li>

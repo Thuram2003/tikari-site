@@ -23,6 +23,7 @@ import {
   Certificate,
   MapPin,
   CaretRight,
+  Globe,
 } from "@phosphor-icons/react";
 import MegaMenu from "./MegaMenu";
 import { Button } from "@/components/ui";
@@ -60,9 +61,9 @@ export default function Header() {
         { name: t("platform.bankingOperations.name"), href: "/platform/banking-operations" },
         { name: t("platform.islamicFinancing.name"), href: "/platform/financing" },
         { name: t("platform.compliance.name"), href: "/platform/compliance" },
-        { name: t("platform.glReporting.name"), href: "/platform#gl-reporting" },
-        { name: t("platform.agentBanking.name"), href: "/platform#agent-banking" },
-        { name: t("platform.administration.name"), href: "/platform#administration" },
+        { name: t("platform.glReporting.name"), href: "/platform/gl-reporting" },
+        { name: t("platform.agentBanking.name"), href: "/platform/agent-banking" },
+        { name: t("platform.administration.name"), href: "/platform/administration" },
       ]
     },
     {
@@ -79,6 +80,7 @@ export default function Header() {
       items: [
         { name: t("resources.education.name"), href: "/resources/education" },
         { name: t("resources.compliance.name"), href: "/resources/compliance" },
+        { name: t("resources.jurisdictions.name"), href: "/jurisdictions" },
         { name: t("resources.support.name"), href: "/resources/support" },
       ]
     },
@@ -111,6 +113,7 @@ export default function Header() {
   const resourceItems = [
     { name: t("resources.education.name"), desc: t("resources.education.desc"), href: "/resources/education", icon: GraduationCap },
     { name: t("resources.compliance.name"), desc: t("resources.compliance.desc"), href: "/resources/compliance", icon: Bookmark },
+    { name: t("resources.jurisdictions.name"), desc: t("resources.jurisdictions.desc"), href: "/jurisdictions", icon: Globe },
     { name: t("resources.support.name"), desc: t("resources.support.desc"), href: "/resources/support", icon: Question },
   ];
 

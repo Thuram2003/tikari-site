@@ -12,7 +12,7 @@ import {
   ListChecks,
   ShieldCheck
 } from "@phosphor-icons/react";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import Image from "next/image";
 import { Button } from "@/components/ui";
 import { useTranslations } from "next-intl";
@@ -251,7 +251,7 @@ export default function CooperativesWindowsPage() {
             <div className="relative h-[500px] lg:h-[600px] overflow-hidden shadow-2xl border border-white/10 rounded-2xl">
               <Image
                 src="/compliance.jpg"
-                alt="COBAC compliance and reporting"
+                alt="Regulatory compliance and reporting"
                 fill
                 className="object-cover rounded-2xl"
               />

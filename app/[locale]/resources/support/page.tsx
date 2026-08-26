@@ -100,22 +100,22 @@ export default function SupportPage() {
   const faqs = [
     {
       category: "Regulatory",
-      question: "Is TIKARI compliant with COBAC microfinance regulations?",
+      question: "Is TIKARI compliant with regional microfinance regulations like COBAC and CBN?",
       answer:
-        "Yes. TIKARI is built specifically for COBAC-licensed microfinance banks operating in CEMAC countries. The platform generates all required COBAC prudential returns directly from the General Ledger, maintains complete audit trails, and supports Unit, Regional, and National MFB licence categories.",
+        "Yes. TIKARI is built to comply with multiple regional frameworks across Africa, including COBAC regulations for the CEMAC zone, Central Bank of Nigeria (CBN) non-interest guidelines, and WAEMU/BCEAO rules. The platform generates compliant prudential returns directly from the General Ledger, maintains complete audit trails, and supports various banking licence categories.",
     },
     {
       category: "Standards",
       question: "Does TIKARI follow AAOIFI accounting standards?",
       answer:
-        "Yes. TIKARI uses an AAOIFI-aligned chart of accounts and generates AAOIFI-compliant financial statements. The platform also reconciles AAOIFI standards with CEMAC's OHADA accounting framework where required.",
+        "Yes. TIKARI uses an AAOIFI-aligned chart of accounts and generates AAOIFI-compliant financial statements. The platform also reconciles AAOIFI standards with regional frameworks (like OHADA or local GAAP) where required.",
     },
     {
       category: "Local Context",
       question:
-        "Can TIKARI handle FCFA-denominated transactions and OHADA accounting?",
+        "Can TIKARI handle regional currencies (FCFA, Naira, etc.) and regional accounting standards?",
       answer:
-        "Yes. TIKARI is designed for CEMAC operations. It natively supports FCFA denomination, BEAC interbank settlement, and OHADA-compliant reporting alongside AAOIFI Islamic accounting standards.",
+        "Yes. TIKARI natively supports multiple regional currencies (FCFA, NGN, KES, etc.), localized interbank settlements, and regional accounting frameworks like OHADA and national GAAP alongside AAOIFI non-interest accounting standards.",
     },
     {
       category: "Operations",
@@ -127,7 +127,7 @@ export default function SupportPage() {
       category: "Technical",
       question: "Does TIKARI support multi-currency operations?",
       answer:
-        "While TIKARI is optimized for FCFA operations, it supports multi-currency accounting for institutions with foreign currency exposure reporting requirements under COBAC MFB-009 returns.",
+        "Yes. TIKARI features a multi-currency ledger that supports multi-currency accounting, allowing institutions to handle transactions and reporting across different local and international currencies.",
     },
     {
       category: "Implementation",
@@ -140,13 +140,13 @@ export default function SupportPage() {
       question:
         "What is the ACE committee, and how does TIKARI support it?",
       answer:
-        "ACE (Advisory Committee of Experts) is the Shariah Supervisory Board. TIKARI provides a dedicated ACE Dashboard where scholars can review pending products, issue Fatwas, conduct periodic audits, and maintain a searchable Fatwa repository for COBAC examiner access.",
+        "ACE (Advisory Committee of Experts) is the Shariah Supervisory Board. TIKARI provides a dedicated ACE Dashboard where scholars can review pending products, issue Fatwas, conduct periodic audits, and maintain a searchable Fatwa repository for regulatory audit access.",
     },
     {
       category: "Products",
-      question: "Can TIKARI handle Njangi group savings structures?",
+      question: "Can TIKARI handle Njangi/Tontine group savings structures?",
       answer:
-        "Yes. TIKARI has native support for rotating savings and credit associations (Njangis), including contribution tracking, rotation schedules, automated disbursement to designated recipients, and full audit trails for COBAC compliance.",
+        "Yes. TIKARI has native support for rotating savings and credit associations (Njangis, Tontines, Ajo), including contribution tracking, rotation schedules, automated disbursement to designated recipients, and full audit trails for regulatory compliance.",
     },
   ];
 

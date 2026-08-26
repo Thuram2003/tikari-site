@@ -121,7 +121,7 @@
           "Four-eyes maker-checker approval on every disbursement",
           "Linked Fatwa reference and Shariah board approval status",
           "Early settlement (Ibra) with automatic rebate calculation",
-          "COBAC prudential classification built into loan lifecycle"
+          "Regulator-compliant prudential classification built into loan lifecycle"
         ],
         "button": "Explore Islamic products"
       },
@@ -137,11 +137,11 @@
       },
       "compliance": {
         "badge": "Compliance & Reporting",
-        "title": "COBAC returns generated from your ledger",
-        "subtitle": "The General Ledger is built on AAOIFI financial accounting standards from the ground up. Every transaction posts to the correct GL account automatically. COBAC Statement of Financial Position, prudential ratios, credit bureau files. All generated, not compiled.",
+        "title": "Regulatory returns generated from your ledger",
+        "subtitle": "The General Ledger is built on AAOIFI financial accounting standards from the ground up. Every transaction posts to the correct GL account automatically. Regulator-compliant Statement of Financial Position, prudential ratios, credit bureau files. All generated, not compiled.",
         "features": [
           "AAOIFI FAS-compliant chart of accounts",
-          "COBAC Statement of Financial Position (deadline: 14th of month)",
+          "Central Bank Statement of Financial Position & reporting",
           "Prudential classification: current, substandard, doubtful, lost",
           "Capital adequacy and liquidity ratio dashboards",
           "Credit bureau file generation for monthly compliance",
@@ -170,11 +170,11 @@
     "operations": {
       "badge": "Banking Operations",
       "title": "Run Njangi groups, agent float, and interbank transfers in one system",
-      "subtitle": "Cameroon non-interest banking is not just Murabaha. It includes Njangi rotating savings groups, community agent networks, and mobile-first customers with Tier 1 CNI or Passport accounts. TIKARI was designed for this reality, not adapted for it.",
+      "subtitle": "African non-interest banking is not just Murabaha. It includes traditional rotating savings groups (Njangis/Tontines), community agent networks, and mobile-first customers with national ID or Passport accounts. TIKARI was designed for this reality, not adapted for it.",
       "features": [
         "Njangi group management with rotation tracker and contribution status",
         "Wadiah safekeeping savings with current, target, and group accounts",
-        "KYC Tier 1/2/3 with inline ID verification via BEAC/GIMAC API",
+        "KYC Tier 1/2/3 with inline ID verification via national ID and regional APIs",
         "Interbank transfers with name enquiry before authorisation",
         "Agent banking with onboarding, float, and commission settlement",
         "Teller module for cash deposit, withdrawal, and EOD reconciliation"
@@ -333,13 +333,13 @@
       "hero": {
         "badge": "ALL MODULES",
         "title": "Everything in a single tenancy",
-        "subtitle": "No bolt-on modules. No per-feature licenses. Every capability below is included in the TIKARI platform, engineered for Cameroon's Islamic banking and microfinance sector.",
+        "subtitle": "No bolt-on modules. No per-feature licenses. Every capability below is included in the TIKARI platform, engineered for Africa's Islamic banking and microfinance sector.",
         "scheduleDemo": "Schedule a Demo"
       },
       "modules": {
         "bankingOperations": {
           "category": "Banking Operations",
-          "description": "Customer onboarding with CNI/Passport verification, tiered KYC (Tier 1-3), account management, Njangi group banking, teller operations, SYSTAC/SYGMA payment gateway, and agent banking.",
+          "description": "Customer onboarding with National ID/Passport verification, tiered KYC (Tier 1-3), account management, Njangi/Tontine group banking, teller operations, regional interbank payment gateways, and agent banking.",
           "features": [
             "CNI/Passport biometric verification",
             "Njangi & Tontine group cycles",
@@ -412,8 +412,8 @@
       },
       "integrations": {
         "badge": "INTEGRATIONS",
-        "title": "Wired into the Cameroonian financial infrastructure",
-        "subtitle": "TIKARI connects natively to SYSTAC/SYGMA for real-time payments, the COBAC reporting API, CNI/Passport identity verification, FOGADAC reporting, and GABAC AML/CFT filing. No middleware required.",
+        "title": "Wired into regional financial infrastructures",
+        "subtitle": "TIKARI connects natively to regional interbank transfer systems for real-time payments, central bank reporting APIs, national identity verification databases, and AML/CFT compliance systems. No middleware required.",
         "seeDemo": "See it in a demo",
         "items": {
           "systac": {
@@ -446,20 +446,20 @@
     "bankingOperations": {
       "hero": {
         "title": "Banking Operations",
-        "subtitle": "End-to-end banking operations from customer onboarding to interbank transfers. Built for Cameroon's regulatory environment with CNI/Passport verification, Njangi group banking, and SYSTAC/SYGMA integration."
+        "subtitle": "End-to-end banking operations from customer onboarding to interbank transfers. Built for diverse regulatory environments with multi-tier ID verification, rotating group banking, and regional payment integrations."
       },
       "sections": {
         "kyc": {
           "title": "Customer Onboarding & KYC",
-          "subtitle": "Three-tier identity verification with Cameroon national standards",
+          "subtitle": "Three-tier identity verification with regional regulatory standards",
           "features": {
             "threeTierKyc": {
               "title": "Three-tier KYC",
-              "description": "Tier 1: basic identification; Tier 2: CNI-verified; Tier 3: full passport + proof of address"
+              "description": "Tier 1: basic identification; Tier 2: National ID-verified; Tier 3: full passport + proof of address"
             },
             "cniVerification": {
-              "title": "CNI Verification",
-              "description": "Real-time verification against national identity database for Cameroon citizens"
+              "title": "National ID Verification",
+              "description": "Real-time verification against national identity databases for supported countries"
             },
             "passportVerification": {
               "title": "Passport Verification",
@@ -571,7 +571,7 @@
         },
         "interbank": {
           "title": "SYSTAC/SYGMA & Interbank",
-          "subtitle": "Real-time interbank transfers via BEAC-approved channels",
+          "subtitle": "Real-time interbank transfers via central bank-approved channels",
           "features": {
             "systac": {
               "title": "SYSTAC Real-Time Transfers",
@@ -590,12 +590,12 @@
               "description": "Automated return processing with customer notification and reversal workflow"
             },
             "beac": {
-              "title": "BEAC Interbank Channels",
-              "description": "Support for all BEAC-approved interbank settlement channels"
+              "title": "Central Bank Interbank Channels",
+              "description": "Support for all central bank-approved interbank settlement channels"
             },
             "limits": {
               "title": "Transaction Limit Controls",
-              "description": "Per-tier customer limits aligned with COBAC prudential guidelines"
+              "description": "Per-tier customer limits aligned with regulatory prudential guidelines"
             }
           }
         },
@@ -640,7 +640,7 @@
     "financing": {
       "hero": {
         "title": "Islamic Financing & Treasury",
-        "subtitle": "Native support for all six Shariah-compliant financing structures with dedicated GL logic, profit-sharing mechanics, and Shariah validation workflows. Built for COBAC returns and AAOIFI standards in FCFA."
+        "subtitle": "Native support for all six Shariah-compliant financing structures with dedicated GL logic, profit-sharing mechanics, and Shariah validation workflows. Built for regulatory returns and AAOIFI standards."
       },
       "sections": {
         "murabaha": {
@@ -810,8 +810,8 @@
               "description": "Place surplus funds with Islamic banks as agent with agreed profit-sharing ratio"
             },
             "cobacReserve": {
-              "title": "COBAC Reserve Compliance",
-              "description": "Automated reserve calculation and placement with BEAC per COBAC liquidity ratios"
+              "title": "Central Bank Reserve Compliance",
+              "description": "Automated reserve calculation and placement with central bank per regulatory liquidity ratios"
             },
             "profitRateRisk": {
               "title": "Profit Rate Risk Hedging",
@@ -834,7 +834,7 @@
     "compliance": {
       "hero": {
         "title": "Compliance & Shariah Governance",
-        "subtitle": "Independent Shariah Supervisory Board oversight, COBAC regulatory compliance, GABAC AML/CFT controls, and AAOIFI reporting standards. Built for Cameroon's Islamic banking regulatory environment."
+        "subtitle": "Independent Shariah Supervisory Board oversight, central bank regulatory compliance, GABAC AML/CFT controls, and AAOIFI reporting standards. Built for Africa's Islamic banking regulatory environment."
       },
       "sections": {
         "shariahBoard": {
@@ -843,7 +843,7 @@
           "features": {
             "composition": {
               "title": "SSB Composition & Registration",
-              "description": "Multi-scholar board with COBAC registration, qualification tracking, and term management"
+              "description": "Multi-scholar board with regulatory registration, qualification tracking, and term management"
             },
             "fatwaWorkflow": {
               "title": "Fatwa Issuance Workflow",
@@ -898,12 +898,12 @@
           }
         },
         "cobacCompliance": {
-          "title": "COBAC Regulatory Compliance",
-          "subtitle": "Full adherence to CEMAC prudential norms and COBAC reporting requirements",
+          "title": "Central Bank Regulatory Compliance",
+          "subtitle": "Full adherence to regional prudential norms and regulatory reporting requirements",
           "features": {
             "capitalAdequacy": {
               "title": "Capital Adequacy Monitoring",
-              "description": "Real-time CAR calculation with Tier 1/Tier 2 capital tracking and COBAC minimum ratio enforcement"
+              "description": "Real-time CAR calculation with Tier 1/Tier 2 capital tracking and regulatory minimum ratio enforcement"
             },
             "liquidityRatios": {
               "title": "Liquidity Ratios (LCR & NSFR)",
@@ -911,15 +911,15 @@
             },
             "largeExposure": {
               "title": "Large Exposure Limits",
-              "description": "Automatic tracking of single-borrower and group exposure against COBAC concentration limits"
+              "description": "Automatic tracking of single-borrower and group exposure against regulatory concentration limits"
             },
             "returnFiling": {
-              "title": "COBAC Return Filing",
-              "description": "Automated generation of monthly, quarterly, and annual regulatory returns to BEAC"
+              "title": "Regulatory Return Filing",
+              "description": "Automated generation of monthly, quarterly, and annual regulatory returns to central banks"
             },
             "provisioning": {
               "title": "Provisioning & NPL Classification",
-              "description": "COBAC-compliant loan classification (Pass, Special Mention, Substandard, Doubtful, Loss) with provision calculation"
+              "description": "Regulatory-compliant loan classification (Pass, Special Mention, Substandard, Doubtful, Loss) with provision calculation"
             },
             "riskReports": {
               "title": "Governance & Risk Reports",
@@ -941,11 +941,11 @@
             },
             "sanctionsScreening": {
               "title": "GABAC Sanctions Screening",
-              "description": "Automated screening against CEMAC-wide sanctions lists and UN consolidated terrorism list"
+              "description": "Automated screening against regional sanctions lists and UN consolidated terrorism list"
             },
             "str": {
               "title": "Suspicious Transaction Reports",
-              "description": "STR filing workflow with case management and secure submission to ANIF Cameroon"
+              "description": "STR filing workflow with case management and secure submission to national financial intelligence units"
             },
             "wireTransfer": {
               "title": "Wire Transfer Monitoring",
@@ -971,7 +971,7 @@
             },
             "consentRecords": {
               "title": "Customer Consent Records",
-              "description": "Digital archiving of customer consent forms, disclosures, and acknowledgments per COBAC requirements"
+              "description": "Digital archiving of customer consent forms, disclosures, and acknowledgments per regulatory requirements"
             },
             "complianceTracking": {
               "title": "Compliance Document Tracking",
@@ -983,7 +983,7 @@
             },
             "auditRetrieval": {
               "title": "Audit Trail Retrieval",
-              "description": "Quick retrieval of contract history and amendment trail for internal audits and COBAC inspections"
+              "description": "Quick retrieval of contract history and amendment trail for internal audits and regulatory inspections"
             }
           }
         },
@@ -1000,8 +1000,8 @@
               "description": "Automated generation of AAOIFI-compliant financial statements with profit equalization reserve disclosure"
             },
             "cobacGenerator": {
-              "title": "COBAC Return Generator",
-              "description": "One-click generation of all required COBAC regulatory returns with pre-validation checks"
+              "title": "Regulatory Return Generator",
+              "description": "One-click generation of all required regulatory returns with pre-validation checks"
             },
             "ssbReport": {
               "title": "SSB Annual Report",
@@ -1013,14 +1013,14 @@
             },
             "customBuilder": {
               "title": "Custom Report Builder",
-              "description": "Ad-hoc report builder for internal audits, COBAC queries, and management information requests"
+              "description": "Ad-hoc report builder for internal audits, regulatory queries, and management information requests"
             }
           }
         }
       },
       "cta": {
         "title": "See Compliance Operations in Action",
-        "subtitle": "Schedule a personalized demo to see how TIKARI manages Shariah Supervisory Board operations, COBAC regulatory compliance, and GABAC AML/CFT controls for Cameroon's Islamic banking environment.",
+        "subtitle": "Schedule a personalized demo to see how TIKARI manages Shariah Supervisory Board operations, central bank regulatory compliance, and AML/CFT controls for Africa's Islamic banking environment.",
         "scheduleDemo": "Schedule a Demo",
         "exploreModules": "Explore Other Modules"
       }
@@ -1028,16 +1028,16 @@
     "glReporting": {
       "hero": {
         "title": "GL & Financial Reporting",
-        "subtitle": "Complete general ledger and financial reporting suite with COBAC-compliant chart of accounts, AAOIFI Islamic banking standards, automated profit distribution, and full CEMAC regulatory reporting in FCFA."
+        "subtitle": "Complete general ledger and financial reporting suite with regulatory-compliant chart of accounts, AAOIFI Islamic banking standards, automated profit distribution, and full regional regulatory reporting."
       },
       "sections": {
         "chartOfAccounts": {
           "title": "Chart of Accounts & GL Structure",
-          "subtitle": "COBAC-compliant account structure with Islamic banking extensions",
+          "subtitle": "Regulatory-compliant account structure with Islamic banking extensions",
           "features": {
             "cobacCoa": {
-              "title": "COBAC Standard COA",
-              "description": "Pre-configured chart aligned with COBAC prudential framework for CEMAC member states"
+              "title": "Regional Standard COA",
+              "description": "Pre-configured chart aligned with regional prudential frameworks across Africa"
             },
             "islamicExtensions": {
               "title": "Islamic Account Extensions",
@@ -1183,11 +1183,11 @@
         },
         "regulatoryReporting": {
           "title": "Regulatory Reporting & Analytics",
-          "subtitle": "COBAC prudential returns and management analytics",
+          "subtitle": "Regulatory prudential returns and management analytics",
           "features": {
             "cobacReturns": {
-              "title": "COBAC Prudential Returns",
-              "description": "Automated generation of monthly, quarterly, and annual COBAC regulatory filings"
+              "title": "Regulatory Prudential Returns",
+              "description": "Automated generation of monthly, quarterly, and annual regulatory filings"
             },
             "trialBalance": {
               "title": "Trial Balance Export",
@@ -1214,7 +1214,7 @@
       },
       "cta": {
         "title": "See Financial Reporting in Action",
-        "subtitle": "Schedule a personalized demo to see how TIKARI handles COBAC chart of accounts, AAOIFI financial statements, profit distribution, and regulatory reporting for Africa's Islamic banking sector.",
+        "subtitle": "Schedule a personalized demo to see how TIKARI handles regional chart of accounts, AAOIFI financial statements, profit distribution, and regulatory reporting for Africa's Islamic banking sector.",
         "scheduleDemo": "Schedule a Demo",
         "exploreModules": "Explore Other Modules"
       }
@@ -1222,12 +1222,12 @@
     "agentBanking": {
       "hero": {
         "title": "Agent & Field Banking",
-        "subtitle": "Comprehensive branchless banking platform with agent network management, MTN Mobile Money and Orange Money integration, field operations, and COBAC agent banking compliance for Cameroon's financial inclusion."
+        "subtitle": "Comprehensive branchless banking platform with agent network management, mobile money integration, field operations, and regulatory agent banking compliance for Africa's financial inclusion."
       },
       "sections": {
         "agentNetwork": {
           "title": "Agent Network Management",
-          "subtitle": "Recruit, onboard, and manage branchless banking agents across Cameroon",
+          "subtitle": "Recruit, onboard, and manage branchless banking agents across Africa",
           "features": {
             "recruitment": {
               "title": "Agent Recruitment & KYC",
@@ -1272,12 +1272,12 @@
               "description": "Automated matching of mobile money transactions with agent float and customer account updates"
             },
             "beacCompliance": {
-              "title": "BEAC E-Money Compliance",
-              "description": "Full compliance with BEAC electronic money regulations for mobile money partnerships"
+              "title": "E-Money Regulatory Compliance",
+              "description": "Full compliance with electronic money regulations for mobile money partnerships"
             },
             "interoperability": {
               "title": "Interoperability Support",
-              "description": "Cross-network transfers between MTN and Orange Money via BEAC interoperability switch"
+              "description": "Cross-network transfers between mobile money providers via interoperability switches"
             },
             "walletLinking": {
               "title": "Wallet Linking",
@@ -1377,23 +1377,23 @@
         },
         "regulatoryReporting": {
           "title": "Agent Banking Compliance & Reporting",
-          "subtitle": "COBAC agent banking regulations and BEAC reporting",
+          "subtitle": "Agent banking regulations and central bank reporting",
           "features": {
             "cobacNorms": {
-              "title": "COBAC Agent Banking Norms",
-              "description": "Full compliance with COBAC regulations on agent banking and branchless banking operations"
+              "title": "Agent Banking Regulatory Norms",
+              "description": "Full compliance with regulations on agent banking and branchless banking operations"
             },
             "amlScreening": {
               "title": "Agent AML/CFT Screening",
               "description": "Continuous monitoring of agent transactions for suspicious patterns and GABAC compliance"
             },
             "beacReturns": {
-              "title": "BEAC E-Money Returns",
-              "description": "Automated submission of electronic money transaction reports to BEAC per regulatory schedule"
+              "title": "E-Money Regulatory Returns",
+              "description": "Automated submission of electronic money transaction reports to central banks per regulatory schedule"
             },
             "activityReports": {
               "title": "Agent Activity Reports",
-              "description": "Daily, weekly, and monthly agent activity summaries for internal audit and COBAC inspection"
+              "description": "Daily, weekly, and monthly agent activity summaries for internal audit and regulatory inspection"
             },
             "complaints": {
               "title": "Customer Complaint Tracking",
@@ -1408,7 +1408,7 @@
       },
       "cta": {
         "title": "See Agent Banking in Action",
-        "subtitle": "Schedule a personalized demo to see how TIKARI manages agent networks, MTN/Orange Money integration, field operations, and COBAC agent banking compliance for Cameroon's branchless banking needs.",
+        "subtitle": "Schedule a personalized demo to see how TIKARI manages agent networks, mobile money integration, field operations, and regulatory agent banking compliance for Africa's branchless banking needs.",
         "scheduleDemo": "Schedule a Demo",
         "exploreModules": "Explore Other Modules"
       }
@@ -1416,7 +1416,7 @@
     "administration": {
       "hero": {
         "title": "Administration & EOD Processes",
-        "subtitle": "Complete system administration with user management, branch setup, end-of-day batch processes, automated backups, and real-time monitoring. Built for COBAC compliance and multi-branch Islamic banking operations in FCFA."
+        "subtitle": "Complete system administration with user management, branch setup, end-of-day batch processes, automated backups, and real-time monitoring. Built for regulatory compliance and multi-branch Islamic banking operations."
       },
       "sections": {
         "userManagement": {
@@ -1437,7 +1437,7 @@
             },
             "passwordPolicy": {
               "title": "Password Policy Enforcement",
-              "description": "Configurable password complexity, expiration, and lockout policies per COBAC security guidelines"
+              "description": "Configurable password complexity, expiration, and lockout policies per regulatory security guidelines"
             },
             "sessionManagement": {
               "title": "Session Management",
@@ -1455,7 +1455,7 @@
           "features": {
             "workingDays": {
               "title": "Working Days Calendar",
-              "description": "Configure bank working days, public holidays in Cameroon, and weekend days for transaction processing"
+              "description": "Configure bank working days, public holidays, and weekend days for transaction processing"
             },
             "transactionLimits": {
               "title": "Transaction Limits",
@@ -1467,7 +1467,7 @@
             },
             "currency": {
               "title": "Currency & Exchange Rates",
-              "description": "Primary FCFA accounting with foreign currency support and BEAC exchange rate synchronization"
+              "description": "Multi-currency accounting with foreign currency support and central bank exchange rate synchronization"
             },
             "fees": {
               "title": "Fee & Charge Templates",
@@ -1485,7 +1485,7 @@
           "features": {
             "registration": {
               "title": "Branch Registration",
-              "description": "Register branches with full address, BEAC interbank codes, and COBAC branch registration numbers"
+              "description": "Register branches with full address, interbank codes, and regulatory branch registration numbers"
             },
             "hierarchies": {
               "title": "Branch Hierarchies",
@@ -1557,7 +1557,7 @@
             },
             "retention": {
               "title": "10-Year Retention Policy",
-              "description": "COBAC-mandated 10-year retention of all customer records, contracts, and financial statements"
+              "description": "Regulatory-mandated 10-year retention of all customer records, contracts, and financial statements"
             },
             "verification": {
               "title": "Backup Verification",
@@ -1565,7 +1565,7 @@
             },
             "auditLogArchival": {
               "title": "Audit Log Archival",
-              "description": "Secure long-term storage of audit logs for internal audits and COBAC inspections"
+              "description": "Secure long-term storage of audit logs for internal audits and regulatory inspections"
             }
           }
         },
@@ -1591,7 +1591,7 @@
             },
             "licenseExpiry": {
               "title": "License & Certificate Expiry",
-              "description": "Proactive alerts for expiring SSL certificates, software licenses, and COBAC approvals"
+              "description": "Proactive alerts for expiring SSL certificates, software licenses, and regulatory approvals"
             },
             "anomalies": {
               "title": "User Activity Anomalies",
@@ -1602,7 +1602,7 @@
       },
       "cta": {
         "title": "See Administration in Action",
-        "subtitle": "Schedule a personalized demo to see how TIKARI handles user management, system configuration, EOD batch processes, and multi-branch administration for Cameroon's Islamic banking operations.",
+        "subtitle": "Schedule a personalized demo to see how TIKARI handles user management, system configuration, EOD batch processes, and multi-branch administration for Africa's Islamic banking operations.",
         "scheduleDemo": "Schedule a Demo",
         "exploreModules": "Explore Other Modules"
       }
@@ -1675,7 +1675,11 @@
       },
       "compliance": {
         "name": "Regulatory Updates",
-        "desc": "BEAC regulations & compliance standards."
+        "desc": "Regional regulations & compliance standards."
+      },
+      "jurisdictions": {
+        "name": "Supported Jurisdictions",
+        "desc": "Compliance across CEMAC, Nigeria, WAEMU, and more."
       },
       "support": {
         "name": "Help Center",
@@ -1985,15 +1989,15 @@
           },
           {
             "code": "AML/CFT",
-            "name": "GABAC AML/CFT Reporting"
+            "name": "AML/CFT Compliance Reporting"
           },
           {
-            "code": "BEAC-01",
-            "name": "BEAC Interbank Reporting"
+            "code": "REG-01",
+            "name": "Central Bank Interbank Reporting"
           },
           {
             "code": "TAX-01",
-            "name": "FCFA Tax Compliance Filing"
+            "name": "Local Tax Compliance Filing"
           }
         ]
       },
@@ -2006,20 +2010,20 @@
             "description": "Digital rotating ledgers with automated profit distribution and regulatory group exposure tracking."
           },
           "fcfa": {
-            "title": "Native FCFA Accounting",
-            "description": "Primary currency in FCFA with BEAC exchange rate synchronization for foreign currency transactions."
+            "title": "Multi-Currency & Local Accounting",
+            "description": "Support for local currencies with automated exchange rate synchronization for foreign transactions."
           },
           "murabaha": {
             "title": "Auto Murabaha Calculation",
             "description": "Configure markup rates, installment schedules, and early settlement rebates per Shariah guidelines."
           },
           "systac": {
-            "title": "SYSTAC/SYGMA Integration",
-            "description": "Real-time interbank transfers via interbank payment infrastructure with automated GL posting."
+            "title": "Interbank Switch Integration",
+            "description": "Real-time interbank transfers via national payment systems with automated GL posting."
           },
           "mobileMoney": {
-            "title": "MTN & Orange Money",
-            "description": "Direct integration with mobile money operators for agent cash-in/cash-out operations."
+            "title": "Mobile Money & Wallets",
+            "description": "Direct integration with major mobile money operators for agent float and wallet operations."
           },
           "eod": {
             "title": "10-Minute EOD Close",
@@ -2049,7 +2053,7 @@
     "smes": {
       "hero": {
         "title": "Solutions for Businesses & SMEs",
-        "subtitle": "Shariah-compliant financing for Africa's entrepreneurs. Whether you need inventory financing, equipment leasing, or growth capital, TIKARI connects you with Islamic financial institutions offering zero-interest commercial solutions. All transactions in FCFA with transparent markup structures and no hidden fees."
+        "subtitle": "Shariah-compliant financing for Africa's entrepreneurs. Whether you need inventory financing, equipment leasing, or growth capital, TIKARI connects you with Islamic financial institutions offering zero-interest commercial solutions. All transactions in local currencies with transparent markup structures and no hidden fees."
       },
       "financingProducts": {
         "title": "Islamic Financing Products",
@@ -2058,7 +2062,7 @@
           "title": "Murabaha Trade Finance",
           "description": "Purchase inventory, equipment, or raw materials with Shariah-compliant cost-plus financing. TIKARI facilitates the purchase, marks up the cost transparently, and structures fixed installment payments with no hidden interest charges.",
           "features": [
-            "Inventory & stock financing in FCFA",
+            "Inventory & stock financing in local currency",
             "Equipment & machinery procurement",
             "Transparent markup disclosure (no Riba)",
             "Fixed monthly installments",
@@ -2068,7 +2072,7 @@
         },
         "musharakah": {
           "title": "Musharakah Partnership Finance",
-          "description": "A joint-venture financing where TIKARI co-invest invest in your business expansion. Profits and losses are shared according to pre-agreed ratios. Ideal for growth capital and project finance across African SME sectors.",
+          "description": "A joint-venture financing where TIKARI co-invests in your business expansion. Profits and losses are shared according to pre-agreed ratios. Ideal for growth capital and project finance across African SME sectors.",
           "features": [
             "Joint ownership & profit sharing",
             "Diminishing Musharakah for asset acquisition",
@@ -2098,7 +2102,7 @@
             "Crop-specific pricing agreements",
             "Quality & delivery specifications",
             "Risk mitigation for farmers",
-            "FCFA-denominated contracts",
+            "Local currency-denominated contracts",
             "Seasonal financing cycles"
           ]
         }
@@ -2148,7 +2152,7 @@
           {
             "step": "3",
             "title": "Credit Assessment",
-            "description": "The financial institution evaluates your business creditworthiness and determines the FCFA financing terms."
+            "description": "The financial institution evaluates your business creditworthiness and determines the financing terms."
           },
           {
             "step": "4",
@@ -2159,17 +2163,60 @@
       },
       "cta": {
         "title": "Ready to Finance Your Business Growth?",
-        "subtitle": "Connect with Islamic financial institutions offering Murabaha, Musharakah, Ijara, and Salam financing for Africa's SME sector. All transactions in FCFA with transparent Shariah-compliant structures.",
+        "subtitle": "Connect with Islamic financial institutions offering Murabaha, Musharakah, Ijara, and Salam financing for Africa's SME sector. All transactions in local currencies with transparent Shariah-compliant structures.",
         "applyForFinancing": "Apply for Financing",
         "explorePlatform": "Explore the Platform"
       }
     }
   },
+  "jurisdictions": {
+    "title": "Supported Jurisdictions",
+    "subtitle": "TIKARI operates across multiple regulatory frameworks, bringing AAOIFI non-interest banking compliance to financial institutions across Africa.",
+    "intro": "Designed for Africa's diverse regulatory landscape, TIKARI is configured to adapt to local central bank guidelines and microfinance directives.",
+    "regions": {
+      "cemac": {
+        "title": "CEMAC Region (COBAC & BEAC)",
+        "desc": "Full compliance with COBAC microfinance regulations (Category 1, 2, and 3) and BEAC monetary directives. Pre-configured for XAF and automated prudential returns."
+      },
+      "nigeria": {
+        "title": "Nigeria (CBN)",
+        "desc": "Aligned with the Central Bank of Nigeria's (CBN) regulatory guidelines for non-interest financial institutions, supporting non-interest window models and full ledger segregation."
+      },
+      "waemu": {
+        "title": "WAEMU Region (BCEAO)",
+        "desc": "Compliant with the Central Bank of West African States (BCEAO) prudential requirements for non-interest microfinance and banking institutions, pre-configured for XOF operations."
+      },
+      "eastafrica": {
+        "title": "East Africa & Others",
+        "desc": "Adaptable configuration supporting localized central bank regulations in East Africa, featuring multi-currency accounting (KES, UGX, TZS, RWF) and local tax frameworks."
+      }
+    },
+    "coreStandards": {
+      "title": "Core Standards Built-In",
+      "aaoifi": {
+        "title": "AAOIFI Accounting",
+        "desc": "Fully compliant with the Accounting and Auditing Organization for Islamic Financial Institutions (AAOIFI) Financial Accounting Standards (FAS)."
+      },
+      "ohada": {
+        "title": "OHADA Compliance",
+        "desc": "Seamless mapping to the OHADA accounting framework, ensuring dual compliance with regional commercial standards."
+      },
+      "shariah": {
+        "title": "Shariah Governance",
+        "desc": "Searchable Fatwa repository and automated maker-checker workflows that keep Shariah Advisory Boards and external auditors aligned."
+      }
+    },
+    "cta": {
+      "title": "Deploy TIKARI in Your Country",
+      "desc": "Ready to launch regulator-compliant non-interest banking products? Schedule a technical demo with our implementation team.",
+      "button": "Schedule Technical Demo"
+    }
+  },
   "footer": {
     "brand": {
-      "description": "Cameroon's first faith-based non-interest banking platform. Complete AAOIFI-compliant financial infrastructure engineered for Islamic banking, microfinance, and traditional savings systems.",
-      "beacCompliant": "BEAC Compliant",
-      "cemacRegion": "CEMAC Region",
+      "description": "Africa's leading faith-based non-interest banking platform. Complete AAOIFI-compliant financial infrastructure engineered for Islamic banking, microfinance, and traditional savings systems.",
+      "beacCompliant": "Regulator Ready",
+      "cemacRegion": "Supported Jurisdictions",
       "location": "Douala, Cameroon",
       "phone": "+237 677 777 777",
       "email": "info@tikari.cm"
@@ -2180,7 +2227,8 @@
       "islamicFinancing": "Islamic Financing",
       "compliance": "Compliance & Shariah",
       "glReporting": "GL & Reporting",
-      "agentBanking": "Agent Banking"
+      "agentBanking": "Agent Banking",
+      "administration": "System Administration"
     },
     "company": {
       "title": "Company",
@@ -2194,16 +2242,17 @@
       "title": "Resources",
       "education": "Shariah Finance 101",
       "compliance": "Regulatory Updates",
+      "jurisdictions": "Supported Jurisdictions",
       "support": "Help Center",
       "demo": "Book a Demo",
       "contactSupport": "Contact Support"
     },
     "assurance": {
-      "title": "100% Shariah Compliant and BEAC Approved",
-      "description": "All financial products are certified by our independent Shariah Supervisory Board and operate in full compliance with BEAC (Banque des États de l'Afrique Centrale) regulations governing the CEMAC region."
+      "title": "100% Shariah Compliant & Regulator Approved",
+      "description": "All financial products are certified by our independent Shariah Supervisory Board and operate in full compliance with regulatory guidelines across our supported jurisdictions."
     },
     "legal": {
-      "copyright": "TIKARI Finance, Cameroon. All rights reserved.",
+      "copyright": "TIKARI Finance. All rights reserved.",
       "privacy": "Privacy Policy",
       "terms": "Terms of Service",
       "security": "Security"

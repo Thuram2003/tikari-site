@@ -19,7 +19,7 @@ import {
   Notebook,
   Database
 } from "@phosphor-icons/react";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import Image from "next/image";
 import { Button } from "@/components/ui";
 import { useTranslations } from "next-intl";

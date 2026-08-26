@@ -76,10 +76,10 @@ export default function MegaMenu({ label, scrolled, tabs, items, featuredItem }:
     >
       <button
         className={`flex items-center gap-1 text-xs font-bold tracking-wider uppercase transition-colors duration-500 py-5 px-3 cursor-pointer ${open
-            ? "text-tikari-gold"
-            : scrolled
-              ? "text-tikari-green-dark hover:text-tikari-gold"
-              : "text-white/90 hover:text-white"
+          ? "text-tikari-gold"
+          : scrolled
+            ? "text-tikari-green-dark hover:text-tikari-gold"
+            : "text-white/90 hover:text-white"
           }`}
       >
         {label}
@@ -104,8 +104,8 @@ export default function MegaMenu({ label, scrolled, tabs, items, featuredItem }:
                   key={tab.id}
                   onMouseEnter={() => handleTabChange(tab.id)}
                   className={`w-full text-left px-3 py-2.5 text-[11px] font-bold tracking-wider uppercase transition-all duration-200 cursor-pointer ${activeTab === tab.id
-                      ? "bg-tikari-green/8 text-tikari-green-dark border-l-[3px] border-tikari-gold"
-                      : "text-tikari-green-dark/70 hover:bg-tikari-green/5 hover:text-tikari-green-dark"
+                    ? "bg-tikari-green/8 text-tikari-green-dark border-l-[3px] border-tikari-gold"
+                    : "text-tikari-green-dark/70 hover:bg-tikari-green/5 hover:text-tikari-green-dark"
                     }`}
                   style={{ borderRadius: 0 }}
                 >
@@ -116,18 +116,18 @@ export default function MegaMenu({ label, scrolled, tabs, items, featuredItem }:
           )}
 
           {/* Grid Content */}
-          <div className="flex-1 p-6 overflow-y-auto bg-white">
-            <div className="grid grid-cols-2 gap-4">
+          <div className="flex-1 p-6 overflow-y-auto bg-white rounded-2xl">
+            <div className="grid grid-cols-2 gap-4 rounded-2xl">
               {activeItems.map((item, index) => {
                 const ItemIcon = item.icon;
                 return (
                   <Link
                     key={index}
                     href={item.href}
-                    className="group flex items-start gap-3 p-3 border border-transparent hover:border-tikari-gold/20 hover:bg-tikari-cream/20 transition-all duration-200"
+                    className="group flex items-start gap-3 p-3 border border-transparent hover:border-tikari-gold/20 hover:bg-tikari-cream/20 transition-all duration-200 rounded-2xl"
                     style={{ borderRadius: 0 }}
                   >
-                    <div className="mt-0.5 p-2 bg-tikari-sage-light text-tikari-green group-hover:bg-tikari-gold group-hover:text-white transition-colors shrink-0">
+                    <div className="mt-0.5 p-2 bg-tikari-sage-light text-tikari-green group-hover:bg-tikari-gold group-hover:text-white transition-colors shrink-0 rounded-full">
                       <ItemIcon className="h-4 w-4" weight="duotone" />
                     </div>
                     <div className="min-w-0">

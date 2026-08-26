@@ -1227,7 +1227,7 @@
       "sections": {
         "agentNetwork": {
           "title": "Gestion de Réseau d'Agents",
-          "subtitle": "Recruter, intégrer et gérer les agents bancaires sans agence à travers le Cameroun",
+          "subtitle": "Recruter, intégrer et gérer les agents bancaires sans agence à travers l'Afrique",
           "features": {
             "recruitment": {
               "title": "Recrutement Agent & KYC",
@@ -1377,23 +1377,23 @@
         },
         "regulatoryReporting": {
           "title": "Conformité & Reporting Banque d'Agents",
-          "subtitle": "Réglementations COBAC de banque d'agents et reporting BEAC",
+          "subtitle": "Réglementations de banque d'agents et reporting à la banque centrale",
           "features": {
             "cobacNorms": {
-              "title": "Normes COBAC Banque d'Agents",
-              "description": "Conformité complète aux réglementations COBAC sur la banque d'agents et opérations bancaires sans agence"
+              "title": "Normes Réglementaires Banque d'Agents",
+              "description": "Conformité complète aux réglementations sur la banque d'agents et opérations bancaires sans agence"
             },
             "amlScreening": {
               "title": "Filtrage AML/CFT Agent",
-              "description": "Surveillance continue des transactions d'agent pour modèles suspects et conformité GABAC"
+              "description": "Surveillance continue des transactions d'agent pour modèles suspects et conformité réglementaire"
             },
             "beacReturns": {
-              "title": "Déclarations E-Money BEAC",
-              "description": "Soumission automatisée de rapports de transactions de monnaie électronique à BEAC selon calendrier réglementaire"
+              "title": "Déclarations E-Money Banque Centrale",
+              "description": "Soumission automatisée de rapports de transactions de monnaie électronique à la banque centrale selon calendrier réglementaire"
             },
             "activityReports": {
               "title": "Rapports d'Activité Agent",
-              "description": "Résumés d'activité agent quotidiens, hebdomadaires et mensuels pour audit interne et inspection COBAC"
+              "description": "Résumés d'activité agent quotidiens, hebdomadaires et mensuels pour audit interne et inspection réglementaire"
             },
             "complaints": {
               "title": "Suivi de Plaintes Clients",
@@ -1408,7 +1408,7 @@
       },
       "cta": {
         "title": "Voir la Banque d'Agents en Action",
-        "subtitle": "Planifiez une démo personnalisée pour voir comment TIKARI gère les réseaux d'agents, l'intégration MTN/Orange Money, les opérations de terrain et la conformité COBAC pour les besoins bancaires sans agence du Cameroun.",
+        "subtitle": "Planifiez une démo personnalisée pour voir comment TIKARI gère les réseaux d'agents, l'intégration MTN/Orange Money, les opérations de terrain et la conformité réglementaire pour les besoins bancaires sans agence d'Afrique.",
         "scheduleDemo": "Planifier une Démo",
         "exploreModules": "Explorer d'Autres Modules"
       }
@@ -1676,6 +1676,10 @@
       "compliance": {
         "name": "Mises à Jour Réglementaires",
         "desc": "Réglementations BEAC et normes de conformité."
+      },
+      "jurisdictions": {
+        "name": "Juridictions prises en charge",
+        "desc": "Conformité réglementaire dans la CEMAC, au Nigeria, dans l’UEMOA et au-delà."
       },
       "support": {
         "name": "Centre d'Aide",
@@ -2129,6 +2133,49 @@
       }
     }
   },
+  "jurisdictions": {
+    "title": "Juridictions prises en charge",
+    "subtitle": "TIKARI fonctionne dans plusieurs cadres réglementaires, apportant la conformité bancaire sans intérêt selon les normes AAOIFI aux institutions financières à travers l’Afrique.",
+    "intro": "Conçu pour répondre à la diversité des cadres réglementaires africains, TIKARI s’adapte aux directives des banques centrales et aux réglementations locales applicables aux institutions de microfinance.",
+    "regions": {
+      "cemac": {
+        "title": "Région CEMAC (COBAC & BEAC)",
+        "desc": "Conformité complète aux réglementations de la COBAC applicables à la microfinance (Catégories 1, 2 et 3) ainsi qu’aux directives monétaires de la BEAC. Préconfiguré pour le XAF et la génération automatisée des états prudentiels."
+      },
+      "nigeria": {
+        "title": "Nigeria (CBN)",
+        "desc": "Aligné sur les directives réglementaires de la Banque centrale du Nigeria (CBN) applicables aux institutions financières sans intérêt, avec prise en charge des modèles de guichets sans intérêt et une séparation complète des livres comptables."
+      },
+      "waemu": {
+        "title": "Région UEMOA (BCEAO)",
+        "desc": "Conforme aux exigences prudentielles de la Banque Centrale des États de l’Afrique de l’Ouest (BCEAO) applicables aux institutions de microfinance et bancaires sans intérêt, avec une configuration native pour les opérations en XOF."
+      },
+      "eastafrica": {
+        "title": "Afrique de l’Est & autres régions",
+        "desc": "Configuration adaptable prenant en charge les réglementations locales des banques centrales en Afrique de l’Est, avec une comptabilité multidevise (KES, UGX, TZS, RWF) et la prise en charge des cadres fiscaux locaux."
+      }
+    },
+    "coreStandards": {
+      "title": "Normes fondamentales intégrées",
+      "aaoifi": {
+        "title": "Comptabilité AAOIFI",
+        "desc": "Entièrement conforme aux normes comptables de l’Accounting and Auditing Organization for Islamic Financial Institutions (AAOIFI), notamment les Financial Accounting Standards (FAS)."
+      },
+      "ohada": {
+        "title": "Conformité OHADA",
+        "desc": "Intégration transparente avec le référentiel comptable OHADA, garantissant une double conformité avec les normes commerciales régionales."
+      },
+      "shariah": {
+        "title": "Gouvernance Charia",
+        "desc": "Référentiel Fatwa consultable et workflows automatisés de validation maker-checker permettant aux Conseils de supervision Charia et aux auditeurs externes de rester parfaitement alignés."
+      }
+    },
+    "cta": {
+      "title": "Déployez TIKARI dans votre pays",
+      "desc": "Prêt à lancer des produits bancaires sans intérêt conformes aux exigences réglementaires ? Planifiez une démonstration technique avec notre équipe d’implémentation.",
+      "button": "Planifier une démonstration technique"
+    }
+  },
   "footer": {
     "brand": {
       "description": "La première plateforme bancaire sans intérêt basée sur la foi du Cameroun. Infrastructure financière complète conforme AAOIFI conçue pour la banque islamique, la microfinance et les systèmes d'épargne traditionnels.",
@@ -2144,7 +2191,8 @@
       "islamicFinancing": "Financement Islamique",
       "compliance": "Conformité et Shariah",
       "glReporting": "Grand Livre et Reporting",
-      "agentBanking": "Banque d'Agents"
+      "agentBanking": "Banque d'Agents",
+      "administration": "Administration du système"
     },
     "company": {
       "title": "Entreprise",
@@ -2160,6 +2208,7 @@
       "compliance": "Mises à Jour Réglementaires",
       "support": "Centre d'Aide",
       "demo": "Réserver une Démo",
+      "jurisdictions": "Juridictions prises en charge",
       "contactSupport": "Support de Contact"
     },
     "assurance": {
