@@ -162,7 +162,6 @@ export default function CompliancePage() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Hero Section */}
       <section className="relative bg-tikari-green-dark text-white py-20 lg:py-28 px-6 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-tikari-green-dark via-tikari-green to-tikari-green-dark opacity-90"></div>
         <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-tikari-gold/10 rounded-full blur-3xl"></div>
@@ -199,7 +198,6 @@ export default function CompliancePage() {
         </div>
       </section>
 
-      {/* Regulatory Frameworks */}
       <section id="frameworks" className="py-16 lg:py-24 px-6 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
@@ -217,14 +215,13 @@ export default function CompliancePage() {
               return (
                 <div 
                   key={idx}
-                  className={`bg-white border ${framework.color} hover:shadow-xl transition-all duration-300 rounded-lg overflow-hidden`}
+                  className={`bg-white border ${framework.color} hover:shadow-xl transition-all duration-300 rounded-2xl overflow-hidden`}
                 >
                   <div className="p-8">
                     <div className="flex flex-col lg:flex-row lg:items-start gap-6">
-                      {/* Left: Icon and Title */}
                       <div className="lg:w-2/5">
                         <div className="flex items-start gap-4 mb-4">
-                          <div className="p-3 bg-tikari-green/10 rounded-md">
+                          <div className="p-3 bg-tikari-green/10 rounded-full">
                             <Icon className="h-7 w-7 text-tikari-green-dark" weight="bold" />
                           </div>
                           <div>
@@ -241,7 +238,6 @@ export default function CompliancePage() {
                         </p>
                       </div>
 
-                      {/* Right: Recent Updates */}
                       <div className="lg:w-3/5">
                         <h4 className="text-sm font-semibold text-tikari-green-dark mb-4 uppercase tracking-wide">
                           Recent Updates
@@ -250,7 +246,7 @@ export default function CompliancePage() {
                           {framework.updates.map((update, i) => (
                             <div 
                               key={i}
-                              className="flex items-start gap-4 p-4 bg-tikari-cream/30 border border-tikari-green/10 hover:border-tikari-green/30 transition-colors rounded-md"
+                              className="flex items-start gap-4 p-4 bg-tikari-cream/30 border border-tikari-green/10 hover:border-tikari-green/30 transition-colors rounded-2xl"
                             >
                               <Calendar className="h-5 w-5 text-tikari-green-dark mt-0.5 flex-shrink-0" weight="bold" />
                               <div className="flex-1">
@@ -300,7 +296,7 @@ export default function CompliancePage() {
             {complianceDocuments.map((doc, idx) => (
               <div 
                 key={idx}
-                className="bg-white border border-tikari-green/20 hover:border-tikari-gold hover:shadow-xl transition-all duration-300 group rounded-lg overflow-hidden"
+                className="bg-white border border-tikari-green/20 hover:border-tikari-gold hover:shadow-xl transition-all duration-300 group rounded-2xl overflow-hidden"
               >
                 <div className="p-6">
                   <div className="flex items-start justify-between mb-4">
@@ -349,7 +345,7 @@ export default function CompliancePage() {
             {webinars.map((webinar, idx) => (
               <div 
                 key={idx}
-                className="bg-white border border-tikari-green/20 hover:border-tikari-green hover:shadow-xl transition-all duration-300 rounded-lg overflow-hidden"
+                className="bg-white border border-tikari-green/20 hover:border-tikari-green hover:shadow-xl transition-all duration-300 rounded-2xl overflow-hidden"
               >
                 <div className="p-6">
                   <div className="flex items-center gap-3 mb-4">

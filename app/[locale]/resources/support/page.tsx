@@ -179,9 +179,6 @@ export default function SupportPage() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* =========================================================
-          HERO - LEFT UNCHANGED
-      ========================================================= */}
       <section className="relative bg-tikari-green-dark text-white py-20 lg:py-28 px-6 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-tikari-green-dark via-tikari-green to-tikari-green-dark opacity-90"></div>
 
@@ -189,10 +186,6 @@ export default function SupportPage() {
 
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="max-w-4xl">
-            <div className="inline-flex items-center gap-2 bg-tikari-gold/20 text-tikari-gold px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-tikari-gold/30">
-              <Question weight="bold" className="h-4 w-4" />
-              Support Centre
-            </div>
 
             <h1 className="text-4xl lg:text-[3.75rem] font-bold leading-[1.05] tracking-tight mb-6">
               Help Center
@@ -202,20 +195,6 @@ export default function SupportPage() {
               Find answers, tutorials, and direct support channels. We're here
               to help your institution succeed with TIKARI.
             </p>
-
-            <div className="max-w-2xl">
-              <div className="relative">
-                <input
-                  type="text"
-                  placeholder="Search for help articles, FAQs, or tutorials..."
-                  className="w-full px-6 py-4 text-tikari-green-dark placeholder:text-tikari-sage/60 outline-none border-2 border-white/20 focus:border-tikari-gold transition-colors"
-                />
-
-                <button className="absolute right-2 top-1/2 -translate-y-1/2 px-6 py-2 bg-tikari-gold text-tikari-green-dark font-semibold hover:bg-tikari-gold/90 transition-colors">
-                  Search
-                </button>
-              </div>
-            </div>
           </div>
         </div>
       </section>

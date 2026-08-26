@@ -75,7 +75,7 @@ export default function DemoPage() {
             </div>
 
             {/* Visual Image Block (Sharp Corners) */}
-            <div className="relative h-64 w-full rounded-md overflow-hidden shadow-lg border border-tikari-green/10">
+            <div className="relative h-64 w-full rounded-2xl overflow-hidden border border-tikari-green/10">
               <Image
                 src="/women-market.jpg"
                 alt="TIKARI Core Platform demo presentation"
@@ -90,7 +90,7 @@ export default function DemoPage() {
             </div>
 
             {/* What to expect list */}
-            <div className="space-y-4 bg-white border border-tikari-green/10 p-6 rounded-md shadow-sm">
+            <div className="space-y-4 bg-white border border-tikari-green/10 p-6 rounded-2xl">
               <h3 className="text-lg font-bold text-tikari-green-dark pb-2 border-b border-tikari-green/5">What to expect</h3>
               <ul className="space-y-4">
                 <li className="flex gap-3">
@@ -119,14 +119,14 @@ export default function DemoPage() {
 
             {/* Contacts Info */}
             <div className="grid grid-cols-2 gap-4">
-              <div className="bg-white border border-tikari-green/10 p-4 rounded-md flex items-start gap-2.5 shadow-sm">
+              <div className="bg-white border border-tikari-green/10 p-4 rounded-2xl flex items-start gap-2.5">
                 <MapPin className="h-5 w-5 text-tikari-gold shrink-0 mt-0.5" />
                 <div className="space-y-0.5">
                   <p className="text-[10px] text-tikari-sage uppercase tracking-wider font-bold">Office</p>
                   <p className="text-xs text-tikari-green-dark leading-normal">4 Etage, Bonaberi, Douala</p>
                 </div>
               </div>
-              <div className="bg-white border border-tikari-green/10 p-4 rounded-md flex items-start gap-2.5 shadow-sm">
+              <div className="bg-white border border-tikari-green/10 p-4 rounded-2xl flex items-start gap-2.5">
                 <Phone className="h-5 w-5 text-tikari-gold shrink-0 mt-0.5" />
                 <div className="space-y-0.5">
                   <p className="text-[10px] text-tikari-sage uppercase tracking-wider font-bold">Phone</p>
@@ -139,9 +139,9 @@ export default function DemoPage() {
           {/* Column 2: Form */}
           <div>
             {submitted ? (
-              <Card className="text-center py-16 rounded-md border border-tikari-green/10 shadow-lg">
+              <Card className="text-center py-16 rounded-2xl border border-tikari-green/10 shadow-lg">
                 <CardContent className="space-y-6">
-                  <div className="mx-auto w-16 h-16 bg-tikari-sage-light flex items-center justify-center text-tikari-gold rounded-md">
+                  <div className="mx-auto w-16 h-16 bg-tikari-sage-light flex items-center justify-center text-tikari-gold rounded-2xl">
                     <CheckCircle className="h-10 w-10 text-tikari-gold" />
                   </div>
                   <div className="space-y-2">
@@ -168,7 +168,6 @@ export default function DemoPage() {
                       <CardTitle className="text-2xl font-bold text-tikari-green-dark">Book Your Demo</CardTitle>
                       <CardDescription className="text-tikari-sage mt-1">Submit your details to request a custom session</CardDescription>
                     </div>
-                    <Badge variant="gold" className="rounded-md uppercase tracking-wider">Fast Response</Badge>
                   </div>
                 </CardHeader>
                 <CardContent className="pt-6">
@@ -185,7 +184,6 @@ export default function DemoPage() {
                           onChange={handleChange}
                           placeholder="Jean"
                           required
-                          className="rounded-md"
                         />
                       </div>
                       <div className="space-y-2">
@@ -198,7 +196,6 @@ export default function DemoPage() {
                           onChange={handleChange}
                           placeholder="Fouda"
                           required
-                          className="rounded-md"
                         />
                       </div>
                     </div>
@@ -215,7 +212,6 @@ export default function DemoPage() {
                           onChange={handleChange}
                           placeholder="email@institution.cm"
                           required
-                          className="rounded-md"
                         />
                       </div>
                       <div className="space-y-2">
@@ -227,7 +223,6 @@ export default function DemoPage() {
                           value={formData.phone}
                           onChange={handleChange}
                           placeholder="+237 677 777 777"
-                          className="rounded-md"
                         />
                       </div>
                     </div>
@@ -243,7 +238,6 @@ export default function DemoPage() {
                         onChange={handleChange}
                         placeholder="e.g. Al-Baraka Microfinance Douala"
                         required
-                        className="rounded-md"
                       />
                     </div>
 
@@ -257,7 +251,6 @@ export default function DemoPage() {
                           value={formData.accountType}
                           onChange={handleChange}
                           required
-                          className="rounded-md"
                         >
                           <option value="">Select type</option>
                           <option value="microfinance">Microfinance Bank (EMF)</option>
@@ -273,7 +266,6 @@ export default function DemoPage() {
                           name="estimatedCapital"
                           value={formData.estimatedCapital}
                           onChange={handleChange}
-                          className="rounded-md"
                         >
                           <option value="">Select range</option>
                           <option value="under-100m">Under 100M XAF</option>
@@ -293,16 +285,8 @@ export default function DemoPage() {
                         value={formData.message}
                         onChange={handleChange}
                         placeholder="List any specific product modules (e.g. Murabaha, Njangi) or core systems you migrate from..."
-                        className="min-h-[100px] rounded-md"
+                        className="min-h-[100px]"
                       />
-                    </div>
-
-                    {/* Privacy Alert */}
-                    <div className="bg-tikari-sage-light border border-tikari-green/10 p-4 rounded-md flex items-start gap-2.5">
-                      <ShieldAlert className="h-5 w-5 text-tikari-gold shrink-0 mt-0.5" />
-                      <p className="text-xs text-tikari-green-dark/70 leading-relaxed">
-                        Form data is processed under our privacy policy rules and is protected per Law No. 2010/012 on cybersecurity in Cameroon.
-                      </p>
                     </div>
 
                     {/* Form Controls */}
@@ -311,7 +295,6 @@ export default function DemoPage() {
                         type="submit"
                         variant="secondary"
                         size="lg"
-                        className="flex-1 rounded-md font-bold"
                         disabled={isSubmitting}
                       >
                         {isSubmitting ? "Submitting..." : "Submit request"}
@@ -320,7 +303,6 @@ export default function DemoPage() {
                         type="button"
                         variant="outline"
                         size="lg"
-                        className="rounded-md font-bold"
                         onClick={() => setFormData({
                           firstName: "",
                           lastName: "",

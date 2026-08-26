@@ -79,11 +79,6 @@ export default function AboutPage() {
         </div>
         
         <div className="max-w-4xl mx-auto relative">
-          <div className="inline-flex items-center gap-2 bg-tikari-gold/10 border border-tikari-gold/30 text-tikari-gold px-4 py-2 mb-6 text-sm font-semibold">
-            <ShieldCheck className="h-4 w-4" weight="fill" />
-            Scholar Verified & BEAC Approved
-          </div>
-
           <h1 className="text-4xl lg:text-6xl font-bold leading-tight tracking-tight mb-6">
             Banking Without Riba<br />for Central Africa
           </h1>
@@ -115,13 +110,13 @@ export default function AboutPage() {
                 TIKARI bridges this gap providing a complete, AAOIFI-certified core banking engine that handles everything from Murabaha financing to profit-sharing investment accounts, while staying fully compliant with BEAC and COBAC regulations.
               </p>
               <div className="flex flex-wrap gap-3">
-                <div className="bg-white border-2 border-tikari-green/20 px-4 py-2 text-sm font-semibold text-tikari-green-dark">
+                <div className="bg-white border-2 border-tikari-green/20 px-4 py-2 text-sm font-semibold text-tikari-green-dark rounded-full">
                   Zero Interest
                 </div>
-                <div className="bg-white border-2 border-tikari-green/20 px-4 py-2 text-sm font-semibold text-tikari-green-dark">
+                <div className="bg-white border-2 border-tikari-green/20 px-4 py-2 text-sm font-semibold text-tikari-green-dark rounded-full">
                   Asset-Backed Only
                 </div>
-                <div className="bg-white border-2 border-tikari-green/20 px-4 py-2 text-sm font-semibold text-tikari-green-dark">
+                <div className="bg-white border-2 border-tikari-green/20 px-4 py-2 text-sm font-semibold text-tikari-green-dark rounded-full">
                   Profit-Sharing
                 </div>
               </div>
@@ -167,7 +162,7 @@ export default function AboutPage() {
             {values.map((value, idx) => {
               const Icon = value.icon;
               return (
-                <div key={idx} className="p-8 bg-white border-2 border-tikari-green/10 hover:border-tikari-gold hover:shadow-xl transition-all duration-300">
+                <div key={idx} className="p-8 bg-white border-1 border-tikari-green/10 hover:border-tikari-gold hover:shadow-xl transition-all duration-300 rounded-2xl">
                   <Icon className="h-12 w-12 text-tikari-gold mb-4" weight="fill" />
                   <h3 className="text-xl font-bold text-tikari-green-dark mb-3">
                     {value.title}
@@ -186,10 +181,6 @@ export default function AboutPage() {
       <section id="scholars" className="py-20 lg:py-24 px-6 bg-tikari-green-dark text-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <div className="inline-flex items-center gap-2 bg-tikari-gold/10 border border-tikari-gold/30 text-tikari-gold px-4 py-2 mb-6 text-sm font-semibold">
-              <Certificate className="h-4 w-4" weight="fill" />
-              Independent Verification
-            </div>
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
               Our Shariah Supervisory Board
             </h2>
@@ -200,7 +191,7 @@ export default function AboutPage() {
 
           <div className="grid lg:grid-cols-3 gap-8">
             {scholars.map((scholar, idx) => (
-              <div key={idx} className="bg-white/5 border border-white/10 p-8 backdrop-blur-sm">
+              <div key={idx} className="bg-white/5 border border-white/10 p-8 backdrop-blur-sm rounded-2xl">
                 <div className="mb-6">
                   <h3 className="text-xl font-bold text-white mb-2">
                     {scholar.name}
@@ -223,7 +214,7 @@ export default function AboutPage() {
                     <p className="text-xs font-bold text-white/60 uppercase mb-2">Certifications</p>
                     <div className="flex flex-wrap gap-2">
                       {scholar.certifications.map((cert, certIdx) => (
-                        <span key={certIdx} className="text-xs bg-tikari-gold/10 border border-tikari-gold/30 text-tikari-gold px-3 py-1">
+                        <span key={certIdx} className="text-xs bg-tikari-gold/10 border border-tikari-gold/30 text-tikari-gold px-3 py-1 rounded-full">
                           {cert}
                         </span>
                       ))}
@@ -234,7 +225,7 @@ export default function AboutPage() {
             ))}
           </div>
 
-          <div className="mt-16 p-8 bg-white/5 border border-tikari-gold/20">
+          <div className="mt-16 p-8 bg-white/5 border border-tikari-gold/20 rounded-2xl">
             <div className="flex items-start gap-4">
               <ShieldCheck className="h-8 w-8 text-tikari-gold flex-shrink-0 mt-1" weight="fill" />
               <div>
