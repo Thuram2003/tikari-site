@@ -33,16 +33,14 @@ export default function CTASection() {
             variant="secondary" 
             size="lg" 
             href="/demo"
-            className="rounded-md font-bold"
           >
             {t("bookDemo")}
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
           <Button 
-            variant="outline" 
+            variant="cream" 
             size="lg" 
             href="/platform"
-            className="rounded-md font-bold"
           >
             {t("explorePlatform")}
           </Button>

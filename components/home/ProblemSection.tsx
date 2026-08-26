@@ -30,28 +30,28 @@ export default function ProblemSection() {
             {/* Problem Cards */}
             <div className="space-y-6">
               
-              <div className="bg-white border-l-4 border-tikari-sage/30 p-6 space-y-2">
+              <div className="bg-white border-l-4 border-tikari-sage/30 p-6 space-y-2 rounded-r-2xl">
                 <h3 className="text-base font-bold text-tikari-green-dark">{t("issues.income.title")}</h3>
                 <p className="text-sm text-tikari-sage">
                   {t("issues.income.desc")}
                 </p>
               </div>
 
-              <div className="bg-white border-l-4 border-tikari-sage/30 p-6 space-y-2">
+              <div className="bg-white border-l-4 border-tikari-sage/30 p-6 space-y-2 rounded-r-2xl">
                 <h3 className="text-base font-bold text-tikari-green-dark">{t("issues.cobac.title")}</h3>
                 <p className="text-sm text-tikari-sage">
                   {t("issues.cobac.desc")}
                 </p>
               </div>
 
-              <div className="bg-white border-l-4 border-tikari-sage/30 p-6 space-y-2">
+              <div className="bg-white border-l-4 border-tikari-sage/30 p-6 space-y-2 rounded-r-2xl">
                 <h3 className="text-base font-bold text-tikari-green-dark">{t("issues.governance.title")}</h3>
                 <p className="text-sm text-tikari-sage">
                   {t("issues.governance.desc")}
                 </p>
               </div>
 
-              <div className="bg-white border-l-4 border-tikari-sage/30 p-6 space-y-2">
+              <div className="bg-white border-l-4 border-tikari-sage/30 p-6 space-y-2 rounded-r-2xl">
                 <h3 className="text-base font-bold text-tikari-green-dark">{t("issues.eod.title")}</h3>
                 <p className="text-sm text-tikari-sage">
                   {t("issues.eod.desc")}
@@ -61,7 +61,7 @@ export default function ProblemSection() {
             </div>
 
             {/* TIKARI Difference */}
-            <div className="bg-tikari-sage-light border-l-4 border-tikari-green p-8 space-y-4">
+            <div className="bg-tikari-sage-light border-l-4 border-tikari-green p-8 space-y-4 rounded-r-2xl">
               <h3 className="text-xl font-bold text-tikari-green-dark">{t("tikariDifference.title")}</h3>
               <p className="text-base text-tikari-green-dark leading-relaxed">
                 {t("tikariDifference.desc1")}
@@ -76,12 +76,12 @@ export default function ProblemSection() {
           {/* Right Image */}
           <div className="lg:col-span-5">
             <div className="sticky top-24 space-y-4">
-              <div className="relative h-[400px] lg:h-[600px] overflow-hidden border border-tikari-green/10 bg-white">
+              <div className="relative h-[400px] lg:h-[600px] overflow-hidden border border-tikari-green/10 bg-white rounded-2xl">
                 <Image
                   src="/compliance.jpg"
                   alt="Cameroon Islamic Banking Operations"
                   fill
-                  className="object-cover"
+                  className="object-cover rounded-2xl"
                 />
               </div>
               <p className="text-sm text-tikari-sage leading-relaxed">

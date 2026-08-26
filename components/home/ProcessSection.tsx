@@ -39,7 +39,7 @@ export default function ProcessSection() {
       
       <div className="max-w-7xl mx-auto space-y-14 lg:space-y-20 relative z-10">
         <div className="text-center max-w-3xl mx-auto space-y-5">
-          <div className="inline-flex items-center px-3.5 py-1.5 bg-tikari-gold/10 border border-tikari-gold/30 backdrop-blur-sm">
+          <div className="inline-flex items-center px-3.5 py-1.5 bg-tikari-gold/10 border border-tikari-gold/30 backdrop-blur-sm rounded-full">
             <span className="text-[11px] uppercase tracking-[0.15em] text-tikari-gold-dark font-semibold">{t("badge")}</span>
           </div>
           <h2 className="text-4xl lg:text-[3.25rem] font-bold text-tikari-green-dark leading-[1.15] tracking-tight">
@@ -57,10 +57,10 @@ export default function ProcessSection() {
             src="/meeting.jpg"
             alt={t("imageCaption")}
             fill
-            className="object-cover"
+            className="object-cover rounded-2xl"
             priority
           />
-          <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-tikari-green-dark/90 to-transparent p-6 lg:p-8">
+          <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-tikari-green-dark/90 to-transparent p-6 lg:p-8 rounded-2xl">
             <p className="text-sm lg:text-base text-white/95 leading-relaxed max-w-3xl">
               {t("imageCaption")}
             </p>
@@ -68,10 +68,10 @@ export default function ProcessSection() {
         </div>
 
         {/* Steps Grid with Arrows */}
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-6xl mx-auto ">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 relative">
             {/* Connection Lines for Desktop */}
-            <div className="hidden lg:block absolute top-16 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-tikari-gold/30 to-transparent"></div>
+            <div className="hidden lg:block absolute top-16 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-tikari-gold/30 to-transparent rounded-2xl"></div>
             
             {steps.map((step, idx) => (
               <div key={idx} className="relative">
@@ -82,11 +82,11 @@ export default function ProcessSection() {
                   </div>
                 )}
                 
-                <div className="bg-white border border-tikari-green/[0.12] p-6 lg:p-7 space-y-4 relative hover:shadow-lg hover:border-tikari-gold/40 transition-all duration-300 group h-full">
+                <div className="bg-white border border-tikari-green/[0.12] p-6 lg:p-7 space-y-4 relative hover:shadow-lg hover:border-tikari-gold/40 transition-all duration-300 group h-full rounded-2xl">
                   {/* Number Badge */}
                   <div className="flex items-center justify-between">
                     <span className="text-5xl font-bold text-tikari-gold/20 font-mono leading-none">{step.num}</span>
-                    <div className="w-11 h-11 bg-tikari-gold/[0.08] border border-tikari-gold/[0.15] flex items-center justify-center text-tikari-gold group-hover:bg-tikari-gold/[0.12] group-hover:border-tikari-gold/[0.25] transition-all duration-300">
+                    <div className="w-11 h-11 bg-tikari-gold/[0.08] border border-tikari-gold/[0.15] flex items-center justify-center text-tikari-gold group-hover:bg-tikari-gold/[0.12] group-hover:border-tikari-gold/[0.25] transition-all duration-300 rounded-full">
                       <step.icon className="h-5 w-5" strokeWidth={1.5} />
                     </div>
                   </div>

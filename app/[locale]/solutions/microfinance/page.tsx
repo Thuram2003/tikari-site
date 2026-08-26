@@ -22,66 +22,68 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui";
+import { useTranslations } from "next-intl";
 
 export default function MicrofinanceSolutionsPage() {
+  const t = useTranslations("solutions.microfinance");
   const licenceCategories = [
     {
-      title: "Unit MFB",
-      capital: "200M FCFA+ min. capital",
-      description: "A single-branch non-interest MFB serving a local government or community. TIKARI provides the full platform — no feature restrictions for smaller institutions.",
+      title: t("licenceCategories.unit.title"),
+      capital: t("licenceCategories.unit.capital"),
+      description: t("licenceCategories.unit.description"),
       icon: MapPin,
       features: [
-        "Single-branch teller operations",
-        "Njangi group banking",
-        "Murabaha and Mudarabah products",
-        "COBAC Unit MFB returns",
-        "Under-10-minute EOD close"
+        t("licenceCategories.unit.features.0"),
+        t("licenceCategories.unit.features.1"),
+        t("licenceCategories.unit.features.2"),
+        t("licenceCategories.unit.features.3"),
+        t("licenceCategories.unit.features.4")
       ],
       color: "bg-tikari-green-dark"
     },
     {
-      title: "State MFB",
-      capital: "1B FCFA+ min. capital",
-      description: "Multi-branch operations across a region. TIKARI handles inter-branch reconciliation, agent banking networks, and the higher reporting obligations of regional-tier MFBs.",
+      title: t("licenceCategories.state.title"),
+      capital: t("licenceCategories.state.capital"),
+      description: t("licenceCategories.state.description"),
       icon: BuildingOffice,
       features: [
-        "Multi-branch operations",
-        "Inter-branch GL consolidation",
-        "Agent banking with geo-tracking",
-        "Regional MFB COBAC returns",
-        "Expanded product range"
+        t("licenceCategories.state.features.0"),
+        t("licenceCategories.state.features.1"),
+        t("licenceCategories.state.features.2"),
+        t("licenceCategories.state.features.3"),
+        t("licenceCategories.state.features.4")
       ],
       color: "bg-tikari-gold"
     },
     {
-      title: "National MFB",
-      capital: "5B FCFA+ min. capital",
-      description: "Nation-wide operations with higher capital, broader product range, and more complex COBAC reporting. TIKARI scales to national tier without requiring additional modules or licences.",
+      title: t("licenceCategories.national.title"),
+      capital: t("licenceCategories.national.capital"),
+      description: t("licenceCategories.national.description"),
       icon: Bank,
       features: [
-        "Nationwide branch network",
-        "Full Islamic product suite",
-        "All COBAC returns",
-        "Sukuk and Takaful structures",
-        "Group/holding company reporting"
+        t("licenceCategories.national.features.0"),
+        t("licenceCategories.national.features.1"),
+        t("licenceCategories.national.features.2"),
+        t("licenceCategories.national.features.3"),
+        t("licenceCategories.national.features.4")
       ],
       color: "bg-tikari-green"
     }
   ];
 
   const cobacReturns = [
-    { code: "MFB-001", name: "Statement of Financial Position" },
-    { code: "MFB-002", name: "Statement of Income" },
-    { code: "MFB-003", name: "Capital Adequacy Ratio" },
-    { code: "MFB-004", name: "Liquidity Ratio" },
-    { code: "MFB-005", name: "Portfolio at Risk" },
-    { code: "MFB-006", name: "Profit-Sharing Ratios" },
-    { code: "MFB-007", name: "Mudarabah Pool Report" },
-    { code: "MFB-008", name: "Large Exposures" },
-    { code: "MFB-009", name: "Foreign Currency Exposure" },
-    { code: "AML/CFT", name: "GABAC AML/CFT Reporting" },
-    { code: "BEAC-01", name: "BEAC Interbank Reporting" },
-    { code: "TAX-01", name: "FCFA Tax Compliance Filing" }
+    { code: t("cobacReturns.items.0.code"), name: t("cobacReturns.items.0.name") },
+    { code: t("cobacReturns.items.1.code"), name: t("cobacReturns.items.1.name") },
+    { code: t("cobacReturns.items.2.code"), name: t("cobacReturns.items.2.name") },
+    { code: t("cobacReturns.items.3.code"), name: t("cobacReturns.items.3.name") },
+    { code: t("cobacReturns.items.4.code"), name: t("cobacReturns.items.4.name") },
+    { code: t("cobacReturns.items.5.code"), name: t("cobacReturns.items.5.name") },
+    { code: t("cobacReturns.items.6.code"), name: t("cobacReturns.items.6.name") },
+    { code: t("cobacReturns.items.7.code"), name: t("cobacReturns.items.7.name") },
+    { code: t("cobacReturns.items.8.code"), name: t("cobacReturns.items.8.name") },
+    { code: t("cobacReturns.items.9.code"), name: t("cobacReturns.items.9.name") },
+    { code: t("cobacReturns.items.10.code"), name: t("cobacReturns.items.10.name") },
+    { code: t("cobacReturns.items.11.code"), name: t("cobacReturns.items.11.name") }
   ];
 
   return (
@@ -95,13 +97,10 @@ export default function MicrofinanceSolutionsPage() {
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="max-w-4xl">
             <h1 className="text-4xl lg:text-[3.75rem] font-bold leading-[1.05] tracking-tight mb-6">
-              Solutions for Microfinance Banks
+              {t("hero.title")}
             </h1>
-            <p className="text-[17px] lg:text-[19px] text-white/85 leading-relaxed max-w-3xl mb-4">
-              Built for COBAC-licensed non-interest MFBs.
-            </p>
             <p className="text-[17px] lg:text-[19px] text-white/85 leading-relaxed max-w-3xl mb-8">
-              Whether you hold a Unit, Regional, or National MFB licence, TIKARI gives you a core that satisfies the COBAC examiner, your Shariah Supervisory Board, and your operations team from day one.
+              {t("hero.subtitle")}
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
@@ -109,19 +108,17 @@ export default function MicrofinanceSolutionsPage() {
                 variant="secondary"
                 size="lg"
                 href="/demo"
-                className="group bg-tikari-gold text-tikari-green-dark hover:bg-tikari-gold/90 rounded-md"
               >
-                Book a Demo
+                {t("hero.cta.demo")}
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" weight="bold" />
               </Button>
               
               <Button
-                variant="secondary"
+                variant="cream"
                 size="lg"
                 href="/platform"
-                className="group bg-white/10 text-white hover:bg-white/20 border-2 border-white/20 rounded-md"
               >
-                See the Platform
+                {t("hero.cta.platform")}
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" weight="bold" />
               </Button>
             </div>
@@ -130,11 +127,17 @@ export default function MicrofinanceSolutionsPage() {
       </section>
 
       {/* All Licence Categories Section */}
-      <section className="py-16 lg:py-24 px-6 bg-white">
+      <section className="py-16 lg:py-24 px-6 bg-gradient-to-br from-tikari-cream/30 via-white to-tikari-cream/20">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
+            <div className="inline-block mb-4">
+              <span className="inline-flex items-center gap-2 px-4 py-2 bg-tikari-green/10 text-tikari-green-dark rounded-full text-sm font-semibold">
+                <Bank className="h-4 w-4" weight="bold" />
+                Licence Tiers
+              </span>
+            </div>
             <h2 className="text-3xl lg:text-[2.75rem] font-bold mb-4 leading-[1.15] tracking-tight text-tikari-green-dark">
-              The right fit at every licence tier
+              {t("licenceTiers.title")}
             </h2>
           </div>
 
@@ -144,32 +147,52 @@ export default function MicrofinanceSolutionsPage() {
               return (
                 <div 
                   key={idx}
-                  className="bg-white border-2 border-tikari-green/20 hover:border-tikari-green hover:shadow-2xl transition-all duration-300 group"
+                  className="bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-500 group overflow-hidden border border-tikari-green/10 hover:border-tikari-green/30 hover:-translate-y-2"
                 >
-                  {/* Header */}
-                  <div className={`${category.color} text-white p-8`}>
-                    <div className="flex items-center gap-4 mb-4">
-                      <div className="w-14 h-14 bg-white/20 border border-white/30 flex items-center justify-center">
-                        <Icon className="h-7 w-7" weight="bold" />
+                  {/* Header with Gradient */}
+                  <div className={`${category.color} text-white p-8 relative overflow-hidden`}>
+                    {/* Decorative gradient overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div className="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full blur-2xl"></div>
+                    
+                    <div className="relative z-10">
+                      <div className="flex items-center gap-4 mb-6">
+                        <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-xl border border-white/30 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                          <Icon className="h-8 w-8" weight="bold" />
+                        </div>
+                        <div className="flex-1">
+                          <h3 className="text-2xl font-bold mb-1">{category.title}</h3>
+                          <p className="text-sm text-white/80 font-semibold bg-white/10 px-3 py-1 rounded-full inline-block">
+                            {category.capital}
+                          </p>
+                        </div>
                       </div>
-                      <div>
-                        <h3 className="text-2xl font-bold">{category.title}</h3>
-                        <p className="text-sm text-white/75 mt-1">{category.capital}</p>
-                      </div>
+                      <p className="text-[15px] text-white/90 leading-relaxed">
+                        {category.description}
+                      </p>
                     </div>
-                    <p className="text-[15px] text-white/85 leading-relaxed">
-                      {category.description}
-                    </p>
                   </div>
 
-                  {/* Features */}
-                  <div className="p-8 space-y-3">
-                    {category.features.map((feature, featureIdx) => (
-                      <div key={featureIdx} className="flex items-start gap-3">
-                        <CheckCircle className="h-5 w-5 text-tikari-green flex-shrink-0 mt-0.5" weight="bold" />
-                        <span className="text-[14px] text-tikari-sage leading-relaxed">{feature}</span>
-                      </div>
-                    ))}
+                  {/* Features with improved spacing */}
+                  <div className="p-8 bg-gradient-to-b from-transparent to-tikari-cream/10">
+                    <div className="space-y-4">
+                      {category.features.map((feature, featureIdx) => (
+                        <div 
+                          key={featureIdx} 
+                          className="flex items-start gap-3 group/item hover:translate-x-1 transition-transform duration-200"
+                        >
+                          <div className="mt-0.5 flex-shrink-0">
+                            <CheckCircle 
+                              className="h-5 w-5 text-tikari-green group-hover/item:scale-110 transition-transform" 
+                              weight="bold" 
+                            />
+                          </div>
+                          <span className="text-[14.5px] text-tikari-green-dark/80 leading-relaxed font-medium">
+                            {feature}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 </div>
               );
@@ -185,25 +208,24 @@ export default function MicrofinanceSolutionsPage() {
             {/* Content */}
             <div>
               <h2 className="text-3xl lg:text-[2.75rem] font-bold mb-6 leading-[1.15] tracking-tight text-tikari-green-dark">
-                Your next COBAC examination should be uneventful
+                {t("cobacCompliance.title")}
               </h2>
               
               <div className="space-y-4 text-[15px] lg:text-[16px] text-tikari-sage leading-relaxed">
                 <p>
-                  TIKARI generates all 12 COBAC prudential returns directly from live GL data. Your compliance team is not manually exporting spreadsheets and reformatting at month-end.
+                  {t("cobacCompliance.description1")}
                 </p>
                 <p>
-                  The platform also maintains a complete, immutable audit trail and Fatwa repository. When an examiner asks to see the Shariah approval for your Musharakah product — it is searchable and printable in under a minute.
+                  {t("cobacCompliance.description2")}
                 </p>
               </div>
 
               <Button
-                variant="secondary"
                 size="lg"
                 href="/platform/compliance"
-                className="group mt-8 bg-tikari-green-dark text-white hover:bg-tikari-green rounded-md"
+                className="group mt-8"
               >
-                See the compliance features
+                {t("cobacCompliance.cta")}
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" weight="bold" />
               </Button>
             </div>
@@ -213,10 +235,10 @@ export default function MicrofinanceSolutionsPage() {
               {cobacReturns.map((item, idx) => (
                 <div 
                   key={idx}
-                  className="bg-white border border-tikari-green/10 p-5 hover:border-tikari-green/30 hover:shadow-lg transition-all duration-300"
+                  className="bg-white border border-tikari-green/10 p-5 hover:border-tikari-green/30 hover:shadow-lg transition-all duration-300 rounded-2xl"
                 >
                   <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-tikari-green/10 border border-tikari-green/20 flex items-center justify-center flex-shrink-0">
+                    <div className="w-8 h-8 bg-tikari-green/10 border border-tikari-green/20 flex items-center justify-center flex-shrink-0 rounded-full">
                       <FileText className="h-4 w-4 text-tikari-green-dark" weight="bold" />
                     </div>
                     <div>
@@ -236,10 +258,10 @@ export default function MicrofinanceSolutionsPage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-[2.75rem] font-bold mb-6 leading-[1.15] tracking-tight">
-              Everything you need for Islamic microfinance
+              {t("keyFeatures.title")}
             </h2>
             <p className="text-[16px] lg:text-[18px] text-white/75 leading-relaxed max-w-3xl mx-auto">
-              From CNI verification to Njangi group ledgers, TIKARI handles the unique requirements of Cameroon's Islamic banking sector.
+              {t("keyFeatures.subtitle")}
             </p>
           </div>
 
@@ -247,42 +269,42 @@ export default function MicrofinanceSolutionsPage() {
             {[
               {
                 icon: Users,
-                title: "Njangi Group Banking",
-                description: "Digital rotative ledgers with automated profit distribution and COBAC group exposure tracking."
+                title: t("keyFeatures.features.njangi.title"),
+                description: t("keyFeatures.features.njangi.description")
               },
               {
                 icon: Coins,
-                title: "FCFA Native Accounting",
-                description: "Primary currency in FCFA with BEAC exchange rate sync for foreign currency transactions."
+                title: t("keyFeatures.features.fcfa.title"),
+                description: t("keyFeatures.features.fcfa.description")
               },
               {
                 icon: Receipt,
-                title: "Murabaha Auto-Calculation",
-                description: "Configure markup rates, installment schedules, and early settlement rebates per Shariah guidelines."
+                title: t("keyFeatures.features.murabaha.title"),
+                description: t("keyFeatures.features.murabaha.description")
               },
               {
                 icon: Database,
-                title: "SYSTAC/SYGMA Integration",
-                description: "Real-time interbank transfers via Cameroon's SYSTAC infrastructure with GL auto-posting."
+                title: t("keyFeatures.features.systac.title"),
+                description: t("keyFeatures.features.systac.description")
               },
               {
                 icon: CurrencyCircleDollar,
-                title: "MTN & Orange Money",
-                description: "Direct integration with mobile money operators for agent cash-in/cash-out operations."
+                title: t("keyFeatures.features.mobileMoney.title"),
+                description: t("keyFeatures.features.mobileMoney.description")
               },
               {
                 icon: Notebook,
-                title: "10-Minute EOD Close",
-                description: "Automated end-of-day processes including profit accrual, dormancy marking, and trial balance generation."
+                title: t("keyFeatures.features.eod.title"),
+                description: t("keyFeatures.features.eod.description")
               }
             ].map((feature, idx) => {
               const Icon = feature.icon;
               return (
                 <div 
                   key={idx}
-                  className="bg-white/[0.08] border border-white/[0.12] p-6 hover:bg-white/[0.12] hover:border-white/[0.18] transition-all duration-300"
+                  className="bg-white/[0.08] border border-white/[0.12] p-6 hover:bg-white/[0.12] hover:border-white/[0.18] transition-all duration-300 rounded-2xl"
                 >
-                  <div className="w-12 h-12 bg-tikari-gold/20 border border-tikari-gold/30 flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 bg-tikari-gold/20 border border-tikari-gold/30 flex items-center justify-center mb-4 rounded-full">
                     <Icon className="h-6 w-6 text-tikari-gold" weight="bold" />
                   </div>
                   <h3 className="text-[17px] font-bold mb-2">{feature.title}</h3>
@@ -299,12 +321,12 @@ export default function MicrofinanceSolutionsPage() {
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Image */}
-            <div className="relative h-[450px] lg:h-[600px] overflow-hidden shadow-2xl border border-tikari-green/10">
+            <div className="relative h-[450px] lg:h-[600px] overflow-hidden shadow-2xl border border-tikari-green/10 rounded-2xl">
               <Image
                 src="/meeting.jpg"
                 alt="Multi-branch Islamic banking"
                 fill
-                className="object-cover"
+                className="object-cover rounded-2xl"
                 priority
               />
               <div className="absolute inset-0 bg-gradient-to-br from-tikari-green-dark/50 via-tikari-green/30 to-transparent"></div>
@@ -313,21 +335,21 @@ export default function MicrofinanceSolutionsPage() {
             {/* Content */}
             <div>
               <h2 className="text-3xl lg:text-[2.75rem] font-bold mb-6 leading-[1.15] tracking-tight">
-                Scale from one branch to nationwide
+                {t("multiBranch.title")}
               </h2>
               
               <p className="text-[16px] text-tikari-sage leading-relaxed mb-8">
-                TIKARI supports branch hierarchies from head office to regional hubs to individual branches. Inter-branch GL postings are automated, and you can set lending limits, cash holding thresholds, and approval workflows per branch.
+                {t("multiBranch.description")}
               </p>
 
               <div className="grid sm:grid-cols-2 gap-4">
                 {[
-                  "Branch registration with COBAC codes",
-                  "Inter-branch fund transfers",
-                  "Centralized treasury allocation",
-                  "Branch performance dashboards",
-                  "Agent network geo-tracking",
-                  "Commission ledger per branch"
+                  t("multiBranch.features.0"),
+                  t("multiBranch.features.1"),
+                  t("multiBranch.features.2"),
+                  t("multiBranch.features.3"),
+                  t("multiBranch.features.4"),
+                  t("multiBranch.features.5")
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-start gap-3">
                     <CheckCircle className="h-5 w-5 text-tikari-green flex-shrink-0 mt-0.5" weight="bold" />
@@ -347,10 +369,10 @@ export default function MicrofinanceSolutionsPage() {
         
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <h2 className="text-3xl lg:text-[2.75rem] font-bold mb-6 leading-[1.15] tracking-tight">
-            Ready to launch your Islamic microfinance bank?
+            {t("cta.title")}
           </h2>
           <p className="text-[16px] lg:text-[18px] text-tikari-green-dark/75 leading-relaxed mb-10 max-w-2xl mx-auto">
-            Schedule a personalized demo to see how TIKARI handles COBAC compliance, Shariah governance, and multi-branch operations for Cameroon's Islamic banking sector.
+            {t("cta.subtitle")}
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -358,19 +380,17 @@ export default function MicrofinanceSolutionsPage() {
               variant="primary"
               size="lg"
               href="/demo"
-              className="group bg-tikari-green-dark text-white hover:bg-tikari-green rounded-md"
             >
-              Schedule a Demo
+              {t("cta.scheduleDemo")}
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" weight="bold" />
             </Button>
             
             <Button
-              variant="secondary"
+              variant="cream"
               size="lg"
               href="/platform"
-              className="group bg-white/90 text-tikari-green-dark hover:bg-white border-2 border-tikari-green-dark/20 rounded-md"
             >
-              Explore the Platform
+              {t("cta.explorePlatform")}
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" weight="bold" />
             </Button>
           </div>

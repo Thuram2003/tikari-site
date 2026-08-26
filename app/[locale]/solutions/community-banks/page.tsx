@@ -16,44 +16,46 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui";
+import { useTranslations } from "next-intl";
 
 export default function CommunityBanksSolutionsPage() {
+  const t = useTranslations("solutions.communityBanks");
   const institutionTypes = [
     {
-      title: "Community Development Banks",
-      description: "Serving a defined local population with savings, Murabaha home improvement financing, and group lending structures. TIKARI provides the teller operations, Njangi group banking, and the Shariah governance tools you need at community scale.",
+      title: t("institutions.developmentBanks.title"),
+      description: t("institutions.developmentBanks.description"),
       icon: BuildingOffice,
       features: [
-        "Full COBAC-compliant core banking",
-        "Njangi and group savings cycles",
-        "Murabaha home improvement financing",
-        "Agent banking for field collections"
+        t("institutions.developmentBanks.features.0"),
+        t("institutions.developmentBanks.features.1"),
+        t("institutions.developmentBanks.features.2"),
+        t("institutions.developmentBanks.features.3")
       ],
       color: "bg-tikari-green-dark",
       image: "/women-market.jpg"
     },
     {
-      title: "Cooperatives and Thrifts",
-      description: "Cooperative savings and credit societies operating on non-interest principles need product structures that match how members actually save and borrow. TIKARI supports Qard Hasan (benevolent lending), Mudarabah savings pools, and rotating Njangi group structures.",
+      title: t("institutions.cooperatives.title"),
+      description: t("institutions.cooperatives.description"),
       icon: Handshake,
       features: [
-        "Qard Hasan member loans",
-        "Mudarabah savings pool",
-        "Rotating Njangi cycles",
-        "Member ledger and dividend distribution"
+        t("institutions.cooperatives.features.0"),
+        t("institutions.cooperatives.features.1"),
+        t("institutions.cooperatives.features.2"),
+        t("institutions.cooperatives.features.3")
       ],
       color: "bg-tikari-gold",
       image: "/handshake.jpg"
     },
     {
-      title: "Islamic Windows",
-      description: "Conventional banks and MFBs operating a Shariah-compliant window alongside their conventional book need strict separation between the two ledgers. TIKARI supports Islamic window operations with ring-fenced accounts, separate profit pools, and dedicated Shariah governance.",
+      title: t("institutions.islamicWindows.title"),
+      description: t("institutions.islamicWindows.description"),
       icon: Bank,
       features: [
-        "Ring-fenced Islamic window GL",
-        "Separate profit pool from conventional book",
-        "Shariah governance for window products",
-        "Combined or separated reporting"
+        t("institutions.islamicWindows.features.0"),
+        t("institutions.islamicWindows.features.1"),
+        t("institutions.islamicWindows.features.2"),
+        t("institutions.islamicWindows.features.3")
       ],
       color: "bg-tikari-green",
       image: "/meeting.jpg"
@@ -71,13 +73,10 @@ export default function CommunityBanksSolutionsPage() {
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="max-w-4xl">
             <h1 className="text-4xl lg:text-[3.75rem] font-bold leading-[1.05] tracking-tight mb-6">
-              Solutions for Community Banks
+              {t("hero.title")}
             </h1>
-            <p className="text-[17px] lg:text-[19px] text-white/85 leading-relaxed max-w-3xl mb-4">
-              Community-scale operations, enterprise-grade compliance.
-            </p>
             <p className="text-[17px] lg:text-[19px] text-white/85 leading-relaxed max-w-3xl mb-8">
-              Whether you are a community development bank, a COBAC-regulated cooperative, or a conventional institution running an Islamic window, TIKARI gives you the compliance posture and product depth to serve non-interest customers properly.
+              {t("hero.subtitle")}
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
@@ -85,19 +84,17 @@ export default function CommunityBanksSolutionsPage() {
                 variant="secondary"
                 size="lg"
                 href="/demo"
-                className="group bg-tikari-gold text-tikari-green-dark hover:bg-tikari-gold/90 rounded-md"
               >
-                Book a Demo
+                {t("hero.cta.demo")}
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" weight="bold" />
               </Button>
               
               <Button
-                variant="secondary"
+                variant="cream"
                 size="lg"
                 href="/platform"
-                className="group bg-white/10 text-white hover:bg-white/20 border-2 border-white/20 rounded-md"
               >
-                See the Platform
+                {t("hero.cta.platform")}
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" weight="bold" />
               </Button>
             </div>
@@ -110,10 +107,10 @@ export default function CommunityBanksSolutionsPage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-[2.75rem] font-bold mb-4 leading-[1.15] tracking-tight text-tikari-green-dark">
-              Who This Is For
+              {t("whoThisIsFor.title")}
             </h2>
             <p className="text-[16px] lg:text-[18px] text-tikari-sage max-w-3xl mx-auto">
-              Three distinct institution types, one platform.
+              {t("whoThisIsFor.subtitle")}
             </p>
           </div>
 
@@ -128,7 +125,7 @@ export default function CommunityBanksSolutionsPage() {
                   className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center"
                 >
                   {/* Image */}
-                  <div className={`relative h-[450px] lg:h-[550px] overflow-hidden shadow-2xl border border-tikari-green/10 ${isEven ? '' : 'lg:order-2'}`}>
+                  <div className={`relative h-[450px] lg:h-[550px] overflow-hidden shadow-2xl border border-tikari-green/10 rounded-2xl ${isEven ? '' : 'lg:order-2'}`}>
                     <Image
                       src={type.image}
                       alt={type.title}
@@ -146,7 +143,7 @@ export default function CommunityBanksSolutionsPage() {
                   {/* Content */}
                   <div className={isEven ? '' : 'lg:order-1'}>
                     <div className="flex items-center gap-4 mb-6">
-                      <div className={`w-14 h-14 ${type.color} text-white flex items-center justify-center`}>
+                      <div className={`w-14 h-14 ${type.color} text-white flex items-center justify-center rounded-full`}>
                         <Icon className="h-7 w-7" weight="bold" />
                       </div>
                       <h3 className="text-2xl lg:text-3xl font-bold text-tikari-green-dark">
@@ -179,10 +176,10 @@ export default function CommunityBanksSolutionsPage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-[2.75rem] font-bold mb-6 leading-[1.15] tracking-tight text-tikari-green-dark">
-              Built for Cameroon community banking
+              {t("keyFeatures.title")}
             </h2>
             <p className="text-[16px] lg:text-[18px] text-tikari-sage leading-relaxed max-w-3xl mx-auto">
-              From Njangi group ledgers to COBAC reporting, TIKARI handles the unique requirements of community-scale Islamic banking in Cameroon.
+              {t("keyFeatures.subtitle")}
             </p>
           </div>
 
@@ -190,42 +187,42 @@ export default function CommunityBanksSolutionsPage() {
             {[
               {
                 icon: UsersFour,
-                title: "Njangi Group Banking",
-                description: "Digital rotative savings cycles with automated turn distribution and member contribution tracking."
+                title: t("keyFeatures.features.njangi.title"),
+                description: t("keyFeatures.features.njangi.description")
               },
               {
                 icon: Coins,
-                title: "Qard Hasan Lending",
-                description: "Interest-free benevolent loans with flexible repayment schedules and zero markup structures."
+                title: t("keyFeatures.features.qardHasan.title"),
+                description: t("keyFeatures.features.qardHasan.description")
               },
               {
                 icon: CirclesFour,
-                title: "Mudarabah Pools",
-                description: "Profit-sharing investment accounts with automated pool allocation and monthly profit distribution."
+                title: t("keyFeatures.features.mudarabah.title"),
+                description: t("keyFeatures.features.mudarabah.description")
               },
               {
                 icon: ShieldCheck,
-                title: "Shariah Governance",
-                description: "Built-in Fatwa repository, product approval workflow, and Shariah Supervisory Board dashboard."
+                title: t("keyFeatures.features.governance.title"),
+                description: t("keyFeatures.features.governance.description")
               },
               {
                 icon: ListChecks,
-                title: "COBAC Returns",
-                description: "Automated generation of all community bank prudential returns directly from live GL data."
+                title: t("keyFeatures.features.cobac.title"),
+                description: t("keyFeatures.features.cobac.description")
               },
               {
                 icon: Bank,
-                title: "Islamic Window Support",
-                description: "Complete ledger separation between conventional and Islamic operations with dual reporting."
+                title: t("keyFeatures.features.islamicWindow.title"),
+                description: t("keyFeatures.features.islamicWindow.description")
               }
             ].map((feature, idx) => {
               const Icon = feature.icon;
               return (
                 <div 
                   key={idx}
-                  className="bg-white border border-tikari-green/10 p-6 hover:border-tikari-green/30 hover:shadow-lg transition-all duration-300"
+                  className="bg-white border border-tikari-green/10 p-6 hover:border-tikari-green/30 hover:shadow-lg transition-all duration-300 rounded-2xl"
                 >
-                  <div className="w-12 h-12 bg-tikari-green/10 border border-tikari-green/20 flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 bg-tikari-green/10 border border-tikari-green/20 flex items-center justify-center mb-4 rounded-full">
                     <Icon className="h-6 w-6 text-tikari-green-dark" weight="bold" />
                   </div>
                   <h3 className="text-[17px] font-bold mb-2 text-tikari-green-dark">{feature.title}</h3>
@@ -243,25 +240,25 @@ export default function CommunityBanksSolutionsPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl lg:text-[2.75rem] font-bold mb-6 leading-[1.15] tracking-tight">
-                Community-scale compliance without compromise
+                {t("compliance.title")}
               </h2>
               
               <p className="text-[16px] text-white/85 leading-relaxed mb-6">
-                TIKARI gives community banks and cooperatives the same compliance tools used by national-tier institutions. Your COBAC examiner sees the same audit trail quality regardless of your institution size.
+                {t("compliance.description1")}
               </p>
 
               <p className="text-[16px] text-white/85 leading-relaxed mb-8">
-                For Islamic windows, TIKARI maintains strict separation between conventional and Islamic operations. Each product has its own profit pool, its own Shariah approval record, and its own reporting structure.
+                {t("compliance.description2")}
               </p>
 
               <div className="space-y-3">
                 {[
-                  "Complete audit trail for all transactions",
-                  "Shariah Supervisory Board governance tools",
-                  "Automated COBAC prudential returns",
-                  "Ring-fenced Islamic window accounting",
-                  "Member dividend calculation and distribution",
-                  "Field agent commission ledger"
+                  t("compliance.items.0"),
+                  t("compliance.items.1"),
+                  t("compliance.items.2"),
+                  t("compliance.items.3"),
+                  t("compliance.items.4"),
+                  t("compliance.items.5")
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-start gap-3">
                     <CheckCircle className="h-5 w-5 text-tikari-gold flex-shrink-0 mt-0.5" weight="bold" />
@@ -271,7 +268,7 @@ export default function CommunityBanksSolutionsPage() {
               </div>
             </div>
 
-            <div className="relative h-[500px] lg:h-[600px] overflow-hidden shadow-2xl border border-white/10">
+            <div className="relative h-[500px] lg:h-[600px] overflow-hidden shadow-2xl border border-white/10 rounded-2xl">
               <Image
                 src="/compliance.jpg"
                 alt="Compliance and governance"
@@ -291,10 +288,10 @@ export default function CommunityBanksSolutionsPage() {
         
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <h2 className="text-3xl lg:text-[2.75rem] font-bold mb-6 leading-[1.15] tracking-tight">
-            Ready to launch community-scale Islamic banking?
+            {t("cta.title")}
           </h2>
           <p className="text-[16px] lg:text-[18px] text-tikari-green-dark/75 leading-relaxed mb-10 max-w-2xl mx-auto">
-            Schedule a personalized demo to see how TIKARI handles Njangi groups, Qard Hasan lending, and Islamic window operations for Cameroon's community banking sector.
+            {t("cta.description")}
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -302,19 +299,17 @@ export default function CommunityBanksSolutionsPage() {
               variant="primary"
               size="lg"
               href="/demo"
-              className="group bg-tikari-green-dark text-white hover:bg-tikari-green rounded-md"
             >
-              Schedule a Demo
+              {t("cta.buttons.demo")}
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" weight="bold" />
             </Button>
             
             <Button
-              variant="secondary"
+              variant="cream"
               size="lg"
               href="/platform"
-              className="group bg-white/90 text-tikari-green-dark hover:bg-white border-2 border-tikari-green-dark/20 rounded-md"
             >
-              Explore the Platform
+              {t("cta.buttons.platform")}
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" weight="bold" />
             </Button>
           </div>

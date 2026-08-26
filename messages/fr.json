@@ -1708,6 +1708,427 @@
       }
     }
   },
+  "solutions": {
+    "communityBanks": {
+      "hero": {
+        "title": "Solutions pour les Banques Communautaires",
+        "subtitle": "Opérations à échelle communautaire, conformité de niveau entreprise. Que vous soyez une banque de développement communautaire, une coopérative réglementée COBAC ou une institution conventionnelle gérant une fenêtre islamique, TIKARI vous donne la posture de conformité et la profondeur de produits pour servir correctement les clients sans intérêt.",
+        "cta": {
+          "demo": "Réserver une Démo",
+          "platform": "Voir la Plateforme"
+        }
+      },
+      "whoThisIsFor": {
+        "title": "Pour Qui C'est",
+        "subtitle": "Trois types d'institutions distincts, une plateforme."
+      },
+      "institutions": {
+        "developmentBanks": {
+          "title": "Banques de Développement Communautaire",
+          "description": "Servir une population locale définie avec épargne, financement Murabaha pour amélioration de l'habitat et structures de prêt de groupe. TIKARI fournit les opérations de caisse, la banque de groupe Njangi et les outils de gouvernance Shariah dont vous avez besoin à l'échelle communautaire.",
+          "features": [
+            "Banque de base entièrement conforme COBAC",
+            "Cycles d'épargne Njangi et de groupe",
+            "Financement Murabaha pour amélioration de l'habitat",
+            "Banque d'agents pour collections de terrain"
+          ]
+        },
+        "cooperatives": {
+          "title": "Coopératives et Caisses d'Épargne",
+          "description": "Les sociétés coopératives d'épargne et de crédit opérant selon des principes sans intérêt nécessitent des structures de produits qui correspondent à la façon dont les membres épargnent et empruntent réellement. TIKARI supporte le Qard Hasan (prêt bienveillant), les pools d'épargne Mudarabah et les structures de groupe Njangi rotatifs.",
+          "features": [
+            "Prêts membres Qard Hasan",
+            "Pool d'épargne Mudarabah",
+            "Cycles Njangi rotatifs",
+            "Grand livre membres et distribution de dividendes"
+          ]
+        },
+        "islamicWindows": {
+          "title": "Fenêtres Islamiques",
+          "description": "Les banques conventionnelles et IMF opérant une fenêtre conforme Shariah aux côtés de leur livre conventionnel nécessitent une séparation stricte entre les deux grands livres. TIKARI supporte les opérations de fenêtre islamique avec comptes cloisonnés, pools de profits séparés et gouvernance Shariah dédiée.",
+          "features": [
+            "GL fenêtre islamique cloisonné",
+            "Pool de profits séparé du livre conventionnel",
+            "Gouvernance Shariah pour produits de fenêtre",
+            "Reporting combiné ou séparé"
+          ]
+        }
+      },
+      "keyFeatures": {
+        "title": "Conçu pour la banque communautaire camerounaise",
+        "subtitle": "Des grands livres de groupe Njangi au reporting COBAC, TIKARI gère les exigences uniques de la banque islamique à échelle communautaire au Cameroun.",
+        "features": {
+          "njangi": {
+            "title": "Banque de Groupe Njangi",
+            "description": "Cycles d'épargne rotatifs numériques avec distribution automatisée des tours et suivi des contributions des membres."
+          },
+          "qardHasan": {
+            "title": "Prêts Qard Hasan",
+            "description": "Prêts bienveillants sans intérêt avec calendriers de remboursement flexibles et structures de majoration nulle."
+          },
+          "mudarabah": {
+            "title": "Pools Mudarabah",
+            "description": "Comptes d'investissement à partage des bénéfices avec allocation automatisée de pool et distribution mensuelle des bénéfices."
+          },
+          "governance": {
+            "title": "Gouvernance Shariah",
+            "description": "Référentiel Fatwa intégré, flux d'approbation de produits et tableau de bord du Conseil de Surveillance Shariah."
+          },
+          "cobac": {
+            "title": "Déclarations COBAC",
+            "description": "Génération automatisée de toutes les déclarations prudentielles de banque communautaire directement depuis les données GL en direct."
+          },
+          "islamicWindow": {
+            "title": "Support Fenêtre Islamique",
+            "description": "Séparation complète du grand livre entre opérations conventionnelles et islamiques avec reporting double."
+          }
+        }
+      },
+      "compliance": {
+        "title": "Conformité à échelle communautaire sans compromis",
+        "description1": "TIKARI donne aux banques communautaires et coopératives les mêmes outils de conformité utilisés par les institutions de niveau national. Votre examinateur COBAC voit la même qualité de piste d'audit quelle que soit la taille de votre institution.",
+        "description2": "Pour les fenêtres islamiques, TIKARI maintient une séparation stricte entre les opérations conventionnelles et islamiques. Chaque produit a son propre pool de profits, son propre enregistrement d'approbation Shariah et sa propre structure de reporting.",
+        "items": [
+          "Piste d'audit complète pour toutes les transactions",
+          "Outils de gouvernance du Conseil de Surveillance Shariah",
+          "Déclarations prudentielles COBAC automatisées",
+          "Comptabilité de fenêtre islamique cloisonnée",
+          "Calcul et distribution de dividendes membres",
+          "Grand livre de commissions agent de terrain"
+        ]
+      },
+      "cta": {
+        "title": "Prêt à lancer la banque islamique à échelle communautaire?",
+        "description": "Planifiez une démo personnalisée pour voir comment TIKARI gère les groupes Njangi, les prêts Qard Hasan et les opérations de fenêtre islamique pour le secteur bancaire communautaire du Cameroun.",
+        "buttons": {
+          "demo": "Planifier une Démo",
+          "platform": "Explorer la Plateforme"
+        }
+      }
+    },
+    "cooperatives": {
+      "hero": {
+        "title": "Coopératives et Fenêtres Islamiques",
+        "subtitle": "Banque sans intérêt au-delà de la licence IMF. Les caisses d'épargne coopératives, les groupes Njangi et les opérations de fenêtre islamique ont des structures uniques qui ne correspondent pas à un noyau conventionnel. TIKARI est conçu pour les gérer correctement.",
+        "cta": {
+          "demo": "Réserver une Démo",
+          "platform": "Voir la Plateforme"
+        }
+      },
+      "whatWeSupport": {
+        "title": "Ce Que Nous Supportons",
+        "subtitle": "Du simple Njangi aux opérations complètes de fenêtre Shariah."
+      },
+      "supportTypes": {
+        "njangi": {
+          "title": "Groupes Njangi Rotatifs",
+          "description": "Cycles d'épargne de groupe structurés avec suivi des contributions des membres, calendriers de rotation, décaissement automatique au bénéficiaire désigné et piste d'audit complète. Supporte les groupes à montant fixe et à contribution variable."
+        },
+        "mudarabah": {
+          "title": "Pools d'Épargne Mudarabah",
+          "description": "Agrégation des dépôts membres dans un pool d'investissement. La plateforme calcule la distribution des bénéfices en fin de période basée sur les rendements d'investissement réels, pas un taux prédéterminé. Divulgation PSR selon accord membre."
+        },
+        "qardHasan": {
+          "title": "Qard Hasan (Prêts Bienveillants)",
+          "description": "Prêts sans intérêt aux membres sans majoration. Frais administratifs seulement, plafonnés selon approbation Shariah. Suivi du calendrier de remboursement, règles d'éligibilité des membres et comptabilisation GL au compte aligné AAOIFI correct."
+        },
+        "islamicWindow": {
+          "title": "Cloisonnement de Fenêtre Islamique",
+          "description": "Pour les institutions conventionnelles opérant une fenêtre islamique: GL complètement séparé, pool de profits séparé, catalogue de produits dédié et reporting cloisonné. Rapports mixtes disponibles montrant des vues consolidées et fenêtre seulement."
+        }
+      },
+      "keyFeatures": {
+        "title": "Conçu pour le secteur coopératif du Cameroun",
+        "subtitle": "Des cycles Njangi traditionnels aux structures modernes de finance islamique, TIKARI gère le spectre complet de la banque coopérative sans intérêt.",
+        "features": {
+          "rotation": {
+            "title": "Cycles de Rotation Automatisés",
+            "description": "Suivre les tours des membres, calculer les contributions et déclencher des décaissements automatiques basés sur le calendrier de rotation."
+          },
+          "profitPool": {
+            "title": "Calcul de Pool de Profits",
+            "description": "Accumulation de profits en temps réel avec distribution en moyenne pondérée basée sur les soldes de dépôts membres et la durée."
+          },
+          "zeroInterest": {
+            "title": "Comptabilité Sans Intérêt",
+            "description": "Structures GL conformes AAOIFI pour Qard Hasan avec suivi des frais administratifs et allocation appropriée des dépenses."
+          },
+          "eligibility": {
+            "title": "Règles d'Éligibilité des Membres",
+            "description": "Configurer les limites de prêt, exigences de contribution et périodes d'attente selon les statuts coopératifs."
+          },
+          "dividend": {
+            "title": "Distribution de Dividendes",
+            "description": "Calcul automatisé de dividendes de fin de période avec ratios de partage des bénéfices spécifiques aux membres."
+          },
+          "dualLedger": {
+            "title": "Système de Double Grand Livre",
+            "description": "Séparation complète entre opérations conventionnelles et islamiques pour institutions financières gérant les deux."
+          }
+        }
+      },
+      "compliance": {
+        "title": "Conformité COBAC pour structures coopératives",
+        "description1": "TIKARI génère toutes les déclarations COBAC requises pour les institutions financières coopératives, incluant des rapports spécialisés pour les opérations de groupe Njangi et les pools d'investissement à partage des bénéfices.",
+        "description2": "Pour les fenêtres islamiques, la plateforme maintient des pistes d'audit complètes montrant la ségrégation entre opérations conventionnelles et islamiques, satisfaisant à la fois les examinateurs COBAC et les Conseils de Surveillance Shariah.",
+        "items": [
+          "Registres de contributions et retraits membres",
+          "Calendrier de rotation Njangi et historique des tours",
+          "Performance et distribution du pool de profits",
+          "Suivi du portefeuille de prêts Qard Hasan",
+          "Rapports de ségrégation fenêtre islamique",
+          "Piste d'audit de conformité Shariah"
+        ]
+      },
+      "cta": {
+        "title": "Prêt à digitaliser vos opérations coopératives?",
+        "description": "Planifiez une démo personnalisée pour voir comment TIKARI gère les groupes Njangi, les pools Mudarabah, les prêts Qard Hasan et les opérations de fenêtre islamique pour le secteur coopératif du Cameroun.",
+        "buttons": {
+          "demo": "Planifier une Démo",
+          "platform": "Explorer la Plateforme"
+        }
+      }
+    },
+    "microfinance": {
+      "hero": {
+        "title": "Solutions pour les Banques de Microfinance",
+        "subtitle": "Conçu pour les IMF sans intérêt sous licence COBAC. Que vous déteniez une licence IMF Unité, Régionale ou Nationale, TIKARI vous donne un noyau qui satisfait l'examinateur COBAC, votre Conseil de Surveillance Shariah et votre équipe opérationnelle dès le premier jour.",
+        "cta": {
+          "demo": "Réserver une Démo",
+          "platform": "Voir la Plateforme"
+        }
+      },
+      "licenceTiers": {
+        "title": "L'ajustement parfait à chaque niveau de licence"
+      },
+      "licenceCategories": {
+        "unit": {
+          "title": "IMF Unité",
+          "capital": "200M FCFA+ capital min.",
+          "description": "Une IMF sans intérêt à une seule agence desservant un gouvernement local ou une communauté. TIKARI fournit la plateforme complète aucune restriction de fonctionnalités pour les petites institutions.",
+          "features": [
+            "Opérations de caisse à une seule agence",
+            "Banque de groupe Njangi",
+            "Produits Murabaha et Mudarabah",
+            "Déclarations COBAC IMF Unité",
+            "Clôture de fin de journée en moins de 10 minutes"
+          ]
+        },
+        "state": {
+          "title": "IMF Régionale",
+          "capital": "1B FCFA+ capital min.",
+          "description": "Opérations multi-agences à travers une région. TIKARI gère le rapprochement inter-agences, les réseaux bancaires d'agents et les obligations de reporting plus élevées des IMF de niveau régional.",
+          "features": [
+            "Opérations multi-agences",
+            "Consolidation GL inter-agences",
+            "Banque d'agents avec géo-suivi",
+            "Déclarations COBAC IMF Régionale",
+            "Gamme de produits élargie"
+          ]
+        },
+        "national": {
+          "title": "IMF Nationale",
+          "capital": "5B FCFA+ capital min.",
+          "description": "Opérations à l'échelle nationale avec capital plus élevé, gamme de produits plus large et reporting COBAC plus complexe. TIKARI évolue au niveau national sans nécessiter de modules ou licences supplémentaires.",
+          "features": [
+            "Réseau d'agences national",
+            "Suite complète de produits islamiques",
+            "Toutes les déclarations COBAC",
+            "Structures Sukuk et Takaful",
+            "Reporting groupe/société holding"
+          ]
+        }
+      },
+      "cobacCompliance": {
+        "title": "Votre prochain examen COBAC devrait être sans incident",
+        "description1": "TIKARI génère les 12 déclarations prudentielles COBAC directement depuis les données GL en direct. Votre équipe de conformité n'exporte pas manuellement des feuilles de calcul et ne reformate pas en fin de mois.",
+        "description2": "La plateforme maintient également une piste d'audit complète et immuable et un référentiel Fatwa. Lorsqu'un examinateur demande à voir l'approbation Shariah pour votre produit Musharakah il est consultable et imprimable en moins d'une minute.",
+        "cta": "Voir les fonctionnalités de conformité"
+      },
+      "cobacReturns": {
+        "items": [
+          {"code": "MFB-001", "name": "État de la Situation Financière"},
+          {"code": "MFB-002", "name": "Compte de Résultat"},
+          {"code": "MFB-003", "name": "Ratio d'Adéquation des Fonds Propres"},
+          {"code": "MFB-004", "name": "Ratio de Liquidité"},
+          {"code": "MFB-005", "name": "Portefeuille à Risque"},
+          {"code": "MFB-006", "name": "Ratios de Partage des Bénéfices"},
+          {"code": "MFB-007", "name": "Rapport de Pool Mudarabah"},
+          {"code": "MFB-008", "name": "Grandes Expositions"},
+          {"code": "MFB-009", "name": "Exposition aux Devises Étrangères"},
+          {"code": "AML/CFT", "name": "Déclaration GABAC AML/CFT"},
+          {"code": "BEAC-01", "name": "Déclaration Interbancaire BEAC"},
+          {"code": "TAX-01", "name": "Déclaration de Conformité Fiscale FCFA"}
+        ]
+      },
+      "keyFeatures": {
+        "title": "Tout ce dont vous avez besoin pour la microfinance islamique",
+        "subtitle": "De la vérification CNI aux grands livres de groupe Njangi, TIKARI gère les exigences uniques du secteur bancaire islamique du Cameroun.",
+        "features": {
+          "njangi": {
+            "title": "Banque de Groupe Njangi",
+            "description": "Grands livres rotatifs numériques avec distribution automatisée des bénéfices et suivi d'exposition de groupe COBAC."
+          },
+          "fcfa": {
+            "title": "Comptabilité Native FCFA",
+            "description": "Devise primaire en FCFA avec synchronisation des taux de change BEAC pour transactions en devises étrangères."
+          },
+          "murabaha": {
+            "title": "Calcul Auto Murabaha",
+            "description": "Configurer les taux de majoration, calendriers de versements et remises de règlement anticipé selon directives Shariah."
+          },
+          "systac": {
+            "title": "Intégration SYSTAC/SYGMA",
+            "description": "Transferts interbancaires en temps réel via l'infrastructure SYSTAC du Cameroun avec comptabilisation GL automatique."
+          },
+          "mobileMoney": {
+            "title": "MTN & Orange Money",
+            "description": "Intégration directe avec les opérateurs mobile money pour opérations cash-in/cash-out d'agents."
+          },
+          "eod": {
+            "title": "Clôture de Fin de Journée en 10 Minutes",
+            "description": "Processus automatisés de fin de journée incluant accumulation de profits, marquage de dormance et génération de balance générale."
+          }
+        }
+      },
+      "multiBranch": {
+        "title": "Évoluer d'une agence à l'échelle nationale",
+        "description": "TIKARI supporte les hiérarchies d'agences du siège social aux centres régionaux jusqu'aux agences individuelles. Les écritures GL inter-agences sont automatisées, et vous pouvez définir des limites de prêt, des seuils de détention d'espèces et des flux d'approbation par agence.",
+        "features": [
+          "Enregistrement d'agence avec codes COBAC",
+          "Transferts de fonds inter-agences",
+          "Allocation de trésorerie centralisée",
+          "Tableaux de bord de performance d'agence",
+          "Géo-suivi du réseau d'agents",
+          "Grand livre de commissions par agence"
+        ]
+      },
+      "cta": {
+        "title": "Prêt à lancer votre banque de microfinance islamique?",
+        "subtitle": "Planifiez une démo personnalisée pour voir comment TIKARI gère la conformité COBAC, la gouvernance Shariah et les opérations multi-agences pour le secteur bancaire islamique du Cameroun.",
+        "scheduleDemo": "Planifier une Démo",
+        "explorePlatform": "Explorer la Plateforme"
+      }
+    },
+    "smes": {
+      "hero": {
+        "title": "Solutions pour les Entreprises et PME",
+        "subtitle": "Financement conforme Shariah pour les entrepreneurs du Cameroun. Que vous ayez besoin de financement d'inventaire, de location d'équipement ou de capital de croissance, TIKARI vous connecte avec des institutions financières islamiques offrant des solutions commerciales sans intérêt. Toutes les transactions en FCFA avec structures de majoration transparentes et sans frais cachés."
+      },
+      "financingProducts": {
+        "title": "Produits de Financement Islamique",
+        "subtitle": "Quatre structures distinctes conformes Shariah pour le financement d'entreprise.",
+        "murabaha": {
+          "title": "Financement Commercial Murabaha",
+          "description": "Achetez inventaire, équipement ou matières premières avec financement à prix majoré conforme Shariah. TIKARI facilite l'achat, majore le coût de manière transparente et structure des paiements en versements fixes sans frais d'intérêt cachés.",
+          "features": [
+            "Financement d'inventaire et de stock en FCFA",
+            "Achat d'équipement et de machines",
+            "Divulgation transparente de la majoration (pas de Riba)",
+            "Versements mensuels fixes",
+            "Remises de règlement anticipé",
+            "Conditions de paiement flexibles jusqu'à 36 mois"
+          ]
+        },
+        "musharakah": {
+          "title": "Financement en Partenariat Musharakah",
+          "description": "Financement en coentreprise où les institutions membres TIKARI co-investissent dans l'expansion de votre entreprise. Les bénéfices et pertes sont partagés selon des ratios pré-convenus. Idéal pour le capital de croissance et le financement de projets dans le secteur PME du Cameroun.",
+          "features": [
+            "Propriété conjointe et partage des bénéfices",
+            "Musharakah décroissante pour acquisition d'actifs",
+            "Partenariat en fonds de roulement",
+            "Projets d'expansion d'entreprise",
+            "Partage des risques conforme Shariah",
+            "Stratégies de sortie à maturité"
+          ]
+        },
+        "ijara": {
+          "title": "Location d'Équipement Ijara",
+          "description": "Louez machines, véhicules ou propriété commerciale sans financement basé sur l'intérêt. L'institution financière possède l'actif et vous le loue avec un calendrier de location. Option d'achat en fin de terme avec crédit de location accumulé.",
+          "features": [
+            "Véhicules et équipement de transport",
+            "Machines de fabrication",
+            "Location de propriété commerciale",
+            "Structures location-achat",
+            "Pas de paiements ballon ou surprises",
+            "Maintenance d'actifs incluse"
+          ]
+        },
+        "salam": {
+          "title": "Financement Agricole Salam",
+          "description": "Financement anticipé pour producteurs agricoles. Recevez un paiement initial pour les récoltes à livrer à la moisson. Supporte les opérations agricoles au Cameroun avec flux de trésorerie conforme Shariah avant la complétion du cycle de production.",
+          "features": [
+            "Fonds de roulement pré-récolte",
+            "Accords de tarification spécifiques aux récoltes",
+            "Spécifications de qualité et livraison",
+            "Atténuation des risques pour les agriculteurs",
+            "Contrats libellés en FCFA",
+            "Cycles de financement saisonniers"
+          ]
+        }
+      },
+      "whyChoose": {
+        "title": "Pourquoi choisir le financement islamique pour votre entreprise",
+        "subtitle": "Au-delà de la conformité religieuse, la finance islamique offre des avantages pratiques pour les PME au Cameroun.",
+        "noHiddenFees": {
+          "title": "Pas de Frais Cachés",
+          "description": "Tarification transparente avec tous les coûts divulgués d'avance. Pas d'intérêts composés, pas de frais de pénalité, pas de paiements ballon."
+        },
+        "assetBacked": {
+          "title": "Financement Adossé à des Actifs",
+          "description": "Financement lié à des actifs réels et à l'activité commerciale, pas à des prêts spéculatifs. Risque plus faible pour les deux parties."
+        },
+        "riskSharing": {
+          "title": "Partage des Risques",
+          "description": "Les institutions financières partagent votre succès commercial via le partage des bénéfices, pas seulement l'extraction d'intérêts fixes."
+        },
+        "flexibleStructures": {
+          "title": "Structures Flexibles",
+          "description": "Produits de financement conçus autour des cycles commerciaux, pas de calendriers de paiement rigides qui ignorent la réalité du flux de trésorerie."
+        },
+        "earlySettlement": {
+          "title": "Avantages de Règlement Anticipé",
+          "description": "Remboursez le financement Murabaha tôt et recevez des remises sur la majoration. Incitations à la discipline financière."
+        },
+        "businessPartnership": {
+          "title": "Partenariat Commercial",
+          "description": "Les banques islamiques agissent comme de vrais partenaires dans votre croissance, pas seulement des créanciers exigeant des remboursements fixes."
+        }
+      },
+      "applicationProcess": {
+        "title": "Processus de candidature simple",
+        "description": "TIKARI simplifie l'ensemble du processus de demande de financement. De la demande initiale au décaissement, tout est suivi dans la plateforme avec documentation de conformité Shariah complète.",
+        "steps": [
+          {
+            "step": "1",
+            "title": "Soumettre la Candidature",
+            "description": "Fournir les détails de l'entreprise, les états financiers et les exigences de financement via la plateforme TIKARI."
+          },
+          {
+            "step": "2",
+            "title": "Examen Shariah",
+            "description": "Votre candidature est examinée pour conformité Shariah et jumelée avec des produits de financement islamique appropriés."
+          },
+          {
+            "step": "3",
+            "title": "Évaluation du Crédit",
+            "description": "L'institution financière évalue la solvabilité de votre entreprise et détermine les conditions de financement en FCFA."
+          },
+          {
+            "step": "4",
+            "title": "Contrat et Décaissement",
+            "description": "Signer des contrats conformes Shariah avec divulgation transparente de majoration. Fonds décaissés sur votre compte d'entreprise."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Prêt à financer la croissance de votre entreprise?",
+        "subtitle": "Connectez-vous avec des institutions financières islamiques offrant du financement Murabaha, Musharakah, Ijara et Salam pour le secteur PME du Cameroun. Toutes les transactions en FCFA avec structures transparentes conformes Shariah.",
+        "applyForFinancing": "Postuler pour un Financement",
+        "explorePlatform": "Explorer la Plateforme"
+      }
+    }
+  },
   "footer": {
     "brand": {
       "description": "La première plateforme bancaire sans intérêt basée sur la foi du Cameroun. Infrastructure financière complète conforme AAOIFI conçue pour la banque islamique, la microfinance et les systèmes d'épargne traditionnels.",

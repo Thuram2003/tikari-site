@@ -184,8 +184,8 @@ export default function TestimonialSection() {
 
         {/* Section Header */}
         <div className="text-center max-w-4xl mx-auto px-6 space-y-4">
-          <div className="inline-block px-4 py-1.5 bg-tikari-sage-light border border-tikari-green/10">
-            <span className="text-xs uppercase tracking-widest text-tikari-green-dark font-bold">{t("badge")}</span>
+          <div className="inline-block px-4 py-1.5 bg-tikari-sage-light border border-tikari-green/10 rounded-2xl">
+            <span className="text-xs uppercase tracking-widest text-tikari-green-dark font-bold ">{t("badge")}</span>
           </div>
           <h2 className="text-3xl lg:text-5xl font-bold text-tikari-green-dark leading-tight">
             {t("title")}
@@ -195,31 +195,26 @@ export default function TestimonialSection() {
           </p>
         </div>
 
-        {/* Testimonial Cards Container */}
-        <div className="w-full relative">
-
-          {/* Sliding Track */}
+        <div className="w-full relative rounded-md">
           <div
-            className="flex gap-4 lg:gap-6 transition-transform duration-700 ease-out select-none"
+            className="flex gap-4 lg:gap-6 transition-transform duration-700 ease-out select-none rounded-md"
             style={{ transform: `translateX(${translateX}px)` }}
           >
             {testimonials.map((item, idx) => (
               <div
                 key={idx}
-                className={`bg-white border transition-all duration-500 shrink-0 ${
+                className={`bg-white border transition-all duration-500 shrink-0 rounded-2xl ${
                   activeSlide === idx 
                     ? "opacity-100 border-tikari-green/20 shadow-[0_20px_60px_-15px_rgba(27,67,50,0.12)]" 
                     : "opacity-30 border-tikari-green/5 shadow-[0_10px_30px_-10px_rgba(27,67,50,0.05)]"
                 } w-[90vw] md:w-[85vw] lg:w-[900px]`}
               >
                 
-                {/* Card Content - More Compact */}
-                <div className="p-6 lg:p-10 space-y-6">
+                <div className="p-6 lg:p-10 space-y-6 ">
 
-                  {/* Header Row: Category + Institution + Years Badge */}
                   <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 pb-4 border-b border-tikari-green/10">
                     <div className="space-y-1.5">
-                      <div className="px-2.5 py-1 bg-tikari-gold/10 border border-tikari-gold/20 inline-block">
+                      <div className="px-2.5 py-1 bg-tikari-gold/10 border border-tikari-gold/20 inline-block rounded-full">
                         <span className="text-[9px] uppercase tracking-widest text-tikari-gold-dark font-bold">
                           {item.category}
                         </span>
@@ -231,8 +226,8 @@ export default function TestimonialSection() {
                     </div>
                     
                     <div className="text-left sm:text-right shrink-0">
-                      <div className="inline-flex items-center gap-1.5 px-2.5 py-1.5 bg-tikari-sage-light border border-tikari-green/10">
-                        <span className="text-xl font-bold text-tikari-green-dark font-mono">{item.yearsWithTikari}</span>
+                      <div className="inline-flex items-center gap-1.5 px-2.5 py-1.5 bg-tikari-sage-light border border-tikari-green/10 rounded-full">
+                        <span className="text-sm text-tikari-green-dark">{item.yearsWithTikari}</span>
                         <span className="text-[9px] text-tikari-sage uppercase tracking-wider leading-tight">{t("yearsPartner")}</span>
                       </div>
                     </div>
@@ -248,14 +243,12 @@ export default function TestimonialSection() {
                         {item.quote}
                       </blockquote>
                       
-                      {/* Author */}
                       <div className="pt-3 border-t border-tikari-green/5">
                         <p className="text-sm font-bold text-tikari-green-dark">{item.author}</p>
                         <p className="text-xs text-tikari-sage">{item.role}</p>
                       </div>
                     </div>
 
-                    {/* Right: Image - Smaller */}
                     <div className="relative w-full h-[240px] bg-tikari-cream border border-tikari-green/10 overflow-hidden">
                       <Image
                         src={item.image}
@@ -287,7 +280,7 @@ export default function TestimonialSection() {
           </div>
 
           {/* Navigation Controls - More Compact */}
-          <div className="max-w-6xl mx-auto flex items-center justify-between mt-8 px-6 lg:px-12">
+          <div className="max-w-6xl mx-auto flex items-center justify-between mt-8 px-6 lg:px-12 ">
             
             {/* Progress Indicator */}
             <div className="flex items-center gap-2">
@@ -322,7 +315,7 @@ export default function TestimonialSection() {
                 onClick={handlePrev}
                 disabled={!canGoPrev}
                 aria-label={t("prev")}
-                className={`w-10 h-10 border-2 flex items-center justify-center transition-all bg-white ${
+                className={`w-10 h-10 border-2 flex items-center justify-center transition-all bg-white rounded-full ${
                   canGoPrev
                     ? "border-tikari-green/20 hover:border-tikari-green hover:bg-tikari-green-dark hover:text-white text-tikari-green-dark cursor-pointer"
                     : "border-tikari-green/10 text-tikari-sage/30 cursor-not-allowed opacity-50"
@@ -334,7 +327,7 @@ export default function TestimonialSection() {
                 onClick={handleNext}
                 disabled={!canGoNext}
                 aria-label={t("next")}
-                className={`w-10 h-10 border-2 flex items-center justify-center transition-all bg-white ${
+                className={`w-10 h-10 border-2 flex items-center justify-center transition-all bg-white rounded-full ${
                   canGoNext
                     ? "border-tikari-green/20 hover:border-tikari-green hover:bg-tikari-green-dark hover:text-white text-tikari-green-dark cursor-pointer"
                     : "border-tikari-green/10 text-tikari-sage/30 cursor-not-allowed opacity-50"

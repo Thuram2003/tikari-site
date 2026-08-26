@@ -17,67 +17,69 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui";
+import { useTranslations } from "next-intl";
 
 export default function SMESolutionsPage() {
+  const t = useTranslations("solutions.smes");
   const financingProducts = [
     {
-      title: "Murabaha Trade Financing",
-      description: "Purchase inventory, equipment, or raw materials with Shariah-compliant cost-plus financing. TIKARI facilitates the purchase, marks up the cost transparently, and structures fixed installment payments with no hidden interest charges.",
+      title: t("financingProducts.murabaha.title"),
+      description: t("financingProducts.murabaha.description"),
       icon: Package,
       image: "/women-market.jpg",
       color: "bg-tikari-green-dark",
       features: [
-        "Inventory and stock financing in FCFA",
-        "Equipment and machinery purchase",
-        "Transparent markup disclosure (no Riba)",
-        "Fixed monthly installments",
-        "Early settlement rebates",
-        "Flexible payment terms up to 36 months"
+        t("financingProducts.murabaha.features.0"),
+        t("financingProducts.murabaha.features.1"),
+        t("financingProducts.murabaha.features.2"),
+        t("financingProducts.murabaha.features.3"),
+        t("financingProducts.murabaha.features.4"),
+        t("financingProducts.murabaha.features.5")
       ]
     },
     {
-      title: "Musharakah Partnership Financing",
-      description: "Joint venture financing where TIKARI member institutions co-invest in your business expansion. Profits and losses are shared according to pre-agreed ratios. Ideal for growth capital and project financing in Cameroon's SME sector.",
+      title: t("financingProducts.musharakah.title"),
+      description: t("financingProducts.musharakah.description"),
       icon: Storefront,
       image: "/handshake.jpg",
       color: "bg-tikari-gold",
       features: [
-        "Joint ownership and profit sharing",
-        "Diminishing Musharakah for asset acquisition",
-        "Working capital partnership",
-        "Business expansion projects",
-        "Shariah-compliant risk sharing",
-        "Exit strategies at maturity"
+        t("financingProducts.musharakah.features.0"),
+        t("financingProducts.musharakah.features.1"),
+        t("financingProducts.musharakah.features.2"),
+        t("financingProducts.musharakah.features.3"),
+        t("financingProducts.musharakah.features.4"),
+        t("financingProducts.musharakah.features.5")
       ]
     },
     {
-      title: "Ijara Equipment Leasing",
-      description: "Lease machinery, vehicles, or commercial property without interest-based financing. The financial institution owns the asset and leases it to you with a rental schedule. Option to purchase at end of term with accumulated rental credit.",
+      title: t("financingProducts.ijara.title"),
+      description: t("financingProducts.ijara.description"),
       icon: Truck,
       image: "/meeting.jpg",
       color: "bg-tikari-green",
       features: [
-        "Vehicles and transport equipment",
-        "Manufacturing machinery",
-        "Commercial property leasing",
-        "Rental-to-ownership structures",
-        "No balloon payments or surprises",
-        "Asset maintenance included"
+        t("financingProducts.ijara.features.0"),
+        t("financingProducts.ijara.features.1"),
+        t("financingProducts.ijara.features.2"),
+        t("financingProducts.ijara.features.3"),
+        t("financingProducts.ijara.features.4"),
+        t("financingProducts.ijara.features.5")
       ]
     },
     {
-      title: "Salam Agricultural Financing",
-      description: "Forward financing for agricultural producers. Receive upfront payment for crops to be delivered at harvest. Supports farming operations in Cameroon with Shariah-compliant cash flow before production cycle completes.",
+      title: t("financingProducts.salam.title"),
+      description: t("financingProducts.salam.description"),
       icon: Factory,
       image: "/woman-market.jpg",
       color: "bg-tikari-sage",
       features: [
-        "Pre-harvest working capital",
-        "Crop-specific pricing agreements",
-        "Quality and delivery specifications",
-        "Risk mitigation for farmers",
-        "FCFA-denominated contracts",
-        "Seasonal financing cycles"
+        t("financingProducts.salam.features.0"),
+        t("financingProducts.salam.features.1"),
+        t("financingProducts.salam.features.2"),
+        t("financingProducts.salam.features.3"),
+        t("financingProducts.salam.features.4"),
+        t("financingProducts.salam.features.5")
       ]
     }
   ];
@@ -93,13 +95,10 @@ export default function SMESolutionsPage() {
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="max-w-4xl">
             <h1 className="text-4xl lg:text-[3.75rem] font-bold leading-[1.05] tracking-tight mb-6">
-              Solutions for Businesses & SMEs
+              {t("hero.title")}
             </h1>
-            <p className="text-[17px] lg:text-[19px] text-white/85 leading-relaxed max-w-3xl mb-4">
-              Shariah-compliant financing for Cameroon's entrepreneurs.
-            </p>
             <p className="text-[17px] lg:text-[19px] text-white/85 leading-relaxed max-w-3xl mb-8">
-              Whether you need inventory financing, equipment leasing, or growth capital, TIKARI connects you with Islamic financial institutions offering interest-free business solutions. All transactions in FCFA with transparent markup structures and no hidden fees.
+              {t("hero.subtitle")}
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
@@ -107,19 +106,17 @@ export default function SMESolutionsPage() {
                 variant="secondary"
                 size="lg"
                 href="/demo"
-                className="group bg-tikari-gold text-tikari-green-dark hover:bg-tikari-gold/90 rounded-md"
               >
-                Apply for Financing
+                {t("cta.applyForFinancing")}
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" weight="bold" />
               </Button>
               
               <Button
-                variant="secondary"
+                variant="cream"
                 size="lg"
                 href="/platform"
-                className="group bg-white/10 text-white hover:bg-white/20 border-2 border-white/20 rounded-md"
               >
-                See the Platform
+                {t("cta.explorePlatform")}
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" weight="bold" />
               </Button>
             </div>
@@ -132,10 +129,10 @@ export default function SMESolutionsPage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-[2.75rem] font-bold mb-4 leading-[1.15] tracking-tight text-tikari-green-dark">
-              Islamic Financing Products
+              {t("financingProducts.title")}
             </h2>
             <p className="text-[16px] lg:text-[18px] text-tikari-sage max-w-3xl mx-auto">
-              Four distinct Shariah-compliant structures for business financing.
+              {t("financingProducts.subtitle")}
             </p>
           </div>
 
@@ -150,16 +147,16 @@ export default function SMESolutionsPage() {
                   className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center"
                 >
                   {/* Image */}
-                  <div className={`relative h-[450px] lg:h-[550px] overflow-hidden shadow-2xl border border-tikari-green/10 ${isEven ? '' : 'lg:order-2'}`}>
+                  <div className={`relative h-[450px] lg:h-[550px] overflow-hidden shadow-2xl border border-tikari-green/10 ${isEven ? '' : 'lg:order-2'} rounded-2xl`}>
                     <Image
                       src={product.image}
                       alt={product.title}
                       fill
-                      className="object-cover"
+                      className="object-cover rounded-2xl"
                       priority={idx === 0}
                     />
                     <div className={`absolute inset-0 ${
-                      idx === 0 ? 'bg-gradient-to-br from-tikari-green-dark/50 via-tikari-green/30 to-transparent' :
+                      idx === 0 ? 'bg-gradient-to-br from-tikari-green-dark/50 via-tikari-green/30 to-transparent ' :
                       idx === 1 ? 'bg-gradient-to-tl from-tikari-gold/40 via-transparent to-transparent' :
                       idx === 2 ? 'bg-gradient-to-tr from-tikari-green/50 via-tikari-green-dark/30 to-transparent' :
                       'bg-gradient-to-bl from-tikari-sage/50 via-transparent to-tikari-gold/20'
@@ -169,7 +166,7 @@ export default function SMESolutionsPage() {
                   {/* Content */}
                   <div className={isEven ? '' : 'lg:order-1'}>
                     <div className="flex items-center gap-4 mb-6">
-                      <div className={`w-14 h-14 ${product.color} text-white flex items-center justify-center`}>
+                      <div className={`w-14 h-14 ${product.color} text-white flex items-center justify-center rounded-full`}>
                         <Icon className="h-7 w-7" weight="bold" />
                       </div>
                       <h3 className="text-2xl lg:text-3xl font-bold text-tikari-green-dark">
@@ -202,10 +199,10 @@ export default function SMESolutionsPage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-[2.75rem] font-bold mb-6 leading-[1.15] tracking-tight text-tikari-green-dark">
-              Why choose Islamic financing for your business
+              {t("whyChoose.title")}
             </h2>
             <p className="text-[16px] lg:text-[18px] text-tikari-sage leading-relaxed max-w-3xl mx-auto">
-              Beyond religious compliance, Islamic finance offers practical advantages for SMEs in Cameroon.
+              {t("whyChoose.subtitle")}
             </p>
           </div>
 
@@ -213,42 +210,42 @@ export default function SMESolutionsPage() {
             {[
               {
                 icon: CurrencyCircleDollar,
-                title: "No Hidden Fees",
-                description: "Transparent pricing with all costs disclosed upfront. No compound interest, no penalty fees, no balloon payments."
+                title: t("whyChoose.noHiddenFees.title"),
+                description: t("whyChoose.noHiddenFees.description")
               },
               {
                 icon: Receipt,
-                title: "Asset-Backed Financing",
-                description: "Financing tied to real assets and business activity, not speculative lending. Lower risk for both parties."
+                title: t("whyChoose.assetBacked.title"),
+                description: t("whyChoose.assetBacked.description")
               },
               {
                 icon: ChartBar,
-                title: "Risk Sharing",
-                description: "Financial institutions share in your business success through profit-sharing, not just fixed interest extraction."
+                title: t("whyChoose.riskSharing.title"),
+                description: t("whyChoose.riskSharing.description")
               },
               {
                 icon: Clock,
-                title: "Flexible Structures",
-                description: "Financing products designed around business cycles, not rigid payment schedules that ignore cash flow reality."
+                title: t("whyChoose.flexibleStructures.title"),
+                description: t("whyChoose.flexibleStructures.description")
               },
               {
                 icon: Calculator,
-                title: "Early Settlement Benefits",
-                description: "Pay off Murabaha financing early and receive rebates on the markup. Incentives for financial discipline."
+                title: t("whyChoose.earlySettlement.title"),
+                description: t("whyChoose.earlySettlement.description")
               },
               {
                 icon: TrendUp,
-                title: "Business Partnership",
-                description: "Islamic banks act as true partners in your growth, not just creditors demanding fixed repayments."
+                title: t("whyChoose.businessPartnership.title"),
+                description: t("whyChoose.businessPartnership.description")
               }
             ].map((benefit, idx) => {
               const Icon = benefit.icon;
               return (
                 <div 
                   key={idx}
-                  className="bg-white border border-tikari-green/10 p-6 hover:border-tikari-green/30 hover:shadow-lg transition-all duration-300"
+                  className="bg-white border border-tikari-green/10 p-6 hover:border-tikari-green/30 hover:shadow-lg transition-all duration-300 rounded-2xl"
                 >
-                  <div className="w-12 h-12 bg-tikari-green/10 border border-tikari-green/20 flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 bg-tikari-green/10 border border-tikari-green/20 flex items-center justify-center mb-4 rounded-full">
                     <Icon className="h-6 w-6 text-tikari-green-dark" weight="bold" />
                   </div>
                   <h3 className="text-[17px] font-bold mb-2 text-tikari-green-dark">{benefit.title}</h3>
@@ -266,38 +263,38 @@ export default function SMESolutionsPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl lg:text-[2.75rem] font-bold mb-6 leading-[1.15] tracking-tight">
-                Simple application process
+                {t("applicationProcess.title")}
               </h2>
               
               <p className="text-[16px] text-white/85 leading-relaxed mb-8">
-                TIKARI streamlines the entire financing application process. From initial inquiry to disbursement, everything is tracked in the platform with complete Shariah compliance documentation.
+                {t("applicationProcess.description")}
               </p>
 
               <div className="space-y-6">
                 {[
                   {
                     step: "1",
-                    title: "Submit Application",
-                    description: "Provide business details, financial statements, and financing requirements through the TIKARI platform."
+                    title: t("applicationProcess.steps.0.title"),
+                    description: t("applicationProcess.steps.0.description")
                   },
                   {
                     step: "2",
-                    title: "Shariah Review",
-                    description: "Your application is reviewed for Shariah compliance and matched with appropriate Islamic financing products."
+                    title: t("applicationProcess.steps.1.title"),
+                    description: t("applicationProcess.steps.1.description")
                   },
                   {
                     step: "3",
-                    title: "Credit Assessment",
-                    description: "Financial institution evaluates your business creditworthiness and determines financing terms in FCFA."
+                    title: t("applicationProcess.steps.2.title"),
+                    description: t("applicationProcess.steps.2.description")
                   },
                   {
                     step: "4",
-                    title: "Contract & Disbursement",
-                    description: "Sign Shariah-compliant contracts with transparent markup disclosure. Funds disbursed to your business account."
+                    title: t("applicationProcess.steps.3.title"),
+                    description: t("applicationProcess.steps.3.description")
                   }
                 ].map((item, idx) => (
                   <div key={idx} className="flex gap-4">
-                    <div className="w-12 h-12 bg-tikari-gold/20 border border-tikari-gold/30 flex items-center justify-center flex-shrink-0">
+                    <div className="w-12 h-12 bg-tikari-gold/20 border border-tikari-gold/30 flex items-center justify-center flex-shrink-0 rounded-full">
                       <span className="text-xl font-bold text-tikari-gold">{item.step}</span>
                     </div>
                     <div>
@@ -309,12 +306,12 @@ export default function SMESolutionsPage() {
               </div>
             </div>
 
-            <div className="relative h-[500px] lg:h-[600px] overflow-hidden shadow-2xl border border-white/10">
+            <div className="relative h-[500px] lg:h-[600px] overflow-hidden shadow-2xl border border-white/10 rounded-2xl">
               <Image
                 src="/personOffice.jpg"
                 alt="Business financing application"
                 fill
-                className="object-cover"
+                className="object-cover rounded-2xl"
               />
               <div className="absolute inset-0 bg-gradient-to-br from-tikari-green-dark/50 via-tikari-green/30 to-transparent"></div>
             </div>
@@ -329,10 +326,10 @@ export default function SMESolutionsPage() {
         
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <h2 className="text-3xl lg:text-[2.75rem] font-bold mb-6 leading-[1.15] tracking-tight">
-            Ready to finance your business growth?
+            {t("cta.title")}
           </h2>
           <p className="text-[16px] lg:text-[18px] text-tikari-green-dark/75 leading-relaxed mb-10 max-w-2xl mx-auto">
-            Connect with Islamic financial institutions offering Murabaha, Musharakah, Ijara, and Salam financing for Cameroon's SME sector. All transactions in FCFA with transparent Shariah-compliant structures.
+            {t("cta.subtitle")}
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -340,19 +337,17 @@ export default function SMESolutionsPage() {
               variant="primary"
               size="lg"
               href="/demo"
-              className="group bg-tikari-green-dark text-white hover:bg-tikari-green rounded-md"
             >
-              Apply for Financing
+              {t("cta.applyForFinancing")}
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" weight="bold" />
             </Button>
             
             <Button
-              variant="secondary"
+              variant="cream"
               size="lg"
               href="/platform"
-              className="group bg-white/90 text-tikari-green-dark hover:bg-white border-2 border-tikari-green-dark/20 rounded-md"
             >
-              Explore the Platform
+              {t("cta.explorePlatform")}
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" weight="bold" />
             </Button>
           </div>

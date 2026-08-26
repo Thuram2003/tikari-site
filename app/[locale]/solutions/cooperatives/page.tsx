@@ -15,33 +15,35 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui";
+import { useTranslations } from "next-intl";
 
 export default function CooperativesWindowsPage() {
+  const t = useTranslations("solutions.cooperatives");
   const supportTypes = [
     {
-      title: "Rotating Njangi Groups",
-      description: "Structured group savings cycles with member contribution tracking, rotation schedules, automatic disbursement to the designated recipient, and full audit trail. Supports both fixed-amount and variable-contribution groups.",
+      title: t("supportTypes.njangi.title"),
+      description: t("supportTypes.njangi.description"),
       icon: UsersFour,
       image: "/women-market.jpg",
       color: "bg-tikari-green-dark"
     },
     {
-      title: "Mudarabah Savings Pools",
-      description: "Aggregate member deposits into an investment pool. The platform calculates profit distribution at period-end based on actual investment returns, not a predetermined rate. PSR disclosure per member agreement.",
+      title: t("supportTypes.mudarabah.title"),
+      description: t("supportTypes.mudarabah.description"),
       icon: Coins,
       image: "/money.jpg",
       color: "bg-tikari-gold"
     },
     {
-      title: "Qard Hasan (Benevolent Loans)",
-      description: "Interest-free loans to members with no markup. Admin fees only, capped per Shariah approval. Repayment schedule tracking, member eligibility rules, and GL posting to the correct AAOIFI-aligned account.",
+      title: t("supportTypes.qardHasan.title"),
+      description: t("supportTypes.qardHasan.description"),
       icon: CirclesFour,
       image: "/handshake.jpg",
       color: "bg-tikari-green"
     },
     {
-      title: "Islamic Window Ring-Fencing",
-      description: "For conventional institutions operating an Islamic window: completely segregated GL, separate profit pool, dedicated product catalogue, and ring-fenced reporting. Mixed reports available showing consolidated and window-only views.",
+      title: t("supportTypes.islamicWindow.title"),
+      description: t("supportTypes.islamicWindow.description"),
       icon: Bank,
       image: "/meeting.jpg",
       color: "bg-tikari-sage"
@@ -59,13 +61,10 @@ export default function CooperativesWindowsPage() {
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="max-w-4xl">
             <h1 className="text-4xl lg:text-[3.75rem] font-bold leading-[1.05] tracking-tight mb-6">
-              Cooperatives & Islamic Windows
+              {t("hero.title")}
             </h1>
-            <p className="text-[17px] lg:text-[19px] text-white/85 leading-relaxed max-w-3xl mb-4">
-              Non-interest banking beyond the MFB licence.
-            </p>
             <p className="text-[17px] lg:text-[19px] text-white/85 leading-relaxed max-w-3xl mb-8">
-              Cooperative thrifts, Njangi groups, and Islamic window operations have unique structures that don't fit a conventional core. TIKARI is designed to handle them properly.
+              {t("hero.subtitle")}
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
@@ -73,19 +72,17 @@ export default function CooperativesWindowsPage() {
                 variant="secondary"
                 size="lg"
                 href="/demo"
-                className="group bg-tikari-gold text-tikari-green-dark hover:bg-tikari-gold/90 rounded-md"
               >
-                Book a Demo
+                {t("hero.cta.demo")}
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" weight="bold" />
               </Button>
               
               <Button
-                variant="secondary"
+                variant="cream"
                 size="lg"
                 href="/platform"
-                className="group bg-white/10 text-white hover:bg-white/20 border-2 border-white/20 rounded-md"
               >
-                See the Platform
+                {t("hero.cta.platform")}
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" weight="bold" />
               </Button>
             </div>
@@ -98,10 +95,10 @@ export default function CooperativesWindowsPage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-[2.75rem] font-bold mb-4 leading-[1.15] tracking-tight text-tikari-green-dark">
-              What We Support
+              {t("whatWeSupport.title")}
             </h2>
             <p className="text-[16px] lg:text-[18px] text-tikari-sage max-w-3xl mx-auto">
-              From simple Njangi to full Shariah window operations.
+              {t("whatWeSupport.subtitle")}
             </p>
           </div>
 
@@ -116,7 +113,7 @@ export default function CooperativesWindowsPage() {
                   className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center"
                 >
                   {/* Image */}
-                  <div className={`relative h-[450px] lg:h-[550px] overflow-hidden shadow-2xl border border-tikari-green/10 ${isEven ? '' : 'lg:order-2'}`}>
+                  <div className={`relative h-[450px] lg:h-[550px] overflow-hidden shadow-2xl border border-tikari-green/10 rounded-2xl ${isEven ? '' : 'lg:order-2'}`}>
                     <Image
                       src={type.image}
                       alt={type.title}
@@ -135,7 +132,7 @@ export default function CooperativesWindowsPage() {
                   {/* Content */}
                   <div className={isEven ? '' : 'lg:order-1'}>
                     <div className="flex items-center gap-4 mb-6">
-                      <div className={`w-14 h-14 ${type.color} text-white flex items-center justify-center`}>
+                      <div className={`w-14 h-14 ${type.color} text-white flex items-center justify-center rounded-full`}>
                         <Icon className="h-7 w-7" weight="bold" />
                       </div>
                       <h3 className="text-2xl lg:text-3xl font-bold text-tikari-green-dark">
@@ -159,10 +156,10 @@ export default function CooperativesWindowsPage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-[2.75rem] font-bold mb-6 leading-[1.15] tracking-tight text-tikari-green-dark">
-              Built for Cameroon's cooperative sector
+              {t("keyFeatures.title")}
             </h2>
             <p className="text-[16px] lg:text-[18px] text-tikari-sage leading-relaxed max-w-3xl mx-auto">
-              From traditional Njangi cycles to modern Islamic finance structures, TIKARI handles the full spectrum of non-interest cooperative banking.
+              {t("keyFeatures.subtitle")}
             </p>
           </div>
 
@@ -170,42 +167,42 @@ export default function CooperativesWindowsPage() {
             {[
               {
                 icon: ArrowsClockwise,
-                title: "Automated Rotation Cycles",
-                description: "Track member turns, calculate contributions, and trigger automatic disbursements based on rotation schedule."
+                title: t("keyFeatures.features.rotation.title"),
+                description: t("keyFeatures.features.rotation.description")
               },
               {
                 icon: Coins,
-                title: "Profit Pool Calculation",
-                description: "Real-time profit accrual with weighted average distribution based on member deposit balances and duration."
+                title: t("keyFeatures.features.profitPool.title"),
+                description: t("keyFeatures.features.profitPool.description")
               },
               {
                 icon: Receipt,
-                title: "Zero-Interest Accounting",
-                description: "AAOIFI-compliant GL structures for Qard Hasan with admin fee tracking and proper expense allocation."
+                title: t("keyFeatures.features.zeroInterest.title"),
+                description: t("keyFeatures.features.zeroInterest.description")
               },
               {
                 icon: ShieldCheck,
-                title: "Member Eligibility Rules",
-                description: "Configure lending limits, contribution requirements, and waiting periods per cooperative bylaws."
+                title: t("keyFeatures.features.eligibility.title"),
+                description: t("keyFeatures.features.eligibility.description")
               },
               {
                 icon: ListChecks,
-                title: "Dividend Distribution",
-                description: "Automated end-of-period dividend calculation with member-specific profit sharing ratios."
+                title: t("keyFeatures.features.dividend.title"),
+                description: t("keyFeatures.features.dividend.description")
               },
               {
                 icon: Bank,
-                title: "Dual Ledger System",
-                description: "Complete separation between conventional and Islamic operations for financial institutions running both."
+                title: t("keyFeatures.features.dualLedger.title"),
+                description: t("keyFeatures.features.dualLedger.description")
               }
             ].map((feature, idx) => {
               const Icon = feature.icon;
               return (
                 <div 
                   key={idx}
-                  className="bg-white border border-tikari-green/10 p-6 hover:border-tikari-green/30 hover:shadow-lg transition-all duration-300"
+                  className="bg-white border border-tikari-green/10 p-6 hover:border-tikari-green/30 hover:shadow-lg transition-all duration-300 rounded-2xl"
                 >
-                  <div className="w-12 h-12 bg-tikari-green/10 border border-tikari-green/20 flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 bg-tikari-green/10 border border-tikari-green/20 flex items-center justify-center mb-4 rounded-full">
                     <Icon className="h-6 w-6 text-tikari-green-dark" weight="bold" />
                   </div>
                   <h3 className="text-[17px] font-bold mb-2 text-tikari-green-dark">{feature.title}</h3>
@@ -223,25 +220,25 @@ export default function CooperativesWindowsPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl lg:text-[2.75rem] font-bold mb-6 leading-[1.15] tracking-tight">
-                COBAC compliance for cooperative structures
+                {t("compliance.title")}
               </h2>
               
               <p className="text-[16px] text-white/85 leading-relaxed mb-6">
-                TIKARI generates all required COBAC returns for cooperative financial institutions, including specialized reports for Njangi group operations and profit-sharing investment pools.
+                {t("compliance.description1")}
               </p>
 
               <p className="text-[16px] text-white/85 leading-relaxed mb-8">
-                For Islamic windows, the platform maintains complete audit trails showing the segregation between conventional and Islamic operations, satisfying both COBAC examiners and Shariah Supervisory Boards.
+                {t("compliance.description2")}
               </p>
 
               <div className="space-y-3">
                 {[
-                  "Member contribution and withdrawal records",
-                  "Njangi rotation schedule and turn history",
-                  "Profit pool performance and distribution",
-                  "Qard Hasan loan portfolio tracking",
-                  "Islamic window segregation reports",
-                  "Shariah compliance audit trail"
+                  t("compliance.items.0"),
+                  t("compliance.items.1"),
+                  t("compliance.items.2"),
+                  t("compliance.items.3"),
+                  t("compliance.items.4"),
+                  t("compliance.items.5")
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-start gap-3">
                     <CheckCircle className="h-5 w-5 text-tikari-gold flex-shrink-0 mt-0.5" weight="bold" />
@@ -251,12 +248,12 @@ export default function CooperativesWindowsPage() {
               </div>
             </div>
 
-            <div className="relative h-[500px] lg:h-[600px] overflow-hidden shadow-2xl border border-white/10">
+            <div className="relative h-[500px] lg:h-[600px] overflow-hidden shadow-2xl border border-white/10 rounded-2xl">
               <Image
                 src="/compliance.jpg"
                 alt="COBAC compliance and reporting"
                 fill
-                className="object-cover"
+                className="object-cover rounded-2xl"
               />
               <div className="absolute inset-0 bg-gradient-to-br from-tikari-green-dark/50 via-tikari-green/30 to-transparent"></div>
             </div>
@@ -271,10 +268,10 @@ export default function CooperativesWindowsPage() {
         
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <h2 className="text-3xl lg:text-[2.75rem] font-bold mb-6 leading-[1.15] tracking-tight">
-            Ready to digitize your cooperative operations?
+            {t("cta.title")}
           </h2>
           <p className="text-[16px] lg:text-[18px] text-tikari-green-dark/75 leading-relaxed mb-10 max-w-2xl mx-auto">
-            Schedule a personalized demo to see how TIKARI handles Njangi groups, Mudarabah pools, Qard Hasan lending, and Islamic window operations for Cameroon's cooperative sector.
+            {t("cta.description")}
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -282,19 +279,17 @@ export default function CooperativesWindowsPage() {
               variant="primary"
               size="lg"
               href="/demo"
-              className="group bg-tikari-green-dark text-white hover:bg-tikari-green rounded-md"
             >
-              Schedule a Demo
+              {t("cta.buttons.demo")}
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" weight="bold" />
             </Button>
             
             <Button
-              variant="secondary"
+              variant="cream"
               size="lg"
               href="/platform"
-              className="group bg-white/90 text-tikari-green-dark hover:bg-white border-2 border-tikari-green-dark/20 rounded-md"
             >
-              Explore the Platform
+              {t("cta.buttons.platform")}
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" weight="bold" />
             </Button>
           </div>

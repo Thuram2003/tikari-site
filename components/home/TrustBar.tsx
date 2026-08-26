@@ -46,7 +46,7 @@ export default function TrustBar() {
         </div>
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {frameworks.map((item, idx) => (
-            <div key={idx} className="p-6 bg-white border border-tikari-green/10 rounded-md flex items-start gap-4">
+            <div key={idx} className="p-6 bg-white border border-tikari-green/10 rounded-2xl flex items-start gap-4">
               <item.icon className="h-8 w-8 text-tikari-gold shrink-0 mt-1" weight="fill" />
               <div>
                 <p className="text-sm font-bold text-tikari-green-dark">{item.title}</p>
