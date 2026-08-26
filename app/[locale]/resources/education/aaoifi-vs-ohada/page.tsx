@@ -141,7 +141,7 @@ export default function AAOIFIvsOHADAPage() {
                     This article provides a comprehensive guide to understanding the differences between these two frameworks and implementing practical strategies to meet both sets of requirements simultaneously.
                   </p>
 
-                  <div className="not-prose my-8 p-6 bg-tikari-gold/10 border-l-4 border-tikari-gold">
+                  <div className="not-prose my-8 p-6 bg-tikari-gold/10 border-l-4 border-tikari-gold rounded-r-2xl">
                     <h4 className="text-lg font-bold text-tikari-green-dark mb-3">Why This Matters</h4>
                     <ul className="space-y-2 text-tikari-sage">
                       <li className="flex gap-2">
@@ -236,8 +236,8 @@ export default function AAOIFIvsOHADAPage() {
                 </p>
 
                 <div className="not-prose my-8">
-                  <div className="overflow-x-auto">
-                    <table className="w-full border-2 border-tikari-green/20 text-sm">
+                  <div className="overflow-x-auto rounded-2xl">
+                    <table className="w-full border-1 border-tikari-green/20 text-sm">
                       <thead className="bg-tikari-green-dark text-white">
                         <tr>
                           <th className="px-4 py-3 text-left font-bold">Aspect</th>
@@ -316,7 +316,7 @@ export default function AAOIFIvsOHADAPage() {
 
                 <div className="not-prose my-8">
                   <div className="space-y-6">
-                    <div className="p-6 bg-white border-2 border-tikari-green/20">
+                    <div className="p-6 bg-white border-1 border-tikari-green/20 rounded-2xl">
                       <h4 className="text-lg font-bold text-tikari-green-dark mb-4">Murabaha Receivables</h4>
                       <div className="space-y-2 text-sm">
                         <div className="flex justify-between items-center p-3 bg-tikari-cream/40">
@@ -336,7 +336,7 @@ export default function AAOIFIvsOHADAPage() {
                       </p>
                     </div>
 
-                    <div className="p-6 bg-white border-2 border-tikari-green/20">
+                    <div className="p-6 bg-white border-1 border-tikari-green/20 rounded-2xl">
                       <h4 className="text-lg font-bold text-tikari-green-dark mb-4">Mudarabah Investment Accounts</h4>
                       <div className="space-y-2 text-sm">
                         <div className="flex justify-between items-center p-3 bg-tikari-cream/40">
@@ -356,7 +356,7 @@ export default function AAOIFIvsOHADAPage() {
                       </p>
                     </div>
 
-                    <div className="p-6 bg-white border-2 border-tikari-green/20">
+                    <div className="p-6 bg-white border-1 border-tikari-green/20 rounded-2xl">
                       <h4 className="text-lg font-bold text-tikari-green-dark mb-4">Profit Distribution to IAH</h4>
                       <div className="space-y-2 text-sm">
                         <div className="flex justify-between items-center p-3 bg-tikari-cream/40">
@@ -376,7 +376,7 @@ export default function AAOIFIvsOHADAPage() {
                       </p>
                     </div>
 
-                    <div className="p-6 bg-white border-2 border-tikari-green/20">
+                    <div className="p-6 bg-white border-1 border-tikari-green/20 rounded-2xl">
                       <h4 className="text-lg font-bold text-tikari-green-dark mb-4">Zakat</h4>
                       <div className="space-y-2 text-sm">
                         <div className="flex justify-between items-center p-3 bg-tikari-cream/40">
@@ -446,8 +446,8 @@ export default function AAOIFIvsOHADAPage() {
                 </p>
 
                 <div className="not-prose my-6">
-                  <div className="overflow-x-auto">
-                    <table className="w-full border-2 border-tikari-green/20 text-sm">
+                  <div className="overflow-x-auto rounded-2xl">
+                    <table className="w-full border-1 border-tikari-green/20 text-sm rounded-2xl">
                       <thead className="bg-tikari-green-dark text-white">
                         <tr>
                           <th className="px-4 py-3 text-left font-bold">Islamic Product</th>
@@ -608,7 +608,7 @@ export default function AAOIFIvsOHADAPage() {
                     ].map((feature, idx) => {
                       const Icon = feature.icon;
                       return (
-                        <div key={idx} className="flex gap-4 p-6 bg-tikari-cream/40 border-2 border-tikari-green/20">
+                        <div key={idx} className="flex gap-4 p-6 bg-tikari-cream/40 border-1 border-tikari-green/20 rounded-2xl">
                           <div className="flex-shrink-0">
                             <Icon className="h-8 w-8 text-tikari-green-dark" weight="bold" />
                           </div>
@@ -622,7 +622,7 @@ export default function AAOIFIvsOHADAPage() {
                   </div>
                 </div>
 
-                <div className="not-prose my-12 p-8 bg-tikari-gold/10 border-l-4 border-tikari-gold">
+                <div className="not-prose my-12 p-8 bg-tikari-gold/10 border-l-4 border-tikari-gold rounded-r-2xl">
                   <div className="flex items-start gap-4">
                     <FileText className="h-8 w-8 text-tikari-green-dark flex-shrink-0 mt-1" weight="bold" />
                     <div>
@@ -631,10 +631,9 @@ export default function AAOIFIvsOHADAPage() {
                         Stop juggling spreadsheets and manual mappings. TIKARI automates AAOIFI-to-OHADA reconciliation, generates both statement formats, and keeps you compliant with COBAC and Shariah requirements.
                       </p>
                       <Button
-                        variant="secondary"
+                        variant="primary"
                         size="lg"
                         href="/demo"
-                        className="bg-tikari-green-dark text-white hover:bg-tikari-green rounded-md"
                       >
                         Book a Demo
                         <ArrowRight className="ml-2 h-4 w-4" weight="bold" />
@@ -658,7 +657,7 @@ export default function AAOIFIvsOHADAPage() {
               <Link
                 key={idx}
                 href={article.href}
-                className="block bg-white border-2 border-tikari-green/20 hover:border-tikari-gold hover:shadow-xl transition-all duration-300 group p-6"
+                className="block bg-white border-1 border-tikari-green/20 hover:border-tikari-gold hover:shadow-xl transition-all duration-300 group p-6 rounded-2xl"
               >
                 <div className="mb-3">
                   <span className="text-xs text-tikari-sage">{article.duration}</span>

@@ -184,7 +184,7 @@ export default function ProfitSharingRatioPage() {
                   ].map((item, idx) => {
                     const Icon = item.icon;
                     return (
-                      <div key={idx} className="flex gap-4 p-6 bg-tikari-cream/40 border-l-4 border-tikari-gold">
+                      <div key={idx} className="flex gap-4 p-6 bg-tikari-cream/40 border-l-4 border-tikari-gold rounded-r-2xl">
                         <div className="flex-shrink-0">
                           <Icon className="h-8 w-8 text-tikari-green-dark" weight="bold" />
                         </div>
@@ -253,7 +253,7 @@ export default function ProfitSharingRatioPage() {
                 <p>
                   Avoid jargon. Instead of:
                 </p>
-                <div className="not-prose my-6 p-4 bg-red-50 border-l-4 border-red-400">
+                <div className="not-prose my-6 p-4 bg-red-50 border-l-4 border-red-400 rounded-r-2xl">
                   <p className="text-tikari-sage italic">
                     "The mudarib shall retain 35% of realized profits from the commingled investment pool, subject to PER and IRR appropriations as determined by the ACE."
                   </p>
@@ -262,7 +262,7 @@ export default function ProfitSharingRatioPage() {
                 <p>
                   Use clear language:
                 </p>
-                <div className="not-prose my-6 p-4 bg-green-50 border-l-4 border-green-600">
+                <div className="not-prose my-6 p-4 bg-green-50 border-l-4 border-green-600 rounded-r-2xl">
                   <p className="text-tikari-sage">
                     "When your investment earns a profit, you receive 65% and the bank receives 35%. Any profits set aside for reserves will be explained in your quarterly statement."
                   </p>
@@ -273,7 +273,7 @@ export default function ProfitSharingRatioPage() {
                   Use charts, infographics, and examples to illustrate PSR:
                 </p>
 
-                <div className="not-prose my-8 p-6 bg-tikari-gold/10 border-2 border-tikari-gold/30">
+                <div className="not-prose my-8 p-6 bg-tikari-gold/10 border-2 border-tikari-gold/30 rounded-2xl">
                   <h4 className="text-lg font-bold text-tikari-green-dark mb-4">Example PSR Illustration</h4>
                   <div className="space-y-4">
                     <div>
@@ -319,7 +319,7 @@ export default function ProfitSharingRatioPage() {
                 </p>
 
                 <h3 className="font-bold text-lg pt-2">Scenario 1: Simple Profit Distribution</h3>
-                <div className="not-prose my-6 p-6 bg-tikari-cream/40">
+                <div className="not-prose my-6 p-6 bg-tikari-cream rounded-2xl">
                   <p className="text-tikari-sage mb-4">
                     <strong className="text-tikari-green-dark">Setup:</strong> A customer deposits 10,000,000 FCFA into a Mudarabah investment account with a PSR of 60:40 (60% customer, 40% bank).
                   </p>
@@ -335,7 +335,7 @@ export default function ProfitSharingRatioPage() {
                       <span className="font-semibold">Customer Share (60%):</span>
                       <span className="font-mono font-semibold text-tikari-green-dark">480,000 FCFA</span>
                     </div>
-                    <div className="flex justify-between py-2 border-b border-tikari-green/20">
+                    <div className="flex justify-between py-2">
                       <span>Bank Share (40%):</span>
                       <span className="font-mono">320,000 FCFA</span>
                     </div>
@@ -350,7 +350,7 @@ export default function ProfitSharingRatioPage() {
                 </div>
 
                 <h3 className="font-bold text-lg pt-2">Scenario 2: Loss Scenario</h3>
-                <div className="not-prose my-6 p-6 bg-red-50 border-l-4 border-red-400">
+                <div className="not-prose my-6 p-6 bg-red-50 border-l-4 border-red-400 rounded-r-2xl">
                   <p className="text-tikari-sage mb-4">
                     <strong className="text-tikari-green-dark">Setup:</strong> Same customer, same 10,000,000 FCFA deposit, PSR 60:40.
                   </p>
@@ -366,7 +366,7 @@ export default function ProfitSharingRatioPage() {
                       <span className="font-semibold">Customer Bears Loss (100%):</span>
                       <span className="font-mono font-semibold text-red-600">-300,000 FCFA</span>
                     </div>
-                    <div className="flex justify-between py-2 border-b border-red-300">
+                    <div className="flex justify-between py-2">
                       <span>Bank Bears Loss:</span>
                       <span className="font-mono">0 FCFA (loses time/effort)</span>
                     </div>
@@ -385,8 +385,8 @@ export default function ProfitSharingRatioPage() {
                   Some banks use <strong>tiered PSR structures</strong> to incentivize higher performance:
                 </p>
                 <div className="not-prose my-6">
-                  <div className="overflow-x-auto">
-                    <table className="w-full border-2 border-tikari-green/20">
+                  <div className="overflow-x-auto rounded-2xl">
+                    <table className="w-full border-1 border-tikari-green/20 rounded-2xl">
                       <thead className="bg-tikari-green-dark text-white">
                         <tr>
                           <th className="px-6 py-4 text-left font-bold">Profit Level (Annual)</th>
@@ -452,7 +452,7 @@ export default function ProfitSharingRatioPage() {
                       fix: "Any PSR adjustments require written customer agreement and cannot apply to existing deposits retroactively."
                     }
                   ].map((item, idx) => (
-                    <div key={idx} className="mb-6 p-6 bg-white border-2 border-tikari-green/20">
+                    <div key={idx} className="mb-6 p-6 bg-white border-1 border-tikari-green/20 rounded-2xl">
                       <div className="flex items-start gap-4 mb-4">
                         <Warning className="h-6 w-6 text-red-600 flex-shrink-0 mt-1" weight="bold" />
                         <h4 className="text-lg font-bold text-tikari-green-dark">{item.mistake}</h4>
@@ -540,7 +540,7 @@ export default function ProfitSharingRatioPage() {
                   <li>Closing balance</li>
                 </ul>
 
-                <div className="not-prose my-12 p-8 bg-tikari-gold/10 border-l-4 border-tikari-gold">
+                <div className="not-prose my-12 p-8 bg-tikari-gold/10 border-l-4 border-tikari-gold rounded-r-2xl">
                   <div className="flex items-start gap-4">
                     <ChartLineUp className="h-8 w-8 text-tikari-green-dark flex-shrink-0 mt-1" weight="bold" />
                     <div>
@@ -549,10 +549,9 @@ export default function ProfitSharingRatioPage() {
                         TIKARI's platform automatically generates Shariah-compliant PSR disclosures, quarterly profit allocation reports, and customer-facing statements all tailored to AAOIFI and CEMAC requirements.
                       </p>
                       <Button
-                        variant="secondary"
+                        variant="primary"
                         size="lg"
                         href="/demo"
-                        className="bg-tikari-green-dark text-white hover:bg-tikari-green rounded-md"
                       >
                         Book a Demo
                         <ArrowRight className="ml-2 h-4 w-4" weight="bold" />
@@ -576,7 +575,7 @@ export default function ProfitSharingRatioPage() {
               <Link
                 key={idx}
                 href={article.href}
-                className="block bg-white border-2 border-tikari-green/20 hover:border-tikari-gold hover:shadow-xl transition-all duration-300 group p-6"
+                className="block bg-white border-1 border-tikari-green/20 hover:border-tikari-gold hover:shadow-xl transition-all duration-300 group p-6 rounded-2xl"
               >
                 <div className="mb-3">
                   <span className="text-xs text-tikari-sage">{article.duration}</span>
