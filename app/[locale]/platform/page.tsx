@@ -148,9 +148,6 @@ export default function PlatformPage() {
         
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="max-w-4xl">
-            <div className="inline-flex items-center px-3.5 py-1.5 bg-tikari-gold/10 border border-tikari-gold/30 backdrop-blur-sm mb-6">
-              <span className="text-[11px] uppercase tracking-[0.15em] text-tikari-gold font-semibold">{t("hero.badge")}</span>
-            </div>
             <h1 className="text-4xl lg:text-[3.5rem] font-bold leading-[1.1] tracking-tight mb-6">
               {t("hero.title")}
             </h1>
@@ -158,7 +155,7 @@ export default function PlatformPage() {
               {t("hero.subtitle")}
             </p>
             <Button
-              variant="primary"
+              variant="secondary"
               size="lg"
               href="/demo"
               className="group"
@@ -180,7 +177,7 @@ export default function PlatformPage() {
             >
               {/* Left Column - Icon & Category */}
               <div className="lg:col-span-2 space-y-6">
-                <div className="w-16 h-16 bg-tikari-gold/10 border border-tikari-gold/20 flex items-center justify-center text-tikari-gold">
+                <div className="w-16 h-16 bg-tikari-gold/10 border border-tikari-gold/20 flex items-center justify-center text-tikari-gold rounded-full">
                   <module.icon className="h-8 w-8" strokeWidth={1.5} />
                 </div>
                 <div>
@@ -233,9 +230,6 @@ export default function PlatformPage() {
         
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-12 lg:mb-16">
-            <div className="inline-flex items-center px-3.5 py-1.5 bg-tikari-gold/10 border border-tikari-gold/30 backdrop-blur-sm mb-6">
-              <span className="text-[11px] uppercase tracking-[0.15em] text-tikari-gold font-semibold">{t("integrations.badge")}</span>
-            </div>
             <h2 className="text-3xl lg:text-4xl font-bold mb-6 leading-tight">
               {t("integrations.title")}
             </h2>
@@ -248,7 +242,7 @@ export default function PlatformPage() {
             {integrations.map((integration, idx) => (
               <div
                 key={idx}
-                className="bg-white/[0.04] backdrop-blur-sm border border-white/[0.08] p-6 lg:p-7 space-y-4 hover:bg-white/[0.06] hover:border-white/[0.12] transition-all duration-300 group"
+                className="bg-white/[0.04] backdrop-blur-sm border border-white/[0.08] p-6 lg:p-7 space-y-4 hover:bg-white/[0.06] hover:border-white/[0.12] transition-all duration-300 group rounded-2xl"
               >
                 <div className="w-12 h-12 bg-tikari-gold/[0.08] border border-tikari-gold/[0.15] flex items-center justify-center text-tikari-gold group-hover:bg-tikari-gold/[0.12] group-hover:border-tikari-gold/[0.25] transition-all duration-300">
                   <integration.icon className="h-6 w-6" strokeWidth={1.5} />
@@ -270,7 +264,6 @@ export default function PlatformPage() {
               variant="secondary"
               size="lg"
               href="/demo"
-              className="group bg-white text-tikari-green-dark hover:bg-tikari-cream-light"
             >
               {t("integrations.seeDemo")}
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" weight="bold" />

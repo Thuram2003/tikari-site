@@ -142,10 +142,6 @@ export default function EducationPage() {
         
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="max-w-4xl">
-            <div className="inline-flex items-center gap-2 bg-tikari-gold/20 text-tikari-gold px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-tikari-gold/30">
-              <GraduationCap weight="bold" className="h-4 w-4" />
-              Education Centre
-            </div>
             
             <h1 className="text-4xl lg:text-[3.75rem] font-bold leading-[1.05] tracking-tight mb-6">
               Shariah Finance 101
@@ -159,17 +155,15 @@ export default function EducationPage() {
                 variant="secondary"
                 size="lg"
                 href="#guides"
-                className="group bg-tikari-gold text-tikari-green-dark hover:bg-tikari-gold/90 rounded-md"
               >
                 Start Learning
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" weight="bold" />
               </Button>
               
               <Button
-                variant="secondary"
+                variant="cream"
                 size="lg"
                 href="/demo"
-                className="group bg-white/10 text-white hover:bg-white/20 border-2 border-white/20 rounded-md"
               >
                 Book a Demo
               </Button>
@@ -196,11 +190,11 @@ export default function EducationPage() {
               return (
                 <div 
                   key={idx}
-                  className="bg-white border-2 border-tikari-green/20 hover:border-tikari-green hover:shadow-xl transition-all duration-300 group"
+                  className="bg-white border-1 border-tikari-green/20 hover:border-tikari-green hover:shadow-xl transition-all duration-300 group rounded-2xl"
                 >
                   <div className="p-8">
                     <div className="flex items-start justify-between mb-4">
-                      <div className="p-3 bg-tikari-green/10 group-hover:bg-tikari-green-dark transition-colors duration-300">
+                      <div className="p-3 bg-tikari-green/10 group-hover:bg-tikari-green-dark transition-colors duration-300 rounded-full">
                         <Icon className="h-6 w-6 text-tikari-green-dark group-hover:text-white" weight="bold" />
                       </div>
                       <span className="text-xs font-semibold text-tikari-gold bg-tikari-gold/10 px-3 py-1 rounded-full">
@@ -250,7 +244,7 @@ export default function EducationPage() {
               <Link
                 key={idx}
                 href={guide.href}
-                className="block bg-white border-2 border-tikari-green/20 hover:border-tikari-gold hover:shadow-xl transition-all duration-300 group"
+                className="block bg-white border-1 border-tikari-green/20 hover:border-tikari-gold hover:shadow-xl transition-all duration-300 group rounded-2xl"
               >
                 <div className="p-8">
                   <div className="flex items-center gap-3 mb-4">
@@ -302,20 +296,18 @@ export default function EducationPage() {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
-              variant="secondary"
+              variant="primary"
               size="lg"
               href="/demo"
-              className="group bg-tikari-green-dark text-white hover:bg-tikari-green rounded-md"
             >
               Book a Demo
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" weight="bold" />
             </Button>
             
             <Button
-              variant="secondary"
+              variant="cream"
               size="lg"
               href="/resources/support"
-              className="group bg-white/10 text-tikari-green-dark hover:bg-white/20 border-2 border-tikari-green-dark/20 rounded-md"
             >
               Contact Support
             </Button>

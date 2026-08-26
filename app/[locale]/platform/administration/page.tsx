@@ -156,7 +156,7 @@ export default function AdministrationPage() {
       title: t("sections.eodProcesses.title"),
       subtitle: t("sections.eodProcesses.subtitle"),
       icon: CalendarCheck,
-      color: "bg-white",
+      color: "bg-tikari-gold/90",
       image: "/bnw-muslim.jpg",
       features: [
         {
@@ -196,7 +196,7 @@ export default function AdministrationPage() {
       title: t("sections.backupArchival.title"),
       subtitle: t("sections.backupArchival.subtitle"),
       icon: Database,
-      color: "bg-tikari-sage-light/40",
+      color: "bg-tikari-sage",
       image: "/handshake.jpg",
       features: [
         {
@@ -236,7 +236,7 @@ export default function AdministrationPage() {
       title: t("sections.monitoringAlerts.title"),
       subtitle: t("sections.monitoringAlerts.subtitle"),
       icon: ChartLineUp,
-      color: "bg-tikari-gold/8",
+      color: "bg-tikari-gold/40",
       image: "/compliance.jpg",
       features: [
         {
@@ -324,7 +324,7 @@ export default function AdministrationPage() {
                   <div className={isEven ? '' : 'lg:col-start-2'}>
                     {/* Icon & Title */}
                     <div className="mb-8 space-y-5">
-                      <div className={`w-16 h-16 ${section.color} text-white flex items-center justify-center shadow-lg border border-white/20`}>
+                      <div className={`w-16 h-16 ${section.color} text-white flex items-center justify-center shadow-lg border border-white/20 rounded-full`}>
                         <Icon className="h-8 w-8" weight="bold" />
                       </div>
                       
@@ -345,10 +345,10 @@ export default function AdministrationPage() {
                         return (
                           <div 
                             key={featureIdx}
-                            className={`${idx === 2 ? 'bg-white/[0.08] border-white/[0.12] hover:bg-white/[0.12] hover:border-white/[0.18]' : 'bg-white border-tikari-green/10 hover:border-tikari-green/20'} border p-6 hover:shadow-lg transition-all duration-300 group`}
+                            className={`${idx === 2 ? 'bg-white/[0.08] border-white/[0.12] hover:bg-white/[0.12] hover:border-white/[0.18]' : 'bg-white border-tikari-green/10 hover:border-tikari-green/20'} border p-6 hover:shadow-lg transition-all duration-300 group rounded-2xl`}
                           >
                             <div className="flex items-start gap-3 mb-3">
-                              <div className={`w-9 h-9 ${idx === 2 ? 'bg-tikari-gold/20 border-tikari-gold/30' : 'bg-tikari-gold/10 border-tikari-gold/20'} border flex items-center justify-center flex-shrink-0 group-hover:bg-tikari-gold/20 group-hover:border-tikari-gold/30 transition-all`}>
+                              <div className={`w-9 h-9 ${idx === 2 ? 'bg-tikari-gold/20 border-tikari-gold/30' : 'bg-tikari-gold/10 border-tikari-gold/20'} border flex items-center justify-center flex-shrink-0 group-hover:bg-tikari-gold/20 group-hover:border-tikari-gold/30 transition-all rounded-full`}>
                                 <FeatureIcon className="h-5 w-5 text-tikari-gold" weight="bold" />
                               </div>
                               <h3 className={`text-[15px] lg:text-[16px] font-bold leading-snug ${idx === 2 ? 'text-white' : 'text-tikari-green-dark'}`}>
@@ -366,7 +366,7 @@ export default function AdministrationPage() {
 
                   {/* Image Column */}
                   <div className={`relative ${isEven ? '' : 'lg:col-start-1 lg:row-start-1'}`}>
-                    <div className="relative h-[450px] lg:h-[650px] overflow-hidden shadow-2xl border border-tikari-green/10">
+                    <div className="relative h-[450px] lg:h-[650px] overflow-hidden shadow-2xl border border-tikari-green/10 rounded-2xl ">
                       <Image
                         src={section.image}
                         alt={section.title}
@@ -410,17 +410,15 @@ export default function AdministrationPage() {
               variant="primary"
               size="lg"
               href="/demo"
-              className="group bg-tikari-green-dark text-white hover:bg-tikari-green rounded-md"
             >
               {t("cta.scheduleDemo")}
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" weight="bold" />
             </Button>
             
             <Button
-              variant="secondary"
+              variant="cream"
               size="lg"
               href="/platform"
-              className="group bg-white/90 text-tikari-green-dark hover:bg-white border-2 border-tikari-green-dark/20 rounded-md"
             >
               {t("cta.exploreModules")}
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" weight="bold" />

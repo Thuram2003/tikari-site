@@ -185,9 +185,9 @@ export default function WhatIsIslamicFinancePage() {
                     return (
                       <div
                         key={idx}
-                        className="flex gap-5 p-6 bg-tikari-cream/40 border-l-4 border-tikari-gold rounded-r-lg"
+                        className="flex gap-5 p-6 bg-tikari-cream/40 border-l-4 border-tikari-gold rounded-r-2xl"
                       >
-                        <div className="flex-shrink-0 mt-0.5">
+                        <div className="flex-shrink-0 mt-0.5 rounded-full">
                           <Icon className="h-7 w-7 text-tikari-green-dark" weight="bold" />
                         </div>
                         <div>
@@ -310,7 +310,7 @@ export default function WhatIsIslamicFinancePage() {
                 </p>
 
                 <div className="not-prose my-12">
-                  <div className="overflow-x-auto rounded-lg border border-tikari-green/20">
+                  <div className="overflow-x-auto rounded-2xl border border-tikari-green/20">
                     <table className="w-full">
                       <thead className="bg-tikari-green-dark text-white">
                         <tr>
@@ -407,7 +407,7 @@ export default function WhatIsIslamicFinancePage() {
                   <li><strong>Work with certified institutions:</strong> Choose financial institutions with recognized Shariah boards and COBAC licensing.</li>
                 </ul>
 
-                <div className="not-prose my-16 p-8 bg-tikari-gold/10 border-l-4 border-tikari-gold rounded-r-lg">
+                <div className="not-prose my-16 p-8 bg-tikari-gold/10 border-l-4 border-tikari-gold rounded-r-2xl">
                   <div className="flex items-start gap-5">
                     <BookOpen className="h-8 w-8 text-tikari-green-dark flex-shrink-0 mt-1" weight="bold" />
                     <div>
@@ -418,10 +418,9 @@ export default function WhatIsIslamicFinancePage() {
                         TIKARI provides comprehensive onboarding, Shariah governance setup, and staff training for financial institutions entering the Islamic finance market.
                       </p>
                       <Button
-                        variant="secondary"
+                        variant="primary"
                         size="lg"
                         href="/demo"
-                        className="bg-tikari-green-dark text-white hover:bg-tikari-green rounded-md"
                       >
                         Book a Demo
                         <ArrowRight className="ml-2 h-4 w-4" weight="bold" />
@@ -445,7 +444,7 @@ export default function WhatIsIslamicFinancePage() {
               <Link
                 key={idx}
                 href={article.href}
-                className="block bg-white border-2 border-tikari-green/20 hover:border-tikari-gold hover:shadow-xl transition-all duration-300 group p-6"
+                className="block bg-white border-1 border-tikari-green/20 hover:border-tikari-gold hover:shadow-xl transition-all duration-300 group p-6 rounded-2xl"
               >
                 <div className="mb-3">
                   <span className="text-xs text-tikari-sage">{article.duration}</span>

@@ -132,7 +132,7 @@ export default function CooperativesWindowsPage() {
                   {/* Content */}
                   <div className={isEven ? '' : 'lg:order-1'}>
                     <div className="flex items-center gap-4 mb-6">
-                      <div className={`w-14 h-14 ${type.color} text-white flex items-center justify-center rounded-full`}>
+                      <div className={`w-14 h-14 ${type.color} text-white flex items-center justify-center rounded-xl`}>
                         <Icon className="h-7 w-7" weight="bold" />
                       </div>
                       <h3 className="text-2xl lg:text-3xl font-bold text-tikari-green-dark">

@@ -6,37 +6,37 @@
   "home": {
     "hero": {
       "title": "Banking without interest. Compliance without doubt.",
-      "subtitle": "The only core platform built for non-interest microfinance in the CEMAC zone. From Murabaha disbursements to COBAC-ready GL reconciliation your auditors at MINFI and your Shariah board get the same answer.",
+      "subtitle": "Regulator-compliant core platform for Islamic banking across Africa. From Murabaha disbursements to central-bank-ready GL reconciliation, your auditors and your Shariah board get the same answer.",
       "bookDemo": "Book a demo",
       "badges": {
-        "beac": "BEAC Licensed",
-        "cobac": "COBAC Compliant",
+        "beac": "Central Bank Compliant",
+        "cobac": "Banking Regulator Certified",
         "aaoifi": "AAOIFI & OHADA Standards"
       }
     },
     "trustBar": {
       "title": "Built to support",
-      "subtitle": "Aligned with Cameroon and the CEMAC non-interest banking framework",
+      "subtitle": "Built for African Banking Regulation",
       "items": {
         "cobac": {
-          "title": "COBAC EMF Guidelines",
-          "desc": "Commission Bancaire de l'Afrique Centrale microfinance rules"
+          "title": "Central Bank Standards",
+          "desc": "Microfinance and banking prudential regulatory framework compliance"
         },
         "aaoifi": {
           "title": "AAOIFI & OHADA",
           "desc": "AAOIFI FAS-compliant general ledger integrated with OHADA"
         },
         "prudential": {
-          "title": "COBAC Prudential Rules",
-          "desc": "Capital, liquidity, and PAR thresholds monitoring"
+          "title": "Prudential Ratio Monitoring",
+          "desc": "Capital adequacy, liquidity, and PAR thresholds real-time monitoring"
         },
         "fogadac": {
-          "title": "FOGADAC Framework",
-          "desc": "Deposit insurance returns and reporting rules"
+          "title": "Deposit Insurance Reporting",
+          "desc": "Automated deposit insurance returns and compliance reporting"
         },
         "gimac": {
-          "title": "GIMAC & SYSTAC",
-          "desc": "Real-time interbank and mobile money transfers"
+          "title": "Real-Time Interbank & Mobile Money",
+          "desc": "Instant interbank transfers and mobile money integration"
         },
         "shariah": {
           "title": "Shariah Governance",
@@ -54,8 +54,8 @@
           "desc": "Legacy platforms label Murabaha profit as \"interest income\" in reports and general ledgers. Your Shariah board sees it. Your auditors flag it."
         },
         "cobac": {
-          "title": "COBAC reporting is manual chaos",
-          "desc": "COBAC and BEAC returns compiled by hand from dozens of separate exports and spreadsheets. Every quarter feels like an audit crisis."
+          "title": "Regulatory reporting is manual chaos",
+          "desc": "Central bank and regulatory returns compiled by hand from dozens of separate exports and spreadsheets. Every quarter feels like an audit crisis."
         },
         "governance": {
           "title": "Shariah governance lives outside the system",
@@ -69,14 +69,14 @@
       "tikariDifference": {
         "title": "TIKARI is different",
         "desc1": "The ledger is built on AAOIFI financial accounting standards from the ground up. Every product type (Wadiah, Mudarabah, Musharakah, Ijara) has its own GL logic, profit-sharing mechanics, and Shariah validation flow.",
-        "desc2": "Your Shariah Advisory Board and your compliance team are first-class users in the system, not an afterthought. BEAC reporting is automatic. EOD closes in under 10 minutes."
+        "desc2": "Your Shariah Advisory Board and your compliance team are first-class users in the system, not an afterthought. Central bank reporting is automatic. EOD closes in under 10 minutes."
       },
-      "imageCaption": "Islamic banking operations in Cameroon require systems designed for CEMAC regulatory compliance and Shariah principles from day one."
+      "imageCaption": "Islamic banking operations require systems designed for regulatory compliance and Shariah principles from day one."
     },
     "platformOverview": {
       "badge": "The Platform",
       "title": "One core. Every module a bank needs.",
-      "subtitle": "TIKARI covers the full lifecycle of a non-interest bank, from customer onboarding and KYC through to COBAC returns and year-end Zakat calculation. Everything talks to the same GL, the same audit trail, and the same maker-checker engine.",
+      "subtitle": "TIKARI covers the full lifecycle of a non-interest bank, from customer onboarding and KYC through to regulatory returns and year-end Zakat calculation. Everything talks to the same GL, the same audit trail, and the same maker-checker engine.",
       "modules": {
         "banking": {
           "title": "Banking Operations",
@@ -90,12 +90,12 @@
         },
         "compliance": {
           "title": "Compliance & Shariah",
-          "desc": "AML/CFT screening, COBAC returns, AAOIFI GL, ACE meeting management, Fatwa repository, and sanctions/PEP checks.",
+          "desc": "AML/CFT screening, regulatory returns, AAOIFI GL, ACE meeting management, Fatwa repository, and sanctions/PEP checks.",
           "explore": "Explore"
         },
         "gl": {
           "title": "General Ledger & Reporting",
-          "desc": "Trial balance, income statement, COBAC balance sheet, prudential classification, capital adequacy, all from one ledger.",
+          "desc": "Trial balance, income statement, regulatory balance sheet, prudential classification, capital adequacy, all from one ledger.",
           "explore": "Explore"
         },
         "agent": {
@@ -205,8 +205,8 @@
           "desc": "The AAOIFI chart of accounts, deferred Murabaha income recognition (FAS 2), and Mudarabah profit distribution (FAS 3) are not add-ons. They are the foundation. Conventional banking GL assumptions do not exist here."
         },
         "cobac": {
-          "title": "COBAC-native reporting",
-          "desc": "Statement of Financial Position, Prudential Returns, Capital Adequacy, Liquidity Ratio, credit bureau submission, and FOGADAC premium calculations. All generated from the live ledger on demand. Not from exports and formulas."
+          "title": "Regulator-Native Reporting",
+          "desc": "Statement of Financial Position, Prudential Returns, Capital Adequacy, Liquidity Ratio, credit bureau submission, and deposit insurance premium calculations. All generated from the live ledger on demand. Not from exports and formulas."
         },
         "governance": {
           "title": "Shariah Governance workflow",
@@ -217,8 +217,8 @@
           "desc": "Maker-checker is not a bolt-on permission flag. It is the operating model. Every account opening, financing disbursement, fund transfer, and GL journal entry flows through a structured approval chain with full audit trail."
         },
         "cameroon": {
-          "title": "Designed for Cameroon & CEMAC",
-          "desc": "CNI and Passport verification. BEAC NUBAN standard account numbers. SYSTAC and SYGMA bank transfers. Njangi and Tontine groups. Agent banking. French and English localization. FCFA as the native currency."
+          "title": "Built for African Markets",
+          "desc": "National ID and Passport verification. Standard account numbering. Interbank transfer systems. Njangi and Tontine groups. Agent banking. Multi-language localization. Native multi-currency support."
         },
         "migration": {
           "title": "Migration path from legacy cores",
@@ -237,8 +237,8 @@
           "desc": "From KYC to Zakat calculation"
         },
         "cobacReturns": {
-          "title": "COBAC Returns",
-          "value": "12",
+          "title": "Regulatory Returns",
+          "value": "12+",
           "desc": "Generated directly from the GL"
         },
         "financingTypes": {
@@ -251,16 +251,16 @@
     "security": {
       "badge": "Security & Control",
       "title": "Audit-ready from day one",
-      "subtitle": "Protect your institution with comprehensive, banking-grade security and Shariah-compliant audit trails designed to withstand strict COBAC regulatory review.",
-      "imageCaption": "COBAC-compliant audit trails and Shariah Board governance workflows built into every transaction",
+      "subtitle": "Protect your institution with comprehensive, banking-grade security and Shariah-compliant audit trails designed to withstand strict regulatory review.",
+      "imageCaption": "Regulatory-compliant audit trails and Shariah Board governance workflows built into every transaction",
       "items": {
         "fourEyes": {
           "title": "Four-eyes principle",
-          "desc": "Every financial operation goes through maker-checker approval. No single user can initiate and approve the same transaction, reducing operational and compliance risks under COBAC supervision."
+          "desc": "Every financial operation goes through maker-checker approval. No single user can initiate and approve the same transaction, reducing operational and compliance risks under regulatory supervision."
         },
         "audit": {
           "title": "Immutable audit trail",
-          "desc": "Every user action modifying data is logged with timestamp, user ID, IP address, and complete before and after state. Instantly exportable for COBAC regulatory audits and internal Shariah Board reviews."
+          "desc": "Every user action modifying data is logged with timestamp, user ID, IP address, and complete before and after state. Instantly exportable for regulatory audits and internal Shariah Board reviews."
         },
         "rbac": {
           "title": "Granular RBAC",
@@ -272,45 +272,45 @@
         },
         "aml": {
           "title": "AML/CFT monitoring",
-          "desc": "Real-time transaction compliance rules for velocity, amount anomaly, structuring, dormant account activity, PEP screening, and sanctions lists in accordance with CEMAC directives and GABAC recommendations."
+          "desc": "Real-time transaction compliance rules for velocity, amount anomaly, structuring, dormant account activity, PEP screening, and sanctions lists in accordance with regional directives and international AML recommendations."
         },
         "compliance": {
           "title": "Regulatory compliance posture",
-          "desc": "Capital adequacy ratio metrics, liquidity ratio alerts, large exposure tracking, FOGADAC premium submissions, and COBAC prudential return logs visible in real time to authorized compliance officers."
+          "desc": "Capital adequacy ratio metrics, liquidity ratio alerts, large exposure tracking, deposit insurance submissions, and prudential return logs visible in real time to authorized compliance officers."
         }
       }
     },
     "process": {
       "badge": "Implementation",
       "title": "From demo to live in a structured process",
-      "subtitle": "We guide you through every stage to ensure a smooth transition with zero interruption to your daily banking operations in Cameroon.",
-      "imageCaption": "On-site training and implementation support in Douala, Yaoundé, and other CEMAC financial centers",
+      "subtitle": "We guide you through every stage to ensure a smooth transition with zero interruption to your daily banking operations.",
+      "imageCaption": "On-site training and implementation support across Africa's major financial centers",
       "steps": {
         "demo": {
           "num": "01",
           "title": "Book a demo",
-          "desc": "A 45-minute walkthrough of the platform tailored to your institution type (microfinance, Islamic bank, or credit union). No slide deck, we navigate the live system together in Douala or Yaoundé."
+          "desc": "A 45-minute walkthrough of the platform tailored to your institution type (microfinance, Islamic bank, or credit union). No slide deck, we navigate the live system together."
         },
         "migration": {
           "num": "02",
           "title": "Data mapping and migration",
-          "desc": "Our team reviews your current core system (Symphonie, Delta, or legacy), maps your chart of accounts to the AAOIFI structure, and produces a detailed migration timeline aligned with COBAC requirements."
+          "desc": "Our team reviews your current core system (Symphonie, Delta, or legacy), maps your chart of accounts to the AAOIFI structure, and produces a detailed migration timeline aligned with your regulatory requirements."
         },
         "parallel": {
           "num": "03",
           "title": "Parallel run",
-          "desc": "You run both your legacy core and TIKARI simultaneously. We verify that every balance, customer record (CNI validation), and financing contract matches exactly before cutover to avoid COBAC reporting discrepancies."
+          "desc": "You run both your legacy core and TIKARI simultaneously. We verify that every balance, customer record (ID validation), and financing contract matches exactly before cutover to avoid regulatory reporting discrepancies."
         },
         "training": {
           "num": "04",
           "title": "Training and go-live",
-          "desc": "Role-based training for your team: tellers, operations officers, credit analysts, Shariah compliance officers, COBAC reporting team, and IT admins. We stay on-call for the first 30 days post-launch."
+          "desc": "Role-based training for your team: tellers, operations officers, credit analysts, Shariah compliance officers, regulatory reporting team, and IT admins. We stay on-call for the first 30 days post-launch."
         }
       }
     },
     "testimonials": {
       "badge": "Client Success Stories",
-      "title": "Trusted Across Cameroon's\nIslamic Finance Sector",
+      "title": "Trusted Across Africa's\nIslamic Finance Sector",
       "subtitle": "See how Shariah-compliant institutions achieve operational excellence with TIKARI.",
       "prev": "Previous testimonial",
       "next": "Next testimonial",
@@ -632,7 +632,7 @@
       },
       "cta": {
         "title": "See Banking Operations in Action",
-        "subtitle": "Schedule a personalized demo to see how TIKARI handles customer onboarding, Njangi operations, and interbank transfers for Cameroon's Islamic banking sector.",
+        "subtitle": "Schedule a personalized demo to see how TIKARI handles customer onboarding, Njangi operations, and interbank transfers for Africa's Islamic banking sector.",
         "scheduleDemo": "Schedule a Demo",
         "exploreModules": "Explore Other Modules"
       }
@@ -1214,7 +1214,7 @@
       },
       "cta": {
         "title": "See Financial Reporting in Action",
-        "subtitle": "Schedule a personalized demo to see how TIKARI handles COBAC chart of accounts, AAOIFI financial statements, profit distribution, and regulatory reporting for Cameroon's Islamic banking sector.",
+        "subtitle": "Schedule a personalized demo to see how TIKARI handles COBAC chart of accounts, AAOIFI financial statements, profit distribution, and regulatory reporting for Africa's Islamic banking sector.",
         "scheduleDemo": "Schedule a Demo",
         "exploreModules": "Explore Other Modules"
       }
@@ -1712,7 +1712,7 @@
     "communityBanks": {
       "hero": {
         "title": "Solutions for Community Banks",
-        "subtitle": "Community-scale operations, enterprise-grade compliance. Whether you are a community development bank, a COBAC-regulated cooperative, or a conventional institution running an Islamic window, TIKARI gives you the compliance posture and product depth to serve non-interest customers properly.",
+        "subtitle": "Community-scale operations, enterprise-grade compliance. Whether you are a community development bank, a regulated cooperative, or a conventional institution running an Islamic window, TIKARI gives you the compliance posture and product depth to serve non-interest customers properly.",
         "cta": {
           "demo": "Book a Demo",
           "platform": "See the Platform"
@@ -1727,7 +1727,7 @@
           "title": "Community Development Banks",
           "description": "Serving a defined local population with savings, Murabaha home improvement financing, and group lending structures. TIKARI provides the teller operations, Njangi group banking, and the Shariah governance tools you need at community scale.",
           "features": [
-            "Full COBAC-compliant core banking",
+            "Full regulatory-compliant core banking",
             "Njangi and group savings cycles",
             "Murabaha home improvement financing",
             "Agent banking for field collections"
@@ -1755,8 +1755,8 @@
         }
       },
       "keyFeatures": {
-        "title": "Built for Cameroonian Community Banking",
-        "subtitle": "From Njangi group ledgers to COBAC reporting, TIKARI handles the unique requirements of community-scale Islamic banking in Cameroon.",
+        "title": "Built for African Community Banking",
+        "subtitle": "From Njangi group ledgers to regulatory reporting, TIKARI handles the unique requirements of community-scale Islamic banking across Africa.",
         "features": {
           "njangi": {
             "title": "Njangi Group Banking",
@@ -1775,7 +1775,7 @@
             "description": "Built-in Fatwa repository, product approval workflows, and Shariah Supervisory Board dashboard."
           },
           "cobac": {
-            "title": "COBAC Reporting",
+            "title": "Regulatory Reporting",
             "description": "Automated generation of all community banking prudential returns directly from live GL data."
           },
           "islamicWindow": {
@@ -1786,12 +1786,12 @@
       },
       "compliance": {
         "title": "Uncompromising Community-Scale Compliance",
-        "description1": "TIKARI gives community banks and cooperatives the same compliance tools used by national-tier institutions. Your COBAC examiner sees the same quality of audit trail regardless of your institution's size.",
+        "description1": "TIKARI gives community banks and cooperatives the same compliance tools used by national-tier institutions. Your banking regulator sees the same quality of audit trail regardless of your institution's size.",
         "description2": "For Islamic windows, TIKARI maintains strict segregation between conventional and Islamic operations. Every product has its own profit pool, Shariah approval record, and reporting structure.",
         "items": [
           "Complete audit trail for all transactions",
           "Shariah Supervisory Board governance tools",
-          "Automated COBAC prudential returns",
+          "Automated prudential returns",
           "Ring-fenced Islamic window accounting",
           "Member dividend calculation and distribution",
           "Field agent commission general ledger"
@@ -1799,7 +1799,7 @@
       },
       "cta": {
         "title": "Ready to Launch Community-Scale Islamic Banking?",
-        "description": "Schedule a personalized demo to see how TIKARI manages Njangi groups, Qard Hasan loans, and Islamic window operations for Cameroon's community banking sector.",
+        "description": "Schedule a personalized demo to see how TIKARI manages Njangi groups, Qard Hasan loans, and Islamic window operations for Africa's community banking sector.",
         "buttons": {
           "demo": "Schedule a Demo",
           "platform": "Explore the Platform"
@@ -1838,7 +1838,7 @@
         }
       },
       "keyFeatures": {
-        "title": "Built for Cameroon's Cooperative Sector",
+        "title": "Built for Africa's Cooperative Sector",
         "subtitle": "From traditional Njangi cycles to modern Islamic finance structures, TIKARI handles the full spectrum of non-interest cooperative banking.",
         "features": {
           "rotation": {
@@ -1868,9 +1868,9 @@
         }
       },
       "compliance": {
-        "title": "COBAC Compliance for Cooperative Structures",
-        "description1": "TIKARI generates all required COBAC returns for cooperative financial institutions, including specialized reporting for Njangi group operations and profit-sharing investment pools.",
-        "description2": "For Islamic windows, the platform maintains complete audit trails showing the segregation between conventional and Islamic operations, satisfying both COBAC examiners and Shariah Supervisory Boards.",
+        "title": "Regulatory Compliance for Cooperative Structures",
+        "description1": "TIKARI generates all required regulatory returns for cooperative financial institutions, including specialized reporting for Njangi group operations and profit-sharing investment pools.",
+        "description2": "For Islamic windows, the platform maintains complete audit trails showing the segregation between conventional and Islamic operations, satisfying both banking regulators and Shariah Supervisory Boards.",
         "items": [
           "Member contribution and withdrawal records",
           "Njangi rotation schedule and turn history",
@@ -1882,7 +1882,7 @@
       },
       "cta": {
         "title": "Ready to Digitalize Your Cooperative Operations?",
-        "description": "Schedule a personalized demo to see how TIKARI manages Njangi groups, Mudarabah pools, Qard Hasan loans, and Islamic window operations for Cameroon's cooperative sector.",
+        "description": "Schedule a personalized demo to see how TIKARI manages Njangi groups, Mudarabah pools, Qard Hasan loans, and Islamic window operations for Africa's cooperative sector.",
         "buttons": {
           "demo": "Schedule a Demo",
           "platform": "Explore the Platform"
@@ -1892,7 +1892,7 @@
     "microfinance": {
       "hero": {
         "title": "Solutions for Microfinance Banks",
-        "subtitle": "Built for non-interest MFBs under COBAC license. Whether you hold a Unit, Regional, or National MFB license, TIKARI gives you a core that satisfies the COBAC examiner, your Shariah Supervisory Board, and your operations team from day one.",
+        "subtitle": "Built for non-interest microfinance banks. Whether you hold a Unit, Regional, or National MFB license, TIKARI gives you a core that satisfies your banking regulator, your Shariah Supervisory Board, and your operations team from day one.",
         "cta": {
           "demo": "Book a Demo",
           "platform": "See the Platform"
@@ -1910,7 +1910,7 @@
             "Single-branch teller operations",
             "Njangi group banking",
             "Murabaha and Mudarabah products",
-            "COBAC Unit MFB returns",
+            "Regulatory returns",
             "Under-10-minute EOD close"
           ]
         },
@@ -1922,27 +1922,27 @@
             "Multi-branch operations",
             "Inter-branch GL consolidation",
             "Agent banking with geo-tracking",
-            "Regional MFB COBAC returns",
+            "Regional regulatory returns",
             "Expanded product range"
           ]
         },
         "national": {
           "title": "National MFB",
           "capital": "5B FCFA+ min. capital",
-          "description": "Nation-wide operations with higher capital, broader product range, and more complex COBAC reporting. TIKARI scales to national tier without requiring additional modules or licences.",
+          "description": "Nation-wide operations with higher capital, broader product range, and more complex regulatory reporting. TIKARI scales to national tier without requiring additional modules or licences.",
           "features": [
             "Nationwide branch network",
             "Full Islamic product suite",
-            "All COBAC returns",
+            "All regulatory returns",
             "Sukuk and Takaful structures",
             "Group/holding company reporting"
           ]
         }
       },
       "cobacCompliance": {
-        "title": "Your next COBAC examination should be uneventful",
-        "description1": "TIKARI generates all 12 COBAC prudential returns directly from live GL data. Your compliance team is not manually exporting spreadsheets and reformatting at month-end.",
-        "description2": "The platform also maintains a complete, immutable audit trail and Fatwa repository. When an examiner asks to see the Shariah approval for your Musharakah product it is searchable and printable in under a minute.",
+        "title": "Your next regulatory examination should be uneventful",
+        "description1": "TIKARI generates all required prudential returns directly from live GL data. Your compliance team is not manually exporting spreadsheets and reformatting at month-end.",
+        "description2": "The platform also maintains a complete, immutable audit trail and Fatwa repository. When your regulator asks to see the Shariah approval for your Musharakah product it is searchable and printable in under a minute.",
         "cta": "See the compliance features"
       },
       "cobacReturns": {
@@ -1999,11 +1999,11 @@
       },
       "keyFeatures": {
         "title": "Everything you need for Islamic microfinance",
-        "subtitle": "From ID verification to Njangi group ledgers, TIKARI handles the unique requirements of Cameroon's Islamic banking sector.",
+        "subtitle": "From ID verification to Njangi group ledgers, TIKARI handles the unique requirements of Islamic banking across Africa.",
         "features": {
           "njangi": {
             "title": "Njangi Group Banking",
-            "description": "Digital rotating ledgers with automated profit distribution and COBAC group exposure tracking."
+            "description": "Digital rotating ledgers with automated profit distribution and regulatory group exposure tracking."
           },
           "fcfa": {
             "title": "Native FCFA Accounting",
@@ -2015,7 +2015,7 @@
           },
           "systac": {
             "title": "SYSTAC/SYGMA Integration",
-            "description": "Real-time interbank transfers via Cameroon's SYSTAC infrastructure with automated GL posting."
+            "description": "Real-time interbank transfers via interbank payment infrastructure with automated GL posting."
           },
           "mobileMoney": {
             "title": "MTN & Orange Money",
@@ -2031,7 +2031,7 @@
         "title": "Scale from one branch to nationwide",
         "description": "TIKARI supports branch hierarchies from headquarters to regional hubs down to individual branches. Inter-branch GL entries are automated, and you can define lending limits, cash holding thresholds, and approval workflows per branch.",
         "features": [
-          "Branch registration with COBAC codes",
+          "Branch registration with regulatory codes",
           "Inter-branch vault transfers",
           "Centralized treasury cash allocation",
           "Branch performance dashboards",
@@ -2041,7 +2041,7 @@
       },
       "cta": {
         "title": "Ready to launch your Islamic microfinance bank?",
-        "subtitle": "Schedule a personalized demo to see how TIKARI handles COBAC compliance, Shariah governance, and multi-branch operations for Cameroon's Islamic banking sector.",
+        "subtitle": "Schedule a personalized demo to see how TIKARI handles regulatory compliance, Shariah governance, and multi-branch operations for Africa's Islamic banking sector.",
         "scheduleDemo": "Schedule a Demo",
         "explorePlatform": "Explore the Platform"
       }
@@ -2049,7 +2049,7 @@
     "smes": {
       "hero": {
         "title": "Solutions for Businesses & SMEs",
-        "subtitle": "Shariah-compliant financing for Cameroon's entrepreneurs. Whether you need inventory financing, equipment leasing, or growth capital, TIKARI connects you with Islamic financial institutions offering zero-interest commercial solutions. All transactions in FCFA with transparent markup structures and no hidden fees."
+        "subtitle": "Shariah-compliant financing for Africa's entrepreneurs. Whether you need inventory financing, equipment leasing, or growth capital, TIKARI connects you with Islamic financial institutions offering zero-interest commercial solutions. All transactions in FCFA with transparent markup structures and no hidden fees."
       },
       "financingProducts": {
         "title": "Islamic Financing Products",
@@ -2068,7 +2068,7 @@
         },
         "musharakah": {
           "title": "Musharakah Partnership Finance",
-          "description": "A joint-venture financing where TIKARI co-invest invest in your business expansion. Profits and losses are shared according to pre-agreed ratios. Ideal for growth capital and project finance in Cameroon's SME sector.",
+          "description": "A joint-venture financing where TIKARI co-invest invest in your business expansion. Profits and losses are shared according to pre-agreed ratios. Ideal for growth capital and project finance across African SME sectors.",
           "features": [
             "Joint ownership & profit sharing",
             "Diminishing Musharakah for asset acquisition",
@@ -2092,7 +2092,7 @@
         },
         "salam": {
           "title": "Salam Agricultural Finance",
-          "description": "Forward-payment financing for agricultural producers. Receive upfront payment for crops to be delivered at harvest. Supports Cameroon's farming operations with Shariah-compliant cash flow before the production cycle completes.",
+          "description": "Forward-payment financing for agricultural producers. Receive upfront payment for crops to be delivered at harvest. Supports African farming operations with Shariah-compliant cash flow before the production cycle completes.",
           "features": [
             "Pre-harvest working capital",
             "Crop-specific pricing agreements",
@@ -2105,7 +2105,7 @@
       },
       "whyChoose": {
         "title": "Why Choose Islamic Finance for Your Business",
-        "subtitle": "Beyond religious compliance, Islamic finance offers practical business advantages for SMEs in Cameroon.",
+        "subtitle": "Beyond religious compliance, Islamic finance offers practical business advantages for SMEs across Africa.",
         "noHiddenFees": {
           "title": "No Hidden Fees",
           "description": "Transparent pricing with all costs disclosed upfront. No compound interest, no penalty interest, no balloon payments."
@@ -2159,7 +2159,7 @@
       },
       "cta": {
         "title": "Ready to Finance Your Business Growth?",
-        "subtitle": "Connect with Islamic financial institutions offering Murabaha, Musharakah, Ijara, and Salam financing for Cameroon's SME sector. All transactions in FCFA with transparent Shariah-compliant structures.",
+        "subtitle": "Connect with Islamic financial institutions offering Murabaha, Musharakah, Ijara, and Salam financing for Africa's SME sector. All transactions in FCFA with transparent Shariah-compliant structures.",
         "applyForFinancing": "Apply for Financing",
         "explorePlatform": "Explore the Platform"
       }

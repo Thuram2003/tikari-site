@@ -158,7 +158,7 @@ export default function UnderstandingMurabahaPage() {
                   Murabaha transforms what would be a conventional loan into a <strong>Shariah-compliant sale transaction</strong>. Here's the fundamental structure:
                 </p>
 
-                <div className="not-prose my-12 p-7 bg-tikari-cream/40 border-l-4 border-tikari-green">
+                <div className="not-prose my-12 p-7 bg-tikari-cream/40 border-l-4 border-tikari-green rounded-r-2xl">
                   <h4 className="text-lg font-bold text-tikari-green-dark mb-5">The Murabaha Framework</h4>
                   <ol className="space-y-4 text-tikari-sage">
                     <li className="flex gap-3">
@@ -234,7 +234,7 @@ export default function UnderstandingMurabahaPage() {
                     ].map((item, idx) => (
                       <div
                         key={idx}
-                        className="flex gap-5 p-6 bg-white border border-tikari-green/15 rounded-md"
+                        className="flex gap-5 p-6 bg-white border border-tikari-green/15 rounded-2xl"
                       >
                         <div className="flex-shrink-0">
                           <div className="w-10 h-10 rounded-full bg-tikari-gold flex items-center justify-center text-tikari-green-dark font-bold text-sm">
@@ -284,7 +284,7 @@ export default function UnderstandingMurabahaPage() {
                   <li><strong>Administrative costs:</strong> Operational expenses of executing the transaction</li>
                 </ul>
 
-                <div className="not-prose my-8 p-6 bg-tikari-gold/10 border border-tikari-gold/30 rounded-md">
+                <div className="not-prose my-8 p-6 bg-tikari-gold/10 border border-tikari-gold/30 rounded-2xl">
                   <h4 className="text-lg font-bold text-tikari-green-dark mb-2 flex items-center gap-2">
                     <Calculator className="h-6 w-6" weight="bold" />
                     Murabaha Pricing Example
@@ -346,7 +346,7 @@ export default function UnderstandingMurabahaPage() {
                   <li><strong>Internal risk assessment:</strong> Credit evaluation and approval documentation</li>
                 </ul>
 
-                <div className="not-prose my-12 p-7 bg-tikari-cream/40 border-l-4 border-tikari-gold rounded-md">
+                <div className="not-prose my-12 p-7 bg-tikari-cream/40 border-l-4 border-tikari-gold rounded-r-2xl">
                   <div className="flex items-start gap-5">
                     <FileText className="h-7 w-7 text-tikari-green-dark flex-shrink-0 mt-0.5" weight="bold" />
                     <div>
@@ -367,7 +367,7 @@ export default function UnderstandingMurabahaPage() {
                 </p>
 
                 <div className="not-prose my-12">
-                  <div className="overflow-x-auto border border-tikari-green/15">
+                  <div className="overflow-x-auto border border-tikari-green/15 rounded-2xl">
                     <table className="w-full">
                       <thead className="bg-tikari-green-dark text-white">
                         <tr>
@@ -565,7 +565,7 @@ export default function UnderstandingMurabahaPage() {
                   <li>Maintain thorough documentation for all transactions</li>
                 </ul>
 
-                <div className="not-prose my-16 p-8 bg-tikari-gold/10 border-l-4 border-tikari-gold rounded-r-lg">
+                <div className="not-prose my-16 p-8 bg-tikari-gold/10 border-l-4 border-tikari-gold rounded-r-2xl">
                   <div className="flex items-start gap-5">
                     <Handshake className="h-8 w-8 text-tikari-green-dark flex-shrink-0 mt-1" weight="bold" />
                     <div>
@@ -576,10 +576,9 @@ export default function UnderstandingMurabahaPage() {
                         TIKARI's platform includes pre-built Murabaha workflows, automated documentation, Shariah compliance checks, and COBAC-compliant reporting all tailored for CEMAC institutions.
                       </p>
                       <Button
-                        variant="secondary"
+                        variant="primary"
                         size="lg"
                         href="/demo"
-                        className="bg-tikari-green-dark text-white hover:bg-tikari-green rounded-md"
                       >
                         Book a Demo
                         <ArrowRight className="ml-2 h-4 w-4" weight="bold" />
@@ -602,7 +601,7 @@ export default function UnderstandingMurabahaPage() {
               <Link
                 key={idx}
                 href={article.href}
-                className="block bg-white border-2 border-tikari-green/20 hover:border-tikari-gold hover:shadow-xl transition-all duration-300 group p-6"
+                className="block bg-white border-1 border-tikari-green/20 hover:border-tikari-gold hover:shadow-xl transition-all duration-300 group p-6 rounded-2xl"
               >
                 <div className="mb-3">
                   <span className="text-xs text-tikari-sage">{article.duration}</span>
