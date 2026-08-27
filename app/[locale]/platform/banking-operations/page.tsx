@@ -39,8 +39,8 @@ export default function BankingOperationsPage() {
           icon: IdentificationCard
         },
         {
-          title: t("sections.kyc.features.cniVerification.title"),
-          description: t("sections.kyc.features.cniVerification.description"),
+          title: t("sections.kyc.features.nationalIdVerification.title"),
+          description: t("sections.kyc.features.nationalIdVerification.description"),
           icon: ShieldCheck
         },
         {
@@ -194,13 +194,13 @@ export default function BankingOperationsPage() {
       image: "/meeting.jpg",
       features: [
         {
-          title: t("sections.interbank.features.systac.title"),
-          description: t("sections.interbank.features.systac.description"),
+          title: t("sections.interbank.features.realtimeTransfers.title"),
+          description: t("sections.interbank.features.realtimeTransfers.description"),
           icon: ArrowsLeftRight
         },
         {
-          title: t("sections.interbank.features.sygma.title"),
-          description: t("sections.interbank.features.sygma.description"),
+          title: t("sections.interbank.features.bulkPayments.title"),
+          description: t("sections.interbank.features.bulkPayments.description"),
           icon: Coins
         },
         {

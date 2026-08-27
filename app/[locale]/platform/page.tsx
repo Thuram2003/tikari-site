@@ -133,8 +133,8 @@ export default function PlatformPage() {
       icon: Notebook
     },
     {
-      name: t("integrations.items.beac.name"),
-      description: t("integrations.items.beac.description"),
+      name: t("integrations.items.regulator.name"),
+      description: t("integrations.items.regulator.description"),
       icon: Clock
     }
   ];

@@ -38,8 +38,8 @@ export default function GLReportingPage() {
       image: "/personOffice.jpg",
       features: [
         {
-          title: t("sections.chartOfAccounts.features.cobacCoa.title"),
-          description: t("sections.chartOfAccounts.features.cobacCoa.description"),
+          title: t("sections.chartOfAccounts.features.regulatoryReturns.title"),
+          description: t("sections.chartOfAccounts.features.regulatoryReturns.description"),
           icon: ListNumbers
         },
         {
@@ -238,8 +238,8 @@ export default function GLReportingPage() {
       image: "/muslim-woman.jpg",
       features: [
         {
-          title: t("sections.regulatoryReporting.features.cobacReturns.title"),
-          description: t("sections.regulatoryReporting.features.cobacReturns.description"),
+          title: t("sections.regulatoryReporting.features.regulatoryReturns.title"),
+          description: t("sections.regulatoryReporting.features.regulatoryReturns.description"),
           icon: FileText
         },
         {

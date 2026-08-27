@@ -6,17 +6,17 @@
   "home": {
     "hero": {
       "title": "Banque sans intérêt. Conformité sans doute.",
-      "subtitle": "La seule plateforme de base conçue pour la microfinance sans intérêt dans la zone CEMAC. Des décaissements Murabaha à la réconciliation GL prête pour la COBAC, vos auditeurs au MINFI et votre conseil Shariah obtiennent la même réponse.",
+      "subtitle": "La seule plateforme de base conçue pour la microfinance sans intérêt. Des décaissements Murabaha à la réconciliation GL prête pour les régulateurs, vos auditeurs et votre conseil Shariah obtiennent la même réponse.",
       "bookDemo": "Réserver une démo",
       "badges": {
-        "beac": "Licencié BEAC",
-        "cobac": "Conforme COBAC",
+        "centralBank": "Licencié Banque Centrale",
+        "regulator": "Conforme Régulateur Bancaire",
         "aaoifi": "Normes AAOIFI & OHADA"
       }
     },
     "trustBar": {
       "title": "Conçu pour soutenir",
-      "subtitle": "Aligné avec le cadre bancaire sans intérêt du Cameroun et de la CEMAC",
+      "subtitle": "Aligné avec les cadres bancaires sans intérêt des juridictions supportées",
       "items": {
         "cobac": {
           "title": "Directives COBAC EMF",
@@ -54,8 +54,8 @@
           "desc": "Les plateformes héritées étiquettent le profit Murabaha comme \"revenu d'intérêts\" dans les rapports et grands livres. Votre conseil Shariah le voit. Vos auditeurs le signalent."
         },
         "cobac": {
-          "title": "Les rapports COBAC sont un chaos manuel",
-          "desc": "Les déclarations COBAC et BEAC compilées à la main à partir de dizaines d'exports et feuilles de calcul séparés. Chaque trimestre ressemble à une crise d'audit."
+          "title": "Les rapports réglementaires sont un chaos manuel",
+          "desc": "Les déclarations réglementaires compilées à la main à partir de dizaines d'exports et feuilles de calcul séparés. Chaque trimestre ressemble à une crise d'audit."
         },
         "governance": {
           "title": "La gouvernance Shariah vit hors du système",
@@ -69,9 +69,9 @@
       "tikariDifference": {
         "title": "TIKARI est différent",
         "desc1": "Le grand livre est construit sur les normes comptables financières AAOIFI dès le départ. Chaque type de produit (Wadiah, Mudarabah, Musharakah, Ijara) a sa propre logique GL, ses mécanismes de partage des bénéfices et son flux de validation Shariah.",
-        "desc2": "Votre Conseil Consultatif Shariah et votre équipe de conformité sont des utilisateurs de première classe dans le système, pas une réflexion après coup. Les rapports BEAC sont automatiques. La fin de journée se clôture en moins de 10 minutes."
+        "desc2": "Votre Conseil Consultatif Shariah et votre équipe de conformité sont des utilisateurs de première classe dans le système, pas une réflexion après coup. Les rapports réglementaires sont automatiques. La fin de journée se clôture en moins de 10 minutes."
       },
-      "imageCaption": "Les opérations bancaires islamiques au Cameroun nécessitent des systèmes conçus pour la conformité réglementaire CEMAC et les principes Shariah dès le premier jour."
+      "imageCaption": "Les opérations bancaires islamiques nécessitent des systèmes conçus pour la conformité réglementaire et les principes Shariah dès le premier jour."
     },
     "platformOverview": {
       "badge": "La Plateforme",
@@ -217,8 +217,8 @@
           "desc": "Maker-checker n'est pas un indicateur de permission ajouté. C'est le modèle opérationnel. Chaque ouverture de compte, décaissement de financement, transfert de fonds et écriture de journal GL passe par une chaîne d'approbation structurée avec piste d'audit complète."
         },
         "cameroon": {
-          "title": "Conçu pour le Cameroun et la CEMAC",
-          "desc": "Vérification CNI et Passeport. Numéros de compte standard BEAC NUBAN. Transferts bancaires SYSTAC et SYGMA. Groupes Njangi et Tontine. Banque d'agents. Localisation française et anglaise. FCFA comme monnaie native."
+          "title": "Conçu pour la finance islamique globale",
+          "desc": "Vérification d'identité nationale et passeport. Numéros de compte standard. Transferts bancaires via passerelles régionales. Groupes Njangi et Tontine. Banque d'agents. Localisation multilingue. Support multi-devises."
         },
         "migration": {
           "title": "Chemin de migration depuis les systèmes hérités",
@@ -236,9 +236,9 @@
           "value": "70+",
           "desc": "De KYC au calcul de la Zakat"
         },
-        "cobacReturns": {
-          "title": "Déclarations COBAC",
-          "value": "12",
+        "regulatoryReturns": {
+          "title": "Déclarations Réglementaires",
+          "value": "12+",
           "desc": "Générées directement depuis le GL"
         },
         "financingTypes": {
@@ -436,8 +436,8 @@
             "name": "GABAC",
             "description": "Dépôt STR / CTR (AML/CFT)"
           },
-          "beac": {
-            "name": "BEAC",
+          "regulator": {
+            "name": "Régulateur Bancaire",
             "description": "Conformité banque centrale"
           }
         }
@@ -457,13 +457,13 @@
               "title": "KYC à Trois Niveaux",
               "description": "Niveau 1 : identification de base ; Niveau 2 : vérification via une pièce d'identité nationale ; Niveau 3 : passeport complet + justificatif de domicile"
             },
-            "cniVerification": {
-              "title": "Vérification CNI",
-              "description": "Vérification en temps réel contre la base de données nationale d'identité pour les citoyens camerounais"
+            "nationalIdVerification": {
+              "title": "Vérification d'Identité Nationale",
+              "description": "Vérification en temps réel contre les bases de données nationales d'identité pour les pays pris en charge"
             },
             "passportVerification": {
               "title": "Vérification de Passeport",
-              "description": "Vérification en temps réel auprès des bases de données nationales d'identité pour les pays pris en charge"
+              "description": "Vérification internationale de passeport pour ressortissants étrangers et clients de la diaspora"
             },
             "biometricCapture": {
               "title": "Capture Biométrique",
@@ -475,7 +475,7 @@
             },
             "deduplication": {
               "title": "Déduplication Client",
-              "description": "Détection automatique de doublons à l'intégration utilisant CNI, téléphone et données biométriques"
+              "description": "Détection automatique de doublons à l'intégration utilisant pièce d'identité nationale, téléphone et données biométriques"
             }
           }
         },
@@ -557,7 +557,7 @@
             },
             "otc": {
               "title": "Initiation de Transfert OTC",
-              "description": "Initiation de transfert SYSTAC/SYGMA au guichet avec confirmation en temps réel"
+              "description": "Transferts via passerelles de paiement régionales au guichet avec confirmation en temps réel"
             },
             "tillLimit": {
               "title": "Application de Limite de Caisse",
@@ -570,16 +570,16 @@
           }
         },
         "interbank": {
-          "title": "SYSTAC/SYGMA & Interbancaire",
+          "title": "Règlement Interbancaire & Paiements",
           "subtitle": "Transferts interbancaires en temps réel via des canaux approuvés par la banque centrale",
           "features": {
-            "systac": {
-              "title": "Transferts en Temps Réel SYSTAC",
-              "description": "Intégration directe avec SYSTAC pour transferts interbancaires instantanés en FCFA"
+            "realtimeTransfers": {
+              "title": "Transferts en Temps Réel",
+              "description": "Intégration directe avec les passerelles de paiement nationales pour transferts interbancaires instantanés"
             },
-            "sygma": {
-              "title": "Paiements en Masse SYGMA",
-              "description": "Traitement par lots de paiements via SYGMA pour salaires et paiements fournisseurs"
+            "bulkPayments": {
+              "title": "Traitement de Paiements en Masse",
+              "description": "Traitement par lots de paiements pour salaires et fournisseurs via systèmes de compensation régionaux"
             },
             "inward": {
               "title": "Comptabilisation Crédit Entrant",
@@ -590,8 +590,8 @@
               "description": "Traitement automatisé des retours avec notification client et flux d'annulation"
             },
             "beac": {
-              "title": "Canaux interbancaires de la banque centrale",
-              "description": "Prise en charge de tous les canaux de règlement interbancaire approuvés par les banques centrales"
+              "title": "Canaux de Règlement des Banques Centrales",
+              "description": "Prise en charge de tous les canaux de règlement interbancaire approuvés par les banques centrales dans les juridictions supportées"
             },
             "limits": {
               "title": "Contrôles de Limite de Transaction",
@@ -605,7 +605,7 @@
           "features": {
             "onboarding": {
               "title": "Intégration Agent & KYC",
-              "description": "Vérification complète d'agent avec CNI, licence commerciale et vérifications de localisation"
+              "description": "Vérification complète d'agent avec pièce d'identité nationale, licence commerciale et vérifications de localisation"
             },
             "portal": {
               "title": "Portail Web Agent",
@@ -625,14 +625,14 @@
             },
             "commission": {
               "title": "Grand Livre de Commissions",
-              "description": "Calcul et comptabilisation automatisés de commissions sur comptes agents en FCFA"
+              "description": "Calcul et comptabilisation automatisés de commissions sur comptes agents avec support multi-devises"
             }
           }
         }
       },
       "cta": {
         "title": "Voir les Opérations Bancaires en Action",
-        "subtitle": "Planifiez une démo personnalisée pour voir comment TIKARI gère l'intégration client, les opérations Njangi et les transferts interbancaires pour le secteur bancaire islamique du Cameroun.",
+        "subtitle": "Planifiez une démo personnalisée pour voir comment TIKARI gère l'intégration client, les opérations bancaires de groupe et les transferts interbancaires pour les institutions financières islamiques.",
         "scheduleDemo": "Planifier une Démo",
         "exploreModules": "Explorer d'Autres Modules"
       }
@@ -653,7 +653,7 @@
             },
             "transparentMarkup": {
               "title": "Calcul de Majoration Transparente",
-              "description": "Divulgation claire du prix de revient, pourcentage de majoration et prix de vente total en FCFA"
+              "description": "Divulgation claire du prix de revient, pourcentage de majoration et prix de vente total avec support multi-devises"
             },
             "deferredPayment": {
               "title": "Structure de Paiement Différé",
@@ -809,9 +809,9 @@
               "title": "Placements Wakala Interbancaires",
               "description": "Placer les fonds excédentaires auprès de banques islamiques en tant qu'agent avec ratio de partage des bénéfices convenu"
             },
-            "cobacReserve": {
-              "title": "Conformité aux Réserves COBAC",
-              "description": "Calcul automatisé des réserves et placement auprès de BEAC selon ratios de liquidité COBAC"
+            "centralBankReserve": {
+              "title": "Conformité aux Réserves des Banques Centrales",
+              "description": "Calcul automatisé des réserves et placement auprès de la banque centrale selon ratios de liquidité réglementaires"
             },
             "profitRateRisk": {
               "title": "Couverture du Risque de Taux de Profit",
@@ -897,13 +897,13 @@
             }
           }
         },
-        "cobacCompliance": {
-          "title": "Conformité Réglementaire COBAC",
-          "subtitle": "Adhésion complète aux normes prudentielles CEMAC et exigences de reporting COBAC",
+        "regulatoryCompliance": {
+          "title": "Conformité Réglementaire Bancaire",
+          "subtitle": "Adhésion complète aux normes prudentielles et exigences de reporting réglementaire dans les juridictions supportées",
           "features": {
             "capitalAdequacy": {
               "title": "Surveillance d'Adéquation des Fonds Propres",
-              "description": "Calcul CAR en temps réel avec suivi de capital Tier 1/Tier 2 et application du ratio minimum COBAC"
+              "description": "Calcul CAR en temps réel avec suivi de capital Tier 1/Tier 2 et application du ratio minimum réglementaire"
             },
             "liquidityRatios": {
               "title": "Ratios de Liquidité (LCR & NSFR)",
@@ -911,15 +911,15 @@
             },
             "largeExposure": {
               "title": "Limites de Grandes Expositions",
-              "description": "Suivi automatique de l'exposition emprunteur unique et groupe contre limites de concentration COBAC"
+              "description": "Suivi automatique de l'exposition emprunteur unique et groupe contre limites de concentration réglementaires"
             },
             "returnFiling": {
-              "title": "Dépôt de Déclarations COBAC",
-              "description": "Génération automatisée de déclarations réglementaires mensuelles, trimestrielles et annuelles à BEAC"
+              "title": "Dépôt de Déclarations Réglementaires",
+              "description": "Génération automatisée de déclarations réglementaires mensuelles, trimestrielles et annuelles aux autorités de supervision bancaire"
             },
             "provisioning": {
               "title": "Provisionnement et Classification NPL",
-              "description": "Classification de prêts conforme COBAC (Courant, Mention Spéciale, Médiocre, Douteux, Perdu) avec calcul de provision"
+              "description": "Classification de prêts conforme réglementation (Courant, Mention Spéciale, Médiocre, Douteux, Perdu) avec calcul de provision"
             },
             "riskReports": {
               "title": "Rapports de Gouvernance et Risque",
@@ -1028,16 +1028,16 @@
     "glReporting": {
       "hero": {
         "title": "Grand Livre et Reporting Financier",
-        "subtitle": "Suite complète de grand livre et reporting financier avec plan comptable conforme COBAC, normes AAOIFI de banque islamique, distribution automatisée des bénéfices et reporting réglementaire CEMAC complet en FCFA."
+        "subtitle": "Suite complète de grand livre et reporting financier avec plan comptable conforme aux régulateurs bancaires, normes AAOIFI de banque islamique, distribution automatisée des bénéfices et reporting réglementaire complet avec support multi-devises."
       },
       "sections": {
         "chartOfAccounts": {
           "title": "Plan Comptable & Structure GL",
           "subtitle": "Structure de comptes conforme COBAC avec extensions bancaires islamiques",
           "features": {
-            "cobacCoa": {
-              "title": "Plan Comptable Standard COBAC",
-              "description": "Plan préconfiguré aligné sur le cadre prudentiel COBAC pour les États membres de la CEMAC"
+            "regulatoryReturns": {
+              "title": "Plan Comptable Standard Réglementaire",
+              "description": "Plan préconfiguré aligné sur les normes réglementaires bancaires dans les juridictions supportées"
             },
             "islamicExtensions": {
               "title": "Extensions de Comptes Islamiques",
@@ -1177,7 +1177,7 @@
             },
             "reports": {
               "title": "Rapports de Distribution",
-              "description": "Relevés mensuels des investisseurs montrant solde quotidien, taux de profit et bénéfice crédité en FCFA"
+              "description": "Relevés mensuels des investisseurs montrant solde quotidien, taux de profit et bénéfice crédité avec support multi-devises"
             }
           }
         },
@@ -1185,9 +1185,9 @@
           "title": "Reporting Réglementaire & Analyse",
           "subtitle": "Déclarations prudentielles COBAC et analyses de gestion",
           "features": {
-            "cobacReturns": {
-              "title": "Déclarations Prudentielles COBAC",
-              "description": "Génération automatisée de dépôts réglementaires COBAC mensuels, trimestriels et annuels"
+            "regulatoryReturns": {
+              "title": "Déclarations Prudentielles Réglementaires",
+              "description": "Génération automatisée de dépôts réglementaires mensuels, trimestriels et annuels"
             },
             "trialBalance": {
               "title": "Export Balance Générale",
@@ -1222,7 +1222,7 @@
     "agentBanking": {
       "hero": {
         "title": "Banque d'Agents et de Terrain",
-        "subtitle": "Plateforme complète de banque sans agence avec gestion de réseau d'agents, intégration MTN Mobile Money et Orange Money, opérations de terrain et conformité COBAC pour l'inclusion financière du Cameroun."
+        "subtitle": "Plateforme complète de banque sans agence avec gestion de réseau d'agents, intégration mobile money, opérations de terrain et conformité réglementaire pour l'inclusion financière."
       },
       "sections": {
         "agentNetwork": {
@@ -1231,7 +1231,7 @@
           "features": {
             "recruitment": {
               "title": "Recrutement Agent & KYC",
-              "description": "Intégration complète d'agent avec vérification CNI, contrôles de licence commerciale et validation de l'emplacement commercial"
+              "description": "Intégration complète d'agent avec vérification d'identité nationale, contrôles de licence commerciale et validation de l'emplacement commercial"
             },
             "categorization": {
               "title": "Catégorisation des Agents",
@@ -1257,27 +1257,27 @@
         },
         "mobileMoney": {
           "title": "Intégration Mobile Money",
-          "subtitle": "Interopérabilité MTN Mobile Money et Orange Money pour dépôts et retraits",
+          "subtitle": "Interopérabilité mobile money pour dépôts et retraits",
           "features": {
             "mtnApi": {
-              "title": "API MTN Mobile Money",
-              "description": "Intégration directe avec MTN MoMo pour transferts compte-vers-portefeuille et dépôts portefeuille-vers-compte"
+              "title": "API Mobile Money",
+              "description": "Intégration directe avec les fournisseurs mobile money pour transferts compte-vers-portefeuille et dépôts portefeuille-vers-compte"
             },
             "orangeApi": {
-              "title": "API Orange Money",
-              "description": "Intégration Orange Money en temps réel pour transactions cash-in et cash-out en FCFA"
+              "title": "API Opérateur Mobile Money",
+              "description": "Intégration mobile money en temps réel pour transactions cash-in et cash-out en monnaie locale"
             },
             "reconciliation": {
               "title": "Rapprochement de Transactions",
               "description": "Appariement automatisé des transactions mobile money avec flottant agent et mises à jour de compte client"
             },
             "beacCompliance": {
-              "title": "Conformité E-Money BEAC",
-              "description": "Conformité complète aux réglementations de monnaie électronique BEAC pour partenariats mobile money"
+              "title": "Conformité E-Money Réglementaire",
+              "description": "Conformité complète aux réglementations de monnaie électronique pour partenariats mobile money"
             },
             "interoperability": {
               "title": "Support d'Interopérabilité",
-              "description": "Transferts inter-réseaux entre MTN et Orange Money via switch d'interopérabilité BEAC"
+              "description": "Transferts inter-réseaux entre fournisseurs mobile money via switch d'interopérabilité national"
             },
             "walletLinking": {
               "title": "Liaison de Portefeuilles",
@@ -1347,7 +1347,7 @@
         },
         "commissionManagement": {
           "title": "Gestion de Commissions & Incentives",
-          "subtitle": "Calcul et paiement automatisés de commission d'agent en FCFA",
+          "subtitle": "Calcul et paiement automatisés de commission d'agent en monnaie locale",
           "features": {
             "tiered": {
               "title": "Structure de Commission Échelonnée",
@@ -1408,7 +1408,7 @@
       },
       "cta": {
         "title": "Voir la Banque d'Agents en Action",
-        "subtitle": "Planifiez une démo personnalisée pour voir comment TIKARI gère les réseaux d'agents, l'intégration MTN/Orange Money, les opérations de terrain et la conformité réglementaire pour les besoins bancaires sans agence d'Afrique.",
+        "subtitle": "Planifiez une démo personnalisée pour voir comment TIKARI gère les réseaux d'agents, l'intégration mobile money, les opérations de terrain et la conformité réglementaire pour les besoins bancaires sans agence d'Afrique.",
         "scheduleDemo": "Planifier une Démo",
         "exploreModules": "Explorer d'Autres Modules"
       }
@@ -1416,7 +1416,7 @@
     "administration": {
       "hero": {
         "title": "Administration et Processus de Fin de Journée",
-        "subtitle": "Administration système complète avec gestion des utilisateurs, configuration d'agences, processus de traitement par lots de fin de journée, sauvegardes automatisées et surveillance en temps réel. Conçu pour la conformité COBAC et les opérations bancaires islamiques multi-agences en FCFA."
+        "subtitle": "Administration système complète avec gestion des utilisateurs, configuration d'agences, processus de traitement par lots de fin de journée, sauvegardes automatisées et surveillance en temps réel. Conçu pour la conformité réglementaire et les opérations bancaires islamiques multi-agences."
       },
       "sections": {
         "userManagement": {
@@ -1437,7 +1437,7 @@
             },
             "passwordPolicy": {
               "title": "Application de Politique de Mot de Passe",
-              "description": "Complexité de mot de passe configurable, expiration et politiques de verrouillage selon directives de sécurité COBAC"
+              "description": "Complexité de mot de passe configurable, expiration et politiques de verrouillage selon directives de sécurité réglementaires"
             },
             "sessionManagement": {
               "title": "Gestion de Session",
@@ -1455,7 +1455,7 @@
           "features": {
             "workingDays": {
               "title": "Calendrier des Jours Ouvrables",
-              "description": "Configurer les jours ouvrables de la banque, jours fériés au Cameroun et jours de week-end pour traitement des transactions"
+              "description": "Configurer les jours ouvrables de la banque, jours fériés et jours de week-end pour traitement des transactions"
             },
             "transactionLimits": {
               "title": "Limites de Transaction",
@@ -1467,7 +1467,7 @@
             },
             "currency": {
               "title": "Devises et Taux de Change",
-              "description": "Comptabilité FCFA primaire avec support de devises étrangères et synchronisation des taux de change BEAC"
+              "description": "Comptabilité multi-devises avec support de devises étrangères et synchronisation des taux de change de la banque centrale"
             },
             "fees": {
               "title": "Modèles de Frais et Charges",
@@ -1485,7 +1485,7 @@
           "features": {
             "registration": {
               "title": "Enregistrement d'Agence",
-              "description": "Enregistrer les agences avec adresse complète, codes interbancaires BEAC et numéros d'enregistrement d'agence COBAC"
+              "description": "Enregistrer les agences avec adresse complète, codes interbancaires et numéros d'enregistrement d'agence réglementaires"
             },
             "hierarchies": {
               "title": "Hiérarchies d'Agences",
@@ -1557,7 +1557,7 @@
             },
             "retention": {
               "title": "Politique de Rétention de 10 Ans",
-              "description": "Rétention obligatoire COBAC de 10 ans de tous les dossiers clients, contrats et états financiers"
+              "description": "Rétention réglementaire obligatoire de 10 ans de tous les dossiers clients, contrats et états financiers"
             },
             "verification": {
               "title": "Vérification de Sauvegarde",
@@ -1565,7 +1565,7 @@
             },
             "auditLogArchival": {
               "title": "Archivage de Journal d'Audit",
-              "description": "Stockage sécurisé à long terme des journaux d'audit pour audits internes et inspections COBAC"
+              "description": "Stockage sécurisé à long terme des journaux d'audit pour audits internes et inspections réglementaires"
             }
           }
         },
@@ -1591,7 +1591,7 @@
             },
             "licenseExpiry": {
               "title": "Expiration de Licence et Certificat",
-              "description": "Alertes proactives pour certificats SSL expirants, licences logicielles et approbations COBAC"
+              "description": "Alertes proactives pour certificats SSL expirants, licences logicielles et approbations réglementaires"
             },
             "anomalies": {
               "title": "Anomalies d'Activité Utilisateur",
@@ -1602,7 +1602,7 @@
       },
       "cta": {
         "title": "Voir l'Administration en Action",
-        "subtitle": "Planifiez une démo personnalisée pour voir comment TIKARI gère la gestion des utilisateurs, la configuration système, les processus de traitement par lots EOD et l'administration multi-agences pour les opérations bancaires islamiques du Cameroun.",
+        "subtitle": "Planifiez une démo personnalisée pour voir comment TIKARI gère la gestion des utilisateurs, la configuration système, les processus de traitement par lots EOD et l'administration multi-agences pour les opérations bancaires islamiques.",
         "scheduleDemo": "Planifier une Démo",
         "exploreModules": "Explorer d'Autres Modules"
       }
@@ -1896,7 +1896,7 @@
     "microfinance": {
       "hero": {
         "title": "Solutions pour les Banques de Microfinance",
-        "subtitle": "Conçu pour les IMF sans intérêt sous licence COBAC. Que vous déteniez une licence IMF Unité, Régionale ou Nationale, TIKARI vous donne un noyau qui satisfait l'examinateur COBAC, votre Conseil de Surveillance Shariah et votre équipe opérationnelle dès le premier jour.",
+        "subtitle": "Conçu pour les banques de microfinance sans intérêt. Que vous déteniez une licence Unité, Régionale ou Nationale, TIKARI vous offre un système qui satisfait votre régulateur bancaire, votre Conseil de Surveillance Shariah et votre équipe opérationnelle dès le premier jour.",
         "cta": {
           "demo": "Réserver une Démo",
           "platform": "Voir la Plateforme"
@@ -1907,87 +1907,123 @@
       },
       "licenceCategories": {
         "unit": {
-          "title": "IMF Unité",
-          "capital": "200M FCFA+ capital min.",
-          "description": "Une IMF sans intérêt à une seule agence desservant un gouvernement local ou une communauté. TIKARI fournit la plateforme complète aucune restriction de fonctionnalités pour les petites institutions.",
+          "title": "Licence Unité",
+          "capital": "Exigences de capital minimum applicables",
+          "description": "Une institution de microfinance sans intérêt à une seule agence desservant un gouvernement local ou une communauté. TIKARI fournit la plateforme complète aucune restriction de fonctionnalités pour les petites institutions.",
           "features": [
             "Opérations de caisse à une seule agence",
-            "Banque de groupe Njangi",
+            "Banque de groupe et épargne rotative",
             "Produits Murabaha et Mudarabah",
-            "Déclarations COBAC IMF Unité",
+            "Déclarations réglementaires",
             "Clôture de fin de journée en moins de 10 minutes"
           ]
         },
         "state": {
-          "title": "IMF Régionale",
-          "capital": "1B FCFA+ capital min.",
-          "description": "Opérations multi-agences à travers une région. TIKARI gère le rapprochement inter-agences, les réseaux bancaires d'agents et les obligations de reporting plus élevées des IMF de niveau régional.",
+          "title": "Licence Régionale",
+          "capital": "Exigences de capital minimum applicables",
+          "description": "Opérations multi-agences à travers une région. TIKARI gère le rapprochement inter-agences, les réseaux bancaires d'agents et les obligations de reporting plus élevées des institutions de niveau régional.",
           "features": [
             "Opérations multi-agences",
             "Consolidation GL inter-agences",
             "Banque d'agents avec géo-suivi",
-            "Déclarations COBAC IMF Régionale",
+            "Déclarations réglementaires régionales",
             "Gamme de produits élargie"
           ]
         },
         "national": {
-          "title": "IMF Nationale",
-          "capital": "5B FCFA+ capital min.",
-          "description": "Opérations à l'échelle nationale avec capital plus élevé, gamme de produits plus large et reporting COBAC plus complexe. TIKARI évolue au niveau national sans nécessiter de modules ou licences supplémentaires.",
+          "title": "Licence Nationale",
+          "capital": "Exigences de capital minimum applicables",
+          "description": "Opérations à l'échelle nationale avec capital plus élevé, gamme de produits plus large et reporting réglementaire plus complexe. TIKARI évolue au niveau national sans nécessiter de modules ou licences supplémentaires.",
           "features": [
             "Réseau d'agences national",
             "Suite complète de produits islamiques",
-            "Toutes les déclarations COBAC",
+            "Toutes les déclarations réglementaires",
             "Structures Sukuk et Takaful",
             "Reporting groupe/société holding"
           ]
         }
       },
-      "cobacCompliance": {
-        "title": "Votre prochain examen COBAC devrait être sans incident",
-        "description1": "TIKARI génère les 12 déclarations prudentielles COBAC directement depuis les données GL en direct. Votre équipe de conformité n'exporte pas manuellement des feuilles de calcul et ne reformate pas en fin de mois.",
+      "regulatoryCompliance": {
+        "title": "Votre prochain examen réglementaire devrait être sans incident",
+        "description1": "TIKARI génère toutes les déclarations prudentielles requises directement depuis les données GL en direct. Votre équipe de conformité n'exporte pas manuellement des feuilles de calcul et ne reformate pas en fin de mois.",
         "description2": "La plateforme maintient également une piste d'audit complète et immuable et un référentiel Fatwa. Lorsqu'un examinateur demande à voir l'approbation Shariah pour votre produit Musharakah il est consultable et imprimable en moins d'une minute.",
         "cta": "Voir les fonctionnalités de conformité"
       },
-      "cobacReturns": {
+      "regulatoryReturns": {
         "items": [
-          {"code": "MFB-001", "name": "État de la Situation Financière"},
-          {"code": "MFB-002", "name": "Compte de Résultat"},
-          {"code": "MFB-003", "name": "Ratio d'Adéquation des Fonds Propres"},
-          {"code": "MFB-004", "name": "Ratio de Liquidité"},
-          {"code": "MFB-005", "name": "Portefeuille à Risque"},
-          {"code": "MFB-006", "name": "Ratios de Partage des Bénéfices"},
-          {"code": "MFB-007", "name": "Rapport de Pool Mudarabah"},
-          {"code": "MFB-008", "name": "Grandes Expositions"},
-          {"code": "MFB-009", "name": "Exposition aux Devises Étrangères"},
-          {"code": "AML/CFT", "name": "Déclaration GABAC AML/CFT"},
-          {"code": "BEAC-01", "name": "Déclaration Interbancaire BEAC"},
-          {"code": "TAX-01", "name": "Déclaration de Conformité Fiscale FCFA"}
+          {
+            "code": "REG-001",
+            "name": "État de la Situation Financière"
+          },
+          {
+            "code": "REG-002",
+            "name": "Compte de Résultat"
+          },
+          {
+            "code": "REG-003",
+            "name": "Ratio d'Adéquation des Fonds Propres"
+          },
+          {
+            "code": "REG-004",
+            "name": "Ratio de Liquidité"
+          },
+          {
+            "code": "REG-005",
+            "name": "Portefeuille à Risque"
+          },
+          {
+            "code": "REG-006",
+            "name": "Ratios de Partage des Bénéfices"
+          },
+          {
+            "code": "REG-007",
+            "name": "Rapport de Pool Mudarabah"
+          },
+          {
+            "code": "REG-008",
+            "name": "Grandes Expositions"
+          },
+          {
+            "code": "REG-009",
+            "name": "Exposition aux Devises Étrangères"
+          },
+          {
+            "code": "AML/CFT",
+            "name": "Déclaration de Conformité AML/CFT"
+          },
+          {
+            "code": "REG-010",
+            "name": "Déclaration Interbancaire Banque Centrale"
+          },
+          {
+            "code": "TAX-01",
+            "name": "Déclaration de Conformité Fiscale Locale"
+          }
         ]
       },
       "keyFeatures": {
         "title": "Tout ce dont vous avez besoin pour la microfinance islamique",
-        "subtitle": "De la vérification CNI aux grands livres de groupe Njangi, TIKARI gère les exigences uniques du secteur bancaire islamique du Cameroun.",
+        "subtitle": "De la vérification d'identité aux grands livres de groupe, TIKARI gère les exigences uniques du secteur bancaire islamique en Afrique.",
         "features": {
-          "njangi": {
-            "title": "Banque de Groupe Njangi",
-            "description": "Grands livres rotatifs numériques avec distribution automatisée des bénéfices et suivi d'exposition de groupe COBAC."
+          "groupBanking": {
+            "title": "Banque de Groupe & Épargne Rotative",
+            "description": "Grands livres rotatifs numériques avec distribution automatisée des bénéfices et suivi d'exposition de groupe réglementaire."
           },
-          "fcfa": {
-            "title": "Comptabilité Native FCFA",
-            "description": "Devise primaire en FCFA avec synchronisation des taux de change BEAC pour transactions en devises étrangères."
+          "multiCurrency": {
+            "title": "Multi-Devises & Comptabilité Locale",
+            "description": "Support des devises locales avec synchronisation automatisée des taux de change pour transactions en devises étrangères."
           },
           "murabaha": {
             "title": "Calcul Auto Murabaha",
             "description": "Configurer les taux de majoration, calendriers de versements et remises de règlement anticipé selon directives Shariah."
           },
-          "systac": {
-            "title": "Intégration SYSTAC/SYGMA",
-            "description": "Transferts interbancaires en temps réel via l'infrastructure SYSTAC du Cameroun avec comptabilisation GL automatique."
+          "interbank": {
+            "title": "Intégration Système Interbancaire",
+            "description": "Transferts interbancaires en temps réel via les systèmes de paiement nationaux avec comptabilisation GL automatique."
           },
           "mobileMoney": {
-            "title": "MTN & Orange Money",
-            "description": "Intégration directe avec les opérateurs mobile money pour opérations cash-in/cash-out d'agents."
+            "title": "Mobile Money & Portefeuilles",
+            "description": "Intégration directe avec les principaux opérateurs de mobile money pour opérations de flottant d'agents et portefeuilles."
           },
           "eod": {
             "title": "Clôture de Fin de Journée en 10 Minutes",
@@ -1999,7 +2035,7 @@
         "title": "Évoluer d'une agence à l'échelle nationale",
         "description": "TIKARI supporte les hiérarchies d'agences du siège social aux centres régionaux jusqu'aux agences individuelles. Les écritures GL inter-agences sont automatisées, et vous pouvez définir des limites de prêt, des seuils de détention d'espèces et des flux d'approbation par agence.",
         "features": [
-          "Enregistrement d'agence avec codes COBAC",
+          "Enregistrement d'agence avec codes réglementaires",
           "Transferts de fonds inter-agences",
           "Allocation de trésorerie centralisée",
           "Tableaux de bord de performance d'agence",
@@ -2009,7 +2045,7 @@
       },
       "cta": {
         "title": "Prêt à lancer votre banque de microfinance islamique?",
-        "subtitle": "Planifiez une démo personnalisée pour voir comment TIKARI gère la conformité COBAC, la gouvernance Shariah et les opérations multi-agences pour le secteur bancaire islamique du Cameroun.",
+        "subtitle": "Planifiez une démo personnalisée pour voir comment TIKARI gère la conformité réglementaire, la gouvernance Shariah et les opérations multi-agences pour le secteur bancaire islamique d'Afrique.",
         "scheduleDemo": "Planifier une Démo",
         "explorePlatform": "Explorer la Plateforme"
       }

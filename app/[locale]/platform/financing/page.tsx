@@ -153,7 +153,7 @@ export default function FinancingPage() {
       title: t("sections.ijara.title"),
       subtitle: t("sections.ijara.subtitle"),
       icon: Buildings,
-      color: "bg-white",
+      color: "bg-tikari-gold/60",
       image: "/handshake.jpg",
       features: [
         {
@@ -193,7 +193,7 @@ export default function FinancingPage() {
       title: t("sections.salamIstisna.title"),
       subtitle: t("sections.salamIstisna.subtitle"),
       icon: Package,
-      color: "bg-tikari-sage-light/40",
+      color: "bg-tikari-sage",
       image: "/women-market.jpg",
       features: [
         {
@@ -233,7 +233,7 @@ export default function FinancingPage() {
       title: t("sections.treasury.title"),
       subtitle: t("sections.treasury.subtitle"),
       icon: Bank,
-      color: "bg-tikari-gold/8",
+      color: "bg-tikari-gold/30",
       image: "/money.jpg",
       features: [
         {
@@ -252,8 +252,8 @@ export default function FinancingPage() {
           icon: Handshake
         },
         {
-          title: t("sections.treasury.features.cobacReserve.title"),
-          description: t("sections.treasury.features.cobacReserve.description"),
+          title: t("sections.treasury.features.centralBankReserve.title"),
+          description: t("sections.treasury.features.centralBankReserve.description"),
           icon: ShieldCheck
         },
         {

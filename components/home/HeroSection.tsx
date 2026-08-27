@@ -48,12 +48,12 @@ export default function HeroSection() {
           <div className="flex flex-wrap items-bottom justify-center gap-4 sm:gap-6 lg:gap-8 pt-6 sm:pt-8 text-sm sm:text-base">
             <div className="flex items-center gap-2">
               <CheckCircle className="h-5 w-5 sm:h-6 sm:w-6 text-tikari-gold flex-shrink-0" weight="fill" />
-              <span className="text-tikari-cream/80">{t("badges.beac")}</span>
+              <span className="text-tikari-cream/80">{t("badges.centralBank")}</span>
             </div>
             <div className="w-px h-4 sm:h-5 bg-white/20 hidden sm:block" />
             <div className="flex items-center gap-2">
               <CheckCircle className="h-5 w-5 sm:h-6 sm:w-6 text-tikari-gold flex-shrink-0" weight="fill" />
-              <span className="text-tikari-cream/80">{t("badges.cobac")}</span>
+              <span className="text-tikari-cream/80">{t("badges.regulator")}</span>
             </div>
             <div className="w-px h-4 sm:h-5 bg-white/20 hidden sm:block" />
             <div className="flex items-center gap-2">

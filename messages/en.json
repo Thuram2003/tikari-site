@@ -9,8 +9,8 @@
       "subtitle": "Regulator-compliant core platform for Islamic banking across Africa. From Murabaha disbursements to central-bank-ready GL reconciliation, your auditors and your Shariah board get the same answer.",
       "bookDemo": "Book a demo",
       "badges": {
-        "beac": "Central Bank Compliant",
-        "cobac": "Banking Regulator Certified",
+        "centralBank": "Central Bank Compliant",
+        "regulator": "Banking Regulator Certified",
         "aaoifi": "AAOIFI & OHADA Standards"
       }
     },
@@ -236,8 +236,8 @@
           "value": "70+",
           "desc": "From KYC to Zakat calculation"
         },
-        "cobacReturns": {
-          "title": "Regulatory Returns",
+        "regulatoryReturns": {
+          "title": "Banking Regulatory Returns",
           "value": "12+",
           "desc": "Generated directly from the GL"
         },
@@ -436,8 +436,8 @@
             "name": "GABAC",
             "description": "STR / CTR filing (AML/CFT)"
           },
-          "beac": {
-            "name": "BEAC",
+          "regulator": {
+            "name": "Banking Regulator",
             "description": "Central bank compliance"
           }
         }
@@ -457,7 +457,7 @@
               "title": "Three-tier KYC",
               "description": "Tier 1: basic identification; Tier 2: National ID-verified; Tier 3: full passport + proof of address"
             },
-            "cniVerification": {
+            "nationalIdVerification": {
               "title": "National ID Verification",
               "description": "Real-time verification against national identity databases for supported countries"
             },
@@ -475,7 +475,7 @@
             },
             "deduplication": {
               "title": "Customer Deduplication",
-              "description": "Automated duplicate detection on onboarding using CNI, phone, and biometric data"
+              "description": "Automated duplicate detection on onboarding using National ID, phone, and biometric data"
             }
           }
         },
@@ -557,7 +557,7 @@
             },
             "otc": {
               "title": "OTC Transfer Initiation",
-              "description": "Over-the-counter SYSTAC/SYGMA transfer initiation with real-time confirmation"
+              "description": "Over-the-counter regional payment gateway transfers with real-time confirmation"
             },
             "tillLimit": {
               "title": "Till Limit Enforcement",
@@ -570,16 +570,16 @@
           }
         },
         "interbank": {
-          "title": "SYSTAC/SYGMA & Interbank",
+          "title": "Interbank Settlement & Payments",
           "subtitle": "Real-time interbank transfers via central bank-approved channels",
           "features": {
-            "systac": {
-              "title": "SYSTAC Real-Time Transfers",
-              "description": "Direct integration with SYSTAC for instant interbank transfers in FCFA"
+            "realtimeTransfers": {
+              "title": "Real-Time Transfers",
+              "description": "Direct integration with national payment gateways for instant interbank transfers"
             },
-            "sygma": {
-              "title": "SYGMA Bulk Payments",
-              "description": "Batch payment processing via SYGMA for salary and supplier payments"
+            "bulkPayments": {
+              "title": "Bulk Payment Processing",
+              "description": "Batch payment processing for salary and supplier payments via regional clearing systems"
             },
             "inward": {
               "title": "Inward Credit Posting",
@@ -590,8 +590,8 @@
               "description": "Automated return processing with customer notification and reversal workflow"
             },
             "beac": {
-              "title": "Central Bank Interbank Channels",
-              "description": "Support for all central bank-approved interbank settlement channels"
+              "title": "Central Bank Settlement Channels",
+              "description": "Support for all central bank-approved interbank settlement channels in supported jurisdictions"
             },
             "limits": {
               "title": "Transaction Limit Controls",
@@ -605,7 +605,7 @@
           "features": {
             "onboarding": {
               "title": "Agent Onboarding & KYC",
-              "description": "Comprehensive agent verification with CNI, trade license, and location checks"
+              "description": "Comprehensive agent verification with National ID, trade license, and location checks"
             },
             "portal": {
               "title": "Agent Web Portal",
@@ -625,14 +625,14 @@
             },
             "commission": {
               "title": "Commission Ledger",
-              "description": "Automated commission calculation and posting to agent accounts in FCFA"
+              "description": "Automated commission calculation and posting to agent accounts with multi-currency support"
             }
           }
         }
       },
       "cta": {
         "title": "See Banking Operations in Action",
-        "subtitle": "Schedule a personalized demo to see how TIKARI handles customer onboarding, Njangi operations, and interbank transfers for Africa's Islamic banking sector.",
+        "subtitle": "Schedule a personalized demo to see how TIKARI handles customer onboarding, group banking operations, and interbank transfers for Islamic financial institutions.",
         "scheduleDemo": "Schedule a Demo",
         "exploreModules": "Explore Other Modules"
       }
@@ -653,7 +653,7 @@
             },
             "transparentMarkup": {
               "title": "Transparent Markup Calculation",
-              "description": "Clear disclosure of cost price, markup percentage, and total selling price in FCFA"
+              "description": "Clear disclosure of cost price, markup percentage, and total selling price with multi-currency support"
             },
             "deferredPayment": {
               "title": "Deferred Payment Structure",
@@ -809,7 +809,7 @@
               "title": "Interbank Wakala Placements",
               "description": "Place surplus funds with Islamic banks as agent with agreed profit-sharing ratio"
             },
-            "cobacReserve": {
+            "centralBankReserve": {
               "title": "Central Bank Reserve Compliance",
               "description": "Automated reserve calculation and placement with central bank per regulatory liquidity ratios"
             },
@@ -897,9 +897,9 @@
             }
           }
         },
-        "cobacCompliance": {
-          "title": "Central Bank Regulatory Compliance",
-          "subtitle": "Full adherence to regional prudential norms and regulatory reporting requirements",
+        "regulatoryCompliance": {
+          "title": "Banking Regulatory Compliance",
+          "subtitle": "Full adherence to prudential norms and regulatory reporting requirements across supported jurisdictions",
           "features": {
             "capitalAdequacy": {
               "title": "Capital Adequacy Monitoring",
@@ -915,7 +915,7 @@
             },
             "returnFiling": {
               "title": "Regulatory Return Filing",
-              "description": "Automated generation of monthly, quarterly, and annual regulatory returns to central banks"
+              "description": "Automated generation of monthly, quarterly, and annual regulatory returns to banking supervisory authorities"
             },
             "provisioning": {
               "title": "Provisioning & NPL Classification",
@@ -1035,9 +1035,9 @@
           "title": "Chart of Accounts & GL Structure",
           "subtitle": "Regulatory-compliant account structure with Islamic banking extensions",
           "features": {
-            "cobacCoa": {
-              "title": "Regional Standard COA",
-              "description": "Pre-configured chart aligned with regional prudential frameworks across Africa"
+            "regulatoryReturns": {
+              "title": "Banking Regulatory Returns",
+              "description": "Pre-configured chart aligned with banking regulatory standards across supported jurisdictions"
             },
             "islamicExtensions": {
               "title": "Islamic Account Extensions",
@@ -1185,8 +1185,8 @@
           "title": "Regulatory Reporting & Analytics",
           "subtitle": "Regulatory prudential returns and management analytics",
           "features": {
-            "cobacReturns": {
-              "title": "Regulatory Prudential Returns",
+            "regulatoryReturns": {
+              "title": "Banking Regulatory Returns",
               "description": "Automated generation of monthly, quarterly, and annual regulatory filings"
             },
             "trialBalance": {
@@ -1231,7 +1231,7 @@
           "features": {
             "recruitment": {
               "title": "Agent Recruitment & KYC",
-              "description": "Comprehensive agent onboarding with CNI verification, trade license checks, and business location validation"
+              "description": "Comprehensive agent onboarding with National ID verification, trade license checks, and business location validation"
             },
             "categorization": {
               "title": "Agent Categorization",
@@ -1257,15 +1257,15 @@
         },
         "mobileMoney": {
           "title": "Mobile Money Integration",
-          "subtitle": "MTN Mobile Money and Orange Money interoperability for deposits and withdrawals",
+          "subtitle": "Mobile money interoperability for deposits and withdrawals",
           "features": {
             "mtnApi": {
-              "title": "MTN Mobile Money API",
-              "description": "Direct integration with MTN MoMo for account-to-wallet transfers and wallet-to-account deposits"
+              "title": "Mobile Money API",
+              "description": "Direct integration with mobile money providers for account-to-wallet transfers and wallet-to-account deposits"
             },
             "orangeApi": {
-              "title": "Orange Money API",
-              "description": "Real-time Orange Money integration for cash-in and cash-out transactions in FCFA"
+              "title": "Mobile Money Operator API",
+              "description": "Real-time mobile money integration for cash-in and cash-out transactions in local currency"
             },
             "reconciliation": {
               "title": "Transaction Reconciliation",
@@ -1277,7 +1277,7 @@
             },
             "interoperability": {
               "title": "Interoperability Support",
-              "description": "Cross-network transfers between mobile money providers via interoperability switches"
+              "description": "Cross-network transfers between mobile money providers via national interoperability switches"
             },
             "walletLinking": {
               "title": "Wallet Linking",
@@ -1347,7 +1347,7 @@
         },
         "commissionManagement": {
           "title": "Commission & Incentive Management",
-          "subtitle": "Automated agent commission calculation and payout in FCFA",
+          "subtitle": "Automated agent commission calculation and payout in local currency",
           "features": {
             "tiered": {
               "title": "Tiered Commission Structure",
@@ -1896,7 +1896,7 @@
     "microfinance": {
       "hero": {
         "title": "Solutions for Microfinance Banks",
-        "subtitle": "Built for non-interest microfinance banks. Whether you hold a Unit, Regional, or National MFB license, TIKARI gives you a core that satisfies your banking regulator, your Shariah Supervisory Board, and your operations team from day one.",
+        "subtitle": "Built for non-interest microfinance banks. Whether you hold a Unit, Regional, or National license, TIKARI gives you a core that satisfies your banking regulator, your Shariah Supervisory Board, and your operations team from day one.",
         "cta": {
           "demo": "Book a Demo",
           "platform": "See the Platform"
@@ -1907,21 +1907,21 @@
       },
       "licenceCategories": {
         "unit": {
-          "title": "Unit MFB",
-          "capital": "200M FCFA+ min. capital",
-          "description": "A single-branch non-interest MFB serving a local government or community. TIKARI provides the full platform no feature restrictions for smaller institutions.",
+          "title": "Unit License",
+          "capital": "Minimum capital requirements apply",
+          "description": "A single-branch non-interest microfinance institution serving a local government or community. TIKARI provides the full platform no feature restrictions for smaller institutions.",
           "features": [
             "Single-branch teller operations",
-            "Njangi group banking",
+            "Group banking and rotating savings",
             "Murabaha and Mudarabah products",
             "Regulatory returns",
             "Under-10-minute EOD close"
           ]
         },
         "state": {
-          "title": "State MFB",
-          "capital": "1B FCFA+ min. capital",
-          "description": "Multi-branch operations across a region. TIKARI handles inter-branch reconciliation, agent banking networks, and the higher reporting obligations of regional-tier MFBs.",
+          "title": "Regional License",
+          "capital": "Minimum capital requirements apply",
+          "description": "Multi-branch operations across a region. TIKARI handles inter-branch reconciliation, agent banking networks, and the higher reporting obligations of regional-tier institutions.",
           "features": [
             "Multi-branch operations",
             "Inter-branch GL consolidation",
@@ -1931,8 +1931,8 @@
           ]
         },
         "national": {
-          "title": "National MFB",
-          "capital": "5B FCFA+ min. capital",
+          "title": "National License",
+          "capital": "Minimum capital requirements apply",
           "description": "Nation-wide operations with higher capital, broader product range, and more complex regulatory reporting. TIKARI scales to national tier without requiring additional modules or licences.",
           "features": [
             "Nationwide branch network",
@@ -1943,48 +1943,48 @@
           ]
         }
       },
-      "cobacCompliance": {
+      "regulatoryCompliance": {
         "title": "Your next regulatory examination should be uneventful",
         "description1": "TIKARI generates all required prudential returns directly from live GL data. Your compliance team is not manually exporting spreadsheets and reformatting at month-end.",
         "description2": "The platform also maintains a complete, immutable audit trail and Fatwa repository. When your regulator asks to see the Shariah approval for your Musharakah product it is searchable and printable in under a minute.",
         "cta": "See the compliance features"
       },
-      "cobacReturns": {
+      "regulatoryReturns": {
         "items": [
           {
-            "code": "MFB-001",
+            "code": "REG-001",
             "name": "Statement of Financial Position"
           },
           {
-            "code": "MFB-002",
+            "code": "REG-002",
             "name": "Statement of Income"
           },
           {
-            "code": "MFB-003",
+            "code": "REG-003",
             "name": "Capital Adequacy Ratio"
           },
           {
-            "code": "MFB-004",
+            "code": "REG-004",
             "name": "Liquidity Ratio"
           },
           {
-            "code": "MFB-005",
+            "code": "REG-005",
             "name": "Portfolio at Risk"
           },
           {
-            "code": "MFB-006",
+            "code": "REG-006",
             "name": "Profit-Sharing Ratios"
           },
           {
-            "code": "MFB-007",
+            "code": "REG-007",
             "name": "Mudarabah Pool Report"
           },
           {
-            "code": "MFB-008",
+            "code": "REG-008",
             "name": "Large Exposures"
           },
           {
-            "code": "MFB-009",
+            "code": "REG-009",
             "name": "Foreign Currency Exposure"
           },
           {
@@ -1992,7 +1992,7 @@
             "name": "AML/CFT Compliance Reporting"
           },
           {
-            "code": "REG-01",
+            "code": "REG-010",
             "name": "Central Bank Interbank Reporting"
           },
           {
@@ -2003,13 +2003,13 @@
       },
       "keyFeatures": {
         "title": "Everything you need for Islamic microfinance",
-        "subtitle": "From ID verification to Njangi group ledgers, TIKARI handles the unique requirements of Islamic banking across Africa.",
+        "subtitle": "From ID verification to group banking ledgers, TIKARI handles the unique requirements of Islamic banking across Africa.",
         "features": {
-          "njangi": {
-            "title": "Njangi Group Banking",
+          "groupBanking": {
+            "title": "Group Banking & Rotating Savings",
             "description": "Digital rotating ledgers with automated profit distribution and regulatory group exposure tracking."
           },
-          "fcfa": {
+          "multiCurrency": {
             "title": "Multi-Currency & Local Accounting",
             "description": "Support for local currencies with automated exchange rate synchronization for foreign transactions."
           },
@@ -2017,7 +2017,7 @@
             "title": "Auto Murabaha Calculation",
             "description": "Configure markup rates, installment schedules, and early settlement rebates per Shariah guidelines."
           },
-          "systac": {
+          "interbank": {
             "title": "Interbank Switch Integration",
             "description": "Real-time interbank transfers via national payment systems with automated GL posting."
           },

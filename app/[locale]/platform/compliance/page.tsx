@@ -110,41 +110,41 @@ export default function CompliancePage() {
       ]
     },
     {
-      id: "cobac-compliance",
-      title: t("sections.cobacCompliance.title"),
-      subtitle: t("sections.cobacCompliance.subtitle"),
+      id: "regulatory-compliance",
+      title: t("sections.regulatoryCompliance.title"),
+      subtitle: t("sections.regulatoryCompliance.subtitle"),
       icon: Bank,
       color: "bg-tikari-green-dark text-white",
       image: "/bnw-muslim.jpg",
       features: [
         {
-          title: t("sections.cobacCompliance.features.capitalAdequacy.title"),
-          description: t("sections.cobacCompliance.features.capitalAdequacy.description"),
+          title: t("sections.regulatoryCompliance.features.capitalAdequacy.title"),
+          description: t("sections.regulatoryCompliance.features.capitalAdequacy.description"),
           icon: ChartBar
         },
         {
-          title: t("sections.cobacCompliance.features.liquidityRatios.title"),
-          description: t("sections.cobacCompliance.features.liquidityRatios.description"),
+          title: t("sections.regulatoryCompliance.features.liquidityRatios.title"),
+          description: t("sections.regulatoryCompliance.features.liquidityRatios.description"),
           icon: Bank
         },
         {
-          title: t("sections.cobacCompliance.features.largeExposure.title"),
-          description: t("sections.cobacCompliance.features.largeExposure.description"),
+          title: t("sections.regulatoryCompliance.features.largeExposure.title"),
+          description: t("sections.regulatoryCompliance.features.largeExposure.description"),
           icon: Warning
         },
         {
-          title: t("sections.cobacCompliance.features.returnFiling.title"),
-          description: t("sections.cobacCompliance.features.returnFiling.description"),
+          title: t("sections.regulatoryCompliance.features.returnFiling.title"),
+          description: t("sections.regulatoryCompliance.features.returnFiling.description"),
           icon: FileText
         },
         {
-          title: t("sections.cobacCompliance.features.provisioning.title"),
-          description: t("sections.cobacCompliance.features.provisioning.description"),
+          title: t("sections.regulatoryCompliance.features.provisioning.title"),
+          description: t("sections.regulatoryCompliance.features.provisioning.description"),
           icon: Scales
         },
         {
-          title: t("sections.cobacCompliance.features.riskReports.title"),
-          description: t("sections.cobacCompliance.features.riskReports.description"),
+          title: t("sections.regulatoryCompliance.features.riskReports.title"),
+          description: t("sections.regulatoryCompliance.features.riskReports.description"),
           icon: ClipboardText
         }
       ]
@@ -154,7 +154,7 @@ export default function CompliancePage() {
       title: t("sections.amlCft.title"),
       subtitle: t("sections.amlCft.subtitle"),
       icon: ShieldCheck,
-      color: "bg-white",
+      color: "bg-tikari-gold/80",
       image: "/people.jpg",
       features: [
         {
@@ -194,7 +194,7 @@ export default function CompliancePage() {
       title: t("sections.documentManagement.title"),
       subtitle: t("sections.documentManagement.subtitle"),
       icon: FolderOpen,
-      color: "bg-tikari-sage-light/40",
+      color: "bg-tikari-sage",
       image: "/handshake.jpg",
       features: [
         {
@@ -234,7 +234,7 @@ export default function CompliancePage() {
       title: t("sections.reportingAnalytics.title"),
       subtitle: t("sections.reportingAnalytics.subtitle"),
       icon: ChartBar,
-      color: "bg-tikari-gold/8",
+      color: "bg-tikari-gold/20",
       image: "/meeting.jpg",
       features: [
         {

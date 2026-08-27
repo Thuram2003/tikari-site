@@ -71,19 +71,19 @@ export default function MicrofinanceSolutionsPage() {
     }
   ];
 
-  const cobacReturns = [
-    { code: t("cobacReturns.items.0.code"), name: t("cobacReturns.items.0.name") },
-    { code: t("cobacReturns.items.1.code"), name: t("cobacReturns.items.1.name") },
-    { code: t("cobacReturns.items.2.code"), name: t("cobacReturns.items.2.name") },
-    { code: t("cobacReturns.items.3.code"), name: t("cobacReturns.items.3.name") },
-    { code: t("cobacReturns.items.4.code"), name: t("cobacReturns.items.4.name") },
-    { code: t("cobacReturns.items.5.code"), name: t("cobacReturns.items.5.name") },
-    { code: t("cobacReturns.items.6.code"), name: t("cobacReturns.items.6.name") },
-    { code: t("cobacReturns.items.7.code"), name: t("cobacReturns.items.7.name") },
-    { code: t("cobacReturns.items.8.code"), name: t("cobacReturns.items.8.name") },
-    { code: t("cobacReturns.items.9.code"), name: t("cobacReturns.items.9.name") },
-    { code: t("cobacReturns.items.10.code"), name: t("cobacReturns.items.10.name") },
-    { code: t("cobacReturns.items.11.code"), name: t("cobacReturns.items.11.name") }
+  const regulatoryReturns = [
+    { code: t("regulatoryReturns.items.0.code"), name: t("regulatoryReturns.items.0.name") },
+    { code: t("regulatoryReturns.items.1.code"), name: t("regulatoryReturns.items.1.name") },
+    { code: t("regulatoryReturns.items.2.code"), name: t("regulatoryReturns.items.2.name") },
+    { code: t("regulatoryReturns.items.3.code"), name: t("regulatoryReturns.items.3.name") },
+    { code: t("regulatoryReturns.items.4.code"), name: t("regulatoryReturns.items.4.name") },
+    { code: t("regulatoryReturns.items.5.code"), name: t("regulatoryReturns.items.5.name") },
+    { code: t("regulatoryReturns.items.6.code"), name: t("regulatoryReturns.items.6.name") },
+    { code: t("regulatoryReturns.items.7.code"), name: t("regulatoryReturns.items.7.name") },
+    { code: t("regulatoryReturns.items.8.code"), name: t("regulatoryReturns.items.8.name") },
+    { code: t("regulatoryReturns.items.9.code"), name: t("regulatoryReturns.items.9.name") },
+    { code: t("regulatoryReturns.items.10.code"), name: t("regulatoryReturns.items.10.name") },
+    { code: t("regulatoryReturns.items.11.code"), name: t("regulatoryReturns.items.11.name") }
   ];
 
   return (
@@ -201,22 +201,22 @@ export default function MicrofinanceSolutionsPage() {
         </div>
       </section>
 
-      {/* COBAC Compliance Section */}
+      {/* Regulatory Compliance Section */}
       <section className="py-16 lg:py-24 px-6 bg-tikari-cream/30">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Content */}
             <div>
               <h2 className="text-3xl lg:text-[2.75rem] font-bold mb-6 leading-[1.15] tracking-tight text-tikari-green-dark">
-                {t("cobacCompliance.title")}
+                {t("regulatoryCompliance.title")}
               </h2>
               
               <div className="space-y-4 text-[15px] lg:text-[16px] text-tikari-sage leading-relaxed">
                 <p>
-                  {t("cobacCompliance.description1")}
+                  {t("regulatoryCompliance.description1")}
                 </p>
                 <p>
-                  {t("cobacCompliance.description2")}
+                  {t("regulatoryCompliance.description2")}
                 </p>
               </div>
 
@@ -225,14 +225,14 @@ export default function MicrofinanceSolutionsPage() {
                 href="/platform/compliance"
                 className="group mt-8"
               >
-                {t("cobacCompliance.cta")}
+                {t("regulatoryCompliance.cta")}
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" weight="bold" />
               </Button>
             </div>
 
             {/* Returns Grid */}
             <div className="grid grid-cols-2 gap-4">
-              {cobacReturns.map((item, idx) => (
+              {regulatoryReturns.map((item, idx) => (
                 <div 
                   key={idx}
                   className="bg-white border border-tikari-green/10 p-5 hover:border-tikari-green/30 hover:shadow-lg transition-all duration-300 rounded-2xl"
@@ -269,13 +269,13 @@ export default function MicrofinanceSolutionsPage() {
             {[
               {
                 icon: Users,
-                title: t("keyFeatures.features.njangi.title"),
-                description: t("keyFeatures.features.njangi.description")
+                title: t("keyFeatures.features.groupBanking.title"),
+                description: t("keyFeatures.features.groupBanking.description")
               },
               {
                 icon: Coins,
-                title: t("keyFeatures.features.fcfa.title"),
-                description: t("keyFeatures.features.fcfa.description")
+                title: t("keyFeatures.features.multiCurrency.title"),
+                description: t("keyFeatures.features.multiCurrency.description")
               },
               {
                 icon: Receipt,
@@ -284,8 +284,8 @@ export default function MicrofinanceSolutionsPage() {
               },
               {
                 icon: Database,
-                title: t("keyFeatures.features.systac.title"),
-                description: t("keyFeatures.features.systac.description")
+                title: t("keyFeatures.features.interbank.title"),
+                description: t("keyFeatures.features.interbank.description")
               },
               {
                 icon: CurrencyCircleDollar,
