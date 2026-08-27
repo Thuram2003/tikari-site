@@ -136,18 +136,18 @@ export default function WhyTikariSection() {
                 </p>
               </div>
 
-              {/* COBAC Returns */}
+              {/* Regulatory Returns */}
               <div className="space-y-3">
                 <span className="text-[10px] text-white/45 uppercase tracking-[0.12em] block font-semibold">
-                  {t("metrics.cobacReturns.title")}
+                  {t("metrics.regulatoryReturns.title")}
                 </span>
 
                 <p className="text-[2.75rem] lg:text-5xl font-bold text-tikari-gold font-mono tracking-tight leading-none">
-                  {t("metrics.cobacReturns.value")}
+                  {t("metrics.regulatoryReturns.value")}
                 </p>
 
                 <p className="text-[11px] text-white/50 leading-snug pt-1">
-                  {t("metrics.cobacReturns.desc")}
+                  {t("metrics.regulatoryReturns.desc")}
                 </p>
               </div>
 

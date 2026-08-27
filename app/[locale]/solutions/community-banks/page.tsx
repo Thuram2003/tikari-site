@@ -187,8 +187,8 @@ export default function CommunityBanksSolutionsPage() {
             {[
               {
                 icon: UsersFour,
-                title: t("keyFeatures.features.njangi.title"),
-                description: t("keyFeatures.features.njangi.description")
+                title: t("keyFeatures.features.groupBanking.title"),
+                description: t("keyFeatures.features.groupBanking.description")
               },
               {
                 icon: Coins,
@@ -207,8 +207,8 @@ export default function CommunityBanksSolutionsPage() {
               },
               {
                 icon: ListChecks,
-                title: t("keyFeatures.features.cobac.title"),
-                description: t("keyFeatures.features.cobac.description")
+                title: t("keyFeatures.features.regulatory.title"),
+                description: t("keyFeatures.features.regulatory.description")
               },
               {
                 icon: Bank,

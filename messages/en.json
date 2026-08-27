@@ -80,7 +80,7 @@
       "modules": {
         "banking": {
           "title": "Banking Operations",
-          "desc": "Customer and KYC, Wadiah accounts, Njangi/Tontine groups, teller operations, interbank transfers, and agent float.",
+          "desc": "Customer and KYC, Wadiah accounts, community savings groups, teller operations, interbank transfers, and agent float.",
           "explore": "Explore"
         },
         "financing": {
@@ -115,7 +115,7 @@
         "badge": "Islamic Financing",
         "title": "Murabaha to Musharakah with built-in Shariah controls",
         "subtitle": "Each financing type has the right mechanics built in. Murabaha tracks cost price, markup, and deferred income per AAOIFI FAS 2. Mudarabah pools manage profit-sharing ratios. Diminishing Musharakah generates the buyout schedule and adjusts rental as ownership transfers.",
-        "imageAlt": "Islamic finance professional in Cameroon",
+        "imageAlt": "Islamic finance professional in Africa",
         "features": [
           "Murabaha, Mudarabah, Musharakah, Ijara, Salam, Istisna",
           "Four-eyes maker-checker approval on every disbursement",
@@ -169,10 +169,10 @@
     },
     "operations": {
       "badge": "Banking Operations",
-      "title": "Run Njangi groups, agent float, and interbank transfers in one system",
-      "subtitle": "African non-interest banking is not just Murabaha. It includes traditional rotating savings groups (Njangis/Tontines), community agent networks, and mobile-first customers with national ID or Passport accounts. TIKARI was designed for this reality, not adapted for it.",
+      "title": "Run community savings groups, agent float, and interbank transfers in one system",
+      "subtitle": "African non-interest banking is not just Murabaha. It includes traditional rotating savings groups (rotating savings groups), community agent networks, and mobile-first customers with national ID or Passport accounts. TIKARI was designed for this reality, not adapted for it.",
       "features": [
-        "Njangi group management with rotation tracker and contribution status",
+        "community savings group management with rotation tracker and contribution status",
         "Wadiah safekeeping savings with current, target, and group accounts",
         "KYC Tier 1/2/3 with inline ID verification via national ID and regional APIs",
         "Interbank transfers with name enquiry before authorisation",
@@ -181,17 +181,17 @@
       ],
       "seeOperations": "See Banking Operations",
       "njangi": {
-        "title": "Njangi Group",
-        "groupName": "Al-Baraka Njangi Circle",
+        "title": "community savings group",
+        "groupName": "Al-Baraka Savings Circle",
         "cycle": "Cycle 7 of 12",
         "status": "ACTIVE",
         "contributionTitle": "Contribution Collection This Cycle",
         "contributionStatus": "9 of 12 members contributed",
-        "amountCollected": "FCFA 450,000 collected",
+        "amountCollected": "local currency 450,000 collected",
         "recipientTitle": "Current Recipient",
         "recipientName": "Aminatou Njoya",
         "recipientNumber": "Member #7",
-        "disbursementInfo": "FCFA 600,000 to disburse on 15 June 2026",
+        "disbursementInfo": "local currency 600,000 to disburse on 15 June 2026",
         "statusTitle": "Contribution Status"
       }
     },
@@ -218,7 +218,7 @@
         },
         "cameroon": {
           "title": "Built for African Markets",
-          "desc": "National ID and Passport verification. Standard account numbering. Interbank transfer systems. Njangi and Tontine groups. Agent banking. Multi-language localization. Native multi-currency support."
+          "desc": "National ID and Passport verification. Standard account numbering. Interbank transfer systems. community savings groups. Agent banking. Multi-language localization. Native multi-currency support."
         },
         "migration": {
           "title": "Migration path from legacy cores",
@@ -268,7 +268,7 @@
         },
         "sensitive": {
           "title": "Sensitive data controls",
-          "desc": "CNI (Carte Nationale d'Identité), Passport, and account details are masked by default. Reveal operations require specific privileges, are logged to audit trails, and auto-hide after 30 seconds."
+          "desc": "National ID, Passport, and account details are masked by default. Reveal operations require specific privileges, are logged to audit trails, and auto-hide after 30 seconds."
         },
         "aml": {
           "title": "AML/CFT monitoring",
@@ -339,11 +339,11 @@
       "modules": {
         "bankingOperations": {
           "category": "Banking Operations",
-          "description": "Customer onboarding with National ID/Passport verification, tiered KYC (Tier 1-3), account management, Njangi/Tontine group banking, teller operations, regional interbank payment gateways, and agent banking.",
+          "description": "Customer onboarding with National ID/Passport verification, tiered KYC (Tier 1-3), account management, community savings group banking, teller operations, regional interbank payment gateways, and agent banking.",
           "features": [
-            "CNI/Passport biometric verification",
-            "Njangi & Tontine group cycles",
-            "SYSTAC/SYGMA real-time transfers",
+            "National ID/Passport National ID biometric verification",
+            "community savings group cycles",
+            "Interbank Transfer Systems Real-time interbank transfers",
             "Agent & field officer portal",
             "Multi-branch teller operations"
           ],
@@ -363,12 +363,12 @@
         },
         "compliance": {
           "category": "Compliance & Shariah Governance",
-          "description": "The ACE (Audit & Compliance Executives) and Shariah Supervisory Board are first-class users. Fatwa repository, product screening, AML/CFT transaction monitoring, and all COBAC prudential returns generated from the GL directly.",
+          "description": "The ACE (Audit & Compliance Executives) and Shariah Supervisory Board are first-class users. Fatwa repository, product screening, AML/CFT transaction monitoring, and all prudential regulatory returns generated from the GL directly.",
           "features": [
             "Fatwa repository & product approval",
             "ACE dashboard & audit trail",
-            "AML/CFT transaction screening (GABAC)",
-            "12 COBAC returns (auto-generated)",
+            "AML/CFT transaction screening",
+            "12 regulatory returns (auto-generated)",
             "AAOIFI FAS compliance tagging"
           ],
           "explore": "Explore Compliance & Shariah Governance"
@@ -387,19 +387,19 @@
         },
         "agentBanking": {
           "category": "Agent & Field Banking",
-          "description": "Extend your reach without building branches in Douala, Yaoundé, or Bafoussam. Agent portal with offline-capable transaction posting, geo-tagging, and real-time reconciliation back to the core. Full audit trail for every agent action.",
+          "description": "Extend your reach without building branches in multiple regional locations. Agent portal with offline-capable transaction posting, geo-tagging, and real-time reconciliation back to the core. Full audit trail for every agent action.",
           "features": [
-            "Agent onboarding & CNI KYC",
+            "Agent onboarding & ID KYC",
             "Offline transaction queueing",
             "Geo-tagged field collections",
             "Cash-in / cash-out reconciliation",
-            "Agent commission ledger (FCFA)"
+            "Agent commission ledger (local currency)"
           ],
           "explore": "Explore Agent & Field Banking"
         },
         "administration": {
           "category": "Administration & EOD Processes",
-          "description": "System administration, user and role management (RBAC), scheduled jobs, end-of-day batch processing, backup and disaster recovery, and COBAC regulatory reporting scheduler.",
+          "description": "System administration, user and role management (RBAC), scheduled jobs, end-of-day batch processing, backup and disaster recovery, and regulatory reporting scheduler.",
           "features": [
             "Role-based access (RBAC)",
             "Four-eyes maker-checker approval",
@@ -417,23 +417,23 @@
         "seeDemo": "See it in a demo",
         "items": {
           "systac": {
-            "name": "SYSTAC / SYGMA",
+            "name": "Interbank Systems",
             "description": "Real-time interbank transfers"
           },
           "cobac": {
-            "name": "COBAC Reporting API",
+            "name": "Regulatory Reporting API",
             "description": "12 prudential returns"
           },
           "cni": {
-            "name": "CNI / Passport",
+            "name": "National ID / Passport",
             "description": "Identity verification"
           },
           "fogadac": {
-            "name": "FOGADAC",
+            "name": "Deposit Insurance",
             "description": "Deposit insurance reporting"
           },
           "gabac": {
-            "name": "GABAC",
+            "name": "AML/CFT Standards",
             "description": "STR / CTR filing (AML/CFT)"
           },
           "regulator": {
@@ -510,8 +510,8 @@
           }
         },
         "njangi": {
-          "title": "Njangi & Group Banking",
-          "subtitle": "Digitized Tontine operations for rotating savings groups",
+          "title": "Community Savings & Group Banking",
+          "subtitle": "Digitized Rotating savings operations for rotating savings groups",
           "features": {
             "constitution": {
               "title": "Group Constitution",
@@ -574,7 +574,7 @@
           "subtitle": "Real-time interbank transfers via central bank-approved channels",
           "features": {
             "realtimeTransfers": {
-              "title": "Real-Time Transfers",
+              "title": "Real-time interbank transfers",
               "description": "Direct integration with national payment gateways for instant interbank transfers"
             },
             "bulkPayments": {
@@ -834,7 +834,7 @@
     "compliance": {
       "hero": {
         "title": "Compliance & Shariah Governance",
-        "subtitle": "Independent Shariah Supervisory Board oversight, central bank regulatory compliance, GABAC AML/CFT controls, and AAOIFI reporting standards. Built for Africa's Islamic banking regulatory environment."
+        "subtitle": "Independent Shariah Supervisory Board oversight, central bank regulatory compliance, AML/CFT standards controls, and AAOIFI reporting standards. Built for Africa's Islamic banking regulatory environment."
       },
       "sections": {
         "shariahBoard": {
@@ -928,7 +928,7 @@
           }
         },
         "amlCft": {
-          "title": "AML/CFT & GABAC Compliance",
+          "title": "AML/CFT & AML/CFT compliance",
           "subtitle": "Anti-money laundering and counter-terrorism financing controls",
           "features": {
             "cdd": {
@@ -937,10 +937,10 @@
             },
             "transactionMonitoring": {
               "title": "Transaction Monitoring",
-              "description": "Real-time screening of transactions against FCFA thresholds with suspicious activity flagging"
+              "description": "Real-time screening of transactions against local currency thresholds with suspicious activity flagging"
             },
             "sanctionsScreening": {
-              "title": "GABAC Sanctions Screening",
+              "title": "Sanctions Screening",
               "description": "Automated screening against regional sanctions lists and UN consolidated terrorism list"
             },
             "str": {
@@ -1045,7 +1045,7 @@
             },
             "multiCurrency": {
               "title": "Multi-Currency Support",
-              "description": "Primary FCFA accounting with multi-currency foreign transaction and revaluation capabilities"
+              "description": "Primary local currency accounting with multi-currency foreign transaction and revaluation capabilities"
             },
             "hierarchies": {
               "title": "Account Hierarchies",
@@ -1177,7 +1177,7 @@
             },
             "reports": {
               "title": "Distribution Reports",
-              "description": "Monthly investor statements showing daily balance, profit rate, and credited profit in FCFA"
+              "description": "Monthly investor statements showing daily balance, profit rate, and credited profit in local currency"
             }
           }
         },
@@ -1191,7 +1191,7 @@
             },
             "trialBalance": {
               "title": "Trial Balance Export",
-              "description": "Period-end trial balance with opening, movement, and closing balances in FCFA"
+              "description": "Period-end trial balance with opening, movement, and closing balances in local currency"
             },
             "glInquiry": {
               "title": "General Ledger Inquiry",
@@ -1259,7 +1259,7 @@
           "title": "Mobile Money Integration",
           "subtitle": "Mobile money interoperability for deposits and withdrawals",
           "features": {
-            "mtnApi": {
+            "mobileMoneyApi": {
               "title": "Mobile Money API",
               "description": "Direct integration with mobile money providers for account-to-wallet transfers and wallet-to-account deposits"
             },
@@ -1306,8 +1306,8 @@
               "description": "Fingerprint capture for customer identification and transaction authorization in the field"
             },
             "njangiCollections": {
-              "title": "Njangi Group Collections",
-              "description": "Mobile collection interface for Njangi group contributions with group member attendance tracking"
+              "title": "community savings group Collections",
+              "description": "Mobile collection interface for community savings group contributions with group member attendance tracking"
             },
             "fieldCash": {
               "title": "Field Cash Management",
@@ -1385,7 +1385,7 @@
             },
             "amlScreening": {
               "title": "Agent AML/CFT Screening",
-              "description": "Continuous monitoring of agent transactions for suspicious patterns and GABAC compliance"
+              "description": "Continuous monitoring of agent transactions for suspicious patterns and AML/CFT compliance"
             },
             "beacReturns": {
               "title": "E-Money Regulatory Returns",
@@ -1615,7 +1615,7 @@
       "title": "Platform",
       "bankingOperations": {
         "name": "Banking Operations",
-        "desc": "CNI/Passport verification, Njangi groups, SYSTAC transfers."
+        "desc": "National ID/Passport verification, community savings groups, interbank transfers."
       },
       "islamicFinancing": {
         "name": "Islamic Financing & Treasury",
@@ -1623,7 +1623,7 @@
       },
       "compliance": {
         "name": "Compliance & Shariah Governance",
-        "desc": "ACE dashboard, Fatwa repository, COBAC returns."
+        "desc": "ACE dashboard, Fatwa repository, regulatory returns."
       },
       "glReporting": {
         "name": "GL & Financial Reporting",
@@ -1647,7 +1647,7 @@
       "title": "Solution",
       "microfinance": {
         "name": "Microfinance Banks",
-        "desc": "Unit, Regional, and National MFB licences."
+        "desc": "Unit, Regional, and National banking licences."
       },
       "communityBanks": {
         "name": "Community Banks",
@@ -1655,7 +1655,7 @@
       },
       "cooperatives": {
         "name": "Cooperatives & Islamic Windows",
-        "desc": "Njangi groups and ring-fenced operations."
+        "desc": "community savings groups and ring-fenced operations."
       },
       "smes": {
         "name": "For Businesses & SMEs",
@@ -1679,7 +1679,7 @@
       },
       "jurisdictions": {
         "name": "Supported Jurisdictions",
-        "desc": "Compliance across CEMAC, Nigeria, WAEMU, and more."
+        "desc": "Compliance across multiple African regulatory frameworks."
       },
       "support": {
         "name": "Help Center",
@@ -1729,27 +1729,27 @@
       "institutions": {
         "developmentBanks": {
           "title": "Community Development Banks",
-          "description": "Serving a defined local population with savings, Murabaha home improvement financing, and group lending structures. TIKARI provides the teller operations, Njangi group banking, and the Shariah governance tools you need at community scale.",
+          "description": "Serving a defined local population with savings, Murabaha home improvement financing, and group lending structures. TIKARI provides the teller operations, group banking, and the Shariah governance tools you need at community scale.",
           "features": [
             "Full regulatory-compliant core banking",
-            "Njangi and group savings cycles",
+            "Group savings and rotating savings cycles",
             "Murabaha home improvement financing",
             "Agent banking for field collections"
           ]
         },
         "cooperatives": {
           "title": "Cooperatives & Credit Unions",
-          "description": "Cooperative savings and credit societies operating on non-interest principles require product structures that match how members actually save and borrow. TIKARI supports Qard Hasan (benevolent loans), Mudarabah savings pools, and rotating Njangi group structures.",
+          "description": "Cooperative savings and credit societies operating on non-interest principles require product structures that match how members actually save and borrow. TIKARI supports Qard Hasan (benevolent loans), Mudarabah savings pools, and rotating group structures.",
           "features": [
             "Qard Hasan member loans",
             "Mudarabah savings pools",
-            "Rotating Njangi cycles",
+            "Rotating savings cycles",
             "Member ledger & dividend distribution"
           ]
         },
         "islamicWindows": {
           "title": "Islamic Windows",
-          "description": "Conventional banks and MFBs running a Shariah-compliant window alongside their conventional book require strict segregation between the two ledgers. TIKARI supports Islamic window operations with ring-fenced accounts, separate profit pools, and dedicated Shariah governance.",
+          "description": "Conventional banks and microfinance institutions running a Shariah-compliant window alongside their conventional book require strict segregation between the two ledgers. TIKARI supports Islamic window operations with ring-fenced accounts, separate profit pools, and dedicated Shariah governance.",
           "features": [
             "Ring-fenced Islamic window GL",
             "Profit pool segregated from conventional book",
@@ -1760,10 +1760,10 @@
       },
       "keyFeatures": {
         "title": "Built for African Community Banking",
-        "subtitle": "From Njangi group ledgers to regulatory reporting, TIKARI handles the unique requirements of community-scale Islamic banking across Africa.",
+        "subtitle": "From group banking ledgers to regulatory reporting, TIKARI handles the unique requirements of community-scale Islamic banking across Africa.",
         "features": {
-          "njangi": {
-            "title": "Njangi Group Banking",
+          "groupBanking": {
+            "title": "Group Banking & Rotating Savings",
             "description": "Digital rotating savings cycles with automated turn distribution and member contribution tracking."
           },
           "qardHasan": {
@@ -1778,7 +1778,7 @@
             "title": "Shariah Governance",
             "description": "Built-in Fatwa repository, product approval workflows, and Shariah Supervisory Board dashboard."
           },
-          "cobac": {
+          "regulatory": {
             "title": "Regulatory Reporting",
             "description": "Automated generation of all community banking prudential returns directly from live GL data."
           },
@@ -1803,7 +1803,7 @@
       },
       "cta": {
         "title": "Ready to Launch Community-Scale Islamic Banking?",
-        "description": "Schedule a personalized demo to see how TIKARI manages Njangi groups, Qard Hasan loans, and Islamic window operations for Africa's community banking sector.",
+        "description": "Schedule a personalized demo to see how TIKARI manages group banking, Qard Hasan loans, and Islamic window operations for Africa's community banking sector.",
         "buttons": {
           "demo": "Schedule a Demo",
           "platform": "Explore the Platform"
@@ -1813,7 +1813,7 @@
     "cooperatives": {
       "hero": {
         "title": "Cooperatives & Islamic Windows",
-        "subtitle": "Non-interest banking beyond the MFB license. Cooperative credit unions, Njangi groups, and Islamic window operations have unique structures that don't fit a conventional core. TIKARI is built to handle them properly.",
+        "subtitle": "Non-interest banking for cooperative institutions. Cooperative credit unions, rotating savings groups, and Islamic window operations have unique structures that don't fit a conventional core. TIKARI is built to handle them properly.",
         "cta": {
           "demo": "Book a Demo",
           "platform": "See the Platform"
@@ -1821,11 +1821,11 @@
       },
       "whatWeSupport": {
         "title": "What We Support",
-        "subtitle": "From simple Njangi groups to full Shariah window operations."
+        "subtitle": "From simple rotating savings groups to full Shariah window operations."
       },
       "supportTypes": {
-        "njangi": {
-          "title": "Rotating Njangi Groups",
+        "rotatingGroups": {
+          "title": "Rotating Savings Groups",
           "description": "Structured group savings cycles with member contribution tracking, rotation schedules, automatic disbursement to the designated beneficiary, and a full audit trail. Supports both fixed-amount and variable-contribution groups."
         },
         "mudarabah": {
@@ -1843,7 +1843,7 @@
       },
       "keyFeatures": {
         "title": "Built for Africa's Cooperative Sector",
-        "subtitle": "From traditional Njangi cycles to modern Islamic finance structures, TIKARI handles the full spectrum of non-interest cooperative banking.",
+        "subtitle": "From traditional rotating savings cycles to modern Islamic finance structures, TIKARI handles the full spectrum of non-interest cooperative banking.",
         "features": {
           "rotation": {
             "title": "Automated Rotation Cycles",
@@ -1873,11 +1873,11 @@
       },
       "compliance": {
         "title": "Regulatory Compliance for Cooperative Structures",
-        "description1": "TIKARI generates all required regulatory returns for cooperative financial institutions, including specialized reporting for Njangi group operations and profit-sharing investment pools.",
+        "description1": "TIKARI generates all required regulatory returns for cooperative financial institutions, including specialized reporting for rotating savings group operations and profit-sharing investment pools.",
         "description2": "For Islamic windows, the platform maintains complete audit trails showing the segregation between conventional and Islamic operations, satisfying both banking regulators and Shariah Supervisory Boards.",
         "items": [
           "Member contribution and withdrawal records",
-          "Njangi rotation schedule and turn history",
+          "Rotation schedule and turn history",
           "Profit pool performance and distribution",
           "Qard Hasan loan portfolio tracking",
           "Islamic window segregation reports",
@@ -1886,7 +1886,7 @@
       },
       "cta": {
         "title": "Ready to Digitalize Your Cooperative Operations?",
-        "description": "Schedule a personalized demo to see how TIKARI manages Njangi groups, Mudarabah pools, Qard Hasan loans, and Islamic window operations for Africa's cooperative sector.",
+        "description": "Schedule a personalized demo to see how TIKARI manages rotating savings groups, Mudarabah pools, Qard Hasan loans, and Islamic window operations for Africa's cooperative sector.",
         "buttons": {
           "demo": "Schedule a Demo",
           "platform": "Explore the Platform"
@@ -2175,16 +2175,16 @@
     "intro": "Designed for Africa's diverse regulatory landscape, TIKARI is configured to adapt to local central bank guidelines and microfinance directives.",
     "regions": {
       "cemac": {
-        "title": "CEMAC Region (COBAC & BEAC)",
-        "desc": "Full compliance with COBAC microfinance regulations (Category 1, 2, and 3) and BEAC monetary directives. Pre-configured for XAF and automated prudential returns."
+        "title": "Central Africa Region",
+        "desc": "Full compliance with regional banking regulations for microfinance institutions and monetary directives. Pre-configured for local currencies and automated prudential returns."
       },
       "nigeria": {
         "title": "Nigeria (CBN)",
         "desc": "Aligned with the Central Bank of Nigeria's (CBN) regulatory guidelines for non-interest financial institutions, supporting non-interest window models and full ledger segregation."
       },
       "waemu": {
-        "title": "WAEMU Region (BCEAO)",
-        "desc": "Compliant with the Central Bank of West African States (BCEAO) prudential requirements for non-interest microfinance and banking institutions, pre-configured for XOF operations."
+        "title": "West Africa Region",
+        "desc": "Compliant with regional central bank prudential requirements for non-interest microfinance and banking institutions, pre-configured for local currency operations."
       },
       "eastafrica": {
         "title": "East Africa & Others",
@@ -2216,8 +2216,8 @@
     "brand": {
       "description": "Africa's leading faith-based non-interest banking platform. Complete AAOIFI-compliant financial infrastructure engineered for Islamic banking, microfinance, and traditional savings systems.",
       "beacCompliant": "Regulator Ready",
-      "cemacRegion": "Supported Jurisdictions",
-      "location": "Douala, Cameroon",
+      "cemacRegion": "Pan-African Coverage",
+      "location": "Africa",
       "phone": "+237 677 777 777",
       "email": "info@tikari.cm"
     },

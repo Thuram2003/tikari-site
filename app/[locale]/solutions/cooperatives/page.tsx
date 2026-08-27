@@ -21,8 +21,8 @@ export default function CooperativesWindowsPage() {
   const t = useTranslations("solutions.cooperatives");
   const supportTypes = [
     {
-      title: t("supportTypes.njangi.title"),
-      description: t("supportTypes.njangi.description"),
+      title: t("supportTypes.rotatingGroups.title"),
+      description: t("supportTypes.rotatingGroups.description"),
       icon: UsersFour,
       image: "/women-market.jpg",
       color: "bg-tikari-green-dark"
