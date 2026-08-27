@@ -18,7 +18,7 @@
       "title": "Conçu pour soutenir",
       "subtitle": "Aligné avec les cadres bancaires sans intérêt des juridictions supportées",
       "items": {
-        "régulateur bancaire": {
+        "cobac": {
           "title": "Directives régulateur bancaire EMF",
           "desc": "Règles de microfinance de la Commission Bancaire de l'Afrique Centrale"
         },
@@ -53,7 +53,7 @@
           "title": "Reconnaissance des revenus mal étiquetée",
           "desc": "Les plateformes héritées étiquettent le profit Murabaha comme \"revenu d'intérêts\" dans les rapports et grands livres. Votre conseil Shariah le voit. Vos auditeurs le signalent."
         },
-        "régulateur bancaire": {
+        "cobac": {
           "title": "Les rapports réglementaires sont un chaos manuel",
           "desc": "Les déclarations réglementaires compilées à la main à partir de dizaines d'exports et feuilles de calcul séparés. Chaque trimestre ressemble à une crise d'audit."
         },
@@ -204,7 +204,7 @@
           "title": "Construit à partir du grand livre",
           "desc": "Le plan comptable AAOIFI, la reconnaissance des revenus Murabaha différés (FAS 2) et la distribution des bénéfices Mudarabah (FAS 3) ne sont pas des ajouts. Ils sont la fondation. Les hypothèses GL de la banque conventionnelle n'existent pas ici."
         },
-        "régulateur bancaire": {
+        "cobac": {
           "title": "Reporting natif régulateur bancaire",
           "desc": "État de la Situation Financière, Déclarations Prudentielles, Adéquation des Fonds Propres, Ratio de Liquidité, soumission au bureau de crédit et calculs de primes d'assurance des dépÃ´ts. Tout généré à partir du grand livre en direct sur demande. Pas à partir d'exports et de formules."
         },
