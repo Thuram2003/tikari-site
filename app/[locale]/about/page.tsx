@@ -14,11 +14,11 @@ import {
 import { Button } from "@/components/ui";
 
 export const metadata: Metadata = {
-  title: "About TIKARI | Islamic Banking Platform for CEMAC",
-  description: "Learn about TIKARI's mission to bring Shariah-compliant banking to Central Africa. Meet our Shariah Supervisory Board and discover our commitment to BEAC compliance.",
+  title: "About TIKARI | Islamic Banking Platform",
+  description: "Learn about TIKARI's mission to bring Shariah-compliant banking to African financial markets. Meet our Shariah Supervisory Board and discover our commitment to regulatory compliance.",
   openGraph: {
-    title: "About TIKARI - Faith-Based Banking for CEMAC",
-    description: "Cameroon's first Islamic banking platform, certified by scholars and approved by BEAC.",
+    title: "About TIKARI - Faith-Based Banking Solutions",
+    description: "A leading Islamic banking platform, certified by scholars and compliant with regional central bank regulations.",
   },
 };
 
@@ -40,10 +40,10 @@ export default function AboutPage() {
     },
     {
       name: "Sheikh Ibrahim Kamara",
-      title: "Regional Shariah Officer (CEMAC)",
+      title: "Regional Shariah Officer",
       credentials: "Master's Islamic Law, University of Madinah",
-      expertise: "CEMAC regulatory compliance and local fatwa adaptation",
-      certifications: ["BEAC Approved", "COBAC Certified"],
+      expertise: "Regional regulatory compliance and local fatwa adaptation",
+      certifications: ["Central Bank Approved", "Compliance Certified"],
     },
   ];
 
@@ -55,13 +55,13 @@ export default function AboutPage() {
     },
     {
       icon: Certificate,
-      title: "BEAC Approved",
-      description: "Fully licensed and compliant with BEAC (Banque des États de l'Afrique Centrale) regulations governing the CEMAC region."
+      title: "Regulator Ready",
+      description: "Fully compliant with regional central bank guidelines (such as BEAC/COBAC, BCEAO, and CBN directives)."
     },
     {
       icon: Users,
       title: "Community First",
-      description: "Built for the underserved microfinance institutions, cooperatives, and community banks across Cameroon and Central Africa."
+      description: "Built for the underserved microfinance institutions, cooperatives, and community banks across supported jurisdictions in Africa."
     },
     {
       icon: BookOpen,
@@ -80,11 +80,11 @@ export default function AboutPage() {
         
         <div className="max-w-4xl mx-auto relative">
           <h1 className="text-4xl lg:text-6xl font-bold leading-tight tracking-tight mb-6">
-            Banking Without Riba<br />for Central Africa
+            Banking Without Riba<br />for African Markets
           </h1>
           
           <p className="text-xl text-white/85 leading-relaxed max-w-2xl">
-            TIKARI is Cameroon's first faith-based, non-interest banking platform engineered for Islamic banking, microfinance, and traditional savings systems across the CEMAC region.
+            TIKARI is a faith-based, non-interest banking platform engineered for Islamic banking, microfinance, and traditional savings systems across multiple African jurisdictions.
           </p>
         </div>
       </section>
@@ -104,10 +104,10 @@ export default function AboutPage() {
                 Bringing Ethical Banking to the Underserved
               </h2>
               <p className="text-tikari-sage leading-relaxed mb-6">
-                Millions of Muslims in CEMAC avoid conventional banks due to riba (interest) concerns. At the same time, community banks and cooperatives struggle with outdated systems that don't support Shariah-compliant operations.
+                Millions of Muslims across Africa avoid conventional banks due to riba (interest) concerns. At the same time, community banks and cooperatives struggle with outdated systems that don't support Shariah-compliant operations.
               </p>
               <p className="text-tikari-sage leading-relaxed mb-6">
-                TIKARI bridges this gap providing a complete, AAOIFI-certified core banking engine that handles everything from Murabaha financing to profit-sharing investment accounts, while staying fully compliant with BEAC and COBAC regulations.
+                TIKARI bridges this gap providing a complete, AAOIFI-certified core banking engine that handles everything from Murabaha financing to profit-sharing investment accounts, while staying fully compliant with regional central bank and accounting regulations.
               </p>
               <div className="flex flex-wrap gap-3">
                 <div className="bg-white border-2 border-tikari-green/20 px-4 py-2 text-sm font-semibold text-tikari-green-dark rounded-full">
@@ -138,7 +138,7 @@ export default function AboutPage() {
                 Like the camel, TIKARI is a <strong>vehicle of ethical exchange</strong>. We don't profit from money itself we profit from <em>productive activity</em>. We don't charge interest we share in <em>real economic outcomes</em>.
               </p>
               <p className="text-tikari-sage leading-relaxed">
-                Our vision: every community bank, cooperative, and microfinance institution in CEMAC should have access to world-class Islamic banking infrastructure transparent, auditable, and certified by scholars.
+                Our vision: every community bank, cooperative, and microfinance institution across our supported regions should have access to world-class Islamic banking infrastructure—transparent, auditable, and certified by scholars.
               </p>
             </div>
 

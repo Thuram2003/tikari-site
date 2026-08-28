@@ -13,22 +13,22 @@ import ScrollSpyContent from "../components/ScrollSpyContent";
 
 export const metadata: Metadata = {
   title: "AAOIFI vs OHADA Accounting Standards Guide | TIKARI",
-  description: "Comprehensive guide to reconciling AAOIFI Islamic accounting standards with CEMAC OHADA requirements. Learn dual compliance strategies for Islamic finance in Central Africa.",
+  description: "Comprehensive guide to reconciling AAOIFI Islamic accounting standards with regional OHADA requirements. Learn dual compliance strategies for Islamic finance in OHADA member states.",
   keywords: [
     "AAOIFI standards",
     "OHADA accounting",
     "Islamic accounting",
-    "CEMAC compliance",
+    "regulatory compliance",
     "dual compliance",
     "Islamic financial reporting",
     "AAOIFI vs OHADA",
-    "Central Africa Islamic finance",
+    "OHADA Islamic finance",
     "Shariah accounting",
     "chart of accounts"
   ],
   openGraph: {
     title: "AAOIFI vs OHADA: Accounting Standards Reconciliation Guide",
-    description: "Learn how to reconcile AAOIFI Islamic accounting standards with CEMAC OHADA requirements for dual compliance.",
+    description: "Learn how to reconcile AAOIFI Islamic accounting standards with OHADA requirements for dual compliance.",
     type: "article",
     publishedTime: "2024-02-01T00:00:00.000Z",
     authors: ["TIKARI Shariah Team"],
@@ -97,7 +97,7 @@ export default function AAOIFIvsOHADAPage() {
             AAOIFI vs OHADA Standards
           </h1>
           <p className="text-lg lg:text-xl text-white/85 leading-relaxed max-w-3xl">
-            Reconciling AAOIFI Islamic accounting standards with CEMAC OHADA requirements: a comprehensive dual compliance guide for financial institutions.
+            Reconciling AAOIFI Islamic accounting standards with regional OHADA requirements: a comprehensive dual compliance guide for financial institutions.
           </p>
         </div>
       </section>
@@ -134,7 +134,7 @@ export default function AAOIFIvsOHADAPage() {
                 {/* Introduction */}
                 <div id="introduction">
                   <p className="text-xl lg:text-2xl text-tikari-green-dark font-semibold leading-relaxed mb-8 !mt-0">
-                    Islamic financial institutions operating in CEMAC face a unique challenge: they must comply with both AAOIFI Islamic accounting standards and OHADA regional accounting regulations. This dual compliance framework requires careful reconciliation to satisfy Shariah boards, regulators, and stakeholders.
+                    Islamic financial institutions operating in OHADA member states face a unique challenge: they must comply with both AAOIFI Islamic accounting standards and OHADA regional accounting regulations. This dual compliance framework requires careful reconciliation to satisfy Shariah boards, regulators, and stakeholders.
                   </p>
 
                   <p>
@@ -146,7 +146,7 @@ export default function AAOIFIvsOHADAPage() {
                     <ul className="space-y-2 text-tikari-sage">
                       <li className="flex gap-2">
                         <CheckCircle className="h-5 w-5 text-tikari-green-dark flex-shrink-0 mt-0.5" weight="bold" />
-                        <span><strong>Regulatory compliance:</strong> COBAC requires OHADA-compliant reporting</span>
+                        <span><strong>Regulatory compliance:</strong> Regional central banks require OHADA-compliant reporting</span>
                       </li>
                       <li className="flex gap-2">
                         <CheckCircle className="h-5 w-5 text-tikari-green-dark flex-shrink-0 mt-0.5" weight="bold" />
@@ -197,7 +197,7 @@ export default function AAOIFIvsOHADAPage() {
                 {/* OHADA Overview */}
                 <h2 id="ohada-overview" className="font-bold text-xl pt-4">What is OHADA?</h2>
                 <p>
-                  The <strong>Organisation pour l'Harmonisation en Afrique du Droit des Affaires (OHADA)</strong> is a system harmonizing business law across 17 West and Central African countries, including all six CEMAC member states.
+                  The <strong>Organisation pour l'Harmonisation en Afrique du Droit des Affaires (OHADA)</strong> is a system harmonizing business law across 17 West and Central African countries, including both CEMAC and WAEMU member states.
                 </p>
 
                 <h3 className="font-bold text-lg pt-2">OHADA Accounting Framework</h3>
@@ -219,9 +219,9 @@ export default function AAOIFIvsOHADAPage() {
                   <li><strong>Legal enforceability:</strong> OHADA rulings supersede national laws</li>
                 </ul>
 
-                <h3 className="font-bold text-lg pt-2">CEMAC Application</h3>
+                <h3 className="font-bold text-lg pt-2">OHADA & Central Bank Application</h3>
                 <p>
-                  In CEMAC countries (Cameroon, CAR, Chad, Congo, Equatorial Guinea, Gabon), <strong>COBAC</strong> (the banking regulator) requires all financial institutions to:
+                  In member countries across West and Central Africa, regional banking regulators (such as <strong>COBAC</strong> for CEMAC or <strong>BCEAO</strong> for WAEMU) require all financial institutions to:
                 </p>
                 <ul>
                   <li>Use SYSCOHADA chart of accounts</li>
@@ -500,7 +500,7 @@ export default function AAOIFIvsOHADAPage() {
                   <li><strong>Run automated mapping:</strong> Convert AAOIFI balances to SYSCOHADA accounts</li>
                   <li><strong>Generate OHADA statements:</strong> Produce balance sheet, income statement, and notes</li>
                   <li><strong>Perform variance analysis:</strong> Verify that AAOIFI and OHADA reports reconcile</li>
-                  <li><strong>Submit to COBAC:</strong> File OHADA-compliant reports with the regulator</li>
+                  <li><strong>Submit to Regulator:</strong> File OHADA-compliant reports with your central bank (such as COBAC or BCEAO)</li>
                   <li><strong>Prepare AAOIFI report for Shariah board:</strong> Provide Islamic finance-specific analysis</li>
                 </ol>
 
@@ -519,7 +519,7 @@ export default function AAOIFIvsOHADAPage() {
                 {/* Practical Implementation */}
                 <h2 id="practical-implementation" className="font-bold text-xl pt-4">Practical Implementation Tips</h2>
                 <p>
-                  Based on real-world experience from CEMAC Islamic finance institutions:
+                  Based on real-world experience from Islamic finance institutions operating in OHADA zones:
                 </p>
 
                 <h3 className="font-bold text-lg pt-2">1. Start with Core Products</h3>
@@ -538,7 +538,7 @@ export default function AAOIFIvsOHADAPage() {
                 <h3 className="font-bold text-lg pt-2">2. Engage Both AAOIFI and OHADA Experts</h3>
                 <ul>
                   <li><strong>Hire an AAOIFI-certified accountant:</strong> Ensure someone on your team understands Islamic finance accounting principles</li>
-                  <li><strong>Consult OHADA practitioners:</strong> Work with accountants experienced in CEMAC regulatory reporting</li>
+                  <li><strong>Consult OHADA practitioners:</strong> Work with accountants experienced in regional regulatory reporting</li>
                   <li><strong>Coordinate with Shariah board:</strong> Ensure accounting treatments align with Shariah interpretations</li>
                 </ul>
 
@@ -579,7 +579,7 @@ export default function AAOIFIvsOHADAPage() {
 
                 <h3 className="font-bold text-lg pt-2">TIKARI's Dual Compliance Features</h3>
                 <p>
-                  TIKARI is purpose-built for Islamic finance in CEMAC:
+                  TIKARI is purpose-built for Islamic finance across African regulatory environments:
                 </p>
 
                 <div className="not-prose my-8">
@@ -598,12 +598,12 @@ export default function AAOIFIvsOHADAPage() {
                       {
                         icon: Globe,
                         title: "Bilingual Reporting",
-                        description: "Generate statements in both French (for COBAC) and English (for stakeholders)"
+                        description: "Generate statements in both French (for regulators) and English (for stakeholders)"
                       },
                       {
                         icon: Bank,
-                        title: "COBAC Submission-Ready",
-                        description: "Export reports in formats required by CEMAC banking regulator"
+                        title: "Regulator Submission-Ready",
+                        description: "Export reports in formats required by regional banking regulators (like COBAC and BCEAO)"
                       }
                     ].map((feature, idx) => {
                       const Icon = feature.icon;
@@ -628,7 +628,7 @@ export default function AAOIFIvsOHADAPage() {
                     <div>
                       <h4 className="text-xl font-bold text-tikari-green-dark mb-3">Simplify Dual Compliance with TIKARI</h4>
                       <p className="text-tikari-sage text-base leading-relaxed mb-4">
-                        Stop juggling spreadsheets and manual mappings. TIKARI automates AAOIFI-to-OHADA reconciliation, generates both statement formats, and keeps you compliant with COBAC and Shariah requirements.
+                        Stop juggling spreadsheets and manual mappings. TIKARI automates AAOIFI-to-OHADA reconciliation, generates both statement formats, and keeps you compliant with regional central bank and Shariah requirements.
                       </p>
                       <Button
                         variant="primary"
