@@ -7,7 +7,7 @@ export default function HeroSection() {
   const t = useTranslations("home.hero");
   
   return (
-    <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden pt-16">
+    <section className="relative w-full min-h-[600px] lg:h-[750px] max-h-[750px] flex items-center justify-center overflow-hidden pt-16">
       
       {/* Background Image */}
       <div className="absolute inset-0">
