@@ -13,7 +13,7 @@ import ScrollSpyContent from "../components/ScrollSpyContent";
 
 export const metadata: Metadata = {
   title: "Profit-Sharing Ratio (PSR) Disclosure Guide | TIKARI",
-  description: "Complete guide to properly disclosing Profit-Sharing Ratios (PSR) in Mudarabah accounts. Learn AAOIFI requirements, transparency best practices, and CEMAC compliance.",
+  description: "Complete guide to properly disclosing Profit-Sharing Ratios (PSR) in Mudarabah accounts. Learn AAOIFI requirements, transparency best practices, and regulatory compliance.",
   keywords: [
     "profit sharing ratio",
     "PSR disclosure",
@@ -23,11 +23,11 @@ export const metadata: Metadata = {
     "AAOIFI standards",
     "transparent banking",
     "Islamic finance disclosure",
-    "CEMAC Islamic banking",
+    "regulatory compliance",
     "customer transparency"
   ],
   openGraph: {
-    title: "Profit-Sharing Ratio Disclosure: Complete Guide for CEMAC",
+    title: "Profit-Sharing Ratio Disclosure: Complete Guide",
     description: "Learn how to properly disclose PSR to customers in Mudarabah investment accounts while meeting Shariah and regulatory requirements.",
     type: "article",
     publishedTime: "2024-01-25T00:00:00.000Z",
@@ -46,7 +46,7 @@ export default function ProfitSharingRatioPage() {
     { id: "disclosure-best-practices", title: "Disclosure Best Practices" },
     { id: "calculation-examples", title: "Calculation Examples" },
     { id: "common-mistakes", title: "Common Mistakes" },
-    { id: "cemac-context", title: "CEMAC Compliance" },
+    { id: "regulatory-context", title: "Regulatory Compliance" },
     { id: "customer-education", title: "Customer Education" },
   ];
 
@@ -65,7 +65,7 @@ export default function ProfitSharingRatioPage() {
     },
     {
       title: "AAOIFI vs OHADA Standards",
-      description: "Reconciling Islamic accounting with CEMAC standards",
+      description: "Reconciling Islamic accounting with OHADA standards",
       href: "/resources/education/aaoifi-vs-ohada",
       duration: "15 min read"
     }
@@ -296,7 +296,7 @@ export default function ProfitSharingRatioPage() {
                     </div>
                   </div>
                   <p className="text-sm text-tikari-sage mt-4 italic">
-                    If the bank earns 1,000,000 FCFA in profit from your investment, you receive 700,000 FCFA and the bank receives 300,000 FCFA.
+                    If the bank earns 1,000,000 units in profit from your investment, you receive 700,000 units and the bank receives 300,000 units.
                   </p>
                 </div>
 
@@ -321,27 +321,27 @@ export default function ProfitSharingRatioPage() {
                 <h3 className="font-bold text-lg pt-2">Scenario 1: Simple Profit Distribution</h3>
                 <div className="not-prose my-6 p-6 bg-tikari-cream rounded-2xl">
                   <p className="text-tikari-sage mb-4">
-                    <strong className="text-tikari-green-dark">Setup:</strong> A customer deposits 10,000,000 FCFA into a Mudarabah investment account with a PSR of 60:40 (60% customer, 40% bank).
+                    <strong className="text-tikari-green-dark">Setup:</strong> A customer deposits 10,000,000 units into a Mudarabah investment account with a PSR of 60:40 (60% customer, 40% bank).
                   </p>
                   <p className="text-tikari-sage mb-4">
-                    <strong className="text-tikari-green-dark">Performance:</strong> The bank invests the funds and earns 800,000 FCFA in profit over the year.
+                    <strong className="text-tikari-green-dark">Performance:</strong> The bank invests the funds and earns 800,000 units in profit over the year.
                   </p>
                   <div className="space-y-2 text-tikari-sage">
                     <div className="flex justify-between py-2 border-b border-tikari-green/20">
                       <span>Total Profit:</span>
-                      <span className="font-mono">800,000 FCFA</span>
+                      <span className="font-mono">800,000 units</span>
                     </div>
                     <div className="flex justify-between py-2 border-b border-tikari-green/20">
                       <span className="font-semibold">Customer Share (60%):</span>
-                      <span className="font-mono font-semibold text-tikari-green-dark">480,000 FCFA</span>
+                      <span className="font-mono font-semibold text-tikari-green-dark">480,000 units</span>
                     </div>
                     <div className="flex justify-between py-2">
                       <span>Bank Share (40%):</span>
-                      <span className="font-mono">320,000 FCFA</span>
+                      <span className="font-mono">320,000 units</span>
                     </div>
                     <div className="flex justify-between py-2 border-t-2 border-tikari-green-dark mt-2 pt-2">
                       <span className="font-bold text-tikari-green-dark">Customer Account Balance:</span>
-                      <span className="font-mono font-bold text-tikari-green-dark">10,480,000 FCFA</span>
+                      <span className="font-mono font-bold text-tikari-green-dark">10,480,000 units</span>
                     </div>
                   </div>
                   <p className="text-sm text-tikari-sage mt-4 italic">
@@ -352,27 +352,27 @@ export default function ProfitSharingRatioPage() {
                 <h3 className="font-bold text-lg pt-2">Scenario 2: Loss Scenario</h3>
                 <div className="not-prose my-6 p-6 bg-red-50 border-l-4 border-red-400 rounded-r-2xl">
                   <p className="text-tikari-sage mb-4">
-                    <strong className="text-tikari-green-dark">Setup:</strong> Same customer, same 10,000,000 FCFA deposit, PSR 60:40.
+                    <strong className="text-tikari-green-dark">Setup:</strong> Same customer, same 10,000,000 units deposit, PSR 60:40.
                   </p>
                   <p className="text-tikari-sage mb-4">
-                    <strong className="text-tikari-green-dark">Performance:</strong> The bank's investments perform poorly, resulting in a 300,000 FCFA loss.
+                    <strong className="text-tikari-green-dark">Performance:</strong> The bank's investments perform poorly, resulting in a 300,000 units loss.
                   </p>
                   <div className="space-y-2 text-tikari-sage">
                     <div className="flex justify-between py-2 border-b border-red-300">
                       <span>Total Loss:</span>
-                      <span className="font-mono">-300,000 FCFA</span>
+                      <span className="font-mono">-300,000 units</span>
                     </div>
                     <div className="flex justify-between py-2 border-b border-red-300">
                       <span className="font-semibold">Customer Bears Loss (100%):</span>
-                      <span className="font-mono font-semibold text-red-600">-300,000 FCFA</span>
+                      <span className="font-mono font-semibold text-red-600">-300,000 units</span>
                     </div>
                     <div className="flex justify-between py-2">
                       <span>Bank Bears Loss:</span>
-                      <span className="font-mono">0 FCFA (loses time/effort)</span>
+                      <span className="font-mono">0 units (loses time/effort)</span>
                     </div>
                     <div className="flex justify-between py-2 border-t-2 border-red-600 mt-2 pt-2">
                       <span className="font-bold text-tikari-green-dark">Customer Account Balance:</span>
-                      <span className="font-mono font-bold text-red-600">9,700,000 FCFA</span>
+                      <span className="font-mono font-bold text-red-600">9,700,000 units</span>
                     </div>
                   </div>
                   <p className="text-sm text-tikari-sage mt-4 italic">
@@ -428,7 +428,7 @@ export default function ProfitSharingRatioPage() {
                   {[
                     {
                       mistake: "Using Fixed Amounts Instead of Percentages",
-                      why: "PSR must be expressed as a percentage of profits, not a fixed FCFA amount. Saying \"the bank gets 100,000 FCFA\" violates Mudarabah principles.",
+                      why: "PSR must be expressed as a percentage of profits, not a fixed currency amount. Saying \"the bank gets 100,000 units\" violates Mudarabah principles.",
                       fix: "Always use percentages: \"the bank receives 30% of profits.\""
                     },
                     {
@@ -467,39 +467,37 @@ export default function ProfitSharingRatioPage() {
                   ))}
                 </div>
 
-                {/* CEMAC Context */}
-                <h2 id="cemac-context" className="font-bold text-xl pt-4">PSR Disclosure in CEMAC</h2>
+                {/* Regulatory Context */}
+                <h2 id="regulatory-context" className="font-bold text-xl pt-4">Regulatory Compliance & PSR</h2>
                 <p>
-                  CEMAC countries follow <strong>OHADA accounting standards</strong>, which don't explicitly address Islamic finance. Institutions must therefore:
+                  Disclosure requirements for Profit-Sharing Ratios must satisfy both regional business standards and local central bank guidelines.
                 </p>
 
                 <h3 className="font-bold text-lg pt-2">Dual Compliance Strategy</h3>
                 <ul>
-                  <li><strong>AAOIFI for Shariah:</strong> Follow FAS 6 and FAS 11 for PSR disclosure</li>
-                  <li><strong>OHADA for Reporting:</strong> Map Islamic accounts to OHADA chart of accounts</li>
-                  <li><strong>COBAC for Supervision:</strong> Report Mudarabah accounts as "investment deposits" or "participation accounts"</li>
+                  <li><strong>AAOIFI for Shariah:</strong> Follow FAS 6 and FAS 11 standards for pre-contractual and financial statement disclosure of PSR.</li>
+                  <li><strong>Central Bank Supervision:</strong> Report Mudarabah accounts properly to central banks (e.g. as "investment deposits" under CBN guidelines in Nigeria or "participation accounts" under COBAC in Central Africa).</li>
+                  <li><strong>OHADA Chart of Accounts:</strong> In OHADA-zone countries (West and Central Africa), map the dual-ledger structures carefully to reflect investment pool returns.</li>
                 </ul>
 
-                <h3 className="font-bold text-lg pt-2">Language Considerations</h3>
+                <h3 className="font-bold text-lg pt-2">Language & Regional Adaptations</h3>
                 <p>
-                  CEMAC is primarily Francophone. Ensure PSR documentation is available in French:
+                  Depending on the jurisdiction, documentation must align with official languages and terminology:
                 </p>
                 <ul>
-                  <li><strong>Profit-Sharing Ratio:</strong> <em>Ratio de Partage des Bénéfices (RPB)</em></li>
-                  <li><strong>Mudarabah:</strong> <em>Contrat de Partenariat Financier Mudarabah</em></li>
-                  <li><strong>Capital Provider:</strong> <em>Rab al-Mal (Apporteur de Capital)</em></li>
-                  <li><strong>Fund Manager:</strong> <em>Mudarib (Gestionnaire des Fonds)</em></li>
+                  <li><strong>Francophone Regions (CEMAC, WAEMU):</strong> Translate key terms accurately in French, e.g., <em>Ratio de Partage des Bénéfices (RPB)</em> for PSR.</li>
+                  <li><strong>Anglophone Regions (Nigeria):</strong> Use terms standardized by local non-interest banking circulars.</li>
                 </ul>
 
-                <h3 className="font-bold text-lg pt-2">COBAC Reporting</h3>
+                <h3 className="font-bold text-lg pt-2">Regulatory Reporting Requirements</h3>
                 <p>
-                  Quarterly financial statements submitted to COBAC should include:
+                  Quarterly reports submitted to central banks should generally disclose:
                 </p>
                 <ul>
-                  <li>Total Mudarabah investment account balances</li>
+                  <li>Total Mudarabah investment pool balances</li>
                   <li>Aggregate PSR ranges across account types</li>
-                  <li>Profit/loss allocation to investment account holders</li>
-                  <li>Reserves (PER/IRR) held on behalf of customers</li>
+                  <li>Actual profit/loss allocation paid out to depositors</li>
+                  <li>Reserves (PER/IRR) held on behalf of investment account holders</li>
                 </ul>
 
                 {/* Customer Education */}
@@ -535,7 +533,7 @@ export default function ProfitSharingRatioPage() {
                 <ul>
                   <li>Opening balance</li>
                   <li>Total profits earned by the bank from customer's investment</li>
-                  <li>PSR split (percentage and FCFA amount)</li>
+                  <li>PSR split (percentage and currency amount)</li>
                   <li>Customer's profit credited to account</li>
                   <li>Closing balance</li>
                 </ul>
@@ -546,7 +544,7 @@ export default function ProfitSharingRatioPage() {
                     <div>
                       <h4 className="text-xl font-bold text-tikari-green-dark mb-3">Automate PSR Disclosure with TIKARI</h4>
                       <p className="text-tikari-sage text-base leading-relaxed mb-4">
-                        TIKARI's platform automatically generates Shariah-compliant PSR disclosures, quarterly profit allocation reports, and customer-facing statements all tailored to AAOIFI and CEMAC requirements.
+                        TIKARI's platform automatically generates Shariah-compliant PSR disclosures, quarterly profit allocation reports, and customer-facing statements tailored to AAOIFI and regional central bank requirements (such as CBN, COBAC, BCEAO, and more).
                       </p>
                       <Button
                         variant="primary"
