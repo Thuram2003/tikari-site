@@ -23,7 +23,7 @@
 
 @font-face {
   font-family: 'Flecha M';
-  src: url('/font/FlechaM/FlechaM-Medium.woff2') format('woff2');
+  src: url('/font/FlechaM/FlechaM-Regular.woff2') format('woff2');
   font-weight: 200;
   font-style: normal;
   font-display: swap;
@@ -31,7 +31,7 @@
 
 @font-face {
   font-family: 'Flecha M';
-  src: url('/font/FlechaM/FlechaM-Bold.woff2') format('woff2');
+  src: url('/font/FlechaM/FlechaM-Medium.woff2') format('woff2');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -39,7 +39,7 @@
 
 @font-face {
   font-family: 'Flecha M';
-  src: url('/font/FlechaM/FlechaM-Black.woff2') format('woff2');
+  src: url('/font/FlechaM/FlechaM-Bold.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;

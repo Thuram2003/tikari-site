@@ -126,7 +126,7 @@ export default function Header() {
   return (
     <>
       <header
-        className={`fixed top-0 z-50 w-full transition-all duration-500 ease-out ${scrolled
+        className={`fixed top-0 z-50 w-full transition-all duration-500 ease-out ${(scrolled || mobileMenuOpen)
             ? "bg-white/95 backdrop-blur-md border-b border-tikari-green/10"
             : "bg-transparent border-b border-transparent"
           }`}
@@ -206,7 +206,11 @@ export default function Header() {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="lg:hidden p-2 text-tikari-green-dark hover:bg-tikari-green/5 transition-colors"
+              className={`lg:hidden p-2 transition-colors rounded-lg ${
+                (scrolled || mobileMenuOpen)
+                  ? "text-tikari-green-dark hover:bg-tikari-green/5"
+                  : "text-white hover:bg-white/10"
+              }`}
               aria-label={t("toggleMenu")}
             >
               {mobileMenuOpen ? (
