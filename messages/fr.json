@@ -35,7 +35,7 @@
           "desc": "Déclarations et règles d'assurance des dépôts"
         },
         "gimac": {
-          "title": "SystÃ¨mes Interbancaires",
+          "title": "Systèmes Interbancaires",
           "desc": "Transferts interbancaires et mobile money en temps réel"
         },
         "shariah": {
@@ -341,9 +341,9 @@
           "category": "Opérations Bancaires",
           "description": "Parcours d'intégration client avec vérification de pièce d'identité nationale ou de passeport, procédure KYC à plusieurs niveaux (niveaux 1 à 3), gestion de comptes, services bancaires pour groupes d'épargne communautaires, opérations de guichet, passerelles de paiement interbancaires régionales et services bancaires via agents.",
           "features": [
-            "Vérification biométrique PiÃ¨ce d'identité/Passeport",
+            "Vérification biométrique Pièce d'identité/Passeport",
             "Cycles de groupe d'épargne communautaire & épargne rotative",
-            "Transferts en temps réel SystÃ¨mes de Transfert Interbancaire",
+            "Transferts en temps réel Systèmes de Transfert Interbancaire",
             "Portail agent & agent de terrain",
             "Opérations de caisse multi-agences"
           ],
@@ -417,7 +417,7 @@
         "seeDemo": "Voir dans une démo",
         "items": {
           "systac": {
-            "name": "SystÃ¨mes Interbancaires",
+            "name": "Systèmes Interbancaires",
             "description": "Transferts interbancaires en temps réel"
           },
           "régulateur bancaire": {
@@ -425,7 +425,7 @@
             "description": "12 déclarations prudentielles"
           },
           "cni": {
-            "name": "PiÃ¨ce d'identité / Passeport",
+            "name": "Pièce d'identité / Passeport",
             "description": "Vérification d'identité"
           },
           "fogadac": {
@@ -1615,7 +1615,7 @@
       "title": "Plateforme",
       "bankingOperations": {
         "name": "Opérations Bancaires",
-        "desc": "Vérification PiÃ¨ce d'identité/Passeport, groupes d'épargne communautaires, transferts interbancaires."
+        "desc": "Vérification Pièce d'identité/Passeport, groupes d'épargne communautaires, transferts interbancaires."
       },
       "islamicFinancing": {
         "name": "Financement et Trésorerie Islamique",
