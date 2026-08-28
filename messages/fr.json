@@ -31,7 +31,7 @@
           "desc": "Surveillance des seuils de capital, liquidité et PAR"
         },
         "fogadac": {
-          "title": "Cadre d'Assurance des DépÃ´ts",
+          "title": "Cadre d'Assurance des Dépôts",
           "desc": "Déclarations et règles d'assurance des dépôts"
         },
         "gimac": {
@@ -206,7 +206,7 @@
         },
         "cobac": {
           "title": "Reporting natif régulateur bancaire",
-          "desc": "État de la Situation Financière, Déclarations Prudentielles, Adéquation des Fonds Propres, Ratio de Liquidité, soumission au bureau de crédit et calculs de primes d'assurance des dépÃ´ts. Tout généré à partir du grand livre en direct sur demande. Pas à partir d'exports et de formules."
+          "desc": "État de la Situation Financière, Déclarations Prudentielles, Adéquation des Fonds Propres, Ratio de Liquidité, soumission au bureau de crédit et calculs de primes d'assurance des dépôts. Tout généré à partir du grand livre en direct sur demande. Pas à partir d'exports et de formules."
         },
         "governance": {
           "title": "Flux de travail de Gouvernance Shariah",
@@ -276,7 +276,7 @@
         },
         "compliance": {
           "title": "Posture de conformité réglementaire",
-          "desc": "Métriques de ratio d'adéquation des fonds propres, alertes de ratio de liquidité, suivi des grandes expositions, soumissions de primes d'assurance des dépÃ´ts et journaux de déclarations prudentielles régulateur bancaire visibles en temps réel pour les agents de conformité autorisés."
+          "desc": "Métriques de ratio d'adéquation des fonds propres, alertes de ratio de liquidité, suivi des grandes expositions, soumissions de primes d'assurance des dépôts et journaux de déclarations prudentielles régulateur bancaire visibles en temps réel pour les agents de conformité autorisés."
         }
       }
     },
@@ -429,7 +429,7 @@
             "description": "Vérification d'identité"
           },
           "fogadac": {
-            "name": "Assurance des DépÃ´ts",
+            "name": "Assurance des Dépôts",
             "description": "Reporting d'assurance-dépôts"
           },
           "AML/CFT": {
