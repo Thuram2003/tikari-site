@@ -1259,7 +1259,7 @@
           "title": "Mobile Money Integration",
           "subtitle": "Mobile money interoperability for deposits and withdrawals",
           "features": {
-            "mobileMoneyApi": {
+            "mtnApi": {
               "title": "Mobile Money API",
               "description": "Direct integration with mobile money providers for account-to-wallet transfers and wallet-to-account deposits"
             },

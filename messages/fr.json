@@ -1259,7 +1259,7 @@
           "title": "Intégration Mobile Money",
           "subtitle": "Interopérabilité mobile money pour dépôts et retraits",
           "features": {
-            "mobileMoneyApi": {
+            "mtnApi": {
               "title": "API Mobile Money",
               "description": "Intégration directe avec les fournisseurs mobile money pour transferts compte-vers-portefeuille et dépôts portefeuille-vers-compte"
             },

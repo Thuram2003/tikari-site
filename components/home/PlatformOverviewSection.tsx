@@ -28,19 +28,19 @@ export default function PlatformOverviewSection() {
     {
       title: t("modules.gl.title"),
       desc: t("modules.gl.desc"),
-      link: "/platform",
+      link: "/platform/gl-reporting",
       image: "/personOffice.jpg"
     },
     {
       title: t("modules.agent.title"),
       desc: t("modules.agent.desc"),
-      link: "/platform/agent",
+      link: "/platform/agent-banking",
       image: "/mulsimwoman.jpg"
     },
     {
       title: t("modules.admin.title"),
       desc: t("modules.admin.desc"),
-      link: "/platform",
+      link: "/platform/administration",
       image: "/meeting.jpg"
     }
   ];
