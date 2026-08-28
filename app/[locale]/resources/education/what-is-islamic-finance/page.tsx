@@ -13,8 +13,8 @@ import { Button } from "@/components/ui";
 import ScrollSpyContent from "../components/ScrollSpyContent";
 
 export const metadata: Metadata = {
-  title: "What is Islamic Finance? Complete Guide for CEMAC | TIKARI",
-  description: "Comprehensive introduction to Islamic finance principles, Shariah-compliant banking, and how it works in Central Africa. Learn about riba prohibition, profit-sharing, and ethical investing.",
+  title: "What is Islamic Finance? Complete Guide | TIKARI",
+  description: "Comprehensive introduction to Islamic finance principles, Shariah-compliant banking, and how it works across different jurisdictions. Learn about riba prohibition, profit-sharing, and ethical investing.",
   keywords: [
     "Islamic finance",
     "Shariah banking",
@@ -22,14 +22,13 @@ export const metadata: Metadata = {
     "halal finance",
     "riba prohibition",
     "profit sharing",
-    "CEMAC Islamic banking",
-    "Central Africa Islamic finance",
+    "regulatory compliance",
     "ethical banking",
     "Shariah compliance"
   ],
   openGraph: {
-    title: "What is Islamic Finance? Complete Guide for CEMAC",
-    description: "Learn the foundations of Islamic finance: core principles, products, and how Shariah-compliant banking works in Central Africa.",
+    title: "What is Islamic Finance? Complete Guide",
+    description: "Learn the foundations of Islamic finance: core principles, products, and how Shariah-compliant banking works across different regulatory environments.",
     type: "article",
     publishedTime: "2024-01-15T00:00:00.000Z",
     authors: ["TIKARI Shariah Team"],
@@ -48,7 +47,7 @@ export default function WhatIsIslamicFinancePage() {
     { id: "asset-backed", title: "Asset-Backed Transactions" },
     { id: "ethical-investment", title: "Ethical Investment Screens" },
     { id: "common-products", title: "Common Islamic Products" },
-    { id: "cemac-context", title: "Islamic Finance in CEMAC" },
+    { id: "regulatory-context", title: "Regulatory Frameworks" },
     { id: "getting-started", title: "Getting Started" },
   ];
 
@@ -67,7 +66,7 @@ export default function WhatIsIslamicFinancePage() {
     },
     {
       title: "AAOIFI vs OHADA Standards",
-      description: "Reconciling Islamic accounting with CEMAC standards",
+      description: "Reconciling Islamic accounting with OHADA standards",
       href: "/resources/education/aaoifi-vs-ohada",
       duration: "15 min read"
     }
@@ -98,7 +97,7 @@ export default function WhatIsIslamicFinancePage() {
             What is Islamic Finance?
           </h1>
           <p className="text-lg lg:text-xl text-white/85 leading-relaxed max-w-3xl">
-            A comprehensive introduction to Shariah-compliant banking, core principles, and how Islamic finance operates in the CEMAC region.
+            A comprehensive introduction to Shariah-compliant banking, core principles, and how Islamic finance operates across different regulatory environments.
           </p>
         </div>
       </section>
@@ -143,7 +142,7 @@ export default function WhatIsIslamicFinancePage() {
                   </p>
 
                   <p>
-                    In the <strong>CEMAC (Central African Economic and Monetary Community)</strong> region, Islamic finance is growing rapidly as institutions seek alternatives to conventional banking that better serve Muslim populations while remaining compliant with regional regulations like <strong>COBAC microfinance directives</strong> and <strong>OHADA accounting standards</strong>.
+                    Across regions like West and Central Africa (including <strong>CEMAC</strong> and <strong>WAEMU</strong>) as well as Nigeria (under the <strong>CBN</strong>), Islamic finance is growing rapidly as institutions seek alternatives to conventional banking that better serve diverse populations while remaining compliant with regional banking regulations and international accounting frameworks.
                   </p>
                 </div>
 
@@ -355,34 +354,35 @@ export default function WhatIsIslamicFinancePage() {
                   </div>
                 </div>
 
-                {/* CEMAC Context */}
-                <h2 id="cemac-context" className="font-bold text-xl pt-4">Islamic Finance in CEMAC</h2>
+                {/* Regulatory Context */}
+                <h2 id="regulatory-context" className="font-bold text-xl pt-4">Regulatory & Regional Frameworks</h2>
                 <p>
-                  The <strong>CEMAC region</strong> (Cameroon, Central African Republic, Chad, Republic of Congo, Equatorial Guinea, and Gabon) presents unique opportunities and challenges for Islamic finance:
+                  Islamic finance operates within various regulatory frameworks across Africa, depending on the region and the central bank's guidelines.
                 </p>
 
-                <h3 className="font-bold text-lg pt-2">Regulatory Framework</h3>
+                <h3 className="font-bold text-lg pt-2">Major Regulatory Frameworks</h3>
                 <ul>
-                  <li><strong>COBAC oversight:</strong> The Central African Banking Commission regulates microfinance institutions, including those offering Islamic products.</li>
-                  <li><strong>OHADA accounting:</strong> CEMAC member states follow OHADA (Organisation for the Harmonisation of Business Law in Africa) accounting standards, which must be reconciled with AAOIFI Islamic accounting standards.</li>
-                  <li><strong>BEAC monetary policy:</strong> The Bank of Central African States controls monetary policy and FCFA currency issuance.</li>
+                  <li><strong>CBN Guidelines (Nigeria):</strong> The Central Bank of Nigeria has established frameworks for non-interest banking windows, full non-interest bank operations, and regulatory segregation of general ledgers.</li>
+                  <li><strong>COBAC & BEAC (Central Africa / CEMAC):</strong> Microfinance institutions and banks follow directives set by the Central African Banking Commission and monetary policies by the Bank of Central African States.</li>
+                  <li><strong>BCEAO (West Africa / WAEMU):</strong> Member states in Francophone West Africa operate under regional central bank frameworks that govern microfinance and banking prudential regulations.</li>
+                  <li><strong>OHADA Harmonization:</strong> 17 West and Central African nations follow OHADA business laws, requiring dual compliance by mapping AAOIFI Islamic accounting to OHADA standard charts of accounts.</li>
                 </ul>
 
-                <h3 className="font-bold text-lg pt-2">Market Opportunities</h3>
+                <h3 className="font-bold text-lg pt-2">Opportunities & Alignment</h3>
                 <ul>
-                  <li><strong>Large Muslim population:</strong> Significant demand for Shariah-compliant financial services, especially in Chad, northern Cameroon, and parts of CAR.</li>
-                  <li><strong>SME financing gap:</strong> Islamic finance products like Murabaha and Musharakah can address the capital needs of small businesses.</li>
-                  <li><strong>Agricultural sector:</strong> Salam and Mudarabah structures are well-suited for agricultural financing, a major economic sector in CEMAC.</li>
-                  <li><strong>Regional integration:</strong> CEMAC's common currency (FCFA) and regulatory harmonization facilitate cross-border Islamic banking.</li>
+                  <li><strong>Inclusion & SME Support:</strong> Shariah-compliant tools like Murabaha and Musharakah bridge the financing gap for small businesses and smallholder farmers.</li>
+                  <li><strong>Standardized Governance:</strong> Strong alignment with international bodies like the Accounting and Auditing Organization for Islamic Financial Institutions (AAOIFI) simplifies compliance audits.</li>
                 </ul>
 
-                <h3 className="font-bold text-lg pt-2">Challenges</h3>
+                <h3 className="font-bold text-lg pt-2">Key Challenges</h3>
                 <ul>
-                  <li><strong>Regulatory clarity:</strong> Some CEMAC countries lack specific Islamic banking regulations, requiring institutions to navigate general banking laws.</li>
-                  <li><strong>Shariah expertise:</strong> Limited availability of qualified Shariah scholars and auditors in the region.</li>
-                  <li><strong>Customer education:</strong> Many potential customers are unfamiliar with Islamic finance structures and terminology.</li>
-                  <li><strong>Dual compliance:</strong> Institutions must satisfy both Islamic requirements (AAOIFI, Shariah boards) and CEMAC regulations (COBAC, OHADA).</li>
+                  <li><strong>Lack of Specific Regulations:</strong> Some jurisdictions require non-interest financial products to operate under conventional banking acts, creating compliance friction.</li>
+                  <li><strong>Dual Compliance Audits:</strong> Financial institutions must satisfy both local central bank guidelines and external Shariah Advisory Board requirements.</li>
                 </ul>
+
+                <p>
+                  For a detailed list of supported regions, standards, and specific central bank compliance details, visit our <Link href="/jurisdictions" className="font-bold text-tikari-green-dark hover:underline">Supported Jurisdictions</Link> page.
+                </p>
 
                 {/* Getting Started */}
                 <h2 id="getting-started" className="font-bold text-xl pt-4">Getting Started with Islamic Finance</h2>
@@ -393,10 +393,10 @@ export default function WhatIsIslamicFinancePage() {
                 <h3 className="font-bold text-lg pt-2">For Financial Institutions</h3>
                 <ul>
                   <li><strong>Establish a Shariah Supervisory Board (ACE):</strong> Form a committee of qualified Islamic scholars to review and approve products.</li>
-                  <li><strong>Adopt Islamic accounting standards:</strong> Implement AAOIFI standards alongside OHADA requirements.</li>
+                  <li><strong>Adopt Islamic accounting standards:</strong> Implement AAOIFI standards alongside local reporting requirements.</li>
                   <li><strong>Train staff:</strong> Educate employees on Islamic finance principles, products, and terminology.</li>
                   <li><strong>Develop compliant products:</strong> Start with simple structures like Murabaha before expanding to complex partnerships.</li>
-                  <li><strong>Obtain regulatory approval:</strong> Work with COBAC to ensure compliance with microfinance regulations.</li>
+                  <li><strong>Obtain regulatory approval:</strong> Work closely with local regulators (such as COBAC, CBN, or central banks) to ensure compliance with banking and microfinance regulations.</li>
                 </ul>
 
                 <h3 className="font-bold text-lg pt-2">For Customers</h3>
@@ -404,7 +404,7 @@ export default function WhatIsIslamicFinancePage() {
                   <li><strong>Understand the products:</strong> Learn how Islamic finance products differ from conventional banking.</li>
                   <li><strong>Ask questions:</strong> Don't hesitate to seek clarification on profit-sharing ratios, contract terms, and Shariah compliance.</li>
                   <li><strong>Review documentation:</strong> Ensure all contracts are clear and transparent.</li>
-                  <li><strong>Work with certified institutions:</strong> Choose financial institutions with recognized Shariah boards and COBAC licensing.</li>
+                  <li><strong>Work with certified institutions:</strong> Choose financial institutions with recognized Shariah boards and proper regulatory licensing.</li>
                 </ul>
 
                 <div className="not-prose my-16 p-8 bg-tikari-gold/10 border-l-4 border-tikari-gold rounded-r-2xl">

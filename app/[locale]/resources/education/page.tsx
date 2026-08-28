@@ -13,7 +13,7 @@ import {
   Notebook,
   Question
 } from "@phosphor-icons/react";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui";
 
 export default function EducationPage() {
@@ -71,17 +71,21 @@ export default function EducationPage() {
       badge: "Governance"
     },
     {
-      title: "CEMAC Context",
+      title: "Regulatory Jurisdictions",
       icon: Users,
-      description: "Islamic finance within the Central African Economic and Monetary Community.",
+      description: "Islamic finance across different regulatory frameworks (CEMAC, CBN for Nigeria, WAEMU, etc.).",
       articles: [
-        "COBAC Microfinance Regulations",
-        "BEAC Monetary Policy",
-        "FCFA Denomination Standards",
-        "Regional Shariah Compliance",
-        "Cross-Border Islamic Banking"
+        "Central Bank Regulations",
+        "Supported Jurisdictions & Standards",
+        "Cross-Border Compliance",
+        "Regional Shariah Requirements",
+        "Local Currency Accounting"
       ],
-      badge: "Regional"
+      badge: "Regulatory",
+      link: {
+        text: "View Supported Jurisdictions",
+        href: "/jurisdictions"
+      }
     },
     {
       title: "Glossary & Terms",
@@ -92,7 +96,7 @@ export default function EducationPage() {
         "Common Acronyms (MFB, ACE, PSR)",
         "Technical Banking Terms",
         "Shariah Legal Concepts",
-        "CEMAC-Specific Vocabulary"
+        "Regulatory Terminology"
       ],
       badge: "Reference"
     }
@@ -101,7 +105,7 @@ export default function EducationPage() {
   const guides = [
     {
       title: "What is Islamic Finance?",
-      description: "Comprehensive introduction to Shariah-compliant banking, core principles, and how Islamic finance operates in CEMAC.",
+      description: "Comprehensive introduction to Shariah-compliant banking, core principles, and how Islamic finance operates across different regulatory environments.",
       duration: "15 min read",
       level: "Beginner",
       topics: ["Fundamentals", "Shariah"],
@@ -125,7 +129,7 @@ export default function EducationPage() {
     },
     {
       title: "AAOIFI vs OHADA: Chart of Accounts",
-      description: "Reconciling AAOIFI Islamic accounting with CEMAC OHADA standards.",
+      description: "Reconciling AAOIFI Islamic accounting with OHADA accounting standards.",
       duration: "15 min read",
       level: "Advanced",
       topics: ["AAOIFI", "Reporting"],
@@ -147,7 +151,7 @@ export default function EducationPage() {
               Shariah Finance 101
             </h1>
             <p className="text-[17px] lg:text-[19px] text-white/85 leading-relaxed max-w-3xl mb-8">
-              Comprehensive guides to Islamic finance principles, AAOIFI standards, and Shariah governance tailored to the CEMAC regulatory environment.
+              Comprehensive guides to Islamic finance principles, AAOIFI standards, and Shariah governance tailored to regional and global regulatory environments (including CEMAC, CBN, WAEMU, and more).
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
@@ -217,6 +221,18 @@ export default function EducationPage() {
                         </li>
                       ))}
                     </ul>
+
+                    {topic.link && (
+                      <div className="mt-6 pt-4 border-t border-tikari-green/10">
+                        <Link 
+                          href={topic.link.href}
+                          className="inline-flex items-center gap-1.5 text-[13px] font-bold text-tikari-green hover:text-tikari-gold transition-colors duration-300"
+                        >
+                          <span>{topic.link.text}</span>
+                          <ArrowRight className="h-4 w-4" weight="bold" />
+                        </Link>
+                      </div>
+                    )}
                   </div>
                 </div>
               );
