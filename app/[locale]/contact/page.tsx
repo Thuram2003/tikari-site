@@ -100,8 +100,8 @@ export default function ContactPage() {
                     <h3 className="text-sm font-bold text-tikari-green-dark uppercase tracking-wider">Head Office</h3>
                     <p className="text-sm text-tikari-sage leading-relaxed">
                       Douala, Cameroon<br />
-                      CEMAC Region<br />
-                      Central Africa
+                      Serving West & Central Africa<br />
+                      and Nigeria
                     </p>
                   </div>
                 </div>

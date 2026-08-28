@@ -70,7 +70,7 @@ export default function DemoPage() {
                 Personalized Core Demo
               </h2>
               <p className="text-base text-tikari-sage leading-relaxed">
-                Discover how our Shariah-compliant core maps your daily accounting entries, manages Murabaha, and produces on-demand COBAC returns.
+                Discover how our Shariah-compliant core maps your daily accounting entries, manages Murabaha, and produces on-demand regulatory reports.
               </p>
             </div>
 
@@ -85,7 +85,7 @@ export default function DemoPage() {
               <div className="absolute inset-0 bg-gradient-to-t from-tikari-green-dark/80 via-transparent to-transparent" />
               <div className="absolute bottom-4 left-4 right-4 text-white">
                 <p className="text-[10px] font-bold uppercase tracking-wider text-tikari-gold">Shariah Assured</p>
-                <p className="text-xs font-semibold">COBAC and BEAC Compliant Core Infrastructure</p>
+                <p className="text-xs font-semibold">Multi-Jurisdictional Compliant Core Infrastructure</p>
               </div>
             </div>
 
@@ -104,14 +104,14 @@ export default function DemoPage() {
                   <div className="w-6 h-6 bg-tikari-gold/25 flex items-center justify-center font-bold text-xs text-tikari-gold shrink-0 rounded-md">2</div>
                   <div>
                     <h4 className="text-sm font-bold text-tikari-green-dark">Migration feasibility study</h4>
-                    <p className="text-xs text-tikari-sage leading-relaxed">Feasibility check for migrating account history from legacy Symphonie, Delta, or Excel databases.</p>
+                    <p className="text-xs text-tikari-sage leading-relaxed">Feasibility check for migrating account history from legacy database systems.</p>
                   </div>
                 </li>
                 <li className="flex gap-3">
                   <div className="w-6 h-6 bg-tikari-gold/25 flex items-center justify-center font-bold text-xs text-tikari-gold shrink-0 rounded-md">3</div>
                   <div>
                     <h4 className="text-sm font-bold text-tikari-green-dark">Q&A and compliance check</h4>
-                    <p className="text-xs text-tikari-sage leading-relaxed">A direct session mapping your specific operations to COBAC EMF guidelines.</p>
+                    <p className="text-xs text-tikari-sage leading-relaxed">A direct session mapping your specific operations to local central bank guidelines (such as CBN, COBAC, or BCEAO).</p>
                   </div>
                 </li>
               </ul>
@@ -260,7 +260,7 @@ export default function DemoPage() {
                         </Select>
                       </div>
                       <div className="space-y-2">
-                        <Label htmlFor="estimatedCapital" className="text-tikari-green-dark font-semibold">Estimated Assets (XAF)</Label>
+                        <Label htmlFor="estimatedCapital" className="text-tikari-green-dark font-semibold">Estimated Assets (USD equivalent)</Label>
                         <Select
                           id="estimatedCapital"
                           name="estimatedCapital"
@@ -268,10 +268,10 @@ export default function DemoPage() {
                           onChange={handleChange}
                         >
                           <option value="">Select range</option>
-                          <option value="under-100m">Under 100M XAF</option>
-                          <option value="100m-500m">100M - 500M XAF</option>
-                          <option value="500m-1b">500M - 1B XAF</option>
-                          <option value="over-1b">Over 1B XAF</option>
+                          <option value="under-200k">Under $200k USD</option>
+                          <option value="200k-1m">$200k - $1M USD</option>
+                          <option value="1m-2m">$1M - $2M USD</option>
+                          <option value="over-2m">Over $2M USD</option>
                         </Select>
                       </div>
                     </div>
