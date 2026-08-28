@@ -13,7 +13,7 @@ import ScrollSpyContent from "../components/ScrollSpyContent";
 
 export const metadata: Metadata = {
   title: "Understanding Murabaha Financing: Complete Guide | TIKARI",
-  description: "Step-by-step guide to Murabaha (cost-plus sale) financing in Islamic banking. Learn contract structure, pricing, documentation, and CEMAC compliance requirements.",
+  description: "Step-by-step guide to Murabaha (cost-plus sale) financing in Islamic banking. Learn contract structure, pricing, documentation, and regulatory compliance requirements.",
   keywords: [
     "Murabaha financing",
     "cost plus financing",
@@ -21,13 +21,13 @@ export const metadata: Metadata = {
     "Shariah compliant loans",
     "Murabaha contract",
     "Islamic trade financing",
-    "CEMAC Islamic banking",
+    "regulatory compliance",
     "halal business financing",
     "Murabaha pricing",
     "Shariah contract structure"
   ],
   openGraph: {
-    title: "Understanding Murabaha Financing: Complete Guide for CEMAC",
+    title: "Understanding Murabaha Financing: Complete Guide",
     description: "Comprehensive breakdown of Murabaha contracts, pricing mechanisms, and how cost-plus sale financing works in Islamic banking.",
     type: "article",
     publishedTime: "2024-01-20T00:00:00.000Z",
@@ -47,7 +47,7 @@ export default function UnderstandingMurabahaPage() {
     { id: "documentation", title: "Required Documentation" },
     { id: "vs-conventional", title: "Murabaha vs Conventional Loan" },
     { id: "use-cases", title: "Common Use Cases" },
-    { id: "compliance", title: "CEMAC Compliance" },
+    { id: "compliance", title: "Regulatory Compliance" },
     { id: "risks", title: "Risks & Mitigation" },
   ];
 
@@ -66,7 +66,7 @@ export default function UnderstandingMurabahaPage() {
     },
     {
       title: "AAOIFI vs OHADA Standards",
-      description: "Reconciling Islamic accounting with CEMAC standards",
+      description: "Reconciling Islamic accounting with OHADA standards",
       href: "/resources/education/aaoifi-vs-ohada",
       duration: "15 min read"
     }
@@ -142,7 +142,7 @@ export default function UnderstandingMurabahaPage() {
                   </p>
 
                   <p>
-                    In the <strong>CEMAC region</strong>, Murabaha is particularly popular for:
+                    Across different regulatory jurisdictions, Murabaha is particularly popular for:
                   </p>
                   <ul>
                     <li>Working capital financing (inventory, raw materials)</li>
@@ -342,7 +342,7 @@ export default function UnderstandingMurabahaPage() {
                   <li><strong>Purchase invoice from supplier:</strong> Proof that the bank acquired the asset</li>
                   <li><strong>Ownership certificate:</strong> Evidence that the bank legally owned the asset before reselling it</li>
                   <li><strong>Shariah board approval:</strong> Confirmation that the product structure complies with Islamic law</li>
-                  <li><strong>COBAC compliance checklist:</strong> Verification that the transaction meets CEMAC microfinance regulations</li>
+                  <li><strong>Regulatory compliance checklist:</strong> Verification that the transaction meets local banking or microfinance regulations</li>
                   <li><strong>Internal risk assessment:</strong> Credit evaluation and approval documentation</li>
                 </ul>
 
@@ -428,79 +428,80 @@ export default function UnderstandingMurabahaPage() {
                 </div>
 
                 {/* Use Cases */}
-                <h2 id="use-cases" className="font-bold text-xl pt-4">Common Use Cases in CEMAC</h2>
+                {/* Use Cases */}
+                <h2 id="use-cases" className="font-bold text-xl pt-4">Common Use Cases</h2>
                 <p>
-                  Murabaha is versatile and can be applied to various financing needs across the CEMAC region:
+                  Murabaha is highly versatile and is widely used across various markets for business and consumer financing:
                 </p>
 
                 <h3 className="font-bold text-lg pt-2">1. Working Capital Financing</h3>
                 <p>
-                  <strong>Example:</strong> A textile trader in N'Djamena, Chad, needs 20 million FCFA to purchase fabric inventory from Cameroon.
+                  <strong>Example:</strong> A textile trader needs 20 million local currency units (e.g. FCFA or Naira) to purchase fabric inventory from a regional supplier.
                 </p>
                 <ul>
-                  <li>The bank purchases the fabric from the Cameroonian supplier</li>
+                  <li>The bank purchases the fabric from the supplier</li>
                   <li>The bank sells the fabric to the trader at cost + 12% markup</li>
                   <li>The trader pays in 6 monthly installments as they sell the fabric to retailers</li>
                 </ul>
 
                 <h3 className="font-bold text-lg pt-2">2. Equipment Acquisition</h3>
                 <p>
-                  <strong>Example:</strong> A construction company in Libreville, Gabon, needs a cement mixer worth 8 million FCFA.
+                  <strong>Example:</strong> A construction company needs a cement mixer worth 8 million units.
                 </p>
                 <ul>
                   <li>The bank buys the cement mixer from the equipment supplier</li>
                   <li>The bank sells it to the company at cost + 18% markup over 36 months</li>
-                  <li>The company makes monthly payments of 275,000 FCFA</li>
+                  <li>The company makes monthly payments according to the fixed installment schedule</li>
                 </ul>
 
                 <h3 className="font-bold text-lg pt-2">3. Vehicle Financing</h3>
                 <p>
-                  <strong>Example:</strong> A delivery service in Bangui, CAR, needs three motorcycles totaling 6 million FCFA.
+                  <strong>Example:</strong> A delivery service needs three motorcycles totaling 6 million units.
                 </p>
                 <ul>
                   <li>The bank purchases the motorcycles from a local dealer</li>
                   <li>The bank resells them at cost + 20% markup over 18 months</li>
-                  <li>Monthly installments of 400,000 FCFA</li>
+                  <li>Fixed monthly installments are set at contract signing</li>
                 </ul>
 
                 <h3 className="font-bold text-lg pt-2">4. Import Finance</h3>
                 <p>
-                  <strong>Example:</strong> An electronics retailer in Yaoundé, Cameroon, wants to import smartphones worth 50 million FCFA from Dubai.
+                  <strong>Example:</strong> An electronics retailer wants to import smartphones worth 50 million units.
                 </p>
                 <ul>
                   <li>The bank purchases the smartphones on behalf of the retailer</li>
                   <li>The bank sells them to the retailer at cost + 10% markup</li>
-                  <li>Payment in 4 quarterly installments of 13.75 million FCFA</li>
+                  <li>Payment in 4 quarterly installments</li>
                 </ul>
 
-                {/* CEMAC Compliance */}
-                <h2 id="compliance" className="font-bold text-xl pt-4">CEMAC Regulatory Compliance</h2>
+                {/* Regulatory Compliance */}
+                <h2 id="compliance" className="font-bold text-xl pt-4">Regulatory Compliance</h2>
                 <p>
-                  Islamic finance institutions operating in CEMAC must navigate both <strong>Shariah requirements</strong> and <strong>regional regulations</strong>:
+                  Islamic finance institutions must navigate both <strong>Shariah requirements</strong> and <strong>local banking regulations</strong> across different jurisdictions:
                 </p>
 
-                <h3 className="font-bold text-lg pt-2">COBAC Requirements</h3>
+                <h3 className="font-bold text-lg pt-2">Central Bank Requirements</h3>
                 <ul>
-                  <li><strong>Licensing:</strong> Must obtain authorization as a microfinance institution (Établissement de Microfinance)</li>
-                  <li><strong>Capital adequacy:</strong> Minimum capital requirements vary by COBAC category (1st, 2nd, or 3rd category)</li>
-                  <li><strong>Reporting:</strong> Regular financial statements and prudential ratios</li>
-                  <li><strong>Asset classification:</strong> Murabaha receivables must be classified and provisioned per COBAC standards</li>
-                  <li><strong>Maximum financing limits:</strong> Caps on exposure to individual clients</li>
+                  <li><strong>Licensing:</strong> Must obtain appropriate banking authorizations or non-interest window approvals from local regulators (like CBN in Nigeria, COBAC in CEMAC, or BCEAO in WAEMU).</li>
+                  <li><strong>Capital adequacy:</strong> Compliance with capital adequacy guidelines and liquidity ratios specified by regional or national guidelines.</li>
+                  <li><strong>Reporting:</strong> Regular submission of compliant financial reports and returns to central bank auditors.</li>
+                  <li><strong>Asset classification:</strong> Murabaha receivables must be properly classified and provisioned per local regulatory frameworks.</li>
+                  <li><strong>Maximum financing exposure:</strong> Strict caps on single-obligor exposure limits.</li>
                 </ul>
 
                 <h3 className="font-bold text-lg pt-2">OHADA Accounting Treatment</h3>
                 <ul>
-                  <li><strong>Asset recognition:</strong> The bank must record the asset on its balance sheet when purchased</li>
-                  <li><strong>Revenue recognition:</strong> Markup can be recognized over the financing period (accrual basis) or at sale (cash basis), depending on accounting policy</li>
-                  <li><strong>Disclosure requirements:</strong> Notes must explain the nature of Murabaha transactions</li>
+                  <li><strong>Asset recognition:</strong> The bank must record the asset on its balance sheet when purchased.</li>
+                  <li><strong>Revenue recognition:</strong> Markup can be recognized over the financing period (accrual basis) or at sale (cash basis), depending on local accounting policies.</li>
+                  <li><strong>Disclosure requirements:</strong> Audit notes must clearly explain the nature of Murabaha transactions.</li>
                 </ul>
 
                 <h3 className="font-bold text-lg pt-2">Shariah Governance</h3>
                 <ul>
-                  <li><strong>ACE (Audit Committee for Ethics):</strong> Establish a Shariah supervisory board to approve product structures</li>
-                  <li><strong>Pre-transaction review:</strong> Each Murabaha contract should be reviewed for Shariah compliance</li>
-                  <li><strong>Annual Shariah audit:</strong> Independent review of all Islamic transactions</li>
-                  <li><strong>Fatwa documentation:</strong> Written Shariah opinions justifying product structures</li>
+                  <li><strong>ACE (Advisory Committee of Experts):</strong> Establish a Shariah supervisory board to approve product structures.</li>
+                  <li><strong>Pre-transaction review:</strong> Each Murabaha contract should be reviewed for Shariah compliance.</li>
+                  <li><strong>Annual Shariah audit:</strong> Independent review of all Islamic transactions.</li>
+                  <li><strong>Fatwa documentation:</strong> Written Shariah opinions justifying product structures.</li>
                 </ul>
 
                 {/* Risks */}
@@ -553,14 +554,14 @@ export default function UnderstandingMurabahaPage() {
 
                 <h3 className="font-bold text-lg pt-2">4. Legal Risk</h3>
                 <p>
-                  <strong>Risk:</strong> CEMAC legal systems may not fully recognize Islamic finance structures, complicating enforcement.
+                  <strong>Risk:</strong> Local legal systems in some jurisdictions may not fully recognize Islamic finance structures, complicating enforcement.
                 </p>
                 <p>
                   <strong>Mitigation:</strong>
                 </p>
                 <ul>
-                  <li>Work with legal experts familiar with both OHADA law and Islamic finance</li>
-                  <li>Obtain COBAC clarifications on Islamic product treatment</li>
+                  <li>Work with legal experts familiar with both local commercial laws (e.g. OHADA) and Islamic finance</li>
+                  <li>Obtain regulatory clarifications on non-interest product treatment</li>
                   <li>Use clear, legally enforceable contract language</li>
                   <li>Maintain thorough documentation for all transactions</li>
                 </ul>
@@ -573,7 +574,7 @@ export default function UnderstandingMurabahaPage() {
                         Implement Murabaha with TIKARI
                       </h4>
                       <p className="text-tikari-sage text-base leading-relaxed mb-6">
-                        TIKARI's platform includes pre-built Murabaha workflows, automated documentation, Shariah compliance checks, and COBAC-compliant reporting all tailored for CEMAC institutions.
+                        TIKARI's platform includes pre-built Murabaha workflows, automated documentation, Shariah compliance checks, and regulator-ready reporting tailored for local central banks (such as CBN, COBAC, BCEAO, and more).
                       </p>
                       <Button
                         variant="primary"
