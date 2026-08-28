@@ -18,72 +18,72 @@ import { Button } from "@/components/ui";
 export default function CompliancePage() {
   const regulatoryFrameworks = [
     {
-      title: "COBAC Microfinance Regulations",
-      authority: "Commission Bancaire de l'Afrique Centrale",
+      title: "West & Central Africa (COBAC & BCEAO)",
+      authority: "Regional Banking Regulators",
       icon: Bank,
-      description: "Prudential standards for microfinance institutions operating across CEMAC member states.",
+      description: "Prudential standards and Islamic window directives for microfinance and banking institutions in CEMAC and WAEMU states.",
       updates: [
         {
           date: "March 2026",
-          title: "Updated Capital Adequacy Requirements",
+          title: "Updated Regional Capital Adequacy",
           status: "Recent"
         },
         {
           date: "January 2026",
-          title: "Islamic Banking Window Framework",
+          title: "Islamic Banking Window Harmonization",
           status: "New"
         },
         {
           date: "November 2025",
-          title: "Agent Banking Guidelines",
+          title: "Regional Agent Banking Directives",
           status: "Amended"
         }
       ],
       color: "border-tikari-green"
     },
     {
-      title: "BEAC Monetary Policy",
-      authority: "Banque des États de l'Afrique Centrale",
+      title: "Nigeria (CBN non-interest guidelines)",
+      authority: "Central Bank of Nigeria",
       icon: ClipboardText,
-      description: "Central bank directives on interest-free banking operations and FCFA-denominated transactions.",
+      description: "CBN guidelines governing non-interest banking windows, capital adequacy ratios, and ledger segregation.",
       updates: [
         {
           date: "February 2026",
-          title: "Liquidity Ratio for Islamic Banks",
+          title: "Naira Liquidity Ratio for Islamic Windows",
           status: "Recent"
         },
         {
           date: "December 2025",
-          title: "FCFA Interbank Settlement Rules",
+          title: "CBN Interbank Settlement Circulars",
           status: "Updated"
         },
         {
           date: "October 2025",
-          title: "Digital Banking Infrastructure",
+          title: "Non-Interest Core Platform Guidelines",
           status: "Amended"
         }
       ],
       color: "border-tikari-gold"
     },
     {
-      title: "GABAC AML/CFT Standards",
-      authority: "Groupe d'Action contre le Blanchiment",
+      title: "AML/CFT Regional Standards",
+      authority: "GABAC / GIABA Frameworks",
       icon: ShieldCheck,
-      description: "Anti-money laundering and counter-terrorism financing requirements for CEMAC financial institutions.",
+      description: "Anti-money laundering and counter-terrorism financing requirements for financial institutions across West and Central Africa.",
       updates: [
         {
           date: "April 2026",
-          title: "Enhanced KYC Requirements",
+          title: "Enhanced KYC and Identity Verification",
           status: "Pending"
         },
         {
           date: "January 2026",
-          title: "STR/CTR Filing Procedures",
+          title: "STR/CTR Digital Filing Procedures",
           status: "Updated"
         },
         {
           date: "September 2025",
-          title: "Politically Exposed Persons Guidelines",
+          title: "Cross-Border PEP Transaction Screening",
           status: "Amended"
         }
       ],
@@ -93,11 +93,11 @@ export default function CompliancePage() {
 
   const complianceDocuments = [
     {
-      title: "COBAC MFB Licensing Checklist",
+      title: "Regional MFB Licensing Checklist",
       type: "Checklist",
       pages: "12 pages",
       format: "PDF",
-      description: "Complete requirements for Unit, Regional, and National MFB licences."
+      description: "Complete requirements for Unit, Regional, and National MFB licences across CEMAC & WAEMU."
     },
     {
       title: "AAOIFI Financial Reporting Template",
@@ -114,14 +114,14 @@ export default function CompliancePage() {
       description: "Best practices for establishing and maintaining an ACE committee."
     },
     {
-      title: "BEAC Liquidity Calculation Guide",
+      title: "Central Bank Liquidity Calculation Guide",
       type: "Guide",
       pages: "18 pages",
       format: "PDF",
       description: "Step-by-step calculation of Islamic liquidity ratios."
     },
     {
-      title: "GABAC KYC Document Matrix",
+      title: "Regional AML/KYC Document Matrix",
       type: "Reference",
       pages: "8 pages",
       format: "PDF",
@@ -138,11 +138,11 @@ export default function CompliancePage() {
 
   const webinars = [
     {
-      title: "Navigating COBAC Islamic Banking Regulations",
+      title: "Navigating Regional Islamic Banking Regulations",
       date: "April 15, 2026",
       duration: "90 minutes",
       status: "Upcoming",
-      topics: ["COBAC", "Licensing", "Compliance"]
+      topics: ["Regulators", "Licensing", "Compliance"]
     },
     {
       title: "AAOIFI Financial Reporting in Practice",
@@ -156,7 +156,7 @@ export default function CompliancePage() {
       date: "March 28, 2026",
       duration: "75 minutes",
       status: "Recorded",
-      topics: ["AML/CFT", "GABAC", "KYC"]
+      topics: ["AML/CFT", "Compliance", "KYC"]
     }
   ];
 
@@ -173,7 +173,7 @@ export default function CompliancePage() {
               Regulatory Updates
             </h1>
             <p className="text-[17px] lg:text-[19px] text-white/85 leading-relaxed max-w-3xl mb-8">
-              Stay current with COBAC, BEAC, and GABAC regulations governing Islamic microfinance in the CEMAC region.
+              Stay current with banking guidelines and compliance standards governing Islamic finance across our supported jurisdictions (including Nigeria, WAEMU, and CEMAC).
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
@@ -205,7 +205,7 @@ export default function CompliancePage() {
               Regulatory Frameworks
             </h2>
             <p className="text-[17px] text-tikari-sage max-w-2xl mx-auto">
-              Key regulatory bodies governing Islamic microfinance in CEMAC.
+              Key regulatory frameworks governing Islamic microfinance across Africa.
             </p>
           </div>
 
@@ -395,7 +395,7 @@ export default function CompliancePage() {
             Questions about compliance?
           </h2>
           <p className="text-[17px] text-tikari-green-dark/80 mb-8 max-w-2xl mx-auto">
-            Our compliance team can help you navigate COBAC, BEAC, and GABAC requirements for your institution.
+            Our compliance team can help you navigate regional central bank and AML/CFT requirements (such as CBN, COBAC, BCEAO, and GABAC) for your institution.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
