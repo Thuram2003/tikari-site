@@ -61,7 +61,7 @@ export default function LanguageSwitcher({ scrolled = false }: LanguageSwitcherP
         ) : (
           <Globe className="h-5 w-5" weight="bold" />
         )}
-        <span className="hidden sm:inline-block text-sm font-medium uppercase">
+        <span className="hidden sm:inline-block text-xs font-medium uppercase">
           {currentLanguage?.code}
         </span>
         <CaretDown 
@@ -96,8 +96,7 @@ export default function LanguageSwitcher({ scrolled = false }: LanguageSwitcherP
                       <LangFlag className="w-full h-full object-cover" />
                     </div>
                     <div className="flex-1 min-w-0">
-                      <div className="text-sm font-medium">{lang.nativeName}</div>
-                      <div className="text-xs opacity-70">{lang.name}</div>
+                      <div className="text-xs font-medium">{lang.nativeName}</div>
                     </div>
                     {locale === lang.code && (
                       <Check className="h-5 w-5 text-tikari-green flex-shrink-0" weight="bold" />
