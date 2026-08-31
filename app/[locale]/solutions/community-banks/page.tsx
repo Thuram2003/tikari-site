@@ -225,8 +225,8 @@ export default function CommunityBanksSolutionsPage() {
                   <div className="w-12 h-12 bg-tikari-green/10 border border-tikari-green/20 flex items-center justify-center mb-4 rounded-full">
                     <Icon className="h-6 w-6 text-tikari-green-dark" weight="bold" />
                   </div>
-                  <h3 className="text-[17px] font-bold mb-2 text-tikari-green-dark">{feature.title}</h3>
-                  <p className="text-[14px] text-tikari-sage leading-relaxed">{feature.description}</p>
+                  <h3 className="text-[18px] font-bold mb-2 text-tikari-green-dark">{feature.title}</h3>
+                  <p className="text-sm text-tikari-sage leading-relaxed">{feature.description}</p>
                 </div>
               );
             })}
@@ -243,11 +243,11 @@ export default function CommunityBanksSolutionsPage() {
                 {t("compliance.title")}
               </h2>
               
-              <p className="text-[16px] text-white/85 leading-relaxed mb-6">
+              <p className="text-sm text-white/85 leading-relaxed mb-6">
                 {t("compliance.description1")}
               </p>
 
-              <p className="text-[16px] text-white/85 leading-relaxed mb-8">
+              <p className="text-sm text-white/85 leading-relaxed mb-8">
                 {t("compliance.description2")}
               </p>
 
@@ -262,7 +262,7 @@ export default function CommunityBanksSolutionsPage() {
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-start gap-3">
                     <CheckCircle className="h-5 w-5 text-tikari-gold flex-shrink-0 mt-0.5" weight="bold" />
-                    <span className="text-[15px] text-white/85 leading-relaxed">{item}</span>
+                    <span className="text-sm text-white/85 leading-relaxed">{item}</span>
                   </div>
                 ))}
               </div>
@@ -290,7 +290,7 @@ export default function CommunityBanksSolutionsPage() {
           <h2 className="text-3xl lg:text-[2.75rem] font-bold mb-6 leading-[1.15] tracking-tight">
             {t("cta.title")}
           </h2>
-          <p className="text-[16px] lg:text-[18px] text-tikari-green-dark/75 leading-relaxed mb-10 max-w-2xl mx-auto">
+          <p className="text-sm text-tikari-green-dark/75 leading-relaxed mb-10 max-w-2xl mx-auto">
             {t("cta.description")}
           </p>
           

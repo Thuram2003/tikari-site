@@ -348,11 +348,11 @@ export default function FinancingPage() {
                               <div className={`w-9 h-9 ${idx === 2 ? 'bg-tikari-gold/20 border-tikari-gold/30' : 'bg-tikari-gold/10 border-tikari-gold/20'} border flex items-center justify-center flex-shrink-0 group-hover:bg-tikari-gold/20 group-hover:border-tikari-gold/30 transition-all rounded-full`}>
                                 <FeatureIcon className="h-5 w-5 text-tikari-gold" weight="bold" />
                               </div>
-                              <h3 className={`text-[15px] lg:text-[16px] font-bold leading-snug ${idx === 2 ? 'text-white' : 'text-tikari-green-dark'}`}>
+                              <h3 className={`text-[17px] lg:text-[18px] font-bold leading-snug ${idx === 2 ? 'text-white' : 'text-tikari-green-dark'}`}>
                                 {feature.title}
                               </h3>
                             </div>
-                            <p className={`text-[13px] lg:text-[14px] leading-relaxed pl-12 ${idx === 2 ? 'text-white/75' : 'text-tikari-sage'}`}>
+                            <p className={`text-sm leading-relaxed pl-12 ${idx === 2 ? 'text-white/75' : 'text-tikari-sage'}`}>
                               {feature.description}
                             </p>
                           </div>

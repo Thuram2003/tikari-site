@@ -167,7 +167,7 @@ export default function MicrofinanceSolutionsPage() {
                           </p>
                         </div>
                       </div>
-                      <p className="text-[15px] text-white/90 leading-relaxed">
+                      <p className="text-[16px] text-white/90 leading-relaxed">
                         {category.description}
                       </p>
                     </div>
@@ -187,7 +187,7 @@ export default function MicrofinanceSolutionsPage() {
                               weight="bold" 
                             />
                           </div>
-                          <span className="text-[14.5px] text-tikari-green-dark/80 leading-relaxed font-medium">
+                          <span className="text-[16px] text-tikari-green-dark/80 leading-relaxed font-medium">
                             {feature}
                           </span>
                         </div>
@@ -206,10 +206,10 @@ export default function MicrofinanceSolutionsPage() {
       <section className="py-16 lg:py-24 px-6 bg-tikari-green-dark text-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-[2.75rem] font-bold mb-6 leading-[1.15] tracking-tight">
+            <h2 className="text-sm lg:text-[2.75rem] font-bold mb-6 leading-[1.15] tracking-tight">
               {t("keyFeatures.title")}
             </h2>
-            <p className="text-[16px] lg:text-[18px] text-white/75 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-sm lg:text-[18px] text-white/75 leading-relaxed max-w-3xl mx-auto">
               {t("keyFeatures.subtitle")}
             </p>
           </div>
@@ -257,7 +257,7 @@ export default function MicrofinanceSolutionsPage() {
                     <Icon className="h-6 w-6 text-tikari-gold" weight="bold" />
                   </div>
                   <h3 className="text-[17px] font-bold mb-2">{feature.title}</h3>
-                  <p className="text-[14px] text-white/75 leading-relaxed">{feature.description}</p>
+                  <p className="text-sm text-white/75 leading-relaxed">{feature.description}</p>
                 </div>
               );
             })}

@@ -140,7 +140,7 @@ export default function CooperativesWindowsPage() {
                       </h3>
                     </div>
                     
-                    <p className="text-[16px] text-tikari-sage leading-relaxed">
+                    <p className="text-sm text-tikari-sage leading-relaxed">
                       {type.description}
                     </p>
                   </div>
@@ -205,8 +205,8 @@ export default function CooperativesWindowsPage() {
                   <div className="w-12 h-12 bg-tikari-green/10 border border-tikari-green/20 flex items-center justify-center mb-4 rounded-full">
                     <Icon className="h-6 w-6 text-tikari-green-dark" weight="bold" />
                   </div>
-                  <h3 className="text-[17px] font-bold mb-2 text-tikari-green-dark">{feature.title}</h3>
-                  <p className="text-[14px] text-tikari-sage leading-relaxed">{feature.description}</p>
+                  <h3 className="text-[18px] font-bold mb-2 text-tikari-green-dark">{feature.title}</h3>
+                  <p className="text-sm text-tikari-sage leading-relaxed">{feature.description}</p>
                 </div>
               );
             })}
@@ -223,11 +223,11 @@ export default function CooperativesWindowsPage() {
                 {t("compliance.title")}
               </h2>
               
-              <p className="text-[16px] text-white/85 leading-relaxed mb-6">
+              <p className="text-sm text-white/85 leading-relaxed mb-6">
                 {t("compliance.description1")}
               </p>
 
-              <p className="text-[16px] text-white/85 leading-relaxed mb-8">
+              <p className="text-sm text-white/85 leading-relaxed mb-8">
                 {t("compliance.description2")}
               </p>
 
@@ -242,7 +242,7 @@ export default function CooperativesWindowsPage() {
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-start gap-3">
                     <CheckCircle className="h-5 w-5 text-tikari-gold flex-shrink-0 mt-0.5" weight="bold" />
-                    <span className="text-[15px] text-white/85 leading-relaxed">{item}</span>
+                    <span className="text-sm text-white/85 leading-relaxed">{item}</span>
                   </div>
                 ))}
               </div>
