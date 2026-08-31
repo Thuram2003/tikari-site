@@ -46,7 +46,7 @@ export default function TestimonialSection() {
       quote: "Deploying TIKARI's non-interest banking window allowed us to launch Shariah-compliant services in record time. The automated ledger segregation keeps us perfectly aligned with CBN non-interest guidelines.",
       author: "Dr. Amina Yusuf",
       role: "Director of Islamic Windows",
-      image: "/mulsimwoman.jpg",
+      image: "/muslim-woman.jpg",
       yearsWithTikari: "1",
     },
     {
@@ -61,7 +61,7 @@ export default function TestimonialSection() {
       quote: "TIKARI has transformed our digital microfinance operations. It seamlessly handles Mudarabah deposits and generates compliance reports matching both BCEAO directives and SYSCOHADA requirements.",
       author: "Paul Diagne",
       role: "Chief Technology Officer",
-      image: "/people.jpg",
+      image: "/muslim-man.jpg",
       yearsWithTikari: "3",
     },
     {
@@ -76,7 +76,7 @@ export default function TestimonialSection() {
       quote: "TIKARI simplified our group lending and rotating savings operations. The mobile integration lets our members check balances and make deposits directly from their phone.",
       author: "Hadja Fatima Bello",
       role: "Executive Coordinator",
-      image: "/mulsimwoman.jpg",
+      image: "/woman-smile.jpg",
       yearsWithTikari: "2",
     },
     {
@@ -91,7 +91,7 @@ export default function TestimonialSection() {
       quote: "TIKARI works perfectly even with our intermittent connectivity in rural areas. The offline mode lets us serve clients in remote villages, then sync when network is available.",
       author: "Issa Mohamadou",
       role: "Regional Director",
-      image: "/personOffice.jpg",
+      image: "/bnw-muslim.jpg",
       yearsWithTikari: "1",
     },
     {
@@ -106,7 +106,7 @@ export default function TestimonialSection() {
       quote: "For investment and asset-backed finance, precision is everything. TIKARI's automated profit-distribution engine and multi-currency ledger make regional compliance effortless.",
       author: "Abdoulaye Koné",
       role: "Chief Financial Officer",
-      image: "/people.jpg",
+      image: "/consulting-team.jpg",
       yearsWithTikari: "3",
     },
     {
@@ -121,7 +121,7 @@ export default function TestimonialSection() {
       quote: "Transitioning to TIKARI enabled us to scale our Shariah-compliant savings and Murabaha products across East Africa. It easily manages members' profit ratios while adhering to local cooperative acts.",
       author: "Omar Hassan",
       role: "General Manager",
-      image: "/personOffice.jpg",
+      image: "/woman-office.jpg",
       yearsWithTikari: "2",
     }
   ];

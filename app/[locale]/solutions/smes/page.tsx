@@ -26,7 +26,7 @@ export default function SMESolutionsPage() {
       title: t("financingProducts.murabaha.title"),
       description: t("financingProducts.murabaha.description"),
       icon: Package,
-      image: "/women-market.jpg",
+      image: "/money.jpg",
       color: "bg-tikari-green-dark",
       features: [
         t("financingProducts.murabaha.features.0"),
@@ -41,7 +41,7 @@ export default function SMESolutionsPage() {
       title: t("financingProducts.musharakah.title"),
       description: t("financingProducts.musharakah.description"),
       icon: Storefront,
-      image: "/handshake.jpg",
+      image: "/consulting-team.jpg",
       color: "bg-tikari-gold",
       features: [
         t("financingProducts.musharakah.features.0"),
@@ -56,7 +56,7 @@ export default function SMESolutionsPage() {
       title: t("financingProducts.ijara.title"),
       description: t("financingProducts.ijara.description"),
       icon: Truck,
-      image: "/meeting.jpg",
+      image: "/smiling-looking-phone.webp",
       color: "bg-tikari-green",
       features: [
         t("financingProducts.ijara.features.0"),
@@ -308,7 +308,7 @@ export default function SMESolutionsPage() {
 
             <div className="relative h-[500px] lg:h-[600px] overflow-hidden shadow-2xl border border-white/10 rounded-2xl">
               <Image
-                src="/personOffice.jpg"
+                src="/people-smiling-papers.jpeg"
                 alt="Business financing application"
                 fill
                 className="object-cover rounded-2xl"

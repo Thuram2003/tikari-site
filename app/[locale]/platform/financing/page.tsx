@@ -34,7 +34,7 @@ export default function FinancingPage() {
       subtitle: t("sections.murabaha.subtitle"),
       icon: Storefront,
       color: "bg-gradient-to-br from-tikari-green-dark to-tikari-green",
-      image: "/personOffice.jpg",
+      image: "/money.jpg",
       features: [
         {
           title: t("sections.murabaha.features.assetProcurement.title"),
@@ -114,7 +114,7 @@ export default function FinancingPage() {
       subtitle: t("sections.musharakah.subtitle"),
       icon: ChartLineUp,
       color: "bg-tikari-green-dark text-white",
-      image: "/meeting.jpg",
+      image: "/consulting-team.jpg",
       features: [
         {
           title: t("sections.musharakah.features.jointCapital.title"),
@@ -154,7 +154,7 @@ export default function FinancingPage() {
       subtitle: t("sections.ijara.subtitle"),
       icon: Buildings,
       color: "bg-tikari-gold/60",
-      image: "/handshake.jpg",
+      image: "/woman-husband.jpg",
       features: [
         {
           title: t("sections.ijara.features.operatingFinance.title"),
@@ -194,7 +194,7 @@ export default function FinancingPage() {
       subtitle: t("sections.salamIstisna.subtitle"),
       icon: Package,
       color: "bg-tikari-sage",
-      image: "/women-market.jpg",
+      image: "/woman-market.jpg",
       features: [
         {
           title: t("sections.salamIstisna.features.salam.title"),
@@ -234,7 +234,7 @@ export default function FinancingPage() {
       subtitle: t("sections.treasury.subtitle"),
       icon: Bank,
       color: "bg-tikari-gold/30",
-      image: "/money.jpg",
+      image: "/people-smiling-papers.jpeg",
       features: [
         {
           title: t("sections.treasury.features.sukukPortfolio.title"),

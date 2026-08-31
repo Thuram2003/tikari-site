@@ -63,7 +63,7 @@ export default function CameroonMarketSection() {
           {/* Right: Image */}
           <div className="relative h-[600px] overflow-hidden shadow-2xl">
             <Image
-              src="/women-market.jpg"
+              src="/women-smile.jpg"
               alt="Cameroon Islamic Banking"
               fill
               className="object-cover"

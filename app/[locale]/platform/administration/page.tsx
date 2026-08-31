@@ -37,7 +37,7 @@ export default function AdministrationPage() {
       subtitle: t("sections.userManagement.subtitle"),
       icon: Users,
       color: "bg-gradient-to-br from-tikari-green-dark to-tikari-green",
-      image: "/people.jpg",
+      image: "/consulting-team.jpg",
       features: [
         {
           title: t("sections.userManagement.features.userCreation.title"),
@@ -77,7 +77,7 @@ export default function AdministrationPage() {
       subtitle: t("sections.systemConfiguration.subtitle"),
       icon: GearSix,
       color: "bg-gradient-to-br from-tikari-gold/90 to-tikari-gold/70",
-      image: "/personOffice.jpg",
+      image: "/woman-office.jpg",
       features: [
         {
           title: t("sections.systemConfiguration.features.workingDays.title"),
@@ -117,7 +117,7 @@ export default function AdministrationPage() {
       subtitle: t("sections.branchManagement.subtitle"),
       icon: Buildings,
       color: "bg-tikari-green-dark text-white",
-      image: "/meeting.jpg",
+      image: "/people-smiling-papers.jpeg",
       features: [
         {
           title: t("sections.branchManagement.features.registration.title"),
@@ -157,7 +157,7 @@ export default function AdministrationPage() {
       subtitle: t("sections.eodProcesses.subtitle"),
       icon: CalendarCheck,
       color: "bg-tikari-gold/90",
-      image: "/bnw-muslim.jpg",
+      image: "/muslim-man.jpg",
       features: [
         {
           title: t("sections.eodProcesses.features.eoti.title"),
@@ -197,7 +197,7 @@ export default function AdministrationPage() {
       subtitle: t("sections.backupArchival.subtitle"),
       icon: Database,
       color: "bg-tikari-sage",
-      image: "/handshake.jpg",
+      image: "/personOffice.jpg",
       features: [
         {
           title: t("sections.backupArchival.features.dailyBackup.title"),
@@ -237,7 +237,7 @@ export default function AdministrationPage() {
       subtitle: t("sections.monitoringAlerts.subtitle"),
       icon: ChartLineUp,
       color: "bg-tikari-gold/40",
-      image: "/compliance.jpg",
+      image: "/smiling-looking-phone.webp",
       features: [
         {
           title: t("sections.monitoringAlerts.features.performance.title"),

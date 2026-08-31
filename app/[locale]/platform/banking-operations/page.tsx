@@ -71,7 +71,7 @@ export default function BankingOperationsPage() {
       subtitle: t("sections.accounts.subtitle"),
       icon: Bank,
       color: "bg-gradient-to-br from-tikari-gold/90 to-tikari-gold/70",
-      image: "/personOffice.jpg",
+      image: "/woman-office.jpg",
       features: [
         {
           title: t("sections.accounts.features.wadiah.title"),
@@ -111,7 +111,7 @@ export default function BankingOperationsPage() {
       subtitle: t("sections.njangi.subtitle"),
       icon: Users,
       color: "bg-tikari-green/40",
-      image: "/women-market.jpg",
+      image: "/women-smile.jpg",
       features: [
         {
           title: t("sections.njangi.features.constitution.title"),
@@ -151,7 +151,7 @@ export default function BankingOperationsPage() {
       subtitle: t("sections.teller.subtitle"),
       icon: CashRegister,
       color: "bg-tikari-cream",
-      image: "/handshake.jpg",
+      image: "/consulting-team.jpg",
       features: [
         {
           title: t("sections.teller.features.cashOps.title"),
@@ -191,7 +191,7 @@ export default function BankingOperationsPage() {
       subtitle: t("sections.interbank.subtitle"),
       icon: ArrowsLeftRight,
       color: "bg-gradient-to-br from-tikari-green to-tikari-green-dark",
-      image: "/meeting.jpg",
+      image: "/bnw-muslim.jpg",
       features: [
         {
           title: t("sections.interbank.features.realtimeTransfers.title"),
@@ -231,7 +231,7 @@ export default function BankingOperationsPage() {
       subtitle: t("sections.agent.subtitle"),
       icon: MapPin,
       color: "bg-gradient-to-br from-tikari-gold to-tikari-gold/80",
-      image: "/woman-market.jpg",
+      image: "/smiling-looking-phone.webp",
       features: [
         {
           title: t("sections.agent.features.onboarding.title"),

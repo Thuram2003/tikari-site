@@ -77,7 +77,7 @@ export default function DemoPage() {
             {/* Visual Image Block (Sharp Corners) */}
             <div className="relative h-64 w-full rounded-2xl overflow-hidden border border-tikari-green/10">
               <Image
-                src="/women-market.jpg"
+                src="/consulting-team.jpg"
                 alt="TIKARI Core Platform demo presentation"
                 fill
                 className="object-cover"

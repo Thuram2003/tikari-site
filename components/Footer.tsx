@@ -31,10 +31,10 @@ export default function Footer() {
               {t("brand.description")}
             </p>
             <div className="flex flex-wrap items-center gap-2 pt-2">
-              <Link href="/jurisdictions" className="text-xs font-bold tracking-wider text-tikari-gold bg-tikari-gold/10 px-3 py-1.5 border border-tikari-gold/30 hover:bg-tikari-gold hover:text-tikari-green-dark transition-all duration-300">
+              <Link href="/jurisdictions" className="text-xs font-bold tracking-wider text-tikari-gold bg-tikari-gold/10 px-3 py-1.5 border border-tikari-gold/30 hover:bg-tikari-gold hover:text-tikari-green-dark transition-all duration-300 rounded-full">
                 {t("brand.beacCompliant")}
               </Link>
-              <Link href="/jurisdictions" className="text-xs font-bold tracking-wider text-tikari-gold bg-tikari-gold/10 px-3 py-1.5 border border-tikari-gold/30 hover:bg-tikari-gold hover:text-tikari-green-dark transition-all duration-300">
+              <Link href="/jurisdictions" className="text-xs font-bold tracking-wider text-tikari-gold bg-tikari-gold/10 px-3 py-1.5 border border-tikari-gold/30 hover:bg-tikari-gold hover:text-tikari-green-dark transition-all duration- rounded-full">
                 {t("brand.cemacRegion")}
               </Link>
             </div>
@@ -101,7 +101,7 @@ export default function Footer() {
         </div>
 
         {/* Shariah Assurance Banner */}
-        <div className="mb-10 sm:mb-12 p-5 sm:p-6 bg-white/5 border border-tikari-gold/20">
+        <div className="mb-10 sm:mb-12 p-5 sm:p-6 bg-white/5 border border-tikari-gold/20 rounded-2xl">
           <div className="flex items-start gap-3 sm:gap-4">
             <ShieldCheck className="h-6 w-6 text-tikari-gold flex-shrink-0 mt-0.5 sm:mt-1" weight="fill" />
             <div>

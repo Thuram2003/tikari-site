@@ -115,7 +115,7 @@ export default function CompliancePage() {
       subtitle: t("sections.regulatoryCompliance.subtitle"),
       icon: Bank,
       color: "bg-tikari-green-dark text-white",
-      image: "/bnw-muslim.jpg",
+      image: "/woman-office.jpg",
       features: [
         {
           title: t("sections.regulatoryCompliance.features.capitalAdequacy.title"),
@@ -155,7 +155,7 @@ export default function CompliancePage() {
       subtitle: t("sections.amlCft.subtitle"),
       icon: ShieldCheck,
       color: "bg-tikari-gold/80",
-      image: "/people.jpg",
+      image: "/people-smiling-papers.jpeg",
       features: [
         {
           title: t("sections.amlCft.features.cdd.title"),
@@ -195,7 +195,7 @@ export default function CompliancePage() {
       subtitle: t("sections.documentManagement.subtitle"),
       icon: FolderOpen,
       color: "bg-tikari-sage",
-      image: "/handshake.jpg",
+      image: "/consulting-team.jpg",
       features: [
         {
           title: t("sections.documentManagement.features.digitalVault.title"),
@@ -235,7 +235,7 @@ export default function CompliancePage() {
       subtitle: t("sections.reportingAnalytics.subtitle"),
       icon: ChartBar,
       color: "bg-tikari-gold/20",
-      image: "/meeting.jpg",
+      image: "/smiling-looking-phone.webp",
       features: [
         {
           title: t("sections.reportingAnalytics.features.dashboard.title"),

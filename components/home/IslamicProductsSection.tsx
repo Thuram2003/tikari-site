@@ -19,25 +19,25 @@ export default function IslamicProductsSection() {
     {
       title: "Musharakah Partnership",
       description: "Joint venture and diminishing partnership. Automatic buyout schedules with rental adjustment as ownership transfers.",
-      image: "/personOffice.jpg",
+      image: "/consulting-team.jpg",
       badge: "Partnership"
     },
     {
       title: "Ijara Leasing",
       description: "Asset leasing with option to purchase. Track rental income, asset depreciation, and end-of-lease ownership transfer.",
-      image: "/compliance.jpg",
+      image: "/smiling-looking-phone.webp",
       badge: "Leasing"
     },
     {
       title: "Wadiah Accounts",
       description: "Safekeeping deposit accounts for current and savings. No guaranteed returns, optional gift distributions at bank discretion.",
-      image: "/mulsimwoman.jpg",
+      image: "/mom-daughter.jpg",
       badge: "Safekeeping"
     },
     {
       title: "Automated Zakat",
       description: "Automatic zakat calculation directly through institutional account balances. Compliant with regulatory standards and fatwa rules.",
-      image: "/women-market.jpg",
+      image: "/muslim-women.webp",
       badge: "Compliance"
     }
   ];

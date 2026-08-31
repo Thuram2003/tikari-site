@@ -32,7 +32,7 @@ export default function CommunityBanksSolutionsPage() {
         t("institutions.developmentBanks.features.3")
       ],
       color: "bg-tikari-green-dark",
-      image: "/women-market.jpg"
+      image: "/consulting-team.jpg"
     },
     {
       title: t("institutions.cooperatives.title"),
@@ -45,7 +45,7 @@ export default function CommunityBanksSolutionsPage() {
         t("institutions.cooperatives.features.3")
       ],
       color: "bg-tikari-gold",
-      image: "/handshake.jpg"
+      image: "/muslim-meeting.jpg"
     },
     {
       title: t("institutions.islamicWindows.title"),
@@ -58,7 +58,7 @@ export default function CommunityBanksSolutionsPage() {
         t("institutions.islamicWindows.features.3")
       ],
       color: "bg-tikari-green",
-      image: "/meeting.jpg"
+      image: "/personOffice.jpg"
     }
   ];
 
@@ -270,7 +270,7 @@ export default function CommunityBanksSolutionsPage() {
 
             <div className="relative h-[500px] lg:h-[600px] overflow-hidden shadow-2xl border border-white/10 rounded-2xl">
               <Image
-                src="/compliance.jpg"
+                src="/meeting.jpg"
                 alt="Compliance and governance"
                 fill
                 className="object-cover"

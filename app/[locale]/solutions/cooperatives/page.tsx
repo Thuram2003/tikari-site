@@ -24,21 +24,21 @@ export default function CooperativesWindowsPage() {
       title: t("supportTypes.rotatingGroups.title"),
       description: t("supportTypes.rotatingGroups.description"),
       icon: UsersFour,
-      image: "/women-market.jpg",
+      image: "/meeting-black-women.jpeg",
       color: "bg-tikari-green-dark"
     },
     {
       title: t("supportTypes.mudarabah.title"),
       description: t("supportTypes.mudarabah.description"),
       icon: Coins,
-      image: "/money.jpg",
+      image: "/man-wife.jpg",
       color: "bg-tikari-gold"
     },
     {
       title: t("supportTypes.qardHasan.title"),
       description: t("supportTypes.qardHasan.description"),
       icon: CirclesFour,
-      image: "/handshake.jpg",
+      image: "/woman-husband.jpg",
       color: "bg-tikari-green"
     },
     {
@@ -250,7 +250,7 @@ export default function CooperativesWindowsPage() {
 
             <div className="relative h-[500px] lg:h-[600px] overflow-hidden shadow-2xl border border-white/10 rounded-2xl">
               <Image
-                src="/compliance.jpg"
+                src="/people-smiling-papers.jpeg"
                 alt="Regulatory compliance and reporting"
                 fill
                 className="object-cover rounded-2xl"

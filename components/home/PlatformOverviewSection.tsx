@@ -11,7 +11,7 @@ export default function PlatformOverviewSection() {
       title: t("modules.banking.title"),
       desc: t("modules.banking.desc"),
       link: "/platform/banking-operations",
-      image: "/women-market.jpg"
+      image: "/muslim-women.webp"
     },
     {
       title: t("modules.financing.title"),
@@ -29,19 +29,19 @@ export default function PlatformOverviewSection() {
       title: t("modules.gl.title"),
       desc: t("modules.gl.desc"),
       link: "/platform/gl-reporting",
-      image: "/personOffice.jpg"
+      image: "/woman-office.jpg"
     },
     {
       title: t("modules.agent.title"),
       desc: t("modules.agent.desc"),
       link: "/platform/agent-banking",
-      image: "/mulsimwoman.jpg"
+      image: "/smiling-looking-phone.webp"
     },
     {
       title: t("modules.admin.title"),
       desc: t("modules.admin.desc"),
       link: "/platform/administration",
-      image: "/meeting.jpg"
+      image: "/people-smiling-papers.jpeg"
     }
   ];
 

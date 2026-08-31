@@ -2,8 +2,8 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
-import { Link } from "@/i18n/navigation";
+import { useTranslations, useLocale } from "next-intl";
+import { Link, usePathname, useRouter } from "@/i18n/navigation";
 import { ArrowRight, X, List } from "@phosphor-icons/react/dist/ssr";
 import {
   Handshake,
@@ -27,9 +27,14 @@ import {
 } from "@phosphor-icons/react";
 import MegaMenu from "./MegaMenu";
 import { Button } from "@/components/ui";
+import LanguageSwitcher from "./LanguageSwitcher";
+import { GB, FR } from 'country-flag-icons/react/3x2';
 
 export default function Header() {
   const t = useTranslations("header");
+  const locale = useLocale();
+  const pathname = usePathname();
+  const router = useRouter();
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mobileExpandedSection, setMobileExpandedSection] = useState<string | null>(null);
@@ -194,6 +199,9 @@ export default function Header() {
 
           {/* Right Actions */}
           <div className="flex items-center gap-3">
+            {/* Language Switcher */}
+            <LanguageSwitcher scrolled={scrolled || mobileMenuOpen} />
+
             <Button
               variant="secondary"
               size="sm"
@@ -261,7 +269,40 @@ export default function Header() {
               ))}
 
               {/* Mobile CTA */}
-              <div className="pt-4">
+              <div className="pt-4 space-y-3">
+                {/* Mobile Language Switcher */}
+                <div className="border border-tikari-green/10 rounded-lg overflow-hidden">
+                  <div className="px-3 py-2 bg-tikari-green/5 text-xs font-semibold text-tikari-green-dark uppercase tracking-wider flex items-center gap-2">
+                    <Globe className="h-4 w-4" weight="bold" />
+                    Language
+                  </div>
+                  <div className="divide-y divide-tikari-green/10">
+                    {[
+                      { code: "en", name: "English", flag: "🇬🇧" },
+                      { code: "fr", name: "Français", flag: "🇫🇷" },
+                    ].map((lang) => (
+                      <button
+                        key={lang.code}
+                        onClick={() => {
+                          router.replace(pathname, { locale: lang.code });
+                          setMobileMenuOpen(false);
+                        }}
+                        className={`w-full flex items-center gap-3 px-4 py-3 text-left transition-colors ${
+                          locale === lang.code
+                            ? "bg-tikari-green/5 text-tikari-green-dark font-medium"
+                            : "text-tikari-sage hover:bg-tikari-green/5"
+                        }`}
+                      >
+                        <span className="text-xl">{lang.flag}</span>
+                        <span className="text-sm font-medium">{lang.name}</span>
+                        {locale === lang.code && (
+                          <span className="ml-auto text-tikari-green">✓</span>
+                        )}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
                 <Button
                   variant="secondary"
                   href="/demo"

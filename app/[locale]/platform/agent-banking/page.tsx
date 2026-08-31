@@ -75,7 +75,7 @@ export default function AgentBankingPage() {
       subtitle: t("sections.mobileMoney.subtitle"),
       icon: DeviceMobile,
       color: "bg-gradient-to-br from-tikari-gold/90 to-tikari-gold/70",
-      image: "/people.jpg",
+      image: "/smiling-looking-phone.webp",
       features: [
         {
           title: t("sections.mobileMoney.features.mtnApi.title"),
@@ -115,7 +115,7 @@ export default function AgentBankingPage() {
       subtitle: t("sections.fieldOperations.subtitle"),
       icon: MapPin,
       color: "bg-tikari-green-dark text-white",
-      image: "/women-market.jpg",
+      image: "/women-smile.jpg",
       features: [
         {
           title: t("sections.fieldOperations.features.offlineMode.title"),
@@ -155,7 +155,7 @@ export default function AgentBankingPage() {
       subtitle: t("sections.cashInOut.subtitle"),
       icon: Coins,
       color: "bg-tikari-gold/90",
-      image: "/handshake.jpg",
+      image: "/man-wife.jpg",
       features: [
         {
           title: t("sections.cashInOut.features.cashIn.title"),
@@ -235,7 +235,7 @@ export default function AgentBankingPage() {
       subtitle: t("sections.regulatoryReporting.subtitle"),
       icon: ShieldCheck,
       color: "bg-tikari-gold/8",
-      image: "/compliance.jpg",
+      image: "/people-smiling-papers.jpeg",
       features: [
         {
           title: t("sections.regulatoryReporting.features.cobacNorms.title"),

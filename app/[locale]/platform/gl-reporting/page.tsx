@@ -35,7 +35,7 @@ export default function GLReportingPage() {
       subtitle: t("sections.chartOfAccounts.subtitle"),
       icon: ListNumbers,
       color: "bg-gradient-to-br from-tikari-green-dark to-tikari-green",
-      image: "/personOffice.jpg",
+      image: "/woman-office.jpg",
       features: [
         {
           title: t("sections.chartOfAccounts.features.regulatoryReturns.title"),
@@ -75,7 +75,7 @@ export default function GLReportingPage() {
       subtitle: t("sections.journalEntries.subtitle"),
       icon: BookOpen,
       color: "bg-gradient-to-br from-tikari-gold/90 to-tikari-gold/70",
-      image: "/meeting.jpg",
+      image: "/people-smiling-papers.jpeg",
       features: [
         {
           title: t("sections.journalEntries.features.automatedPosting.title"),
@@ -115,7 +115,7 @@ export default function GLReportingPage() {
       subtitle: t("sections.financialStatements.subtitle"),
       icon: PresentationChart,
       color: "bg-tikari-green-dark text-white",
-      image: "/bnw-muslim.jpg",
+      image: "/consulting-team.jpg",
       features: [
         {
           title: t("sections.financialStatements.features.position.title"),
@@ -155,7 +155,7 @@ export default function GLReportingPage() {
       subtitle: t("sections.ifrsAaoifi.subtitle"),
       icon: CheckCircle,
       color: "bg-tikari-gold/90",
-      image: "/handshake.jpg",
+      image: "/compliance.jpg",
       features: [
         {
           title: t("sections.ifrsAaoifi.features.ifrs9.title"),
@@ -235,7 +235,7 @@ export default function GLReportingPage() {
       subtitle: t("sections.regulatoryReporting.subtitle"),
       icon: ChartBar,
       color: "bg-tikari-gold/40",
-      image: "/muslim-woman.jpg",
+      image: "/muslim-meeting.jpg",
       features: [
         {
           title: t("sections.regulatoryReporting.features.regulatoryReturns.title"),
