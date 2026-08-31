@@ -201,57 +201,6 @@ export default function MicrofinanceSolutionsPage() {
         </div>
       </section>
 
-      {/* Regulatory Compliance Section */}
-      <section className="py-16 lg:py-24 px-6 bg-tikari-cream/30">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Content */}
-            <div>
-              <h2 className="text-3xl lg:text-[2.75rem] font-bold mb-6 leading-[1.15] tracking-tight text-tikari-green-dark">
-                {t("regulatoryCompliance.title")}
-              </h2>
-              
-              <div className="space-y-4 text-[15px] lg:text-[16px] text-tikari-sage leading-relaxed">
-                <p>
-                  {t("regulatoryCompliance.description1")}
-                </p>
-                <p>
-                  {t("regulatoryCompliance.description2")}
-                </p>
-              </div>
-
-              <Button
-                size="lg"
-                href="/platform/compliance"
-                className="group mt-8"
-              >
-                {t("regulatoryCompliance.cta")}
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" weight="bold" />
-              </Button>
-            </div>
-
-            {/* Returns Grid */}
-            <div className="grid grid-cols-2 gap-4">
-              {regulatoryReturns.map((item, idx) => (
-                <div 
-                  key={idx}
-                  className="bg-white border border-tikari-green/10 p-5 hover:border-tikari-green/30 hover:shadow-lg transition-all duration-300 rounded-2xl"
-                >
-                  <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-tikari-green/10 border border-tikari-green/20 flex items-center justify-center flex-shrink-0 rounded-full">
-                      <FileText className="h-4 w-4 text-tikari-green-dark" weight="bold" />
-                    </div>
-                    <div>
-                      <div className="text-xs font-bold text-tikari-green-dark mb-1">{item.code}</div>
-                      <div className="text-[13px] text-tikari-sage leading-snug">{item.name}</div>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Key Features Section */}
       <section className="py-16 lg:py-24 px-6 bg-tikari-green-dark text-white">
