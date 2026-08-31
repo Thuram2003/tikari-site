@@ -64,7 +64,7 @@ export default function WhyTikariSection() {
             {t("title")}
           </h2>
 
-          <p className="text-[15px] lg:text-[17px] text-white/75 leading-relaxed max-w-2xl mx-auto">
+          <p className="text-sm lg:text-[17px] text-white/75 leading-relaxed max-w-2xl mx-auto">
             {t("subtitle")}
           </p>
         </div>
@@ -93,7 +93,7 @@ export default function WhyTikariSection() {
                     {p.title}
                   </h3>
 
-                  <p className="text-[14px] text-white/60 leading-relaxed">
+                  <p className="text-sm text-white/60 leading-relaxed">
                     {p.desc}
                   </p>
                 </div>

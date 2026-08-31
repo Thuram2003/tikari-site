@@ -107,11 +107,11 @@ export default function SecuritySection() {
 
                   {/* Content */}
                   <div className="space-y-2">
-                    <h3 className="text-[16px] font-bold text-tikari-green-dark leading-snug">
+                    <h3 className="text-[17px] font-bold text-tikari-green-dark leading-snug">
                       {item.title}
                     </h3>
 
-                    <p className="text-[13px] text-tikari-sage leading-relaxed">
+                    <p className="text-sm text-tikari-sage leading-relaxed">
                       {item.desc}
                     </p>
                   </div>

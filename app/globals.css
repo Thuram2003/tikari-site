@@ -59,6 +59,11 @@
 
   --font-sans: 'GT Walsheim', system-ui, sans-serif;
   --font-serif: 'Flecha M', Georgia, serif;
+  --font-mono: 'GT Walsheim', system-ui, sans-serif;
+
+  --text-sm: 1rem;
+  --text-base: 1rem;
+  --text-lg: 1rem;
 
   --color-primary: var(--color-tikari-green);
   --color-secondary: var(--color-tikari-sage-light);
@@ -76,6 +81,7 @@
     background-color: var(--color-tikari-cream-light);
     color: var(--color-tikari-green-dark);
     font-family: var(--font-sans);
+    font-size: 16px;
     overflow-x: hidden;
   }
 
@@ -87,6 +93,7 @@
   h6 {
     font-family: var(--font-serif);
     font-weight: 400;
+    color: currentColor;
   }
 }
 

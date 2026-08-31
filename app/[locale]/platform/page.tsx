@@ -199,7 +199,7 @@ export default function PlatformPage() {
                         className="h-5 w-5 text-tikari-gold flex-shrink-0 mt-0.5 group-hover:scale-110 transition-transform" 
                         weight="fill" 
                       />
-                      <span className="text-[15px] text-tikari-green-dark leading-relaxed">
+                      <span className="text-[16px] text-tikari-green-dark leading-relaxed">
                         {feature}
                       </span>
                     </li>
@@ -209,7 +209,7 @@ export default function PlatformPage() {
                 <div className="pt-6">
                   <Link
                     href={module.exploreLink}
-                    className="inline-flex items-center gap-2 text-tikari-green font-semibold text-[15px] hover:gap-3 transition-all group"
+                    className="inline-flex items-center gap-2 text-tikari-green font-semibold text-[16px] hover:gap-3 transition-all group"
                   >
                     <span>{module.explore}</span>
                     <ArrowRight 
@@ -233,7 +233,7 @@ export default function PlatformPage() {
             <h2 className="text-3xl lg:text-4xl font-bold mb-6 leading-tight">
               {t("integrations.title")}
             </h2>
-            <p className="text-[15px] lg:text-[17px] text-white/75 leading-relaxed">
+            <p className="text-[16px] lg:text-[17px] text-white/75 leading-relaxed">
               {t("integrations.subtitle")}
             </p>
           </div>
@@ -251,7 +251,7 @@ export default function PlatformPage() {
                   <h3 className="text-[17px] font-bold text-white mb-2 leading-snug">
                     {integration.name}
                   </h3>
-                  <p className="text-[13px] text-white/60 leading-relaxed">
+                  <p className="text-[15px] text-white/60 leading-relaxed">
                     {integration.description}
                   </p>
                 </div>

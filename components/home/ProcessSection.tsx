@@ -45,7 +45,7 @@ export default function ProcessSection() {
           <h2 className="text-4xl lg:text-[3.25rem] font-bold text-tikari-green-dark leading-[1.15] tracking-tight">
             {t("title")}
           </h2>
-          <p className="text-[15px] lg:text-[17px] text-tikari-sage leading-relaxed max-w-2xl mx-auto">
+          <p className="text-sm lg:text-[17px] text-tikari-sage leading-relaxed max-w-2xl mx-auto">
             {t("subtitle")}
           </p>
         </div>
@@ -93,7 +93,7 @@ export default function ProcessSection() {
                   
                   <div className="space-y-3">
                     <h3 className="text-[17px] font-bold text-tikari-green-dark leading-snug">{step.title}</h3>
-                    <p className="text-[13px] text-tikari-sage leading-relaxed">{step.desc}</p>
+                    <p className="text-sm text-tikari-sage leading-relaxed">{step.desc}</p>
                   </div>
 
                   {/* Arrow indicator on mobile */}
