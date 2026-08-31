@@ -162,7 +162,7 @@ export default function MicrofinanceSolutionsPage() {
                         </div>
                         <div className="flex-1">
                           <h3 className="text-2xl font-bold mb-1">{category.title}</h3>
-                          <p className="text-sm text-white/80 font-semibold bg-white/10 px-3 py-1 rounded-full inline-block">
+                          <p className="text-sm text-white/80 font-semibold bg-white/10 px-3 py-1 rounded-2xl inline-block">
                             {category.capital}
                           </p>
                         </div>
