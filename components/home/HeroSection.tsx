@@ -28,7 +28,7 @@ export default function HeroSection() {
             {t("title")}
           </h1>
           
-          <p className="text-lg sm:text-xl lg:text-2xl text-tikari-cream/90 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-lg text-tikari-cream/90 max-w-4xl mx-auto leading-relaxed">
             {t("subtitle")}
           </p>
           
