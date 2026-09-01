@@ -2212,6 +2212,230 @@
       "button": "Planifier une démonstration technique"
     }
   },
+  "about": {
+    "meta": {
+      "title": "À Propos de TIKARI | Plateforme Bancaire Islamique",
+      "description": "Découvrez la mission de TIKARI d'apporter la banque conforme à la Charia aux marchés financiers africains. Rencontrez notre Conseil de Surveillance Shariah et découvrez notre engagement envers la conformité réglementaire."
+    },
+    "hero": {
+      "title": "Banque Sans Riba",
+      "titleLine2": "pour les Marchés Africains",
+      "subtitle": "TIKARI est une plateforme bancaire sans intérêt basée sur la foi, conçue pour la banque islamique, la microfinance et les systèmes d'épargne traditionnels à travers plusieurs juridictions africaines."
+    },
+    "mission": {
+      "badge": "Notre Mission",
+      "title": "Apporter la Banque Éthique aux Populations Mal Desservies",
+      "paragraph1": "Des millions de musulmans à travers l'Afrique évitent les banques conventionnelles en raison de préoccupations concernant le riba (intérêt). En même temps, les banques communautaires et les coopératives ont du mal avec des systèmes obsolètes qui ne supportent pas les opérations conformes à la Charia.",
+      "paragraph2": "TIKARI comble cette lacune en fournissant un moteur bancaire de base complet et certifié AAOIFI qui gère tout, du financement Murabaha aux comptes d'investissement à partage des bénéfices, tout en restant entièrement conforme aux réglementations des banques centrales régionales et comptables.",
+      "badges": {
+        "zeroInterest": "Zéro Intérêt",
+        "assetBacked": "Adossé à des Actifs Uniquement",
+        "profitSharing": "Partage des Bénéfices"
+      }
+    },
+    "vision": {
+      "badge": "Notre Vision",
+      "title": "L'Histoire de TIKARI",
+      "paragraph1": "En arabe, \"tikari\" signifie chameau l'animal qui a transporté richesse, commerce et confiance à travers les déserts pendant des siècles. Les chameaux n'ont jamais facturé d'intérêt. Ils transportaient des marchandises, partageaient les fardeaux et construisaient des économies sur le bénéfice mutuel.",
+      "paragraph2": "Comme le chameau, TIKARI est un véhicule d'échange éthique. Nous ne profitons pas de l'argent lui-même nous profitons de l'activité productive. Nous ne facturons pas d'intérêt nous partageons les résultats économiques réels.",
+      "paragraph3": "Notre vision : chaque banque communautaire, coopérative et institution de microfinance à travers nos régions supportées devrait avoir accès à une infrastructure bancaire islamique de classe mondiale—transparente, auditable et certifiée par des érudits."
+    },
+    "values": {
+      "heading": "Nos Principes Fondamentaux",
+      "subtitle": "Quatre engagements qui guident chaque décision que nous prenons",
+      "items": {
+        "shariahCompliant": {
+          "title": "100% Conforme à la Charia",
+          "description": "Chaque transaction, chaque ligne de code, chaque produit financier est vérifié par des érudits islamiques indépendants avant le déploiement."
+        },
+        "regulatorReady": {
+          "title": "Prêt pour les Régulateurs",
+          "description": "Entièrement conforme aux directives des banques centrales régionales (telles que BEAC/COBAC, BCEAO et directives CBN)."
+        },
+        "communityFirst": {
+          "title": "Communauté d'Abord",
+          "description": "Conçu pour les institutions de microfinance mal desservies, les coopératives et les banques communautaires à travers les juridictions supportées en Afrique."
+        },
+        "transparent": {
+          "title": "Opérations Transparentes",
+          "description": "Documentation ouverte, ratios clairs de partage des bénéfices et divulgation complète de toutes les conditions. Pas de frais cachés, pas de gharar (incertitude)."
+        }
+      }
+    },
+    "shariahBoard": {
+      "heading": "Notre Conseil de Surveillance Shariah",
+      "subtitle": "Chaque produit TIKARI est examiné et certifié par des érudits islamiques qualifiés avant d'atteindre les clients.",
+      "scholars": {
+        "chairman": {
+          "name": "Sheikh Dr. Abdulrahman Al-Faisal",
+          "title": "Président, Conseil de Surveillance Shariah",
+          "credentials": "PhD Finance Islamique, Université Al-Azhar",
+          "expertise": "30+ années de supervision bancaire islamique",
+          "certifications": ["Certifié AAOIFI", "Membre CIBAFI"]
+        },
+        "advisor": {
+          "name": "Dr. Fatima Bint Abdullah",
+          "title": "Conseiller Shariah",
+          "credentials": "PhD Fiqh al-Muamalat, Université Islamique Internationale",
+          "expertise": "Spécialiste des contrats Murabaha et Musharakah",
+          "certifications": ["Certifié AAOIFI", "Conseil Consultatif IFSB"]
+        },
+        "officer": {
+          "name": "Sheikh Ibrahim Kamara",
+          "title": "Officier Shariah Régional",
+          "credentials": "Master Droit Islamique, Université de Médine",
+          "expertise": "Conformité réglementaire régionale et adaptation de fatwa locale",
+          "certifications": ["Approuvé Banque Centrale", "Certifié Conformité"]
+        }
+      },
+      "certification": {
+        "title": "Comment Fonctionne la Certification Shariah",
+        "steps": {
+          "submission": "Tous les produits financiers sont soumis au Conseil avant le lancement",
+          "review": "Les érudits examinent les structures contractuelles, les mécanismes de tarification et les modèles de partage des risques",
+          "approval": "Seulement après l'approbation écrite de la fatwa, un produit peut être mis en ligne",
+          "audit": "Les audits Shariah annuels assurent la conformité continue"
+        }
+      },
+      "labels": {
+        "expertise": "Expertise",
+        "certifications": "Certifications"
+      }
+    },
+    "cta": {
+      "heading": "Prêt à Apporter la Banque Islamique à Votre Institution?",
+      "subtitle": "Planifiez une démo pour voir comment TIKARI peut aider votre communauté avec des services financiers conformes à la Charia.",
+      "bookDemo": "Réserver une Démo",
+      "contactUs": "Contactez-Nous"
+    }
+  },
+  "contact": {
+    "hero": {
+      "badge": "Contactez-Nous",
+      "title": "Prenez Contact",
+      "subtitle": "Vous avez des questions sur TIKARI ? Vous souhaitez planifier une démonstration ? Nous sommes là pour aider votre institution à passer à la banque conforme à la Charia."
+    },
+    "contactInfo": {
+      "office": {
+        "title": "Siège Social",
+        "line1": "Douala, Cameroun",
+        "line2": "Au service de l'Afrique de l'Ouest et Centrale",
+        "line3": "et du Nigeria"
+      },
+      "phone": {
+        "title": "Téléphone",
+        "number": "+237 677 777 777",
+        "hours": "Lun-Ven, 8h00 - 18h00 WAT"
+      },
+      "email": {
+        "title": "Email",
+        "general": {
+          "label": "Général :",
+          "address": "info@tikari.cm"
+        },
+        "sales": {
+          "label": "Ventes et Démos :",
+          "address": "sales@tikari.cm"
+        },
+        "support": {
+          "label": "Support :",
+          "address": "support@tikari.cm"
+        }
+      },
+      "hours": {
+        "title": "Heures d'Ouverture",
+        "weekdays": {
+          "label": "Lundi - Vendredi",
+          "time": "8h00 - 18h00"
+        },
+        "saturday": {
+          "label": "Samedi",
+          "time": "9h00 - 14h00"
+        },
+        "sunday": {
+          "label": "Dimanche",
+          "time": "Fermé"
+        },
+        "timezone": "Tous les horaires en heure d'Afrique de l'Ouest (WAT)"
+      }
+    },
+    "form": {
+      "title": "Envoyez-Nous un Message",
+      "description": "Remplissez le formulaire ci-dessous et nous vous répondrons dans les 24 heures",
+      "fields": {
+        "name": {
+          "label": "Nom Complet",
+          "placeholder": "Jean Dupont",
+          "required": true
+        },
+        "organization": {
+          "label": "Organisation/Institution",
+          "placeholder": "Banque Communautaire de Douala",
+          "required": true
+        },
+        "email": {
+          "label": "Adresse Email",
+          "placeholder": "jean@exemple.cm",
+          "required": true
+        },
+        "phone": {
+          "label": "Numéro de Téléphone",
+          "placeholder": "+237 XXX XXX XXX",
+          "required": false
+        },
+        "subject": {
+          "label": "Sujet",
+          "placeholder": "Sélectionnez un sujet",
+          "required": true,
+          "options": {
+            "placeholder": "Sélectionnez un sujet",
+            "demo": "Demander une Démo",
+            "sales": "Demande Commerciale",
+            "support": "Support Technique",
+            "partnership": "Opportunité de Partenariat",
+            "shariah": "Question de Conformité Shariah",
+            "other": "Autre"
+          }
+        },
+        "message": {
+          "label": "Message",
+          "placeholder": "Parlez-nous de votre institution et de la manière dont nous pouvons vous aider...",
+          "required": true
+        }
+      },
+      "buttons": {
+        "submit": "Envoyer le Message",
+        "submitting": "Envoi en cours...",
+        "clear": "Effacer"
+      },
+      "privacy": "En soumettant ce formulaire, vous acceptez notre politique de confidentialité. Nous utiliserons uniquement vos informations pour répondre à votre demande.",
+      "success": {
+        "title": "Message Envoyé avec Succès !",
+        "message": "Nous vous répondrons dans les 24 heures.",
+        "button": "Envoyer un Autre Message"
+      },
+      "error": {
+        "title": "Une erreur s'est produite",
+        "message": "Veuillez réessayer ou nous contacter directement par email."
+      }
+    },
+    "quickLinks": {
+      "title": "Vous Recherchez Quelque Chose de Spécifique ?",
+      "subtitle": "Explorez nos ressources et services",
+      "demo": {
+        "title": "Planifier une Démo",
+        "description": "Voir TIKARI en action"
+      },
+      "help": {
+        "title": "Centre d'Aide",
+        "description": "FAQ et documentation"
+      },
+      "education": {
+        "title": "Finance Islamique 101",
+        "description": "Apprendre les fondamentaux"
+      }
+    }
+  },
   "footer": {
     "brand": {
       "description": "Une plateforme bancaire sans intérêt de premier plan en Afrique. Infrastructure financière complète conforme AAOIFI conçue pour la banque islamique, la microfinance et les systèmes d'épargne traditionnels.",

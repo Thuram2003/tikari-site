@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import { 
   MapPin,
   Phone,
@@ -24,6 +25,7 @@ import {
 } from "@/components/ui";
 
 export default function ContactPage() {
+  const t = useTranslations("contact");
   const [formState, setFormState] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
   const [formData, setFormData] = useState({
     name: '',
@@ -72,12 +74,12 @@ export default function ContactPage() {
       {/* Hero Section */}
       <section className="bg-tikari-green-dark text-white pt-28 pb-16 px-6 md:px-12 border-b border-tikari-gold/20">
         <div className="max-w-4xl mx-auto text-center space-y-4">
-          <span className="text-xs uppercase tracking-wider text-tikari-gold font-bold">Contact Us</span>
+          <span className="text-xs uppercase tracking-wider text-tikari-gold font-bold">{t("hero.badge")}</span>
           <h1 className="text-4xl md:text-5xl font-bold text-white font-serif">
-            Get in Touch
+            {t("hero.title")}
           </h1>
           <p className="text-sm text-tikari-cream/80 max-w-2xl mx-auto leading-relaxed">
-            Have questions about TIKARI? Want to schedule a demo? We're here to help your institution transition to Shariah-compliant banking.
+            {t("hero.subtitle")}
           </p>
         </div>
       </section>
@@ -97,11 +99,11 @@ export default function ContactPage() {
                     <MapPin className="h-6 w-6 text-tikari-gold" weight="fill" />
                   </div>
                   <div className="space-y-1">
-                    <h3 className="text-sm font-bold text-tikari-green-dark uppercase tracking-wider">Head Office</h3>
+                    <h3 className="text-sm font-bold text-tikari-green-dark uppercase tracking-wider">{t("contactInfo.office.title")}</h3>
                     <p className="text-sm text-tikari-sage leading-relaxed">
-                      Douala, Cameroon<br />
-                      Serving West & Central Africa<br />
-                      and Nigeria
+                      {t("contactInfo.office.line1")}<br />
+                      {t("contactInfo.office.line2")}<br />
+                      {t("contactInfo.office.line3")}
                     </p>
                   </div>
                 </div>
@@ -116,11 +118,11 @@ export default function ContactPage() {
                     <Phone className="h-6 w-6 text-tikari-gold" weight="fill" />
                   </div>
                   <div className="space-y-1">
-                    <h3 className="text-sm font-bold text-tikari-green-dark uppercase tracking-wider">Phone</h3>
+                    <h3 className="text-sm font-bold text-tikari-green-dark uppercase tracking-wider">{t("contactInfo.phone.title")}</h3>
                     <p className="text-sm text-tikari-sage font-mono">
-                      +237 677 777 777
+                      {t("contactInfo.phone.number")}
                     </p>
-                    <p className="text-xs text-tikari-sage/70">Mon-Fri, 8:00 AM - 6:00 PM WAT</p>
+                    <p className="text-xs text-tikari-sage/70">{t("contactInfo.phone.hours")}</p>
                   </div>
                 </div>
               </CardContent>
@@ -134,24 +136,24 @@ export default function ContactPage() {
                     <Envelope className="h-6 w-6 text-tikari-gold" weight="fill" />
                   </div>
                   <div className="space-y-2">
-                    <h3 className="text-sm font-bold text-tikari-green-dark uppercase tracking-wider">Email</h3>
+                    <h3 className="text-sm font-bold text-tikari-green-dark uppercase tracking-wider">{t("contactInfo.email.title")}</h3>
                     <div className="space-y-2 text-sm text-tikari-sage">
                       <div>
-                        <p className="text-xs font-semibold text-tikari-green-dark">General:</p>
-                        <a href="mailto:info@tikari.cm" className="hover:text-tikari-gold transition-colors">
-                          info@tikari.cm
+                        <p className="text-xs font-semibold text-tikari-green-dark">{t("contactInfo.email.general.label")}</p>
+                        <a href={`mailto:${t("contactInfo.email.general.address")}`} className="hover:text-tikari-gold transition-colors">
+                          {t("contactInfo.email.general.address")}
                         </a>
                       </div>
                       <div>
-                        <p className="text-xs font-semibold text-tikari-green-dark">Sales & Demos:</p>
-                        <a href="mailto:sales@tikari.cm" className="hover:text-tikari-gold transition-colors">
-                          sales@tikari.cm
+                        <p className="text-xs font-semibold text-tikari-green-dark">{t("contactInfo.email.sales.label")}</p>
+                        <a href={`mailto:${t("contactInfo.email.sales.address")}`} className="hover:text-tikari-gold transition-colors">
+                          {t("contactInfo.email.sales.address")}
                         </a>
                       </div>
                       <div>
-                        <p className="text-xs font-semibold text-tikari-green-dark">Support:</p>
-                        <a href="mailto:support@tikari.cm" className="hover:text-tikari-gold transition-colors">
-                          support@tikari.cm
+                        <p className="text-xs font-semibold text-tikari-green-dark">{t("contactInfo.email.support.label")}</p>
+                        <a href={`mailto:${t("contactInfo.email.support.address")}`} className="hover:text-tikari-gold transition-colors">
+                          {t("contactInfo.email.support.address")}
                         </a>
                       </div>
                     </div>
@@ -168,22 +170,22 @@ export default function ContactPage() {
                     <Clock className="h-6 w-6 text-tikari-gold" weight="fill" />
                   </div>
                   <div className="space-y-2 w-full">
-                    <h3 className="text-sm font-bold text-tikari-green-dark uppercase tracking-wider">Business Hours</h3>
+                    <h3 className="text-sm font-bold text-tikari-green-dark uppercase tracking-wider">{t("contactInfo.hours.title")}</h3>
                     <div className="space-y-2 text-sm">
                       <div className="flex justify-between">
-                        <span className="font-semibold text-tikari-green-dark">Monday - Friday</span>
-                        <span className="text-tikari-sage">8:00 AM - 6:00 PM</span>
+                        <span className="font-semibold text-tikari-green-dark">{t("contactInfo.hours.weekdays.label")}</span>
+                        <span className="text-tikari-sage">{t("contactInfo.hours.weekdays.time")}</span>
                       </div>
                       <div className="flex justify-between">
-                        <span className="font-semibold text-tikari-green-dark">Saturday</span>
-                        <span className="text-tikari-sage">9:00 AM - 2:00 PM</span>
+                        <span className="font-semibold text-tikari-green-dark">{t("contactInfo.hours.saturday.label")}</span>
+                        <span className="text-tikari-sage">{t("contactInfo.hours.saturday.time")}</span>
                       </div>
                       <div className="flex justify-between">
-                        <span className="font-semibold text-tikari-green-dark">Sunday</span>
-                        <span className="text-tikari-sage">Closed</span>
+                        <span className="font-semibold text-tikari-green-dark">{t("contactInfo.hours.sunday.label")}</span>
+                        <span className="text-tikari-sage">{t("contactInfo.hours.sunday.time")}</span>
                       </div>
                       <p className="text-xs text-tikari-sage/70 pt-2 border-t border-tikari-green/5">
-                        All times in West Africa Time (WAT)
+                        {t("contactInfo.hours.timezone")}
                       </p>
                     </div>
                   </div>
@@ -202,14 +204,14 @@ export default function ContactPage() {
                     <CheckCircle className="h-10 w-10 text-tikari-gold" weight="fill" />
                   </div>
                   <div className="space-y-2">
-                    <h2 className="text-2xl font-bold text-tikari-green-dark font-serif">Message Sent Successfully!</h2>
+                    <h2 className="text-2xl font-bold text-tikari-green-dark font-serif">{t("form.success.title")}</h2>
                     <p className="text-sm text-tikari-sage max-w-sm mx-auto leading-relaxed">
-                      We'll get back to you within 24 hours.
+                      {t("form.success.message")}
                     </p>
                   </div>
                   <div className="flex gap-3 justify-center pt-4">
                     <Button variant="primary" onClick={() => setFormState('idle')} className="rounded-xl">
-                      Send Another Message
+                      {t("form.success.button")}
                     </Button>
                   </div>
                 </CardContent>
@@ -218,10 +220,10 @@ export default function ContactPage() {
               <Card className="rounded-2xl border border-tikari-green/10 shadow-lg">
                 <CardHeader className="border-b border-tikari-green/5 pb-6">
                   <CardTitle className="text-2xl font-bold text-tikari-green-dark font-serif">
-                    Send Us a Message
+                    {t("form.title")}
                   </CardTitle>
                   <CardDescription className="text-tikari-sage mt-1">
-                    Fill out the form below and we'll respond within 24 hours
+                    {t("form.description")}
                   </CardDescription>
                 </CardHeader>
                 
@@ -230,8 +232,8 @@ export default function ContactPage() {
                     <div className="mb-6 p-4 bg-red-50 border-l-4 border-red-500 flex items-start gap-3 rounded-xl">
                       <Warning className="h-6 w-6 text-red-600 flex-shrink-0 mt-0.5" weight="fill" />
                       <div>
-                        <p className="font-semibold text-red-900 text-sm">Something went wrong</p>
-                        <p className="text-xs text-red-800 mt-1">Please try again or email us directly.</p>
+                        <p className="font-semibold text-red-900 text-sm">{t("form.error.title")}</p>
+                        <p className="text-xs text-red-800 mt-1">{t("form.error.message")}</p>
                       </div>
                     </div>
                   )}
@@ -241,7 +243,7 @@ export default function ContactPage() {
                     {/* Name */}
                     <div className="space-y-2">
                       <Label htmlFor="name" className="text-tikari-green-dark font-semibold">
-                        Full Name *
+                        {t("form.fields.name.label")} *
                       </Label>
                       <Input
                         type="text"
@@ -250,7 +252,7 @@ export default function ContactPage() {
                         value={formData.name}
                         onChange={handleChange}
                         required
-                        placeholder="John Doe"
+                        placeholder={t("form.fields.name.placeholder")}
                         className="rounded-xl"
                       />
                     </div>
@@ -258,7 +260,7 @@ export default function ContactPage() {
                     {/* Organization */}
                     <div className="space-y-2">
                       <Label htmlFor="organization" className="text-tikari-green-dark font-semibold">
-                        Organization/Institution *
+                        {t("form.fields.organization.label")} *
                       </Label>
                       <Input
                         type="text"
@@ -267,7 +269,7 @@ export default function ContactPage() {
                         value={formData.organization}
                         onChange={handleChange}
                         required
-                        placeholder="Douala Community Bank"
+                        placeholder={t("form.fields.organization.placeholder")}
                         className="rounded-xl"
                       />
                     </div>
@@ -276,7 +278,7 @@ export default function ContactPage() {
                     <div className="grid md:grid-cols-2 gap-6">
                       <div className="space-y-2">
                         <Label htmlFor="email" className="text-tikari-green-dark font-semibold">
-                          Email Address *
+                          {t("form.fields.email.label")} *
                         </Label>
                         <Input
                           type="email"
@@ -285,13 +287,13 @@ export default function ContactPage() {
                           value={formData.email}
                           onChange={handleChange}
                           required
-                          placeholder="john@example.cm"
+                          placeholder={t("form.fields.email.placeholder")}
                           className="rounded-xl"
                         />
                       </div>
                       <div className="space-y-2">
                         <Label htmlFor="phone" className="text-tikari-green-dark font-semibold">
-                          Phone Number
+                          {t("form.fields.phone.label")}
                         </Label>
                         <Input
                           type="tel"
@@ -299,7 +301,7 @@ export default function ContactPage() {
                           name="phone"
                           value={formData.phone}
                           onChange={handleChange}
-                          placeholder="+237 XXX XXX XXX"
+                          placeholder={t("form.fields.phone.placeholder")}
                           className="rounded-xl"
                         />
                       </div>
@@ -308,7 +310,7 @@ export default function ContactPage() {
                     {/* Subject */}
                     <div className="space-y-2">
                       <Label htmlFor="subject" className="text-tikari-green-dark font-semibold">
-                        Subject *
+                        {t("form.fields.subject.label")} *
                       </Label>
                       <Select
                         id="subject"
@@ -318,20 +320,20 @@ export default function ContactPage() {
                         required
                         className="rounded-xl"
                       >
-                        <option value="">Select a subject</option>
-                        <option value="demo">Request a Demo</option>
-                        <option value="sales">Sales Inquiry</option>
-                        <option value="support">Technical Support</option>
-                        <option value="partnership">Partnership Opportunity</option>
-                        <option value="shariah">Shariah Compliance Question</option>
-                        <option value="other">Other</option>
+                        <option value="">{t("form.fields.subject.options.placeholder")}</option>
+                        <option value="demo">{t("form.fields.subject.options.demo")}</option>
+                        <option value="sales">{t("form.fields.subject.options.sales")}</option>
+                        <option value="support">{t("form.fields.subject.options.support")}</option>
+                        <option value="partnership">{t("form.fields.subject.options.partnership")}</option>
+                        <option value="shariah">{t("form.fields.subject.options.shariah")}</option>
+                        <option value="other">{t("form.fields.subject.options.other")}</option>
                       </Select>
                     </div>
 
                     {/* Message */}
                     <div className="space-y-2">
                       <Label htmlFor="message" className="text-tikari-green-dark font-semibold">
-                        Message *
+                        {t("form.fields.message.label")} *
                       </Label>
                       <Textarea
                         id="message"
@@ -340,7 +342,7 @@ export default function ContactPage() {
                         onChange={handleChange}
                         required
                         rows={6}
-                        placeholder="Tell us about your institution and how we can help..."
+                        placeholder={t("form.fields.message.placeholder")}
                         className="rounded-xl min-h-[150px]"
                       />
                     </div>
@@ -355,10 +357,10 @@ export default function ContactPage() {
                         className="rounded-xl"
                       >
                         {formState === 'submitting' ? (
-                          'Sending...'
+                          t("form.buttons.submitting")
                         ) : (
                           <>
-                            Send Message
+                            {t("form.buttons.submit")}
                             <ArrowRight className="ml-2 h-5 w-5" weight="bold" />
                           </>
                         )}
@@ -377,12 +379,12 @@ export default function ContactPage() {
                         })}
                         className="rounded-xl"
                       >
-                        Clear
+                        {t("form.buttons.clear")}
                       </Button>
                     </div>
 
                     <p className="text-xs text-tikari-sage/70 pt-2">
-                      By submitting this form, you agree to our privacy policy. We'll only use your information to respond to your inquiry.
+                      {t("form.privacy")}
                     </p>
                   </form>
                 </CardContent>
@@ -397,20 +399,20 @@ export default function ContactPage() {
       <section className="py-16 px-6 md:px-12 bg-tikari-sage-light">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-2xl font-bold text-tikari-green-dark mb-2 font-serif">
-            Looking for Something Specific?
+            {t("quickLinks.title")}
           </h2>
           <p className="text-sm text-tikari-sage mb-8">
-            Explore our resources and services
+            {t("quickLinks.subtitle")}
           </p>
           <div className="grid sm:grid-cols-3 gap-6">
             <Card className="rounded-2xl border border-tikari-green/10 hover:shadow-xl transition-all duration-300 group cursor-pointer">
               <CardContent className="pt-6 pb-6">
                 <a href="/demo" className="block">
                   <h3 className="font-bold text-tikari-green-dark mb-2 group-hover:text-tikari-gold transition-colors">
-                    Schedule a Demo
+                    {t("quickLinks.demo.title")}
                   </h3>
                   <p className="text-sm text-tikari-sage">
-                    See TIKARI in action
+                    {t("quickLinks.demo.description")}
                   </p>
                   <ArrowRight className="h-5 w-5 text-tikari-gold mx-auto mt-3 group-hover:translate-x-1 transition-transform" weight="bold" />
                 </a>
@@ -420,10 +422,10 @@ export default function ContactPage() {
               <CardContent className="pt-6 pb-6">
                 <a href="/resources/support" className="block">
                   <h3 className="font-bold text-tikari-green-dark mb-2 group-hover:text-tikari-gold transition-colors">
-                    Help Center
+                    {t("quickLinks.help.title")}
                   </h3>
                   <p className="text-sm text-tikari-sage">
-                    FAQs and documentation
+                    {t("quickLinks.help.description")}
                   </p>
                   <ArrowRight className="h-5 w-5 text-tikari-gold mx-auto mt-3 group-hover:translate-x-1 transition-transform" weight="bold" />
                 </a>
@@ -433,10 +435,10 @@ export default function ContactPage() {
               <CardContent className="pt-6 pb-6">
                 <a href="/resources/education" className="block">
                   <h3 className="font-bold text-tikari-green-dark mb-2 group-hover:text-tikari-gold transition-colors">
-                    Islamic Finance 101
+                    {t("quickLinks.education.title")}
                   </h3>
                   <p className="text-sm text-tikari-sage">
-                    Learn the fundamentals
+                    {t("quickLinks.education.description")}
                   </p>
                   <ArrowRight className="h-5 w-5 text-tikari-gold mx-auto mt-3 group-hover:translate-x-1 transition-transform" weight="bold" />
                 </a>

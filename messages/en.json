@@ -2212,6 +2212,230 @@
       "button": "Schedule Technical Demo"
     }
   },
+  "about": {
+    "meta": {
+      "title": "About TIKARI | Islamic Banking Platform",
+      "description": "Learn about TIKARI's mission to bring Shariah-compliant banking to African financial markets. Meet our Shariah Supervisory Board and discover our commitment to regulatory compliance."
+    },
+    "hero": {
+      "title": "Banking Without Riba",
+      "titleLine2": "for African Markets",
+      "subtitle": "TIKARI is a faith-based, non-interest banking platform engineered for Islamic banking, microfinance, and traditional savings systems across multiple African jurisdictions."
+    },
+    "mission": {
+      "badge": "Our Mission",
+      "title": "Bringing Ethical Banking to the Underserved",
+      "paragraph1": "Millions of Muslims across Africa avoid conventional banks due to riba (interest) concerns. At the same time, community banks and cooperatives struggle with outdated systems that don't support Shariah-compliant operations.",
+      "paragraph2": "TIKARI bridges this gap providing a complete, AAOIFI-certified core banking engine that handles everything from Murabaha financing to profit-sharing investment accounts, while staying fully compliant with regional central bank and accounting regulations.",
+      "badges": {
+        "zeroInterest": "Zero Interest",
+        "assetBacked": "Asset-Backed Only",
+        "profitSharing": "Profit-Sharing"
+      }
+    },
+    "vision": {
+      "badge": "Our Vision",
+      "title": "The TIKARI Story",
+      "paragraph1": "In Arabic, \"tikari\" means camel the animal that carried wealth, trade, and trust across deserts for centuries. Camels never charged interest. They carried goods, shared burdens, and built economies on mutual benefit.",
+      "paragraph2": "Like the camel, TIKARI is a vehicle of ethical exchange. We don't profit from money itself we profit from productive activity. We don't charge interest we share in real economic outcomes.",
+      "paragraph3": "Our vision: every community bank, cooperative, and microfinance institution across our supported regions should have access to world-class Islamic banking infrastructure—transparent, auditable, and certified by scholars."
+    },
+    "values": {
+      "heading": "Our Foundational Principles",
+      "subtitle": "Four commitments that guide every decision we make",
+      "items": {
+        "shariahCompliant": {
+          "title": "100% Shariah Compliant",
+          "description": "Every transaction, every line of code, every financial product is verified by independent Islamic scholars before deployment."
+        },
+        "regulatorReady": {
+          "title": "Regulator Ready",
+          "description": "Fully compliant with regional central bank guidelines (such as BEAC/COBAC, BCEAO, and CBN directives)."
+        },
+        "communityFirst": {
+          "title": "Community First",
+          "description": "Built for the underserved microfinance institutions, cooperatives, and community banks across supported jurisdictions in Africa."
+        },
+        "transparent": {
+          "title": "Transparent Operations",
+          "description": "Open documentation, clear profit-sharing ratios, and full disclosure of all terms. No hidden fees, no gharar (uncertainty)."
+        }
+      }
+    },
+    "shariahBoard": {
+      "heading": "Our Shariah Supervisory Board",
+      "subtitle": "Every TIKARI product is reviewed and certified by qualified Islamic scholars before it reaches customers.",
+      "scholars": {
+        "chairman": {
+          "name": "Sheikh Dr. Abdulrahman Al-Faisal",
+          "title": "Chairman, Shariah Supervisory Board",
+          "credentials": "PhD Islamic Finance, Al-Azhar University",
+          "expertise": "30+ years in Islamic banking supervision",
+          "certifications": ["AAOIFI Certified", "CIBAFI Member"]
+        },
+        "advisor": {
+          "name": "Dr. Fatima Bint Abdullah",
+          "title": "Shariah Advisor",
+          "credentials": "PhD Fiqh al-Muamalat, International Islamic University",
+          "expertise": "Specialist in Murabaha and Musharakah contracts",
+          "certifications": ["AAOIFI Certified", "IFSB Advisory Board"]
+        },
+        "officer": {
+          "name": "Sheikh Ibrahim Kamara",
+          "title": "Regional Shariah Officer",
+          "credentials": "Master's Islamic Law, University of Madinah",
+          "expertise": "Regional regulatory compliance and local fatwa adaptation",
+          "certifications": ["Central Bank Approved", "Compliance Certified"]
+        }
+      },
+      "certification": {
+        "title": "How Shariah Certification Works",
+        "steps": {
+          "submission": "All financial products are submitted to the Board before launch",
+          "review": "Scholars review contract structures, pricing mechanisms, and risk-sharing models",
+          "approval": "Only after written fatwa approval can a product go live",
+          "audit": "Annual Shariah audits ensure ongoing compliance"
+        }
+      },
+      "labels": {
+        "expertise": "Expertise",
+        "certifications": "Certifications"
+      }
+    },
+    "cta": {
+      "heading": "Ready to Bring Islamic Banking to Your Institution?",
+      "subtitle": "Schedule a demo to see how TIKARI can help you serve your community with Shariah-compliant financial services.",
+      "bookDemo": "Book a Demo",
+      "contactUs": "Contact Us"
+    }
+  },
+  "contact": {
+    "hero": {
+      "badge": "Contact Us",
+      "title": "Get in Touch",
+      "subtitle": "Have questions about TIKARI? Want to schedule a demo? We're here to help your institution transition to Shariah-compliant banking."
+    },
+    "contactInfo": {
+      "office": {
+        "title": "Head Office",
+        "line1": "Douala, Cameroon",
+        "line2": "Serving West & Central Africa",
+        "line3": "and Nigeria"
+      },
+      "phone": {
+        "title": "Phone",
+        "number": "+237 677 777 777",
+        "hours": "Mon-Fri, 8:00 AM - 6:00 PM WAT"
+      },
+      "email": {
+        "title": "Email",
+        "general": {
+          "label": "General:",
+          "address": "info@tikari.cm"
+        },
+        "sales": {
+          "label": "Sales & Demos:",
+          "address": "sales@tikari.cm"
+        },
+        "support": {
+          "label": "Support:",
+          "address": "support@tikari.cm"
+        }
+      },
+      "hours": {
+        "title": "Business Hours",
+        "weekdays": {
+          "label": "Monday - Friday",
+          "time": "8:00 AM - 6:00 PM"
+        },
+        "saturday": {
+          "label": "Saturday",
+          "time": "9:00 AM - 2:00 PM"
+        },
+        "sunday": {
+          "label": "Sunday",
+          "time": "Closed"
+        },
+        "timezone": "All times in West Africa Time (WAT)"
+      }
+    },
+    "form": {
+      "title": "Send Us a Message",
+      "description": "Fill out the form below and we'll respond within 24 hours",
+      "fields": {
+        "name": {
+          "label": "Full Name",
+          "placeholder": "John Doe",
+          "required": true
+        },
+        "organization": {
+          "label": "Organization/Institution",
+          "placeholder": "Douala Community Bank",
+          "required": true
+        },
+        "email": {
+          "label": "Email Address",
+          "placeholder": "john@example.cm",
+          "required": true
+        },
+        "phone": {
+          "label": "Phone Number",
+          "placeholder": "+237 XXX XXX XXX",
+          "required": false
+        },
+        "subject": {
+          "label": "Subject",
+          "placeholder": "Select a subject",
+          "required": true,
+          "options": {
+            "placeholder": "Select a subject",
+            "demo": "Request a Demo",
+            "sales": "Sales Inquiry",
+            "support": "Technical Support",
+            "partnership": "Partnership Opportunity",
+            "shariah": "Shariah Compliance Question",
+            "other": "Other"
+          }
+        },
+        "message": {
+          "label": "Message",
+          "placeholder": "Tell us about your institution and how we can help...",
+          "required": true
+        }
+      },
+      "buttons": {
+        "submit": "Send Message",
+        "submitting": "Sending...",
+        "clear": "Clear"
+      },
+      "privacy": "By submitting this form, you agree to our privacy policy. We'll only use your information to respond to your inquiry.",
+      "success": {
+        "title": "Message Sent Successfully!",
+        "message": "We'll get back to you within 24 hours.",
+        "button": "Send Another Message"
+      },
+      "error": {
+        "title": "Something went wrong",
+        "message": "Please try again or email us directly."
+      }
+    },
+    "quickLinks": {
+      "title": "Looking for Something Specific?",
+      "subtitle": "Explore our resources and services",
+      "demo": {
+        "title": "Schedule a Demo",
+        "description": "See TIKARI in action"
+      },
+      "help": {
+        "title": "Help Center",
+        "description": "FAQs and documentation"
+      },
+      "education": {
+        "title": "Islamic Finance 101",
+        "description": "Learn the fundamentals"
+      }
+    }
+  },
   "footer": {
     "brand": {
       "description": "Africa's leading faith-based non-interest banking platform. Complete AAOIFI-compliant financial infrastructure engineered for Islamic banking, microfinance, and traditional savings systems.",
