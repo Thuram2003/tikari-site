@@ -11,64 +11,100 @@ import {
 import Link from "next/link";
 import { Button } from "@/components/ui";
 import ScrollSpyContent from "../components/ScrollSpyContent";
+import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
-export const metadata: Metadata = {
-  title: "What is Islamic Finance? Complete Guide | TIKARI",
-  description: "Comprehensive introduction to Islamic finance principles, Shariah-compliant banking, and how it works across different jurisdictions. Learn about riba prohibition, profit-sharing, and ethical investing.",
-  keywords: [
-    "Islamic finance",
-    "Shariah banking",
-    "Islamic banking principles",
-    "halal finance",
-    "riba prohibition",
-    "profit sharing",
-    "regulatory compliance",
-    "ethical banking",
-    "Shariah compliance"
-  ],
-  openGraph: {
-    title: "What is Islamic Finance? Complete Guide",
-    description: "Learn the foundations of Islamic finance: core principles, products, and how Shariah-compliant banking works across different regulatory environments.",
-    type: "article",
-    publishedTime: "2024-01-15T00:00:00.000Z",
-    authors: ["TIKARI Shariah Team"],
-  },
-  alternates: {
-    canonical: "/resources/education/what-is-islamic-finance"
-  }
-};
+export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
+  const t = await getTranslations({ locale: params.locale, namespace: "education.whatIsIslamicFinance.metadata" });
+
+  return {
+    title: t("title"),
+    description: t("description"),
+    keywords: [
+      "Islamic finance",
+      "Shariah banking",
+      "Islamic banking principles",
+      "halal finance",
+      "riba prohibition",
+      "profit sharing",
+      "regulatory compliance",
+      "ethical banking",
+      "Shariah compliance"
+    ],
+    openGraph: {
+      title: t("title"),
+      description: t("description"),
+      type: "article",
+      publishedTime: "2024-01-15T00:00:00.000Z",
+      authors: ["TIKARI Shariah Team"],
+    },
+    alternates: {
+      canonical: "/resources/education/what-is-islamic-finance"
+    }
+  };
+}
 
 export default function WhatIsIslamicFinancePage() {
+  const t = useTranslations("education.whatIsIslamicFinance");
+
   const tableOfContents = [
-    { id: "introduction", title: "Introduction" },
-    { id: "core-principles", title: "Core Principles" },
-    { id: "prohibition-of-riba", title: "Prohibition of Riba (Interest)" },
-    { id: "risk-sharing", title: "Risk-Sharing & Profit-Loss Sharing" },
-    { id: "asset-backed", title: "Asset-Backed Transactions" },
-    { id: "ethical-investment", title: "Ethical Investment Screens" },
-    { id: "common-products", title: "Common Islamic Products" },
-    { id: "regulatory-context", title: "Regulatory Frameworks" },
-    { id: "getting-started", title: "Getting Started" },
+    { id: "introduction", title: t("tableOfContents.introduction") },
+    { id: "core-principles", title: t("tableOfContents.corePrinciples") },
+    { id: "prohibition-of-riba", title: t("tableOfContents.prohibitionRiba") },
+    { id: "risk-sharing", title: t("tableOfContents.riskSharing") },
+    { id: "asset-backed", title: t("tableOfContents.assetBacked") },
+    { id: "ethical-investment", title: t("tableOfContents.ethicalInvestment") },
+    { id: "common-products", title: t("tableOfContents.commonProducts") },
+    { id: "regulatory-context", title: t("tableOfContents.regulatoryContext") },
+    { id: "getting-started", title: t("tableOfContents.gettingStarted") },
   ];
 
   const relatedArticles = [
     {
-      title: "Understanding Murabaha Financing",
-      description: "Step-by-step breakdown of cost-plus sale financing",
+      title: t("relatedArticles.articles.murabaha.title"),
+      description: t("relatedArticles.articles.murabaha.description"),
       href: "/resources/education/understanding-murabaha",
-      duration: "12 min read"
+      duration: t("relatedArticles.articles.murabaha.duration")
     },
     {
-      title: "Profit-Sharing Ratio Disclosure",
-      description: "How to properly disclose PSR to customers",
+      title: t("relatedArticles.articles.psr.title"),
+      description: t("relatedArticles.articles.psr.description"),
       href: "/resources/education/profit-sharing-ratio",
-      duration: "8 min read"
+      duration: t("relatedArticles.articles.psr.duration")
     },
     {
-      title: "AAOIFI vs OHADA Standards",
-      description: "Reconciling Islamic accounting with OHADA standards",
+      title: t("relatedArticles.articles.aaoifiOhada.title"),
+      description: t("relatedArticles.articles.aaoifiOhada.description"),
       href: "/resources/education/aaoifi-vs-ohada",
-      duration: "15 min read"
+      duration: t("relatedArticles.articles.aaoifiOhada.duration")
+    }
+  ];
+
+  const corePrinciples = [
+    {
+      icon: ShieldCheck,
+      title: t("corePrinciples.principles.ribaProhibition.title"),
+      description: t("corePrinciples.principles.ribaProhibition.description")
+    },
+    {
+      icon: Users,
+      title: t("corePrinciples.principles.riskSharing.title"),
+      description: t("corePrinciples.principles.riskSharing.description")
+    },
+    {
+      icon: Coins,
+      title: t("corePrinciples.principles.assetBacked.title"),
+      description: t("corePrinciples.principles.assetBacked.description")
+    },
+    {
+      icon: CheckCircle,
+      title: t("corePrinciples.principles.ethicalInvestment.title"),
+      description: t("corePrinciples.principles.ethicalInvestment.description")
+    },
+    {
+      icon: ChartLineUp,
+      title: t("corePrinciples.principles.transparency.title"),
+      description: t("corePrinciples.principles.transparency.description")
     }
   ];
 
@@ -82,22 +118,22 @@ export default function WhatIsIslamicFinancePage() {
             className="inline-flex items-center gap-2 text-tikari-gold hover:text-tikari-gold/80 text-sm font-semibold mb-8 transition-colors"
           >
             <ArrowRight className="h-4 w-4 rotate-180" weight="bold" />
-            Back
+            {t("hero.backLink")}
           </Link>
 
           <div className="flex flex-wrap items-center gap-3 mb-8">
             <span className="bg-tikari-gold/20 text-tikari-gold px-3 py-1 rounded-full text-xs font-semibold border border-tikari-gold/30">
-              Beginner
+              {t("hero.badge.level")}
             </span>
-            <span className="text-white/70 text-sm">15 min read</span>
-            <span className="text-white/70 text-sm">Updated Aug 2026</span>
+            <span className="text-white/70 text-sm">{t("hero.badge.duration")}</span>
+            <span className="text-white/70 text-sm">{t("hero.badge.updated")}</span>
           </div>
 
           <h1 className="text-4xl lg:text-5xl font-bold leading-tight tracking-tight mb-6">
-            What is Islamic Finance?
+            {t("hero.title")}
           </h1>
           <p className="text-lg lg:text-xl text-white/85 leading-relaxed max-w-3xl">
-            A comprehensive introduction to Shariah-compliant banking, core principles, and how Islamic finance operates across different regulatory environments.
+            {t("hero.subtitle")}
           </p>
         </div>
       </section>
@@ -134,52 +170,20 @@ export default function WhatIsIslamicFinancePage() {
                 {/* Introduction */}
                 <div id="introduction">
                   <p className="text-xl lg:text-2xl text-tikari-green-dark font-semibold leading-relaxed mb-8 !mt-0">
-                    Islamic finance is a financial system based on principles derived from Islamic law (Shariah), which prohibits interest (riba) and promotes ethical, asset-backed transactions with risk-sharing mechanisms.
+                    {t("introduction.leadParagraph")}
                   </p>
 
-                  <p>
-                    Unlike conventional banking, which relies heavily on interest-based lending and debt instruments, Islamic finance emphasizes partnerships, trade, and shared accountability between financial institutions and their customers. This approach aligns financial activities with Islamic ethical and moral values, ensuring that all transactions are transparent, fair, and beneficial to society.
-                  </p>
+                  <p>{t("introduction.paragraph1")}</p>
 
-                  <p>
-                    Across regions like West and Central Africa (including <strong>CEMAC</strong> and <strong>WAEMU</strong>) as well as Nigeria (under the <strong>CBN</strong>), Islamic finance is growing rapidly as institutions seek alternatives to conventional banking that better serve diverse populations while remaining compliant with regional banking regulations and international accounting frameworks.
-                  </p>
+                  <p>{t("introduction.paragraph2")}</p>
                 </div>
 
                 {/* Core Principles */}
-                <h2 id="core-principles" className="font-bold text-xl pt-4">Core Principles of Islamic Finance</h2>
-                <p>
-                  Islamic finance is built on five fundamental principles that distinguish it from conventional financial systems:
-                </p>
+                <h2 id="core-principles" className="font-bold text-xl pt-4">{t("corePrinciples.title")}</h2>
+                <p>{t("corePrinciples.intro")}</p>
 
                 <div className="not-prose my-12 grid gap-6 md:grid-cols-2">
-                  {[
-                    {
-                      icon: ShieldCheck,
-                      title: "Prohibition of Riba (Interest)",
-                      description: "All forms of interest whether fixed or variable are strictly prohibited. Money must not generate money on its own."
-                    },
-                    {
-                      icon: Users,
-                      title: "Risk-Sharing",
-                      description: "Profits and losses must be shared between parties. No party bears all the risk alone."
-                    },
-                    {
-                      icon: Coins,
-                      title: "Asset-Backed Transactions",
-                      description: "Every financial transaction must be backed by a tangible asset or service. Speculation is discouraged."
-                    },
-                    {
-                      icon: CheckCircle,
-                      title: "Ethical Investment",
-                      description: "Investments in prohibited sectors (alcohol, gambling, pork, weapons) are not allowed."
-                    },
-                    {
-                      icon: ChartLineUp,
-                      title: "Transparency",
-                      description: "All contracts must be clear, unambiguous, and free from uncertainty (gharar)."
-                    }
-                  ].map((principle, idx) => {
+                  {corePrinciples.map((principle, idx) => {
                     const Icon = principle.icon;
                     return (
                       <div
@@ -203,151 +207,129 @@ export default function WhatIsIslamicFinancePage() {
                 </div>
 
                 {/* Prohibition of Riba */}
-                <h2 id="prohibition-of-riba" className="font-bold text-xl pt-2">Prohibition of Riba (Interest)</h2>
-                <p>
-                  The most fundamental principle in Islamic finance is the <strong>prohibition of riba</strong>, commonly translated as "interest" or "usury." In the Islamic tradition, riba represents any guaranteed increase on a loan or debt, regardless of the percentage.
-                </p>
+                <h2 id="prohibition-of-riba" className="font-bold text-xl pt-2">{t("prohibitionRiba.title")}</h2>
+                <p>{t("prohibitionRiba.intro")}</p>
 
-                <h3 className="font-bold text-lg pt-2">Why is Interest Prohibited?</h3>
-                <p>
-                  Islamic scholars argue that interest-based lending creates an unjust economic system where:
-                </p>
+                <h3 className="font-bold text-lg pt-2">{t("prohibitionRiba.whyProhibited.title")}</h3>
+                <p>{t("prohibitionRiba.whyProhibited.intro")}</p>
                 <ul>
-                  <li><strong>Risk is unbalanced:</strong> The lender receives guaranteed returns without bearing any risk, while the borrower assumes all the risk.</li>
-                  <li><strong>Exploitation occurs:</strong> Interest compounds over time, potentially trapping borrowers in cycles of debt.</li>
-                  <li><strong>Money becomes a commodity:</strong> Interest allows money to generate more money without productive economic activity.</li>
-                  <li><strong>Social inequality grows:</strong> Wealth concentrates among lenders while borrowers struggle with debt burdens.</li>
+                  <li><strong>{t("prohibitionRiba.whyProhibited.reasons.riskUnbalanced")}</strong></li>
+                  <li><strong>{t("prohibitionRiba.whyProhibited.reasons.exploitation")}</strong></li>
+                  <li><strong>{t("prohibitionRiba.whyProhibited.reasons.moneyCommodity")}</strong></li>
+                  <li><strong>{t("prohibitionRiba.whyProhibited.reasons.socialInequality")}</strong></li>
                 </ul>
 
-                <h3 className="font-bold text-lg pt-2">What Replaces Interest?</h3>
-                <p>
-                  Instead of interest, Islamic finance uses <strong>profit-sharing arrangements</strong> where returns are tied to the performance of actual business activities or investments. For example:
-                </p>
+                <h3 className="font-bold text-lg pt-2">{t("prohibitionRiba.replacement.title")}</h3>
+                <p>{t("prohibitionRiba.replacement.intro")}</p>
                 <ul>
-                  <li><strong>Murabaha (cost-plus sale):</strong> The bank purchases an asset and resells it to the customer at a marked-up price, disclosed upfront.</li>
-                  <li><strong>Mudarabah (profit-sharing):</strong> The bank provides capital, and the entrepreneur provides expertise. Profits are shared according to a pre-agreed ratio.</li>
-                  <li><strong>Musharakah (partnership):</strong> Both parties contribute capital and share profits and losses proportionally.</li>
+                  <li><strong>{t("prohibitionRiba.replacement.examples.murabaha")}</strong></li>
+                  <li><strong>{t("prohibitionRiba.replacement.examples.mudarabah")}</strong></li>
+                  <li><strong>{t("prohibitionRiba.replacement.examples.musharakah")}</strong></li>
                 </ul>
 
                 {/* Risk-Sharing */}
-                <h2 id="risk-sharing" className="font-bold text-xl pt-4">Risk-Sharing & Profit-Loss Sharing</h2>
-                <p>
-                  Islamic finance promotes <strong>shared accountability</strong>. Both the financial institution and the customer must participate in the risks and rewards of a transaction.
-                </p>
+                <h2 id="risk-sharing" className="font-bold text-xl pt-4">{t("riskSharing.title")}</h2>
+                <p>{t("riskSharing.intro")}</p>
 
-                <p>
-                  This principle ensures:
-                </p>
+                <p>{t("riskSharing.benefits.title")}</p>
                 <ul>
-                  <li><strong>Fairness:</strong> No party can earn a return without accepting some level of risk.</li>
-                  <li><strong>Economic stability:</strong> Risk-sharing discourages excessive leverage and speculative bubbles.</li>
-                  <li><strong>Alignment of interests:</strong> The bank and the customer work together toward mutual success rather than being adversaries.</li>
+                  <li><strong>{t("riskSharing.benefits.items.fairness")}</strong></li>
+                  <li><strong>{t("riskSharing.benefits.items.stability")}</strong></li>
+                  <li><strong>{t("riskSharing.benefits.items.alignment")}</strong></li>
                 </ul>
 
-                <h3 className="font-bold text-lg pt-2">Practical Example: Mudarabah Investment Account</h3>
-                <p>
-                  A customer deposits 10 million FCFA into a <strong>Mudarabah savings account</strong>. The bank (acting as mudarib or fund manager) invests this capital in Shariah-compliant ventures.
-                </p>
+                <h3 className="font-bold text-lg pt-2">{t("riskSharing.example.title")}</h3>
+                <p>{t("riskSharing.example.description")}</p>
                 <ul>
-                  <li>If the investments generate a profit of 500,000 FCFA, the profit is split according to a <strong>Profit-Sharing Ratio (PSR)</strong>say 60% to the customer and 40% to the bank.</li>
-                  <li>If the investments result in a loss due to market conditions (not negligence), the customer bears the loss on capital, and the bank loses its time and effort.</li>
+                  <li>{t("riskSharing.example.profitScenario")}</li>
+                  <li>{t("riskSharing.example.lossScenario")}</li>
                 </ul>
-                <p>
-                  This is fundamentally different from conventional savings accounts, where the bank guarantees a fixed interest rate regardless of its investment performance.
-                </p>
+                <p>{t("riskSharing.example.comparison")}</p>
 
                 {/* Asset-Backed */}
-                <h2 id="asset-backed" className="font-bold text-xl pt-4">Asset-Backed Transactions</h2>
-                <p>
-                  Every Islamic financial transaction must be backed by a <strong>tangible asset, service, or economic activity</strong>. This principle ensures that financial transactions contribute to real economic growth rather than speculative bubbles.
-                </p>
+                <h2 id="asset-backed" className="font-bold text-xl pt-4">{t("assetBacked.title")}</h2>
+                <p>{t("assetBacked.intro")}</p>
 
-                <h3 className="font-bold text-lg pt-2">Why Asset-Backing Matters</h3>
+                <h3 className="font-bold text-lg pt-2">{t("assetBacked.importance.title")}</h3>
                 <ul>
-                  <li><strong>Prevents speculation:</strong> Money cannot be lent for its own sake. It must be tied to something productive.</li>
-                  <li><strong>Reduces systemic risk:</strong> Asset-backed finance is more stable than derivative-heavy conventional finance.</li>
-                  <li><strong>Encourages productive investment:</strong> Capital flows to sectors that generate real goods and services.</li>
+                  <li><strong>{t("assetBacked.importance.items.prevention")}</strong></li>
+                  <li><strong>{t("assetBacked.importance.items.reducesRisk")}</strong></li>
+                  <li><strong>{t("assetBacked.importance.items.encourages")}</strong></li>
                 </ul>
 
-                <h3 className="font-bold text-lg pt-2">Examples of Asset-Backed Products</h3>
+                <h3 className="font-bold text-lg pt-2">{t("assetBacked.examples.title")}</h3>
                 <ul>
-                  <li><strong>Murabaha for equipment purchase:</strong> A microfinance institution buys a sewing machine for a tailor and sells it to them at cost + markup.</li>
-                  <li><strong>Ijara for vehicle leasing:</strong> The bank owns the vehicle and leases it to the customer, who eventually purchases it.</li>
-                  <li><strong>Salam for agricultural financing:</strong> The bank pre-purchases a farmer's crop at a discounted price, providing immediate capital.</li>
+                  <li><strong>{t("assetBacked.examples.items.murabaha")}</strong></li>
+                  <li><strong>{t("assetBacked.examples.items.ijara")}</strong></li>
+                  <li><strong>{t("assetBacked.examples.items.salam")}</strong></li>
                 </ul>
 
                 {/* Ethical Investment */}
-                <h2 id="ethical-investment" className="font-bold text-xl pt-4">Ethical Investment Screens</h2>
-                <p>
-                  Islamic finance institutions are prohibited from investing in sectors that are <strong>haram (forbidden)</strong> under Shariah. This creates an ethical investment framework that excludes:
-                </p>
+                <h2 id="ethical-investment" className="font-bold text-xl pt-4">{t("ethicalInvestment.title")}</h2>
+                <p>{t("ethicalInvestment.intro")}</p>
                 <ul>
-                  <li><strong>Alcohol production and distribution</strong></li>
-                  <li><strong>Gambling and casinos</strong></li>
-                  <li><strong>Pork and pork-related products</strong></li>
-                  <li><strong>Conventional interest-based banking</strong></li>
-                  <li><strong>Weapons and defense manufacturing</strong></li>
-                  <li><strong>Tobacco production</strong></li>
-                  <li><strong>Pornography and adult entertainment</strong></li>
+                  <li><strong>{t("ethicalInvestment.prohibitedSectors.alcohol")}</strong></li>
+                  <li><strong>{t("ethicalInvestment.prohibitedSectors.gambling")}</strong></li>
+                  <li><strong>{t("ethicalInvestment.prohibitedSectors.pork")}</strong></li>
+                  <li><strong>{t("ethicalInvestment.prohibitedSectors.banking")}</strong></li>
+                  <li><strong>{t("ethicalInvestment.prohibitedSectors.weapons")}</strong></li>
+                  <li><strong>{t("ethicalInvestment.prohibitedSectors.tobacco")}</strong></li>
+                  <li><strong>{t("ethicalInvestment.prohibitedSectors.pornography")}</strong></li>
                 </ul>
 
-                <p>
-                  Beyond sector exclusions, Islamic finance also emphasizes <strong>positive social impact</strong>, encouraging investments in:
-                </p>
+                <p>{t("ethicalInvestment.positive.intro")}</p>
                 <ul>
-                  <li>Healthcare and education</li>
-                  <li>Infrastructure development</li>
-                  <li>Small business empowerment</li>
-                  <li>Agricultural productivity</li>
-                  <li>Renewable energy and sustainability</li>
+                  <li>{t("ethicalInvestment.positive.sectors.healthcare")}</li>
+                  <li>{t("ethicalInvestment.positive.sectors.infrastructure")}</li>
+                  <li>{t("ethicalInvestment.positive.sectors.smallBusiness")}</li>
+                  <li>{t("ethicalInvestment.positive.sectors.agricultural")}</li>
+                  <li>{t("ethicalInvestment.positive.sectors.renewable")}</li>
                 </ul>
 
                 {/* Common Products */}
-                <h2 id="common-products" className="font-bold text-xl pt-4">Common Islamic Finance Products</h2>
-                <p>
-                  Islamic finance offers a wide range of products that mirror conventional banking services while remaining Shariah-compliant:
-                </p>
+                <h2 id="common-products" className="font-bold text-xl pt-4">{t("commonProducts.title")}</h2>
+                <p>{t("commonProducts.intro")}</p>
 
                 <div className="not-prose my-12">
                   <div className="overflow-x-auto rounded-2xl border border-tikari-green/20">
                     <table className="w-full">
                       <thead className="bg-tikari-green-dark text-white">
                         <tr>
-                          <th className="px-6 py-4 text-left font-bold">Product</th>
-                          <th className="px-6 py-4 text-left font-bold">Structure</th>
-                          <th className="px-6 py-4 text-left font-bold">Use Case</th>
+                          <th className="px-6 py-4 text-left font-bold">{t("commonProducts.table.headers.product")}</th>
+                          <th className="px-6 py-4 text-left font-bold">{t("commonProducts.table.headers.structure")}</th>
+                          <th className="px-6 py-4 text-left font-bold">{t("commonProducts.table.headers.useCase")}</th>
                         </tr>
                       </thead>
                       <tbody className="text-tikari-sage">
                         <tr className="border-b border-tikari-green/15">
-                          <td className="px-6 py-4 font-semibold text-tikari-green-dark">Murabaha</td>
-                          <td className="px-6 py-4">Cost-plus sale</td>
-                          <td className="px-6 py-4">Asset financing (equipment, inventory)</td>
+                          <td className="px-6 py-4 font-semibold text-tikari-green-dark">{t("commonProducts.table.rows.murabaha.product")}</td>
+                          <td className="px-6 py-4">{t("commonProducts.table.rows.murabaha.structure")}</td>
+                          <td className="px-6 py-4">{t("commonProducts.table.rows.murabaha.useCase")}</td>
                         </tr>
                         <tr className="border-b border-tikari-green/15 bg-tikari-cream/30">
-                          <td className="px-6 py-4 font-semibold text-tikari-green-dark">Mudarabah</td>
-                          <td className="px-6 py-4">Profit-sharing partnership</td>
-                          <td className="px-6 py-4">Investment accounts, venture capital</td>
+                          <td className="px-6 py-4 font-semibold text-tikari-green-dark">{t("commonProducts.table.rows.mudarabah.product")}</td>
+                          <td className="px-6 py-4">{t("commonProducts.table.rows.mudarabah.structure")}</td>
+                          <td className="px-6 py-4">{t("commonProducts.table.rows.mudarabah.useCase")}</td>
                         </tr>
                         <tr className="border-b border-tikari-green/15">
-                          <td className="px-6 py-4 font-semibold text-tikari-green-dark">Musharakah</td>
-                          <td className="px-6 py-4">Joint partnership</td>
-                          <td className="px-6 py-4">Business financing, project funding</td>
+                          <td className="px-6 py-4 font-semibold text-tikari-green-dark">{t("commonProducts.table.rows.musharakah.product")}</td>
+                          <td className="px-6 py-4">{t("commonProducts.table.rows.musharakah.structure")}</td>
+                          <td className="px-6 py-4">{t("commonProducts.table.rows.musharakah.useCase")}</td>
                         </tr>
                         <tr className="border-b border-tikari-green/15 bg-tikari-cream/30">
-                          <td className="px-6 py-4 font-semibold text-tikari-green-dark">Ijara</td>
-                          <td className="px-6 py-4">Leasing</td>
-                          <td className="px-6 py-4">Vehicle leasing, equipment rental</td>
+                          <td className="px-6 py-4 font-semibold text-tikari-green-dark">{t("commonProducts.table.rows.ijara.product")}</td>
+                          <td className="px-6 py-4">{t("commonProducts.table.rows.ijara.structure")}</td>
+                          <td className="px-6 py-4">{t("commonProducts.table.rows.ijara.useCase")}</td>
                         </tr>
                         <tr className="border-b border-tikari-green/15">
-                          <td className="px-6 py-4 font-semibold text-tikari-green-dark">Salam</td>
-                          <td className="px-6 py-4">Forward purchase</td>
-                          <td className="px-6 py-4">Agricultural financing</td>
+                          <td className="px-6 py-4 font-semibold text-tikari-green-dark">{t("commonProducts.table.rows.salam.product")}</td>
+                          <td className="px-6 py-4">{t("commonProducts.table.rows.salam.structure")}</td>
+                          <td className="px-6 py-4">{t("commonProducts.table.rows.salam.useCase")}</td>
                         </tr>
                         <tr className="bg-tikari-cream/30">
-                          <td className="px-6 py-4 font-semibold text-tikari-green-dark">Qard Hassan</td>
-                          <td className="px-6 py-4">Benevolent loan</td>
-                          <td className="px-6 py-4">Emergency assistance, social welfare</td>
+                          <td className="px-6 py-4 font-semibold text-tikari-green-dark">{t("commonProducts.table.rows.qardHassan.product")}</td>
+                          <td className="px-6 py-4">{t("commonProducts.table.rows.qardHassan.structure")}</td>
+                          <td className="px-6 py-4">{t("commonProducts.table.rows.qardHassan.useCase")}</td>
                         </tr>
                       </tbody>
                     </table>
@@ -355,56 +337,52 @@ export default function WhatIsIslamicFinancePage() {
                 </div>
 
                 {/* Regulatory Context */}
-                <h2 id="regulatory-context" className="font-bold text-xl pt-4">Regulatory & Regional Frameworks</h2>
-                <p>
-                  Islamic finance operates within various regulatory frameworks across Africa, depending on the region and the central bank's guidelines.
-                </p>
+                <h2 id="regulatory-context" className="font-bold text-xl pt-4">{t("regulatoryContext.title")}</h2>
+                <p>{t("regulatoryContext.intro")}</p>
 
-                <h3 className="font-bold text-lg pt-2">Major Regulatory Frameworks</h3>
+                <h3 className="font-bold text-lg pt-2">{t("regulatoryContext.frameworks.title")}</h3>
                 <ul>
-                  <li><strong>CBN Guidelines (Nigeria):</strong> The Central Bank of Nigeria has established frameworks for non-interest banking windows, full non-interest bank operations, and regulatory segregation of general ledgers.</li>
-                  <li><strong>COBAC & BEAC (Central Africa / CEMAC):</strong> Microfinance institutions and banks follow directives set by the Central African Banking Commission and monetary policies by the Bank of Central African States.</li>
-                  <li><strong>BCEAO (West Africa / WAEMU):</strong> Member states in Francophone West Africa operate under regional central bank frameworks that govern microfinance and banking prudential regulations.</li>
-                  <li><strong>OHADA Harmonization:</strong> 17 West and Central African nations follow OHADA business laws, requiring dual compliance by mapping AAOIFI Islamic accounting to OHADA standard charts of accounts.</li>
+                  <li><strong>{t("regulatoryContext.frameworks.items.cbn")}</strong></li>
+                  <li><strong>{t("regulatoryContext.frameworks.items.cemac")}</strong></li>
+                  <li><strong>{t("regulatoryContext.frameworks.items.waemu")}</strong></li>
+                  <li><strong>{t("regulatoryContext.frameworks.items.ohada")}</strong></li>
                 </ul>
 
-                <h3 className="font-bold text-lg pt-2">Opportunities & Alignment</h3>
+                <h3 className="font-bold text-lg pt-2">{t("regulatoryContext.opportunities.title")}</h3>
                 <ul>
-                  <li><strong>Inclusion & SME Support:</strong> Shariah-compliant tools like Murabaha and Musharakah bridge the financing gap for small businesses and smallholder farmers.</li>
-                  <li><strong>Standardized Governance:</strong> Strong alignment with international bodies like the Accounting and Auditing Organization for Islamic Financial Institutions (AAOIFI) simplifies compliance audits.</li>
+                  <li><strong>{t("regulatoryContext.opportunities.items.inclusion")}</strong></li>
+                  <li><strong>{t("regulatoryContext.opportunities.items.governance")}</strong></li>
                 </ul>
 
-                <h3 className="font-bold text-lg pt-2">Key Challenges</h3>
+                <h3 className="font-bold text-lg pt-2">{t("regulatoryContext.challenges.title")}</h3>
                 <ul>
-                  <li><strong>Lack of Specific Regulations:</strong> Some jurisdictions require non-interest financial products to operate under conventional banking acts, creating compliance friction.</li>
-                  <li><strong>Dual Compliance Audits:</strong> Financial institutions must satisfy both local central bank guidelines and external Shariah Advisory Board requirements.</li>
+                  <li><strong>{t("regulatoryContext.challenges.items.lackRegulations")}</strong></li>
+                  <li><strong>{t("regulatoryContext.challenges.items.dualCompliance")}</strong></li>
                 </ul>
 
                 <p>
-                  For a detailed list of supported regions, standards, and specific central bank compliance details, visit our <Link href="/jurisdictions" className="font-bold text-tikari-green-dark hover:underline">Supported Jurisdictions</Link> page.
+                  {t("regulatoryContext.learnMore")} <Link href="/jurisdictions" className="font-bold text-tikari-green-dark hover:underline">{t("regulatoryContext.jurisdictionsLink")}</Link> {t("regulatoryContext.page")}
                 </p>
 
                 {/* Getting Started */}
-                <h2 id="getting-started" className="font-bold text-xl pt-4">Getting Started with Islamic Finance</h2>
-                <p>
-                  Whether you're a financial institution looking to offer Islamic products or a customer seeking Shariah-compliant services, here are the first steps:
-                </p>
+                <h2 id="getting-started" className="font-bold text-xl pt-4">{t("gettingStarted.title")}</h2>
+                <p>{t("gettingStarted.intro")}</p>
 
-                <h3 className="font-bold text-lg pt-2">For Financial Institutions</h3>
+                <h3 className="font-bold text-lg pt-2">{t("gettingStarted.institutions.title")}</h3>
                 <ul>
-                  <li><strong>Establish a Shariah Supervisory Board (ACE):</strong> Form a committee of qualified Islamic scholars to review and approve products.</li>
-                  <li><strong>Adopt Islamic accounting standards:</strong> Implement AAOIFI standards alongside local reporting requirements.</li>
-                  <li><strong>Train staff:</strong> Educate employees on Islamic finance principles, products, and terminology.</li>
-                  <li><strong>Develop compliant products:</strong> Start with simple structures like Murabaha before expanding to complex partnerships.</li>
-                  <li><strong>Obtain regulatory approval:</strong> Work closely with local regulators (such as COBAC, CBN, or central banks) to ensure compliance with banking and microfinance regulations.</li>
+                  <li><strong>{t("gettingStarted.institutions.items.board")}</strong></li>
+                  <li><strong>{t("gettingStarted.institutions.items.accounting")}</strong></li>
+                  <li><strong>{t("gettingStarted.institutions.items.training")}</strong></li>
+                  <li><strong>{t("gettingStarted.institutions.items.products")}</strong></li>
+                  <li><strong>{t("gettingStarted.institutions.items.regulatory")}</strong></li>
                 </ul>
 
-                <h3 className="font-bold text-lg pt-2">For Customers</h3>
+                <h3 className="font-bold text-lg pt-2">{t("gettingStarted.customers.title")}</h3>
                 <ul>
-                  <li><strong>Understand the products:</strong> Learn how Islamic finance products differ from conventional banking.</li>
-                  <li><strong>Ask questions:</strong> Don't hesitate to seek clarification on profit-sharing ratios, contract terms, and Shariah compliance.</li>
-                  <li><strong>Review documentation:</strong> Ensure all contracts are clear and transparent.</li>
-                  <li><strong>Work with certified institutions:</strong> Choose financial institutions with recognized Shariah boards and proper regulatory licensing.</li>
+                  <li><strong>{t("gettingStarted.customers.items.understand")}</strong></li>
+                  <li><strong>{t("gettingStarted.customers.items.questions")}</strong></li>
+                  <li><strong>{t("gettingStarted.customers.items.review")}</strong></li>
+                  <li><strong>{t("gettingStarted.customers.items.certified")}</strong></li>
                 </ul>
 
                 <div className="not-prose my-16 p-8 bg-tikari-gold/10 border-l-4 border-tikari-gold rounded-r-2xl">
@@ -412,17 +390,17 @@ export default function WhatIsIslamicFinancePage() {
                     <BookOpen className="h-8 w-8 text-tikari-green-dark flex-shrink-0 mt-1" weight="bold" />
                     <div>
                       <h4 className="text-xl font-bold text-tikari-green-dark mb-3">
-                        Need Implementation Support?
+                        {t("gettingStarted.cta.title")}
                       </h4>
                       <p className="text-tikari-sage text-base leading-relaxed mb-6">
-                        TIKARI provides comprehensive onboarding, Shariah governance setup, and staff training for financial institutions entering the Islamic finance market.
+                        {t("gettingStarted.cta.description")}
                       </p>
                       <Button
                         variant="primary"
                         size="lg"
                         href="/demo"
                       >
-                        Book a Demo
+                        {t("gettingStarted.cta.button")}
                         <ArrowRight className="ml-2 h-4 w-4" weight="bold" />
                       </Button>
                     </div>
@@ -438,7 +416,7 @@ export default function WhatIsIslamicFinancePage() {
       {/* Related Articles */}
       <section className="py-16 lg:py-20 px-6 bg-tikari-cream/30">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-tikari-green-dark mb-8">Related Articles</h2>
+          <h2 className="text-3xl font-bold text-tikari-green-dark mb-8">{t("relatedArticles.title")}</h2>
           <div className="grid md:grid-cols-3 gap-6">
             {relatedArticles.map((article, idx) => (
               <Link

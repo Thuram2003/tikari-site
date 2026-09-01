@@ -10,65 +10,73 @@ import {
 import Link from "next/link";
 import { Button } from "@/components/ui";
 import ScrollSpyContent from "../components/ScrollSpyContent";
+import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
-export const metadata: Metadata = {
-  title: "Understanding Murabaha Financing: Complete Guide | TIKARI",
-  description: "Step-by-step guide to Murabaha (cost-plus sale) financing in Islamic banking. Learn contract structure, pricing, documentation, and regulatory compliance requirements.",
-  keywords: [
-    "Murabaha financing",
-    "cost plus financing",
-    "Islamic asset financing",
-    "Shariah compliant loans",
-    "Murabaha contract",
-    "Islamic trade financing",
-    "regulatory compliance",
-    "halal business financing",
-    "Murabaha pricing",
-    "Shariah contract structure"
-  ],
-  openGraph: {
-    title: "Understanding Murabaha Financing: Complete Guide",
-    description: "Comprehensive breakdown of Murabaha contracts, pricing mechanisms, and how cost-plus sale financing works in Islamic banking.",
-    type: "article",
-    publishedTime: "2024-01-20T00:00:00.000Z",
-    authors: ["TIKARI Shariah Team"],
-  },
-  alternates: {
-    canonical: "/resources/education/understanding-murabaha"
-  }
-};
+export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
+  const t = await getTranslations({ locale: params.locale, namespace: "education.understandingMurabaha.metadata" });
+
+  return {
+    title: t("title"),
+    description: t("description"),
+    keywords: [
+      "Murabaha financing",
+      "cost plus financing",
+      "Islamic asset financing",
+      "Shariah compliant loans",
+      "Murabaha contract",
+      "Islamic trade financing",
+      "regulatory compliance",
+      "halal business financing",
+      "Murabaha pricing",
+      "Shariah contract structure"
+    ],
+    openGraph: {
+      title: t("title"),
+      description: t("description"),
+      type: "article",
+      publishedTime: "2024-01-20T00:00:00.000Z",
+      authors: ["TIKARI Shariah Team"],
+    },
+    alternates: {
+      canonical: "/resources/education/understanding-murabaha"
+    }
+  };
+}
 
 export default function UnderstandingMurabahaPage() {
+  const t = useTranslations("education.understandingMurabaha");
+
   const tableOfContents = [
-    { id: "introduction", title: "What is Murabaha?" },
-    { id: "how-it-works", title: "How Murabaha Works" },
-    { id: "step-by-step", title: "Transaction Flow" },
-    { id: "pricing", title: "Pricing & Markup" },
-    { id: "documentation", title: "Required Documentation" },
-    { id: "vs-conventional", title: "Murabaha vs Conventional Loan" },
-    { id: "use-cases", title: "Common Use Cases" },
-    { id: "compliance", title: "Regulatory Compliance" },
-    { id: "risks", title: "Risks & Mitigation" },
+    { id: "introduction", title: t("tableOfContents.introduction") },
+    { id: "how-it-works", title: t("tableOfContents.howItWorks") },
+    { id: "step-by-step", title: t("tableOfContents.stepByStep") },
+    { id: "pricing", title: t("tableOfContents.pricing") },
+    { id: "documentation", title: t("tableOfContents.documentation") },
+    { id: "vs-conventional", title: t("tableOfContents.vsConventional") },
+    { id: "use-cases", title: t("tableOfContents.useCases") },
+    { id: "compliance", title: t("tableOfContents.compliance") },
+    { id: "risks", title: t("tableOfContents.risks") },
   ];
 
   const relatedArticles = [
     {
-      title: "What is Islamic Finance?",
-      description: "Introduction to Shariah-compliant banking principles",
+      title: t("relatedArticles.articles.whatIsIslamic.title"),
+      description: t("relatedArticles.articles.whatIsIslamic.description"),
       href: "/resources/education/what-is-islamic-finance",
-      duration: "15 min read"
+      duration: t("relatedArticles.articles.whatIsIslamic.duration")
     },
     {
-      title: "Profit-Sharing Ratio Disclosure",
-      description: "How to properly disclose PSR to customers",
+      title: t("relatedArticles.articles.psr.title"),
+      description: t("relatedArticles.articles.psr.description"),
       href: "/resources/education/profit-sharing-ratio",
-      duration: "8 min read"
+      duration: t("relatedArticles.articles.psr.duration")
     },
     {
-      title: "AAOIFI vs OHADA Standards",
-      description: "Reconciling Islamic accounting with OHADA standards",
+      title: t("relatedArticles.articles.aaoifiOhada.title"),
+      description: t("relatedArticles.articles.aaoifiOhada.description"),
       href: "/resources/education/aaoifi-vs-ohada",
-      duration: "15 min read"
+      duration: t("relatedArticles.articles.aaoifiOhada.duration")
     }
   ];
 
@@ -82,22 +90,22 @@ export default function UnderstandingMurabahaPage() {
             className="inline-flex items-center gap-2 text-tikari-gold hover:text-tikari-gold/80 text-sm font-semibold mb-8 transition-colors"
           >
             <ArrowRight className="h-4 w-4 rotate-180" weight="bold" />
-            Back
+            {t("hero.backLink")}
           </Link>
 
           <div className="flex flex-wrap items-center gap-3 mb-8">
             <span className="bg-tikari-gold/20 text-tikari-gold px-3 py-1 rounded-full text-xs font-semibold border border-tikari-gold/30">
-              Beginner
+              {t("hero.badge.level")}
             </span>
-            <span className="text-white/70 text-sm">12 min read</span>
-            <span className="text-white/70 text-sm">Updated Aug 2026</span>
+            <span className="text-white/70 text-sm">{t("hero.badge.duration")}</span>
+            <span className="text-white/70 text-sm">{t("hero.badge.updated")}</span>
           </div>
 
           <h1 className="text-4xl lg:text-5xl font-bold leading-tight tracking-tight mb-6">
-            Understanding Murabaha Financing
+            {t("hero.title")}
           </h1>
           <p className="text-lg lg:text-xl text-white/85 leading-relaxed max-w-3xl">
-            A step-by-step breakdown of how cost-plus sale financing works in Islamic banking, from contract structure to pricing mechanisms.
+            {t("hero.subtitle")}
           </p>
         </div>
       </section>
@@ -134,124 +142,87 @@ export default function UnderstandingMurabahaPage() {
                 {/* Introduction */}
                 <div id="introduction">
                   <p className="text-xl lg:text-2xl text-tikari-green-dark font-semibold leading-relaxed mb-8 !mt-0">
-                    Murabaha (also spelled Murabahah) is the most widely used Islamic financing structure, accounting for approximately 70% of all Islamic banking transactions worldwide. It's a cost-plus sale arrangement where the bank purchases an asset and resells it to the customer at a disclosed markup.
+                    {t("introduction.leadParagraph")}
                   </p>
 
-                  <p>
-                    The term "Murabaha" comes from the Arabic word <em>ribh</em> (profit), and literally means "a sale on mutually agreed profit." Unlike conventional interest-based loans, Murabaha is a <strong>trade transaction</strong> involving the purchase and sale of a tangible asset not the lending of money.
-                  </p>
+                  <p dangerouslySetInnerHTML={{ __html: t.raw("introduction.paragraph1") }} />
 
                   <p>
-                    Across different regulatory jurisdictions, Murabaha is particularly popular for:
+                    {t("introduction.paragraph2")}
                   </p>
                   <ul>
-                    <li>Working capital financing (inventory, raw materials)</li>
-                    <li>Equipment acquisition (machinery, vehicles, technology)</li>
-                    <li>Trade finance (import/export transactions)</li>
-                    <li>Asset-backed business expansion</li>
+                    <li>{t("introduction.popularUses.workingCapital")}</li>
+                    <li>{t("introduction.popularUses.equipment")}</li>
+                    <li>{t("introduction.popularUses.trade")}</li>
+                    <li>{t("introduction.popularUses.expansion")}</li>
                   </ul>
                 </div>
 
                 {/* How It Works */}
-                <h2 id="how-it-works" className="font-bold text-xl pt-4">How Murabaha Works</h2>
-                <p>
-                  Murabaha transforms what would be a conventional loan into a <strong>Shariah-compliant sale transaction</strong>. Here's the fundamental structure:
-                </p>
+                <h2 id="how-it-works" className="font-bold text-xl pt-4">{t("howItWorks.title")}</h2>
+                <p dangerouslySetInnerHTML={{ __html: t.raw("howItWorks.intro") }} />
 
                 <div className="not-prose my-12 p-7 bg-tikari-cream/40 border-l-4 border-tikari-green rounded-r-2xl">
-                  <h4 className="text-lg font-bold text-tikari-green-dark mb-5">The Murabaha Framework</h4>
+                  <h4 className="text-lg font-bold text-tikari-green-dark mb-5">{t("howItWorks.frameworkTitle")}</h4>
                   <ol className="space-y-4 text-tikari-sage">
                     <li className="flex gap-3">
                       <span className="font-bold text-tikari-green-dark flex-shrink-0">1.</span>
-                      <span><strong>Customer identifies a need:</strong> The customer wants to acquire an asset (e.g., a delivery truck) but lacks immediate capital.</span>
+                      <span dangerouslySetInnerHTML={{ __html: `<strong>${t("howItWorks.steps.step1.title")}</strong> ${t("howItWorks.steps.step1.description")}` }} />
                     </li>
                     <li className="flex gap-3">
                       <span className="font-bold text-tikari-green-dark flex-shrink-0">2.</span>
-                      <span><strong>Promise to purchase:</strong> The customer promises to buy the asset from the bank once the bank acquires it (this promise is binding in most jurisdictions).</span>
+                      <span dangerouslySetInnerHTML={{ __html: `<strong>${t("howItWorks.steps.step2.title")}</strong> ${t("howItWorks.steps.step2.description")}` }} />
                     </li>
                     <li className="flex gap-3">
                       <span className="font-bold text-tikari-green-dark flex-shrink-0">3.</span>
-                      <span><strong>Bank purchases the asset:</strong> The bank buys the asset from a supplier using its own funds.</span>
+                      <span dangerouslySetInnerHTML={{ __html: `<strong>${t("howItWorks.steps.step3.title")}</strong> ${t("howItWorks.steps.step3.description")}` }} />
                     </li>
                     <li className="flex gap-3">
                       <span className="font-bold text-tikari-green-dark flex-shrink-0">4.</span>
-                      <span><strong>Bank takes ownership:</strong> The asset is legally owned by the bank, even if briefly.</span>
+                      <span dangerouslySetInnerHTML={{ __html: `<strong>${t("howItWorks.steps.step4.title")}</strong> ${t("howItWorks.steps.step4.description")}` }} />
                     </li>
                     <li className="flex gap-3">
                       <span className="font-bold text-tikari-green-dark flex-shrink-0">5.</span>
-                      <span><strong>Bank sells to customer:</strong> The bank resells the asset to the customer at <strong>cost + markup</strong>, fully disclosed.</span>
+                      <span dangerouslySetInnerHTML={{ __html: `<strong>${t("howItWorks.steps.step5.title")}</strong> ${t("howItWorks.steps.step5.description")}` }} />
                     </li>
                     <li className="flex gap-3">
                       <span className="font-bold text-tikari-green-dark flex-shrink-0">6.</span>
-                      <span><strong>Deferred payment:</strong> The customer pays the total price in installments over an agreed period.</span>
+                      <span dangerouslySetInnerHTML={{ __html: `<strong>${t("howItWorks.steps.step6.title")}</strong> ${t("howItWorks.steps.step6.description")}` }} />
                     </li>
                   </ol>
                 </div>
 
-                <p>
-                  The key distinction from a conventional loan is that the bank <strong>owns the asset</strong> before selling it, making this a genuine trade transaction rather than a debt instrument with interest.
-                </p>
+                <p dangerouslySetInnerHTML={{ __html: t.raw("howItWorks.keyDistinction") }} />
 
                 {/* Step-by-Step */}
-                <h2 id="step-by-step" className="font-bold text-xl pt-4">Murabaha Transaction Flow</h2>
+                <h2 id="step-by-step" className="font-bold text-xl pt-4">{t("transactionFlow.title")}</h2>
                 <p>
-                  Let's walk through a concrete example: a microenterprise in Douala, Cameroon, needs a 5 million FCFA sewing machine to expand production.
+                  {t("transactionFlow.intro")}
                 </p>
 
                 <div className="not-prose my-10">
                   <div className="space-y-6">
-                    {[
-                      {
-                        step: "Step 1: Customer Application",
-                        description: "The tailor approaches an Islamic microfinance institution (MFI) and requests Murabaha financing for a specific sewing machine model from a local supplier.",
-                        actors: "Customer → Bank"
-                      },
-                      {
-                        step: "Step 2: Promise to Purchase",
-                        description: "The customer signs a binding promise to purchase the sewing machine once the bank acquires it. This promise includes the agreed markup percentage (e.g., 15% over 24 months).",
-                        actors: "Customer ↔ Bank"
-                      },
-                      {
-                        step: "Step 3: Bank Purchases Asset",
-                        description: "The bank buys the sewing machine directly from the supplier for 5 million FCFA. The bank pays cash and obtains full legal ownership.",
-                        actors: "Bank → Supplier"
-                      },
-                      {
-                        step: "Step 4: Ownership Transfer",
-                        description: "The bank takes delivery of the sewing machine. Even if this ownership is brief, it's legally documented (purchase invoice, ownership certificate).",
-                        actors: "Supplier → Bank"
-                      },
-                      {
-                        step: "Step 5: Sale to Customer",
-                        description: "The bank sells the sewing machine to the customer for 5,750,000 FCFA (5M cost + 750K markup = 15% profit). The contract specifies 24 monthly installments of 239,583 FCFA.",
-                        actors: "Bank → Customer"
-                      },
-                      {
-                        step: "Step 6: Installment Payments",
-                        description: "The customer pays 239,583 FCFA monthly for 24 months. The total price is fixed and cannot change (unlike variable-rate conventional loans).",
-                        actors: "Customer → Bank"
-                      }
-                    ].map((item, idx) => (
+                    {[1, 2, 3, 4, 5, 6].map((idx) => (
                       <div
                         key={idx}
                         className="flex gap-5 p-6 bg-white border border-tikari-green/15 rounded-2xl"
                       >
                         <div className="flex-shrink-0">
                           <div className="w-10 h-10 rounded-full bg-tikari-gold flex items-center justify-center text-tikari-green-dark font-bold text-sm">
-                            {idx + 1}
+                            {idx}
                           </div>
                         </div>
                         <div className="flex-1 min-w-0">
                           <div className="flex flex-wrap items-start justify-between gap-2 mb-2">
                             <h4 className="text-lg font-bold text-tikari-green-dark">
-                              {item.step}
+                              {t(`transactionFlow.steps.step${idx}.title`)}
                             </h4>
                             <span className="text-xs text-tikari-sage bg-tikari-cream/60 px-3 py-1 rounded-full whitespace-nowrap">
-                              {item.actors}
+                              {t(`transactionFlow.steps.step${idx}.actors`)}
                             </span>
                           </div>
                           <p className="text-tikari-sage leading-relaxed m-0">
-                            {item.description}
+                            {t(`transactionFlow.steps.step${idx}.description`)}
                           </p>
                         </div>
                       </div>
@@ -260,90 +231,86 @@ export default function UnderstandingMurabahaPage() {
                 </div>
 
                 {/* Pricing */}
-                <h2 id="pricing" className="font-bold text-xl pt-4">Pricing & Markup Calculation</h2>
-                <p>
-                  One of the most important aspects of Murabaha is <strong>transparent pricing</strong>. The bank must disclose:
-                </p>
+                <h2 id="pricing" className="font-bold text-xl pt-4">{t("pricing.title")}</h2>
+                <p dangerouslySetInnerHTML={{ __html: t.raw("pricing.intro") }} />
                 <ul>
-                  <li>The original cost of the asset</li>
-                  <li>The markup (profit margin)</li>
-                  <li>The total selling price</li>
-                  <li>The installment schedule</li>
+                  <li>{t("pricing.disclosureItems.cost")}</li>
+                  <li>{t("pricing.disclosureItems.markup")}</li>
+                  <li>{t("pricing.disclosureItems.total")}</li>
+                  <li>{t("pricing.disclosureItems.schedule")}</li>
                 </ul>
 
-                <h3 className="font-bold text-lg pt-2">How Markup is Determined</h3>
+                <h3 className="font-bold text-lg pt-2">{t("pricing.howDetermined.title")}</h3>
                 <p>
-                  While the markup percentage is not technically "interest," it serves a similar economic function. Islamic scholars permit profit on trade transactions, and banks consider several factors when setting the markup:
+                  {t("pricing.howDetermined.intro")}
                 </p>
 
                 <ul>
-                  <li><strong>Market rates:</strong> Competitive pricing compared to conventional financing options</li>
-                  <li><strong>Risk assessment:</strong> Customer creditworthiness and asset quality</li>
-                  <li><strong>Financing period:</strong> Longer terms typically command higher markups</li>
-                  <li><strong>Asset type:</strong> Liquid assets (easily resold) may have lower markups</li>
-                  <li><strong>Administrative costs:</strong> Operational expenses of executing the transaction</li>
+                  <li dangerouslySetInnerHTML={{ __html: t.raw("pricing.howDetermined.factors.market") }} />
+                  <li dangerouslySetInnerHTML={{ __html: t.raw("pricing.howDetermined.factors.risk") }} />
+                  <li dangerouslySetInnerHTML={{ __html: t.raw("pricing.howDetermined.factors.period") }} />
+                  <li dangerouslySetInnerHTML={{ __html: t.raw("pricing.howDetermined.factors.asset") }} />
+                  <li dangerouslySetInnerHTML={{ __html: t.raw("pricing.howDetermined.factors.admin") }} />
                 </ul>
 
                 <div className="not-prose my-8 p-6 bg-tikari-gold/10 border border-tikari-gold/30 rounded-2xl">
                   <h4 className="text-lg font-bold text-tikari-green-dark mb-2 flex items-center gap-2">
                     <Calculator className="h-6 w-6" weight="bold" />
-                    Murabaha Pricing Example
+                    {t("pricing.example.title")}
                   </h4>
                   <div className="space-y-1 text-tikari-sage">
                     <div className="flex justify-between py-3 border-b border-tikari-green/15">
-                      <span className="font-semibold">Asset Cost Price:</span>
+                      <span className="font-semibold">{t("pricing.example.cost")}</span>
                       <span className="font-mono">5,000,000 FCFA</span>
                     </div>
                     <div className="flex justify-between py-3 border-b border-tikari-green/15">
-                      <span className="font-semibold">Markup (15% over 24 months):</span>
+                      <span className="font-semibold">{t("pricing.example.markup")}</span>
                       <span className="font-mono">750,000 FCFA</span>
                     </div>
                     <div className="flex justify-between py-3 border-b-2 border-tikari-green-dark">
-                      <span className="font-bold text-tikari-green-dark">Total Selling Price:</span>
+                      <span className="font-bold text-tikari-green-dark">{t("pricing.example.total")}</span>
                       <span className="font-mono font-bold text-tikari-green-dark">5,750,000 FCFA</span>
                     </div>
                     <div className="flex justify-between py-3 mt-2">
-                      <span className="font-semibold">Monthly Installment (24 months):</span>
+                      <span className="font-semibold">{t("pricing.example.monthly")}</span>
                       <span className="font-mono">239,583 FCFA</span>
                     </div>
                   </div>
                   <p className="text-sm text-tikari-sage mt-5 italic">
-                    Note: The total price is fixed at contract signing. Unlike conventional loans with variable interest rates, Murabaha prices cannot change.
+                    {t("pricing.example.note")}
                   </p>
                 </div>
 
-                <h3 className="font-bold text-lg pt-2">Fixed vs Variable Pricing</h3>
-                <p>
-                  A critical Shariah requirement: once the Murabaha contract is signed, the <strong>price is immutable</strong>. This differs significantly from conventional loans where interest rates can fluctuate.
-                </p>
+                <h3 className="font-bold text-lg pt-2">{t("pricing.fixedVsVariable.title")}</h3>
+                <p dangerouslySetInnerHTML={{ __html: t.raw("pricing.fixedVsVariable.intro") }} />
 
                 <ul>
-                  <li><strong>Conventional loan:</strong> Principal + variable interest rate (can increase/decrease)</li>
-                  <li><strong>Murabaha:</strong> Fixed selling price (cost + markup), disclosed upfront and unchangeable</li>
+                  <li dangerouslySetInnerHTML={{ __html: t.raw("pricing.fixedVsVariable.conventional") }} />
+                  <li dangerouslySetInnerHTML={{ __html: t.raw("pricing.fixedVsVariable.murabaha") }} />
                 </ul>
 
                 {/* Documentation */}
-                <h2 id="documentation" className="font-bold text-xl pt-4">Required Documentation</h2>
+                <h2 id="documentation" className="font-bold text-xl pt-4">{t("documentation.title")}</h2>
                 <p>
-                  Proper Murabaha execution requires comprehensive documentation to ensure Shariah compliance and legal enforceability:
+                  {t("documentation.intro")}
                 </p>
 
-                <h3 className="font-bold text-lg pt-2">Customer-Side Documents</h3>
+                <h3 className="font-bold text-lg pt-2">{t("documentation.customer.title")}</h3>
                 <ul>
-                  <li><strong>Murabaha financing application:</strong> Details of the asset needed and financing amount</li>
-                  <li><strong>Promise to purchase (wa'ad):</strong> Binding commitment to buy the asset once the bank acquires it</li>
-                  <li><strong>Agency agreement (optional):</strong> In some cases, the customer acts as the bank's agent to purchase the asset on the bank's behalf</li>
-                  <li><strong>Murabaha sale contract:</strong> The final sale agreement specifying cost, markup, total price, and payment terms</li>
-                  <li><strong>Collateral documentation:</strong> Security agreements, guarantees, or asset pledges</li>
+                  <li dangerouslySetInnerHTML={{ __html: t.raw("documentation.customer.items.application") }} />
+                  <li dangerouslySetInnerHTML={{ __html: t.raw("documentation.customer.items.promise") }} />
+                  <li dangerouslySetInnerHTML={{ __html: t.raw("documentation.customer.items.agency") }} />
+                  <li dangerouslySetInnerHTML={{ __html: t.raw("documentation.customer.items.contract") }} />
+                  <li dangerouslySetInnerHTML={{ __html: t.raw("documentation.customer.items.collateral") }} />
                 </ul>
 
-                <h3 className="font-bold text-lg pt-2">Bank-Side Documents</h3>
+                <h3 className="font-bold text-lg pt-2">{t("documentation.bank.title")}</h3>
                 <ul>
-                  <li><strong>Purchase invoice from supplier:</strong> Proof that the bank acquired the asset</li>
-                  <li><strong>Ownership certificate:</strong> Evidence that the bank legally owned the asset before reselling it</li>
-                  <li><strong>Shariah board approval:</strong> Confirmation that the product structure complies with Islamic law</li>
-                  <li><strong>Regulatory compliance checklist:</strong> Verification that the transaction meets local banking or microfinance regulations</li>
-                  <li><strong>Internal risk assessment:</strong> Credit evaluation and approval documentation</li>
+                  <li dangerouslySetInnerHTML={{ __html: t.raw("documentation.bank.items.invoice") }} />
+                  <li dangerouslySetInnerHTML={{ __html: t.raw("documentation.bank.items.ownership") }} />
+                  <li dangerouslySetInnerHTML={{ __html: t.raw("documentation.bank.items.shariah") }} />
+                  <li dangerouslySetInnerHTML={{ __html: t.raw("documentation.bank.items.regulatory") }} />
+                  <li dangerouslySetInnerHTML={{ __html: t.raw("documentation.bank.items.risk") }} />
                 </ul>
 
                 <div className="not-prose my-12 p-7 bg-tikari-cream/40 border-l-4 border-tikari-gold rounded-r-2xl">
@@ -351,19 +318,17 @@ export default function UnderstandingMurabahaPage() {
                     <FileText className="h-7 w-7 text-tikari-green-dark flex-shrink-0 mt-0.5" weight="bold" />
                     <div>
                       <h4 className="text-lg font-bold text-tikari-green-dark mb-2">
-                        Documentation Best Practice
+                        {t("documentation.bestPractice.title")}
                       </h4>
-                      <p className="text-tikari-sage leading-relaxed m-0">
-                        Many Islamic finance institutions streamline the process by creating a <strong>Master Murabaha Framework Agreement</strong> that covers general terms, then use simple purchase orders for individual transactions. This reduces paperwork while maintaining Shariah compliance.
-                      </p>
+                      <p className="text-tikari-sage leading-relaxed m-0" dangerouslySetInnerHTML={{ __html: t.raw("documentation.bestPractice.description") }} />
                     </div>
                   </div>
                 </div>
 
                 {/* Murabaha vs Conventional */}
-                <h2 id="vs-conventional" className="font-bold text-xl pt-4">Murabaha vs Conventional Loan</h2>
+                <h2 id="vs-conventional" className="font-bold text-xl pt-4">{t("vsConventional.title")}</h2>
                 <p>
-                  While Murabaha and conventional loans may appear similar economically, they differ fundamentally in structure and philosophy:
+                  {t("vsConventional.intro")}
                 </p>
 
                 <div className="not-prose my-12">
@@ -371,54 +336,54 @@ export default function UnderstandingMurabahaPage() {
                     <table className="w-full">
                       <thead className="bg-tikari-green-dark text-white">
                         <tr>
-                          <th className="px-6 py-4 text-left font-bold">Aspect</th>
-                          <th className="px-6 py-4 text-left font-bold">Murabaha</th>
-                          <th className="px-6 py-4 text-left font-bold">Conventional Loan</th>
+                          <th className="px-6 py-4 text-left font-bold">{t("vsConventional.table.headers.aspect")}</th>
+                          <th className="px-6 py-4 text-left font-bold">{t("vsConventional.table.headers.murabaha")}</th>
+                          <th className="px-6 py-4 text-left font-bold">{t("vsConventional.table.headers.conventional")}</th>
                         </tr>
                       </thead>
                       <tbody className="text-tikari-sage">
                         <tr className="border-b border-tikari-green/15">
-                          <td className="px-6 py-4 font-semibold text-tikari-green-dark">Nature</td>
-                          <td className="px-6 py-4">Sale transaction (trade)</td>
-                          <td className="px-6 py-4">Debt instrument (lending)</td>
+                          <td className="px-6 py-4 font-semibold text-tikari-green-dark">{t("vsConventional.table.rows.nature.aspect")}</td>
+                          <td className="px-6 py-4">{t("vsConventional.table.rows.nature.murabaha")}</td>
+                          <td className="px-6 py-4">{t("vsConventional.table.rows.nature.conventional")}</td>
                         </tr>
                         <tr className="border-b border-tikari-green/15 bg-tikari-cream/30">
-                          <td className="px-6 py-4 font-semibold text-tikari-green-dark">Asset ownership</td>
-                          <td className="px-6 py-4">Bank owns asset before selling</td>
-                          <td className="px-6 py-4">Bank never owns the asset</td>
+                          <td className="px-6 py-4 font-semibold text-tikari-green-dark">{t("vsConventional.table.rows.ownership.aspect")}</td>
+                          <td className="px-6 py-4">{t("vsConventional.table.rows.ownership.murabaha")}</td>
+                          <td className="px-6 py-4">{t("vsConventional.table.rows.ownership.conventional")}</td>
                         </tr>
                         <tr className="border-b border-tikari-green/15">
-                          <td className="px-6 py-4 font-semibold text-tikari-green-dark">Return structure</td>
-                          <td className="px-6 py-4">Profit on sale (markup)</td>
-                          <td className="px-6 py-4">Interest on loan (riba)</td>
+                          <td className="px-6 py-4 font-semibold text-tikari-green-dark">{t("vsConventional.table.rows.return.aspect")}</td>
+                          <td className="px-6 py-4">{t("vsConventional.table.rows.return.murabaha")}</td>
+                          <td className="px-6 py-4">{t("vsConventional.table.rows.return.conventional")}</td>
                         </tr>
                         <tr className="border-b border-tikari-green/15 bg-tikari-cream/30">
-                          <td className="px-6 py-4 font-semibold text-tikari-green-dark">Price fixation</td>
-                          <td className="px-6 py-4">Fixed at contract signing</td>
-                          <td className="px-6 py-4">Can vary (variable rates)</td>
+                          <td className="px-6 py-4 font-semibold text-tikari-green-dark">{t("vsConventional.table.rows.price.aspect")}</td>
+                          <td className="px-6 py-4">{t("vsConventional.table.rows.price.murabaha")}</td>
+                          <td className="px-6 py-4">{t("vsConventional.table.rows.price.conventional")}</td>
                         </tr>
                         <tr className="border-b border-tikari-green/15">
-                          <td className="px-6 py-4 font-semibold text-tikari-green-dark">Late payment penalty</td>
-                          <td className="px-6 py-4">Charity/fixed penalty (not profit)</td>
-                          <td className="px-6 py-4">Additional interest charges</td>
+                          <td className="px-6 py-4 font-semibold text-tikari-green-dark">{t("vsConventional.table.rows.latePenalty.aspect")}</td>
+                          <td className="px-6 py-4">{t("vsConventional.table.rows.latePenalty.murabaha")}</td>
+                          <td className="px-6 py-4">{t("vsConventional.table.rows.latePenalty.conventional")}</td>
                         </tr>
                         <tr className="border-b border-tikari-green/15 bg-tikari-cream/30">
-                          <td className="px-6 py-4 font-semibold text-tikari-green-dark">Early settlement</td>
-                          <td className="px-6 py-4">Bank may offer rebate (optional)</td>
-                          <td className="px-6 py-4">Often prepayment penalties</td>
+                          <td className="px-6 py-4 font-semibold text-tikari-green-dark">{t("vsConventional.table.rows.earlySettlement.aspect")}</td>
+                          <td className="px-6 py-4">{t("vsConventional.table.rows.earlySettlement.murabaha")}</td>
+                          <td className="px-6 py-4">{t("vsConventional.table.rows.earlySettlement.conventional")}</td>
                         </tr>
                         <tr className="bg-tikari-cream/30">
-                          <td className="px-6 py-4 font-semibold text-tikari-green-dark">Shariah compliance</td>
+                          <td className="px-6 py-4 font-semibold text-tikari-green-dark">{t("vsConventional.table.rows.shariah.aspect")}</td>
                           <td className="px-6 py-4">
                             <span className="inline-flex items-center gap-2">
                               <CheckCircle className="h-5 w-5 text-green-600" weight="bold" />
-                              Halal
+                              {t("vsConventional.table.rows.shariah.murabaha")}
                             </span>
                           </td>
                           <td className="px-6 py-4">
                             <span className="inline-flex items-center gap-2">
                               <XCircle className="h-5 w-5 text-red-600" weight="bold" />
-                              Contains riba
+                              {t("vsConventional.table.rows.shariah.conventional")}
                             </span>
                           </td>
                         </tr>
@@ -428,142 +393,115 @@ export default function UnderstandingMurabahaPage() {
                 </div>
 
                 {/* Use Cases */}
-                {/* Use Cases */}
-                <h2 id="use-cases" className="font-bold text-xl pt-4">Common Use Cases</h2>
+                <h2 id="use-cases" className="font-bold text-xl pt-4">{t("useCases.title")}</h2>
                 <p>
-                  Murabaha is highly versatile and is widely used across various markets for business and consumer financing:
+                  {t("useCases.intro")}
                 </p>
 
-                <h3 className="font-bold text-lg pt-2">1. Working Capital Financing</h3>
-                <p>
-                  <strong>Example:</strong> A textile trader needs 20 million local currency units (e.g. FCFA or Naira) to purchase fabric inventory from a regional supplier.
-                </p>
+                <h3 className="font-bold text-lg pt-2">{t("useCases.cases.workingCapital.title")}</h3>
+                <p dangerouslySetInnerHTML={{ __html: t.raw("useCases.cases.workingCapital.example") }} />
                 <ul>
-                  <li>The bank purchases the fabric from the supplier</li>
-                  <li>The bank sells the fabric to the trader at cost + 12% markup</li>
-                  <li>The trader pays in 6 monthly installments as they sell the fabric to retailers</li>
+                  <li>{t("useCases.cases.workingCapital.points.point1")}</li>
+                  <li>{t("useCases.cases.workingCapital.points.point2")}</li>
+                  <li>{t("useCases.cases.workingCapital.points.point3")}</li>
                 </ul>
 
-                <h3 className="font-bold text-lg pt-2">2. Equipment Acquisition</h3>
-                <p>
-                  <strong>Example:</strong> A construction company needs a cement mixer worth 8 million units.
-                </p>
+                <h3 className="font-bold text-lg pt-2">{t("useCases.cases.equipment.title")}</h3>
+                <p dangerouslySetInnerHTML={{ __html: t.raw("useCases.cases.equipment.example") }} />
                 <ul>
-                  <li>The bank buys the cement mixer from the equipment supplier</li>
-                  <li>The bank sells it to the company at cost + 18% markup over 36 months</li>
-                  <li>The company makes monthly payments according to the fixed installment schedule</li>
+                  <li>{t("useCases.cases.equipment.points.point1")}</li>
+                  <li>{t("useCases.cases.equipment.points.point2")}</li>
+                  <li>{t("useCases.cases.equipment.points.point3")}</li>
                 </ul>
 
-                <h3 className="font-bold text-lg pt-2">3. Vehicle Financing</h3>
-                <p>
-                  <strong>Example:</strong> A delivery service needs three motorcycles totaling 6 million units.
-                </p>
+                <h3 className="font-bold text-lg pt-2">{t("useCases.cases.vehicle.title")}</h3>
+                <p dangerouslySetInnerHTML={{ __html: t.raw("useCases.cases.vehicle.example") }} />
                 <ul>
-                  <li>The bank purchases the motorcycles from a local dealer</li>
-                  <li>The bank resells them at cost + 20% markup over 18 months</li>
-                  <li>Fixed monthly installments are set at contract signing</li>
+                  <li>{t("useCases.cases.vehicle.points.point1")}</li>
+                  <li>{t("useCases.cases.vehicle.points.point2")}</li>
+                  <li>{t("useCases.cases.vehicle.points.point3")}</li>
                 </ul>
 
-                <h3 className="font-bold text-lg pt-2">4. Import Finance</h3>
-                <p>
-                  <strong>Example:</strong> An electronics retailer wants to import smartphones worth 50 million units.
-                </p>
+                <h3 className="font-bold text-lg pt-2">{t("useCases.cases.import.title")}</h3>
+                <p dangerouslySetInnerHTML={{ __html: t.raw("useCases.cases.import.example") }} />
                 <ul>
-                  <li>The bank purchases the smartphones on behalf of the retailer</li>
-                  <li>The bank sells them to the retailer at cost + 10% markup</li>
-                  <li>Payment in 4 quarterly installments</li>
+                  <li>{t("useCases.cases.import.points.point1")}</li>
+                  <li>{t("useCases.cases.import.points.point2")}</li>
+                  <li>{t("useCases.cases.import.points.point3")}</li>
                 </ul>
 
                 {/* Regulatory Compliance */}
-                <h2 id="compliance" className="font-bold text-xl pt-4">Regulatory Compliance</h2>
-                <p>
-                  Islamic finance institutions must navigate both <strong>Shariah requirements</strong> and <strong>local banking regulations</strong> across different jurisdictions:
-                </p>
+                <h2 id="compliance" className="font-bold text-xl pt-4">{t("compliance.title")}</h2>
+                <p dangerouslySetInnerHTML={{ __html: t.raw("compliance.intro") }} />
 
-                <h3 className="font-bold text-lg pt-2">Central Bank Requirements</h3>
+                <h3 className="font-bold text-lg pt-2">{t("compliance.centralBank.title")}</h3>
                 <ul>
-                  <li><strong>Licensing:</strong> Must obtain appropriate banking authorizations or non-interest window approvals from local regulators (like CBN in Nigeria, COBAC in CEMAC, or BCEAO in WAEMU).</li>
-                  <li><strong>Capital adequacy:</strong> Compliance with capital adequacy guidelines and liquidity ratios specified by regional or national guidelines.</li>
-                  <li><strong>Reporting:</strong> Regular submission of compliant financial reports and returns to central bank auditors.</li>
-                  <li><strong>Asset classification:</strong> Murabaha receivables must be properly classified and provisioned per local regulatory frameworks.</li>
-                  <li><strong>Maximum financing exposure:</strong> Strict caps on single-obligor exposure limits.</li>
+                  <li dangerouslySetInnerHTML={{ __html: t.raw("compliance.centralBank.items.licensing") }} />
+                  <li dangerouslySetInnerHTML={{ __html: t.raw("compliance.centralBank.items.capital") }} />
+                  <li dangerouslySetInnerHTML={{ __html: t.raw("compliance.centralBank.items.reporting") }} />
+                  <li dangerouslySetInnerHTML={{ __html: t.raw("compliance.centralBank.items.classification") }} />
+                  <li dangerouslySetInnerHTML={{ __html: t.raw("compliance.centralBank.items.exposure") }} />
                 </ul>
 
-                <h3 className="font-bold text-lg pt-2">OHADA Accounting Treatment</h3>
+                <h3 className="font-bold text-lg pt-2">{t("compliance.ohada.title")}</h3>
                 <ul>
-                  <li><strong>Asset recognition:</strong> The bank must record the asset on its balance sheet when purchased.</li>
-                  <li><strong>Revenue recognition:</strong> Markup can be recognized over the financing period (accrual basis) or at sale (cash basis), depending on local accounting policies.</li>
-                  <li><strong>Disclosure requirements:</strong> Audit notes must clearly explain the nature of Murabaha transactions.</li>
+                  <li dangerouslySetInnerHTML={{ __html: t.raw("compliance.ohada.items.recognition") }} />
+                  <li dangerouslySetInnerHTML={{ __html: t.raw("compliance.ohada.items.revenue") }} />
+                  <li dangerouslySetInnerHTML={{ __html: t.raw("compliance.ohada.items.disclosure") }} />
                 </ul>
 
-                <h3 className="font-bold text-lg pt-2">Shariah Governance</h3>
+                <h3 className="font-bold text-lg pt-2">{t("compliance.shariah.title")}</h3>
                 <ul>
-                  <li><strong>ACE (Advisory Committee of Experts):</strong> Establish a Shariah supervisory board to approve product structures.</li>
-                  <li><strong>Pre-transaction review:</strong> Each Murabaha contract should be reviewed for Shariah compliance.</li>
-                  <li><strong>Annual Shariah audit:</strong> Independent review of all Islamic transactions.</li>
-                  <li><strong>Fatwa documentation:</strong> Written Shariah opinions justifying product structures.</li>
+                  <li dangerouslySetInnerHTML={{ __html: t.raw("compliance.shariah.items.ace") }} />
+                  <li dangerouslySetInnerHTML={{ __html: t.raw("compliance.shariah.items.review") }} />
+                  <li dangerouslySetInnerHTML={{ __html: t.raw("compliance.shariah.items.audit") }} />
+                  <li dangerouslySetInnerHTML={{ __html: t.raw("compliance.shariah.items.fatwa") }} />
                 </ul>
 
                 {/* Risks */}
-                <h2 id="risks" className="font-bold text-xl pt-4">Risks & Mitigation Strategies</h2>
+                <h2 id="risks" className="font-bold text-xl pt-4">{t("risks.title")}</h2>
                 <p>
-                  While Murabaha is relatively straightforward, several risks require careful management:
+                  {t("risks.intro")}
                 </p>
 
-                <h3 className="font-bold text-lg pt-2">1. Commodity Risk</h3>
-                <p>
-                  <strong>Risk:</strong> The bank briefly owns the asset before selling it to the customer. If the asset is damaged, lost, or devalues during this period, the bank bears the loss.
-                </p>
-                <p>
-                  <strong>Mitigation:</strong>
-                </p>
+                <h3 className="font-bold text-lg pt-2">{t("risks.commodity.title")}</h3>
+                <p dangerouslySetInnerHTML={{ __html: t.raw("risks.commodity.risk") }} />
+                <p dangerouslySetInnerHTML={{ __html: t.raw("risks.commodity.mitigation") }} />
                 <ul>
-                  <li>Minimize the ownership period (ideally same-day transaction)</li>
-                  <li>Obtain insurance on the asset during ownership</li>
-                  <li>Conduct thorough asset inspections before purchase</li>
-                  <li>Use agency agreements where the customer acts as the bank's purchasing agent</li>
+                  <li>{t("risks.commodity.strategies.minimize")}</li>
+                  <li>{t("risks.commodity.strategies.insurance")}</li>
+                  <li>{t("risks.commodity.strategies.inspection")}</li>
+                  <li>{t("risks.commodity.strategies.agency")}</li>
                 </ul>
 
-                <h3 className="font-bold text-lg pt-2">2. Credit Risk</h3>
-                <p>
-                  <strong>Risk:</strong> The customer may default on installment payments.
-                </p>
-                <p>
-                  <strong>Mitigation:</strong>
-                </p>
+                <h3 className="font-bold text-lg pt-2">{t("risks.credit.title")}</h3>
+                <p dangerouslySetInnerHTML={{ __html: t.raw("risks.credit.risk") }} />
+                <p dangerouslySetInnerHTML={{ __html: t.raw("risks.credit.mitigation") }} />
                 <ul>
-                  <li>Comprehensive credit assessments before financing</li>
-                  <li>Collateral requirements (asset pledge, guarantees)</li>
-                  <li>Diversification across multiple customers and sectors</li>
-                  <li>Regular monitoring of customer financial health</li>
+                  <li>{t("risks.credit.strategies.assessment")}</li>
+                  <li>{t("risks.credit.strategies.collateral")}</li>
+                  <li>{t("risks.credit.strategies.diversification")}</li>
+                  <li>{t("risks.credit.strategies.monitoring")}</li>
                 </ul>
 
-                <h3 className="font-bold text-lg pt-2">3. Shariah Non-Compliance Risk</h3>
-                <p>
-                  <strong>Risk:</strong> Improper documentation or execution could render the transaction non-Shariah compliant.
-                </p>
-                <p>
-                  <strong>Mitigation:</strong>
-                </p>
+                <h3 className="font-bold text-lg pt-2">{t("risks.shariahNonCompliance.title")}</h3>
+                <p dangerouslySetInnerHTML={{ __html: t.raw("risks.shariahNonCompliance.risk") }} />
+                <p dangerouslySetInnerHTML={{ __html: t.raw("risks.shariahNonCompliance.mitigation") }} />
                 <ul>
-                  <li>Engage qualified Shariah advisors</li>
-                  <li>Implement standardized contract templates</li>
-                  <li>Train staff on Shariah requirements</li>
-                  <li>Conduct regular internal Shariah audits</li>
+                  <li>{t("risks.shariahNonCompliance.strategies.advisors")}</li>
+                  <li>{t("risks.shariahNonCompliance.strategies.templates")}</li>
+                  <li>{t("risks.shariahNonCompliance.strategies.training")}</li>
+                  <li>{t("risks.shariahNonCompliance.strategies.audits")}</li>
                 </ul>
 
-                <h3 className="font-bold text-lg pt-2">4. Legal Risk</h3>
-                <p>
-                  <strong>Risk:</strong> Local legal systems in some jurisdictions may not fully recognize Islamic finance structures, complicating enforcement.
-                </p>
-                <p>
-                  <strong>Mitigation:</strong>
-                </p>
+                <h3 className="font-bold text-lg pt-2">{t("risks.legal.title")}</h3>
+                <p dangerouslySetInnerHTML={{ __html: t.raw("risks.legal.risk") }} />
+                <p dangerouslySetInnerHTML={{ __html: t.raw("risks.legal.mitigation") }} />
                 <ul>
-                  <li>Work with legal experts familiar with both local commercial laws (e.g. OHADA) and Islamic finance</li>
-                  <li>Obtain regulatory clarifications on non-interest product treatment</li>
-                  <li>Use clear, legally enforceable contract language</li>
-                  <li>Maintain thorough documentation for all transactions</li>
+                  <li>{t("risks.legal.strategies.experts")}</li>
+                  <li>{t("risks.legal.strategies.clarifications")}</li>
+                  <li>{t("risks.legal.strategies.language")}</li>
+                  <li>{t("risks.legal.strategies.documentation")}</li>
                 </ul>
 
                 <div className="not-prose my-16 p-8 bg-tikari-gold/10 border-l-4 border-tikari-gold rounded-r-2xl">
@@ -571,17 +509,17 @@ export default function UnderstandingMurabahaPage() {
                     <Handshake className="h-8 w-8 text-tikari-green-dark flex-shrink-0 mt-1" weight="bold" />
                     <div>
                       <h4 className="text-xl font-bold text-tikari-green-dark mb-3">
-                        Implement Murabaha with TIKARI
+                        {t("cta.title")}
                       </h4>
                       <p className="text-tikari-sage text-base leading-relaxed mb-6">
-                        TIKARI's platform includes pre-built Murabaha workflows, automated documentation, Shariah compliance checks, and regulator-ready reporting tailored for local central banks (such as CBN, COBAC, BCEAO, and more).
+                        {t("cta.description")}
                       </p>
                       <Button
                         variant="primary"
                         size="lg"
                         href="/demo"
                       >
-                        Book a Demo
+                        {t("cta.button")}
                         <ArrowRight className="ml-2 h-4 w-4" weight="bold" />
                       </Button>
                     </div>
@@ -596,7 +534,7 @@ export default function UnderstandingMurabahaPage() {
 
       <section className="py-16 lg:py-20 px-6 bg-tikari-cream/30">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-tikari-green-dark mb-8">Related Articles</h2>
+          <h2 className="text-3xl font-bold text-tikari-green-dark mb-8">{t("relatedArticles.title")}</h2>
           <div className="grid md:grid-cols-3 gap-6">
             {relatedArticles.map((article, idx) => (
               <Link

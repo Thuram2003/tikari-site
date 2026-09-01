@@ -2971,7 +2971,937 @@
       "subtitle": "Our team provides onboarding support, Shariah governance setup, and ongoing training for your institution.",
       "bookDemo": "Book a Demo",
       "contactSupport": "Contact Support"
-    }
+    },
+        "whatIsIslamicFinance": {
+          "metadata": {
+            "title": "What is Islamic Finance? Complete Guide | TIKARI",
+            "description": "Comprehensive introduction to Islamic finance principles, Shariah-compliant banking, and how it works across different jurisdictions. Learn about riba prohibition, profit-sharing, and ethical investing."
+          },
+          "hero": {
+            "backLink": "Back",
+            "badge": {
+              "level": "Beginner",
+              "duration": "15 min read",
+              "updated": "Updated Aug 2026"
+            },
+            "title": "What is Islamic Finance?",
+            "subtitle": "A comprehensive introduction to Shariah-compliant banking, core principles, and how Islamic finance operates across different regulatory environments."
+          },
+          "tableOfContents": {
+            "introduction": "Introduction",
+            "corePrinciples": "Core Principles",
+            "prohibitionRiba": "Prohibition of Riba (Interest)",
+            "riskSharing": "Risk-Sharing & Profit-Loss Sharing",
+            "assetBacked": "Asset-Backed Transactions",
+            "ethicalInvestment": "Ethical Investment Screens",
+            "commonProducts": "Common Islamic Products",
+            "regulatoryContext": "Regulatory Frameworks",
+            "gettingStarted": "Getting Started"
+          },
+          "introduction": {
+            "leadParagraph": "Islamic finance is a financial system based on principles derived from Islamic law (Shariah), which prohibits interest (riba) and promotes ethical, asset-backed transactions with risk-sharing mechanisms.",
+            "paragraph1": "Unlike conventional banking, which relies heavily on interest-based lending and debt instruments, Islamic finance emphasizes partnerships, trade, and shared accountability between financial institutions and their customers. This approach aligns financial activities with Islamic ethical and moral values, ensuring that all transactions are transparent, fair, and beneficial to society.",
+            "paragraph2": "Across regions like West and Central Africa (including CEMAC and WAEMU) as well as Nigeria (under the CBN), Islamic finance is growing rapidly as institutions seek alternatives to conventional banking that better serve diverse populations while remaining compliant with regional banking regulations and international accounting frameworks."
+          },
+          "corePrinciples": {
+            "title": "Core Principles of Islamic Finance",
+            "intro": "Islamic finance is built on five fundamental principles that distinguish it from conventional financial systems:",
+            "principles": {
+              "ribaProhibition": {
+                "title": "Prohibition of Riba (Interest)",
+                "description": "All forms of interest whether fixed or variable are strictly prohibited. Money must not generate money on its own."
+              },
+              "riskSharing": {
+                "title": "Risk-Sharing",
+                "description": "Profits and losses must be shared between parties. No party bears all the risk alone."
+              },
+              "assetBacked": {
+                "title": "Asset-Backed Transactions",
+                "description": "Every financial transaction must be backed by a tangible asset or service. Speculation is discouraged."
+              },
+              "ethicalInvestment": {
+                "title": "Ethical Investment",
+                "description": "Investments in prohibited sectors (alcohol, gambling, pork, weapons) are not allowed."
+              },
+              "transparency": {
+                "title": "Transparency",
+                "description": "All contracts must be clear, unambiguous, and free from uncertainty (gharar)."
+              }
+            }
+          },
+          "prohibitionRiba": {
+            "title": "Prohibition of Riba (Interest)",
+            "intro": "The most fundamental principle in Islamic finance is the prohibition of riba, commonly translated as \"interest\" or \"usury.\" In the Islamic tradition, riba represents any guaranteed increase on a loan or debt, regardless of the percentage.",
+            "whyProhibited": {
+              "title": "Why is Interest Prohibited?",
+              "intro": "Islamic scholars argue that interest-based lending creates an unjust economic system where:",
+              "reasons": {
+                "riskUnbalanced": "Risk is unbalanced: The lender receives guaranteed returns without bearing any risk, while the borrower assumes all the risk.",
+                "exploitation": "Exploitation occurs: Interest compounds over time, potentially trapping borrowers in cycles of debt.",
+                "moneyCommodity": "Money becomes a commodity: Interest allows money to generate more money without productive economic activity.",
+                "socialInequality": "Social inequality grows: Wealth concentrates among lenders while borrowers struggle with debt burdens."
+              }
+            },
+            "replacement": {
+              "title": "What Replaces Interest?",
+              "intro": "Instead of interest, Islamic finance uses profit-sharing arrangements where returns are tied to the performance of actual business activities or investments. For example:",
+              "examples": {
+                "murabaha": "Murabaha (cost-plus sale): The bank purchases an asset and resells it to the customer at a marked-up price, disclosed upfront.",
+                "mudarabah": "Mudarabah (profit-sharing): The bank provides capital, and the entrepreneur provides expertise. Profits are shared according to a pre-agreed ratio.",
+                "musharakah": "Musharakah (partnership): Both parties contribute capital and share profits and losses proportionally."
+              }
+            }
+          },
+          "riskSharing": {
+            "title": "Risk-Sharing & Profit-Loss Sharing",
+            "intro": "Islamic finance promotes shared accountability. Both the financial institution and the customer must participate in the risks and rewards of a transaction.",
+            "benefits": {
+              "title": "This principle ensures:",
+              "items": {
+                "fairness": "Fairness: No party can earn a return without accepting some level of risk.",
+                "stability": "Economic stability: Risk-sharing discourages excessive leverage and speculative bubbles.",
+                "alignment": "Alignment of interests: The bank and the customer work together toward mutual success rather than being adversaries."
+              }
+            },
+            "example": {
+              "title": "Practical Example: Mudarabah Investment Account",
+              "description": "A customer deposits 10 million FCFA into a Mudarabah savings account. The bank (acting as mudarib or fund manager) invests this capital in Shariah-compliant ventures.",
+              "profitScenario": "If the investments generate a profit of 500,000 FCFA, the profit is split according to a Profit-Sharing Ratio (PSR)—say 60% to the customer and 40% to the bank.",
+              "lossScenario": "If the investments result in a loss due to market conditions (not negligence), the customer bears the loss on capital, and the bank loses its time and effort.",
+              "comparison": "This is fundamentally different from conventional savings accounts, where the bank guarantees a fixed interest rate regardless of its investment performance."
+            }
+          },
+          "assetBacked": {
+            "title": "Asset-Backed Transactions",
+            "intro": "Every Islamic financial transaction must be backed by a tangible asset, service, or economic activity. This principle ensures that financial transactions contribute to real economic growth rather than speculative bubbles.",
+            "importance": {
+              "title": "Why Asset-Backing Matters",
+              "items": {
+                "prevention": "Prevents speculation: Money cannot be lent for its own sake. It must be tied to something productive.",
+                "reducesRisk": "Reduces systemic risk: Asset-backed finance is more stable than derivative-heavy conventional finance.",
+                "encourages": "Encourages productive investment: Capital flows to sectors that generate real goods and services."
+              }
+            },
+            "examples": {
+              "title": "Examples of Asset-Backed Products",
+              "items": {
+                "murabaha": "Murabaha for equipment purchase: A microfinance institution buys a sewing machine for a tailor and sells it to them at cost + markup.",
+                "ijara": "Ijara for vehicle leasing: The bank owns the vehicle and leases it to the customer, who eventually purchases it.",
+                "salam": "Salam for agricultural financing: The bank pre-purchases a farmer's crop at a discounted price, providing immediate capital."
+              }
+            }
+          },
+          "ethicalInvestment": {
+            "title": "Ethical Investment Screens",
+            "intro": "Islamic finance institutions are prohibited from investing in sectors that are haram (forbidden) under Shariah. This creates an ethical investment framework that excludes:",
+            "prohibitedSectors": {
+              "alcohol": "Alcohol production and distribution",
+              "gambling": "Gambling and casinos",
+              "pork": "Pork and pork-related products",
+              "banking": "Conventional interest-based banking",
+              "weapons": "Weapons and defense manufacturing",
+              "tobacco": "Tobacco production",
+              "pornography": "Pornography and adult entertainment"
+            },
+            "positive": {
+              "intro": "Beyond sector exclusions, Islamic finance also emphasizes positive social impact, encouraging investments in:",
+              "sectors": {
+                "healthcare": "Healthcare and education",
+                "infrastructure": "Infrastructure development",
+                "smallBusiness": "Small business empowerment",
+                "agricultural": "Agricultural productivity",
+                "renewable": "Renewable energy and sustainability"
+              }
+            }
+          },
+          "commonProducts": {
+            "title": "Common Islamic Finance Products",
+            "intro": "Islamic finance offers a wide range of products that mirror conventional banking services while remaining Shariah-compliant:",
+            "table": {
+              "headers": {
+                "product": "Product",
+                "structure": "Structure",
+                "useCase": "Use Case"
+              },
+              "rows": {
+                "murabaha": {
+                  "product": "Murabaha",
+                  "structure": "Cost-plus sale",
+                  "useCase": "Asset financing (equipment, inventory)"
+                },
+                "mudarabah": {
+                  "product": "Mudarabah",
+                  "structure": "Profit-sharing partnership",
+                  "useCase": "Investment accounts, venture capital"
+                },
+                "musharakah": {
+                  "product": "Musharakah",
+                  "structure": "Joint partnership",
+                  "useCase": "Business financing, project funding"
+                },
+                "ijara": {
+                  "product": "Ijara",
+                  "structure": "Leasing",
+                  "useCase": "Vehicle leasing, equipment rental"
+                },
+                "salam": {
+                  "product": "Salam",
+                  "structure": "Forward purchase",
+                  "useCase": "Agricultural financing"
+                },
+                "qardHassan": {
+                  "product": "Qard Hassan",
+                  "structure": "Benevolent loan",
+                  "useCase": "Emergency assistance, social welfare"
+                }
+              }
+            }
+          },
+          "regulatoryContext": {
+            "title": "Regulatory & Regional Frameworks",
+            "intro": "Islamic finance operates within various regulatory frameworks across Africa, depending on the region and the central bank's guidelines.",
+            "frameworks": {
+              "title": "Major Regulatory Frameworks",
+              "items": {
+                "cbn": "CBN Guidelines (Nigeria): The Central Bank of Nigeria has established frameworks for non-interest banking windows, full non-interest bank operations, and regulatory segregation of general ledgers.",
+                "cemac": "COBAC & BEAC (Central Africa / CEMAC): Microfinance institutions and banks follow directives set by the Central African Banking Commission and monetary policies by the Bank of Central African States.",
+                "waemu": "BCEAO (West Africa / WAEMU): Member states in Francophone West Africa operate under regional central bank frameworks that govern microfinance and banking prudential regulations.",
+                "ohada": "OHADA Harmonization: 17 West and Central African nations follow OHADA business laws, requiring dual compliance by mapping AAOIFI Islamic accounting to OHADA standard charts of accounts."
+              }
+            },
+            "opportunities": {
+              "title": "Opportunities & Alignment",
+              "items": {
+                "inclusion": "Inclusion & SME Support: Shariah-compliant tools like Murabaha and Musharakah bridge the financing gap for small businesses and smallholder farmers.",
+                "governance": "Standardized Governance: Strong alignment with international bodies like the Accounting and Auditing Organization for Islamic Financial Institutions (AAOIFI) simplifies compliance audits."
+              }
+            },
+            "challenges": {
+              "title": "Key Challenges",
+              "items": {
+                "lackRegulations": "Lack of Specific Regulations: Some jurisdictions require non-interest financial products to operate under conventional banking acts, creating compliance friction.",
+                "dualCompliance": "Dual Compliance Audits: Financial institutions must satisfy both local central bank guidelines and external Shariah Advisory Board requirements."
+              }
+            },
+            "learnMore": "For a detailed list of supported regions, standards, and specific central bank compliance details, visit our",
+            "jurisdictionsLink": "Supported Jurisdictions",
+            "page": "page."
+          },
+          "gettingStarted": {
+            "title": "Getting Started with Islamic Finance",
+            "intro": "Whether you're a financial institution looking to offer Islamic products or a customer seeking Shariah-compliant services, here are the first steps:",
+            "institutions": {
+              "title": "For Financial Institutions",
+              "items": {
+                "board": "Establish a Shariah Supervisory Board (ACE): Form a committee of qualified Islamic scholars to review and approve products.",
+                "accounting": "Adopt Islamic accounting standards: Implement AAOIFI standards alongside local reporting requirements.",
+                "training": "Train staff: Educate employees on Islamic finance principles, products, and terminology.",
+                "products": "Develop compliant products: Start with simple structures like Murabaha before expanding to complex partnerships.",
+                "regulatory": "Obtain regulatory approval: Work closely with local regulators (such as COBAC, CBN, or central banks) to ensure compliance with banking and microfinance regulations."
+              }
+            },
+            "customers": {
+              "title": "For Customers",
+              "items": {
+                "understand": "Understand the products: Learn how Islamic finance products differ from conventional banking.",
+                "questions": "Ask questions: Don't hesitate to seek clarification on profit-sharing ratios, contract terms, and Shariah compliance.",
+                "review": "Review documentation: Ensure all contracts are clear and transparent.",
+                "certified": "Work with certified institutions: Choose financial institutions with recognized Shariah boards and proper regulatory licensing."
+              }
+            },
+            "cta": {
+              "title": "Need Implementation Support?",
+              "description": "TIKARI provides comprehensive onboarding, Shariah governance setup, and staff training for financial institutions entering the Islamic finance market.",
+              "button": "Book a Demo"
+            }
+          },
+          "relatedArticles": {
+            "title": "Related Articles",
+            "articles": {
+              "murabaha": {
+                "title": "Understanding Murabaha Financing",
+                "description": "Step-by-step breakdown of cost-plus sale financing",
+                "duration": "12 min read"
+              },
+              "psr": {
+                "title": "Profit-Sharing Ratio Disclosure",
+                "description": "How to properly disclose PSR to customers",
+                "duration": "8 min read"
+              },
+              "aaoifiOhada": {
+                "title": "AAOIFI vs OHADA Standards",
+                "description": "Reconciling Islamic accounting with OHADA standards",
+                "duration": "15 min read"
+              }
+            }
+          }
+        },
+        "understandingMurabaha": {
+          "metadata": {
+            "title": "Understanding Murabaha Financing: Complete Guide | TIKARI",
+            "description": "Step-by-step guide to Murabaha (cost-plus sale) financing in Islamic banking. Learn contract structure, pricing, documentation, and regulatory compliance requirements."
+          },
+          "hero": {
+            "backLink": "Back",
+            "badge": {
+              "level": "Beginner",
+              "duration": "12 min read",
+              "updated": "Updated Aug 2026"
+            },
+            "title": "Understanding Murabaha Financing",
+            "subtitle": "A step-by-step breakdown of how cost-plus sale financing works in Islamic banking, from contract structure to pricing mechanisms."
+          },
+          "tableOfContents": {
+            "introduction": "What is Murabaha?",
+            "howItWorks": "How Murabaha Works",
+            "stepByStep": "Transaction Flow",
+            "pricing": "Pricing & Markup",
+            "documentation": "Required Documentation",
+            "vsConventional": "Murabaha vs Conventional Loan",
+            "useCases": "Common Use Cases",
+            "compliance": "Regulatory Compliance",
+            "risks": "Risks & Mitigation"
+          },
+          "introduction": {
+            "leadParagraph": "Murabaha (also spelled Murabahah) is the most widely used Islamic financing structure, accounting for approximately 70% of all Islamic banking transactions worldwide. It's a cost-plus sale arrangement where the bank purchases an asset and resells it to the customer at a disclosed markup.",
+            "paragraph1": "The term \"Murabaha\" comes from the Arabic word ribh (profit), and literally means \"a sale on mutually agreed profit.\" Unlike conventional interest-based loans, Murabaha is a trade transaction involving the purchase and sale of a tangible asset not the lending of money.",
+            "paragraph2": "Across different regulatory jurisdictions, Murabaha is particularly popular for:",
+            "popularUses": {
+              "workingCapital": "Working capital financing (inventory, raw materials)",
+              "equipment": "Equipment acquisition (machinery, vehicles, technology)",
+              "trade": "Trade finance (import/export transactions)",
+              "expansion": "Asset-backed business expansion"
+            }
+          },
+          "howItWorks": {
+            "title": "How Murabaha Works",
+            "intro": "Murabaha transforms what would be a conventional loan into a Shariah-compliant sale transaction. Here's the fundamental structure:",
+            "frameworkTitle": "The Murabaha Framework",
+            "steps": {
+              "step1": {
+                "title": "Customer identifies a need:",
+                "description": "The customer wants to acquire an asset (e.g., a delivery truck) but lacks immediate capital."
+              },
+              "step2": {
+                "title": "Promise to purchase:",
+                "description": "The customer promises to buy the asset from the bank once the bank acquires it (this promise is binding in most jurisdictions)."
+              },
+              "step3": {
+                "title": "Bank purchases the asset:",
+                "description": "The bank buys the asset from a supplier using its own funds."
+              },
+              "step4": {
+                "title": "Bank takes ownership:",
+                "description": "The asset is legally owned by the bank, even if briefly."
+              },
+              "step5": {
+                "title": "Bank sells to customer:",
+                "description": "The bank resells the asset to the customer at cost + markup, fully disclosed."
+              },
+              "step6": {
+                "title": "Deferred payment:",
+                "description": "The customer pays the total price in installments over an agreed period."
+              }
+            },
+            "keyDistinction": "The key distinction from a conventional loan is that the bank owns the asset before selling it, making this a genuine trade transaction rather than a debt instrument with interest."
+          },
+          "transactionFlow": {
+            "title": "Murabaha Transaction Flow",
+            "intro": "Let's walk through a concrete example: a microenterprise in Douala, Cameroon, needs a 5 million FCFA sewing machine to expand production.",
+            "steps": {
+              "step1": {
+                "title": "Customer Application",
+                "description": "The tailor approaches an Islamic microfinance institution (MFI) and requests Murabaha financing for a specific sewing machine model from a local supplier.",
+                "actors": "Customer → Bank"
+              },
+              "step2": {
+                "title": "Promise to Purchase",
+                "description": "The customer signs a binding promise to purchase the sewing machine once the bank acquires it. This promise includes the agreed markup percentage (e.g., 15% over 24 months).",
+                "actors": "Customer ↔ Bank"
+              },
+              "step3": {
+                "title": "Bank Purchases Asset",
+                "description": "The bank buys the sewing machine directly from the supplier for 5 million FCFA. The bank pays cash and obtains full legal ownership.",
+                "actors": "Bank → Supplier"
+              },
+              "step4": {
+                "title": "Ownership Transfer",
+                "description": "The bank takes delivery of the sewing machine. Even if this ownership is brief, it's legally documented (purchase invoice, ownership certificate).",
+                "actors": "Supplier → Bank"
+              },
+              "step5": {
+                "title": "Sale to Customer",
+                "description": "The bank sells the sewing machine to the customer for 5,750,000 FCFA (5M cost + 750K markup = 15% profit). The contract specifies 24 monthly installments of 239,583 FCFA.",
+                "actors": "Bank → Customer"
+              },
+              "step6": {
+                "title": "Installment Payments",
+                "description": "The customer pays 239,583 FCFA monthly for 24 months. The total price is fixed and cannot change (unlike variable-rate conventional loans).",
+                "actors": "Customer → Bank"
+              }
+            }
+          },
+          "pricing": {
+            "title": "Pricing & Markup Calculation",
+            "intro": "One of the most important aspects of Murabaha is transparent pricing. The bank must disclose:",
+            "disclosureItems": {
+              "cost": "The original cost of the asset",
+              "markup": "The markup (profit margin)",
+              "total": "The total selling price",
+              "schedule": "The installment schedule"
+            },
+            "howDetermined": {
+              "title": "How Markup is Determined",
+              "intro": "While the markup percentage is not technically \"interest,\" it serves a similar economic function. Islamic scholars permit profit on trade transactions, and banks consider several factors when setting the markup:",
+              "factors": {
+                "market": "Market rates: Competitive pricing compared to conventional financing options",
+                "risk": "Risk assessment: Customer creditworthiness and asset quality",
+                "period": "Financing period: Longer terms typically command higher markups",
+                "asset": "Asset type: Liquid assets (easily resold) may have lower markups",
+                "admin": "Administrative costs: Operational expenses of executing the transaction"
+              }
+            },
+            "example": {
+              "title": "Murabaha Pricing Example",
+              "cost": "Asset Cost Price:",
+              "markup": "Markup (15% over 24 months):",
+              "total": "Total Selling Price:",
+              "monthly": "Monthly Installment (24 months):",
+              "note": "Note: The total price is fixed at contract signing. Unlike conventional loans with variable interest rates, Murabaha prices cannot change."
+            },
+            "fixedVsVariable": {
+              "title": "Fixed vs Variable Pricing",
+              "intro": "A critical Shariah requirement: once the Murabaha contract is signed, the price is immutable. This differs significantly from conventional loans where interest rates can fluctuate.",
+              "conventional": "Conventional loan: Principal + variable interest rate (can increase/decrease)",
+              "murabaha": "Murabaha: Fixed selling price (cost + markup), disclosed upfront and unchangeable"
+            }
+          },
+          "documentation": {
+            "title": "Required Documentation",
+            "intro": "Proper Murabaha execution requires comprehensive documentation to ensure Shariah compliance and legal enforceability:",
+            "customer": {
+              "title": "Customer-Side Documents",
+              "items": {
+                "application": "Murabaha financing application: Details of the asset needed and financing amount",
+                "promise": "Promise to purchase (wa'ad): Binding commitment to buy the asset once the bank acquires it",
+                "agency": "Agency agreement (optional): In some cases, the customer acts as the bank's agent to purchase the asset on the bank's behalf",
+                "contract": "Murabaha sale contract: The final sale agreement specifying cost, markup, total price, and payment terms",
+                "collateral": "Collateral documentation: Security agreements, guarantees, or asset pledges"
+              }
+            },
+            "bank": {
+              "title": "Bank-Side Documents",
+              "items": {
+                "invoice": "Purchase invoice from supplier: Proof that the bank acquired the asset",
+                "ownership": "Ownership certificate: Evidence that the bank legally owned the asset before reselling it",
+                "shariah": "Shariah board approval: Confirmation that the product structure complies with Islamic law",
+                "regulatory": "Regulatory compliance checklist: Verification that the transaction meets local banking or microfinance regulations",
+                "risk": "Internal risk assessment: Credit evaluation and approval documentation"
+              }
+            },
+            "bestPractice": {
+              "title": "Documentation Best Practice",
+              "description": "Many Islamic finance institutions streamline the process by creating a Master Murabaha Framework Agreement that covers general terms, then use simple purchase orders for individual transactions. This reduces paperwork while maintaining Shariah compliance."
+            }
+          },
+          "vsConventional": {
+            "title": "Murabaha vs Conventional Loan",
+            "intro": "While Murabaha and conventional loans may appear similar economically, they differ fundamentally in structure and philosophy:",
+            "table": {
+              "headers": {
+                "aspect": "Aspect",
+                "murabaha": "Murabaha",
+                "conventional": "Conventional Loan"
+              },
+              "rows": {
+                "nature": {
+                  "aspect": "Nature",
+                  "murabaha": "Sale transaction (trade)",
+                  "conventional": "Debt instrument (lending)"
+                },
+                "ownership": {
+                  "aspect": "Asset ownership",
+                  "murabaha": "Bank owns asset before selling",
+                  "conventional": "Bank never owns the asset"
+                },
+                "return": {
+                  "aspect": "Return structure",
+                  "murabaha": "Profit on sale (markup)",
+                  "conventional": "Interest on loan (riba)"
+                },
+                "price": {
+                  "aspect": "Price fixation",
+                  "murabaha": "Fixed at contract signing",
+                  "conventional": "Can vary (variable rates)"
+                },
+                "latePenalty": {
+                  "aspect": "Late payment penalty",
+                  "murabaha": "Charity/fixed penalty (not profit)",
+                  "conventional": "Additional interest charges"
+                },
+                "earlySettlement": {
+                  "aspect": "Early settlement",
+                  "murabaha": "Bank may offer rebate (optional)",
+                  "conventional": "Often prepayment penalties"
+                },
+                "shariah": {
+                  "aspect": "Shariah compliance",
+                  "murabaha": "Halal",
+                  "conventional": "Contains riba"
+                }
+              }
+            }
+          },
+          "useCases": {
+            "title": "Common Use Cases",
+            "intro": "Murabaha is highly versatile and is widely used across various markets for business and consumer financing:",
+            "cases": {
+              "workingCapital": {
+                "title": "Working Capital Financing",
+                "example": "A textile trader needs 20 million local currency units (e.g. FCFA or Naira) to purchase fabric inventory from a regional supplier.",
+                "points": {
+                  "point1": "The bank purchases the fabric from the supplier",
+                  "point2": "The bank sells the fabric to the trader at cost + 12% markup",
+                  "point3": "The trader pays in 6 monthly installments as they sell the fabric to retailers"
+                }
+              },
+              "equipment": {
+                "title": "Equipment Acquisition",
+                "example": "A construction company needs a cement mixer worth 8 million units.",
+                "points": {
+                  "point1": "The bank buys the cement mixer from the equipment supplier",
+                  "point2": "The bank sells it to the company at cost + 18% markup over 36 months",
+                  "point3": "The company makes monthly payments according to the fixed installment schedule"
+                }
+              },
+              "vehicle": {
+                "title": "Vehicle Financing",
+                "example": "A delivery service needs three motorcycles totaling 6 million units.",
+                "points": {
+                  "point1": "The bank purchases the motorcycles from a local dealer",
+                  "point2": "The bank resells them at cost + 20% markup over 18 months",
+                  "point3": "Fixed monthly installments are set at contract signing"
+                }
+              },
+              "import": {
+                "title": "Import Finance",
+                "example": "An electronics retailer wants to import smartphones worth 50 million units.",
+                "points": {
+                  "point1": "The bank purchases the smartphones on behalf of the retailer",
+                  "point2": "The bank sells them to the retailer at cost + 10% markup",
+                  "point3": "Payment in 4 quarterly installments"
+                }
+              }
+            }
+          },
+          "compliance": {
+            "title": "Regulatory Compliance",
+            "intro": "Islamic finance institutions must navigate both Shariah requirements and local banking regulations across different jurisdictions:",
+            "centralBank": {
+              "title": "Central Bank Requirements",
+              "items": {
+                "licensing": "Licensing: Must obtain appropriate banking authorizations or non-interest window approvals from local regulators (like CBN in Nigeria, COBAC in CEMAC, or BCEAO in WAEMU).",
+                "capital": "Capital adequacy: Compliance with capital adequacy guidelines and liquidity ratios specified by regional or national guidelines.",
+                "reporting": "Reporting: Regular submission of compliant financial reports and returns to central bank auditors.",
+                "classification": "Asset classification: Murabaha receivables must be properly classified and provisioned per local regulatory frameworks.",
+                "exposure": "Maximum financing exposure: Strict caps on single-obligor exposure limits."
+              }
+            },
+            "ohada": {
+              "title": "OHADA Accounting Treatment",
+              "items": {
+                "recognition": "Asset recognition: The bank must record the asset on its balance sheet when purchased.",
+                "revenue": "Revenue recognition: Markup can be recognized over the financing period (accrual basis) or at sale (cash basis), depending on local accounting policies.",
+                "disclosure": "Disclosure requirements: Audit notes must clearly explain the nature of Murabaha transactions."
+              }
+            },
+            "shariah": {
+              "title": "Shariah Governance",
+              "items": {
+                "ace": "ACE (Advisory Committee of Experts): Establish a Shariah supervisory board to approve product structures.",
+                "review": "Pre-transaction review: Each Murabaha contract should be reviewed for Shariah compliance.",
+                "audit": "Annual Shariah audit: Independent review of all Islamic transactions.",
+                "fatwa": "Fatwa documentation: Written Shariah opinions justifying product structures."
+              }
+            }
+          },
+          "risks": {
+            "title": "Risks & Mitigation Strategies",
+            "intro": "While Murabaha is relatively straightforward, several risks require careful management:",
+            "commodity": {
+              "title": "Commodity Risk",
+              "risk": "The bank briefly owns the asset before selling it to the customer. If the asset is damaged, lost, or devalues during this period, the bank bears the loss.",
+              "mitigation": "Mitigation:",
+              "strategies": {
+                "minimize": "Minimize the ownership period (ideally same-day transaction)",
+                "insurance": "Obtain insurance on the asset during ownership",
+                "inspection": "Conduct thorough asset inspections before purchase",
+                "agency": "Use agency agreements where the customer acts as the bank's purchasing agent"
+              }
+            },
+            "credit": {
+              "title": "Credit Risk",
+              "risk": "The customer may default on installment payments.",
+              "mitigation": "Mitigation:",
+              "strategies": {
+                "assessment": "Comprehensive credit assessments before financing",
+                "collateral": "Collateral requirements (asset pledge, guarantees)",
+                "diversification": "Diversification across multiple customers and sectors",
+                "monitoring": "Regular monitoring of customer financial health"
+              }
+            },
+            "shariahNonCompliance": {
+              "title": "Shariah Non-Compliance Risk",
+              "risk": "Improper documentation or execution could render the transaction non-Shariah compliant.",
+              "mitigation": "Mitigation:",
+              "strategies": {
+                "advisors": "Engage qualified Shariah advisors",
+                "templates": "Implement standardized contract templates",
+                "training": "Train staff on Shariah requirements",
+                "audits": "Conduct regular internal Shariah audits"
+              }
+            },
+            "legal": {
+              "title": "Legal Risk",
+              "risk": "Local legal systems in some jurisdictions may not fully recognize Islamic finance structures, complicating enforcement.",
+              "mitigation": "Mitigation:",
+              "strategies": {
+                "experts": "Work with legal experts familiar with both local commercial laws (e.g. OHADA) and Islamic finance",
+                "clarifications": "Obtain regulatory clarifications on non-interest product treatment",
+                "language": "Use clear, legally enforceable contract language",
+                "documentation": "Maintain thorough documentation for all transactions"
+              }
+            }
+          },
+          "cta": {
+            "title": "Implement Murabaha with TIKARI",
+            "description": "TIKARI's platform includes pre-built Murabaha workflows, automated documentation, Shariah compliance checks, and regulator-ready reporting tailored for local central banks (such as CBN, COBAC, BCEAO, and more).",
+            "button": "Book a Demo"
+          },
+          "relatedArticles": {
+            "title": "Related Articles",
+            "articles": {
+              "whatIsIslamic": {
+                "title": "What is Islamic Finance?",
+                "description": "Introduction to Shariah-compliant banking principles",
+                "duration": "15 min read"
+              },
+              "psr": {
+                "title": "Profit-Sharing Ratio Disclosure",
+                "description": "How to properly disclose PSR to customers",
+                "duration": "8 min read"
+              },
+              "aaoifiOhada": {
+                "title": "AAOIFI vs OHADA Standards",
+                "description": "Reconciling Islamic accounting with OHADA standards",
+                "duration": "15 min read"
+              }
+            }
+          }
+        },
+            "profitSharingRatio": {
+              "metadata": {
+                "title": "Profit-Sharing Ratio (PSR) Disclosure Guide | TIKARI",
+                "description": "Complete guide to properly disclosing Profit-Sharing Ratios (PSR) in Mudarabah accounts. Learn AAOIFI requirements, transparency best practices, and regulatory compliance."
+              },
+              "hero": {
+                "backLink": "Back",
+                "badge": {
+                  "level": "Intermediate",
+                  "duration": "8 min read",
+                  "updated": "Updated Aug 2026"
+                },
+                "title": "Profit-Sharing Ratio Disclosure",
+                "subtitle": "How to properly disclose Profit-Sharing Ratios (PSR) to customers in Mudarabah investment accounts while meeting Shariah and regulatory requirements."
+              },
+              "tableOfContents": {
+                "introduction": "What is PSR?",
+                "whyMatters": "Why PSR Disclosure Matters",
+                "aaoifiRequirements": "AAOIFI Requirements",
+                "disclosureBestPractices": "Disclosure Best Practices",
+                "calculationExamples": "Calculation Examples",
+                "commonMistakes": "Common Mistakes",
+                "regulatoryContext": "Regulatory Compliance",
+                "customerEducation": "Customer Education"
+              },
+              "introduction": {
+                "leadParagraph": "The Profit-Sharing Ratio (PSR) is the predetermined percentage split of profits earned from Mudarabah investment accounts the most common Islamic alternative to conventional interest-bearing savings accounts.",
+                "paragraph1": "In a Mudarabah arrangement, the customer (rab al-mal, or capital provider) deposits funds into an investment account, and the bank (mudarib, or fund manager) invests those funds in Shariah-compliant ventures. When profits are generated, they are distributed according to the PSR agreed upon at the start of the relationship.",
+                "paragraph2": "For example, a PSR of 60:40 means:",
+                "example": {
+                  "customer": "60% of profits go to the customer (depositor)",
+                  "bank": "40% of profits go to the bank (investment manager)"
+                },
+                "paragraph3": "Unlike conventional interest rates, which are fixed and guaranteed, PSR-based returns fluctuate based on actual investment performance. This aligns with Islamic principles of risk-sharing and profit-loss distribution."
+              },
+              "whyMatters": {
+                "title": "Why PSR Disclosure Matters",
+                "intro": "Transparent disclosure of Profit-Sharing Ratios is critical for several reasons:",
+                "reasons": {
+                  "shariahCompliance": {
+                    "title": "Shariah Compliance",
+                    "description": "Islamic law requires full transparency in contracts. Hidden terms or ambiguity (gharar) render a contract invalid."
+                  },
+                  "customerTrust": {
+                    "title": "Customer Trust",
+                    "description": "Clear PSR disclosure builds confidence that the bank is operating ethically and sharing profits fairly."
+                  },
+                  "regulatoryCompliance": {
+                    "title": "Regulatory Compliance",
+                    "description": "AAOIFI standards (FAS 6, FAS 11) mandate explicit PSR disclosure in financial statements and customer-facing materials."
+                  },
+                  "informedDecisions": {
+                    "title": "Informed Decision-Making",
+                    "description": "Customers need to understand how returns are calculated to compare Islamic investment accounts with conventional alternatives."
+                  }
+                }
+              },
+              "aaoifiRequirements": {
+                "title": "AAOIFI Disclosure Requirements",
+                "intro": "The Accounting and Auditing Organization for Islamic Financial Institutions (AAOIFI) has established clear guidelines for PSR disclosure:",
+                "fas6": {
+                  "title": "FAS 6: Equity of Investment Account Holders",
+                  "intro": "AAOIFI Financial Accounting Standard No. 6 requires:",
+                  "requirements": {
+                    "precontractual": "Pre-contractual disclosure: The PSR must be communicated to customers before they open an investment account.",
+                    "written": "Written documentation: The PSR must appear in the account opening agreement.",
+                    "methodology": "Profit calculation methodology: Banks must explain how profits are calculated and allocated.",
+                    "loss": "Loss-bearing disclosure: Customers must be informed that losses (if any) are borne entirely by them, while the bank loses only its time and effort."
+                  }
+                },
+                "fas11": {
+                  "title": "FAS 11: Provisions and Reserves",
+                  "intro": "This standard addresses how banks handle Profit Equalization Reserves (PER) and Investment Risk Reserves (IRR):",
+                  "items": {
+                    "per": "PER: Amounts set aside to smooth profit distribution across periods (disclosed separately)",
+                    "irr": "IRR: Reserves to cover potential investment losses (also disclosed separately)",
+                    "transparency": "Transparency requirement: Customers must understand how reserves impact their actual profit share"
+                  }
+                },
+                "shariah40": {
+                  "title": "Shariah Standard No. 40: Mudarabah",
+                  "intro": "AAOIFI's Shariah standards mandate:",
+                  "requirements": {
+                    "percentage": "The PSR must be expressed as a percentage of profits, not a fixed amount",
+                    "agreement": "Both parties must agree to the PSR at the contract's inception",
+                    "tiered": "The PSR can be tiered (different ratios for different profit levels) if clearly disclosed",
+                    "changes": "Any changes to the PSR require customer consent and cannot apply retroactively"
+                  }
+                }
+              },
+              "bestPractices": {
+                "title": "Disclosure Best Practices",
+                "intro": "Beyond meeting minimum AAOIFI requirements, Islamic financial institutions should adopt these best practices:",
+                "proactiveCommunication": {
+                  "title": "Proactive Communication",
+                  "items": {
+                    "marketing": "Marketing materials: Include PSR ranges in brochures, websites, and advertisements",
+                    "accountOpening": "Account opening: Highlight the PSR prominently in the application form",
+                    "welcomeKits": "Welcome kits: Provide a one-page PSR explainer to new customers",
+                    "statements": "Quarterly statements: Recap the PSR and show actual profit allocation"
+                  }
+                },
+                "plainLanguage": {
+                  "title": "Plain Language",
+                  "intro": "Avoid jargon. Instead of:",
+                  "badExample": "\"The mudarib shall retain 35% of realized profits from the commingled investment pool, subject to PER and IRR appropriations as determined by the ACE.\"",
+                  "goodIntro": "Use clear language:",
+                  "goodExample": "\"When your investment earns a profit, you receive 65% and the bank receives 35%. Any profits set aside for reserves will be explained in your quarterly statement.\""
+                },
+                "visualAids": {
+                  "title": "Visual Aids",
+                  "intro": "Use charts, infographics, and examples to illustrate PSR:",
+                  "exampleTitle": "Example PSR Illustration",
+                  "customerShare": "Your Share (Customer)",
+                  "bankShare": "Bank Share",
+                  "exampleNote": "If the bank earns 1,000,000 units in profit from your investment, you receive 700,000 units and the bank receives 300,000 units."
+                },
+                "comparativeContext": {
+                  "title": "Comparative Context",
+                  "intro": "Help customers understand PSR by comparing it to conventional interest:",
+                  "conventional": "Conventional savings account: 2% fixed interest (guaranteed, regardless of bank performance)",
+                  "islamic": "Islamic Mudarabah account: 70% of profits (variable, based on actual investment returns)",
+                  "clarification": "Clarify that if the bank earns higher returns in Islamic investing, the customer's PSR-based returns may exceed conventional interest but there's also downside risk."
+                }
+              },
+              "calculationExamples": {
+                "title": "PSR Calculation Examples",
+                "intro": "Let's walk through practical scenarios to demonstrate how PSR works:",
+                "scenario1": {
+                  "title": "Scenario 1: Simple Profit Distribution",
+                  "setup": "Setup:",
+                  "setupDetail": "A customer deposits 10,000,000 units into a Mudarabah investment account with a PSR of 60:40 (60% customer, 40% bank).",
+                  "performance": "Performance:",
+                  "performanceDetail": "The bank invests the funds and earns 800,000 units in profit over the year.",
+                  "totalProfit": "Total Profit:",
+                  "customerShare": "Customer Share (60%):",
+                  "bankShare": "Bank Share (40%):",
+                  "accountBalance": "Customer Account Balance:",
+                  "effectiveReturn": "Effective return for the customer: 4.8% (480K profit ÷ 10M deposit)"
+                },
+                "scenario2": {
+                  "title": "Scenario 2: Loss Scenario",
+                  "setup": "Setup:",
+                  "setupDetail": "Same customer, same 10,000,000 units deposit, PSR 60:40.",
+                  "performance": "Performance:",
+                  "performanceDetail": "The bank's investments perform poorly, resulting in a 300,000 units loss.",
+                  "totalLoss": "Total Loss:",
+                  "customerBears": "Customer Bears Loss (100%):",
+                  "bankBears": "Bank Bears Loss:",
+                  "bankBearsDetail": "0 units (loses time/effort)",
+                  "accountBalance": "Customer Account Balance:",
+                  "keyPrinciple": "Key principle: In Mudarabah, capital losses are borne entirely by the capital provider (customer), while the fund manager (bank) loses only its time and effort unless the loss resulted from negligence or breach of contract."
+                },
+                "scenario3": {
+                  "title": "Scenario 3: Tiered PSR",
+                  "intro": "Some banks use tiered PSR structures to incentivize higher performance:",
+                  "tableHeaders": {
+                    "profitLevel": "Profit Level (Annual)",
+                    "customerShare": "Customer Share",
+                    "bankShare": "Bank Share"
+                  },
+                  "tiers": {
+                    "tier1": {
+                      "level": "0% - 3%",
+                      "customer": "70%",
+                      "bank": "30%"
+                    },
+                    "tier2": {
+                      "level": "3.01% - 6%",
+                      "customer": "65%",
+                      "bank": "35%"
+                    },
+                    "tier3": {
+                      "level": "Above 6%",
+                      "customer": "60%",
+                      "bank": "40%"
+                    }
+                  },
+                  "note": "This structure rewards the bank for generating higher returns while still ensuring customers receive the majority of profits at all levels."
+                }
+              },
+              "commonMistakes": {
+                "title": "Common PSR Disclosure Mistakes",
+                "intro": "Avoid these frequent errors that can lead to Shariah non-compliance or customer confusion:",
+                "mistakes": {
+                  "mistake1": {
+                    "title": "Using Fixed Amounts Instead of Percentages",
+                    "why": "PSR must be expressed as a percentage of profits, not a fixed currency amount. Saying \"the bank gets 100,000 units\" violates Mudarabah principles.",
+                    "fix": "Always use percentages: \"the bank receives 30% of profits.\""
+                  },
+                  "mistake2": {
+                    "title": "Hidden or Buried Disclosure",
+                    "why": "Putting PSR in fine print or deep in contract appendices undermines transparency.",
+                    "fix": "Feature PSR prominently on page 1 of account agreements and marketing materials."
+                  },
+                  "mistake3": {
+                    "title": "Ambiguous Loss-Sharing Terms",
+                    "why": "Failing to clarify that customers bear capital losses (while banks bear effort losses) creates false expectations.",
+                    "fix": "Explicitly state: \"You receive [X]% of profits. In case of losses, your capital may decrease, but the bank does not receive any profit.\""
+                  },
+                  "mistake4": {
+                    "title": "Comparing PSR Directly to Interest Rates",
+                    "why": "Saying \"Our 60% PSR is like 4% interest\" is misleading because PSR returns vary based on performance.",
+                    "fix": "Provide historical examples: \"Over the past year, our 60% PSR resulted in an average return of 4.2%, compared to 3.5% conventional interest.\""
+                  },
+                  "mistake5": {
+                    "title": "Changing PSR Without Customer Consent",
+                    "why": "Unilateral changes to PSR violate the mutuality principle of Islamic contracts.",
+                    "fix": "Any PSR adjustments require written customer agreement and cannot apply to existing deposits retroactively."
+                  }
+                },
+                "whyWrong": "Why it's wrong:",
+                "howToFix": "How to fix:"
+              },
+              "regulatoryContext": {
+                "title": "Regulatory Compliance & PSR",
+                "intro": "Disclosure requirements for Profit-Sharing Ratios must satisfy both Shariah standards and local central bank guidelines.",
+                "dualCompliance": {
+                  "title": "Dual Compliance Strategy",
+                  "items": {
+                    "aaoifi": "AAOIFI for Shariah: Follow FAS 6 and FAS 11 standards for pre-contractual and financial statement disclosure of PSR.",
+                    "centralBank": "Central Bank Supervision: Report Mudarabah accounts properly to central banks (e.g. as \"investment deposits\" under CBN guidelines in Nigeria or \"participation accounts\" under COBAC in Central Africa).",
+                    "ohada": "OHADA Chart of Accounts: In OHADA-zone countries (West and Central Africa), map the dual-ledger structures carefully to reflect investment pool returns."
+                  }
+                },
+                "languageAdaptations": {
+                  "title": "Language & Regional Adaptations",
+                  "intro": "Depending on the jurisdiction, documentation must align with official languages and terminology:",
+                  "items": {
+                    "francophone": "Francophone Regions (CEMAC, WAEMU): Translate key terms accurately e.g., Ratio de Partage des Bénéfices (RPB) for PSR.",
+                    "anglophone": "Anglophone Regions (Nigeria): Use terms standardized by local non-interest banking circulars."
+                  }
+                },
+                "reportingRequirements": {
+                  "title": "Regulatory Reporting Requirements",
+                  "intro": "Quarterly reports submitted to central banks should generally disclose:",
+                  "items": {
+                    "balances": "Total Mudarabah investment pool balances",
+                    "ranges": "Aggregate PSR ranges across account types",
+                    "allocation": "Actual profit/loss allocation paid out to depositors",
+                    "reserves": "Reserves (PER/IRR) held on behalf of investment account holders"
+                  }
+                }
+              },
+              "customerEducation": {
+                "title": "Customer Education Strategies",
+                "intro": "Beyond disclosure, proactive education helps customers understand and appreciate PSR:",
+                "workshops": {
+                  "title": "Onboarding Workshops",
+                  "intro": "Host monthly sessions at branch locations explaining:",
+                  "items": {
+                    "difference": "How Mudarabah accounts differ from conventional savings",
+                    "fluctuation": "Why PSR fluctuates based on investment performance",
+                    "statements": "How to read quarterly profit distribution statements"
+                  }
+                },
+                "digitalTools": {
+                  "title": "Digital Tools",
+                  "intro": "Develop online resources:",
+                  "items": {
+                    "calculator": "PSR calculator: Customers input their deposit amount and estimated return to see projected profit splits",
+                    "videos": "Video explainers: 2-3 minute animations demonstrating PSR concepts",
+                    "faq": "FAQ section: Address common questions like \"Can PSR change?\" and \"What if the bank loses money?\""
+                  }
+                },
+                "quarterlyUpdates": {
+                  "title": "Quarterly Updates",
+                  "intro": "Send personalized statements showing:",
+                  "items": {
+                    "opening": "Opening balance",
+                    "totalProfits": "Total profits earned by the bank from customer's investment",
+                    "psrSplit": "PSR split (percentage and currency amount)",
+                    "credited": "Customer's profit credited to account",
+                    "closing": "Closing balance"
+                  }
+                }
+              },
+              "cta": {
+                "title": "Automate PSR Disclosure with TIKARI",
+                "description": "TIKARI's platform automatically generates Shariah-compliant PSR disclosures, quarterly profit allocation reports, and customer-facing statements tailored to AAOIFI and regional central bank requirements.",
+                "button": "Book a Demo"
+              },
+              "relatedArticles": {
+                "title": "Related Articles",
+                "articles": {
+                  "whatIsIslamic": {
+                    "title": "What is Islamic Finance?",
+                    "description": "Introduction to Shariah-compliant banking principles",
+                    "duration": "15 min read"
+                  },
+                  "murabaha": {
+                    "title": "Understanding Murabaha Financing",
+                    "description": "Step-by-step breakdown of cost-plus sale financing",
+                    "duration": "12 min read"
+                  },
+                  "aaoifiOhada": {
+                    "title": "AAOIFI vs OHADA Standards",
+                    "description": "Reconciling Islamic accounting with OHADA standards",
+                    "duration": "15 min read"
+                  }
+                }
+              }
+            }
   },
   "privacy": {
     "header": {

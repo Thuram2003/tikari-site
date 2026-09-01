@@ -10,64 +10,53 @@ import {
 import Link from "next/link";
 import { Button } from "@/components/ui";
 import ScrollSpyContent from "../components/ScrollSpyContent";
+import { useTranslations } from "next-intl";
+import { getTranslations } from 'next-intl/server';
 
-export const metadata: Metadata = {
-  title: "Profit-Sharing Ratio (PSR) Disclosure Guide | TIKARI",
-  description: "Complete guide to properly disclosing Profit-Sharing Ratios (PSR) in Mudarabah accounts. Learn AAOIFI requirements, transparency best practices, and regulatory compliance.",
-  keywords: [
-    "profit sharing ratio",
-    "PSR disclosure",
-    "Mudarabah accounts",
-    "Islamic investment accounts",
-    "Shariah profit distribution",
-    "AAOIFI standards",
-    "transparent banking",
-    "Islamic finance disclosure",
-    "regulatory compliance",
-    "customer transparency"
-  ],
-  openGraph: {
-    title: "Profit-Sharing Ratio Disclosure: Complete Guide",
-    description: "Learn how to properly disclose PSR to customers in Mudarabah investment accounts while meeting Shariah and regulatory requirements.",
-    type: "article",
-    publishedTime: "2024-01-25T00:00:00.000Z",
-    authors: ["TIKARI Shariah Team"],
-  },
-  alternates: {
-    canonical: "/resources/education/profit-sharing-ratio"
-  }
-};
+type Params = Promise<{ locale: string }>;
+
+export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'education.profitSharingRatio' });
+  
+  return {
+    title: t('metadata.title'),
+    description: t('metadata.description'),
+  };
+}
 
 export default function ProfitSharingRatioPage() {
+  const t = useTranslations('education.profitSharingRatio');
+  
   const tableOfContents = [
-    { id: "introduction", title: "What is PSR?" },
-    { id: "why-matters", title: "Why PSR Disclosure Matters" },
-    { id: "aaoifi-requirements", title: "AAOIFI Requirements" },
-    { id: "disclosure-best-practices", title: "Disclosure Best Practices" },
-    { id: "calculation-examples", title: "Calculation Examples" },
-    { id: "common-mistakes", title: "Common Mistakes" },
-    { id: "regulatory-context", title: "Regulatory Compliance" },
-    { id: "customer-education", title: "Customer Education" },
+    { id: "introduction", title: t('tableOfContents.introduction') },
+    { id: "why-matters", title: t('tableOfContents.whyMatters') },
+    { id: "aaoifi-requirements", title: t('tableOfContents.aaoifiRequirements') },
+    { id: "disclosure-best-practices", title: t('tableOfContents.disclosureBestPractices') },
+    { id: "calculation-examples", title: t('tableOfContents.calculationExamples') },
+    { id: "common-mistakes", title: t('tableOfContents.commonMistakes') },
+    { id: "regulatory-context", title: t('tableOfContents.regulatoryContext') },
+    { id: "customer-education", title: t('tableOfContents.customerEducation') },
   ];
 
   const relatedArticles = [
     {
-      title: "What is Islamic Finance?",
-      description: "Introduction to Shariah-compliant banking principles",
+      title: t('relatedArticles.articles.whatIsIslamic.title'),
+      description: t('relatedArticles.articles.whatIsIslamic.description'),
       href: "/resources/education/what-is-islamic-finance",
-      duration: "15 min read"
+      duration: t('relatedArticles.articles.whatIsIslamic.duration')
     },
     {
-      title: "Understanding Murabaha Financing",
-      description: "Step-by-step breakdown of cost-plus sale financing",
+      title: t('relatedArticles.articles.murabaha.title'),
+      description: t('relatedArticles.articles.murabaha.description'),
       href: "/resources/education/understanding-murabaha",
-      duration: "12 min read"
+      duration: t('relatedArticles.articles.murabaha.duration')
     },
     {
-      title: "AAOIFI vs OHADA Standards",
-      description: "Reconciling Islamic accounting with OHADA standards",
+      title: t('relatedArticles.articles.aaoifiOhada.title'),
+      description: t('relatedArticles.articles.aaoifiOhada.description'),
       href: "/resources/education/aaoifi-vs-ohada",
-      duration: "15 min read"
+      duration: t('relatedArticles.articles.aaoifiOhada.duration')
     }
   ];
 
@@ -81,22 +70,22 @@ export default function ProfitSharingRatioPage() {
             className="inline-flex items-center gap-2 text-tikari-gold hover:text-tikari-gold/80 text-sm font-semibold mb-8 transition-colors"
           >
             <ArrowRight className="h-4 w-4 rotate-180" weight="bold" />
-            Back
+            {t('hero.backLink')}
           </Link>
           
           <div className="flex flex-wrap items-center gap-3 mb-8">
             <span className="bg-tikari-gold/20 text-tikari-gold px-3 py-1 rounded-full text-xs font-semibold border border-tikari-gold/30">
-              Intermediate
+              {t('hero.badge.level')}
             </span>
-            <span className="text-white/70 text-sm">8 min read</span>
-            <span className="text-white/70 text-sm">Updated Aug 2026</span>
+            <span className="text-white/70 text-sm">{t('hero.badge.duration')}</span>
+            <span className="text-white/70 text-sm">{t('hero.badge.updated')}</span>
           </div>
 
           <h1 className="text-4xl lg:text-5xl font-bold leading-tight tracking-tight mb-6">
-            Profit-Sharing Ratio Disclosure
+            {t('hero.title')}
           </h1>
           <p className="text-lg lg:text-xl text-white/85 leading-relaxed max-w-3xl">
-            How to properly disclose Profit-Sharing Ratios (PSR) to customers in Mudarabah investment accounts while meeting Shariah and regulatory requirements.
+            {t('hero.subtitle')}
           </p>
         </div>
       </section>
@@ -133,53 +122,49 @@ export default function ProfitSharingRatioPage() {
                 {/* Introduction */}
                 <div id="introduction">
                   <p className="text-xl lg:text-2xl text-tikari-green-dark font-semibold leading-relaxed mb-8 !mt-0">
-                    The Profit-Sharing Ratio (PSR) is the predetermined percentage split of profits earned from Mudarabah investment accounts the most common Islamic alternative to conventional interest-bearing savings accounts.
+                    {t('introduction.leadParagraph')}
                   </p>
 
-                  <p>
-                    In a <strong>Mudarabah arrangement</strong>, the customer (rab al-mal, or capital provider) deposits funds into an investment account, and the bank (mudarib, or fund manager) invests those funds in Shariah-compliant ventures. When profits are generated, they are distributed according to the PSR agreed upon at the start of the relationship.
-                  </p>
+                  <p dangerouslySetInnerHTML={{ __html: t.markup('introduction.paragraph1') }} />
 
                   <p>
-                    For example, a PSR of <strong>60:40</strong> means:
+                    {t('introduction.paragraph2')}
                   </p>
                   <ul>
-                    <li><strong>60%</strong> of profits go to the customer (depositor)</li>
-                    <li><strong>40%</strong> of profits go to the bank (investment manager)</li>
+                    <li><strong>60%</strong> {t('introduction.example.customer')}</li>
+                    <li><strong>40%</strong> {t('introduction.example.bank')}</li>
                   </ul>
 
-                  <p>
-                    Unlike conventional interest rates, which are fixed and guaranteed, PSR-based returns <strong>fluctuate based on actual investment performance</strong>. This aligns with Islamic principles of risk-sharing and profit-loss distribution.
-                  </p>
+                  <p dangerouslySetInnerHTML={{ __html: t.markup('introduction.paragraph3') }} />
                 </div>
 
                 {/* Why It Matters */}
-                <h2 id="why-matters" className="font-bold text-xl pt-4">Why PSR Disclosure Matters</h2>
+                <h2 id="why-matters" className="font-bold text-xl pt-4">{t('whyMatters.title')}</h2>
                 <p>
-                  Transparent disclosure of Profit-Sharing Ratios is critical for several reasons:
+                  {t('whyMatters.intro')}
                 </p>
 
                 <div className="not-prose my-8 grid gap-4">
                   {[
                     {
                       icon: Scales,
-                      title: "Shariah Compliance",
-                      description: "Islamic law requires full transparency in contracts. Hidden terms or ambiguity (gharar) render a contract invalid."
+                      title: t('whyMatters.reasons.shariahCompliance.title'),
+                      description: t('whyMatters.reasons.shariahCompliance.description')
                     },
                     {
                       icon: CheckCircle,
-                      title: "Customer Trust",
-                      description: "Clear PSR disclosure builds confidence that the bank is operating ethically and sharing profits fairly."
+                      title: t('whyMatters.reasons.customerTrust.title'),
+                      description: t('whyMatters.reasons.customerTrust.description')
                     },
                     {
                       icon: FileText,
-                      title: "Regulatory Compliance",
-                      description: "AAOIFI standards (FAS 6, FAS 11) mandate explicit PSR disclosure in financial statements and customer-facing materials."
+                      title: t('whyMatters.reasons.regulatoryCompliance.title'),
+                      description: t('whyMatters.reasons.regulatoryCompliance.description')
                     },
                     {
                       icon: ChartLineUp,
-                      title: "Informed Decision-Making",
-                      description: "Customers need to understand how returns are calculated to compare Islamic investment accounts with conventional alternatives."
+                      title: t('whyMatters.reasons.informedDecisions.title'),
+                      description: t('whyMatters.reasons.informedDecisions.description')
                     }
                   ].map((item, idx) => {
                     const Icon = item.icon;
@@ -542,16 +527,16 @@ export default function ProfitSharingRatioPage() {
                   <div className="flex items-start gap-4">
                     <ChartLineUp className="h-8 w-8 text-tikari-green-dark flex-shrink-0 mt-1" weight="bold" />
                     <div>
-                      <h4 className="text-xl font-bold text-tikari-green-dark mb-3">Automate PSR Disclosure with TIKARI</h4>
+                      <h4 className="text-xl font-bold text-tikari-green-dark mb-3">{t('cta.title')}</h4>
                       <p className="text-tikari-sage text-base leading-relaxed mb-4">
-                        TIKARI's platform automatically generates Shariah-compliant PSR disclosures, quarterly profit allocation reports, and customer-facing statements tailored to AAOIFI and regional central bank requirements (such as CBN, COBAC, BCEAO, and more).
+                        {t('cta.description')}
                       </p>
                       <Button
                         variant="primary"
                         size="lg"
                         href="/demo"
                       >
-                        Book a Demo
+                        {t('cta.button')}
                         <ArrowRight className="ml-2 h-4 w-4" weight="bold" />
                       </Button>
                     </div>
@@ -567,7 +552,7 @@ export default function ProfitSharingRatioPage() {
       {/* Related Articles */}
       <section className="py-16 lg:py-20 px-6 bg-tikari-cream/30">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-tikari-green-dark mb-8">Related Articles</h2>
+          <h2 className="text-3xl font-bold text-tikari-green-dark mb-8">{t('relatedArticles.title')}</h2>
           <div className="grid md:grid-cols-3 gap-6">
             {relatedArticles.map((article, idx) => (
               <Link
