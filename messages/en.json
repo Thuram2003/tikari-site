@@ -2826,6 +2826,251 @@
       }
     }
   },
+  "education": {
+    "hero": {
+      "title": "Shariah Finance 101",
+      "subtitle": "Comprehensive guides to Islamic finance principles, AAOIFI standards, and Shariah governance tailored to regional and global regulatory environments (including CEMAC, CBN, WAEMU, and more).",
+      "startLearning": "Start Learning",
+      "bookDemo": "Book a Demo"
+    },
+    "topicsSection": {
+      "title": "Knowledge Topics",
+      "subtitle": "Browse by category to find what you need."
+    },
+    "topics": {
+      "islamicPrinciples": {
+        "title": "Islamic Finance Principles",
+        "description": "Core principles that distinguish Islamic banking from conventional finance.",
+        "badge": "Foundations",
+        "articles": {
+          "riba": "Prohibition of Riba (Interest)",
+          "riskSharing": "Risk-Sharing and Profit-Loss Sharing",
+          "assetBacked": "Asset-Backed Transactions",
+          "shariahFramework": "Shariah Compliance Framework",
+          "halalHaram": "Halal vs Haram in Finance"
+        }
+      },
+      "islamicProducts": {
+        "title": "Islamic Products",
+        "description": "Detailed breakdowns of common Islamic financing structures.",
+        "badge": "Products",
+        "articles": {
+          "murabaha": "Murabaha (Cost-Plus Financing)",
+          "mudarabah": "Mudarabah (Profit-Sharing)",
+          "musharakah": "Musharakah (Partnership)",
+          "ijara": "Ijara (Leasing)",
+          "salam": "Salam (Forward Purchase)"
+        }
+      },
+      "aaoifi": {
+        "title": "AAOIFI Standards",
+        "description": "Accounting and auditing standards for Islamic financial institutions.",
+        "badge": "Standards",
+        "articles": {
+          "chartOfAccounts": "AAOIFI Chart of Accounts",
+          "financialStatements": "Financial Statement Requirements",
+          "shariahGovernance": "Shariah Governance Standards",
+          "investmentAccounting": "Investment Account Reporting",
+          "zakat": "Zakat Calculation Methods"
+        }
+      },
+      "shariahGovernance": {
+        "title": "Shariah Governance",
+        "description": "How Shariah Supervisory Boards oversee Islamic banking operations.",
+        "badge": "Governance",
+        "articles": {
+          "boardRole": "Role of the Shariah Board",
+          "fatwa": "Fatwa Issuance Process",
+          "internalAudit": "Internal Shariah Audit",
+          "reviewUnits": "Shariah Review Units",
+          "annualReports": "Annual Shariah Reports"
+        }
+      },
+      "regulatory": {
+        "title": "Regulatory Jurisdictions",
+        "description": "Islamic finance across different regulatory frameworks (CEMAC, CBN for Nigeria, WAEMU, etc.).",
+        "badge": "Regulatory",
+        "articles": {
+          "centralBank": "Central Bank Regulations",
+          "jurisdictions": "Supported Jurisdictions & Standards",
+          "crossBorder": "Cross-Border Compliance",
+          "regional": "Regional Shariah Requirements",
+          "localCurrency": "Local Currency Accounting"
+        },
+        "link": {
+          "text": "View Supported Jurisdictions",
+          "href": "/jurisdictions"
+        }
+      },
+      "glossary": {
+        "title": "Glossary & Terms",
+        "description": "Comprehensive dictionary of Islamic finance terminology.",
+        "badge": "Reference",
+        "articles": {
+          "translations": "Arabic to French Translations",
+          "acronyms": "Common Acronyms (MFB, ACE, PSR)",
+          "bankingTerms": "Technical Banking Terms",
+          "shariahConcepts": "Shariah Legal Concepts",
+          "regulatoryTerms": "Regulatory Terminology"
+        }
+      }
+    },
+    "guidesSection": {
+      "title": "Featured Guides",
+      "subtitle": "In-depth articles written by our Shariah compliance team."
+    },
+    "guides": {
+      "whatIsIslamic": {
+        "title": "What is Islamic Finance?",
+        "description": "Comprehensive introduction to Shariah-compliant banking, core principles, and how Islamic finance operates across different regulatory environments.",
+        "duration": "15 min read",
+        "level": "Beginner",
+        "topics": {
+          "fundamentals": "Fundamentals",
+          "shariah": "Shariah"
+        }
+      },
+      "murabaha": {
+        "title": "Understanding Murabaha Financing",
+        "description": "Step-by-step breakdown of how cost-plus sale financing works in practice.",
+        "duration": "12 min read",
+        "level": "Beginner",
+        "topics": {
+          "murabaha": "Murabaha",
+          "contracts": "Contracts"
+        }
+      },
+      "psr": {
+        "title": "Profit-Sharing Ratio Disclosure",
+        "description": "How to properly disclose PSR to customers in Mudarabah accounts.",
+        "duration": "8 min read",
+        "level": "Intermediate",
+        "topics": {
+          "mudarabah": "Mudarabah",
+          "compliance": "Compliance"
+        }
+      },
+      "aaoifiOhada": {
+        "title": "AAOIFI vs OHADA: Chart of Accounts",
+        "description": "Reconciling AAOIFI Islamic accounting with OHADA accounting standards.",
+        "duration": "15 min read",
+        "level": "Advanced",
+        "topics": {
+          "aaoifi": "AAOIFI",
+          "reporting": "Reporting"
+        }
+      }
+    },
+    "levels": {
+      "beginner": "Beginner",
+      "intermediate": "Intermediate",
+      "advanced": "Advanced"
+    },
+    "cta": {
+      "title": "Need help with implementation?",
+      "subtitle": "Our team provides onboarding support, Shariah governance setup, and ongoing training for your institution.",
+      "bookDemo": "Book a Demo",
+      "contactSupport": "Contact Support"
+    }
+  },
+  "privacy": {
+    "header": {
+      "badge": "Legal",
+      "title": "Privacy Policy",
+      "lastRevised": "Last Revised: August 21, 2026"
+    },
+    "section1": {
+      "title": "1. About this policy",
+      "paragraph1": "This privacy policy explains how TIKARI Technology Limited (\"TIKARI\", \"we\", \"us\") collects, uses, discloses, and protects information about you when you visit tikari.cm or enquire about our platform. It does not cover data processed within the TIKARI platform on behalf of our institutional customers, which is governed by our Data Processing Agreement with each customer institution.",
+      "paragraph2": "Our operations comply with Law No. 2010/012 of 21 December 2010 on cybersecurity and cybercrime in Cameroon, supervised by ANTIC (National Agency for Information and Communication Technologies), and relevant COBAC guidelines on banking secrecy and customer data protection."
+    },
+    "section2": {
+      "title": "2. Information we collect",
+      "paragraph1": "From website visitors: We collect information you provide when you submit our demo request form, including name, work email address, institution name, role, and any message you include. We may also collect standard web server logs (IP address, browser type, pages visited) for security and analytics purposes.",
+      "paragraph2": "We do not: use third-party advertising trackers, sell your information to third parties, or send unsolicited marketing emails to people who have not opted in."
+    },
+    "section3": {
+      "title": "3. How we use your information",
+      "intro": "When you submit a demo request, we use your information to:",
+      "items": {
+        "item1": "Contact you to schedule the requested demo",
+        "item2": "Tailor the demo to your institution type and stated questions",
+        "item3": "Send follow-up information related to TIKARI that you have requested"
+      },
+      "outro": "We do not add you to a bulk marketing mailing list without explicit consent."
+    },
+    "section4": {
+      "title": "4. Data retention",
+      "content": "Demo enquiry data is retained for 24 months from the date of submission, or until you request deletion. We delete data on request. You may contact us at privacy@tikari.cm."
+    },
+    "section5": {
+      "title": "5. Data security",
+      "content": "We use encryption in transit (HTTPS/TLS) for all web communications. Form submission data is stored in access-controlled systems available only to the TIKARI team. We do not store payment card data. No payment is collected on this website."
+    },
+    "section6": {
+      "title": "6. Third-party services",
+      "content": "Our website may use third-party services for hosting and basic analytics. These services are bound by their own privacy policies and are not permitted to use data about visitors to our site for their own advertising purposes."
+    },
+    "section7": {
+      "title": "7. Your rights",
+      "content": "You have the right to request access to, correction of, or deletion of any personal information we hold about you under regional CEMAC consumer safety guidelines. To exercise any of these rights, contact us at privacy@tikari.cm. We will respond within 30 days."
+    },
+    "section8": {
+      "title": "8. Changes to this policy",
+      "content": "We may update this policy from time to time. The date at the top of this page indicates when it was last revised. Continued use of the website following an update constitutes acceptance of the revised policy."
+    },
+    "section9": {
+      "title": "9. Contact",
+      "companyName": "TIKARI Technology Limited",
+      "location": "Douala, Cameroon",
+      "email": "Email: privacy@tikari.cm"
+    }
+  },
+  "terms": {
+    "header": {
+      "badge": "Legal",
+      "title": "Terms of Use",
+      "lastRevised": "Last Revised: August 21, 2026"
+    },
+    "section1": {
+      "title": "1. Acceptance",
+      "content": "By accessing tikari.cm (the \"Website\"), you agree to be bound by these Terms of Use in compliance with Law No. 2010/013 of 21 December 2010 governing electronic communications in Cameroon. If you do not agree, please do not use the Website."
+    },
+    "section2": {
+      "title": "2. Website content",
+      "paragraph1": "The content on this Website is provided for informational purposes only. All product descriptions, feature lists, and platform screenshots represent the TIKARI platform as of the date of publication. Features and capabilities are subject to change without prior notice.",
+      "paragraph2": "Nothing on this Website constitutes a legally binding offer, warranty, representation, or contractual commitment. Software licensing and implementation are governed by a separate Software Licence and Services Agreement between TIKARI Technology Limited and the customer institution."
+    },
+    "section3": {
+      "title": "3. No financial or Shariah advice",
+      "content": "The resources, articles, and platform descriptions on this Website are educational and informational in nature. They do not constitute financial advice, legal advice, or a Shariah ruling. Determinations of Shariah compliance for specific products and structures must be made by a qualified Shariah scholar or the Advisory Committee of Experts (ACE) engaged by your institution."
+    },
+    "section4": {
+      "title": "4. Intellectual property",
+      "content": "All content, trademarks, logos, and software on this Website are the property of TIKARI Technology Limited or its licensors. You may not reproduce, distribute, or create derivative works from any content on this Website without prior written permission."
+    },
+    "section5": {
+      "title": "5. Limitation of liability",
+      "content": "To the fullest extent permitted by the laws of the Republic of Cameroon, TIKARI Technology Limited excludes all liability for loss or damage (including indirect, consequential, or incidental loss) arising from use of or reliance on this Website or its content."
+    },
+    "section6": {
+      "title": "6. External links",
+      "content": "This Website may contain links to third-party websites. We do not control those websites and are not responsible for their content, privacy practices, or availability."
+    },
+    "section7": {
+      "title": "7. Governing law",
+      "content": "These Terms are governed by and construed in accordance with the laws of the Republic of Cameroon. Any dispute arising under these Terms is subject to the exclusive jurisdiction of the competent courts of Cameroon (specifically located in Douala)."
+    },
+    "section8": {
+      "title": "8. Changes",
+      "content": "We may update these Terms at any time. Continued use of the Website after changes are posted constitutes acceptance of the revised Terms."
+    },
+    "section9": {
+      "title": "9. Contact",
+      "content": "For legal queries, you may contact our legal department at:",
+      "email": "Email: legal@tikari.cm"
+    }
+  },
   "footer": {
     "brand": {
       "description": "Africa's leading faith-based non-interest banking platform. Complete AAOIFI-compliant financial infrastructure engineered for Islamic banking, microfinance, and traditional savings systems.",

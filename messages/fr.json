@@ -2826,6 +2826,420 @@
       }
     }
   },
+  "education": {
+    "hero": {
+      "title": "Finance Shariah 101",
+      "subtitle": "Guides complets sur les principes de la finance islamique, les normes AAOIFI et la gouvernance Shariah adaptés aux environnements réglementaires régionaux et mondiaux (notamment CEMAC, CBN, UEMOA et plus).",
+      "startLearning": "Commencer l'Apprentissage",
+      "bookDemo": "Réserver une Démo"
+    },
+    "topicsSection": {
+      "title": "Sujets de Connaissances",
+      "subtitle": "Parcourir par catégorie pour trouver ce dont vous avez besoin."
+    },
+    "topics": {
+      "islamicPrinciples": {
+        "title": "Principes de la Finance Islamique",
+        "description": "Principes fondamentaux qui distinguent la banque islamique de la finance conventionnelle.",
+        "badge": "Fondements",
+        "articles": {
+          "riba": "Interdiction du Riba (Intérêt)",
+          "riskSharing": "Partage des Risques et Partage des Profits et Pertes",
+          "assetBacked": "Transactions Adossées à des Actifs",
+          "shariahFramework": "Cadre de Conformité Shariah",
+          "halalHaram": "Halal vs Haram dans la Finance"
+        }
+      },
+      "islamicProducts": {
+        "title": "Produits Islamiques",
+        "description": "Décompositions détaillées des structures de financement islamique courantes.",
+        "badge": "Produits",
+        "articles": {
+          "murabaha": "Murabaha (Financement à Prix Majoré)",
+          "mudarabah": "Mudarabah (Partage des Bénéfices)",
+          "musharakah": "Musharakah (Partenariat)",
+          "ijara": "Ijara (Location)",
+          "salam": "Salam (Achat à Terme)"
+        }
+      },
+      "aaoifi": {
+        "title": "Normes AAOIFI",
+        "description": "Normes de comptabilité et d'audit pour les institutions financières islamiques.",
+        "badge": "Normes",
+        "articles": {
+          "chartOfAccounts": "Plan Comptable AAOIFI",
+          "financialStatements": "Exigences des États Financiers",
+          "shariahGovernance": "Normes de Gouvernance Shariah",
+          "investmentAccounting": "Reporting des Comptes d'Investissement",
+          "zakat": "Méthodes de Calcul de la Zakat"
+        }
+      },
+      "shariahGovernance": {
+        "title": "Gouvernance Shariah",
+        "description": "Comment les Conseils de Surveillance Shariah supervisent les opérations bancaires islamiques.",
+        "badge": "Gouvernance",
+        "articles": {
+          "boardRole": "Rôle du Conseil Shariah",
+          "fatwa": "Processus d'Émission de Fatwa",
+          "internalAudit": "Audit Shariah Interne",
+          "reviewUnits": "Unités d'Examen Shariah",
+          "annualReports": "Rapports Shariah Annuels"
+        }
+      },
+      "regulatory": {
+        "title": "Juridictions Réglementaires",
+        "description": "Finance islamique à travers différents cadres réglementaires (CEMAC, CBN pour le Nigeria, UEMOA, etc.).",
+        "badge": "Réglementaire",
+        "articles": {
+          "centralBank": "Réglementations des Banques Centrales",
+          "jurisdictions": "Juridictions et Normes Prises en Charge",
+          "crossBorder": "Conformité Transfrontalière",
+          "regional": "Exigences Shariah Régionales",
+          "localCurrency": "Comptabilité en Monnaie Locale"
+        },
+        "link": {
+          "text": "Voir les Juridictions Prises en Charge",
+          "href": "/jurisdictions"
+        }
+      },
+      "glossary": {
+        "title": "Glossaire et Termes",
+        "description": "Dictionnaire complet de la terminologie de la finance islamique.",
+        "badge": "Référence",
+        "articles": {
+          "translations": "Traductions Arabe vers Français",
+          "acronyms": "Acronymes Courants (MFB, ACE, PSR)",
+          "bankingTerms": "Termes Bancaires Techniques",
+          "shariahConcepts": "Concepts Juridiques Shariah",
+          "regulatoryTerms": "Terminologie Réglementaire"
+        }
+      }
+    },
+    "guidesSection": {
+      "title": "Guides en Vedette",
+      "subtitle": "Articles approfondis rédigés par notre équipe de conformité Shariah."
+    },
+    "guides": {
+      "whatIsIslamic": {
+        "title": "Qu'est-ce que la Finance Islamique ?",
+        "description": "Introduction complète aux opérations bancaires conformes à la Shariah, aux principes fondamentaux et au fonctionnement de la finance islamique dans différents environnements réglementaires.",
+        "duration": "15 min de lecture",
+        "level": "Débutant",
+        "topics": {
+          "fundamentals": "Fondamentaux",
+          "shariah": "Shariah"
+        }
+      },
+      "murabaha": {
+        "title": "Comprendre le Financement Murabaha",
+        "description": "Décomposition étape par étape du fonctionnement du financement par vente à prix majoré en pratique.",
+        "duration": "12 min de lecture",
+        "level": "Débutant",
+        "topics": {
+          "murabaha": "Murabaha",
+          "contracts": "Contrats"
+        }
+      },
+      "psr": {
+        "title": "Divulgation du Ratio de Partage des Bénéfices",
+        "description": "Comment divulguer correctement le PSR aux clients dans les comptes Mudarabah.",
+        "duration": "8 min de lecture",
+        "level": "Intermédiaire",
+        "topics": {
+          "mudarabah": "Mudarabah",
+          "compliance": "Conformité"
+        }
+      },
+      "aaoifiOhada": {
+        "title": "AAOIFI vs OHADA: Plan Comptable",
+        "description": "Réconciliation de la comptabilité islamique AAOIFI avec les normes comptables OHADA.",
+        "duration": "15 min de lecture",
+        "level": "Avancé",
+        "topics": {
+          "aaoifi": "AAOIFI",
+          "reporting": "Reporting"
+        }
+      }
+    },
+    "levels": {
+      "beginner": "Débutant",
+      "intermediate": "Intermédiaire",
+      "advanced": "Avancé"
+    },
+    "cta": {
+      "title": "Besoin d'aide pour la mise en œuvre ?",
+      "subtitle": "Notre équipe fournit un support d'intégration, la configuration de la gouvernance Shariah et une formation continue pour votre institution.",
+      "bookDemo": "Réserver une Démo",
+      "contactSupport": "Contacter le Support"
+    }
+  },
+  "support": {
+    "hero": {
+      "badge": "Centre d'Aide",
+      "title": "Comment pouvons-nous vous aider ?",
+      "subtitle": "Recherchez dans notre base de connaissances, parcourez les articles d'assistance ou contactez notre équipe.",
+      "searchPlaceholder": "Rechercher de l'aide...",
+      "search": "Rechercher"
+    },
+    "quickLinks": {
+      "title": "Liens Rapides",
+      "gettingStarted": {
+        "title": "Démarrage",
+        "desc": "Installation, configuration et premiers pas"
+      },
+      "userGuides": {
+        "title": "Guides Utilisateur",
+        "desc": "Tutoriels étape par étape pour toutes les fonctionnalités"
+      },
+      "apiDocs": {
+        "title": "Documentation API",
+        "desc": "Guides d'intégration technique"
+      },
+      "faq": {
+        "title": "FAQ",
+        "desc": "Foire aux questions"
+      }
+    },
+    "categories": {
+      "title": "Parcourir par Catégorie",
+      "accountSetup": {
+        "title": "Compte et Configuration",
+        "articles": {
+          "installation": "Installation de TIKARI",
+          "firstLogin": "Première connexion et configuration de l'organisation",
+          "userManagement": "Ajout d'utilisateurs et attribution de rôles",
+          "branchSetup": "Configuration de plusieurs agences",
+          "permissions": "Comprendre les permissions et les rôles"
+        }
+      },
+      "banking": {
+        "title": "Opérations Bancaires",
+        "articles": {
+          "customerOnboarding": "Intégration client et KYC",
+          "accounts": "Ouverture de comptes Wadiah et Mudarabah",
+          "njangi": "Gestion des groupes d'épargne communautaire (Njangi)",
+          "interbank": "Virements interbancaires et SYSTAC",
+          "teller": "Opérations de caisse et gestion de trésorerie"
+        }
+      },
+      "financing": {
+        "title": "Financement Islamique",
+        "articles": {
+          "murabaha": "Création de contrats de financement Murabaha",
+          "mudarabah": "Gestion du pool de profit Mudarabah",
+          "musharakah": "Financement en partenariat Musharakah",
+          "ijara": "Opérations de leasing Ijara",
+          "earlySettlement": "Règlement anticipé et Ibra"
+        }
+      },
+      "compliance": {
+        "title": "Conformité et Rapports",
+        "articles": {
+          "regulatoryReturns": "Génération des déclarations réglementaires",
+          "aaoifi": "États financiers AAOIFI",
+          "shariahBoard": "Approbations du conseil de la Charia et gestion des Fatwa",
+          "aml": "Surveillance des transactions AML/CFT",
+          "auditTrail": "Piste d'audit et rapports de conformité"
+        }
+      },
+      "technical": {
+        "title": "Support Technique",
+        "articles": {
+          "backup": "Sauvegarde et reprise après sinistre",
+          "eod": "Processus batch de fin de journée",
+          "troubleshooting": "Étapes de dépannage courantes",
+          "performance": "Optimisation des performances",
+          "updates": "Mises à jour et maintenance du système"
+        }
+      },
+      "migration": {
+        "title": "Migration et Intégration",
+        "articles": {
+          "dataMapping": "Mappage des données depuis les systèmes existants",
+          "symphonie": "Migration depuis Symphonie",
+          "delta": "Migration depuis Delta",
+          "parallelRun": "Meilleures pratiques pour l'exécution parallèle",
+          "cutover": "Liste de contrôle du basculement et mise en service"
+        }
+      }
+    },
+    "popularArticles": {
+      "title": "Articles Populaires",
+      "howToMurabaha": {
+        "title": "Comment créer un contrat de financement Murabaha",
+        "views": "12 450 vues"
+      },
+      "eodProcess": {
+        "title": "Comprendre le processus de fin de journée",
+        "views": "10 230 vues"
+      },
+      "njangiManagement": {
+        "title": "Gestion des groupes d'épargne communautaire (cycles Njangi)",
+        "views": "8 910 vues"
+      },
+      "regulatoryReporting": {
+        "title": "Génération des déclarations réglementaires",
+        "views": "7 650 vues"
+      }
+    },
+    "contactSupport": {
+      "title": "Besoin d'aide supplémentaire ?",
+      "subtitle": "Notre équipe de support est disponible pour vous assister.",
+      "methods": {
+        "email": {
+          "title": "Support par Email",
+          "desc": "Obtenir de l'aide par email",
+          "value": "support@tikari.cm",
+          "response": "Réponse sous 24 heures"
+        },
+        "phone": {
+          "title": "Support Téléphonique",
+          "desc": "Parler à notre équipe",
+          "value": "+237 677 777 777",
+          "hours": "Lun-Ven, 8h-18h WAT"
+        },
+        "chat": {
+          "title": "Chat en Direct",
+          "desc": "Discuter avec le support",
+          "value": "Disponible pendant les heures de bureau",
+          "status": "Lun-Ven, 8h-18h WAT"
+        }
+      },
+      "enterprise": {
+        "title": "Support Entreprise",
+        "desc": "Support prioritaire avec gestionnaire de compte dédié",
+        "learnMore": "En savoir plus"
+      }
+    },
+    "trainingResources": {
+      "title": "Formation et Ressources",
+      "subtitle": "Tirez le meilleur parti de TIKARI",
+      "webinars": {
+        "title": "Webinaires en Direct",
+        "desc": "Rejoignez nos sessions de formation hebdomadaires",
+        "cta": "Voir le Calendrier"
+      },
+      "videoTutorials": {
+        "title": "Tutoriels Vidéo",
+        "desc": "Guides vidéo étape par étape",
+        "cta": "Regarder Maintenant"
+      },
+      "documentation": {
+        "title": "Documentation",
+        "desc": "Documentation technique complète",
+        "cta": "Lire la Doc"
+      }
+    },
+    "systemStatus": {
+      "title": "État du Système",
+      "allOperational": "Tous les systèmes opérationnels",
+      "viewStatus": "Voir l'état détaillé"
+    },
+    "cta": {
+      "title": "Vous ne trouvez pas ce que vous cherchez ?",
+      "subtitle": "Notre équipe de support est là pour vous aider avec toutes vos questions.",
+      "contactSupport": "Contacter le Support",
+      "bookDemo": "Réserver une Démo"
+    }
+  },
+  "privacy": {
+    "header": {
+      "badge": "Légal",
+      "title": "Politique de Confidentialité",
+      "lastRevised": "Dernière Révision : 21 Août 2026"
+    },
+    "section1": {
+      "title": "1. À propos de cette politique",
+      "paragraph1": "Cette politique de confidentialité explique comment TIKARI Technology Limited (\"TIKARI\", \"nous\") collecte, utilise, divulgue et protège les informations vous concernant lorsque vous visitez tikari.cm ou vous renseignez sur notre plateforme. Elle ne couvre pas les données traitées au sein de la plateforme TIKARI pour le compte de nos clients institutionnels, qui sont régies par notre Accord de Traitement des Données avec chaque institution cliente.",
+      "paragraph2": "Nos opérations sont conformes à la Loi n° 2010/012 du 21 décembre 2010 relative à la cybersécurité et à la cybercriminalité au Cameroun, supervisée par l'ANTIC (Agence Nationale des Technologies de l'Information et de la Communication), et aux directives COBAC pertinentes sur le secret bancaire et la protection des données clients."
+    },
+    "section2": {
+      "title": "2. Informations que nous collectons",
+      "paragraph1": "Auprès des visiteurs du site web : Nous collectons les informations que vous fournissez lorsque vous soumettez notre formulaire de demande de démo, y compris le nom, l'adresse e-mail professionnelle, le nom de l'institution, le rôle et tout message que vous incluez. Nous pouvons également collecter des journaux de serveur web standard (adresse IP, type de navigateur, pages visitées) à des fins de sécurité et d'analyse.",
+      "paragraph2": "Nous ne : utilisons pas de traceurs publicitaires tiers, ne vendons pas vos informations à des tiers, ni n'envoyons d'e-mails marketing non sollicités aux personnes qui ne se sont pas inscrites."
+    },
+    "section3": {
+      "title": "3. Comment nous utilisons vos informations",
+      "intro": "Lorsque vous soumettez une demande de démo, nous utilisons vos informations pour :",
+      "items": {
+        "item1": "Vous contacter pour planifier la démo demandée",
+        "item2": "Adapter la démo au type de votre institution et aux questions posées",
+        "item3": "Envoyer des informations de suivi relatives à TIKARI que vous avez demandées"
+      },
+      "outro": "Nous ne vous ajoutons pas à une liste de diffusion marketing en masse sans consentement explicite."
+    },
+    "section4": {
+      "title": "4. Conservation des données",
+      "content": "Les données de demande de démo sont conservées pendant 24 mois à compter de la date de soumission, ou jusqu'à ce que vous demandiez leur suppression. Nous supprimons les données sur demande. Vous pouvez nous contacter à privacy@tikari.cm."
+    },
+    "section5": {
+      "title": "5. Sécurité des données",
+      "content": "Nous utilisons le chiffrement en transit (HTTPS/TLS) pour toutes les communications web. Les données de soumission de formulaires sont stockées dans des systèmes à accès contrôlé disponibles uniquement pour l'équipe TIKARI. Nous ne stockons pas de données de carte de paiement. Aucun paiement n'est collecté sur ce site web."
+    },
+    "section6": {
+      "title": "6. Services tiers",
+      "content": "Notre site web peut utiliser des services tiers pour l'hébergement et l'analyse de base. Ces services sont liés par leurs propres politiques de confidentialité et ne sont pas autorisés à utiliser les données sur les visiteurs de notre site à des fins publicitaires propres."
+    },
+    "section7": {
+      "title": "7. Vos droits",
+      "content": "Vous avez le droit de demander l'accès, la correction ou la suppression de toute information personnelle que nous détenons à votre sujet en vertu des directives régionales de sécurité des consommateurs de la CEMAC. Pour exercer l'un de ces droits, contactez-nous à privacy@tikari.cm. Nous répondrons dans les 30 jours."
+    },
+    "section8": {
+      "title": "8. Modifications de cette politique",
+      "content": "Nous pouvons mettre à jour cette politique de temps à autre. La date en haut de cette page indique quand elle a été révisée pour la dernière fois. L'utilisation continue du site web suite à une mise à jour constitue l'acceptation de la politique révisée."
+    },
+    "section9": {
+      "title": "9. Contact",
+      "companyName": "TIKARI Technology Limited",
+      "location": "Douala, Cameroun",
+      "email": "E-mail : privacy@tikari.cm"
+    }
+  },
+  "terms": {
+    "header": {
+      "badge": "Légal",
+      "title": "Conditions d'Utilisation",
+      "lastRevised": "Dernière Révision : 21 Août 2026"
+    },
+    "section1": {
+      "title": "1. Acceptation",
+      "content": "En accédant à tikari.cm (le \"Site Web\"), vous acceptez d'être lié par ces Conditions d'Utilisation conformément à la Loi n° 2010/013 du 21 décembre 2010 régissant les communications électroniques au Cameroun. Si vous n'êtes pas d'accord, veuillez ne pas utiliser le Site Web."
+    },
+    "section2": {
+      "title": "2. Contenu du site web",
+      "paragraph1": "Le contenu de ce Site Web est fourni à titre informatif uniquement. Toutes les descriptions de produits, listes de fonctionnalités et captures d'écran de la plateforme représentent la plateforme TIKARI à la date de publication. Les fonctionnalités et capacités sont susceptibles de changer sans préavis.",
+      "paragraph2": "Rien sur ce Site Web ne constitue une offre juridiquement contraignante, une garantie, une représentation ou un engagement contractuel. Les licences logicielles et la mise en œuvre sont régies par un Accord de Licence Logicielle et de Services distinct entre TIKARI Technology Limited et l'institution cliente."
+    },
+    "section3": {
+      "title": "3. Aucun conseil financier ou de la Charia",
+      "content": "Les ressources, articles et descriptions de la plateforme sur ce Site Web sont de nature éducative et informative. Ils ne constituent pas des conseils financiers, des conseils juridiques ou une décision de la Charia. Les déterminations de la conformité à la Charia pour des produits et structures spécifiques doivent être faites par un érudit qualifié de la Charia ou le Comité Consultatif d'Experts (ACE) engagé par votre institution."
+    },
+    "section4": {
+      "title": "4. Propriété intellectuelle",
+      "content": "Tout le contenu, les marques de commerce, les logos et les logiciels sur ce Site Web sont la propriété de TIKARI Technology Limited ou de ses concédants de licence. Vous ne pouvez pas reproduire, distribuer ou créer des œuvres dérivées de tout contenu de ce Site Web sans autorisation écrite préalable."
+    },
+    "section5": {
+      "title": "5. Limitation de responsabilité",
+      "content": "Dans toute la mesure permise par les lois de la République du Cameroun, TIKARI Technology Limited exclut toute responsabilité pour toute perte ou dommage (y compris les pertes indirectes, consécutives ou accessoires) découlant de l'utilisation ou de la confiance accordée à ce Site Web ou à son contenu."
+    },
+    "section6": {
+      "title": "6. Liens externes",
+      "content": "Ce Site Web peut contenir des liens vers des sites web tiers. Nous ne contrôlons pas ces sites web et ne sommes pas responsables de leur contenu, de leurs pratiques en matière de confidentialité ou de leur disponibilité."
+    },
+    "section7": {
+      "title": "7. Loi applicable",
+      "content": "Ces Conditions sont régies et interprétées conformément aux lois de la République du Cameroun. Tout litige découlant de ces Conditions est soumis à la juridiction exclusive des tribunaux compétents du Cameroun (situés spécifiquement à Douala)."
+    },
+    "section8": {
+      "title": "8. Modifications",
+      "content": "Nous pouvons mettre à jour ces Conditions à tout moment. L'utilisation continue du Site Web après la publication des modifications constitue l'acceptation des Conditions révisées."
+    },
+    "section9": {
+      "title": "9. Contact",
+      "content": "Pour les questions juridiques, vous pouvez contacter notre service juridique à :",
+      "email": "E-mail : legal@tikari.cm"
+    }
+  },
   "footer": {
     "brand": {
       "description": "Une plateforme bancaire sans intérêt de premier plan en Afrique. Infrastructure financière complète conforme AAOIFI conçue pour la banque islamique, la microfinance et les systèmes d'épargne traditionnels.",

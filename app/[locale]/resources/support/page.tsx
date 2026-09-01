@@ -15,33 +15,35 @@ import {
 } from "@phosphor-icons/react";
 import { Button } from "@/components/ui";
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
 export default function SupportPage() {
+  const t = useTranslations("support");
   const [openFAQ, setOpenFAQ] = useState<number | null>(null);
 
   const supportChannels = [
     {
       icon: EnvelopeSimple,
-      title: "Email Support",
-      description: "Get detailed answers within 24 hours",
-      contact: "support@tikari.cm",
-      action: "Send Email",
+      title: t("contactSupport.methods.email.title"),
+      description: t("contactSupport.methods.email.desc"),
+      contact: t("contactSupport.methods.email.value"),
+      action: t("contactSupport.methods.email.response"),
       color: "bg-tikari-green-dark",
     },
     {
       icon: Phone,
-      title: "Phone Support",
-      description: "Speak directly with our team",
-      contact: "+237 6XX XXX XXX",
-      action: "Call Now",
+      title: t("contactSupport.methods.phone.title"),
+      description: t("contactSupport.methods.phone.desc"),
+      contact: t("contactSupport.methods.phone.value"),
+      action: t("contactSupport.methods.phone.hours"),
       color: "bg-tikari-green",
     },
     {
       icon: VideoCamera,
-      title: "Book a Demo",
-      description: "Live walkthrough of the platform",
-      contact: "45-minute session",
-      action: "Schedule Demo",
+      title: t("trainingResources.videoTutorials.title"),
+      description: t("trainingResources.videoTutorials.desc"),
+      contact: t("contactSupport.methods.chat.value"),
+      action: t("trainingResources.videoTutorials.cta"),
       color: "bg-tikari-gold",
     },
   ];
@@ -49,50 +51,50 @@ export default function SupportPage() {
   const helpTopics = [
     {
       icon: Users,
-      title: "Getting Started",
-      description: "Initial setup and onboarding guides",
+      title: t("categories.accountSetup.title"),
+      description: t("quickLinks.gettingStarted.desc"),
       articles: 12,
       popular: [
-        "System Requirements",
-        "First-Time Login",
-        "Organization Setup",
-        "User Roles & Permissions",
+        t("categories.accountSetup.articles.installation"),
+        t("categories.accountSetup.articles.firstLogin"),
+        t("categories.accountSetup.articles.userManagement"),
+        t("categories.accountSetup.articles.permissions"),
       ],
     },
     {
       icon: Coins,
-      title: "Product Configuration",
-      description: "Setting up Murabaha, Mudarabah, and other products",
+      title: t("categories.banking.title"),
+      description: t("categories.banking.articles.accounts"),
       articles: 18,
       popular: [
-        "Creating Murabaha Products",
-        "PSR Configuration",
-        "Profit Pool Setup",
-        "Product Approval Workflow",
+        t("categories.banking.articles.customerOnboarding"),
+        t("categories.banking.articles.accounts"),
+        t("categories.banking.articles.njangi"),
+        t("categories.banking.articles.teller"),
       ],
     },
     {
       icon: ChartLineUp,
-      title: "Reporting & Compliance",
-      description: "Generate COBAC returns and financial statements",
+      title: t("categories.compliance.title"),
+      description: t("categories.compliance.articles.regulatoryReturns"),
       articles: 15,
       popular: [
-        "COBAC Prudential Returns",
-        "AAOIFI Financial Statements",
-        "EOD Processing",
-        "Audit Trail Access",
+        t("categories.compliance.articles.regulatoryReturns"),
+        t("categories.compliance.articles.aaoifi"),
+        t("categories.technical.articles.eod"),
+        t("categories.compliance.articles.auditTrail"),
       ],
     },
     {
       icon: ShieldCheck,
-      title: "Shariah Governance",
-      description: "ACE committee tools and Fatwa management",
+      title: t("categories.financing.title"),
+      description: t("categories.financing.articles.murabaha"),
       articles: 10,
       popular: [
-        "ACE Dashboard",
-        "Fatwa Repository",
-        "Product Review Process",
-        "Shariah Audit Reports",
+        t("categories.financing.articles.murabaha"),
+        t("categories.financing.articles.mudarabah"),
+        t("categories.financing.articles.musharakah"),
+        t("categories.financing.articles.ijara"),
       ],
     },
   ];
@@ -188,12 +190,11 @@ export default function SupportPage() {
           <div className="max-w-4xl">
 
             <h1 className="text-4xl lg:text-[3.75rem] font-bold leading-[1.05] tracking-tight mb-6">
-              Help Center
+              {t("hero.title")}
             </h1>
 
             <p className="text-[17px] lg:text-[19px] text-white/85 leading-relaxed max-w-3xl mb-8">
-              Find answers, tutorials, and direct support channels. We're here
-              to help your institution succeed with TIKARI.
+              {t("hero.subtitle")}
             </p>
           </div>
         </div>
@@ -203,15 +204,15 @@ export default function SupportPage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-12 lg:mb-16">
             <span className="text-[11px] uppercase tracking-[0.16em] text-tikari-gold-dark font-semibold">
-              Get in touch
+              {t("hero.badge")}
             </span>
 
             <h2 className="text-3xl lg:text-[2.75rem] font-bold mt-3 mb-4 leading-[1.15] tracking-tight text-tikari-green-dark">
-              Contact Support
+              {t("contactSupport.title")}
             </h2>
 
             <p className="text-[16px] lg:text-[17px] text-tikari-sage leading-relaxed">
-              Choose the channel that works best for you.
+              {t("contactSupport.subtitle")}
             </p>
           </div>
 
@@ -261,15 +262,15 @@ export default function SupportPage() {
         <div className="max-w-7xl mx-auto">
           <div className="max-w-2xl mb-12 lg:mb-14">
             <span className="text-[11px] uppercase tracking-[0.16em] text-tikari-gold-dark font-semibold">
-              Knowledge base
+              {t("quickLinks.title")}
             </span>
 
             <h2 className="text-3xl lg:text-[2.75rem] font-bold mt-3 mb-4 leading-[1.15] tracking-tight text-tikari-green-dark">
-              Browse by Topic
+              {t("categories.title")}
             </h2>
 
             <p className="text-[16px] lg:text-[17px] text-tikari-sage leading-relaxed">
-              Find detailed guides and step-by-step tutorials.
+              {t("hero.subtitle")}
             </p>
           </div>
 
@@ -311,7 +312,7 @@ export default function SupportPage() {
                   <div className="mt-6 pt-5 border-t border-tikari-green/10">
                     <div className="flex items-center justify-between mb-3">
                       <h4 className="text-[11px] font-semibold text-tikari-green-dark uppercase tracking-[0.12em]">
-                        Popular Articles
+                        {t("popularArticles.title")}
                       </h4>
 
                       <ArrowUpRight
@@ -343,15 +344,15 @@ export default function SupportPage() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-12 lg:mb-14">
             <span className="text-[11px] uppercase tracking-[0.16em] text-tikari-gold-dark font-semibold">
-              Need clarification?
+              {t("quickLinks.faq.title")}
             </span>
 
             <h2 className="text-3xl lg:text-[2.75rem] font-bold mt-3 mb-4 leading-[1.15] tracking-tight text-tikari-green-dark">
-              Frequently Asked Questions
+              {t("quickLinks.faq.desc")}
             </h2>
 
             <p className="text-[16px] text-tikari-sage leading-relaxed">
-              Quick answers to common questions about TIKARI.
+              {t("hero.subtitle")}
             </p>
           </div>
 
@@ -419,15 +420,15 @@ export default function SupportPage() {
         <div className="max-w-7xl mx-auto">
           <div className="max-w-2xl mb-12 lg:mb-14">
             <span className="text-[11px] uppercase tracking-[0.16em] text-tikari-gold-dark font-semibold">
-              Learn the platform
+              {t("trainingResources.title")}
             </span>
 
             <h2 className="text-3xl lg:text-[2.75rem] font-bold mt-3 mb-4 leading-[1.15] tracking-tight text-tikari-green-dark">
-              Video Tutorials
+              {t("trainingResources.videoTutorials.title")}
             </h2>
 
             <p className="text-[16px] lg:text-[17px] text-tikari-sage leading-relaxed">
-              Step-by-step video guides for common tasks.
+              {t("trainingResources.videoTutorials.desc")}
             </p>
           </div>
 
@@ -482,12 +483,11 @@ export default function SupportPage() {
       <section className="py-16 lg:py-24 px-6 bg-tikari-gold">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl lg:text-[2.75rem] font-bold mb-5 text-tikari-green-dark">
-            Can't find what you're looking for?
+            {t("cta.title")}
           </h2>
 
           <p className="text-[16px] lg:text-[17px] text-tikari-green-dark/80 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Our support team is ready to help you directly. Reach out via
-            email, phone, or schedule a live demo.
+            {t("cta.subtitle")}
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
@@ -496,7 +496,7 @@ export default function SupportPage() {
               size="lg"
               href="mailto:support@tikari.cm"
             >
-              Email Support
+              {t("cta.contactSupport")}
               <ArrowRight
                 size={18}
                 weight="bold"
@@ -509,7 +509,7 @@ export default function SupportPage() {
               size="lg"
               href="/demo"
             >
-              Schedule a Demo
+              {t("cta.bookDemo")}
             </Button>
           </div>
         </div>

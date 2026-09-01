@@ -15,124 +15,127 @@ import {
 } from "@phosphor-icons/react";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui";
+import { useTranslations } from "next-intl";
 
 export default function EducationPage() {
+  const t = useTranslations("education");
+  
   const topics = [
     {
-      title: "Islamic Finance Principles",
+      title: t("topics.islamicPrinciples.title"),
       icon: ShieldCheck,
-      description: "Core principles that distinguish Islamic banking from conventional finance.",
+      description: t("topics.islamicPrinciples.description"),
       articles: [
-        "Prohibition of Riba (Interest)",
-        "Risk-Sharing and Profit-Loss Sharing",
-        "Asset-Backed Transactions",
-        "Shariah Compliance Framework",
-        "Halal vs Haram in Finance"
+        t("topics.islamicPrinciples.articles.riba"),
+        t("topics.islamicPrinciples.articles.riskSharing"),
+        t("topics.islamicPrinciples.articles.assetBacked"),
+        t("topics.islamicPrinciples.articles.shariahFramework"),
+        t("topics.islamicPrinciples.articles.halalHaram")
       ],
-      badge: "Foundations"
+      badge: t("topics.islamicPrinciples.badge")
     },
     {
-      title: "Islamic Products",
+      title: t("topics.islamicProducts.title"),
       icon: Coins,
-      description: "Detailed breakdowns of common Islamic financing structures.",
+      description: t("topics.islamicProducts.description"),
       articles: [
-        "Murabaha (Cost-Plus Financing)",
-        "Mudarabah (Profit-Sharing)",
-        "Musharakah (Partnership)",
-        "Ijara (Leasing)",
-        "Salam (Forward Purchase)"
+        t("topics.islamicProducts.articles.murabaha"),
+        t("topics.islamicProducts.articles.mudarabah"),
+        t("topics.islamicProducts.articles.musharakah"),
+        t("topics.islamicProducts.articles.ijara"),
+        t("topics.islamicProducts.articles.salam")
       ],
-      badge: "Products"
+      badge: t("topics.islamicProducts.badge")
     },
     {
-      title: "AAOIFI Standards",
+      title: t("topics.aaoifi.title"),
       icon: FileText,
-      description: "Accounting and auditing standards for Islamic financial institutions.",
+      description: t("topics.aaoifi.description"),
       articles: [
-        "AAOIFI Chart of Accounts",
-        "Financial Statement Requirements",
-        "Shariah Governance Standards",
-        "Investment Account Reporting",
-        "Zakat Calculation Methods"
+        t("topics.aaoifi.articles.chartOfAccounts"),
+        t("topics.aaoifi.articles.financialStatements"),
+        t("topics.aaoifi.articles.shariahGovernance"),
+        t("topics.aaoifi.articles.investmentAccounting"),
+        t("topics.aaoifi.articles.zakat")
       ],
-      badge: "Standards"
+      badge: t("topics.aaoifi.badge")
     },
     {
-      title: "Shariah Governance",
+      title: t("topics.shariahGovernance.title"),
       icon: GraduationCap,
-      description: "How Shariah Supervisory Boards oversee Islamic banking operations.",
+      description: t("topics.shariahGovernance.description"),
       articles: [
-        "Role of the Shariah Board",
-        "Fatwa Issuance Process",
-        "Internal Shariah Audit",
-        "Shariah Review Units",
-        "Annual Shariah Reports"
+        t("topics.shariahGovernance.articles.boardRole"),
+        t("topics.shariahGovernance.articles.fatwa"),
+        t("topics.shariahGovernance.articles.internalAudit"),
+        t("topics.shariahGovernance.articles.reviewUnits"),
+        t("topics.shariahGovernance.articles.annualReports")
       ],
-      badge: "Governance"
+      badge: t("topics.shariahGovernance.badge")
     },
     {
-      title: "Regulatory Jurisdictions",
+      title: t("topics.regulatory.title"),
       icon: Users,
-      description: "Islamic finance across different regulatory frameworks (CEMAC, CBN for Nigeria, WAEMU, etc.).",
+      description: t("topics.regulatory.description"),
       articles: [
-        "Central Bank Regulations",
-        "Supported Jurisdictions & Standards",
-        "Cross-Border Compliance",
-        "Regional Shariah Requirements",
-        "Local Currency Accounting"
+        t("topics.regulatory.articles.centralBank"),
+        t("topics.regulatory.articles.jurisdictions"),
+        t("topics.regulatory.articles.crossBorder"),
+        t("topics.regulatory.articles.regional"),
+        t("topics.regulatory.articles.localCurrency")
       ],
-      badge: "Regulatory",
+      badge: t("topics.regulatory.badge"),
       link: {
-        text: "View Supported Jurisdictions",
-        href: "/jurisdictions"
+        text: t("topics.regulatory.link.text"),
+        href: t("topics.regulatory.link.href")
       }
     },
     {
-      title: "Glossary & Terms",
+      title: t("topics.glossary.title"),
       icon: BookOpen,
-      description: "Comprehensive dictionary of Islamic finance terminology.",
+      description: t("topics.glossary.description"),
       articles: [
-        "Arabic to French Translations",
-        "Common Acronyms (MFB, ACE, PSR)",
-        "Technical Banking Terms",
-        "Shariah Legal Concepts",
-        "Regulatory Terminology"
+        t("topics.glossary.articles.translations"),
+        t("topics.glossary.articles.acronyms"),
+        t("topics.glossary.articles.bankingTerms"),
+        t("topics.glossary.articles.shariahConcepts"),
+        t("topics.glossary.articles.regulatoryTerms")
       ],
-      badge: "Reference"
+      badge: t("topics.glossary.badge")
     }
   ];
 
   const guides = [
     {
-      title: "What is Islamic Finance?",
-      description: "Comprehensive introduction to Shariah-compliant banking, core principles, and how Islamic finance operates across different regulatory environments.",
-      duration: "15 min read",
-      level: "Beginner",
-      topics: ["Fundamentals", "Shariah"],
+      title: t("guides.whatIsIslamic.title"),
+      description: t("guides.whatIsIslamic.description"),
+      duration: t("guides.whatIsIslamic.duration"),
+      level: t("guides.whatIsIslamic.level"),
+      topics: [t("guides.whatIsIslamic.topics.fundamentals"), t("guides.whatIsIslamic.topics.shariah")],
       href: "/resources/education/what-is-islamic-finance"
     },
     {
-      title: "Understanding Murabaha Financing",
-      description: "Step-by-step breakdown of how cost-plus sale financing works in practice.",
-      duration: "12 min read",
-      level: "Beginner",
-      topics: ["Murabaha", "Contracts"],
+      title: t("guides.murabaha.title"),
+      description: t("guides.murabaha.description"),
+      duration: t("guides.murabaha.duration"),
+      level: t("guides.murabaha.level"),
+      topics: [t("guides.murabaha.topics.murabaha"), t("guides.murabaha.topics.contracts")],
       href: "/resources/education/understanding-murabaha"
     },
     {
-      title: "Profit-Sharing Ratio Disclosure",
-      description: "How to properly disclose PSR to customers in Mudarabah accounts.",
-      duration: "8 min read",
-      level: "Intermediate",
-      topics: ["Mudarabah", "Compliance"],
+      title: t("guides.psr.title"),
+      description: t("guides.psr.description"),
+      duration: t("guides.psr.duration"),
+      level: t("guides.psr.level"),
+      topics: [t("guides.psr.topics.mudarabah"), t("guides.psr.topics.compliance")],
       href: "/resources/education/profit-sharing-ratio"
     },
     {
-      title: "AAOIFI vs OHADA: Chart of Accounts",
-      description: "Reconciling AAOIFI Islamic accounting with OHADA accounting standards.",
-      duration: "15 min read",
-      level: "Advanced",
-      topics: ["AAOIFI", "Reporting"],
+      title: t("guides.aaoifiOhada.title"),
+      description: t("guides.aaoifiOhada.description"),
+      duration: t("guides.aaoifiOhada.duration"),
+      level: t("guides.aaoifiOhada.level"),
+      topics: [t("guides.aaoifiOhada.topics.aaoifi"), t("guides.aaoifiOhada.topics.reporting")],
       href: "/resources/education/aaoifi-vs-ohada"
     }
   ];
@@ -148,10 +151,10 @@ export default function EducationPage() {
           <div className="max-w-4xl">
             
             <h1 className="text-4xl lg:text-[3.75rem] font-bold leading-[1.05] tracking-tight mb-6">
-              Shariah Finance 101
+              {t("hero.title")}
             </h1>
             <p className="text-[17px] lg:text-[19px] text-white/85 leading-relaxed max-w-3xl mb-8">
-              Comprehensive guides to Islamic finance principles, AAOIFI standards, and Shariah governance tailored to regional and global regulatory environments (including CEMAC, CBN, WAEMU, and more).
+              {t("hero.subtitle")}
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
@@ -160,7 +163,7 @@ export default function EducationPage() {
                 size="lg"
                 href="#guides"
               >
-                Start Learning
+                {t("hero.startLearning")}
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" weight="bold" />
               </Button>
               
@@ -169,7 +172,7 @@ export default function EducationPage() {
                 size="lg"
                 href="/demo"
               >
-                Book a Demo
+                {t("hero.bookDemo")}
               </Button>
             </div>
           </div>
@@ -181,10 +184,10 @@ export default function EducationPage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-[2.75rem] font-bold mb-4 leading-[1.15] tracking-tight text-tikari-green-dark">
-              Knowledge Topics
+              {t("topicsSection.title")}
             </h2>
             <p className="text-[17px] text-tikari-sage max-w-2xl mx-auto">
-              Browse by category to find what you need.
+              {t("topicsSection.subtitle")}
             </p>
           </div>
 
@@ -247,10 +250,10 @@ export default function EducationPage() {
           <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-12">
             <div>
               <h2 className="text-3xl lg:text-[2.75rem] font-bold mb-4 leading-[1.15] tracking-tight text-tikari-green-dark">
-                Featured Guides
+                {t("guidesSection.title")}
               </h2>
               <p className="text-[17px] text-tikari-sage max-w-2xl">
-                In-depth articles written by our Shariah compliance team.
+                {t("guidesSection.subtitle")}
               </p>
             </div>
           </div>
@@ -265,8 +268,8 @@ export default function EducationPage() {
                 <div className="p-8">
                   <div className="flex items-center gap-3 mb-4">
                     <span className={`text-xs font-semibold px-3 py-1 rounded-full ${
-                      guide.level === 'Beginner' ? 'bg-green-100 text-green-700' :
-                      guide.level === 'Intermediate' ? 'bg-tikari-gold/10 text-tikari-gold' :
+                      guide.level === t("levels.beginner") ? 'bg-green-100 text-green-700' :
+                      guide.level === t("levels.intermediate") ? 'bg-tikari-gold/10 text-tikari-gold' :
                       'bg-tikari-green-dark/10 text-tikari-green-dark'
                     }`}>
                       {guide.level}
@@ -304,10 +307,10 @@ export default function EducationPage() {
       <section className="py-16 lg:py-24 px-6 bg-tikari-gold">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl lg:text-[2.75rem] font-bold mb-6 text-tikari-green-dark">
-            Need help with implementation?
+            {t("cta.title")}
           </h2>
           <p className="text-[17px] text-tikari-green-dark/80 mb-8 max-w-2xl mx-auto">
-            Our team provides onboarding support, Shariah governance setup, and ongoing training for your institution.
+            {t("cta.subtitle")}
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -316,7 +319,7 @@ export default function EducationPage() {
               size="lg"
               href="/demo"
             >
-              Book a Demo
+              {t("cta.bookDemo")}
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" weight="bold" />
             </Button>
             
@@ -325,7 +328,7 @@ export default function EducationPage() {
               size="lg"
               href="/resources/support"
             >
-              Contact Support
+              {t("cta.contactSupport")}
             </Button>
           </div>
         </div>
