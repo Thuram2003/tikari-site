@@ -2309,6 +2309,277 @@
       "contactUs": "Contact Us"
     }
   },
+  "compliance": {
+    "hero": {
+      "title": "Regulatory Updates & Compliance Documents",
+      "subtitle": "Stay current with banking guidelines, licensing checklists, and financial reporting standards governing Islamic microfinance across CEMAC, UMOA/WAEMU, Nigeria, and international standard setters.",
+      "downloadResources": "Download Resources",
+      "officialRegulations": "Official Regulations"
+    },
+    "documents": {
+      "title": "Compliance Documents",
+      "subtitle": "Download templates, checklists, and reference guides prepared for Islamic microfinance institutions.",
+      "categories": {
+        "all": "All Resources",
+        "licensing": "Licensing & Operations",
+        "reporting": "AAOIFI Accounting",
+        "governance": "Shariah Governance",
+        "liquidity": "Prudential & Liquidity",
+        "aml": "AML / CFT & KYC"
+      },
+      "items": {
+        "licensingChecklist": {
+          "title": "Regional MFB & SFD Licensing Requirements",
+          "type": "Compliance Checklist",
+          "pages": "12 pages",
+          "format": "PDF",
+          "description": "Complete requirements for Unit, Regional, and Category 1, 2, and 3 EMF licences across CEMAC and UMOA/WAEMU. Covers Islamic windows, governance, and licensing dossiers.",
+          "highlights": [
+            "CEMAC Category 1, 2, and 3 EMF application dossiers (COBAC N°01/17)",
+            "UMOA SFD Islamic window authorization annexes (Instruction 003-03-2018)",
+            "Fit-and-proper criteria for directors, auditors, and Shariah board members"
+          ],
+          "foundation": "Based on Règlement N°01/17/CEMAC & BCEAO SFD Law",
+          "links": {
+            "beac": "BEAC Microfinance Regulations",
+            "bceao": "BCEAO SFD Regulatory Law",
+            "umoa": "UMOA Instruction 003-03-2018 (PDF)"
+          }
+        },
+        "aaoifiTemplate": {
+          "title": "AAOIFI Financial Reporting Template",
+          "type": "Financial Reporting Guide",
+          "pages": "28 pages",
+          "format": "PDF",
+          "description": "Pre-formatted financial reporting guide and statement models compliant with AAOIFI standards. Covers balance sheets, income statements, quasi-equity, and profit-sharing investment accounts.",
+          "highlights": [
+            "Compliant with FAS 1 and newly issued FAS 44–47 (Quasi-equity & Investment Accounts)",
+            "Dedicated schedules for Mudarabah, Murabaha, Ijara, and Musharakah",
+            "Automated Zakat calculation schedules and charity fund disclosures"
+          ],
+          "foundation": "Based on AAOIFI FAS 1, FAS 44–47 & Illustrative Statements",
+          "links": {
+            "illustrative": "AAOIFI Illustrative Financial Statements (PDF)",
+            "portal": "AAOIFI Accounting Standards Portal"
+          }
+        },
+        "shariahFramework": {
+          "title": "Shariah Governance Framework",
+          "type": "Implementation Guide",
+          "pages": "45 pages",
+          "format": "PDF",
+          "description": "Best practices for establishing and maintaining an independent Shariah Supervisory Board / Conseil de Conformité, internal Shariah audit, and Fatwa workflows.",
+          "highlights": [
+            "SSB charter, independence rules, and scholar qualification standards",
+            "Annual Shariah audit plan and compliance risk mapping routines",
+            "Fatwa issuance workflow, product sign-off forms, and annual reporting"
+          ],
+          "foundation": "Based on AAOIFI GS 1 (Revised 2024) & UMOA Inst. 003-03-2018",
+          "links": {
+            "umoa": "UMOA Instruction N°003-03-2018 (PDF)",
+            "aaoifi": "AAOIFI Issued Governance Standards"
+          }
+        },
+        "liquidityGuide": {
+          "title": "Central Bank Liquidity Calculation Guide",
+          "type": "Calculation Guide",
+          "pages": "18 pages",
+          "format": "PDF",
+          "description": "Step-by-step calculation of Islamic liquidity ratios, reconciling central bank prudential coefficients with IFSB-12 liquidity risk standards.",
+          "highlights": [
+            "COBAC EMF 2002/14 and UMOA prudential short-term liquidity formulas",
+            "IFSB-12 displaced commercial risk and Profit Equalization Reserve handling",
+            "High-Quality Shariah-Compliant Liquid Assets (HQLA) classification"
+          ],
+          "foundation": "Based on COBAC EMF 2002/14 & IFSB-12 Standard",
+          "links": {
+            "ifsb": "IFSB-12 Liquidity Risk Management (PDF)",
+            "cobac": "COBAC EMF 2002/14 Liquidity Regulation (PDF)"
+          }
+        },
+        "amlMatrix": {
+          "title": "Regional AML/KYC Document Matrix",
+          "type": "Reference Matrix",
+          "pages": "8 pages",
+          "format": "PDF",
+          "description": "Required identity documents and Customer Due Diligence (CDD) thresholds across CEMAC, UMOA, and Nigeria by customer type and risk classification.",
+          "highlights": [
+            "Tiered KYC thresholds for financial inclusion under FATF guidance",
+            "Beneficial ownership (BO) verification protocols for legal entities",
+            "Suspicious transaction (STR/CTR) reporting trigger checklists"
+          ],
+          "foundation": "Based on FATF Rec 10, Financial Inclusion & COBAC I-2006/01",
+          "links": {
+            "fatf": "FATF Recommendations (Rec 10 CDD PDF)",
+            "guidance": "FATF Financial Inclusion & CDD Guidance",
+            "cobac": "COBAC AML/CFT Instructions"
+          }
+        },
+        "mudarabahPsr": {
+          "title": "Mudarabah PSR Disclosure Template",
+          "type": "Contract Template",
+          "pages": "6 pages",
+          "format": "PDF",
+          "description": "Customer-facing profit-sharing ratio disclosure statement and terms for unrestricted and restricted participatory investment accounts.",
+          "highlights": [
+            "Explicit profit-sharing ratio (Rab-al-Mal vs. Mudarib) disclosure terms",
+            "Reserve deduction formulas (PER/IRR) compliant with UMOA SFD rules",
+            "Quarterly and annual profit distribution calculation disclosure notes"
+          ],
+          "foundation": "Based on AAOIFI FAS 45 & UMOA Instruction N°005-05-2018",
+          "links": {
+            "umoa": "UMOA Instruction N°005-05-2018 (PDF)",
+            "directory": "WAMU Banking Commission Islamic Finance Directory"
+          }
+        }
+      },
+      "download": "Download",
+      "officialSources": "Official Sources:",
+      "openDocument": "Open Official Document"
+    },
+    "officialSources": {
+      "title": "Official Regulatory Repository",
+      "subtitle": "Direct access to laws, instructions, and international standards published by official regulatory bodies.",
+      "regions": {
+        "cemac": {
+          "region": "Central Africa (CEMAC / COBAC & BEAC)",
+          "authority": "Banque des États de l'Afrique Centrale & COBAC",
+          "documents": {
+            "beacReglements": {
+              "title": "BEAC Règlements de la Microfinance",
+              "desc": "Full collection of CEMAC microfinance laws, covering EMF categories (1st, 2nd, 3rd), licensing, and governance (Règlement N°01/17)."
+            },
+            "cobacLiquidite": {
+              "title": "Règlement COBAC EMF 2002/14 (Liquidité des EMF)",
+              "desc": "Official statutory prudential liquidity requirement and short-term asset coverage ratio for CEMAC microfinance institutions."
+            },
+            "cobacInstructions": {
+              "title": "Instructions COBAC de Microfinance (Comptabilité & Déclarations)",
+              "desc": "COBAC periodic reporting, prudential declarations, and accounting chart instructions for microfinance institutions."
+            },
+            "cobacAml": {
+              "title": "Instructions COBAC AML/CFT (I-2006/01)",
+              "desc": "Official supervisory directives on the prevention of money laundering, terror financing, and internal control systems."
+            }
+          }
+        },
+        "umoa": {
+          "region": "West Africa (UMOA / BCEAO & Commission Bancaire)",
+          "authority": "Banque Centrale des États de l'Afrique de l'Ouest",
+          "documents": {
+            "loiSfd": {
+              "title": "Loi Portant Réglementation des SFD de l'UMOA",
+              "desc": "Primary legal foundation governing Decentralized Financial Systems (SFDs), licensing, and networks across WAEMU."
+            },
+            "instruction003": {
+              "title": "Instruction N°003-03-2018 (SFD Islamiques & Gouvernance)",
+              "desc": "Mandatory authorization procedures, independent Shariah Board (min. 3 members), compliance audit, and application annexes."
+            },
+            "instruction005": {
+              "title": "Instruction N°005-05-2018 (Opérations de Finance Islamique)",
+              "desc": "Technical definitions, contract rules, and accounting treatment for Murabaha, Mudarabah, Musharakah, Ijara, and Salam."
+            },
+            "commissionBancaire": {
+              "title": "Commission Bancaire de l'UMOA (Recueil Finance Islamique)",
+              "desc": "Official supervisory portal hosting all WAMU Banking Commission Islamic finance instructions and circulars."
+            }
+          }
+        },
+        "international": {
+          "region": "International Standards (AAOIFI, IFSB & FATF)",
+          "authority": "Global Islamic & Prudential Standard Setters",
+          "documents": {
+            "aaoifiIllustrative": {
+              "title": "AAOIFI Illustrative Financial Statements for IFIs",
+              "desc": "Official model statements and disclosure notes for Islamic institutions, unrestricted investment accounts, and Shariah income."
+            },
+            "aaoifiFas": {
+              "title": "AAOIFI Financial Accounting Standards Portal (FAS 1 & FAS 44–47)",
+              "desc": "Authoritative standards catalog including newly issued FAS 44 (Control), FAS 45 (Quasi-equity), and FAS 46–47."
+            },
+            "aaoifiGs": {
+              "title": "AAOIFI Shari'ah Governance Standards (GS 1 to GS 21)",
+              "desc": "Includes GS 1 (Revised 2024 Shari'ah Governance Framework) and standards on SSB composition, audit, and reporting."
+            },
+            "ifsb12": {
+              "title": "IFSB-12 Liquidity Risk Management Guidelines",
+              "desc": "Official international guiding principles on liquidity risk, displaced commercial risk (DCR), and liquidity buffer composition."
+            },
+            "fatf40": {
+              "title": "FATF 40 Recommendations (Recommendation 10 CDD)",
+              "desc": "International standards on combatting money laundering, customer identification, beneficial ownership, and PEP controls."
+            }
+          }
+        }
+      }
+    },
+    "webinars": {
+      "title": "Compliance Webinars",
+      "subtitle": "Join our expert sessions on regulatory compliance and Islamic finance operations.",
+      "items": {
+        "regulations": {
+          "title": "Navigating Regional Islamic Banking Regulations",
+          "date": "April 15, 2026",
+          "duration": "90 minutes",
+          "status": "Upcoming",
+          "topics": ["COBAC N°01/17", "UMOA Inst. 003-03-2018", "Licensing"]
+        },
+        "aaoifi": {
+          "title": "AAOIFI Financial Reporting in Practice",
+          "date": "May 3, 2026",
+          "duration": "60 minutes",
+          "status": "Upcoming",
+          "topics": ["FAS 44–47", "Investment Accounts", "GL Audit"]
+        },
+        "aml": {
+          "title": "AML/CFT for Islamic MFBs",
+          "date": "March 28, 2026",
+          "duration": "75 minutes",
+          "status": "Recorded",
+          "topics": ["FATF Rec 10", "Digital ID", "KYC Tiering"]
+        }
+      },
+      "register": "Register Now",
+      "watch": "Watch Recording"
+    },
+    "cta": {
+      "title": "Questions about compliance?",
+      "subtitle": "Our compliance team can help you navigate regional central bank and AML/CFT requirements (such as CBN, COBAC, BCEAO, and GABAC) for your institution.",
+      "contactTeam": "Contact Compliance Team",
+      "bookDemo": "Book a Demo"
+    },
+    "downloadModal": {
+      "institutionName": "Institution Name",
+      "institutionNamePlaceholder": "e.g. Al-Amana Microfinance / Community Bank",
+      "workEmail": "Work Email",
+      "workEmailPlaceholder": "compliance@yourbank.com",
+      "country": "Country",
+      "institutionType": "Institution Type",
+      "countries": {
+        "cameroon": "Cameroon (CEMAC)",
+        "senegal": "Senegal (UMOA)",
+        "ivoryCoast": "Côte d'Ivoire (UMOA)",
+        "nigeria": "Nigeria (CBN)",
+        "chad": "Chad (CEMAC)",
+        "mali": "Mali (UMOA)",
+        "other": "Other Market"
+      },
+      "institutionTypes": {
+        "microfinance": "Microfinance (EMF / SFD)",
+        "islamicWindow": "Islamic Window",
+        "cooperative": "Cooperative / Mutuelle",
+        "fintech": "Fintech / Payment",
+        "advisory": "Advisory / Legal"
+      },
+      "downloadResource": "Download Resource",
+      "success": {
+        "title": "Download Ready",
+        "message": "has been prepared for",
+        "openReference": "Open Official Reference (PDF)",
+        "close": "Close Window"
+      }
+    }
+  },
   "contact": {
     "hero": {
       "badge": "Contact Us",
@@ -2433,6 +2704,125 @@
       "education": {
         "title": "Islamic Finance 101",
         "description": "Learn the fundamentals"
+      }
+    }
+  },
+  "demo": {
+    "hero": {
+      "badge": "Request a Demonstration",
+      "title": "See TIKARI in action",
+      "subtitle": "Schedule a 45-minute technical walkthrough with our banking infrastructure specialists."
+    },
+    "content": {
+      "title": "Personalized Core Demo",
+      "description": "Discover how our Shariah-compliant core maps your daily accounting entries, manages Murabaha, and produces on-demand regulatory reports.",
+      "imageAlt": "TIKARI Core Platform demo presentation",
+      "imageCaption": {
+        "badge": "Shariah Assured",
+        "text": "Multi-Jurisdictional Compliant Core Infrastructure"
+      }
+    },
+    "expectations": {
+      "title": "What to expect",
+      "items": {
+        "platform": {
+          "number": "1",
+          "title": "Core platform walk-through",
+          "description": "A live look at Murabaha, Mudarabah, and Wadiah accounting ledgers on TIKARI."
+        },
+        "migration": {
+          "number": "2",
+          "title": "Migration feasibility study",
+          "description": "Feasibility check for migrating account history from legacy database systems."
+        },
+        "qa": {
+          "number": "3",
+          "title": "Q&A and compliance check",
+          "description": "A direct session mapping your specific operations to local central bank guidelines (such as CBN, COBAC, or BCEAO)."
+        }
+      }
+    },
+    "contactInfo": {
+      "office": {
+        "label": "Office",
+        "address": "4 Etage, Bonaberi, Douala"
+      },
+      "phone": {
+        "label": "Phone",
+        "number": "+237 677 777 777"
+      }
+    },
+    "form": {
+      "title": "Book Your Demo",
+      "description": "Submit your details to request a custom session",
+      "fields": {
+        "firstName": {
+          "label": "First Name",
+          "placeholder": "Jean",
+          "required": true
+        },
+        "lastName": {
+          "label": "Last Name",
+          "placeholder": "Fouda",
+          "required": true
+        },
+        "email": {
+          "label": "Work Email",
+          "placeholder": "email@institution.cm",
+          "required": true
+        },
+        "phone": {
+          "label": "Phone Number",
+          "placeholder": "+237 677 777 777",
+          "required": false
+        },
+        "company": {
+          "label": "Institution Name",
+          "placeholder": "e.g. Al-Baraka Microfinance Douala",
+          "required": true
+        },
+        "accountType": {
+          "label": "Institution Type",
+          "placeholder": "Select type",
+          "required": true,
+          "options": {
+            "placeholder": "Select type",
+            "microfinance": "Microfinance Bank (EMF)",
+            "cooperative": "Cooperative / Credit Union",
+            "commercial": "Commercial Bank Window",
+            "agency": "Agency / Other"
+          }
+        },
+        "estimatedCapital": {
+          "label": "Estimated Assets (USD equivalent)",
+          "placeholder": "Select range",
+          "required": false,
+          "options": {
+            "placeholder": "Select range",
+            "under-200k": "Under $200k USD",
+            "200k-1m": "$200k - $1M USD",
+            "1m-2m": "$1M - $2M USD",
+            "over-2m": "Over $2M USD"
+          }
+        },
+        "message": {
+          "label": "Specific requirements",
+          "placeholder": "List any specific product modules (e.g. Murabaha, Njangi) or core systems you migrate from...",
+          "required": false
+        }
+      },
+      "buttons": {
+        "submit": "Submit request",
+        "submitting": "Submitting...",
+        "clear": "Clear"
+      }
+    },
+    "success": {
+      "title": "Request Received",
+      "message": "Thank you for your interest. A regional core integration engineer will review your request and contact you within 24 business hours to schedule your demonstration.",
+      "buttons": {
+        "home": "Return Home",
+        "another": "Submit Another"
       }
     }
   },

@@ -13,8 +13,6 @@ import {
   ArrowSquareOut,
   CheckCircle,
   FilePdf,
-  FileXls,
-  FileDoc,
   GlobeHemisphereWest,
   Scales,
   Buildings,
@@ -23,8 +21,10 @@ import {
 } from "@phosphor-icons/react";
 import Link from "next/link";
 import { Button } from "@/components/ui";
+import { useTranslations } from "next-intl";
 
 export default function CompliancePage() {
+  const t = useTranslations("compliance");
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
   const [downloadModalDoc, setDownloadModalDoc] = useState<any | null>(null);
   const [downloadSubmitted, setDownloadSubmitted] = useState(false);
@@ -36,41 +36,41 @@ export default function CompliancePage() {
   });
 
   const categories = [
-    { id: "all", label: "All Resources" },
-    { id: "licensing", label: "Licensing & Operations" },
-    { id: "reporting", label: "AAOIFI Accounting" },
-    { id: "governance", label: "Shariah Governance" },
-    { id: "liquidity", label: "Prudential & Liquidity" },
-    { id: "aml", label: "AML / CFT & KYC" }
+    { id: "all", label: t("documents.categories.all") },
+    { id: "licensing", label: t("documents.categories.licensing") },
+    { id: "reporting", label: t("documents.categories.reporting") },
+    { id: "governance", label: t("documents.categories.governance") },
+    { id: "liquidity", label: t("documents.categories.liquidity") },
+    { id: "aml", label: t("documents.categories.aml") }
   ];
 
   const complianceDocuments = [
     {
       id: "licensing-checklist",
       category: "licensing",
-      title: "Regional MFB & SFD Licensing Requirements",
-      type: "Compliance Checklist",
-      pages: "12 pages",
-      format: "PDF",
+      title: t("documents.items.licensingChecklist.title"),
+      type: t("documents.items.licensingChecklist.type"),
+      pages: t("documents.items.licensingChecklist.pages"),
+      format: t("documents.items.licensingChecklist.format"),
       icon: FilePdf,
-      description: "Complete requirements for Unit, Regional, and Category 1, 2, and 3 EMF licences across CEMAC and UMOA/WAEMU. Covers Islamic windows, governance, and licensing dossiers.",
+      description: t("documents.items.licensingChecklist.description"),
       highlights: [
-        "CEMAC Category 1, 2, and 3 EMF application dossiers (COBAC N°01/17)",
-        "UMOA SFD Islamic window authorization annexes (Instruction 003-03-2018)",
-        "Fit-and-proper criteria for directors, auditors, and Shariah board members"
+        t("documents.items.licensingChecklist.highlights.0"),
+        t("documents.items.licensingChecklist.highlights.1"),
+        t("documents.items.licensingChecklist.highlights.2")
       ],
-      officialFoundation: "Based on Règlement N°01/17/CEMAC & BCEAO SFD Law",
+      officialFoundation: t("documents.items.licensingChecklist.foundation"),
       officialLinks: [
         {
-          label: "BEAC Microfinance Regulations",
+          label: t("documents.items.licensingChecklist.links.beac"),
           url: "https://www.beac.int/supervision-bancaire/microfinance/reglements-de-microfinance/"
         },
         {
-          label: "BCEAO SFD Regulatory Law",
+          label: t("documents.items.licensingChecklist.links.bceao"),
           url: "https://www.bceao.int/fr/reglementations/loi-portant-reglementation-des-systemes-financiers-decentralises-de-lumoa"
         },
         {
-          label: "UMOA Instruction 003-03-2018 (PDF)",
+          label: t("documents.items.licensingChecklist.links.umoa"),
           url: "https://cb-umoa.org/sites/default/files/2022-01/INSTRUCTION%20N%C2%B0003-03-2018%20RELATIVE%20AUX%20DISPOSITIONS%20PARTICULIERES%20APPLICABLES%20AUX%20SYSTEMES%20FINANCIERS%20DECENTRALISES%20EXERCANT%20UNE%20ACTIVITE%20DE%20FINANCE%20ISLAMIQUE.pdf"
         }
       ]
@@ -78,25 +78,25 @@ export default function CompliancePage() {
     {
       id: "aaoifi-template",
       category: "reporting",
-      title: "AAOIFI Financial Reporting Template",
-      type: "Financial Model",
-      pages: "28 sheets",
-      format: "Excel (XLSX)",
-      icon: FileXls,
-      description: "Pre-formatted financial statements compliant with AAOIFI standards. Includes balance sheets, income statements, quasi-equity, and profit-sharing investment accounts.",
+      title: t("documents.items.aaoifiTemplate.title"),
+      type: t("documents.items.aaoifiTemplate.type"),
+      pages: t("documents.items.aaoifiTemplate.pages"),
+      format: t("documents.items.aaoifiTemplate.format"),
+      icon: FilePdf,
+      description: t("documents.items.aaoifiTemplate.description"),
       highlights: [
-        "Compliant with FAS 1 and newly issued FAS 44–47 (Quasi-equity & Investment Accounts)",
-        "Dedicated schedules for Mudarabah, Murabaha, Ijara, and Musharakah",
-        "Automated Zakat calculation schedules and charity fund disclosures"
+        t("documents.items.aaoifiTemplate.highlights.0"),
+        t("documents.items.aaoifiTemplate.highlights.1"),
+        t("documents.items.aaoifiTemplate.highlights.2")
       ],
-      officialFoundation: "Based on AAOIFI FAS 1, FAS 44–47 & Illustrative Statements",
+      officialFoundation: t("documents.items.aaoifiTemplate.foundation"),
       officialLinks: [
         {
-          label: "AAOIFI Illustrative Financial Statements (PDF)",
+          label: t("documents.items.aaoifiTemplate.links.illustrative"),
           url: "https://aaoifi.com/wp-content/uploads/2022/12/AAOIFI-Technical-Release_Illustrative-Financial-Statements-for-IFIs_final-issued_29-December-2022.pdf"
         },
         {
-          label: "AAOIFI Accounting Standards Portal",
+          label: t("documents.items.aaoifiTemplate.links.portal"),
           url: "https://aaoifi.com/standard/accounting-standards/?lang=en"
         }
       ]
@@ -104,25 +104,25 @@ export default function CompliancePage() {
     {
       id: "shariah-framework",
       category: "governance",
-      title: "Shariah Governance Framework",
-      type: "Implementation Guide",
-      pages: "45 pages",
-      format: "PDF",
+      title: t("documents.items.shariahFramework.title"),
+      type: t("documents.items.shariahFramework.type"),
+      pages: t("documents.items.shariahFramework.pages"),
+      format: t("documents.items.shariahFramework.format"),
       icon: FilePdf,
-      description: "Best practices for establishing and maintaining an independent Shariah Supervisory Board / Conseil de Conformité, internal Shariah audit, and Fatwa workflows.",
+      description: t("documents.items.shariahFramework.description"),
       highlights: [
-        "SSB charter, independence rules, and scholar qualification standards",
-        "Annual Shariah audit plan and compliance risk mapping routines",
-        "Fatwa issuance workflow, product sign-off forms, and annual reporting"
+        t("documents.items.shariahFramework.highlights.0"),
+        t("documents.items.shariahFramework.highlights.1"),
+        t("documents.items.shariahFramework.highlights.2")
       ],
-      officialFoundation: "Based on AAOIFI GS 1 (Revised 2024) & UMOA Inst. 003-03-2018",
+      officialFoundation: t("documents.items.shariahFramework.foundation"),
       officialLinks: [
         {
-          label: "UMOA Instruction N°003-03-2018 (PDF)",
+          label: t("documents.items.shariahFramework.links.umoa"),
           url: "https://cb-umoa.org/sites/default/files/2022-01/INSTRUCTION%20N%C2%B0003-03-2018%20RELATIVE%20AUX%20DISPOSITIONS%20PARTICULIERES%20APPLICABLES%20AUX%20SYSTEMES%20FINANCIERS%20DECENTRALISES%20EXERCANT%20UNE%20ACTIVITE%20DE%20FINANCE%20ISLAMIQUE.pdf"
         },
         {
-          label: "AAOIFI Issued Governance Standards",
+          label: t("documents.items.shariahFramework.links.aaoifi"),
           url: "https://aaoifi.com/issued-standards-2/?lang=en"
         }
       ]
@@ -130,25 +130,25 @@ export default function CompliancePage() {
     {
       id: "liquidity-guide",
       category: "liquidity",
-      title: "Central Bank Liquidity Calculation Guide",
-      type: "Calculation Guide",
-      pages: "18 pages",
-      format: "PDF",
+      title: t("documents.items.liquidityGuide.title"),
+      type: t("documents.items.liquidityGuide.type"),
+      pages: t("documents.items.liquidityGuide.pages"),
+      format: t("documents.items.liquidityGuide.format"),
       icon: FilePdf,
-      description: "Step-by-step calculation of Islamic liquidity ratios, reconciling central bank prudential coefficients with IFSB-12 liquidity risk standards.",
+      description: t("documents.items.liquidityGuide.description"),
       highlights: [
-        "COBAC EMF 2002/14 and UMOA prudential short-term liquidity formulas",
-        "IFSB-12 displaced commercial risk and Profit Equalization Reserve handling",
-        "High-Quality Shariah-Compliant Liquid Assets (HQLA) classification"
+        t("documents.items.liquidityGuide.highlights.0"),
+        t("documents.items.liquidityGuide.highlights.1"),
+        t("documents.items.liquidityGuide.highlights.2")
       ],
-      officialFoundation: "Based on COBAC EMF 2002/14 & IFSB-12 Standard",
+      officialFoundation: t("documents.items.liquidityGuide.foundation"),
       officialLinks: [
         {
-          label: "IFSB-12 Liquidity Risk Management (PDF)",
+          label: t("documents.items.liquidityGuide.links.ifsb"),
           url: "https://www.ifsb.org/wp-content/uploads/2023/10/eng_IFSB-12-Guiding-Principles-on-Liquidity-Risk-Mgmt-Mar2012.pdf"
         },
         {
-          label: "COBAC EMF 2002/14 Liquidity Regulation (PDF)",
+          label: t("documents.items.liquidityGuide.links.cobac"),
           url: "https://www.beac.int/wp-content/uploads/2016/10/R-EMF-2002-14.pdf"
         }
       ]
@@ -156,29 +156,29 @@ export default function CompliancePage() {
     {
       id: "aml-matrix",
       category: "aml",
-      title: "Regional AML/KYC Document Matrix",
-      type: "Reference Matrix",
-      pages: "8 pages",
-      format: "PDF",
+      title: t("documents.items.amlMatrix.title"),
+      type: t("documents.items.amlMatrix.type"),
+      pages: t("documents.items.amlMatrix.pages"),
+      format: t("documents.items.amlMatrix.format"),
       icon: FilePdf,
-      description: "Required identity documents and Customer Due Diligence (CDD) thresholds across CEMAC, UMOA, and Nigeria by customer type and risk classification.",
+      description: t("documents.items.amlMatrix.description"),
       highlights: [
-        "Tiered KYC thresholds for financial inclusion under FATF guidance",
-        "Beneficial ownership (BO) verification protocols for legal entities",
-        "Suspicious transaction (STR/CTR) reporting trigger checklists"
+        t("documents.items.amlMatrix.highlights.0"),
+        t("documents.items.amlMatrix.highlights.1"),
+        t("documents.items.amlMatrix.highlights.2")
       ],
-      officialFoundation: "Based on FATF Rec 10, Financial Inclusion & COBAC I-2006/01",
+      officialFoundation: t("documents.items.amlMatrix.foundation"),
       officialLinks: [
         {
-          label: "FATF Recommendations (Rec 10 CDD PDF)",
+          label: t("documents.items.amlMatrix.links.fatf"),
           url: "https://www.fatf-gafi.org/content/dam/fatf-gafi/recommendations/FATF%20Recommendations%20%28approved%20February%202012%29%20reprint%20Feb%202013%20web%20version.pdf"
         },
         {
-          label: "FATF Financial Inclusion & CDD Guidance",
+          label: t("documents.items.amlMatrix.links.guidance"),
           url: "https://www.fatf-gafi.org/en/publications/Fatfgeneral/Financial-inclusion-cdd-2017.html"
         },
         {
-          label: "COBAC AML/CFT Instructions",
+          label: t("documents.items.amlMatrix.links.cobac"),
           url: "https://www.beac.int/supervision-bancaire/instructions-de-cobac/"
         }
       ]
@@ -186,25 +186,25 @@ export default function CompliancePage() {
     {
       id: "mudarabah-psr",
       category: "governance",
-      title: "Mudarabah PSR Disclosure Template",
-      type: "Contract Template",
-      pages: "6 pages",
-      format: "Word (DOCX)",
-      icon: FileDoc,
-      description: "Customer-facing profit-sharing ratio disclosure statement and terms for unrestricted and restricted participatory investment accounts.",
+      title: t("documents.items.mudarabahPsr.title"),
+      type: t("documents.items.mudarabahPsr.type"),
+      pages: t("documents.items.mudarabahPsr.pages"),
+      format: t("documents.items.mudarabahPsr.format"),
+      icon: FilePdf,
+      description: t("documents.items.mudarabahPsr.description"),
       highlights: [
-        "Explicit profit-sharing ratio (Rab-al-Mal vs. Mudarib) disclosure terms",
-        "Reserve deduction formulas (PER/IRR) compliant with UMOA SFD rules",
-        "Quarterly and annual profit distribution calculation disclosure notes"
+        t("documents.items.mudarabahPsr.highlights.0"),
+        t("documents.items.mudarabahPsr.highlights.1"),
+        t("documents.items.mudarabahPsr.highlights.2")
       ],
-      officialFoundation: "Based on AAOIFI FAS 45 & UMOA Instruction N°005-05-2018",
+      officialFoundation: t("documents.items.mudarabahPsr.foundation"),
       officialLinks: [
         {
-          label: "UMOA Instruction N°005-05-2018 (PDF)",
+          label: t("documents.items.mudarabahPsr.links.umoa"),
           url: "https://cb-umoa.org/sites/default/files/2022-01/INSTRUCTION%20N%C2%B0005-05-2018%20RELATIVE%20AUX%20CARACT%C3%89RISTIQUES%20TECHNIQUES%20DES%20OP%C3%89RATIONS%20DE%20FINANCE%20ISLAMIQUE%20EXERC%C3%89ES%20PAR%20DES%20SFD%20DE%20L%27UMOA.pdf"
         },
         {
-          label: "WAMU Banking Commission Islamic Finance Directory",
+          label: t("documents.items.mudarabahPsr.links.directory"),
           url: "https://cb-umoa.org/index.php/en/finance-islamique"
         }
       ]
@@ -213,87 +213,87 @@ export default function CompliancePage() {
 
   const officialSourceCollections = [
     {
-      region: "Central Africa (CEMAC / COBAC & BEAC)",
-      authority: "Banque des États de l'Afrique Centrale & COBAC",
+      region: t("officialSources.regions.cemac.region"),
+      authority: t("officialSources.regions.cemac.authority"),
       icon: Bank,
       documents: [
         {
-          title: "BEAC Règlements de la Microfinance",
-          desc: "Full collection of CEMAC microfinance laws, covering EMF categories (1st, 2nd, 3rd), licensing, and governance (Règlement N°01/17).",
+          title: t("officialSources.regions.cemac.documents.beacReglements.title"),
+          desc: t("officialSources.regions.cemac.documents.beacReglements.desc"),
           url: "https://www.beac.int/supervision-bancaire/microfinance/reglements-de-microfinance/"
         },
         {
-          title: "Règlement COBAC EMF 2002/14 (Liquidité des EMF)",
-          desc: "Official statutory prudential liquidity requirement and short-term asset coverage ratio for CEMAC microfinance institutions.",
+          title: t("officialSources.regions.cemac.documents.cobacLiquidite.title"),
+          desc: t("officialSources.regions.cemac.documents.cobacLiquidite.desc"),
           url: "https://www.beac.int/wp-content/uploads/2016/10/R-EMF-2002-14.pdf"
         },
         {
-          title: "Instructions COBAC de Microfinance (Comptabilité & Déclarations)",
-          desc: "COBAC periodic reporting, prudential declarations, and accounting chart instructions for microfinance institutions.",
+          title: t("officialSources.regions.cemac.documents.cobacInstructions.title"),
+          desc: t("officialSources.regions.cemac.documents.cobacInstructions.desc"),
           url: "https://beac.int/supervision-bancaire/microfinance/instructions-de-microfinance/"
         },
         {
-          title: "Instructions COBAC AML/CFT (I-2006/01)",
-          desc: "Official supervisory directives on the prevention of money laundering, terror financing, and internal control systems.",
+          title: t("officialSources.regions.cemac.documents.cobacAml.title"),
+          desc: t("officialSources.regions.cemac.documents.cobacAml.desc"),
           url: "https://www.beac.int/supervision-bancaire/instructions-de-cobac/"
         }
       ]
     },
     {
-      region: "West Africa (UMOA / BCEAO & Commission Bancaire)",
-      authority: "Banque Centrale des États de l'Afrique de l'Ouest",
+      region: t("officialSources.regions.umoa.region"),
+      authority: t("officialSources.regions.umoa.authority"),
       icon: GlobeHemisphereWest,
       documents: [
         {
-          title: "Loi Portant Réglementation des SFD de l'UMOA",
-          desc: "Primary legal foundation governing Decentralized Financial Systems (SFDs), licensing, and networks across WAEMU.",
+          title: t("officialSources.regions.umoa.documents.loiSfd.title"),
+          desc: t("officialSources.regions.umoa.documents.loiSfd.desc"),
           url: "https://www.bceao.int/fr/reglementations/loi-portant-reglementation-des-systemes-financiers-decentralises-de-lumoa"
         },
         {
-          title: "Instruction N°003-03-2018 (SFD Islamiques & Gouvernance)",
-          desc: "Mandatory authorization procedures, independent Shariah Board (min. 3 members), compliance audit, and application annexes.",
+          title: t("officialSources.regions.umoa.documents.instruction003.title"),
+          desc: t("officialSources.regions.umoa.documents.instruction003.desc"),
           url: "https://cb-umoa.org/sites/default/files/2022-01/INSTRUCTION%20N%C2%B0003-03-2018%20RELATIVE%20AUX%20DISPOSITIONS%20PARTICULIERES%20APPLICABLES%20AUX%20SYSTEMES%20FINANCIERS%20DECENTRALISES%20EXERCANT%20UNE%20ACTIVITE%20DE%20FINANCE%20ISLAMIQUE.pdf"
         },
         {
-          title: "Instruction N°005-05-2018 (Opérations de Finance Islamique)",
-          desc: "Technical definitions, contract rules, and accounting treatment for Murabaha, Mudarabah, Musharakah, Ijara, and Salam.",
+          title: t("officialSources.regions.umoa.documents.instruction005.title"),
+          desc: t("officialSources.regions.umoa.documents.instruction005.desc"),
           url: "https://cb-umoa.org/sites/default/files/2022-01/INSTRUCTION%20N%C2%B0005-05-2018%20RELATIVE%20AUX%20CARACT%C3%89RISTIQUES%20TECHNIQUES%20DES%20OP%C3%89RATIONS%20DE%20FINANCE%20ISLAMIQUE%20EXERC%C3%89ES%20PAR%20DES%20SFD%20DE%20L%27UMOA.pdf"
         },
         {
-          title: "Commission Bancaire de l'UMOA (Recueil Finance Islamique)",
-          desc: "Official supervisory portal hosting all WAMU Banking Commission Islamic finance instructions and circulars.",
+          title: t("officialSources.regions.umoa.documents.commissionBancaire.title"),
+          desc: t("officialSources.regions.umoa.documents.commissionBancaire.desc"),
           url: "https://cb-umoa.org/index.php/en/finance-islamique"
         }
       ]
     },
     {
-      region: "International Standards (AAOIFI, IFSB & FATF)",
-      authority: "Global Islamic & Prudential Standard Setters",
+      region: t("officialSources.regions.international.region"),
+      authority: t("officialSources.regions.international.authority"),
       icon: Scales,
       documents: [
         {
-          title: "AAOIFI Illustrative Financial Statements for IFIs",
-          desc: "Official model statements and disclosure notes for Islamic institutions, unrestricted investment accounts, and Shariah income.",
+          title: t("officialSources.regions.international.documents.aaoifiIllustrative.title"),
+          desc: t("officialSources.regions.international.documents.aaoifiIllustrative.desc"),
           url: "https://aaoifi.com/wp-content/uploads/2022/12/AAOIFI-Technical-Release_Illustrative-Financial-Statements-for-IFIs_final-issued_29-December-2022.pdf"
         },
         {
-          title: "AAOIFI Financial Accounting Standards Portal (FAS 1 & FAS 44–47)",
-          desc: "Authoritative standards catalog including newly issued FAS 44 (Control), FAS 45 (Quasi-equity), and FAS 46–47.",
+          title: t("officialSources.regions.international.documents.aaoifiFas.title"),
+          desc: t("officialSources.regions.international.documents.aaoifiFas.desc"),
           url: "https://aaoifi.com/standard/accounting-standards/?lang=en"
         },
         {
-          title: "AAOIFI Shari'ah Governance Standards (GS 1 to GS 21)",
-          desc: "Includes GS 1 (Revised 2024 Shari'ah Governance Framework) and standards on SSB composition, audit, and reporting.",
+          title: t("officialSources.regions.international.documents.aaoifiGs.title"),
+          desc: t("officialSources.regions.international.documents.aaoifiGs.desc"),
           url: "https://aaoifi.com/issued-standards-2/?lang=en"
         },
         {
-          title: "IFSB-12 Liquidity Risk Management Guidelines",
-          desc: "Official international guiding principles on liquidity risk, displaced commercial risk (DCR), and liquidity buffer composition.",
+          title: t("officialSources.regions.international.documents.ifsb12.title"),
+          desc: t("officialSources.regions.international.documents.ifsb12.desc"),
           url: "https://www.ifsb.org/wp-content/uploads/2023/10/eng_IFSB-12-Guiding-Principles-on-Liquidity-Risk-Mgmt-Mar2012.pdf"
         },
         {
-          title: "FATF 40 Recommendations (Recommendation 10 CDD)",
-          desc: "International standards on combatting money laundering, customer identification, beneficial ownership, and PEP controls.",
+          title: t("officialSources.regions.international.documents.fatf40.title"),
+          desc: t("officialSources.regions.international.documents.fatf40.desc"),
           url: "https://www.fatf-gafi.org/content/dam/fatf-gafi/recommendations/FATF%20Recommendations%20%28approved%20February%202012%29%20reprint%20Feb%202013%20web%20version.pdf"
         }
       ]
@@ -324,10 +324,10 @@ export default function CompliancePage() {
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="max-w-4xl">
             <h1 className="text-4xl lg:text-[3.75rem] font-bold leading-[1.05] tracking-tight mb-6">
-              Regulatory Updates & Compliance Documents
+              {t("hero.title")}
             </h1>
             <p className="text-[17px] lg:text-[19px] text-white/85 leading-relaxed max-w-3xl mb-8">
-              Stay current with banking guidelines, licensing checklists, and financial reporting standards governing Islamic microfinance across CEMAC, UMOA/WAEMU, Nigeria, and international standard setters.
+              {t("hero.subtitle")}
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
@@ -336,7 +336,7 @@ export default function CompliancePage() {
                 size="lg"
                 href="#documents"
               >
-                Download Resources
+                {t("hero.downloadResources")}
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" weight="bold" />
               </Button>
               
@@ -345,7 +345,7 @@ export default function CompliancePage() {
                 size="lg"
                 href="#official-sources"
               >
-                Official Regulations
+                {t("hero.officialRegulations")}
               </Button>
             </div>
           </div>
@@ -357,10 +357,10 @@ export default function CompliancePage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-[2.75rem] font-bold mb-4 leading-[1.15] tracking-tight text-tikari-green-dark">
-              Compliance Documents
+              {t("documents.title")}
             </h2>
             <p className="text-[17px] text-tikari-sage max-w-2xl mx-auto mb-8">
-              Download templates, checklists, and reference guides prepared for Islamic microfinance institutions.
+              {t("documents.subtitle")}
             </p>
 
             {/* Category Filter Tabs */}
@@ -433,12 +433,12 @@ export default function CompliancePage() {
                       onClick={() => handleOpenDownloadModal(doc)}
                     >
                       <Download className="h-4 w-4" weight="bold" />
-                      <span className="text-[14px] font-semibold">Download</span>
+                      <span className="text-[14px] font-semibold">{t("documents.download")}</span>
                     </Button>
 
                     <div className="pt-2 border-t border-tikari-green/10">
                       <p className="text-[12px] font-semibold text-tikari-sage uppercase tracking-wider mb-2">
-                        Official Sources:
+                        {t("documents.officialSources")}
                       </p>
                       <div className="space-y-2">
                         {doc.officialLinks.map((link, lIdx) => (
@@ -468,10 +468,10 @@ export default function CompliancePage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-[2.75rem] font-bold mb-4 leading-[1.15] tracking-tight text-tikari-green-dark">
-              Official Regulatory Repository
+              {t("officialSources.title")}
             </h2>
             <p className="text-[17px] text-tikari-sage max-w-2xl mx-auto">
-              Direct access to laws, instructions, and international standards published by official regulatory bodies.
+              {t("officialSources.subtitle")}
             </p>
           </div>
 
@@ -529,35 +529,47 @@ export default function CompliancePage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-[2.75rem] font-bold mb-4 leading-[1.15] tracking-tight text-tikari-green-dark">
-              Compliance Webinars
+              {t("webinars.title")}
             </h2>
             <p className="text-[17px] text-tikari-sage max-w-2xl mx-auto">
-              Join our expert sessions on regulatory compliance and Islamic finance operations.
+              {t("webinars.subtitle")}
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
             {[
               {
-                title: "Navigating Regional Islamic Banking Regulations",
-                date: "April 15, 2026",
-                duration: "90 minutes",
-                status: "Upcoming",
-                topics: ["COBAC N°01/17", "UMOA Inst. 003-03-2018", "Licensing"]
+                id: "regulations",
+                title: t("webinars.items.regulations.title"),
+                date: t("webinars.items.regulations.date"),
+                status: t("webinars.items.regulations.status"),
+                topics: [
+                  t("webinars.items.regulations.topics.0"),
+                  t("webinars.items.regulations.topics.1"),
+                  t("webinars.items.regulations.topics.2")
+                ]
               },
               {
-                title: "AAOIFI Financial Reporting in Practice",
-                date: "May 3, 2026",
-                duration: "60 minutes",
-                status: "Upcoming",
-                topics: ["FAS 44–47", "Investment Accounts", "GL Audit"]
+                id: "aaoifi",
+                title: t("webinars.items.aaoifi.title"),
+                date: t("webinars.items.aaoifi.date"),
+                status: t("webinars.items.aaoifi.status"),
+                topics: [
+                  t("webinars.items.aaoifi.topics.0"),
+                  t("webinars.items.aaoifi.topics.1"),
+                  t("webinars.items.aaoifi.topics.2")
+                ]
               },
               {
-                title: "AML/CFT for Islamic MFBs",
-                date: "March 28, 2026",
-                duration: "75 minutes",
-                status: "Recorded",
-                topics: ["FATF Rec 10", "Digital ID", "KYC Tiering"]
+                id: "aml",
+                title: t("webinars.items.aml.title"),
+                date: t("webinars.items.aml.date"),
+                status: t("webinars.items.aml.status"),
+                topics: [
+                  t("webinars.items.aml.topics.0"),
+                  t("webinars.items.aml.topics.1"),
+                  t("webinars.items.aml.topics.2")
+                ]
               }
             ].map((webinar, idx) => (
               <div 
@@ -568,9 +580,6 @@ export default function CompliancePage() {
                   <div className="flex items-center justify-between mb-4">
                     <span className="text-[13px] font-semibold text-tikari-gold">
                       {webinar.status}
-                    </span>
-                    <span className="text-[13px] text-tikari-sage">
-                      {webinar.duration}
                     </span>
                   </div>
                   
@@ -594,11 +603,11 @@ export default function CompliancePage() {
                 </div>
 
                 <Button 
-                  variant={webinar.status === 'Upcoming' ? 'primary' : 'outline'}
+                  variant={webinar.status === t("webinars.items.regulations.status") ? 'primary' : 'outline'}
                   href="/resources/support"
                   className="w-full py-2.5 text-[14px]"
                 >
-                  {webinar.status === 'Upcoming' ? 'Register Now' : 'Watch Recording'}
+                  {webinar.status === t("webinars.items.regulations.status") ? t("webinars.register") : t("webinars.watch")}
                 </Button>
               </div>
             ))}
@@ -610,10 +619,10 @@ export default function CompliancePage() {
       <section className="py-16 lg:py-24 px-6 bg-tikari-gold">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl lg:text-[2.75rem] font-bold mb-6 text-tikari-green-dark">
-            Questions about compliance?
+            {t("cta.title")}
           </h2>
           <p className="text-[17px] text-tikari-green-dark/80 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Our compliance team can help you navigate regional central bank and AML/CFT requirements (such as CBN, COBAC, BCEAO, and GABAC) for your institution.
+            {t("cta.subtitle")}
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -622,7 +631,7 @@ export default function CompliancePage() {
               size="lg"
               href="/resources/support"
             >
-              Contact Compliance Team
+              {t("cta.contactTeam")}
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" weight="bold" />
             </Button>
             
@@ -631,7 +640,7 @@ export default function CompliancePage() {
               size="lg"
               href="/demo"
             >
-              Book a Demo
+              {t("cta.bookDemo")}
             </Button>
           </div>
         </div>
@@ -665,12 +674,12 @@ export default function CompliancePage() {
                 <form onSubmit={handleDownloadSubmit} className="space-y-4">
                   <div>
                     <label className="block text-[13px] font-bold text-tikari-green-dark uppercase tracking-wider mb-1.5">
-                      Institution Name
+                      {t("downloadModal.institutionName")}
                     </label>
                     <input
                       type="text"
                       required
-                      placeholder="e.g. Al-Amana Microfinance / Community Bank"
+                      placeholder={t("downloadModal.institutionNamePlaceholder")}
                       value={formData.institutionName}
                       onChange={(e) => setFormData({ ...formData, institutionName: e.target.value })}
                       className="w-full px-4 py-2.5 text-[14px] rounded-xl border border-tikari-green/20 focus:outline-none focus:border-tikari-green bg-tikari-cream/20 text-tikari-green-dark"
@@ -679,12 +688,12 @@ export default function CompliancePage() {
 
                   <div>
                     <label className="block text-[13px] font-bold text-tikari-green-dark uppercase tracking-wider mb-1.5">
-                      Work Email
+                      {t("downloadModal.workEmail")}
                     </label>
                     <input
                       type="email"
                       required
-                      placeholder="compliance@yourbank.com"
+                      placeholder={t("downloadModal.workEmailPlaceholder")}
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       className="w-full px-4 py-2.5 text-[14px] rounded-xl border border-tikari-green/20 focus:outline-none focus:border-tikari-green bg-tikari-cream/20 text-tikari-green-dark"
@@ -694,44 +703,44 @@ export default function CompliancePage() {
                   <div className="grid grid-cols-2 gap-3">
                     <div>
                       <label className="block text-[13px] font-bold text-tikari-green-dark uppercase tracking-wider mb-1.5">
-                        Country
+                        {t("downloadModal.country")}
                       </label>
                       <select
                         value={formData.country}
                         onChange={(e) => setFormData({ ...formData, country: e.target.value })}
                         className="w-full px-3 py-2.5 text-[13px] rounded-xl border border-tikari-green/20 focus:outline-none focus:border-tikari-green bg-tikari-cream/20 text-tikari-green-dark font-medium"
                       >
-                        <option value="Cameroon">Cameroon (CEMAC)</option>
-                        <option value="Senegal">Senegal (UMOA)</option>
-                        <option value="Côte d'Ivoire">Côte d'Ivoire (UMOA)</option>
-                        <option value="Nigeria">Nigeria (CBN)</option>
-                        <option value="Chad">Chad (CEMAC)</option>
-                        <option value="Mali">Mali (UMOA)</option>
-                        <option value="Other">Other Market</option>
+                        <option value="Cameroon">{t("downloadModal.countries.cameroon")}</option>
+                        <option value="Senegal">{t("downloadModal.countries.senegal")}</option>
+                        <option value="Côte d'Ivoire">{t("downloadModal.countries.ivoryCoast")}</option>
+                        <option value="Nigeria">{t("downloadModal.countries.nigeria")}</option>
+                        <option value="Chad">{t("downloadModal.countries.chad")}</option>
+                        <option value="Mali">{t("downloadModal.countries.mali")}</option>
+                        <option value="Other">{t("downloadModal.countries.other")}</option>
                       </select>
                     </div>
 
                     <div>
                       <label className="block text-[13px] font-bold text-tikari-green-dark uppercase tracking-wider mb-1.5">
-                        Institution Type
+                        {t("downloadModal.institutionType")}
                       </label>
                       <select
                         value={formData.institutionType}
                         onChange={(e) => setFormData({ ...formData, institutionType: e.target.value })}
                         className="w-full px-3 py-2.5 text-[13px] rounded-xl border border-tikari-green/20 focus:outline-none focus:border-tikari-green bg-tikari-cream/20 text-tikari-green-dark font-medium"
                       >
-                        <option value="Microfinance (EMF / SFD)">Microfinance (EMF / SFD)</option>
-                        <option value="Commercial Bank Islamic Window">Islamic Window</option>
-                        <option value="Credit Union / Cooperative">Cooperative / Mutuelle</option>
-                        <option value="Fintech / Payment Provider">Fintech / Payment</option>
-                        <option value="Advisory / Legal Firm">Advisory / Legal</option>
+                        <option value="Microfinance (EMF / SFD)">{t("downloadModal.institutionTypes.microfinance")}</option>
+                        <option value="Commercial Bank Islamic Window">{t("downloadModal.institutionTypes.islamicWindow")}</option>
+                        <option value="Credit Union / Cooperative">{t("downloadModal.institutionTypes.cooperative")}</option>
+                        <option value="Fintech / Payment Provider">{t("downloadModal.institutionTypes.fintech")}</option>
+                        <option value="Advisory / Legal Firm">{t("downloadModal.institutionTypes.advisory")}</option>
                       </select>
                     </div>
                   </div>
 
                   <Button type="submit" className="w-full py-3 mt-4 text-[14px] font-semibold flex items-center justify-center gap-2">
                     <Download className="h-4 w-4" weight="bold" />
-                    Download Resource
+                    {t("downloadModal.downloadResource")}
                   </Button>
                 </form>
               </>
@@ -741,10 +750,10 @@ export default function CompliancePage() {
                   <CheckCircle className="h-8 w-8" weight="fill" />
                 </div>
                 <h3 className="text-[22px] font-bold text-tikari-green-dark mb-2">
-                  Download Ready
+                  {t("downloadModal.success.title")}
                 </h3>
                 <p className="text-[14px] text-tikari-sage leading-relaxed mb-6">
-                  {downloadModalDoc.title} has been prepared for <strong>{formData.institutionName || "your institution"}</strong>.
+                  {downloadModalDoc.title} {t("downloadModal.success.message")} <strong>{formData.institutionName || "your institution"}</strong>.
                 </p>
 
                 <div className="space-y-3">
@@ -755,7 +764,7 @@ export default function CompliancePage() {
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center gap-2 w-full py-3 bg-tikari-green-dark hover:bg-tikari-green text-white font-semibold text-[14px] rounded-full transition-colors"
                     >
-                      <span>Open Official Reference (PDF)</span>
+                      <span>{t("downloadModal.success.openReference")}</span>
                       <ArrowSquareOut className="h-4 w-4" weight="bold" />
                     </a>
                   )}
@@ -765,7 +774,7 @@ export default function CompliancePage() {
                     className="w-full py-2.5 text-[13px] font-semibold"
                     onClick={() => setDownloadModalDoc(null)}
                   >
-                    Close Window
+                    {t("downloadModal.success.close")}
                   </Button>
                 </div>
               </div>

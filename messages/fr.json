@@ -2309,6 +2309,277 @@
       "contactUs": "Contactez-Nous"
     }
   },
+  "compliance": {
+    "hero": {
+      "title": "Mises à Jour Réglementaires et Documents de Conformité",
+      "subtitle": "Restez à jour avec les directives bancaires, listes de contrôle de licences et normes de reporting financier régissant la microfinance islamique à travers CEMAC, UMOA/UEMOA, Nigeria et organismes internationaux de normalisation.",
+      "downloadResources": "Télécharger les Ressources",
+      "officialRegulations": "Réglementations Officielles"
+    },
+    "documents": {
+      "title": "Documents de Conformité",
+      "subtitle": "Téléchargez des modèles, listes de contrôle et guides de référence préparés pour les institutions de microfinance islamique.",
+      "categories": {
+        "all": "Toutes les Ressources",
+        "licensing": "Licences et Opérations",
+        "reporting": "Comptabilité AAOIFI",
+        "governance": "Gouvernance Shariah",
+        "liquidity": "Prudentiel et Liquidité",
+        "aml": "LBC / LFT et KYC"
+      },
+      "items": {
+        "licensingChecklist": {
+          "title": "Exigences Régionales de Licences MFB et SFD",
+          "type": "Liste de Contrôle de Conformité",
+          "pages": "12 pages",
+          "format": "PDF",
+          "description": "Exigences complètes pour les licences EMF Unité, Régionales et Catégories 1, 2 et 3 à travers CEMAC et UMOA/UEMOA. Couvre les fenêtres islamiques, la gouvernance et les dossiers de licences.",
+          "highlights": [
+            "Dossiers de demande EMF CEMAC Catégories 1, 2 et 3 (COBAC N°01/17)",
+            "Annexes d'autorisation de fenêtre islamique SFD UMOA (Instruction 003-03-2018)",
+            "Critères d'aptitude pour directeurs, auditeurs et membres du conseil Shariah"
+          ],
+          "foundation": "Basé sur Règlement N°01/17/CEMAC et Loi SFD BCEAO",
+          "links": {
+            "beac": "Réglementations de Microfinance BEAC",
+            "bceao": "Loi Réglementaire SFD BCEAO",
+            "umoa": "Instruction UMOA 003-03-2018 (PDF)"
+          }
+        },
+        "aaoifiTemplate": {
+          "title": "Modèle de Reporting Financier AAOIFI",
+          "type": "Guide de Reporting Financier",
+          "pages": "28 pages",
+          "format": "PDF",
+          "description": "Guide de reporting financier préformaté et modèles d'états conformes aux normes AAOIFI. Couvre bilans, comptes de résultat, quasi-fonds propres et comptes d'investissement participatifs.",
+          "highlights": [
+            "Conforme aux FAS 1 et nouvellement émis FAS 44–47 (Quasi-fonds propres et Comptes d'Investissement)",
+            "Annexes dédiées pour Mudarabah, Murabaha, Ijara et Musharakah",
+            "Calendriers de calcul de Zakat automatisés et divulgations de fonds de charité"
+          ],
+          "foundation": "Basé sur AAOIFI FAS 1, FAS 44–47 et États Illustratifs",
+          "links": {
+            "illustrative": "États Financiers Illustratifs AAOIFI (PDF)",
+            "portal": "Portail des Normes Comptables AAOIFI"
+          }
+        },
+        "shariahFramework": {
+          "title": "Cadre de Gouvernance Shariah",
+          "type": "Guide de Mise en Œuvre",
+          "pages": "45 pages",
+          "format": "PDF",
+          "description": "Meilleures pratiques pour établir et maintenir un Conseil de Surveillance Shariah / Conseil de Conformité indépendant, audit Shariah interne et flux de travail Fatwa.",
+          "highlights": [
+            "Charte SSB, règles d'indépendance et normes de qualification des érudits",
+            "Plan d'audit Shariah annuel et routines de cartographie des risques de conformité",
+            "Flux de travail d'émission de Fatwa, formulaires d'approbation de produits et reporting annuel"
+          ],
+          "foundation": "Basé sur AAOIFI GS 1 (Révisé 2024) et Inst. UMOA 003-03-2018",
+          "links": {
+            "umoa": "Instruction UMOA N°003-03-2018 (PDF)",
+            "aaoifi": "Normes de Gouvernance Émises AAOIFI"
+          }
+        },
+        "liquidityGuide": {
+          "title": "Guide de Calcul de Liquidité Banque Centrale",
+          "type": "Guide de Calcul",
+          "pages": "18 pages",
+          "format": "PDF",
+          "description": "Calcul étape par étape des ratios de liquidité islamique, réconciliant les coefficients prudentiels des banques centrales avec les normes de risque de liquidité IFSB-12.",
+          "highlights": [
+            "Formules de liquidité à court terme prudentielles COBAC EMF 2002/14 et UMOA",
+            "Gestion du risque commercial déplacé IFSB-12 et Réserve d'Égalisation des Profits",
+            "Classification des Actifs Liquides de Haute Qualité Conformes Shariah (HQLA)"
+          ],
+          "foundation": "Basé sur COBAC EMF 2002/14 et Norme IFSB-12",
+          "links": {
+            "ifsb": "Gestion du Risque de Liquidité IFSB-12 (PDF)",
+            "cobac": "Règlement de Liquidité COBAC EMF 2002/14 (PDF)"
+          }
+        },
+        "amlMatrix": {
+          "title": "Matrice Régionale de Documents LBC/KYC",
+          "type": "Matrice de Référence",
+          "pages": "8 pages",
+          "format": "PDF",
+          "description": "Documents d'identité requis et seuils de Diligence Raisonnable Client (CDD) à travers CEMAC, UMOA et Nigeria par type de client et classification de risque.",
+          "highlights": [
+            "Seuils KYC échelonnés pour inclusion financière selon directives FATF",
+            "Protocoles de vérification du bénéficiaire effectif (BO) pour entités légales",
+            "Listes de contrôle de déclencheurs de reporting de transactions suspectes (STR/CTR)"
+          ],
+          "foundation": "Basé sur Rec 10 FATF, Inclusion Financière et COBAC I-2006/01",
+          "links": {
+            "fatf": "Recommandations FATF (Rec 10 CDD PDF)",
+            "guidance": "Orientation FATF Inclusion Financière et CDD",
+            "cobac": "Instructions LBC/LFT COBAC"
+          }
+        },
+        "mudarabahPsr": {
+          "title": "Modèle de Divulgation PSR Mudarabah",
+          "type": "Modèle de Contrat",
+          "pages": "6 pages",
+          "format": "PDF",
+          "description": "Déclaration de divulgation du ratio de partage des bénéfices orientée client et conditions pour comptes d'investissement participatifs non restreints et restreints.",
+          "highlights": [
+            "Conditions de divulgation explicite du ratio de partage des bénéfices (Rab-al-Mal vs. Mudarib)",
+            "Formules de déduction de réserve (PER/IRR) conformes aux règles SFD UMOA",
+            "Notes de divulgation de calcul de distribution de bénéfices trimestrielles et annuelles"
+          ],
+          "foundation": "Basé sur AAOIFI FAS 45 et Instruction UMOA N°005-05-2018",
+          "links": {
+            "umoa": "Instruction UMOA N°005-05-2018 (PDF)",
+            "directory": "Répertoire Finance Islamique Commission Bancaire UEMOA"
+          }
+        }
+      },
+      "download": "Télécharger",
+      "officialSources": "Sources Officielles:",
+      "openDocument": "Ouvrir le Document Officiel"
+    },
+    "officialSources": {
+      "title": "Référentiel Réglementaire Officiel",
+      "subtitle": "Accès direct aux lois, instructions et normes internationales publiées par les organismes de réglementation officiels.",
+      "regions": {
+        "cemac": {
+          "region": "Afrique Centrale (CEMAC / COBAC & BEAC)",
+          "authority": "Banque des États de l'Afrique Centrale & COBAC",
+          "documents": {
+            "beacReglements": {
+              "title": "Règlements BEAC de la Microfinance",
+              "desc": "Collection complète des lois de microfinance CEMAC, couvrant les catégories EMF (1ère, 2ème, 3ème), licences et gouvernance (Règlement N°01/17)."
+            },
+            "cobacLiquidite": {
+              "title": "Règlement COBAC EMF 2002/14 (Liquidité des EMF)",
+              "desc": "Exigence légale de liquidité prudentielle et ratio de couverture des actifs à court terme pour les institutions de microfinance CEMAC."
+            },
+            "cobacInstructions": {
+              "title": "Instructions COBAC de Microfinance (Comptabilité & Déclarations)",
+              "desc": "Reporting périodique COBAC, déclarations prudentielles et instructions de plan comptable pour les institutions de microfinance."
+            },
+            "cobacAml": {
+              "title": "Instructions COBAC LBC/LFT (I-2006/01)",
+              "desc": "Directives de supervision officielles sur la prévention du blanchiment d'argent, du financement du terrorisme et des systèmes de contrôle interne."
+            }
+          }
+        },
+        "umoa": {
+          "region": "Afrique de l'Ouest (UMOA / BCEAO & Commission Bancaire)",
+          "authority": "Banque Centrale des États de l'Afrique de l'Ouest",
+          "documents": {
+            "loiSfd": {
+              "title": "Loi Portant Réglementation des SFD de l'UMOA",
+              "desc": "Fondation juridique primaire régissant les Systèmes Financiers Décentralisés (SFD), licences et réseaux à travers l'UEMOA."
+            },
+            "instruction003": {
+              "title": "Instruction N°003-03-2018 (SFD Islamiques & Gouvernance)",
+              "desc": "Procédures d'autorisation obligatoires, Conseil Shariah indépendant (min. 3 membres), audit de conformité et annexes de demande."
+            },
+            "instruction005": {
+              "title": "Instruction N°005-05-2018 (Opérations de Finance Islamique)",
+              "desc": "Définitions techniques, règles contractuelles et traitement comptable pour Murabaha, Mudarabah, Musharakah, Ijara et Salam."
+            },
+            "commissionBancaire": {
+              "title": "Commission Bancaire de l'UMOA (Recueil Finance Islamique)",
+              "desc": "Portail de supervision officiel hébergeant toutes les instructions et circulaires de finance islamique de la Commission Bancaire UEMOA."
+            }
+          }
+        },
+        "international": {
+          "region": "Normes Internationales (AAOIFI, IFSB & FATF)",
+          "authority": "Normalisateurs Islamiques et Prudentiels Mondiaux",
+          "documents": {
+            "aaoifiIllustrative": {
+              "title": "États Financiers Illustratifs AAOIFI pour IFI",
+              "desc": "Modèles d'états officiels et notes de divulgation pour institutions islamiques, comptes d'investissement non restreints et revenus Shariah."
+            },
+            "aaoifiFas": {
+              "title": "Portail des Normes Comptables Financières AAOIFI (FAS 1 & FAS 44–47)",
+              "desc": "Catalogue de normes faisant autorité incluant FAS 44 nouvellement émis (Contrôle), FAS 45 (Quasi-fonds propres) et FAS 46–47."
+            },
+            "aaoifiGs": {
+              "title": "Normes de Gouvernance Shari'ah AAOIFI (GS 1 à GS 21)",
+              "desc": "Inclut GS 1 (Cadre de Gouvernance Shari'ah Révisé 2024) et normes sur composition SSB, audit et reporting."
+            },
+            "ifsb12": {
+              "title": "Directives de Gestion du Risque de Liquidité IFSB-12",
+              "desc": "Principes directeurs internationaux officiels sur le risque de liquidité, risque commercial déplacé (DCR) et composition du tampon de liquidité."
+            },
+            "fatf40": {
+              "title": "40 Recommandations FATF (Recommandation 10 CDD)",
+              "desc": "Normes internationales sur la lutte contre le blanchiment d'argent, identification des clients, bénéficiaire effectif et contrôles PEP."
+            }
+          }
+        }
+      }
+    },
+    "webinars": {
+      "title": "Webinaires de Conformité",
+      "subtitle": "Rejoignez nos sessions d'experts sur la conformité réglementaire et les opérations de finance islamique.",
+      "items": {
+        "regulations": {
+          "title": "Naviguer les Réglementations Bancaires Islamiques Régionales",
+          "date": "15 avril 2026",
+          "duration": "90 minutes",
+          "status": "À venir",
+          "topics": ["COBAC N°01/17", "Inst. UMOA 003-03-2018", "Licences"]
+        },
+        "aaoifi": {
+          "title": "Reporting Financier AAOIFI en Pratique",
+          "date": "3 mai 2026",
+          "duration": "60 minutes",
+          "status": "À venir",
+          "topics": ["FAS 44–47", "Comptes d'Investissement", "Audit GL"]
+        },
+        "aml": {
+          "title": "LBC/LFT pour MFB Islamiques",
+          "date": "28 mars 2026",
+          "duration": "75 minutes",
+          "status": "Enregistré",
+          "topics": ["Rec 10 FATF", "ID Numérique", "Échelonnement KYC"]
+        }
+      },
+      "register": "S'inscrire Maintenant",
+      "watch": "Regarder l'Enregistrement"
+    },
+    "cta": {
+      "title": "Des questions sur la conformité?",
+      "subtitle": "Notre équipe de conformité peut vous aider à naviguer les exigences réglementaires des banques centrales et LBC/LFT (telles que CBN, COBAC, BCEAO et GABAC) pour votre institution.",
+      "contactTeam": "Contacter l'Équipe de Conformité",
+      "bookDemo": "Réserver une Démo"
+    },
+    "downloadModal": {
+      "institutionName": "Nom de l'Institution",
+      "institutionNamePlaceholder": "ex. Microfinance Al-Amana / Banque Communautaire",
+      "workEmail": "Email Professionnel",
+      "workEmailPlaceholder": "conformite@votrebanque.com",
+      "country": "Pays",
+      "institutionType": "Type d'Institution",
+      "countries": {
+        "cameroon": "Cameroun (CEMAC)",
+        "senegal": "Sénégal (UMOA)",
+        "ivoryCoast": "Côte d'Ivoire (UMOA)",
+        "nigeria": "Nigeria (CBN)",
+        "chad": "Tchad (CEMAC)",
+        "mali": "Mali (UMOA)",
+        "other": "Autre Marché"
+      },
+      "institutionTypes": {
+        "microfinance": "Microfinance (EMF / SFD)",
+        "islamicWindow": "Fenêtre Islamique",
+        "cooperative": "Coopérative / Mutuelle",
+        "fintech": "Fintech / Paiement",
+        "advisory": "Conseil / Juridique"
+      },
+      "downloadResource": "Télécharger la Ressource",
+      "success": {
+        "title": "Téléchargement Prêt",
+        "message": "a été préparé pour",
+        "openReference": "Ouvrir la Référence Officielle (PDF)",
+        "close": "Fermer la Fenêtre"
+      }
+    }
+  },
   "contact": {
     "hero": {
       "badge": "Contactez-Nous",
@@ -2433,6 +2704,125 @@
       "education": {
         "title": "Finance Islamique 101",
         "description": "Apprendre les fondamentaux"
+      }
+    }
+  },
+  "demo": {
+    "hero": {
+      "badge": "Demander une Démonstration",
+      "title": "Voir TIKARI en action",
+      "subtitle": "Planifiez une présentation technique de 45 minutes avec nos spécialistes en infrastructure bancaire."
+    },
+    "content": {
+      "title": "Démo Personnalisée du Noyau",
+      "description": "Découvrez comment notre noyau conforme Shariah cartographie vos écritures comptables quotidiennes, gère Murabaha et produit des rapports réglementaires à la demande.",
+      "imageAlt": "Présentation de démonstration de la plateforme TIKARI Core",
+      "imageCaption": {
+        "badge": "Conforme Shariah",
+        "text": "Infrastructure de Base Conforme Multi-Juridictionnelle"
+      }
+    },
+    "expectations": {
+      "title": "À quoi s'attendre",
+      "items": {
+        "platform": {
+          "number": "1",
+          "title": "Présentation de la plateforme centrale",
+          "description": "Un aperçu en direct des grands livres comptables Murabaha, Mudarabah et Wadiah sur TIKARI."
+        },
+        "migration": {
+          "number": "2",
+          "title": "Étude de faisabilité de migration",
+          "description": "Vérification de faisabilité pour migrer l'historique des comptes depuis les systèmes de base de données hérités."
+        },
+        "qa": {
+          "number": "3",
+          "title": "Questions-réponses et vérification de conformité",
+          "description": "Une session directe mappant vos opérations spécifiques aux directives de la banque centrale locale (telles que CBN, COBAC ou BCEAO)."
+        }
+      }
+    },
+    "contactInfo": {
+      "office": {
+        "label": "Bureau",
+        "address": "4 Étage, Bonaberi, Douala"
+      },
+      "phone": {
+        "label": "Téléphone",
+        "number": "+237 677 777 777"
+      }
+    },
+    "form": {
+      "title": "Réservez Votre Démo",
+      "description": "Soumettez vos coordonnées pour demander une session personnalisée",
+      "fields": {
+        "firstName": {
+          "label": "Prénom",
+          "placeholder": "Jean",
+          "required": true
+        },
+        "lastName": {
+          "label": "Nom",
+          "placeholder": "Fouda",
+          "required": true
+        },
+        "email": {
+          "label": "Email Professionnel",
+          "placeholder": "email@institution.cm",
+          "required": true
+        },
+        "phone": {
+          "label": "Numéro de Téléphone",
+          "placeholder": "+237 677 777 777",
+          "required": false
+        },
+        "company": {
+          "label": "Nom de l'Institution",
+          "placeholder": "ex. Al-Baraka Microfinance Douala",
+          "required": true
+        },
+        "accountType": {
+          "label": "Type d'Institution",
+          "placeholder": "Sélectionner le type",
+          "required": true,
+          "options": {
+            "placeholder": "Sélectionner le type",
+            "microfinance": "Banque de Microfinance (EMF)",
+            "cooperative": "Coopérative / Caisse d'Épargne",
+            "commercial": "Guichet Banque Commerciale",
+            "agency": "Agence / Autre"
+          }
+        },
+        "estimatedCapital": {
+          "label": "Actifs Estimés (équivalent USD)",
+          "placeholder": "Sélectionner la fourchette",
+          "required": false,
+          "options": {
+            "placeholder": "Sélectionner la fourchette",
+            "under-200k": "Moins de 200k $ USD",
+            "200k-1m": "200k $ - 1M $ USD",
+            "1m-2m": "1M $ - 2M $ USD",
+            "over-2m": "Plus de 2M $ USD"
+          }
+        },
+        "message": {
+          "label": "Exigences spécifiques",
+          "placeholder": "Listez tout module de produit spécifique (ex. Murabaha, Njangi) ou systèmes de base à partir desquels vous migrez...",
+          "required": false
+        }
+      },
+      "buttons": {
+        "submit": "Soumettre la demande",
+        "submitting": "Soumission en cours...",
+        "clear": "Effacer"
+      }
+    },
+    "success": {
+      "title": "Demande Reçue",
+      "message": "Merci pour votre intérêt. Un ingénieur d'intégration de noyau régional examinera votre demande et vous contactera dans les 24 heures ouvrables pour planifier votre démonstration.",
+      "buttons": {
+        "home": "Retour à l'Accueil",
+        "another": "Soumettre une Autre"
       }
     }
   },

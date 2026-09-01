@@ -2,10 +2,13 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { CheckCircle, ArrowRight, Mail, Phone, MapPin, Clock, ShieldAlert } from "lucide-react";
 import { Button, Input, Select, Label, Textarea, Badge, Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui";
 
 export default function DemoPage() {
+  const t = useTranslations("demo");
+  
   const [submitted, setSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
@@ -53,10 +56,10 @@ export default function DemoPage() {
       {/* Small Hero Section */}
       <section className="bg-tikari-green-dark text-white pt-28 pb-16 px-6 md:px-12 border-b border-tikari-gold/20">
         <div className="max-w-4xl mx-auto text-center space-y-4">
-          <span className="text-xs uppercase tracking-wider text-tikari-gold font-bold">Request a Demonstration</span>
-          <h1 className="text-4xl md:text-5xl font-bold text-white">See TIKARI in action</h1>
+          <span className="text-xs uppercase tracking-wider text-tikari-gold font-bold">{t("hero.badge")}</span>
+          <h1 className="text-4xl md:text-5xl font-bold text-white">{t("hero.title")}</h1>
           <p className="text-sm text-tikari-cream/80 max-w-2xl mx-auto">
-            Schedule a 45-minute technical walkthrough with our banking infrastructure specialists.
+            {t("hero.subtitle")}
           </p>
         </div>
       </section>
@@ -67,10 +70,10 @@ export default function DemoPage() {
           <div className="space-y-8">
             <div className="space-y-4">
               <h2 className="text-3xl font-bold text-tikari-green-dark">
-                Personalized Core Demo
+                {t("content.title")}
               </h2>
               <p className="text-base text-tikari-sage leading-relaxed">
-                Discover how our Shariah-compliant core maps your daily accounting entries, manages Murabaha, and produces on-demand regulatory reports.
+                {t("content.description")}
               </p>
             </div>
 
@@ -78,40 +81,40 @@ export default function DemoPage() {
             <div className="relative h-64 w-full rounded-2xl overflow-hidden border border-tikari-green/10">
               <Image
                 src="/consulting-team.jpg"
-                alt="TIKARI Core Platform demo presentation"
+                alt={t("content.imageAlt")}
                 fill
                 className="object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-tikari-green-dark/80 via-transparent to-transparent" />
               <div className="absolute bottom-4 left-4 right-4 text-white">
-                <p className="text-[10px] font-bold uppercase tracking-wider text-tikari-gold">Shariah Assured</p>
-                <p className="text-xs font-semibold">Multi-Jurisdictional Compliant Core Infrastructure</p>
+                <p className="text-[10px] font-bold uppercase tracking-wider text-tikari-gold">{t("content.imageCaption.badge")}</p>
+                <p className="text-xs font-semibold">{t("content.imageCaption.text")}</p>
               </div>
             </div>
 
             {/* What to expect list */}
             <div className="space-y-4 bg-white border border-tikari-green/10 p-6 rounded-2xl">
-              <h3 className="text-lg font-bold text-tikari-green-dark pb-2 border-b border-tikari-green/5">What to expect</h3>
+              <h3 className="text-lg font-bold text-tikari-green-dark pb-2 border-b border-tikari-green/5">{t("expectations.title")}</h3>
               <ul className="space-y-4">
                 <li className="flex gap-3">
-                  <div className="w-6 h-6 bg-tikari-gold/25 flex items-center justify-center font-bold text-xs text-tikari-gold shrink-0 rounded-md">1</div>
+                  <div className="w-6 h-6 bg-tikari-gold/25 flex items-center justify-center font-bold text-xs text-tikari-gold shrink-0 rounded-md">{t("expectations.items.platform.number")}</div>
                   <div>
-                    <h4 className="text-sm font-bold text-tikari-green-dark">Core platform walk-through</h4>
-                    <p className="text-xs text-tikari-sage leading-relaxed">A live look at Murabaha, Mudarabah, and Wadiah accounting ledgers on TIKARI.</p>
+                    <h4 className="text-sm font-bold text-tikari-green-dark">{t("expectations.items.platform.title")}</h4>
+                    <p className="text-xs text-tikari-sage leading-relaxed">{t("expectations.items.platform.description")}</p>
                   </div>
                 </li>
                 <li className="flex gap-3">
-                  <div className="w-6 h-6 bg-tikari-gold/25 flex items-center justify-center font-bold text-xs text-tikari-gold shrink-0 rounded-md">2</div>
+                  <div className="w-6 h-6 bg-tikari-gold/25 flex items-center justify-center font-bold text-xs text-tikari-gold shrink-0 rounded-md">{t("expectations.items.migration.number")}</div>
                   <div>
-                    <h4 className="text-sm font-bold text-tikari-green-dark">Migration feasibility study</h4>
-                    <p className="text-xs text-tikari-sage leading-relaxed">Feasibility check for migrating account history from legacy database systems.</p>
+                    <h4 className="text-sm font-bold text-tikari-green-dark">{t("expectations.items.migration.title")}</h4>
+                    <p className="text-xs text-tikari-sage leading-relaxed">{t("expectations.items.migration.description")}</p>
                   </div>
                 </li>
                 <li className="flex gap-3">
-                  <div className="w-6 h-6 bg-tikari-gold/25 flex items-center justify-center font-bold text-xs text-tikari-gold shrink-0 rounded-md">3</div>
+                  <div className="w-6 h-6 bg-tikari-gold/25 flex items-center justify-center font-bold text-xs text-tikari-gold shrink-0 rounded-md">{t("expectations.items.qa.number")}</div>
                   <div>
-                    <h4 className="text-sm font-bold text-tikari-green-dark">Q&A and compliance check</h4>
-                    <p className="text-xs text-tikari-sage leading-relaxed">A direct session mapping your specific operations to local central bank guidelines (such as CBN, COBAC, or BCEAO).</p>
+                    <h4 className="text-sm font-bold text-tikari-green-dark">{t("expectations.items.qa.title")}</h4>
+                    <p className="text-xs text-tikari-sage leading-relaxed">{t("expectations.items.qa.description")}</p>
                   </div>
                 </li>
               </ul>
@@ -122,15 +125,15 @@ export default function DemoPage() {
               <div className="bg-white border border-tikari-green/10 p-4 rounded-2xl flex items-start gap-2.5">
                 <MapPin className="h-5 w-5 text-tikari-gold shrink-0 mt-0.5" />
                 <div className="space-y-0.5">
-                  <p className="text-[10px] text-tikari-sage uppercase tracking-wider font-bold">Office</p>
-                  <p className="text-xs text-tikari-green-dark leading-normal">4 Etage, Bonaberi, Douala</p>
+                  <p className="text-[10px] text-tikari-sage uppercase tracking-wider font-bold">{t("contactInfo.office.label")}</p>
+                  <p className="text-xs text-tikari-green-dark leading-normal">{t("contactInfo.office.address")}</p>
                 </div>
               </div>
               <div className="bg-white border border-tikari-green/10 p-4 rounded-2xl flex items-start gap-2.5">
                 <Phone className="h-5 w-5 text-tikari-gold shrink-0 mt-0.5" />
                 <div className="space-y-0.5">
-                  <p className="text-[10px] text-tikari-sage uppercase tracking-wider font-bold">Phone</p>
-                  <p className="text-xs text-tikari-green-dark font-mono">+237 677 777 777</p>
+                  <p className="text-[10px] text-tikari-sage uppercase tracking-wider font-bold">{t("contactInfo.phone.label")}</p>
+                  <p className="text-xs text-tikari-green-dark font-mono">{t("contactInfo.phone.number")}</p>
                 </div>
               </div>
             </div>
@@ -145,17 +148,17 @@ export default function DemoPage() {
                     <CheckCircle className="h-10 w-10 text-tikari-gold" />
                   </div>
                   <div className="space-y-2">
-                    <h2 className="text-2xl font-bold text-tikari-green-dark">Request Received</h2>
+                    <h2 className="text-2xl font-bold text-tikari-green-dark">{t("success.title")}</h2>
                     <p className="text-sm text-tikari-sage max-w-sm mx-auto leading-relaxed">
-                      Thank you for your interest. A regional core integration engineer will review your request and contact you within 24 business hours to schedule your demonstration.
+                      {t("success.message")}
                     </p>
                   </div>
                   <div className="flex gap-3 justify-center pt-4">
                     <Button variant="primary" href="/" className="rounded-md font-bold">
-                      Return Home
+                      {t("success.buttons.home")}
                     </Button>
                     <Button variant="ghost" onClick={() => setSubmitted(false)} className="rounded-md font-bold">
-                      Submit Another
+                      {t("success.buttons.another")}
                     </Button>
                   </div>
                 </CardContent>
@@ -165,160 +168,252 @@ export default function DemoPage() {
                 <CardHeader className="border-b border-tikari-green/5 pb-6">
                   <div className="flex items-center justify-between">
                     <div>
-                      <CardTitle className="text-2xl font-bold text-tikari-green-dark">Book Your Demo</CardTitle>
-                      <CardDescription className="text-tikari-sage mt-1">Submit your details to request a custom session</CardDescription>
+                      <CardTitle className="text-2xl font-bold text-tikari-green-dark">{t("form.title")}</CardTitle>
+                      <CardDescription className="text-tikari-sage mt-1">{t("form.description")}</CardDescription>
                     </div>
                   </div>
                 </CardHeader>
-                <CardContent className="pt-6">
-                  <form onSubmit={handleSubmit} className="space-y-6">
-                    {/* Name Fields */}
-                    <div className="grid sm:grid-cols-2 gap-4">
-                      <div className="space-y-2">
-                        <Label htmlFor="firstName" className="text-tikari-green-dark font-semibold">First Name *</Label>
-                        <Input
-                          id="firstName"
-                          name="firstName"
-                          type="text"
-                          value={formData.firstName}
-                          onChange={handleChange}
-                          placeholder="Jean"
-                          required
-                        />
-                      </div>
-                      <div className="space-y-2">
-                        <Label htmlFor="lastName" className="text-tikari-green-dark font-semibold">Last Name *</Label>
-                        <Input
-                          id="lastName"
-                          name="lastName"
-                          type="text"
-                          value={formData.lastName}
-                          onChange={handleChange}
-                          placeholder="Fouda"
-                          required
-                        />
-                      </div>
-                    </div>
+                  <CardContent className="pt-6">
+                    <form onSubmit={handleSubmit} className="space-y-6">
+                      {/* Name Fields */}
+                      <div className="grid sm:grid-cols-2 gap-4">
+                        {/* First Name */}
+                        <div className="space-y-2">
+                          <Label
+                            htmlFor="firstName"
+                            className="text-tikari-green-dark font-semibold"
+                          >
+                            {t("form.fields.firstName.label")} *
+                          </Label>
 
-                    {/* Email and Phone */}
-                    <div className="grid sm:grid-cols-2 gap-4">
-                      <div className="space-y-2">
-                        <Label htmlFor="email" className="text-tikari-green-dark font-semibold">Work Email *</Label>
-                        <Input
-                          id="email"
-                          name="email"
-                          type="email"
-                          value={formData.email}
-                          onChange={handleChange}
-                          placeholder="email@institution.cm"
-                          required
-                        />
-                      </div>
-                      <div className="space-y-2">
-                        <Label htmlFor="phone" className="text-tikari-green-dark font-semibold">Phone Number</Label>
-                        <Input
-                          id="phone"
-                          name="phone"
-                          type="tel"
-                          value={formData.phone}
-                          onChange={handleChange}
-                          placeholder="+237 677 777 777"
-                        />
-                      </div>
-                    </div>
+                          <Input
+                            id="firstName"
+                            name="firstName"
+                            type="text"
+                            value={formData.firstName}
+                            onChange={handleChange}
+                            placeholder={t("form.fields.firstName.placeholder")}
+                            required
+                          />
+                        </div>
 
-                    {/* Institution Name */}
-                    <div className="space-y-2">
-                      <Label htmlFor="company" className="text-tikari-green-dark font-semibold">Institution Name *</Label>
-                      <Input
-                        id="company"
-                        name="company"
-                        type="text"
-                        value={formData.company}
-                        onChange={handleChange}
-                        placeholder="e.g. Al-Baraka Microfinance Douala"
-                        required
-                      />
-                    </div>
+                        {/* Last Name */}
+                        <div className="space-y-2">
+                          <Label
+                            htmlFor="lastName"
+                            className="text-tikari-green-dark font-semibold"
+                          >
+                            {t("form.fields.lastName.label")} *
+                          </Label>
 
-                    {/* Account Type and Capital */}
-                    <div className="grid sm:grid-cols-2 gap-4">
+                          <Input
+                            id="lastName"
+                            name="lastName"
+                            type="text"
+                            value={formData.lastName}
+                            onChange={handleChange}
+                            placeholder={t("form.fields.lastName.placeholder")}
+                            required
+                          />
+                        </div>
+                      </div>
+
+                      {/* Email and Phone */}
+                      <div className="grid sm:grid-cols-2 gap-4">
+                        {/* Email */}
+                        <div className="space-y-2">
+                          <Label
+                            htmlFor="email"
+                            className="text-tikari-green-dark font-semibold"
+                          >
+                            {t("form.fields.email.label")} *
+                          </Label>
+
+                          <Input
+                            id="email"
+                            name="email"
+                            type="email"
+                            value={formData.email}
+                            onChange={handleChange}
+                            placeholder={t("form.fields.email.placeholder")}
+                            required
+                          />
+                        </div>
+
+                        {/* Phone */}
+                        <div className="space-y-2">
+                          <Label
+                            htmlFor="phone"
+                            className="text-tikari-green-dark font-semibold"
+                          >
+                            {t("form.fields.phone.label")}
+                          </Label>
+
+                          <Input
+                            id="phone"
+                            name="phone"
+                            type="tel"
+                            value={formData.phone}
+                            onChange={handleChange}
+                            placeholder={t("form.fields.phone.placeholder")}
+                          />
+                        </div>
+                      </div>
+
+                      {/* Institution Name */}
                       <div className="space-y-2">
-                        <Label htmlFor="accountType" className="text-tikari-green-dark font-semibold">Institution Type *</Label>
-                        <Select
-                          id="accountType"
-                          name="accountType"
-                          value={formData.accountType}
-                          onChange={handleChange}
-                          required
+                        <Label
+                          htmlFor="company"
+                          className="text-tikari-green-dark font-semibold"
                         >
-                          <option value="">Select type</option>
-                          <option value="microfinance">Microfinance Bank (EMF)</option>
-                          <option value="cooperative">Cooperative / Credit Union</option>
-                          <option value="commercial">Commercial Bank Window</option>
-                          <option value="agency">Agency / Other</option>
-                        </Select>
-                      </div>
-                      <div className="space-y-2">
-                        <Label htmlFor="estimatedCapital" className="text-tikari-green-dark font-semibold">Estimated Assets (USD equivalent)</Label>
-                        <Select
-                          id="estimatedCapital"
-                          name="estimatedCapital"
-                          value={formData.estimatedCapital}
+                          {t("form.fields.company.label")} *
+                        </Label>
+
+                        <Input
+                          id="company"
+                          name="company"
+                          type="text"
+                          value={formData.company}
                           onChange={handleChange}
-                        >
-                          <option value="">Select range</option>
-                          <option value="under-200k">Under $200k USD</option>
-                          <option value="200k-1m">$200k - $1M USD</option>
-                          <option value="1m-2m">$1M - $2M USD</option>
-                          <option value="over-2m">Over $2M USD</option>
-                        </Select>
+                          placeholder={t("form.fields.company.placeholder")}
+                          required
+                        />
                       </div>
-                    </div>
 
-                    {/* Additional Message */}
-                    <div className="space-y-2">
-                      <Label htmlFor="message" className="text-tikari-green-dark font-semibold">Specific requirements</Label>
-                      <Textarea
-                        id="message"
-                        name="message"
-                        value={formData.message}
-                        onChange={handleChange}
-                        placeholder="List any specific product modules (e.g. Murabaha, Njangi) or core systems you migrate from..."
-                        className="min-h-[100px]"
-                      />
-                    </div>
+                      {/* Account Type and Capital */}
+                      <div className="grid sm:grid-cols-2 gap-4">
+                        {/* Account Type */}
+                        <div className="space-y-2">
+                          <Label
+                            htmlFor="accountType"
+                            className="text-tikari-green-dark font-semibold"
+                          >
+                            {t("form.fields.accountType.label")} *
+                          </Label>
 
-                    {/* Form Controls */}
-                    <div className="flex gap-4 pt-2">
-                      <Button
-                        type="submit"
-                        variant="secondary"
-                        size="lg"
-                        disabled={isSubmitting}
-                      >
-                        {isSubmitting ? "Submitting..." : "Submit request"}
-                      </Button>
-                      <Button
-                        type="button"
-                        variant="outline"
-                        size="lg"
-                        onClick={() => setFormData({
-                          firstName: "",
-                          lastName: "",
-                          email: "",
-                          phone: "",
-                          company: "",
-                          accountType: "",
-                          estimatedCapital: "",
-                          message: "",
-                        })}
-                      >
-                        Clear
-                      </Button>
-                    </div>
-                  </form>
-                </CardContent>
+                          <Select
+                            id="accountType"
+                            name="accountType"
+                            value={formData.accountType}
+                            onChange={handleChange}
+                            required
+                          >
+                            <option value="">
+                              {t("form.fields.accountType.options.placeholder")}
+                            </option>
+
+                            <option value="microfinance">
+                              {t("form.fields.accountType.options.microfinance")}
+                            </option>
+
+                            <option value="cooperative">
+                              {t("form.fields.accountType.options.cooperative")}
+                            </option>
+
+                            <option value="commercial">
+                              {t("form.fields.accountType.options.commercial")}
+                            </option>
+
+                            <option value="agency">
+                              {t("form.fields.accountType.options.agency")}
+                            </option>
+                          </Select>
+                        </div>
+
+                        {/* Estimated Capital */}
+                        <div className="space-y-2">
+                          <Label
+                            htmlFor="estimatedCapital"
+                            className="text-tikari-green-dark font-semibold"
+                          >
+                            {t("form.fields.estimatedCapital.label")}
+                          </Label>
+
+                          <Select
+                            id="estimatedCapital"
+                            name="estimatedCapital"
+                            value={formData.estimatedCapital}
+                            onChange={handleChange}
+                          >
+                            <option value="">
+                              {t("form.fields.estimatedCapital.options.placeholder")}
+                            </option>
+
+                            <option value="under-200k">
+                              {t("form.fields.estimatedCapital.options.under-200k")}
+                            </option>
+
+                            <option value="200k-1m">
+                              {t("form.fields.estimatedCapital.options.200k-1m")}
+                            </option>
+
+                            <option value="1m-2m">
+                              {t("form.fields.estimatedCapital.options.1m-2m")}
+                            </option>
+
+                            <option value="over-2m">
+                              {t("form.fields.estimatedCapital.options.over-2m")}
+                            </option>
+                          </Select>
+                        </div>
+                      </div>
+
+                      {/* Additional Message */}
+                      <div className="space-y-2">
+                        <Label
+                          htmlFor="message"
+                          className="text-tikari-green-dark font-semibold"
+                        >
+                          {t("form.fields.message.label")}
+                        </Label>
+
+                        <Textarea
+                          id="message"
+                          name="message"
+                          value={formData.message}
+                          onChange={handleChange}
+                          placeholder={t("form.fields.message.placeholder")}
+                          className="min-h-[100px]"
+                        />
+                      </div>
+
+                      {/* Form Controls */}
+                      <div className="flex gap-4 pt-2">
+                        {/* Submit Button */}
+                        <Button
+                          type="submit"
+                          variant="secondary"
+                          size="lg"
+                          disabled={isSubmitting}
+                        >
+                          {isSubmitting
+                            ? t("form.buttons.submitting")
+                            : t("form.buttons.submit")}
+                        </Button>
+
+                        {/* Clear Button */}
+                        <Button
+                          type="button"
+                          variant="outline"
+                          size="lg"
+                          onClick={() =>
+                            setFormData({
+                              firstName: "",
+                              lastName: "",
+                              email: "",
+                              phone: "",
+                              company: "",
+                              accountType: "",
+                              estimatedCapital: "",
+                              message: "",
+                            })
+                          }
+                        >
+                          {t("form.buttons.clear")}
+                        </Button>
+                      </div>
+                    </form>
+                  </CardContent>
               </Card>
             )}
           </div>
