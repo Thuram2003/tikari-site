@@ -60,6 +60,148 @@ export default function ProfitSharingRatioPage() {
     }
   ];
 
+  const whyMattersReasons = [
+    {
+      icon: Scales,
+      title: t('whyMatters.reasons.shariahCompliance.title'),
+      description: t('whyMatters.reasons.shariahCompliance.description')
+    },
+    {
+      icon: CheckCircle,
+      title: t('whyMatters.reasons.customerTrust.title'),
+      description: t('whyMatters.reasons.customerTrust.description')
+    },
+    {
+      icon: FileText,
+      title: t('whyMatters.reasons.regulatoryCompliance.title'),
+      description: t('whyMatters.reasons.regulatoryCompliance.description')
+    },
+    {
+      icon: ChartLineUp,
+      title: t('whyMatters.reasons.informedDecisions.title'),
+      description: t('whyMatters.reasons.informedDecisions.description')
+    }
+  ];
+
+  const fas6Requirements = [
+    { label: t('aaoifiRequirements.fas6.requirements.precontractual.label'), text: t('aaoifiRequirements.fas6.requirements.precontractual.text') },
+    { label: t('aaoifiRequirements.fas6.requirements.written.label'), text: t('aaoifiRequirements.fas6.requirements.written.text') },
+    { label: t('aaoifiRequirements.fas6.requirements.methodology.label'), text: t('aaoifiRequirements.fas6.requirements.methodology.text') },
+    { label: t('aaoifiRequirements.fas6.requirements.loss.label'), text: t('aaoifiRequirements.fas6.requirements.loss.text') },
+  ];
+
+  const fas11Items = [
+    { label: t('aaoifiRequirements.fas11.items.per.label'), text: t('aaoifiRequirements.fas11.items.per.text') },
+    { label: t('aaoifiRequirements.fas11.items.irr.label'), text: t('aaoifiRequirements.fas11.items.irr.text') },
+    { label: t('aaoifiRequirements.fas11.items.transparency.label'), text: t('aaoifiRequirements.fas11.items.transparency.text') },
+  ];
+
+  const shariah40Requirements = [
+    t('aaoifiRequirements.shariah40.requirements.percentage'),
+    t('aaoifiRequirements.shariah40.requirements.agreement'),
+    t('aaoifiRequirements.shariah40.requirements.tiered'),
+    t('aaoifiRequirements.shariah40.requirements.changes'),
+  ];
+
+  const proactiveCommunicationItems = [
+    { label: t('bestPractices.proactiveCommunication.items.marketing.label'), text: t('bestPractices.proactiveCommunication.items.marketing.text') },
+    { label: t('bestPractices.proactiveCommunication.items.accountOpening.label'), text: t('bestPractices.proactiveCommunication.items.accountOpening.text') },
+    { label: t('bestPractices.proactiveCommunication.items.welcomeKits.label'), text: t('bestPractices.proactiveCommunication.items.welcomeKits.text') },
+    { label: t('bestPractices.proactiveCommunication.items.statements.label'), text: t('bestPractices.proactiveCommunication.items.statements.text') },
+  ];
+
+  const comparativeContextItems = [
+    { label: t('bestPractices.comparativeContext.items.conventional.label'), text: t('bestPractices.comparativeContext.items.conventional.text') },
+    { label: t('bestPractices.comparativeContext.items.islamic.label'), text: t('bestPractices.comparativeContext.items.islamic.text') },
+  ];
+
+  const tieredPSRRows = [
+    {
+      level: t('calculationExamples.scenario3.tiers.tier1.level'),
+      customer: t('calculationExamples.scenario3.tiers.tier1.customer'),
+      bank: t('calculationExamples.scenario3.tiers.tier1.bank'),
+      isStriped: false
+    },
+    {
+      level: t('calculationExamples.scenario3.tiers.tier2.level'),
+      customer: t('calculationExamples.scenario3.tiers.tier2.customer'),
+      bank: t('calculationExamples.scenario3.tiers.tier2.bank'),
+      isStriped: true
+    },
+    {
+      level: t('calculationExamples.scenario3.tiers.tier3.level'),
+      customer: t('calculationExamples.scenario3.tiers.tier3.customer'),
+      bank: t('calculationExamples.scenario3.tiers.tier3.bank'),
+      isStriped: true
+    }
+  ];
+
+  const commonMistakesList = [
+    {
+      mistake: t('commonMistakes.mistakes.mistake1.title'),
+      why: t('commonMistakes.mistakes.mistake1.why'),
+      fix: t('commonMistakes.mistakes.mistake1.fix')
+    },
+    {
+      mistake: t('commonMistakes.mistakes.mistake2.title'),
+      why: t('commonMistakes.mistakes.mistake2.why'),
+      fix: t('commonMistakes.mistakes.mistake2.fix')
+    },
+    {
+      mistake: t('commonMistakes.mistakes.mistake3.title'),
+      why: t('commonMistakes.mistakes.mistake3.why'),
+      fix: t('commonMistakes.mistakes.mistake3.fix')
+    },
+    {
+      mistake: t('commonMistakes.mistakes.mistake4.title'),
+      why: t('commonMistakes.mistakes.mistake4.why'),
+      fix: t('commonMistakes.mistakes.mistake4.fix')
+    },
+    {
+      mistake: t('commonMistakes.mistakes.mistake5.title'),
+      why: t('commonMistakes.mistakes.mistake5.why'),
+      fix: t('commonMistakes.mistakes.mistake5.fix')
+    },
+  ];
+
+  const dualComplianceItems = [
+    { label: t('regulatoryContext.dualCompliance.items.aaoifi.label'), text: t('regulatoryContext.dualCompliance.items.aaoifi.text') },
+    { label: t('regulatoryContext.dualCompliance.items.centralBank.label'), text: t('regulatoryContext.dualCompliance.items.centralBank.text') },
+    { label: t('regulatoryContext.dualCompliance.items.ohada.label'), text: t('regulatoryContext.dualCompliance.items.ohada.text') },
+  ];
+
+  const languageAdaptationItems = [
+    { label: t('regulatoryContext.languageAdaptations.items.francophone.label'), text: t('regulatoryContext.languageAdaptations.items.francophone.text') },
+    { label: t('regulatoryContext.languageAdaptations.items.anglophone.label'), text: t('regulatoryContext.languageAdaptations.items.anglophone.text') },
+  ];
+
+  const reportingRequirementItems = [
+    t('regulatoryContext.reportingRequirements.items.balances'),
+    t('regulatoryContext.reportingRequirements.items.ranges'),
+    t('regulatoryContext.reportingRequirements.items.allocation'),
+    t('regulatoryContext.reportingRequirements.items.reserves'),
+  ];
+
+  const workshopItems = [
+    t('customerEducation.workshops.items.difference'),
+    t('customerEducation.workshops.items.fluctuation'),
+    t('customerEducation.workshops.items.statements'),
+  ];
+
+  const digitalToolItems = [
+    { label: t('customerEducation.digitalTools.items.calculator.label'), text: t('customerEducation.digitalTools.items.calculator.text') },
+    { label: t('customerEducation.digitalTools.items.videos.label'), text: t('customerEducation.digitalTools.items.videos.text') },
+    { label: t('customerEducation.digitalTools.items.faq.label'), text: t('customerEducation.digitalTools.items.faq.text') },
+  ];
+
+  const quarterlyUpdateItems = [
+    t('customerEducation.quarterlyUpdates.items.opening'),
+    t('customerEducation.quarterlyUpdates.items.totalProfits'),
+    t('customerEducation.quarterlyUpdates.items.psrSplit'),
+    t('customerEducation.quarterlyUpdates.items.credited'),
+    t('customerEducation.quarterlyUpdates.items.closing'),
+  ];
+
   return (
     <div className="min-h-screen bg-white">
       {/* Article Hero */}
@@ -125,17 +267,21 @@ export default function ProfitSharingRatioPage() {
                     {t('introduction.leadParagraph')}
                   </p>
 
-                  <p dangerouslySetInnerHTML={{ __html: t.markup('introduction.paragraph1') }} />
+                  <p>
+                    {t('introduction.paragraph1')}
+                  </p>
 
                   <p>
                     {t('introduction.paragraph2')}
                   </p>
                   <ul>
-                    <li><strong>60%</strong> {t('introduction.example.customer')}</li>
-                    <li><strong>40%</strong> {t('introduction.example.bank')}</li>
+                    <li><strong>{t('introduction.example.customer.percent')}</strong> {t('introduction.example.customer.text')}</li>
+                    <li><strong>{t('introduction.example.bank.percent')}</strong> {t('introduction.example.bank.text')}</li>
                   </ul>
 
-                  <p dangerouslySetInnerHTML={{ __html: t.markup('introduction.paragraph3') }} />
+                  <p>
+                    {t('introduction.paragraph3')}
+                  </p>
                 </div>
 
                 {/* Why It Matters */}
@@ -145,28 +291,7 @@ export default function ProfitSharingRatioPage() {
                 </p>
 
                 <div className="not-prose my-8 grid gap-4">
-                  {[
-                    {
-                      icon: Scales,
-                      title: t('whyMatters.reasons.shariahCompliance.title'),
-                      description: t('whyMatters.reasons.shariahCompliance.description')
-                    },
-                    {
-                      icon: CheckCircle,
-                      title: t('whyMatters.reasons.customerTrust.title'),
-                      description: t('whyMatters.reasons.customerTrust.description')
-                    },
-                    {
-                      icon: FileText,
-                      title: t('whyMatters.reasons.regulatoryCompliance.title'),
-                      description: t('whyMatters.reasons.regulatoryCompliance.description')
-                    },
-                    {
-                      icon: ChartLineUp,
-                      title: t('whyMatters.reasons.informedDecisions.title'),
-                      description: t('whyMatters.reasons.informedDecisions.description')
-                    }
-                  ].map((item, idx) => {
+                  {whyMattersReasons.map((item, idx) => {
                     const Icon = item.icon;
                     return (
                       <div key={idx} className="flex gap-4 p-6 bg-tikari-cream/40 border-l-4 border-tikari-gold rounded-r-2xl">
@@ -183,87 +308,90 @@ export default function ProfitSharingRatioPage() {
                 </div>
 
                 {/* AAOIFI Requirements */}
-                <h2 id="aaoifi-requirements" className="font-bold text-xl pt-4">AAOIFI Disclosure Requirements</h2>
+                <h2 id="aaoifi-requirements" className="font-bold text-xl pt-4">{t('aaoifiRequirements.title')}</h2>
                 <p>
-                  The <strong>Accounting and Auditing Organization for Islamic Financial Institutions (AAOIFI)</strong> has established clear guidelines for PSR disclosure:
+                  {t('aaoifiRequirements.intro')}
                 </p>
 
-                <h3 className="font-bold text-lg pt-2">FAS 6: Equity of Investment Account Holders</h3>
+                <h3 className="font-bold text-lg pt-2">{t('aaoifiRequirements.fas6.title')}</h3>
                 <p>
-                  AAOIFI Financial Accounting Standard No. 6 requires:
+                  {t('aaoifiRequirements.fas6.intro')}
                 </p>
                 <ul>
-                  <li><strong>Pre-contractual disclosure:</strong> The PSR must be communicated to customers <em>before</em> they open an investment account.</li>
-                  <li><strong>Written documentation:</strong> The PSR must appear in the account opening agreement.</li>
-                  <li><strong>Profit calculation methodology:</strong> Banks must explain how profits are calculated and allocated.</li>
-                  <li><strong>Loss-bearing disclosure:</strong> Customers must be informed that losses (if any) are borne entirely by them, while the bank loses only its time and effort.</li>
+                  {fas6Requirements.map((req, idx) => (
+                    <li key={idx}>
+                      <strong>{req.label}</strong> {req.text}
+                    </li>
+                  ))}
                 </ul>
 
-                <h3 className="font-bold text-lg pt-2">FAS 11: Provisions and Reserves</h3>
+                <h3 className="font-bold text-lg pt-2">{t('aaoifiRequirements.fas11.title')}</h3>
                 <p>
-                  This standard addresses how banks handle <strong>Profit Equalization Reserves (PER)</strong> and <strong>Investment Risk Reserves (IRR)</strong>:
+                  {t('aaoifiRequirements.fas11.intro')}
                 </p>
                 <ul>
-                  <li><strong>PER:</strong> Amounts set aside to smooth profit distribution across periods (disclosed separately)</li>
-                  <li><strong>IRR:</strong> Reserves to cover potential investment losses (also disclosed separately)</li>
-                  <li><strong>Transparency requirement:</strong> Customers must understand how reserves impact their actual profit share</li>
+                  {fas11Items.map((item, idx) => (
+                    <li key={idx}>
+                      <strong>{item.label}</strong> {item.text}
+                    </li>
+                  ))}
                 </ul>
 
-                <h3 className="font-bold text-lg pt-2">Shariah Standard No. 40: Mudarabah</h3>
+                <h3 className="font-bold text-lg pt-2">{t('aaoifiRequirements.shariah40.title')}</h3>
                 <p>
-                  AAOIFI's Shariah standards mandate:
+                  {t('aaoifiRequirements.shariah40.intro')}
                 </p>
                 <ul>
-                  <li>The PSR must be expressed as a <strong>percentage of profits</strong>, not a fixed amount</li>
-                  <li>Both parties must agree to the PSR at the contract's inception</li>
-                  <li>The PSR can be tiered (different ratios for different profit levels) if clearly disclosed</li>
-                  <li>Any changes to the PSR require customer consent and cannot apply retroactively</li>
+                  {shariah40Requirements.map((req, idx) => (
+                    <li key={idx}>{req}</li>
+                  ))}
                 </ul>
 
                 {/* Best Practices */}
-                <h2 id="disclosure-best-practices" className="font-bold text-xl pt-4">Disclosure Best Practices</h2>
+                <h2 id="disclosure-best-practices" className="font-bold text-xl pt-4">{t('bestPractices.title')}</h2>
                 <p>
-                  Beyond meeting minimum AAOIFI requirements, Islamic financial institutions should adopt these best practices:
+                  {t('bestPractices.intro')}
                 </p>
 
-                <h3 className="font-bold text-lg pt-2">1. Proactive Communication</h3>
+                <h3 className="font-bold text-lg pt-2">{t('bestPractices.proactiveCommunication.title')}</h3>
                 <ul>
-                  <li><strong>Marketing materials:</strong> Include PSR ranges in brochures, websites, and advertisements</li>
-                  <li><strong>Account opening:</strong> Highlight the PSR prominently in the application form</li>
-                  <li><strong>Welcome kits:</strong> Provide a one-page PSR explainer to new customers</li>
-                  <li><strong>Quarterly statements:</strong> Recap the PSR and show actual profit allocation</li>
+                  {proactiveCommunicationItems.map((item, idx) => (
+                    <li key={idx}>
+                      <strong>{item.label}</strong> {item.text}
+                    </li>
+                  ))}
                 </ul>
 
-                <h3 className="font-bold text-lg pt-2">2. Plain Language</h3>
+                <h3 className="font-bold text-lg pt-2">{t('bestPractices.plainLanguage.title')}</h3>
                 <p>
-                  Avoid jargon. Instead of:
+                  {t('bestPractices.plainLanguage.intro')}
                 </p>
                 <div className="not-prose my-6 p-4 bg-red-50 border-l-4 border-red-400 rounded-r-2xl">
                   <p className="text-tikari-sage italic">
-                    "The mudarib shall retain 35% of realized profits from the commingled investment pool, subject to PER and IRR appropriations as determined by the ACE."
+                    {t('bestPractices.plainLanguage.badExample')}
                   </p>
                 </div>
 
                 <p>
-                  Use clear language:
+                  {t('bestPractices.plainLanguage.goodIntro')}
                 </p>
                 <div className="not-prose my-6 p-4 bg-green-50 border-l-4 border-green-600 rounded-r-2xl">
                   <p className="text-tikari-sage">
-                    "When your investment earns a profit, you receive 65% and the bank receives 35%. Any profits set aside for reserves will be explained in your quarterly statement."
+                    {t('bestPractices.plainLanguage.goodExample')}
                   </p>
                 </div>
 
-                <h3 className="font-bold text-lg pt-2">3. Visual Aids</h3>
+                <h3 className="font-bold text-lg pt-2">{t('bestPractices.visualAids.title')}</h3>
                 <p>
-                  Use charts, infographics, and examples to illustrate PSR:
+                  {t('bestPractices.visualAids.intro')}
                 </p>
 
                 <div className="not-prose my-8 p-6 bg-tikari-gold/10 border-2 border-tikari-gold/30 rounded-2xl">
-                  <h4 className="text-lg font-bold text-tikari-green-dark mb-4">Example PSR Illustration</h4>
+                  <h4 className="text-lg font-bold text-tikari-green-dark mb-4">{t('bestPractices.visualAids.exampleTitle')}</h4>
                   <div className="space-y-4">
                     <div>
                       <div className="flex items-center justify-between mb-2">
-                        <span className="text-sm font-semibold text-tikari-green-dark">Your Share (Customer)</span>
+                        <span className="text-sm font-semibold text-tikari-green-dark">{t('bestPractices.visualAids.customerShare')}</span>
                         <span className="text-sm font-mono font-bold">70%</span>
                       </div>
                       <div className="w-full bg-tikari-cream h-8 rounded overflow-hidden">
@@ -272,7 +400,7 @@ export default function ProfitSharingRatioPage() {
                     </div>
                     <div>
                       <div className="flex items-center justify-between mb-2">
-                        <span className="text-sm font-semibold text-tikari-sage">Bank Share</span>
+                        <span className="text-sm font-semibold text-tikari-sage">{t('bestPractices.visualAids.bankShare')}</span>
                         <span className="text-sm font-mono">30%</span>
                       </div>
                       <div className="w-full bg-tikari-cream h-8 rounded overflow-hidden">
@@ -281,246 +409,219 @@ export default function ProfitSharingRatioPage() {
                     </div>
                   </div>
                   <p className="text-sm text-tikari-sage mt-4 italic">
-                    If the bank earns 1,000,000 units in profit from your investment, you receive 700,000 units and the bank receives 300,000 units.
+                    {t('bestPractices.visualAids.exampleNote')}
                   </p>
                 </div>
 
-                <h3 className="font-bold text-lg pt-2">4. Comparative Context</h3>
+                <h3 className="font-bold text-lg pt-2">{t('bestPractices.comparativeContext.title')}</h3>
                 <p>
-                  Help customers understand PSR by comparing it to conventional interest:
+                  {t('bestPractices.comparativeContext.intro')}
                 </p>
                 <ul>
-                  <li><strong>Conventional savings account:</strong> 2% fixed interest (guaranteed, regardless of bank performance)</li>
-                  <li><strong>Islamic Mudarabah account:</strong> 70% of profits (variable, based on actual investment returns)</li>
+                  {comparativeContextItems.map((item, idx) => (
+                    <li key={idx}>
+                      <strong>{item.label}</strong> {item.text}
+                    </li>
+                  ))}
                 </ul>
                 <p>
-                  Clarify that if the bank earns higher returns in Islamic investing, the customer's PSR-based returns may exceed conventional interest but there's also downside risk.
+                  {t('bestPractices.comparativeContext.clarification')}
                 </p>
 
                 {/* Calculation Examples */}
-                <h2 id="calculation-examples" className="font-bold text-xl pt-4">PSR Calculation Examples</h2>
+                <h2 id="calculation-examples" className="font-bold text-xl pt-4">{t('calculationExamples.title')}</h2>
                 <p>
-                  Let's walk through practical scenarios to demonstrate how PSR works:
+                  {t('calculationExamples.intro')}
                 </p>
 
-                <h3 className="font-bold text-lg pt-2">Scenario 1: Simple Profit Distribution</h3>
+                <h3 className="font-bold text-lg pt-2">{t('calculationExamples.scenario1.title')}</h3>
                 <div className="not-prose my-6 p-6 bg-tikari-cream rounded-2xl">
                   <p className="text-tikari-sage mb-4">
-                    <strong className="text-tikari-green-dark">Setup:</strong> A customer deposits 10,000,000 units into a Mudarabah investment account with a PSR of 60:40 (60% customer, 40% bank).
+                    <strong className="text-tikari-green-dark">{t('calculationExamples.scenario1.setupLabel')}</strong> {t('calculationExamples.scenario1.setupDetail')}
                   </p>
                   <p className="text-tikari-sage mb-4">
-                    <strong className="text-tikari-green-dark">Performance:</strong> The bank invests the funds and earns 800,000 units in profit over the year.
+                    <strong className="text-tikari-green-dark">{t('calculationExamples.scenario1.performanceLabel')}</strong> {t('calculationExamples.scenario1.performanceDetail')}
                   </p>
                   <div className="space-y-2 text-tikari-sage">
                     <div className="flex justify-between py-2 border-b border-tikari-green/20">
-                      <span>Total Profit:</span>
-                      <span className="font-mono">800,000 units</span>
+                      <span>{t('calculationExamples.scenario1.totalProfitLabel')}</span>
+                      <span className="font-mono">{t('calculationExamples.scenario1.totalProfitValue')}</span>
                     </div>
                     <div className="flex justify-between py-2 border-b border-tikari-green/20">
-                      <span className="font-semibold">Customer Share (60%):</span>
-                      <span className="font-mono font-semibold text-tikari-green-dark">480,000 units</span>
+                      <span className="font-semibold">{t('calculationExamples.scenario1.customerShareLabel')}</span>
+                      <span className="font-mono font-semibold text-tikari-green-dark">{t('calculationExamples.scenario1.customerShareValue')}</span>
                     </div>
                     <div className="flex justify-between py-2">
-                      <span>Bank Share (40%):</span>
-                      <span className="font-mono">320,000 units</span>
+                      <span>{t('calculationExamples.scenario1.bankShareLabel')}</span>
+                      <span className="font-mono">{t('calculationExamples.scenario1.bankShareValue')}</span>
                     </div>
                     <div className="flex justify-between py-2 border-t-2 border-tikari-green-dark mt-2 pt-2">
-                      <span className="font-bold text-tikari-green-dark">Customer Account Balance:</span>
-                      <span className="font-mono font-bold text-tikari-green-dark">10,480,000 units</span>
+                      <span className="font-bold text-tikari-green-dark">{t('calculationExamples.scenario1.accountBalanceLabel')}</span>
+                      <span className="font-mono font-bold text-tikari-green-dark">{t('calculationExamples.scenario1.accountBalanceValue')}</span>
                     </div>
                   </div>
                   <p className="text-sm text-tikari-sage mt-4 italic">
-                    Effective return for the customer: 4.8% (480K profit ÷ 10M deposit)
+                    {t('calculationExamples.scenario1.effectiveReturn')}
                   </p>
                 </div>
 
-                <h3 className="font-bold text-lg pt-2">Scenario 2: Loss Scenario</h3>
+                <h3 className="font-bold text-lg pt-2">{t('calculationExamples.scenario2.title')}</h3>
                 <div className="not-prose my-6 p-6 bg-red-50 border-l-4 border-red-400 rounded-r-2xl">
                   <p className="text-tikari-sage mb-4">
-                    <strong className="text-tikari-green-dark">Setup:</strong> Same customer, same 10,000,000 units deposit, PSR 60:40.
+                    <strong className="text-tikari-green-dark">{t('calculationExamples.scenario2.setupLabel')}</strong> {t('calculationExamples.scenario2.setupDetail')}
                   </p>
                   <p className="text-tikari-sage mb-4">
-                    <strong className="text-tikari-green-dark">Performance:</strong> The bank's investments perform poorly, resulting in a 300,000 units loss.
+                    <strong className="text-tikari-green-dark">{t('calculationExamples.scenario2.performanceLabel')}</strong> {t('calculationExamples.scenario2.performanceDetail')}
                   </p>
                   <div className="space-y-2 text-tikari-sage">
                     <div className="flex justify-between py-2 border-b border-red-300">
-                      <span>Total Loss:</span>
-                      <span className="font-mono">-300,000 units</span>
+                      <span>{t('calculationExamples.scenario2.totalLossLabel')}</span>
+                      <span className="font-mono">{t('calculationExamples.scenario2.totalLossValue')}</span>
                     </div>
                     <div className="flex justify-between py-2 border-b border-red-300">
-                      <span className="font-semibold">Customer Bears Loss (100%):</span>
-                      <span className="font-mono font-semibold text-red-600">-300,000 units</span>
+                      <span className="font-semibold">{t('calculationExamples.scenario2.customerBearsLabel')}</span>
+                      <span className="font-mono font-semibold text-red-600">{t('calculationExamples.scenario2.customerBearsValue')}</span>
                     </div>
                     <div className="flex justify-between py-2">
-                      <span>Bank Bears Loss:</span>
-                      <span className="font-mono">0 units (loses time/effort)</span>
+                      <span>{t('calculationExamples.scenario2.bankBearsLabel')}</span>
+                      <span className="font-mono">{t('calculationExamples.scenario2.bankBearsValue')}</span>
                     </div>
                     <div className="flex justify-between py-2 border-t-2 border-red-600 mt-2 pt-2">
-                      <span className="font-bold text-tikari-green-dark">Customer Account Balance:</span>
-                      <span className="font-mono font-bold text-red-600">9,700,000 units</span>
+                      <span className="font-bold text-tikari-green-dark">{t('calculationExamples.scenario2.accountBalanceLabel')}</span>
+                      <span className="font-mono font-bold text-red-600">{t('calculationExamples.scenario2.accountBalanceValue')}</span>
                     </div>
                   </div>
                   <p className="text-sm text-tikari-sage mt-4 italic">
-                    <strong>Key principle:</strong> In Mudarabah, capital losses are borne entirely by the capital provider (customer), while the fund manager (bank) loses only its time and effort unless the loss resulted from negligence or breach of contract.
+                    <strong>{t('calculationExamples.scenario2.keyPrincipleLabel')}</strong> {t('calculationExamples.scenario2.keyPrincipleText')}
                   </p>
                 </div>
 
-                <h3 className="font-bold text-lg pt-2">Scenario 3: Tiered PSR</h3>
+                <h3 className="font-bold text-lg pt-2">{t('calculationExamples.scenario3.title')}</h3>
                 <p>
-                  Some banks use <strong>tiered PSR structures</strong> to incentivize higher performance:
+                  {t('calculationExamples.scenario3.intro')}
                 </p>
                 <div className="not-prose my-6">
                   <div className="overflow-x-auto rounded-2xl">
                     <table className="w-full border-1 border-tikari-green/20 rounded-2xl">
                       <thead className="bg-tikari-green-dark text-white">
                         <tr>
-                          <th className="px-6 py-4 text-left font-bold">Profit Level (Annual)</th>
-                          <th className="px-6 py-4 text-left font-bold">Customer Share</th>
-                          <th className="px-6 py-4 text-left font-bold">Bank Share</th>
+                          <th className="px-6 py-4 text-left font-bold">{t('calculationExamples.scenario3.tableHeaders.profitLevel')}</th>
+                          <th className="px-6 py-4 text-left font-bold">{t('calculationExamples.scenario3.tableHeaders.customerShare')}</th>
+                          <th className="px-6 py-4 text-left font-bold">{t('calculationExamples.scenario3.tableHeaders.bankShare')}</th>
                         </tr>
                       </thead>
                       <tbody className="text-tikari-sage">
-                        <tr className="border-b border-tikari-green/20">
-                          <td className="px-6 py-4">0% - 3%</td>
-                          <td className="px-6 py-4 font-semibold">70%</td>
-                          <td className="px-6 py-4">30%</td>
-                        </tr>
-                        <tr className="border-b border-tikari-green/20 bg-tikari-cream/30">
-                          <td className="px-6 py-4">3.01% - 6%</td>
-                          <td className="px-6 py-4 font-semibold">65%</td>
-                          <td className="px-6 py-4">35%</td>
-                        </tr>
-                        <tr className="bg-tikari-cream/30">
-                          <td className="px-6 py-4">Above 6%</td>
-                          <td className="px-6 py-4 font-semibold">60%</td>
-                          <td className="px-6 py-4">40%</td>
-                        </tr>
+                        {tieredPSRRows.map((row, idx) => (
+                          <tr key={idx} className={`${idx < tieredPSRRows.length - 1 ? 'border-b border-tikari-green/20' : ''} ${row.isStriped ? 'bg-tikari-cream/30' : ''}`}>
+                            <td className="px-6 py-4">{row.level}</td>
+                            <td className="px-6 py-4 font-semibold">{row.customer}</td>
+                            <td className="px-6 py-4">{row.bank}</td>
+                          </tr>
+                        ))}
                       </tbody>
                     </table>
                   </div>
                   <p className="text-sm text-tikari-sage mt-4 italic">
-                    This structure rewards the bank for generating higher returns while still ensuring customers receive the majority of profits at all levels.
+                    {t('calculationExamples.scenario3.note')}
                   </p>
                 </div>
 
                 {/* Common Mistakes */}
-                <h2 id="common-mistakes" className="font-bold text-xl pt-4">Common PSR Disclosure Mistakes</h2>
+                <h2 id="common-mistakes" className="font-bold text-xl pt-4">{t('commonMistakes.title')}</h2>
                 <p>
-                  Avoid these frequent errors that can lead to Shariah non-compliance or customer confusion:
+                  {t('commonMistakes.intro')}
                 </p>
 
                 <div className="not-prose my-8">
-                  {[
-                    {
-                      mistake: "Using Fixed Amounts Instead of Percentages",
-                      why: "PSR must be expressed as a percentage of profits, not a fixed currency amount. Saying \"the bank gets 100,000 units\" violates Mudarabah principles.",
-                      fix: "Always use percentages: \"the bank receives 30% of profits.\""
-                    },
-                    {
-                      mistake: "Hidden or Buried Disclosure",
-                      why: "Putting PSR in fine print or deep in contract appendices undermines transparency.",
-                      fix: "Feature PSR prominently on page 1 of account agreements and marketing materials."
-                    },
-                    {
-                      mistake: "Ambiguous Loss-Sharing Terms",
-                      why: "Failing to clarify that customers bear capital losses (while banks bear effort losses) creates false expectations.",
-                      fix: "Explicitly state: \"You receive [X]% of profits. In case of losses, your capital may decrease, but the bank does not receive any profit.\""
-                    },
-                    {
-                      mistake: "Comparing PSR Directly to Interest Rates",
-                      why: "Saying \"Our 60% PSR is like 4% interest\" is misleading because PSR returns vary based on performance.",
-                      fix: "Provide historical examples: \"Over the past year, our 60% PSR resulted in an average return of 4.2%, compared to 3.5% conventional interest.\""
-                    },
-                    {
-                      mistake: "Changing PSR Without Customer Consent",
-                      why: "Unilateral changes to PSR violate the mutuality principle of Islamic contracts.",
-                      fix: "Any PSR adjustments require written customer agreement and cannot apply to existing deposits retroactively."
-                    }
-                  ].map((item, idx) => (
+                  {commonMistakesList.map((item, idx) => (
                     <div key={idx} className="mb-6 p-6 bg-white border-1 border-tikari-green/20 rounded-2xl">
                       <div className="flex items-start gap-4 mb-4">
                         <Warning className="h-6 w-6 text-red-600 flex-shrink-0 mt-1" weight="bold" />
                         <h4 className="text-lg font-bold text-tikari-green-dark">{item.mistake}</h4>
                       </div>
                       <p className="text-tikari-sage mb-3 pl-10">
-                        <strong>Why it's wrong:</strong> {item.why}
+                        <strong>{t('commonMistakes.whyWrongLabel')}</strong> {item.why}
                       </p>
                       <p className="text-tikari-sage pl-10">
-                        <strong className="text-green-700">How to fix:</strong> {item.fix}
+                        <strong className="text-green-700">{t('commonMistakes.howToFixLabel')}</strong> {item.fix}
                       </p>
                     </div>
                   ))}
                 </div>
 
                 {/* Regulatory Context */}
-                <h2 id="regulatory-context" className="font-bold text-xl pt-4">Regulatory Compliance & PSR</h2>
+                <h2 id="regulatory-context" className="font-bold text-xl pt-4">{t('regulatoryContext.title')}</h2>
                 <p>
-                  Disclosure requirements for Profit-Sharing Ratios must satisfy both regional business standards and local central bank guidelines.
+                  {t('regulatoryContext.intro')}
                 </p>
 
-                <h3 className="font-bold text-lg pt-2">Dual Compliance Strategy</h3>
+                <h3 className="font-bold text-lg pt-2">{t('regulatoryContext.dualCompliance.title')}</h3>
                 <ul>
-                  <li><strong>AAOIFI for Shariah:</strong> Follow FAS 6 and FAS 11 standards for pre-contractual and financial statement disclosure of PSR.</li>
-                  <li><strong>Central Bank Supervision:</strong> Report Mudarabah accounts properly to central banks (e.g. as "investment deposits" under CBN guidelines in Nigeria or "participation accounts" under COBAC in Central Africa).</li>
-                  <li><strong>OHADA Chart of Accounts:</strong> In OHADA-zone countries (West and Central Africa), map the dual-ledger structures carefully to reflect investment pool returns.</li>
+                  {dualComplianceItems.map((item, idx) => (
+                    <li key={idx}>
+                      <strong>{item.label}</strong> {item.text}
+                    </li>
+                  ))}
                 </ul>
 
-                <h3 className="font-bold text-lg pt-2">Language & Regional Adaptations</h3>
+                <h3 className="font-bold text-lg pt-2">{t('regulatoryContext.languageAdaptations.title')}</h3>
                 <p>
-                  Depending on the jurisdiction, documentation must align with official languages and terminology:
+                  {t('regulatoryContext.languageAdaptations.intro')}
                 </p>
                 <ul>
-                  <li><strong>Francophone Regions (CEMAC, WAEMU):</strong> Translate key terms accurately in French, e.g., <em>Ratio de Partage des Bénéfices (RPB)</em> for PSR.</li>
-                  <li><strong>Anglophone Regions (Nigeria):</strong> Use terms standardized by local non-interest banking circulars.</li>
+                  {languageAdaptationItems.map((item, idx) => (
+                    <li key={idx}>
+                      <strong>{item.label}</strong> {item.text}
+                    </li>
+                  ))}
                 </ul>
 
-                <h3 className="font-bold text-lg pt-2">Regulatory Reporting Requirements</h3>
+                <h3 className="font-bold text-lg pt-2">{t('regulatoryContext.reportingRequirements.title')}</h3>
                 <p>
-                  Quarterly reports submitted to central banks should generally disclose:
+                  {t('regulatoryContext.reportingRequirements.intro')}
                 </p>
                 <ul>
-                  <li>Total Mudarabah investment pool balances</li>
-                  <li>Aggregate PSR ranges across account types</li>
-                  <li>Actual profit/loss allocation paid out to depositors</li>
-                  <li>Reserves (PER/IRR) held on behalf of investment account holders</li>
+                  {reportingRequirementItems.map((item, idx) => (
+                    <li key={idx}>{item}</li>
+                  ))}
                 </ul>
 
                 {/* Customer Education */}
-                <h2 id="customer-education" className="font-bold text-xl pt-4">Customer Education Strategies</h2>
+                <h2 id="customer-education" className="font-bold text-xl pt-4">{t('customerEducation.title')}</h2>
                 <p>
-                  Beyond disclosure, proactive education helps customers understand and appreciate PSR:
+                  {t('customerEducation.intro')}
                 </p>
 
-                <h3 className="font-bold text-lg pt-2">1. Onboarding Workshops</h3>
+                <h3 className="font-bold text-lg pt-2">{t('customerEducation.workshops.title')}</h3>
                 <p>
-                  Host monthly sessions at branch locations explaining:
+                  {t('customerEducation.workshops.intro')}
                 </p>
                 <ul>
-                  <li>How Mudarabah accounts differ from conventional savings</li>
-                  <li>Why PSR fluctuates based on investment performance</li>
-                  <li>How to read quarterly profit distribution statements</li>
+                  {workshopItems.map((item, idx) => (
+                    <li key={idx}>{item}</li>
+                  ))}
                 </ul>
 
-                <h3 className="font-bold text-lg pt-2">2. Digital Tools</h3>
+                <h3 className="font-bold text-lg pt-2">{t('customerEducation.digitalTools.title')}</h3>
                 <p>
-                  Develop online resources:
+                  {t('customerEducation.digitalTools.intro')}
                 </p>
                 <ul>
-                  <li><strong>PSR calculator:</strong> Customers input their deposit amount and estimated return to see projected profit splits</li>
-                  <li><strong>Video explainers:</strong> 2-3 minute animations demonstrating PSR concepts</li>
-                  <li><strong>FAQ section:</strong> Address common questions like "Can PSR change?" and "What if the bank loses money?"</li>
+                  {digitalToolItems.map((item, idx) => (
+                    <li key={idx}>
+                      <strong>{item.label}</strong> {item.text}
+                    </li>
+                  ))}
                 </ul>
 
-                <h3 className="font-bold text-lg pt-2">3. Quarterly Updates</h3>
+                <h3 className="font-bold text-lg pt-2">{t('customerEducation.quarterlyUpdates.title')}</h3>
                 <p>
-                  Send personalized statements showing:
+                  {t('customerEducation.quarterlyUpdates.intro')}
                 </p>
                 <ul>
-                  <li>Opening balance</li>
-                  <li>Total profits earned by the bank from customer's investment</li>
-                  <li>PSR split (percentage and currency amount)</li>
-                  <li>Customer's profit credited to account</li>
-                  <li>Closing balance</li>
+                  {quarterlyUpdateItems.map((item, idx) => (
+                    <li key={idx}>{item}</li>
+                  ))}
                 </ul>
 
                 <div className="not-prose my-12 p-8 bg-tikari-gold/10 border-l-4 border-tikari-gold rounded-r-2xl">

@@ -3629,8 +3629,14 @@
                 "paragraph1": "In a Mudarabah arrangement, the customer (rab al-mal, or capital provider) deposits funds into an investment account, and the bank (mudarib, or fund manager) invests those funds in Shariah-compliant ventures. When profits are generated, they are distributed according to the PSR agreed upon at the start of the relationship.",
                 "paragraph2": "For example, a PSR of 60:40 means:",
                 "example": {
-                  "customer": "60% of profits go to the customer (depositor)",
-                  "bank": "40% of profits go to the bank (investment manager)"
+                  "customer": {
+                    "percent": "60%",
+                    "text": "of profits go to the customer (depositor)"
+                  },
+                  "bank": {
+                    "percent": "40%",
+                    "text": "of profits go to the bank (investment manager)"
+                  }
                 },
                 "paragraph3": "Unlike conventional interest rates, which are fixed and guaranteed, PSR-based returns fluctuate based on actual investment performance. This aligns with Islamic principles of risk-sharing and profit-loss distribution."
               },
@@ -3663,19 +3669,40 @@
                   "title": "FAS 6: Equity of Investment Account Holders",
                   "intro": "AAOIFI Financial Accounting Standard No. 6 requires:",
                   "requirements": {
-                    "precontractual": "Pre-contractual disclosure: The PSR must be communicated to customers before they open an investment account.",
-                    "written": "Written documentation: The PSR must appear in the account opening agreement.",
-                    "methodology": "Profit calculation methodology: Banks must explain how profits are calculated and allocated.",
-                    "loss": "Loss-bearing disclosure: Customers must be informed that losses (if any) are borne entirely by them, while the bank loses only its time and effort."
+                    "precontractual": {
+                      "label": "Pre-contractual disclosure:",
+                      "text": "The PSR must be communicated to customers before they open an investment account."
+                    },
+                    "written": {
+                      "label": "Written documentation:",
+                      "text": "The PSR must appear in the account opening agreement."
+                    },
+                    "methodology": {
+                      "label": "Profit calculation methodology:",
+                      "text": "Banks must explain how profits are calculated and allocated."
+                    },
+                    "loss": {
+                      "label": "Loss-bearing disclosure:",
+                      "text": "Customers must be informed that losses (if any) are borne entirely by them, while the bank loses only its time and effort."
+                    }
                   }
                 },
                 "fas11": {
                   "title": "FAS 11: Provisions and Reserves",
                   "intro": "This standard addresses how banks handle Profit Equalization Reserves (PER) and Investment Risk Reserves (IRR):",
                   "items": {
-                    "per": "PER: Amounts set aside to smooth profit distribution across periods (disclosed separately)",
-                    "irr": "IRR: Reserves to cover potential investment losses (also disclosed separately)",
-                    "transparency": "Transparency requirement: Customers must understand how reserves impact their actual profit share"
+                    "per": {
+                      "label": "PER:",
+                      "text": "Amounts set aside to smooth profit distribution across periods (disclosed separately)"
+                    },
+                    "irr": {
+                      "label": "IRR:",
+                      "text": "Reserves to cover potential investment losses (also disclosed separately)"
+                    },
+                    "transparency": {
+                      "label": "Transparency requirement:",
+                      "text": "Customers must understand how reserves impact their actual profit share"
+                    }
                   }
                 },
                 "shariah40": {
@@ -3693,23 +3720,35 @@
                 "title": "Disclosure Best Practices",
                 "intro": "Beyond meeting minimum AAOIFI requirements, Islamic financial institutions should adopt these best practices:",
                 "proactiveCommunication": {
-                  "title": "Proactive Communication",
+                  "title": "1. Proactive Communication",
                   "items": {
-                    "marketing": "Marketing materials: Include PSR ranges in brochures, websites, and advertisements",
-                    "accountOpening": "Account opening: Highlight the PSR prominently in the application form",
-                    "welcomeKits": "Welcome kits: Provide a one-page PSR explainer to new customers",
-                    "statements": "Quarterly statements: Recap the PSR and show actual profit allocation"
+                    "marketing": {
+                      "label": "Marketing materials:",
+                      "text": "Include PSR ranges in brochures, websites, and advertisements"
+                    },
+                    "accountOpening": {
+                      "label": "Account opening:",
+                      "text": "Highlight the PSR prominently in the application form"
+                    },
+                    "welcomeKits": {
+                      "label": "Welcome kits:",
+                      "text": "Provide a one-page PSR explainer to new customers"
+                    },
+                    "statements": {
+                      "label": "Quarterly statements:",
+                      "text": "Recap the PSR and show actual profit allocation"
+                    }
                   }
                 },
                 "plainLanguage": {
-                  "title": "Plain Language",
+                  "title": "2. Plain Language",
                   "intro": "Avoid jargon. Instead of:",
                   "badExample": "\"The mudarib shall retain 35% of realized profits from the commingled investment pool, subject to PER and IRR appropriations as determined by the ACE.\"",
                   "goodIntro": "Use clear language:",
                   "goodExample": "\"When your investment earns a profit, you receive 65% and the bank receives 35%. Any profits set aside for reserves will be explained in your quarterly statement.\""
                 },
                 "visualAids": {
-                  "title": "Visual Aids",
+                  "title": "3. Visual Aids",
                   "intro": "Use charts, infographics, and examples to illustrate PSR:",
                   "exampleTitle": "Example PSR Illustration",
                   "customerShare": "Your Share (Customer)",
@@ -3717,10 +3756,18 @@
                   "exampleNote": "If the bank earns 1,000,000 units in profit from your investment, you receive 700,000 units and the bank receives 300,000 units."
                 },
                 "comparativeContext": {
-                  "title": "Comparative Context",
+                  "title": "4. Comparative Context",
                   "intro": "Help customers understand PSR by comparing it to conventional interest:",
-                  "conventional": "Conventional savings account: 2% fixed interest (guaranteed, regardless of bank performance)",
-                  "islamic": "Islamic Mudarabah account: 70% of profits (variable, based on actual investment returns)",
+                  "items": {
+                    "conventional": {
+                      "label": "Conventional savings account:",
+                      "text": "2% fixed interest (guaranteed, regardless of bank performance)"
+                    },
+                    "islamic": {
+                      "label": "Islamic Mudarabah account:",
+                      "text": "70% of profits (variable, based on actual investment returns)"
+                    }
+                  },
                   "clarification": "Clarify that if the bank earns higher returns in Islamic investing, the customer's PSR-based returns may exceed conventional interest but there's also downside risk."
                 }
               },
@@ -3729,28 +3776,36 @@
                 "intro": "Let's walk through practical scenarios to demonstrate how PSR works:",
                 "scenario1": {
                   "title": "Scenario 1: Simple Profit Distribution",
-                  "setup": "Setup:",
+                  "setupLabel": "Setup:",
                   "setupDetail": "A customer deposits 10,000,000 units into a Mudarabah investment account with a PSR of 60:40 (60% customer, 40% bank).",
-                  "performance": "Performance:",
+                  "performanceLabel": "Performance:",
                   "performanceDetail": "The bank invests the funds and earns 800,000 units in profit over the year.",
-                  "totalProfit": "Total Profit:",
-                  "customerShare": "Customer Share (60%):",
-                  "bankShare": "Bank Share (40%):",
-                  "accountBalance": "Customer Account Balance:",
+                  "totalProfitLabel": "Total Profit:",
+                  "totalProfitValue": "800,000 units",
+                  "customerShareLabel": "Customer Share (60%):",
+                  "customerShareValue": "480,000 units",
+                  "bankShareLabel": "Bank Share (40%):",
+                  "bankShareValue": "320,000 units",
+                  "accountBalanceLabel": "Customer Account Balance:",
+                  "accountBalanceValue": "10,480,000 units",
                   "effectiveReturn": "Effective return for the customer: 4.8% (480K profit ÷ 10M deposit)"
                 },
                 "scenario2": {
                   "title": "Scenario 2: Loss Scenario",
-                  "setup": "Setup:",
+                  "setupLabel": "Setup:",
                   "setupDetail": "Same customer, same 10,000,000 units deposit, PSR 60:40.",
-                  "performance": "Performance:",
+                  "performanceLabel": "Performance:",
                   "performanceDetail": "The bank's investments perform poorly, resulting in a 300,000 units loss.",
-                  "totalLoss": "Total Loss:",
-                  "customerBears": "Customer Bears Loss (100%):",
-                  "bankBears": "Bank Bears Loss:",
-                  "bankBearsDetail": "0 units (loses time/effort)",
-                  "accountBalance": "Customer Account Balance:",
-                  "keyPrinciple": "Key principle: In Mudarabah, capital losses are borne entirely by the capital provider (customer), while the fund manager (bank) loses only its time and effort unless the loss resulted from negligence or breach of contract."
+                  "totalLossLabel": "Total Loss:",
+                  "totalLossValue": "-300,000 units",
+                  "customerBearsLabel": "Customer Bears Loss (100%):",
+                  "customerBearsValue": "-300,000 units",
+                  "bankBearsLabel": "Bank Bears Loss:",
+                  "bankBearsValue": "0 units (loses time/effort)",
+                  "accountBalanceLabel": "Customer Account Balance:",
+                  "accountBalanceValue": "9,700,000 units",
+                  "keyPrincipleLabel": "Key principle:",
+                  "keyPrincipleText": "In Mudarabah, capital losses are borne entirely by the capital provider (customer), while the fund manager (bank) loses only its time and effort unless the loss resulted from negligence or breach of contract."
                 },
                 "scenario3": {
                   "title": "Scenario 3: Tiered PSR",
@@ -3783,6 +3838,8 @@
               "commonMistakes": {
                 "title": "Common PSR Disclosure Mistakes",
                 "intro": "Avoid these frequent errors that can lead to Shariah non-compliance or customer confusion:",
+                "whyWrongLabel": "Why it's wrong:",
+                "howToFixLabel": "How to fix:",
                 "mistakes": {
                   "mistake1": {
                     "title": "Using Fixed Amounts Instead of Percentages",
@@ -3809,27 +3866,40 @@
                     "why": "Unilateral changes to PSR violate the mutuality principle of Islamic contracts.",
                     "fix": "Any PSR adjustments require written customer agreement and cannot apply to existing deposits retroactively."
                   }
-                },
-                "whyWrong": "Why it's wrong:",
-                "howToFix": "How to fix:"
+                }
               },
               "regulatoryContext": {
                 "title": "Regulatory Compliance & PSR",
-                "intro": "Disclosure requirements for Profit-Sharing Ratios must satisfy both Shariah standards and local central bank guidelines.",
+                "intro": "Disclosure requirements for Profit-Sharing Ratios must satisfy both regional business standards and local central bank guidelines.",
                 "dualCompliance": {
                   "title": "Dual Compliance Strategy",
                   "items": {
-                    "aaoifi": "AAOIFI for Shariah: Follow FAS 6 and FAS 11 standards for pre-contractual and financial statement disclosure of PSR.",
-                    "centralBank": "Central Bank Supervision: Report Mudarabah accounts properly to central banks (e.g. as \"investment deposits\" under CBN guidelines in Nigeria or \"participation accounts\" under COBAC in Central Africa).",
-                    "ohada": "OHADA Chart of Accounts: In OHADA-zone countries (West and Central Africa), map the dual-ledger structures carefully to reflect investment pool returns."
+                    "aaoifi": {
+                      "label": "AAOIFI for Shariah:",
+                      "text": "Follow FAS 6 and FAS 11 standards for pre-contractual and financial statement disclosure of PSR."
+                    },
+                    "centralBank": {
+                      "label": "Central Bank Supervision:",
+                      "text": "Report Mudarabah accounts properly to central banks (e.g. as \"investment deposits\" under CBN guidelines in Nigeria or \"participation accounts\" under COBAC in Central Africa)."
+                    },
+                    "ohada": {
+                      "label": "OHADA Chart of Accounts:",
+                      "text": "In OHADA-zone countries (West and Central Africa), map the dual-ledger structures carefully to reflect investment pool returns."
+                    }
                   }
                 },
                 "languageAdaptations": {
                   "title": "Language & Regional Adaptations",
                   "intro": "Depending on the jurisdiction, documentation must align with official languages and terminology:",
                   "items": {
-                    "francophone": "Francophone Regions (CEMAC, WAEMU): Translate key terms accurately e.g., Ratio de Partage des Bénéfices (RPB) for PSR.",
-                    "anglophone": "Anglophone Regions (Nigeria): Use terms standardized by local non-interest banking circulars."
+                    "francophone": {
+                      "label": "Francophone Regions (CEMAC, WAEMU):",
+                      "text": "Translate key terms accurately in French, e.g., Ratio de Partage des Bénéfices (RPB) for PSR."
+                    },
+                    "anglophone": {
+                      "label": "Anglophone Regions (Nigeria):",
+                      "text": "Use terms standardized by local non-interest banking circulars."
+                    }
                   }
                 },
                 "reportingRequirements": {
@@ -3847,7 +3917,7 @@
                 "title": "Customer Education Strategies",
                 "intro": "Beyond disclosure, proactive education helps customers understand and appreciate PSR:",
                 "workshops": {
-                  "title": "Onboarding Workshops",
+                  "title": "1. Onboarding Workshops",
                   "intro": "Host monthly sessions at branch locations explaining:",
                   "items": {
                     "difference": "How Mudarabah accounts differ from conventional savings",
@@ -3856,16 +3926,25 @@
                   }
                 },
                 "digitalTools": {
-                  "title": "Digital Tools",
+                  "title": "2. Digital Tools",
                   "intro": "Develop online resources:",
                   "items": {
-                    "calculator": "PSR calculator: Customers input their deposit amount and estimated return to see projected profit splits",
-                    "videos": "Video explainers: 2-3 minute animations demonstrating PSR concepts",
-                    "faq": "FAQ section: Address common questions like \"Can PSR change?\" and \"What if the bank loses money?\""
+                    "calculator": {
+                      "label": "PSR calculator:",
+                      "text": "Customers input their deposit amount and estimated return to see projected profit splits"
+                    },
+                    "videos": {
+                      "label": "Video explainers:",
+                      "text": "2-3 minute animations demonstrating PSR concepts"
+                    },
+                    "faq": {
+                      "label": "FAQ section:",
+                      "text": "Address common questions like \"Can PSR change?\" and \"What if the bank loses money?\""
+                    }
                   }
                 },
                 "quarterlyUpdates": {
-                  "title": "Quarterly Updates",
+                  "title": "3. Quarterly Updates",
                   "intro": "Send personalized statements showing:",
                   "items": {
                     "opening": "Opening balance",
@@ -3934,10 +4013,24 @@
                   "paragraph2": "This article provides a comprehensive guide to understanding the differences between these two frameworks and implementing practical strategies to meet both sets of requirements simultaneously.",
                   "whyMatters": {
                     "title": "Why This Matters",
-                    "regulatory": "Regulatory compliance: Regional central banks require OHADA-compliant reporting",
-                    "shariah": "Shariah compliance: Islamic operations demand AAOIFI standards",
-                    "stakeholder": "Stakeholder confidence: Transparent reporting builds trust with investors and customers",
-                    "efficiency": "Operational efficiency: Proper mapping prevents duplicate work and errors"
+                    "items": {
+                      "regulatory": {
+                        "label": "Regulatory compliance:",
+                        "text": "Regional central banks require OHADA-compliant reporting"
+                      },
+                      "shariah": {
+                        "label": "Shariah compliance:",
+                        "text": "Islamic operations demand AAOIFI standards"
+                      },
+                      "stakeholder": {
+                        "label": "Stakeholder confidence:",
+                        "text": "Transparent reporting builds trust with investors and customers"
+                      },
+                      "efficiency": {
+                        "label": "Operational efficiency:",
+                        "text": "Proper mapping prevents duplicate work and errors"
+                      }
+                    }
                   }
                 },
                 "aaoifiOverview": {
@@ -3946,17 +4039,45 @@
                   "scope": {
                     "title": "Scope of AAOIFI Standards",
                     "intro": "AAOIFI issues standards across four domains:",
-                    "fas": "Financial Accounting Standards (FAS): 30+ standards covering Islamic transaction recognition, measurement, and disclosure",
-                    "ss": "Shariah Standards (SS): Guidelines on Islamic product structures and contracts",
-                    "gs": "Governance Standards (GS): Corporate governance and Shariah board requirements",
-                    "as": "Audit Standards (AS): Auditing procedures specific to Islamic institutions"
+                    "items": {
+                      "fas": {
+                        "label": "Financial Accounting Standards (FAS):",
+                        "text": "30+ standards covering Islamic transaction recognition, measurement, and disclosure"
+                      },
+                      "ss": {
+                        "label": "Shariah Standards (SS):",
+                        "text": "Guidelines on Islamic product structures and contracts"
+                      },
+                      "gs": {
+                        "label": "Governance Standards (GS):",
+                        "text": "Corporate governance and Shariah board requirements"
+                      },
+                      "as": {
+                        "label": "Audit Standards (AS):",
+                        "text": "Auditing procedures specific to Islamic institutions"
+                      }
+                    }
                   },
                   "principles": {
                     "title": "Key AAOIFI Principles",
-                    "substance": "Substance over form: Economic reality takes precedence over legal form",
-                    "shariah": "Shariah compliance: All transactions must align with Islamic law",
-                    "transparency": "Transparency: Full disclosure of profit-sharing ratios, investment risks, and Shariah approval",
-                    "stakeholder": "Stakeholder protection: Special attention to Investment Account Holders (IAH) rights"
+                    "items": {
+                      "substance": {
+                        "label": "Substance over form:",
+                        "text": "Economic reality takes precedence over legal form"
+                      },
+                      "shariah": {
+                        "label": "Shariah compliance:",
+                        "text": "All transactions must align with Islamic law"
+                      },
+                      "transparency": {
+                        "label": "Transparency:",
+                        "text": "Full disclosure of profit-sharing ratios, investment risks, and Shariah approval"
+                      },
+                      "stakeholder": {
+                        "label": "Stakeholder protection:",
+                        "text": "Special attention to Investment Account Holders (IAH) rights"
+                      }
+                    }
                   },
                   "adoption": {
                     "title": "Adoption Status",
@@ -3969,25 +4090,425 @@
                   "framework": {
                     "title": "OHADA Accounting Framework",
                     "intro": "OHADA's Uniform Act on Accounting and Financial Reporting standardizes:",
-                    "chart": "Chart of accounts (SYSCOHADA): Standardized account numbering system",
-                    "formats": "Financial statement formats: Balance sheet, income statement, cash flow statement, and notes",
-                    "principles": "Accounting principles: Accrual basis, going concern, consistency, prudence",
-                    "disclosure": "Disclosure requirements: Detailed notes to financial statements"
+                    "items": {
+                      "chart": {
+                        "label": "Chart of accounts (SYSCOHADA):",
+                        "text": "Standardized account numbering system"
+                      },
+                      "formats": {
+                        "label": "Financial statement formats:",
+                        "text": "Balance sheet, income statement, cash flow statement, and notes"
+                      },
+                      "principles": {
+                        "label": "Accounting principles:",
+                        "text": "Accrual basis, going concern, consistency, prudence"
+                      },
+                      "disclosure": {
+                        "label": "Disclosure requirements:",
+                        "text": "Detailed notes to financial statements"
+                      }
+                    }
                   },
                   "features": {
                     "title": "OHADA Key Features",
-                    "francophone": "Francophone focus: All documentation is in French",
-                    "classBased": "Class-based chart of accounts: 8 account classes (1-8)",
-                    "smeFriendly": "SME-friendly: Simplified reporting for small enterprises",
-                    "legal": "Legal enforceability: OHADA rulings supersede national laws"
+                    "items": {
+                      "francophone": {
+                        "label": "Francophone focus:",
+                        "text": "All documentation is in French"
+                      },
+                      "classBased": {
+                        "label": "Class-based chart of accounts:",
+                        "text": "8 account classes (1-8)"
+                      },
+                      "smeFriendly": {
+                        "label": "SME-friendly:",
+                        "text": "Simplified reporting for small enterprises"
+                      },
+                      "legal": {
+                        "label": "Legal enforceability:",
+                        "text": "OHADA rulings supersede national laws"
+                      }
+                    }
                   },
                   "application": {
                     "title": "OHADA & Central Bank Application",
                     "intro": "In member countries across West and Central Africa, regional banking regulators (such as COBAC for CEMAC or BCEAO for WAEMU) require all financial institutions to:",
-                    "syscohada": "Use SYSCOHADA chart of accounts",
-                    "quarterly": "Submit quarterly financial statements in OHADA format",
-                    "comply": "Comply with OHADA accounting principles",
-                    "audit": "Obtain OHADA-compliant audits"
+                    "items": {
+                      "syscohada": "Use SYSCOHADA chart of accounts",
+                      "quarterly": "Submit quarterly financial statements in OHADA format",
+                      "comply": "Comply with OHADA accounting principles",
+                      "audit": "Obtain OHADA-compliant audits"
+                    }
+                  }
+                },
+                "keyDifferences": {
+                  "title": "Key Differences Between AAOIFI and OHADA",
+                  "intro": "While both frameworks aim for transparency and consistency, they differ significantly:",
+                  "table": {
+                    "headers": {
+                      "aspect": "Aspect",
+                      "aaoifi": "AAOIFI",
+                      "ohada": "OHADA"
+                    },
+                    "rows": {
+                      "purpose": {
+                        "aspect": "Purpose",
+                        "aaoifi": "Islamic finance-specific standards",
+                        "ohada": "General business accounting harmonization"
+                      },
+                      "geographicScope": {
+                        "aspect": "Geographic scope",
+                        "aaoifi": "Global (45+ countries)",
+                        "ohada": "Regional (17 African countries)"
+                      },
+                      "language": {
+                        "aspect": "Language",
+                        "aaoifi": "Arabic & English",
+                        "ohada": "French"
+                      },
+                      "chartOfAccounts": {
+                        "aspect": "Chart of accounts",
+                        "aaoifi": "Flexible, product-specific",
+                        "ohada": "Standardized (SYSCOHADA)"
+                      },
+                      "investmentAccounts": {
+                        "aspect": "Investment accounts",
+                        "aaoifi": "Off-balance sheet (FAS 6)",
+                        "ohada": "On-balance sheet as deposits"
+                      },
+                      "profitDistribution": {
+                        "aspect": "Profit distribution",
+                        "aaoifi": "PSR-based, disclosed separately",
+                        "ohada": "Interest expense classification"
+                      },
+                      "zakat": {
+                        "aspect": "Zakat",
+                        "aaoifi": "Recognized and disclosed (FAS 9)",
+                        "ohada": "Not addressed"
+                      },
+                      "shariahCompliance": {
+                        "aspect": "Shariah compliance",
+                        "aaoifi": "Core requirement",
+                        "ohada": "Not addressed"
+                      }
+                    }
+                  }
+                },
+                "chartOfAccounts": {
+                  "title": "Chart of Accounts Mapping",
+                  "intro": "One of the most critical reconciliation tasks is mapping Islamic finance transactions to OHADA's SYSCOHADA chart of accounts:",
+                  "syscohada": {
+                    "title": "SYSCOHADA Structure",
+                    "intro": "OHADA uses an 8-class chart of accounts:",
+                    "classes": {
+                      "class1": {
+                        "label": "Class 1:",
+                        "text": "Capital accounts (equity, reserves)"
+                      },
+                      "class2": {
+                        "label": "Class 2:",
+                        "text": "Fixed assets (immobilizations)"
+                      },
+                      "class3": {
+                        "label": "Class 3:",
+                        "text": "Inventory"
+                      },
+                      "class4": {
+                        "label": "Class 4:",
+                        "text": "Third-party accounts (receivables, payables)"
+                      },
+                      "class5": {
+                        "label": "Class 5:",
+                        "text": "Financial accounts (cash, bank)"
+                      },
+                      "class6": {
+                        "label": "Class 6:",
+                        "text": "Expenses"
+                      },
+                      "class7": {
+                        "label": "Class 7:",
+                        "text": "Revenue"
+                      },
+                      "class8": {
+                        "label": "Class 8:",
+                        "text": "Off-balance sheet items"
+                      }
+                    }
+                  },
+                  "mapping": {
+                    "title": "Mapping Islamic Products to SYSCOHADA",
+                    "aaoifiLabel": "AAOIFI Treatment:",
+                    "ohadaLabel": "OHADA Mapping:",
+                    "cards": {
+                      "murabaha": {
+                        "title": "Murabaha Receivables",
+                        "aaoifiValue": "Murabaha Receivables (FAS 2)",
+                        "ohadaValue": "Class 4 - Account 411X (Customers)",
+                        "note": "Record Murabaha receivables under customer accounts, with subledger detail indicating Islamic product type."
+                      },
+                      "mudarabah": {
+                        "title": "Mudarabah Investment Accounts",
+                        "aaoifiValue": "Off-balance sheet (FAS 6)",
+                        "ohadaValue": "Class 1 - Account 161X (Deposits/Liabilities)",
+                        "note": "OHADA requires on-balance sheet treatment, but notes can clarify the Mudarabah nature and PSR arrangement."
+                      },
+                      "profitDistribution": {
+                        "title": "Profit Distribution to IAH",
+                        "aaoifiValue": "Separate line item (not expense)",
+                        "ohadaValue": "Class 6 - Account 671X (Interest/Charges)",
+                        "note": "While economically profit-sharing, OHADA treats it as interest expense. Detailed notes must clarify the Shariah-compliant nature."
+                      },
+                      "zakat": {
+                        "title": "Zakat",
+                        "aaoifiValue": "Disclosed separately (FAS 9)",
+                        "ohadaValue": "Class 6 - Account 6583 (Charitable Donations)",
+                        "note": "Zakat is treated as a charitable expense. If the institution facilitates Zakat payment for customers, use Class 4 (payables)."
+                      }
+                    }
+                  }
+                },
+                "financialStatements": {
+                  "title": "Financial Statement Requirements",
+                  "intro": "Both AAOIFI and OHADA mandate specific financial statement formats:",
+                  "aaoifiStatements": {
+                    "title": "AAOIFI Required Statements",
+                    "items": {
+                      "balanceSheet": "Statement of Financial Position (Balance Sheet)",
+                      "incomeStatement": "Statement of Income: Separates shareholder income from IAH income",
+                      "cashFlows": "Statement of Cash Flows",
+                      "changesInEquity": "Statement of Changes in Equity",
+                      "restrictedInvestments": "Statement of Changes in Restricted Investments: For Mudarabah accounts",
+                      "zakatFunds": "Statement of Sources and Uses of Zakat and Charity Funds",
+                      "notes": "Notes to Financial Statements: Including PSR disclosures and Shariah board report"
+                    }
+                  },
+                  "ohadaStatements": {
+                    "title": "OHADA Required Statements",
+                    "items": {
+                      "balanceSheet": "Balance Sheet (Bilan): Standardized format",
+                      "incomeStatement": "Income Statement (Compte de Résultat): Detailed revenue and expense breakdown",
+                      "cashFlows": "Cash Flow Statement (Tableau de Flux de Trésorerie)",
+                      "notes": "Notes (Annexe): Accounting policies and detailed disclosures"
+                    }
+                  },
+                  "reconciliation": {
+                    "title": "Reconciliation Approach",
+                    "intro": "A practical dual-reporting strategy:",
+                    "steps": {
+                      "aaoifiBooks": {
+                        "label": "Maintain books in AAOIFI format:",
+                        "text": "This ensures Shariah compliance and provides detailed Islamic finance tracking"
+                      },
+                      "mappingRules": {
+                        "label": "Create OHADA mapping rules:",
+                        "text": "Define how each AAOIFI account maps to SYSCOHADA"
+                      },
+                      "ohadaStatements": {
+                        "label": "Generate OHADA statements:",
+                        "text": "Use mapping rules to produce regulatory-compliant reports"
+                      },
+                      "notesSupplement": {
+                        "label": "Supplement with notes:",
+                        "text": "Provide extensive footnotes explaining Islamic finance structures within OHADA reports"
+                      }
+                    }
+                  }
+                },
+                "dualCompliance": {
+                  "title": "Dual Compliance Strategy",
+                  "intro": "Implementing both frameworks simultaneously requires a systematic approach:",
+                  "step1": {
+                    "title": "Step 1: Establish Parallel Chart of Accounts",
+                    "intro": "Create a dual chart of accounts where each AAOIFI account has a corresponding SYSCOHADA code:",
+                    "table": {
+                      "headers": {
+                        "product": "Islamic Product",
+                        "aaoifiAccount": "AAOIFI Account",
+                        "ohadaCode": "SYSCOHADA Code"
+                      },
+                      "rows": {
+                        "murabaha": {
+                          "product": "Murabaha Receivables",
+                          "aaoifiAccount": "120-001",
+                          "ohadaCode": "4111"
+                        },
+                        "mudarabah": {
+                          "product": "Mudarabah Deposits",
+                          "aaoifiAccount": "Off-BS",
+                          "ohadaCode": "1611"
+                        },
+                        "musharakah": {
+                          "product": "Musharakah Investments",
+                          "aaoifiAccount": "130-002",
+                          "ohadaCode": "2613"
+                        },
+                        "ijara": {
+                          "product": "Ijara Assets (Leased)",
+                          "aaoifiAccount": "140-003",
+                          "ohadaCode": "2441"
+                        }
+                      }
+                    }
+                  },
+                  "step2": {
+                    "title": "Step 2: Implement Subledgers",
+                    "intro": "Use subledgers to capture Islamic-specific details while maintaining OHADA compliance:",
+                    "items": {
+                      "customer": {
+                        "label": "Customer subledger:",
+                        "text": "Track Murabaha contract details (cost, markup, installment schedule)"
+                      },
+                      "investment": {
+                        "label": "Investment account subledger:",
+                        "text": "Record PSR, profit allocation, and IAH balances"
+                      },
+                      "shariah": {
+                        "label": "Shariah compliance subledger:",
+                        "text": "Document Shariah board approvals and audit findings"
+                      }
+                    }
+                  },
+                  "step3": {
+                    "title": "Step 3: Quarterly Reconciliation Process",
+                    "intro": "Establish a quarterly workflow:",
+                    "steps": {
+                      "step1": "Close books in AAOIFI format",
+                      "step2": "Run automated mapping: Convert AAOIFI balances to SYSCOHADA accounts",
+                      "step3": "Generate OHADA statements: Produce balance sheet, income statement, and notes",
+                      "step4": "Perform variance analysis: Verify that AAOIFI and OHADA reports reconcile",
+                      "step5": "Submit to Regulator: File OHADA-compliant reports with your central bank (such as COBAC or BCEAO)",
+                      "step6": "Prepare AAOIFI report for Shariah board: Provide Islamic finance-specific analysis"
+                    }
+                  },
+                  "step4": {
+                    "title": "Step 4: Disclosure Notes",
+                    "intro": "Use OHADA financial statement notes (Annexe) to bridge the gap:",
+                    "notes": {
+                      "note1": {
+                        "label": "Note 1 - Accounting policies:",
+                        "text": "Explain that the institution operates under dual compliance (AAOIFI + OHADA)"
+                      },
+                      "note2": {
+                        "label": "Note 2 - Islamic products:",
+                        "text": "Define Murabaha, Mudarabah, Musharakah, and their economic substance"
+                      },
+                      "note3": {
+                        "label": "Note 3 - Investment accounts:",
+                        "text": "Disclose PSR, profit distribution methodology, and IAH rights"
+                      },
+                      "note4": {
+                        "label": "Note 4 - Shariah compliance:",
+                        "text": "Reference Shariah board composition and approval process"
+                      },
+                      "note5": {
+                        "label": "Note 5 - Zakat:",
+                        "text": "Explain Zakat calculation and distribution if applicable"
+                      }
+                    }
+                  }
+                },
+                "practicalImplementation": {
+                  "title": "Practical Implementation Tips",
+                  "intro": "Based on real-world experience from Islamic finance institutions operating in OHADA zones:",
+                  "tip1": {
+                    "title": "1. Start with Core Products",
+                    "intro": "Don't try to map every Islamic product at once. Begin with:",
+                    "products": {
+                      "murabaha": "Murabaha (easiest to map to conventional loan accounting)",
+                      "mudarabah": "Mudarabah investment accounts (similar to term deposits)",
+                      "qardHassan": "Qard Hassan (benevolent loans, straightforward)"
+                    },
+                    "complexProducts": "Add complex products (Musharakah, Ijara, Salam) gradually as you refine your mapping rules."
+                  },
+                  "tip2": {
+                    "title": "2. Engage Both AAOIFI and OHADA Experts",
+                    "items": {
+                      "aaoifiExpert": {
+                        "label": "Hire an AAOIFI-certified accountant:",
+                        "text": "Ensure someone on your team understands Islamic finance accounting principles"
+                      },
+                      "ohadaPractitioner": {
+                        "label": "Consult OHADA practitioners:",
+                        "text": "Work with accountants experienced in regional regulatory reporting"
+                      },
+                      "shariahCoordination": {
+                        "label": "Coordinate with Shariah board:",
+                        "text": "Ensure accounting treatments align with Shariah interpretations"
+                      }
+                    }
+                  },
+                  "tip3": {
+                    "title": "3. Build Audit Trails",
+                    "intro": "Maintain comprehensive documentation for every mapping decision:",
+                    "items": {
+                      "mappingRationale": "Why a particular AAOIFI account maps to a specific SYSCOHADA code",
+                      "profitClassification": "How profit distribution is classified (expense vs. equity allocation)",
+                      "balanceSheetTreatment": "Rationale for off-balance sheet vs. on-balance sheet treatment"
+                    },
+                    "conclusion": "This documentation protects against regulatory scrutiny and simplifies annual audits."
+                  },
+                  "tip4": {
+                    "title": "4. Leverage Technology (see next section)",
+                    "text": "Manual dual compliance is error-prone and time-consuming. Modern software solutions automate mapping and reconciliation."
+                  }
+                },
+                "softwareSolutions": {
+                  "title": "Technology Solutions for Dual Compliance",
+                  "intro": "Manual accounting is not feasible for dual compliance at scale. Specialized software addresses this challenge:",
+                  "requirements": {
+                    "title": "Requirements for Dual Compliance Software",
+                    "items": {
+                      "dualChart": {
+                        "label": "Dual chart of accounts:",
+                        "text": "Native support for both AAOIFI and SYSCOHADA"
+                      },
+                      "automatedMapping": {
+                        "label": "Automated mapping rules:",
+                        "text": "Configure once, apply automatically"
+                      },
+                      "parallelReporting": {
+                        "label": "Parallel reporting:",
+                        "text": "Generate both AAOIFI and OHADA statements from the same data"
+                      },
+                      "subledgerManagement": {
+                        "label": "Subledger management:",
+                        "text": "Track Islamic product details within OHADA accounts"
+                      },
+                      "reconciliationTools": {
+                        "label": "Reconciliation tools:",
+                        "text": "Verify that AAOIFI and OHADA reports balance"
+                      },
+                      "multilingualSupport": {
+                        "label": "Multilingual support:",
+                        "text": "Arabic, French, and English interfaces"
+                      },
+                      "auditTrail": {
+                        "label": "Audit trail:",
+                        "text": "Complete transaction history for regulatory review"
+                      }
+                    }
+                  },
+                  "tikariFeatures": {
+                    "title": "TIKARI's Dual Compliance Features",
+                    "intro": "TIKARI is purpose-built for Islamic finance across African regulatory environments:",
+                    "cards": {
+                      "preMapped": {
+                        "title": "Pre-Mapped Chart of Accounts",
+                        "description": "AAOIFI accounts pre-mapped to SYSCOHADA codes, customizable for your institution"
+                      },
+                      "reconciliation": {
+                        "title": "Automated Reconciliation",
+                        "description": "Real-time variance analysis between AAOIFI and OHADA reports"
+                      },
+                      "bilingual": {
+                        "title": "Bilingual Reporting",
+                        "description": "Generate statements in both French (for regulators) and English (for stakeholders)"
+                      },
+                      "regulatorReady": {
+                        "title": "Regulator Submission-Ready",
+                        "description": "Export reports in formats required by regional banking regulators (like COBAC and BCEAO)"
+                      }
+                    }
                   }
                 },
                 "cta": {

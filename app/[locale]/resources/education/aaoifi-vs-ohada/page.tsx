@@ -27,6 +27,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
 
 export default function AAOIFIvsOHADAPage() {
   const t = useTranslations('education.aaoifiVsOhada');
+
   const tableOfContents = [
     { id: "introduction", title: t('tableOfContents.introduction') },
     { id: "aaoifi-overview", title: t('tableOfContents.aaoifiOverview') },
@@ -57,6 +58,65 @@ export default function AAOIFIvsOHADAPage() {
       description: t('relatedArticles.articles.psr.description'),
       href: "/resources/education/profit-sharing-ratio",
       duration: t('relatedArticles.articles.psr.duration')
+    }
+  ];
+
+  const keyDifferenceRows = [
+    "purpose",
+    "geographicScope",
+    "language",
+    "chartOfAccounts",
+    "investmentAccounts",
+    "profitDistribution",
+    "zakat",
+    "shariahCompliance",
+  ] as const;
+
+  const syscohadaClasses = [
+    "class1",
+    "class2",
+    "class3",
+    "class4",
+    "class5",
+    "class6",
+    "class7",
+    "class8",
+  ] as const;
+
+  const mappingCards = [
+    "murabaha",
+    "mudarabah",
+    "profitDistribution",
+    "zakat",
+  ] as const;
+
+  const parallelAccountRows = [
+    "murabaha",
+    "mudarabah",
+    "musharakah",
+    "ijara",
+  ] as const;
+
+  const tikariFeatures = [
+    {
+      icon: FileText,
+      title: t('content.softwareSolutions.tikariFeatures.cards.preMapped.title'),
+      description: t('content.softwareSolutions.tikariFeatures.cards.preMapped.description')
+    },
+    {
+      icon: ArrowsLeftRight,
+      title: t('content.softwareSolutions.tikariFeatures.cards.reconciliation.title'),
+      description: t('content.softwareSolutions.tikariFeatures.cards.reconciliation.description')
+    },
+    {
+      icon: Globe,
+      title: t('content.softwareSolutions.tikariFeatures.cards.bilingual.title'),
+      description: t('content.softwareSolutions.tikariFeatures.cards.bilingual.description')
+    },
+    {
+      icon: Bank,
+      title: t('content.softwareSolutions.tikariFeatures.cards.regulatorReady.title'),
+      description: t('content.softwareSolutions.tikariFeatures.cards.regulatorReady.description')
     }
   ];
 
@@ -134,19 +194,19 @@ export default function AAOIFIvsOHADAPage() {
                     <ul className="space-y-2 text-tikari-sage">
                       <li className="flex gap-2">
                         <CheckCircle className="h-5 w-5 text-tikari-green-dark flex-shrink-0 mt-0.5" weight="bold" />
-                        <span><strong>Regulatory compliance:</strong> {t('content.introduction.whyMatters.regulatory')}</span>
+                        <span><strong>{t('content.introduction.whyMatters.items.regulatory.label')}</strong> {t('content.introduction.whyMatters.items.regulatory.text')}</span>
                       </li>
                       <li className="flex gap-2">
                         <CheckCircle className="h-5 w-5 text-tikari-green-dark flex-shrink-0 mt-0.5" weight="bold" />
-                        <span><strong>Shariah compliance:</strong> {t('content.introduction.whyMatters.shariah')}</span>
+                        <span><strong>{t('content.introduction.whyMatters.items.shariah.label')}</strong> {t('content.introduction.whyMatters.items.shariah.text')}</span>
                       </li>
                       <li className="flex gap-2">
                         <CheckCircle className="h-5 w-5 text-tikari-green-dark flex-shrink-0 mt-0.5" weight="bold" />
-                        <span><strong>Stakeholder confidence:</strong> {t('content.introduction.whyMatters.stakeholder')}</span>
+                        <span><strong>{t('content.introduction.whyMatters.items.stakeholder.label')}</strong> {t('content.introduction.whyMatters.items.stakeholder.text')}</span>
                       </li>
                       <li className="flex gap-2">
                         <CheckCircle className="h-5 w-5 text-tikari-green-dark flex-shrink-0 mt-0.5" weight="bold" />
-                        <span><strong>Operational efficiency:</strong> {t('content.introduction.whyMatters.efficiency')}</span>
+                        <span><strong>{t('content.introduction.whyMatters.items.efficiency.label')}</strong> {t('content.introduction.whyMatters.items.efficiency.text')}</span>
                       </li>
                     </ul>
                   </div>
@@ -163,18 +223,18 @@ export default function AAOIFIvsOHADAPage() {
                   {t('content.aaoifiOverview.scope.intro')}
                 </p>
                 <ul>
-                  <li><strong>Financial Accounting Standards (FAS):</strong> {t('content.aaoifiOverview.scope.fas')}</li>
-                  <li><strong>Shariah Standards (SS):</strong> {t('content.aaoifiOverview.scope.ss')}</li>
-                  <li><strong>Governance Standards (GS):</strong> {t('content.aaoifiOverview.scope.gs')}</li>
-                  <li><strong>Audit Standards (AS):</strong> {t('content.aaoifiOverview.scope.as')}</li>
+                  <li><strong>{t('content.aaoifiOverview.scope.items.fas.label')}</strong> {t('content.aaoifiOverview.scope.items.fas.text')}</li>
+                  <li><strong>{t('content.aaoifiOverview.scope.items.ss.label')}</strong> {t('content.aaoifiOverview.scope.items.ss.text')}</li>
+                  <li><strong>{t('content.aaoifiOverview.scope.items.gs.label')}</strong> {t('content.aaoifiOverview.scope.items.gs.text')}</li>
+                  <li><strong>{t('content.aaoifiOverview.scope.items.as.label')}</strong> {t('content.aaoifiOverview.scope.items.as.text')}</li>
                 </ul>
 
                 <h3 className="font-bold text-lg pt-2">{t('content.aaoifiOverview.principles.title')}</h3>
                 <ul>
-                  <li><strong>Substance over form:</strong> {t('content.aaoifiOverview.principles.substance')}</li>
-                  <li><strong>Shariah compliance:</strong> {t('content.aaoifiOverview.principles.shariah')}</li>
-                  <li><strong>Transparency:</strong> {t('content.aaoifiOverview.principles.transparency')}</li>
-                  <li><strong>Stakeholder protection:</strong> {t('content.aaoifiOverview.principles.stakeholder')}</li>
+                  <li><strong>{t('content.aaoifiOverview.principles.items.substance.label')}</strong> {t('content.aaoifiOverview.principles.items.substance.text')}</li>
+                  <li><strong>{t('content.aaoifiOverview.principles.items.shariah.label')}</strong> {t('content.aaoifiOverview.principles.items.shariah.text')}</li>
+                  <li><strong>{t('content.aaoifiOverview.principles.items.transparency.label')}</strong> {t('content.aaoifiOverview.principles.items.transparency.text')}</li>
+                  <li><strong>{t('content.aaoifiOverview.principles.items.stakeholder.label')}</strong> {t('content.aaoifiOverview.principles.items.stakeholder.text')}</li>
                 </ul>
 
                 <h3 className="font-bold text-lg pt-2">{t('content.aaoifiOverview.adoption.title')}</h3>
@@ -193,18 +253,18 @@ export default function AAOIFIvsOHADAPage() {
                   {t('content.ohadaOverview.framework.intro')}
                 </p>
                 <ul>
-                  <li><strong>Chart of accounts (SYSCOHADA):</strong> {t('content.ohadaOverview.framework.chart')}</li>
-                  <li><strong>Financial statement formats:</strong> {t('content.ohadaOverview.framework.formats')}</li>
-                  <li><strong>Accounting principles:</strong> {t('content.ohadaOverview.framework.principles')}</li>
-                  <li><strong>Disclosure requirements:</strong> {t('content.ohadaOverview.framework.disclosure')}</li>
+                  <li><strong>{t('content.ohadaOverview.framework.items.chart.label')}</strong> {t('content.ohadaOverview.framework.items.chart.text')}</li>
+                  <li><strong>{t('content.ohadaOverview.framework.items.formats.label')}</strong> {t('content.ohadaOverview.framework.items.formats.text')}</li>
+                  <li><strong>{t('content.ohadaOverview.framework.items.principles.label')}</strong> {t('content.ohadaOverview.framework.items.principles.text')}</li>
+                  <li><strong>{t('content.ohadaOverview.framework.items.disclosure.label')}</strong> {t('content.ohadaOverview.framework.items.disclosure.text')}</li>
                 </ul>
 
                 <h3 className="font-bold text-lg pt-2">{t('content.ohadaOverview.features.title')}</h3>
                 <ul>
-                  <li><strong>Francophone focus:</strong> {t('content.ohadaOverview.features.francophone')}</li>
-                  <li><strong>Class-based chart of accounts:</strong> {t('content.ohadaOverview.features.classBased')}</li>
-                  <li><strong>SME-friendly:</strong> {t('content.ohadaOverview.features.smeFriendly')}</li>
-                  <li><strong>Legal enforceability:</strong> {t('content.ohadaOverview.features.legal')}</li>
+                  <li><strong>{t('content.ohadaOverview.features.items.francophone.label')}</strong> {t('content.ohadaOverview.features.items.francophone.text')}</li>
+                  <li><strong>{t('content.ohadaOverview.features.items.classBased.label')}</strong> {t('content.ohadaOverview.features.items.classBased.text')}</li>
+                  <li><strong>{t('content.ohadaOverview.features.items.smeFriendly.label')}</strong> {t('content.ohadaOverview.features.items.smeFriendly.text')}</li>
+                  <li><strong>{t('content.ohadaOverview.features.items.legal.label')}</strong> {t('content.ohadaOverview.features.items.legal.text')}</li>
                 </ul>
 
                 <h3 className="font-bold text-lg pt-2">{t('content.ohadaOverview.application.title')}</h3>
@@ -212,15 +272,16 @@ export default function AAOIFIvsOHADAPage() {
                   {t('content.ohadaOverview.application.intro')}
                 </p>
                 <ul>
-                  <li>{t('content.ohadaOverview.application.syscohada')}</li>
-                  <li>{t('content.ohadaOverview.application.quarterly')}</li>
-                  <li>{t('content.ohadaOverview.application.comply')}</li>
-                  <li>{t('content.ohadaOverview.application.audit')}</li>
+                  <li>{t('content.ohadaOverview.application.items.syscohada')}</li>
+                  <li>{t('content.ohadaOverview.application.items.quarterly')}</li>
+                  <li>{t('content.ohadaOverview.application.items.comply')}</li>
+                  <li>{t('content.ohadaOverview.application.items.audit')}</li>
                 </ul>
 
-                <h2 id="key-differences" className="font-bold text-xl pt-4">Key Differences Between AAOIFI and OHADA</h2>
+                {/* Key Differences */}
+                <h2 id="key-differences" className="font-bold text-xl pt-4">{t('content.keyDifferences.title')}</h2>
                 <p>
-                  While both frameworks aim for transparency and consistency, they differ significantly:
+                  {t('content.keyDifferences.intro')}
                 </p>
 
                 <div className="not-prose my-8">
@@ -228,209 +289,126 @@ export default function AAOIFIvsOHADAPage() {
                     <table className="w-full border-1 border-tikari-green/20 text-sm">
                       <thead className="bg-tikari-green-dark text-white">
                         <tr>
-                          <th className="px-4 py-3 text-left font-bold">Aspect</th>
-                          <th className="px-4 py-3 text-left font-bold">AAOIFI</th>
-                          <th className="px-4 py-3 text-left font-bold">OHADA</th>
+                          <th className="px-4 py-3 text-left font-bold">{t('content.keyDifferences.table.headers.aspect')}</th>
+                          <th className="px-4 py-3 text-left font-bold">{t('content.keyDifferences.table.headers.aaoifi')}</th>
+                          <th className="px-4 py-3 text-left font-bold">{t('content.keyDifferences.table.headers.ohada')}</th>
                         </tr>
                       </thead>
                       <tbody className="text-tikari-sage">
-                        <tr className="border-b border-tikari-green/20">
-                          <td className="px-4 py-3 font-semibold text-tikari-green-dark">Purpose</td>
-                          <td className="px-4 py-3">Islamic finance-specific standards</td>
-                          <td className="px-4 py-3">General business accounting harmonization</td>
-                        </tr>
-                        <tr className="border-b border-tikari-green/20 bg-tikari-cream/30">
-                          <td className="px-4 py-3 font-semibold text-tikari-green-dark">Geographic scope</td>
-                          <td className="px-4 py-3">Global (45+ countries)</td>
-                          <td className="px-4 py-3">Regional (17 African countries)</td>
-                        </tr>
-                        <tr className="border-b border-tikari-green/20">
-                          <td className="px-4 py-3 font-semibold text-tikari-green-dark">Language</td>
-                          <td className="px-4 py-3">Arabic & English</td>
-                          <td className="px-4 py-3">French</td>
-                        </tr>
-                        <tr className="border-b border-tikari-green/20 bg-tikari-cream/30">
-                          <td className="px-4 py-3 font-semibold text-tikari-green-dark">Chart of accounts</td>
-                          <td className="px-4 py-3">Flexible, product-specific</td>
-                          <td className="px-4 py-3">Standardized (SYSCOHADA)</td>
-                        </tr>
-                        <tr className="border-b border-tikari-green/20">
-                          <td className="px-4 py-3 font-semibold text-tikari-green-dark">Investment accounts</td>
-                          <td className="px-4 py-3">Off-balance sheet (FAS 6)</td>
-                          <td className="px-4 py-3">On-balance sheet as deposits</td>
-                        </tr>
-                        <tr className="border-b border-tikari-green/20 bg-tikari-cream/30">
-                          <td className="px-4 py-3 font-semibold text-tikari-green-dark">Profit distribution</td>
-                          <td className="px-4 py-3">PSR-based, disclosed separately</td>
-                          <td className="px-4 py-3">Interest expense classification</td>
-                        </tr>
-                        <tr className="border-b border-tikari-green/20">
-                          <td className="px-4 py-3 font-semibold text-tikari-green-dark">Zakat</td>
-                          <td className="px-4 py-3">Recognized and disclosed (FAS 9)</td>
-                          <td className="px-4 py-3">Not addressed</td>
-                        </tr>
-                        <tr className="bg-tikari-cream/30">
-                          <td className="px-4 py-3 font-semibold text-tikari-green-dark">Shariah compliance</td>
-                          <td className="px-4 py-3">Core requirement</td>
-                          <td className="px-4 py-3">Not addressed</td>
-                        </tr>
+                        {keyDifferenceRows.map((rowKey, idx) => (
+                          <tr 
+                            key={rowKey}
+                            className={`border-b border-tikari-green/20 ${idx % 2 === 1 ? 'bg-tikari-cream/30' : ''} ${idx === keyDifferenceRows.length - 1 ? 'border-b-0' : ''}`}
+                          >
+                            <td className="px-4 py-3 font-semibold text-tikari-green-dark">
+                              {t(`content.keyDifferences.table.rows.${rowKey}.aspect`)}
+                            </td>
+                            <td className="px-4 py-3">
+                              {t(`content.keyDifferences.table.rows.${rowKey}.aaoifi`)}
+                            </td>
+                            <td className="px-4 py-3">
+                              {t(`content.keyDifferences.table.rows.${rowKey}.ohada`)}
+                            </td>
+                          </tr>
+                        ))}
                       </tbody>
                     </table>
                   </div>
                 </div>
 
                 {/* Chart of Accounts Mapping */}
-                <h2 id="chart-of-accounts" className="font-bold text-xl pt-4">Chart of Accounts Mapping</h2>
+                <h2 id="chart-of-accounts" className="font-bold text-xl pt-4">{t('content.chartOfAccounts.title')}</h2>
                 <p>
-                  One of the most critical reconciliation tasks is mapping Islamic finance transactions to OHADA's SYSCOHADA chart of accounts:
+                  {t('content.chartOfAccounts.intro')}
                 </p>
 
-                <h3 className="font-bold text-lg pt-2">SYSCOHADA Structure</h3>
+                <h3 className="font-bold text-lg pt-2">{t('content.chartOfAccounts.syscohada.title')}</h3>
                 <p>
-                  OHADA uses an 8-class chart of accounts:
+                  {t('content.chartOfAccounts.syscohada.intro')}
                 </p>
                 <ul>
-                  <li><strong>Class 1:</strong> Capital accounts (equity, reserves)</li>
-                  <li><strong>Class 2:</strong> Fixed assets (immobilizations)</li>
-                  <li><strong>Class 3:</strong> Inventory</li>
-                  <li><strong>Class 4:</strong> Third-party accounts (receivables, payables)</li>
-                  <li><strong>Class 5:</strong> Financial accounts (cash, bank)</li>
-                  <li><strong>Class 6:</strong> Expenses</li>
-                  <li><strong>Class 7:</strong> Revenue</li>
-                  <li><strong>Class 8:</strong> Off-balance sheet items</li>
+                  {syscohadaClasses.map((clsKey) => (
+                    <li key={clsKey}>
+                      <strong>{t(`content.chartOfAccounts.syscohada.classes.${clsKey}.label`)}</strong> {t(`content.chartOfAccounts.syscohada.classes.${clsKey}.text`)}
+                    </li>
+                  ))}
                 </ul>
 
-                <h3 className="font-bold text-lg pt-2">Mapping Islamic Products to SYSCOHADA</h3>
+                <h3 className="font-bold text-lg pt-2">{t('content.chartOfAccounts.mapping.title')}</h3>
 
                 <div className="not-prose my-8">
                   <div className="space-y-6">
-                    <div className="p-6 bg-white border-1 border-tikari-green/20 rounded-2xl">
-                      <h4 className="text-lg font-bold text-tikari-green-dark mb-4">Murabaha Receivables</h4>
-                      <div className="space-y-2 text-sm">
-                        <div className="flex justify-between items-center p-3 bg-tikari-cream/40">
-                          <span className="text-tikari-sage">AAOIFI Treatment:</span>
-                          <span className="font-mono text-tikari-green-dark">Murabaha Receivables (FAS 2)</span>
+                    {mappingCards.map((cardKey) => (
+                      <div key={cardKey} className="p-6 bg-white border-1 border-tikari-green/20 rounded-2xl">
+                        <h4 className="text-lg font-bold text-tikari-green-dark mb-4">
+                          {t(`content.chartOfAccounts.mapping.cards.${cardKey}.title`)}
+                        </h4>
+                        <div className="space-y-2 text-sm">
+                          <div className="flex justify-between items-center p-3 bg-tikari-cream/40">
+                            <span className="text-tikari-sage">{t('content.chartOfAccounts.mapping.aaoifiLabel')}</span>
+                            <span className="font-mono text-tikari-green-dark">{t(`content.chartOfAccounts.mapping.cards.${cardKey}.aaoifiValue`)}</span>
+                          </div>
+                          <div className="flex items-center justify-center py-2">
+                            <ArrowsLeftRight className="h-6 w-6 text-tikari-gold" weight="bold" />
+                          </div>
+                          <div className="flex justify-between items-center p-3 bg-tikari-cream/40">
+                            <span className="text-tikari-sage">{t('content.chartOfAccounts.mapping.ohadaLabel')}</span>
+                            <span className="font-mono text-tikari-green-dark">{t(`content.chartOfAccounts.mapping.cards.${cardKey}.ohadaValue`)}</span>
+                          </div>
                         </div>
-                        <div className="flex items-center justify-center py-2">
-                          <ArrowsLeftRight className="h-6 w-6 text-tikari-gold" weight="bold" />
-                        </div>
-                        <div className="flex justify-between items-center p-3 bg-tikari-cream/40">
-                          <span className="text-tikari-sage">OHADA Mapping:</span>
-                          <span className="font-mono text-tikari-green-dark">Class 4 - Account 411X (Customers)</span>
-                        </div>
+                        <p className="text-sm text-tikari-sage mt-4 italic">
+                          {t(`content.chartOfAccounts.mapping.cards.${cardKey}.note`)}
+                        </p>
                       </div>
-                      <p className="text-sm text-tikari-sage mt-4 italic">
-                        Record Murabaha receivables under customer accounts, with subledger detail indicating Islamic product type.
-                      </p>
-                    </div>
-
-                    <div className="p-6 bg-white border-1 border-tikari-green/20 rounded-2xl">
-                      <h4 className="text-lg font-bold text-tikari-green-dark mb-4">Mudarabah Investment Accounts</h4>
-                      <div className="space-y-2 text-sm">
-                        <div className="flex justify-between items-center p-3 bg-tikari-cream/40">
-                          <span className="text-tikari-sage">AAOIFI Treatment:</span>
-                          <span className="font-mono text-tikari-green-dark">Off-balance sheet (FAS 6)</span>
-                        </div>
-                        <div className="flex items-center justify-center py-2">
-                          <ArrowsLeftRight className="h-6 w-6 text-tikari-gold" weight="bold" />
-                        </div>
-                        <div className="flex justify-between items-center p-3 bg-tikari-cream/40">
-                          <span className="text-tikari-sage">OHADA Mapping:</span>
-                          <span className="font-mono text-tikari-green-dark">Class 1 - Account 161X (Deposits/Liabilities)</span>
-                        </div>
-                      </div>
-                      <p className="text-sm text-tikari-sage mt-4 italic">
-                        OHADA requires on-balance sheet treatment, but notes can clarify the Mudarabah nature and PSR arrangement.
-                      </p>
-                    </div>
-
-                    <div className="p-6 bg-white border-1 border-tikari-green/20 rounded-2xl">
-                      <h4 className="text-lg font-bold text-tikari-green-dark mb-4">Profit Distribution to IAH</h4>
-                      <div className="space-y-2 text-sm">
-                        <div className="flex justify-between items-center p-3 bg-tikari-cream/40">
-                          <span className="text-tikari-sage">AAOIFI Treatment:</span>
-                          <span className="font-mono text-tikari-green-dark">Separate line item (not expense)</span>
-                        </div>
-                        <div className="flex items-center justify-center py-2">
-                          <ArrowsLeftRight className="h-6 w-6 text-tikari-gold" weight="bold" />
-                        </div>
-                        <div className="flex justify-between items-center p-3 bg-tikari-cream/40">
-                          <span className="text-tikari-sage">OHADA Mapping:</span>
-                          <span className="font-mono text-tikari-green-dark">Class 6 - Account 671X (Interest/Charges)</span>
-                        </div>
-                      </div>
-                      <p className="text-sm text-tikari-sage mt-4 italic">
-                        While economically profit-sharing, OHADA treats it as interest expense. Detailed notes must clarify the Shariah-compliant nature.
-                      </p>
-                    </div>
-
-                    <div className="p-6 bg-white border-1 border-tikari-green/20 rounded-2xl">
-                      <h4 className="text-lg font-bold text-tikari-green-dark mb-4">Zakat</h4>
-                      <div className="space-y-2 text-sm">
-                        <div className="flex justify-between items-center p-3 bg-tikari-cream/40">
-                          <span className="text-tikari-sage">AAOIFI Treatment:</span>
-                          <span className="font-mono text-tikari-green-dark">Disclosed separately (FAS 9)</span>
-                        </div>
-                        <div className="flex items-center justify-center py-2">
-                          <ArrowsLeftRight className="h-6 w-6 text-tikari-gold" weight="bold" />
-                        </div>
-                        <div className="flex justify-between items-center p-3 bg-tikari-cream/40">
-                          <span className="text-tikari-sage">OHADA Mapping:</span>
-                          <span className="font-mono text-tikari-green-dark">Class 6 - Account 6583 (Charitable Donations)</span>
-                        </div>
-                      </div>
-                      <p className="text-sm text-tikari-sage mt-4 italic">
-                        Zakat is treated as a charitable expense. If the institution facilitates Zakat payment for customers, use Class 4 (payables).
-                      </p>
-                    </div>
+                    ))}
                   </div>
                 </div>
 
                 {/* Financial Statements */}
-                <h2 id="financial-statements" className="font-bold text-xl pt-4">Financial Statement Requirements</h2>
+                <h2 id="financial-statements" className="font-bold text-xl pt-4">{t('content.financialStatements.title')}</h2>
                 <p>
-                  Both AAOIFI and OHADA mandate specific financial statement formats:
+                  {t('content.financialStatements.intro')}
                 </p>
 
-                <h3 className="font-bold text-lg pt-2">AAOIFI Required Statements</h3>
+                <h3 className="font-bold text-lg pt-2">{t('content.financialStatements.aaoifiStatements.title')}</h3>
                 <ul>
-                  <li><strong>Statement of Financial Position (Balance Sheet)</strong></li>
-                  <li><strong>Statement of Income:</strong> Separates shareholder income from IAH income</li>
-                  <li><strong>Statement of Cash Flows</strong></li>
-                  <li><strong>Statement of Changes in Equity</strong></li>
-                  <li><strong>Statement of Changes in Restricted Investments:</strong> For Mudarabah accounts</li>
-                  <li><strong>Statement of Sources and Uses of Zakat and Charity Funds</strong></li>
-                  <li><strong>Notes to Financial Statements:</strong> Including PSR disclosures and Shariah board report</li>
+                  <li><strong>{t('content.financialStatements.aaoifiStatements.items.balanceSheet')}</strong></li>
+                  <li><strong>{t('content.financialStatements.aaoifiStatements.items.incomeStatement')}</strong></li>
+                  <li><strong>{t('content.financialStatements.aaoifiStatements.items.cashFlows')}</strong></li>
+                  <li><strong>{t('content.financialStatements.aaoifiStatements.items.changesInEquity')}</strong></li>
+                  <li><strong>{t('content.financialStatements.aaoifiStatements.items.restrictedInvestments')}</strong></li>
+                  <li><strong>{t('content.financialStatements.aaoifiStatements.items.zakatFunds')}</strong></li>
+                  <li><strong>{t('content.financialStatements.aaoifiStatements.items.notes')}</strong></li>
                 </ul>
 
-                <h3 className="font-bold text-lg pt-2">OHADA Required Statements</h3>
+                <h3 className="font-bold text-lg pt-2">{t('content.financialStatements.ohadaStatements.title')}</h3>
                 <ul>
-                  <li><strong>Balance Sheet (Bilan):</strong> Standardized format</li>
-                  <li><strong>Income Statement (Compte de Résultat):</strong> Detailed revenue and expense breakdown</li>
-                  <li><strong>Cash Flow Statement (Tableau de Flux de Trésorerie)</strong></li>
-                  <li><strong>Notes (Annexe):</strong> Accounting policies and detailed disclosures</li>
+                  <li><strong>{t('content.financialStatements.ohadaStatements.items.balanceSheet')}</strong></li>
+                  <li><strong>{t('content.financialStatements.ohadaStatements.items.incomeStatement')}</strong></li>
+                  <li><strong>{t('content.financialStatements.ohadaStatements.items.cashFlows')}</strong></li>
+                  <li><strong>{t('content.financialStatements.ohadaStatements.items.notes')}</strong></li>
                 </ul>
 
-                <h3 className="font-bold text-lg pt-2">Reconciliation Approach</h3>
+                <h3 className="font-bold text-lg pt-2">{t('content.financialStatements.reconciliation.title')}</h3>
                 <p>
-                  A practical dual-reporting strategy:
+                  {t('content.financialStatements.reconciliation.intro')}
                 </p>
                 <ol>
-                  <li><strong>Maintain books in AAOIFI format:</strong> This ensures Shariah compliance and provides detailed Islamic finance tracking</li>
-                  <li><strong>Create OHADA mapping rules:</strong> Define how each AAOIFI account maps to SYSCOHADA</li>
-                  <li><strong>Generate OHADA statements:</strong> Use mapping rules to produce regulatory-compliant reports</li>
-                  <li><strong>Supplement with notes:</strong> Provide extensive footnotes explaining Islamic finance structures within OHADA reports</li>
+                  <li><strong>{t('content.financialStatements.reconciliation.steps.aaoifiBooks.label')}</strong> {t('content.financialStatements.reconciliation.steps.aaoifiBooks.text')}</li>
+                  <li><strong>{t('content.financialStatements.reconciliation.steps.mappingRules.label')}</strong> {t('content.financialStatements.reconciliation.steps.mappingRules.text')}</li>
+                  <li><strong>{t('content.financialStatements.reconciliation.steps.ohadaStatements.label')}</strong> {t('content.financialStatements.reconciliation.steps.ohadaStatements.text')}</li>
+                  <li><strong>{t('content.financialStatements.reconciliation.steps.notesSupplement.label')}</strong> {t('content.financialStatements.reconciliation.steps.notesSupplement.text')}</li>
                 </ol>
 
                 {/* Dual Compliance */}
-                <h2 id="dual-compliance" className="font-bold text-xl pt-4">Dual Compliance Strategy</h2>
+                <h2 id="dual-compliance" className="font-bold text-xl pt-4">{t('content.dualCompliance.title')}</h2>
                 <p>
-                  Implementing both frameworks simultaneously requires a systematic approach:
+                  {t('content.dualCompliance.intro')}
                 </p>
 
-                <h3 className="font-bold text-lg pt-2">Step 1: Establish Parallel Chart of Accounts</h3>
+                <h3 className="font-bold text-lg pt-2">{t('content.dualCompliance.step1.title')}</h3>
                 <p>
-                  Create a dual chart of accounts where each AAOIFI account has a corresponding SYSCOHADA code:
+                  {t('content.dualCompliance.step1.intro')}
                 </p>
 
                 <div className="not-prose my-6">
@@ -438,162 +416,137 @@ export default function AAOIFIvsOHADAPage() {
                     <table className="w-full border-1 border-tikari-green/20 text-sm rounded-2xl">
                       <thead className="bg-tikari-green-dark text-white">
                         <tr>
-                          <th className="px-4 py-3 text-left font-bold">Islamic Product</th>
-                          <th className="px-4 py-3 text-left font-bold">AAOIFI Account</th>
-                          <th className="px-4 py-3 text-left font-bold">SYSCOHADA Code</th>
+                          <th className="px-4 py-3 text-left font-bold">{t('content.dualCompliance.step1.table.headers.product')}</th>
+                          <th className="px-4 py-3 text-left font-bold">{t('content.dualCompliance.step1.table.headers.aaoifiAccount')}</th>
+                          <th className="px-4 py-3 text-left font-bold">{t('content.dualCompliance.step1.table.headers.ohadaCode')}</th>
                         </tr>
                       </thead>
                       <tbody className="text-tikari-sage">
-                        <tr className="border-b border-tikari-green/20">
-                          <td className="px-4 py-3">Murabaha Receivables</td>
-                          <td className="px-4 py-3 font-mono text-xs">120-001</td>
-                          <td className="px-4 py-3 font-mono text-xs">4111</td>
-                        </tr>
-                        <tr className="border-b border-tikari-green/20 bg-tikari-cream/30">
-                          <td className="px-4 py-3">Mudarabah Deposits</td>
-                          <td className="px-4 py-3 font-mono text-xs">Off-BS</td>
-                          <td className="px-4 py-3 font-mono text-xs">1611</td>
-                        </tr>
-                        <tr className="border-b border-tikari-green/20">
-                          <td className="px-4 py-3">Musharakah Investments</td>
-                          <td className="px-4 py-3 font-mono text-xs">130-002</td>
-                          <td className="px-4 py-3 font-mono text-xs">2613</td>
-                        </tr>
-                        <tr className="bg-tikari-cream/30">
-                          <td className="px-4 py-3">Ijara Assets (Leased)</td>
-                          <td className="px-4 py-3 font-mono text-xs">140-003</td>
-                          <td className="px-4 py-3 font-mono text-xs">2441</td>
-                        </tr>
+                        {parallelAccountRows.map((rowKey, idx) => (
+                          <tr 
+                            key={rowKey}
+                            className={`border-b border-tikari-green/20 ${idx % 2 === 1 ? 'bg-tikari-cream/30' : ''} ${idx === parallelAccountRows.length - 1 ? 'border-b-0' : ''}`}
+                          >
+                            <td className="px-4 py-3 font-medium text-tikari-green-dark">
+                              {t(`content.dualCompliance.step1.table.rows.${rowKey}.product`)}
+                            </td>
+                            <td className="px-4 py-3 font-mono text-xs">
+                              {t(`content.dualCompliance.step1.table.rows.${rowKey}.aaoifiAccount`)}
+                            </td>
+                            <td className="px-4 py-3 font-mono text-xs">
+                              {t(`content.dualCompliance.step1.table.rows.${rowKey}.ohadaCode`)}
+                            </td>
+                          </tr>
+                        ))}
                       </tbody>
                     </table>
                   </div>
                 </div>
 
-                <h3 className="font-bold text-lg pt-2">Step 2: Implement Subledgers</h3>
+                <h3 className="font-bold text-lg pt-2">{t('content.dualCompliance.step2.title')}</h3>
                 <p>
-                  Use subledgers to capture Islamic-specific details while maintaining OHADA compliance:
+                  {t('content.dualCompliance.step2.intro')}
                 </p>
                 <ul>
-                  <li><strong>Customer subledger:</strong> Track Murabaha contract details (cost, markup, installment schedule)</li>
-                  <li><strong>Investment account subledger:</strong> Record PSR, profit allocation, and IAH balances</li>
-                  <li><strong>Shariah compliance subledger:</strong> Document Shariah board approvals and audit findings</li>
+                  <li><strong>{t('content.dualCompliance.step2.items.customer.label')}</strong> {t('content.dualCompliance.step2.items.customer.text')}</li>
+                  <li><strong>{t('content.dualCompliance.step2.items.investment.label')}</strong> {t('content.dualCompliance.step2.items.investment.text')}</li>
+                  <li><strong>{t('content.dualCompliance.step2.items.shariah.label')}</strong> {t('content.dualCompliance.step2.items.shariah.text')}</li>
                 </ul>
 
-                <h3 className="font-bold text-lg pt-2">Step 3: Quarterly Reconciliation Process</h3>
+                <h3 className="font-bold text-lg pt-2">{t('content.dualCompliance.step3.title')}</h3>
                 <p>
-                  Establish a quarterly workflow:
+                  {t('content.dualCompliance.step3.intro')}
                 </p>
                 <ol>
-                  <li><strong>Close books in AAOIFI format</strong></li>
-                  <li><strong>Run automated mapping:</strong> Convert AAOIFI balances to SYSCOHADA accounts</li>
-                  <li><strong>Generate OHADA statements:</strong> Produce balance sheet, income statement, and notes</li>
-                  <li><strong>Perform variance analysis:</strong> Verify that AAOIFI and OHADA reports reconcile</li>
-                  <li><strong>Submit to Regulator:</strong> File OHADA-compliant reports with your central bank (such as COBAC or BCEAO)</li>
-                  <li><strong>Prepare AAOIFI report for Shariah board:</strong> Provide Islamic finance-specific analysis</li>
+                  <li>{t('content.dualCompliance.step3.steps.step1')}</li>
+                  <li>{t('content.dualCompliance.step3.steps.step2')}</li>
+                  <li>{t('content.dualCompliance.step3.steps.step3')}</li>
+                  <li>{t('content.dualCompliance.step3.steps.step4')}</li>
+                  <li>{t('content.dualCompliance.step3.steps.step5')}</li>
+                  <li>{t('content.dualCompliance.step3.steps.step6')}</li>
                 </ol>
 
-                <h3 className="font-bold text-lg pt-2">Step 4: Disclosure Notes</h3>
+                <h3 className="font-bold text-lg pt-2">{t('content.dualCompliance.step4.title')}</h3>
                 <p>
-                  Use OHADA financial statement notes (Annexe) to bridge the gap:
+                  {t('content.dualCompliance.step4.intro')}
                 </p>
                 <ul>
-                  <li><strong>Note 1 - Accounting policies:</strong> Explain that the institution operates under dual compliance (AAOIFI + OHADA)</li>
-                  <li><strong>Note 2 - Islamic products:</strong> Define Murabaha, Mudarabah, Musharakah, and their economic substance</li>
-                  <li><strong>Note 3 - Investment accounts:</strong> Disclose PSR, profit distribution methodology, and IAH rights</li>
-                  <li><strong>Note 4 - Shariah compliance:</strong> Reference Shariah board composition and approval process</li>
-                  <li><strong>Note 5 - Zakat:</strong> Explain Zakat calculation and distribution if applicable</li>
+                  <li><strong>{t('content.dualCompliance.step4.notes.note1.label')}</strong> {t('content.dualCompliance.step4.notes.note1.text')}</li>
+                  <li><strong>{t('content.dualCompliance.step4.notes.note2.label')}</strong> {t('content.dualCompliance.step4.notes.note2.text')}</li>
+                  <li><strong>{t('content.dualCompliance.step4.notes.note3.label')}</strong> {t('content.dualCompliance.step4.notes.note3.text')}</li>
+                  <li><strong>{t('content.dualCompliance.step4.notes.note4.label')}</strong> {t('content.dualCompliance.step4.notes.note4.text')}</li>
+                  <li><strong>{t('content.dualCompliance.step4.notes.note5.label')}</strong> {t('content.dualCompliance.step4.notes.note5.text')}</li>
                 </ul>
 
                 {/* Practical Implementation */}
-                <h2 id="practical-implementation" className="font-bold text-xl pt-4">Practical Implementation Tips</h2>
+                <h2 id="practical-implementation" className="font-bold text-xl pt-4">{t('content.practicalImplementation.title')}</h2>
                 <p>
-                  Based on real-world experience from Islamic finance institutions operating in OHADA zones:
+                  {t('content.practicalImplementation.intro')}
                 </p>
 
-                <h3 className="font-bold text-lg pt-2">1. Start with Core Products</h3>
+                <h3 className="font-bold text-lg pt-2">{t('content.practicalImplementation.tip1.title')}</h3>
                 <p>
-                  Don't try to map every Islamic product at once. Begin with:
+                  {t('content.practicalImplementation.tip1.intro')}
                 </p>
                 <ul>
-                  <li>Murabaha (easiest to map to conventional loan accounting)</li>
-                  <li>Mudarabah investment accounts (similar to term deposits)</li>
-                  <li>Qard Hassan (benevolent loans, straightforward)</li>
+                  <li>{t('content.practicalImplementation.tip1.products.murabaha')}</li>
+                  <li>{t('content.practicalImplementation.tip1.products.mudarabah')}</li>
+                  <li>{t('content.practicalImplementation.tip1.products.qardHassan')}</li>
                 </ul>
                 <p>
-                  Add complex products (Musharakah, Ijara, Salam) gradually as you refine your mapping rules.
+                  {t('content.practicalImplementation.tip1.complexProducts')}
                 </p>
 
-                <h3 className="font-bold text-lg pt-2">2. Engage Both AAOIFI and OHADA Experts</h3>
+                <h3 className="font-bold text-lg pt-2">{t('content.practicalImplementation.tip2.title')}</h3>
                 <ul>
-                  <li><strong>Hire an AAOIFI-certified accountant:</strong> Ensure someone on your team understands Islamic finance accounting principles</li>
-                  <li><strong>Consult OHADA practitioners:</strong> Work with accountants experienced in regional regulatory reporting</li>
-                  <li><strong>Coordinate with Shariah board:</strong> Ensure accounting treatments align with Shariah interpretations</li>
+                  <li><strong>{t('content.practicalImplementation.tip2.items.aaoifiExpert.label')}</strong> {t('content.practicalImplementation.tip2.items.aaoifiExpert.text')}</li>
+                  <li><strong>{t('content.practicalImplementation.tip2.items.ohadaPractitioner.label')}</strong> {t('content.practicalImplementation.tip2.items.ohadaPractitioner.text')}</li>
+                  <li><strong>{t('content.practicalImplementation.tip2.items.shariahCoordination.label')}</strong> {t('content.practicalImplementation.tip2.items.shariahCoordination.text')}</li>
                 </ul>
 
-                <h3 className="font-bold text-lg pt-2">3. Build Audit Trails</h3>
+                <h3 className="font-bold text-lg pt-2">{t('content.practicalImplementation.tip3.title')}</h3>
                 <p>
-                  Maintain comprehensive documentation for every mapping decision:
+                  {t('content.practicalImplementation.tip3.intro')}
                 </p>
                 <ul>
-                  <li>Why a particular AAOIFI account maps to a specific SYSCOHADA code</li>
-                  <li>How profit distribution is classified (expense vs. equity allocation)</li>
-                  <li>Rationale for off-balance sheet vs. on-balance sheet treatment</li>
+                  <li>{t('content.practicalImplementation.tip3.items.mappingRationale')}</li>
+                  <li>{t('content.practicalImplementation.tip3.items.profitClassification')}</li>
+                  <li>{t('content.practicalImplementation.tip3.items.balanceSheetTreatment')}</li>
                 </ul>
                 <p>
-                  This documentation protects against regulatory scrutiny and simplifies annual audits.
+                  {t('content.practicalImplementation.tip3.conclusion')}
                 </p>
 
-                <h3 className="font-bold text-lg pt-2">4. Leverage Technology (see next section)</h3>
+                <h3 className="font-bold text-lg pt-2">{t('content.practicalImplementation.tip4.title')}</h3>
                 <p>
-                  Manual dual compliance is error-prone and time-consuming. Modern software solutions automate mapping and reconciliation.
+                  {t('content.practicalImplementation.tip4.text')}
                 </p>
 
                 {/* Software Solutions */}
-                <h2 id="software-solutions" className="font-bold text-xl pt-4">Technology Solutions for Dual Compliance</h2>
+                <h2 id="software-solutions" className="font-bold text-xl pt-4">{t('content.softwareSolutions.title')}</h2>
                 <p>
-                  Manual accounting is not feasible for dual compliance at scale. Specialized software addresses this challenge:
+                  {t('content.softwareSolutions.intro')}
                 </p>
 
-                <h3 className="font-bold text-lg pt-2">Requirements for Dual Compliance Software</h3>
+                <h3 className="font-bold text-lg pt-2">{t('content.softwareSolutions.requirements.title')}</h3>
                 <ul>
-                  <li><strong>Dual chart of accounts:</strong> Native support for both AAOIFI and SYSCOHADA</li>
-                  <li><strong>Automated mapping rules:</strong> Configure once, apply automatically</li>
-                  <li><strong>Parallel reporting:</strong> Generate both AAOIFI and OHADA statements from the same data</li>
-                  <li><strong>Subledger management:</strong> Track Islamic product details within OHADA accounts</li>
-                  <li><strong>Reconciliation tools:</strong> Verify that AAOIFI and OHADA reports balance</li>
-                  <li><strong>Multilingual support:</strong> Arabic, French, and English interfaces</li>
-                  <li><strong>Audit trail:</strong> Complete transaction history for regulatory review</li>
+                  <li><strong>{t('content.softwareSolutions.requirements.items.dualChart.label')}</strong> {t('content.softwareSolutions.requirements.items.dualChart.text')}</li>
+                  <li><strong>{t('content.softwareSolutions.requirements.items.automatedMapping.label')}</strong> {t('content.softwareSolutions.requirements.items.automatedMapping.text')}</li>
+                  <li><strong>{t('content.softwareSolutions.requirements.items.parallelReporting.label')}</strong> {t('content.softwareSolutions.requirements.items.parallelReporting.text')}</li>
+                  <li><strong>{t('content.softwareSolutions.requirements.items.subledgerManagement.label')}</strong> {t('content.softwareSolutions.requirements.items.subledgerManagement.text')}</li>
+                  <li><strong>{t('content.softwareSolutions.requirements.items.reconciliationTools.label')}</strong> {t('content.softwareSolutions.requirements.items.reconciliationTools.text')}</li>
+                  <li><strong>{t('content.softwareSolutions.requirements.items.multilingualSupport.label')}</strong> {t('content.softwareSolutions.requirements.items.multilingualSupport.text')}</li>
+                  <li><strong>{t('content.softwareSolutions.requirements.items.auditTrail.label')}</strong> {t('content.softwareSolutions.requirements.items.auditTrail.text')}</li>
                 </ul>
 
-                <h3 className="font-bold text-lg pt-2">TIKARI's Dual Compliance Features</h3>
+                <h3 className="font-bold text-lg pt-2">{t('content.softwareSolutions.tikariFeatures.title')}</h3>
                 <p>
-                  TIKARI is purpose-built for Islamic finance across African regulatory environments:
+                  {t('content.softwareSolutions.tikariFeatures.intro')}
                 </p>
 
                 <div className="not-prose my-8">
                   <div className="grid md:grid-cols-2 gap-4">
-                    {[
-                      {
-                        icon: FileText,
-                        title: "Pre-Mapped Chart of Accounts",
-                        description: "AAOIFI accounts pre-mapped to SYSCOHADA codes, customizable for your institution"
-                      },
-                      {
-                        icon: ArrowsLeftRight,
-                        title: "Automated Reconciliation",
-                        description: "Real-time variance analysis between AAOIFI and OHADA reports"
-                      },
-                      {
-                        icon: Globe,
-                        title: "Bilingual Reporting",
-                        description: "Generate statements in both French (for regulators) and English (for stakeholders)"
-                      },
-                      {
-                        icon: Bank,
-                        title: "Regulator Submission-Ready",
-                        description: "Export reports in formats required by regional banking regulators (like COBAC and BCEAO)"
-                      }
-                    ].map((feature, idx) => {
+                    {tikariFeatures.map((feature, idx) => {
                       const Icon = feature.icon;
                       return (
                         <div key={idx} className="flex gap-4 p-6 bg-tikari-cream/40 border-1 border-tikari-green/20 rounded-2xl">

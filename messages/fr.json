@@ -3629,8 +3629,14 @@
             "paragraph1": "Dans un arrangement Mudarabah, le client (rab al-mal, ou fournisseur de capital) dépose des fonds dans un compte d'investissement, et la banque (mudarib, ou gestionnaire de fonds) investit ces fonds dans des entreprises conformes à la Charia. Lorsque des bénéfices sont générés, ils sont distribués selon le RPB convenu au début de la relation.",
             "paragraph2": "Par exemple, un RPB de 60:40 signifie :",
             "example": {
-              "customer": "60 % des bénéfices vont au client (déposant)",
-              "bank": "40 % des bénéfices vont à la banque (gestionnaire d'investissement)"
+              "customer": {
+                "percent": "60 %",
+                "text": "des bénéfices vont au client (déposant)"
+              },
+              "bank": {
+                "percent": "40 %",
+                "text": "des bénéfices vont à la banque (gestionnaire d'investissement)"
+              }
             },
             "paragraph3": "Contrairement aux taux d'intérêt conventionnels, qui sont fixes et garantis, les rendements basés sur le RPB fluctuent en fonction de la performance réelle des investissements. Cela s'aligne sur les principes islamiques de partage des risques et de distribution des profits et des pertes."
           },
@@ -3663,19 +3669,40 @@
               "title": "FAS 6 : Capitaux Propres des Titulaires de Comptes d'Investissement",
               "intro": "La Norme Comptable Financière AAOIFI n° 6 exige :",
               "requirements": {
-                "precontractual": "Divulgation précontractuelle : Le RPB doit être communiqué aux clients avant qu'ils n'ouvrent un compte d'investissement.",
-                "written": "Documentation écrite : Le RPB doit figurer dans l'accord d'ouverture de compte.",
-                "methodology": "Méthodologie de calcul des bénéfices : Les banques doivent expliquer comment les bénéfices sont calculés et alloués.",
-                "loss": "Divulgation de la prise en charge des pertes : Les clients doivent être informés que les pertes (le cas échéant) sont entièrement supportées par eux, tandis que la banque ne perd que son temps et ses efforts."
+                "precontractual": {
+                  "label": "Divulgation précontractuelle :",
+                  "text": "Le RPB doit être communiqué aux clients avant qu'ils n'ouvrent un compte d'investissement."
+                },
+                "written": {
+                  "label": "Documentation écrite :",
+                  "text": "Le RPB doit figurer dans l'accord d'ouverture de compte."
+                },
+                "methodology": {
+                  "label": "Méthodologie de calcul des bénéfices :",
+                  "text": "Les banques doivent expliquer comment les bénéfices sont calculés et alloués."
+                },
+                "loss": {
+                  "label": "Divulgation de la prise en charge des pertes :",
+                  "text": "Les clients doivent être informés que les pertes (le cas échéant) sont entièrement supportées par eux, tandis que la banque ne perd que son temps et ses efforts."
+                }
               }
             },
             "fas11": {
               "title": "FAS 11 : Provisions et Réserves",
               "intro": "Cette norme aborde la manière dont les banques gèrent les Réserves d'Égalisation des Bénéfices (REB) et les Réserves de Risque d'Investissement (RRI) :",
               "items": {
-                "per": "REB : Montants mis de côté pour lisser la distribution des bénéfices sur les périodes (divulgués séparément)",
-                "irr": "RRI : Réserves pour couvrir les pertes d'investissement potentielles (également divulguées séparément)",
-                "transparency": "Exigence de transparence : Les clients doivent comprendre comment les réserves impactent leur part réelle de bénéfices"
+                "per": {
+                  "label": "REB :",
+                  "text": "Montants mis de côté pour lisser la distribution des bénéfices sur les périodes (divulgués séparément)"
+                },
+                "irr": {
+                  "label": "RRI :",
+                  "text": "Réserves pour couvrir les pertes d'investissement potentielles (également divulguées séparément)"
+                },
+                "transparency": {
+                  "label": "Exigence de transparence :",
+                  "text": "Les clients doivent comprendre comment les réserves impactent leur part réelle de bénéfices"
+                }
               }
             },
             "shariah40": {
@@ -3693,23 +3720,35 @@
             "title": "Meilleures Pratiques de Divulgation",
             "intro": "Au-delà du respect des exigences minimales de l'AAOIFI, les institutions financières islamiques devraient adopter ces meilleures pratiques :",
             "proactiveCommunication": {
-              "title": "Communication Proactive",
+              "title": "1. Communication Proactive",
               "items": {
-                "marketing": "Matériel marketing : Inclure les plages de RPB dans les brochures, les sites Web et les publicités",
-                "accountOpening": "Ouverture de compte : Mettre en évidence le RPB de manière proéminente dans le formulaire de demande",
-                "welcomeKits": "Kits de bienvenue : Fournir un explicatif du RPB d'une page aux nouveaux clients",
-                "statements": "Relevés trimestriels : Rappeler le RPB et montrer l'allocation réelle des bénéfices"
+                "marketing": {
+                  "label": "Matériel marketing :",
+                  "text": "Inclure les plages de RPB dans les brochures, les sites Web et les publicités"
+                },
+                "accountOpening": {
+                  "label": "Ouverture de compte :",
+                  "text": "Mettre en évidence le RPB de manière proéminente dans le formulaire de demande"
+                },
+                "welcomeKits": {
+                  "label": "Kits de bienvenue :",
+                  "text": "Fournir un explicatif du RPB d'une page aux nouveaux clients"
+                },
+                "statements": {
+                  "label": "Relevés trimestriels :",
+                  "text": "Rappeler le RPB et montrer l'allocation réelle des bénéfices"
+                }
               }
             },
             "plainLanguage": {
-              "title": "Langage Simple",
+              "title": "2. Langage Simple",
               "intro": "Évitez le jargon. Au lieu de :",
               "badExample": "\"Le mudarib conservera 35 % des bénéfices réalisés du pool d'investissement commun, sous réserve des affectations REB et RRI telles que déterminées par l'ACE.\"",
               "goodIntro": "Utilisez un langage clair :",
               "goodExample": "\"Lorsque votre investissement génère un bénéfice, vous recevez 65 % et la banque reçoit 35 %. Tous les bénéfices mis de côté pour les réserves seront expliqués dans votre relevé trimestriel.\""
             },
             "visualAids": {
-              "title": "Aides Visuelles",
+              "title": "3. Aides Visuelles",
               "intro": "Utilisez des graphiques, des infographies et des exemples pour illustrer le RPB :",
               "exampleTitle": "Exemple d'Illustration du RPB",
               "customerShare": "Votre Part (Client)",
@@ -3717,10 +3756,18 @@
               "exampleNote": "Si la banque gagne 1 000 000 d'unités de bénéfice de votre investissement, vous recevez 700 000 unités et la banque reçoit 300 000 unités."
             },
             "comparativeContext": {
-              "title": "Contexte Comparatif",
+              "title": "4. Contexte Comparatif",
               "intro": "Aidez les clients à comprendre le RPB en le comparant aux intérêts conventionnels :",
-              "conventional": "Compte d'épargne conventionnel : 2 % d'intérêt fixe (garanti, quelle que soit la performance de la banque)",
-              "islamic": "Compte Mudarabah islamique : 70 % des bénéfices (variable, basé sur les rendements d'investissement réels)",
+              "items": {
+                "conventional": {
+                  "label": "Compte d'épargne conventionnel :",
+                  "text": "2 % d'intérêt fixe (garanti, quelle que soit la performance de la banque)"
+                },
+                "islamic": {
+                  "label": "Compte Mudarabah islamique :",
+                  "text": "70 % des bénéfices (variable, basé sur les rendements d'investissement réels)"
+                }
+              },
               "clarification": "Clarifiez que si la banque obtient des rendements plus élevés dans l'investissement islamique, les rendements basés sur le RPB du client peuvent dépasser les intérêts conventionnels mais il existe également un risque de baisse."
             }
           },
@@ -3729,28 +3776,36 @@
             "intro": "Parcourons des scénarios pratiques pour démontrer le fonctionnement du RPB :",
             "scenario1": {
               "title": "Scénario 1 : Distribution Simple des Bénéfices",
-              "setup": "Configuration :",
+              "setupLabel": "Configuration :",
               "setupDetail": "Un client dépose 10 000 000 d'unités dans un compte d'investissement Mudarabah avec un RPB de 60:40 (60 % client, 40 % banque).",
-              "performance": "Performance :",
+              "performanceLabel": "Performance :",
               "performanceDetail": "La banque investit les fonds et gagne 800 000 unités de bénéfice sur l'année.",
-              "totalProfit": "Bénéfice Total :",
-              "customerShare": "Part du Client (60 %) :",
-              "bankShare": "Part de la Banque (40 %) :",
-              "accountBalance": "Solde du Compte Client :",
+              "totalProfitLabel": "Bénéfice Total :",
+              "totalProfitValue": "800 000 unités",
+              "customerShareLabel": "Part du Client (60 %) :",
+              "customerShareValue": "480 000 unités",
+              "bankShareLabel": "Part de la Banque (40 %) :",
+              "bankShareValue": "320 000 unités",
+              "accountBalanceLabel": "Solde du Compte Client :",
+              "accountBalanceValue": "10 480 000 unités",
               "effectiveReturn": "Rendement effectif pour le client : 4,8 % (480K de bénéfice ÷ 10M de dépôt)"
             },
             "scenario2": {
               "title": "Scénario 2 : Scénario de Perte",
-              "setup": "Configuration :",
+              "setupLabel": "Configuration :",
               "setupDetail": "Même client, même dépôt de 10 000 000 d'unités, RPB 60:40.",
-              "performance": "Performance :",
+              "performanceLabel": "Performance :",
               "performanceDetail": "Les investissements de la banque sont médiocres, entraînant une perte de 300 000 unités.",
-              "totalLoss": "Perte Totale :",
-              "customerBears": "Le Client Supporte la Perte (100 %) :",
-              "bankBears": "La Banque Supporte la Perte :",
-              "bankBearsDetail": "0 unités (perd temps/effort)",
-              "accountBalance": "Solde du Compte Client :",
-              "keyPrinciple": "Principe clé : Dans Mudarabah, les pertes en capital sont entièrement supportées par le fournisseur de capital (client), tandis que le gestionnaire de fonds (banque) ne perd que son temps et ses efforts sauf si la perte résulte d'une négligence ou d'une violation du contrat."
+              "totalLossLabel": "Perte Totale :",
+              "totalLossValue": "-300 000 unités",
+              "customerBearsLabel": "Le Client Supporte la Perte (100 %) :",
+              "customerBearsValue": "-300 000 unités",
+              "bankBearsLabel": "La Banque Supporte la Perte :",
+              "bankBearsValue": "0 unité (perd temps/effort)",
+              "accountBalanceLabel": "Solde du Compte Client :",
+              "accountBalanceValue": "9 700 000 unités",
+              "keyPrincipleLabel": "Principe clé :",
+              "keyPrincipleText": "Dans Mudarabah, les pertes en capital sont entièrement supportées par le fournisseur de capital (client), tandis que le gestionnaire de fonds (banque) ne perd que son temps et ses efforts sauf si la perte résulte d'une négligence ou d'une violation du contrat."
             },
             "scenario3": {
               "title": "Scénario 3 : RPB Échelonné",
@@ -3783,6 +3838,8 @@
           "commonMistakes": {
             "title": "Erreurs Courantes de Divulgation du RPB",
             "intro": "Évitez ces erreurs fréquentes qui peuvent entraîner une non-conformité à la Charia ou une confusion des clients :",
+            "whyWrongLabel": "Pourquoi c'est incorrect :",
+            "howToFixLabel": "Comment corriger :",
             "mistakes": {
               "mistake1": {
                 "title": "Utiliser des Montants Fixes au Lieu de Pourcentages",
@@ -3809,9 +3866,7 @@
                 "why": "Les modifications unilatérales du RPB violent le principe de mutualité des contrats islamiques.",
                 "fix": "Tout ajustement du RPB nécessite un accord écrit du client et ne peut s'appliquer rétroactivement aux dépôts existants."
               }
-            },
-            "whyWrong": "Pourquoi c'est incorrect :",
-            "howToFix": "Comment corriger :"
+            }
           },
           "regulatoryContext": {
             "title": "Conformité Réglementaire et RPB",
@@ -3819,17 +3874,32 @@
             "dualCompliance": {
               "title": "Stratégie de Double Conformité",
               "items": {
-                "aaoifi": "AAOIFI pour la Charia : Suivre les normes FAS 6 et FAS 11 pour la divulgation précontractuelle et des états financiers du RPB.",
-                "centralBank": "Supervision de la Banque Centrale : Déclarer correctement les comptes Mudarabah aux banques centrales (par ex. comme \"dépôts d'investissement\" selon les directives CBN au Nigeria ou \"comptes de participation\" selon COBAC en Afrique centrale).",
-                "ohada": "Plan Comptable OHADA : Dans les pays de la zone OHADA (Afrique de l'Ouest et Centrale), cartographier soigneusement les structures de grand livre doubles pour refléter les rendements des pools d'investissement."
+                "aaoifi": {
+                  "label": "AAOIFI pour la Charia :",
+                  "text": "Suivre les normes FAS 6 et FAS 11 pour la divulgation précontractuelle et des états financiers du RPB."
+                },
+                "centralBank": {
+                  "label": "Supervision de la Banque Centrale :",
+                  "text": "Déclarer correctement les comptes Mudarabah aux banques centrales (par ex. comme \"dépôts d'investissement\" selon les directives CBN au Nigeria ou \"comptes de participation\" selon COBAC en Afrique centrale)."
+                },
+                "ohada": {
+                  "label": "Plan Comptable OHADA :",
+                  "text": "Dans les pays de la zone OHADA (Afrique de l'Ouest et Centrale), cartographier soigneusement les structures de grand livre doubles pour refléter les rendements des pools d'investissement."
+                }
               }
             },
             "languageAdaptations": {
               "title": "Adaptations Linguistiques et Régionales",
               "intro": "Selon la juridiction, la documentation doit s'aligner sur les langues officielles et la terminologie :",
               "items": {
-                "francophone": "Régions francophones (CEMAC, WAEMU) : Traduire avec précision les termes clés par ex., Ratio de Partage des Bénéfices (RPB) pour PSR.",
-                "anglophone": "Régions anglophones (Nigeria) : Utiliser les termes normalisés par les circulaires bancaires sans intérêt locales."
+                "francophone": {
+                  "label": "Régions francophones (CEMAC, WAEMU) :",
+                  "text": "Traduire avec précision les termes clés par ex., Ratio de Partage des Bénéfices (RPB) pour PSR."
+                },
+                "anglophone": {
+                  "label": "Régions anglophones (Nigeria) :",
+                  "text": "Utiliser les termes normalisés par les circulaires bancaires sans intérêt locales."
+                }
               }
             },
             "reportingRequirements": {
@@ -3847,7 +3917,7 @@
             "title": "Stratégies d'Éducation des Clients",
             "intro": "Au-delà de la divulgation, l'éducation proactive aide les clients à comprendre et à apprécier le RPB :",
             "workshops": {
-              "title": "Ateliers d'Intégration",
+              "title": "1. Ateliers d'Intégration",
               "intro": "Organisez des sessions mensuelles dans les agences expliquant :",
               "items": {
                 "difference": "Comment les comptes Mudarabah diffèrent de l'épargne conventionnelle",
@@ -3856,16 +3926,25 @@
               }
             },
             "digitalTools": {
-              "title": "Outils Numériques",
+              "title": "2. Outils Numériques",
               "intro": "Développez des ressources en ligne :",
               "items": {
-                "calculator": "Calculateur de RPB : Les clients saisissent leur montant de dépôt et le rendement estimé pour voir les répartitions de bénéfices projetées",
-                "videos": "Vidéos explicatives : Animations de 2-3 minutes démontrant les concepts de RPB",
-                "faq": "Section FAQ : Répondre aux questions courantes comme \"Le RPB peut-il changer ?\" et \"Que se passe-t-il si la banque perd de l'argent ?\""
+                "calculator": {
+                  "label": "Calculateur de RPB :",
+                  "text": "Les clients saisissent leur montant de dépôt et le rendement estimé pour voir les répartitions de bénéfices projetées"
+                },
+                "videos": {
+                  "label": "Vidéos explicatives :",
+                  "text": "Animations de 2-3 minutes démontrant les concepts de RPB"
+                },
+                "faq": {
+                  "label": "Section FAQ :",
+                  "text": "Répondre aux questions courantes comme \"Le RPB peut-il changer ?\" et \"Que se passe-t-il si la banque perd de l'argent ?\""
+                }
               }
             },
             "quarterlyUpdates": {
-              "title": "Mises à Jour Trimestrielles",
+              "title": "3. Mises à Jour Trimestrielles",
               "intro": "Envoyez des relevés personnalisés montrant :",
               "items": {
                 "opening": "Solde d'ouverture",
@@ -3934,10 +4013,24 @@
               "paragraph2": "Cet article fournit un guide complet pour comprendre les différences entre ces deux cadres et mettre en œuvre des stratégies pratiques pour répondre simultanément aux deux ensembles d'exigences.",
               "whyMatters": {
                 "title": "Pourquoi C'est Important",
-                "regulatory": "Conformité réglementaire : Les banques centrales régionales exigent des rapports conformes à l'OHADA",
-                "shariah": "Conformité à la Charia : Les opérations islamiques exigent les normes AAOIFI",
-                "stakeholder": "Confiance des parties prenantes : Des rapports transparents renforcent la confiance des investisseurs et des clients",
-                "efficiency": "Efficacité opérationnelle : Un mappage approprié évite la duplication du travail et les erreurs"
+                "items": {
+                  "regulatory": {
+                    "label": "Conformité réglementaire :",
+                    "text": "Les banques centrales régionales exigent des rapports conformes à l'OHADA"
+                  },
+                  "shariah": {
+                    "label": "Conformité à la Charia :",
+                    "text": "Les opérations islamiques exigent les normes AAOIFI"
+                  },
+                  "stakeholder": {
+                    "label": "Confiance des parties prenantes :",
+                    "text": "Des rapports transparents renforcent la confiance des investisseurs et des clients"
+                  },
+                  "efficiency": {
+                    "label": "Efficacité opérationnelle :",
+                    "text": "Un paramétrage approprié évite la duplication du travail et les erreurs"
+                  }
+                }
               }
             },
             "aaoifiOverview": {
@@ -3946,53 +4039,481 @@
               "scope": {
                 "title": "Portée des Normes AAOIFI",
                 "intro": "L'AAOIFI émet des normes dans quatre domaines :",
-                "fas": "Normes de Comptabilité Financière (FAS) : Plus de 30 normes couvrant la comptabilisation, la mesure et la divulgation des transactions islamiques",
-                "ss": "Normes de la Charia (SS) : Directives sur les structures et contrats de produits islamiques",
-                "gs": "Normes de Gouvernance (GS) : Gouvernance d'entreprise et exigences du conseil de la Charia",
-                "as": "Normes d'Audit (AS) : Procédures d'audit spécifiques aux institutions islamiques"
+                "items": {
+                  "fas": {
+                    "label": "Normes de Comptabilité Financière (FAS) :",
+                    "text": "Plus de 30 normes couvrant la comptabilisation, l'évaluation et la publication des transactions islamiques"
+                  },
+                  "ss": {
+                    "label": "Normes de la Charia (SS) :",
+                    "text": "Directives sur les structures de produits et les contrats islamiques"
+                  },
+                  "gs": {
+                    "label": "Normes de Gouvernance (GS) :",
+                    "text": "Gouvernance d'entreprise et exigences relatives aux comités de conformité Charia"
+                  },
+                  "as": {
+                    "label": "Normes d'Audit (AS) :",
+                    "text": "Procédures d'audit spécifiques aux institutions financières islamiques"
+                  }
+                }
               },
               "principles": {
                 "title": "Principes Clés de l'AAOIFI",
-                "substance": "Substance sur forme : La réalité économique prime sur la forme juridique",
-                "shariah": "Conformité à la Charia : Toutes les transactions doivent être conformes à la loi islamique",
-                "transparency": "Transparence : Divulgation complète des ratios de partage des bénéfices, des risques d'investissement et de l'approbation de la Charia",
-                "stakeholder": "Protection des parties prenantes : Attention particulière aux droits des titulaires de comptes d'investissement (IAH)"
+                "items": {
+                  "substance": {
+                    "label": "Substance sur la forme :",
+                    "text": "La réalité économique prime sur la forme juridique"
+                  },
+                  "shariah": {
+                    "label": "Conformité à la Charia :",
+                    "text": "Toutes les transactions doivent être conformes aux préceptes du droit musulman"
+                  },
+                  "transparency": {
+                    "label": "Transparence :",
+                    "text": "Divulgation intégrale des ratios de partage des bénéfices, des risques d'investissement et des approbations Charia"
+                  },
+                  "stakeholder": {
+                    "label": "Protection des parties prenantes :",
+                    "text": "Attention particulière accordée aux droits des titulaires de comptes d'investissement (IAH)"
+                  }
+                }
               },
               "adoption": {
                 "title": "Statut d'Adoption",
-                "text": "Les normes AAOIFI sont obligatoires au Bahreïn, en Jordanie, au Liban, au Qatar, au Soudan et en Syrie. Elles sont recommandées ou partiellement adoptées dans plus de 45 pays, y compris de nombreux pays africains développant leurs secteurs de finance islamique."
+                "text": "Les normes AAOIFI sont obligatoires à Bahreïn, en Jordanie, au Liban, au Qatar, au Soudan et en Syrie. Elles sont recommandées ou partiellement adoptées dans plus de 45 pays, y compris de nombreux pays africains en plein essor de la finance islamique."
               }
             },
             "ohadaOverview": {
               "title": "Qu'est-ce que l'OHADA ?",
-              "intro": "L'Organisation pour l'Harmonisation en Afrique du Droit des Affaires (OHADA) est un système harmonisant le droit des affaires dans 17 pays d'Afrique de l'Ouest et du Centre, y compris les États membres de la CEMAC et de l'UEMOA.",
+              "intro": "L'Organisation pour l'Harmonisation en Afrique du Droit des Affaires (OHADA) est un système harmonisant le droit des affaires dans 17 pays d'Afrique de l'Ouest et du Centre, regroupant les États membres de la CEMAC et de l'UEMOA.",
               "framework": {
                 "title": "Cadre Comptable OHADA",
-                "intro": "L'Acte Uniforme OHADA sur la Comptabilité et le Reporting Financier normalise :",
-                "chart": "Plan comptable (SYSCOHADA) : Système de numérotation de compte standardisé",
-                "formats": "Formats d'états financiers : Bilan, compte de résultat, tableau de flux de trésorerie et notes",
-                "principles": "Principes comptables : Comptabilité d'exercice, continuité d'exploitation, cohérence, prudence",
-                "disclosure": "Exigences de divulgation : Notes détaillées aux états financiers"
+                "intro": "L'Acte Uniforme OHADA relatif au Droit Comptable et à l'Information Financière standardise :",
+                "items": {
+                  "chart": {
+                    "label": "Plan comptable (SYSCOHADA) :",
+                    "text": "Système de numérotation et de nomenclature de comptes normalisé"
+                  },
+                  "formats": {
+                    "label": "Formats des états financiers :",
+                    "text": "Bilan, compte de résultat, tableau des flux de trésorerie et notes annexes"
+                  },
+                  "principles": {
+                    "label": "Principes comptables :",
+                    "text": "Comptabilité d'engagement, continuité d'exploitation, permanence des méthodes, prudence"
+                  },
+                  "disclosure": {
+                    "label": "Exigences de publication :",
+                    "text": "Notes annexes détaillées accompagnant les états financiers"
+                  }
+                }
               },
               "features": {
                 "title": "Caractéristiques Clés de l'OHADA",
-                "francophone": "Focus francophone : Toute la documentation est en français",
-                "classBased": "Plan comptable par classes : 8 classes de comptes (1-8)",
-                "smeFriendly": "Adapté aux PME : Rapports simplifiés pour les petites entreprises",
-                "legal": "Applicabilité juridique : Les décisions OHADA prévalent sur les lois nationales"
+                "items": {
+                  "francophone": {
+                    "label": "Cadre francophone :",
+                    "text": "Toute la documentation et les textes officiels sont rédigés en français"
+                  },
+                  "classBased": {
+                    "label": "Plan comptable par classes :",
+                    "text": "8 classes de comptes structurées (1 à 8)"
+                  },
+                  "smeFriendly": {
+                    "label": "Adapté aux PME :",
+                    "text": "Dispositifs de reporting allégés pour les petites et moyennes entreprises"
+                  },
+                  "legal": {
+                    "label": "Force exécutoire :",
+                    "text": "Les dispositions et arrêts OHADA priment sur les droits nationaux des États membres"
+                  }
+                }
               },
               "application": {
-                "title": "OHADA et Application de la Banque Centrale",
-                "intro": "Dans les pays membres d'Afrique de l'Ouest et du Centre, les régulateurs bancaires régionaux (tels que la COBAC pour la CEMAC ou la BCEAO pour l'UEMOA) exigent que toutes les institutions financières :",
-                "syscohada": "Utilisent le plan comptable SYSCOHADA",
-                "quarterly": "Soumettent des états financiers trimestriels au format OHADA",
-                "comply": "Se conforment aux principes comptables OHADA",
-                "audit": "Obtiennent des audits conformes à l'OHADA"
+                "title": "OHADA et Exigences des Banques Centrales",
+                "intro": "Dans les pays membres d'Afrique de l'Ouest et du Centre, les régulateurs bancaires régionaux (comme la COBAC pour la CEMAC ou la BCEAO pour l'UEMOA) exigent que toutes les institutions financières :",
+                "items": {
+                  "syscohada": "Utilisent le plan comptable SYSCOHADA",
+                  "quarterly": "Soumettent des états financiers trimestriels au format réglementaire OHADA",
+                  "comply": "Respectent scrupuleusement les principes comptables OHADA",
+                  "audit": "Fassent certifier leurs comptes par des audits conformes aux normes OHADA"
+                }
+              }
+            },
+            "keyDifferences": {
+              "title": "Différences Clés Entre l'AAOIFI et l'OHADA",
+              "intro": "Bien que les deux cadres visent la transparence et la régularité, ils présentent des divergences fondamentales :",
+              "table": {
+                "headers": {
+                  "aspect": "Aspect",
+                  "aaoifi": "AAOIFI",
+                  "ohada": "OHADA"
+                },
+                "rows": {
+                  "purpose": {
+                    "aspect": "Finalité",
+                    "aaoifi": "Normes spécifiques à la finance islamique",
+                    "ohada": "Harmonisation comptable générale des entreprises"
+                  },
+                  "geographicScope": {
+                    "aspect": "Portée géographique",
+                    "aaoifi": "Mondiale (plus de 45 pays)",
+                    "ohada": "Régionale (17 pays d'Afrique)"
+                  },
+                  "language": {
+                    "aspect": "Langues de travail",
+                    "aaoifi": "Arabe et Anglais",
+                    "ohada": "Français"
+                  },
+                  "chartOfAccounts": {
+                    "aspect": "Plan de comptes",
+                    "aaoifi": "Flexible, adapté par produit",
+                    "ohada": "Standardisé et codifié (SYSCOHADA)"
+                  },
+                  "investmentAccounts": {
+                    "aspect": "Comptes d'investissement",
+                    "aaoifi": "Hors bilan (FAS 6)",
+                    "ohada": "Au bilan sous forme de dépôts"
+                  },
+                  "profitDistribution": {
+                    "aspect": "Distribution des bénéfices",
+                    "aaoifi": "Basée sur le RPB, présentée distinctement",
+                    "ohada": "Classification en charges financières / intérêts"
+                  },
+                  "zakat": {
+                    "aspect": "Zakat",
+                    "aaoifi": "Comptabilisée et publiée séparément (FAS 9)",
+                    "ohada": "Non traitée spécifiquement"
+                  },
+                  "shariahCompliance": {
+                    "aspect": "Conformité Charia",
+                    "aaoifi": "Exigence centrale et obligatoire",
+                    "ohada": "Non traitée"
+                  }
+                }
+              }
+            },
+            "chartOfAccounts": {
+              "title": "Correspondance du Plan Comptable",
+              "intro": "L'une des tâches de réconciliation les plus critiques consiste à faire correspondre les opérations de finance islamique avec le plan de comptes SYSCOHADA de l'OHADA :",
+              "syscohada": {
+                "title": "Structure du SYSCOHADA",
+                "intro": "L'OHADA utilise un plan comptable structuré en 8 classes :",
+                "classes": {
+                  "class1": {
+                    "label": "Classe 1 :",
+                    "text": "Comptes de ressources durables (capitaux propres, réserves, emprunts)"
+                  },
+                  "class2": {
+                    "label": "Classe 2 :",
+                    "text": "Comptes d'actif immobilisé (immobilisations)"
+                  },
+                  "class3": {
+                    "label": "Classe 3 :",
+                    "text": "Comptes de stocks"
+                  },
+                  "class4": {
+                    "label": "Classe 4 :",
+                    "text": "Comptes de tiers (créances, dettes fournisseurs/clients)"
+                  },
+                  "class5": {
+                    "label": "Classe 5 :",
+                    "text": "Comptes financiers (trésorerie, banque)"
+                  },
+                  "class6": {
+                    "label": "Classe 6 :",
+                    "text": "Comptes de charges des activités ordinaires"
+                  },
+                  "class7": {
+                    "label": "Classe 7 :",
+                    "text": "Comptes de produits des activités ordinaires"
+                  },
+                  "class8": {
+                    "label": "Classe 8 :",
+                    "text": "Comptes des autres charges et des autres produits (hors bilan)"
+                  }
+                }
+              },
+              "mapping": {
+                "title": "Mappage des Produits Islamiques vers le SYSCOHADA",
+                "aaoifiLabel": "Traitement AAOIFI :",
+                "ohadaLabel": "Mappage OHADA :",
+                "cards": {
+                  "murabaha": {
+                    "title": "Créances Murabaha",
+                    "aaoifiValue": "Créances Murabaha (FAS 2)",
+                    "ohadaValue": "Classe 4 - Compte 411X (Clients)",
+                    "note": "Comptabilisez les créances Murabaha dans les comptes clients, avec un suivi auxiliaire indiquant le type de contrat islamique."
+                  },
+                  "mudarabah": {
+                    "title": "Comptes d'Investissement Mudarabah",
+                    "aaoifiValue": "Hors bilan (FAS 6)",
+                    "ohadaValue": "Classe 1 - Compte 161X (Dépôts / Emprunts et dettes assimilées)",
+                    "note": "L'OHADA impose l'inscription au bilan, mais les notes annexes clarifient la nature Mudarabah et la convention de RPB."
+                  },
+                  "profitDistribution": {
+                    "title": "Distribution de Profits aux IAH",
+                    "aaoifiValue": "Ligne distincte (non assimilée à une charge classique)",
+                    "ohadaValue": "Classe 6 - Compte 671X (Intérêts et charges financières)",
+                    "note": "Bien qu'il s'agisse économiquement d'un partage de bénéfices, l'OHADA le traite en charges financières. Les notes annexes doivent en préciser la stricte conformité Charia."
+                  },
+                  "zakat": {
+                    "title": "Zakat",
+                    "aaoifiValue": "Présentée séparément (FAS 9)",
+                    "ohadaValue": "Classe 6 - Compte 6583 (Dons et mécénat)",
+                    "note": "La Zakat est enregistrée comme charge de bienfaisance. Si l'établissement perçoit la Zakat pour le compte de clients, utilisez la Classe 4 (dettes envers les tiers)."
+                  }
+                }
+              }
+            },
+            "financialStatements": {
+              "title": "Exigences des États Financiers",
+              "intro": "L'AAOIFI et l'OHADA prescrivent toutes deux des formats d'états financiers obligatoires :",
+              "aaoifiStatements": {
+                "title": "États Financiers Requis par l'AAOIFI",
+                "items": {
+                  "balanceSheet": "État de la situation financière (Bilan)",
+                  "incomeStatement": "État des résultats : Sépare les revenus des actionnaires de ceux des titulaires de comptes d'investissement (IAH)",
+                  "cashFlows": "Tableau des flux de trésorerie",
+                  "changesInEquity": "État des variations des capitaux propres",
+                  "restrictedInvestments": "État des variations des investissements affectés (pour les comptes Mudarabah)",
+                  "zakatFunds": "État des sources et emplois des fonds de Zakat et de charité",
+                  "notes": "Notes aux états financiers : Incluant les divulgations de RPB et le rapport du comité de conformité Charia"
+                }
+              },
+              "ohadaStatements": {
+                "title": "États Financiers Requis par l'OHADA",
+                "items": {
+                  "balanceSheet": "Bilan : Format normalisé",
+                  "incomeStatement": "Compte de résultat : Ventilation détaillée des produits et charges",
+                  "cashFlows": "Tableau des flux de trésorerie (TFT)",
+                  "notes": "Notes annexes (Annexe) : Méthodes comptables et commentaires détaillés"
+                }
+              },
+              "reconciliation": {
+                "title": "Approche de Réconciliation",
+                "intro": "Une stratégie pratique de double reporting :",
+                "steps": {
+                  "aaoifiBooks": {
+                    "label": "Tenir la comptabilité au format AAOIFI :",
+                    "text": "Cela garantit la conformité Charia et assure un suivi précis des spécificités de la finance islamique"
+                  },
+                  "mappingRules": {
+                    "label": "Définir les règles de correspondance OHADA :",
+                    "text": "Paramétrer comment chaque compte AAOIFI correspond à la nomenclature SYSCOHADA"
+                  },
+                  "ohadaStatements": {
+                    "label": "Générer les états OHADA :",
+                    "text": "Appliquer les tables de conversion pour produire des déclarations réglementaires conformes"
+                  },
+                  "notesSupplement": {
+                    "label": "Compléter avec les notes annexes :",
+                    "text": "Fournir des notes explicatives approfondies détaillant les structures financières islamiques dans les rapports OHADA"
+                  }
+                }
+              }
+            },
+            "dualCompliance": {
+              "title": "Stratégie de Double Conformité",
+              "intro": "La mise en œuvre simultanée des deux cadres nécessite une démarche méthodique et structurée :",
+              "step1": {
+                "title": "Étape 1 : Établir un Plan Comptable Parallèle",
+                "intro": "Créez une table de correspondance où chaque compte AAOIFI est associé à un code SYSCOHADA :",
+                "table": {
+                  "headers": {
+                    "product": "Produit Islamique",
+                    "aaoifiAccount": "Compte AAOIFI",
+                    "ohadaCode": "Code SYSCOHADA"
+                  },
+                  "rows": {
+                    "murabaha": {
+                      "product": "Créances Murabaha",
+                      "aaoifiAccount": "120-001",
+                      "ohadaCode": "4111"
+                    },
+                    "mudarabah": {
+                      "product": "Dépôts Mudarabah",
+                      "aaoifiAccount": "Hors-Bilan",
+                      "ohadaCode": "1611"
+                    },
+                    "musharakah": {
+                      "product": "Investissements Musharakah",
+                      "aaoifiAccount": "130-002",
+                      "ohadaCode": "2613"
+                    },
+                    "ijara": {
+                      "product": "Actifs Ijara (en location)",
+                      "aaoifiAccount": "140-003",
+                      "ohadaCode": "2441"
+                    }
+                  }
+                }
+              },
+              "step2": {
+                "title": "Étape 2 : Mettre en Place des Journaux Auxiliaires",
+                "intro": "Utilisez des sous-livres auxiliaires pour enregistrer les spécificités islamiques tout en restant conforme à l'OHADA :",
+                "items": {
+                  "customer": {
+                    "label": "Grand livre auxiliaire clients :",
+                    "text": "Suivi des données contractuelles Murabaha (prix d'achat, marge bénéficiaire, échéancier de paiement)"
+                  },
+                  "investment": {
+                    "label": "Grand livre des comptes d'investissement :",
+                    "text": "Enregistrement du RPB, de la répartition des bénéfices et des soldes IAH"
+                  },
+                  "shariah": {
+                    "label": "Grand livre de conformité Charia :",
+                    "text": "Documentation des approbations du comité Charia et des rapports d'audit interne"
+                  }
+                }
+              },
+              "step3": {
+                "title": "Étape 3 : Processus de Rapprochement Trimestriel",
+                "intro": "Mettez en place un cycle de clôture trimestriel :",
+                "steps": {
+                  "step1": "Clôturer les comptes au format AAOIFI",
+                  "step2": "Exécuter le mappage automatique : Convertir les soldes AAOIFI en comptes SYSCOHADA",
+                  "step3": "Générer les états financiers OHADA : Produire le bilan, le compte de résultat et les annexes",
+                  "step4": "Réaliser l'analyse des écarts : Vérifier la parfaite concordance entre les rapports AAOIFI et OHADA",
+                  "step5": "Soumettre au régulateur : Déposer les états conformes OHADA auprès de votre banque centrale (COBAC ou BCEAO)",
+                  "step6": "Préparer le rapport AAOIFI pour le comité Charia : Fournir une analyse financière islamique détaillée"
+                }
+              },
+              "step4": {
+                "title": "Étape 4 : Notes Annexes et Divulgations",
+                "intro": "Exploitez les notes annexes OHADA pour expliciter les spécificités islamiques :",
+                "notes": {
+                  "note1": {
+                    "label": "Note 1 - Principes et méthodes comptables :",
+                    "text": "Préciser que l'institution applique une double conformité (AAOIFI + OHADA)"
+                  },
+                  "note2": {
+                    "label": "Note 2 - Produits et contrats islamiques :",
+                    "text": "Définir la Murabaha, Mudarabah, Musharakah et leur réalité économique"
+                  },
+                  "note3": {
+                    "label": "Note 3 - Comptes d'investissement :",
+                    "text": "Divulguer les ratios de partage de bénéfices (RPB), la méthode de répartition et les droits des IAH"
+                  },
+                  "note4": {
+                    "label": "Note 4 - Gouvernance Charia :",
+                    "text": "Mentionner la composition du comité de conformité Charia et les processus d'approbation"
+                  },
+                  "note5": {
+                    "label": "Note 5 - Zakat :",
+                    "text": "Détailler l'assiette, le calcul et les modalités de distribution de la Zakat, le cas échéant"
+                  }
+                }
+              }
+            },
+            "practicalImplementation": {
+              "title": "Conseils Pratiques de Mise en Œuvre",
+              "intro": "Recommandations tirées de l'expérience d'institutions financières islamiques opérant en zone OHADA :",
+              "tip1": {
+                "title": "1. Commencer par les Produits Essentiels",
+                "intro": "Ne tentez pas de paramétrer tous les produits islamiques en une seule fois. Démarrez par :",
+                "products": {
+                  "murabaha": "La Murabaha (la plus simple à faire correspondre aux crédits conventionnels)",
+                  "mudarabah": "Les comptes d'investissement Mudarabah (assimilables aux dépôts à terme)",
+                  "qardHassan": "Le Qard Hassan (prêts bienveillants à zéro intérêt, structure directe)"
+                },
+                "complexProducts": "Intégrez progressivement les produits plus complexes (Musharakah, Ijara, Salam) au fur et à mesure que vous affinez vos règles de conversion."
+              },
+              "tip2": {
+                "title": "2. Mobiliser des Experts AAOIFI et OHADA",
+                "items": {
+                  "aaoifiExpert": {
+                    "label": "Recruter un expert-comptable certifié AAOIFI :",
+                    "text": "Assurez-vous qu'un membre de l'équipe maîtrise parfaitement les normes comptables islamiques"
+                  },
+                  "ohadaPractitioner": {
+                    "label": "Consulter des praticiens de l'OHADA :",
+                    "text": "Travaillez avec des spécialistes rompus aux déclarations réglementaires régionales"
+                  },
+                  "shariahCoordination": {
+                    "label": "Coordonner avec le comité Charia :",
+                    "text": "Vérifiez que les traitements comptables retenus respectent scrupuleusement les avis Charia"
+                  }
+                }
+              },
+              "tip3": {
+                "title": "3. Établir des Pistes d'Audit Complètes",
+                "intro": "Conservez une documentation exhaustive pour chaque choix de correspondance :",
+                "items": {
+                  "mappingRationale": "Justification de la correspondance entre un compte AAOIFI et un compte SYSCOHADA précis",
+                  "profitClassification": "Traitement de la répartition des bénéfices (charge financière vs attribution de quote-part)",
+                  "balanceSheetTreatment": "Fondement du traitement au bilan vs hors bilan"
+                },
+                "conclusion": "Cette documentation rigoureuse vous prémunit contre les risques de redressement réglementaire et simplifie les audits annuels."
+              },
+              "tip4": {
+                "title": "4. Miser sur la Technologie (voir section suivante)",
+                "text": "La gestion manuelle de la double conformité est chronophage et source d'erreurs. Les solutions logicielles modernes automatisent les correspondances et la réconciliation."
+              }
+            },
+            "softwareSolutions": {
+              "title": "Solutions Technologiques pour la Double Conformité",
+              "intro": "Une gestion comptable manuelle n'est pas viable à grande échelle. Des logiciels spécialisés répondent directement à ce besoin :",
+              "requirements": {
+                "title": "Critères Clés d'un Logiciel de Double Conformité",
+                "items": {
+                  "dualChart": {
+                    "label": "Double plan de comptes :",
+                    "text": "Support natif et simultané des nomenclatures AAOIFI et SYSCOHADA"
+                  },
+                  "automatedMapping": {
+                    "label": "Règles de conversion automatisées :",
+                    "text": "Configuration unique, application automatique à chaque transaction"
+                  },
+                  "parallelReporting": {
+                    "label": "Reporting parallèle :",
+                    "text": "Génération conjointe des états financiers AAOIFI et OHADA à partir de la même base de données"
+                  },
+                  "subledgerManagement": {
+                    "label": "Gestion des grands livres auxiliaires :",
+                    "text": "Suivi des détails propres aux produits islamiques au sein des comptes OHADA"
+                  },
+                  "reconciliationTools": {
+                    "label": "Outils de réconciliation :",
+                    "text": "Vérification automatisée de l'équilibre entre les rapports AAOIFI et OHADA"
+                  },
+                  "multilingualSupport": {
+                    "label": "Support multilingue :",
+                    "text": "Interfaces complètes en français, anglais et arabe"
+                  },
+                  "auditTrail": {
+                    "label": "Piste d'audit inviolable :",
+                    "text": "Historique exhaustif de toutes les écritures pour le contrôle réglementaire"
+                  }
+                }
+              },
+              "tikariFeatures": {
+                "title": "Fonctionnalités de Double Conformité de TIKARI",
+                "intro": "TIKARI est conçu spécifiquement pour la finance islamique dans les environnements réglementaires africains :",
+                "cards": {
+                  "preMapped": {
+                    "title": "Plan Comptable Pré-Configuré",
+                    "description": "Comptes AAOIFI pré-mappés vers les codes SYSCOHADA, entièrement personnalisables pour votre institution"
+                  },
+                  "reconciliation": {
+                    "title": "Réconciliation Automatisée",
+                    "description": "Analyse d'écarts en temps réel entre les rapports AAOIFI et les états réglementaires OHADA"
+                  },
+                  "bilingual": {
+                    "title": "Reporting Bilingue",
+                    "description": "Générez vos états financiers en français (pour les régulateurs) et en anglais (pour vos partenaires internationaux)"
+                  },
+                  "regulatorReady": {
+                    "title": "Conforme aux Exigences Réglementaires",
+                    "description": "Exportez directement les états aux formats imposés par les régulateurs bancaires régionaux (tels que la COBAC et la BCEAO)"
+                  }
+                }
               }
             },
             "cta": {
               "title": "Simplifiez la Double Conformité avec TIKARI",
-              "description": "Arrêtez de jongler avec les feuilles de calcul et les mappages manuels. TIKARI automatise la réconciliation AAOIFI-OHADA, génère les deux formats d'états et vous maintient conforme aux exigences de la banque centrale régionale et de la Charia.",
+              "description": "Ne perdez plus de temps avec les feuilles de calcul et les conversions manuelles. TIKARI automatise la réconciliation AAOIFI-OHADA, produit les deux formats d'états et garantit votre conformité auprès de la banque centrale et des autorités de la Charia.",
               "button": "Réserver une Démo"
             }
           },
