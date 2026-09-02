@@ -3901,6 +3901,121 @@
                   }
                 }
               }
+            },
+            "aaoifiVsOhada": {
+              "metadata": {
+                "title": "AAOIFI vs OHADA Accounting Standards Guide | TIKARI",
+                "description": "Comprehensive guide to reconciling AAOIFI Islamic accounting standards with regional OHADA requirements. Learn dual compliance strategies for Islamic finance in OHADA member states."
+              },
+              "hero": {
+                "backLink": "Back",
+                "badge": {
+                  "level": "Advanced",
+                  "duration": "15 min read",
+                  "updated": "Updated Aug 2026"
+                },
+                "title": "AAOIFI vs OHADA Standards",
+                "subtitle": "Reconciling AAOIFI Islamic accounting standards with regional OHADA requirements: a comprehensive dual compliance guide for financial institutions."
+              },
+              "tableOfContents": {
+                "introduction": "Introduction",
+                "aaoifiOverview": "What is AAOIFI?",
+                "ohadaOverview": "What is OHADA?",
+                "keyDifferences": "Key Differences",
+                "chartOfAccounts": "Chart of Accounts Mapping",
+                "financialStatements": "Financial Statement Requirements",
+                "dualCompliance": "Dual Compliance Strategy",
+                "practicalImplementation": "Practical Implementation",
+                "softwareSolutions": "Technology Solutions"
+              },
+              "content": {
+                "introduction": {
+                  "leadParagraph": "Islamic financial institutions operating in OHADA member states face a unique challenge: they must comply with both AAOIFI Islamic accounting standards and OHADA regional accounting regulations. This dual compliance framework requires careful reconciliation to satisfy Shariah boards, regulators, and stakeholders.",
+                  "paragraph2": "This article provides a comprehensive guide to understanding the differences between these two frameworks and implementing practical strategies to meet both sets of requirements simultaneously.",
+                  "whyMatters": {
+                    "title": "Why This Matters",
+                    "regulatory": "Regulatory compliance: Regional central banks require OHADA-compliant reporting",
+                    "shariah": "Shariah compliance: Islamic operations demand AAOIFI standards",
+                    "stakeholder": "Stakeholder confidence: Transparent reporting builds trust with investors and customers",
+                    "efficiency": "Operational efficiency: Proper mapping prevents duplicate work and errors"
+                  }
+                },
+                "aaoifiOverview": {
+                  "title": "What is AAOIFI?",
+                  "intro": "The Accounting and Auditing Organization for Islamic Financial Institutions (AAOIFI) is an international Islamic finance standard-setting body established in 1990 in Bahrain.",
+                  "scope": {
+                    "title": "Scope of AAOIFI Standards",
+                    "intro": "AAOIFI issues standards across four domains:",
+                    "fas": "Financial Accounting Standards (FAS): 30+ standards covering Islamic transaction recognition, measurement, and disclosure",
+                    "ss": "Shariah Standards (SS): Guidelines on Islamic product structures and contracts",
+                    "gs": "Governance Standards (GS): Corporate governance and Shariah board requirements",
+                    "as": "Audit Standards (AS): Auditing procedures specific to Islamic institutions"
+                  },
+                  "principles": {
+                    "title": "Key AAOIFI Principles",
+                    "substance": "Substance over form: Economic reality takes precedence over legal form",
+                    "shariah": "Shariah compliance: All transactions must align with Islamic law",
+                    "transparency": "Transparency: Full disclosure of profit-sharing ratios, investment risks, and Shariah approval",
+                    "stakeholder": "Stakeholder protection: Special attention to Investment Account Holders (IAH) rights"
+                  },
+                  "adoption": {
+                    "title": "Adoption Status",
+                    "text": "AAOIFI standards are mandatory in Bahrain, Jordan, Lebanon, Qatar, Sudan, and Syria. They are recommended or partially adopted in over 45 countries, including many African nations developing Islamic finance sectors."
+                  }
+                },
+                "ohadaOverview": {
+                  "title": "What is OHADA?",
+                  "intro": "The Organisation pour l'Harmonisation en Afrique du Droit des Affaires (OHADA) is a system harmonizing business law across 17 West and Central African countries, including both CEMAC and WAEMU member states.",
+                  "framework": {
+                    "title": "OHADA Accounting Framework",
+                    "intro": "OHADA's Uniform Act on Accounting and Financial Reporting standardizes:",
+                    "chart": "Chart of accounts (SYSCOHADA): Standardized account numbering system",
+                    "formats": "Financial statement formats: Balance sheet, income statement, cash flow statement, and notes",
+                    "principles": "Accounting principles: Accrual basis, going concern, consistency, prudence",
+                    "disclosure": "Disclosure requirements: Detailed notes to financial statements"
+                  },
+                  "features": {
+                    "title": "OHADA Key Features",
+                    "francophone": "Francophone focus: All documentation is in French",
+                    "classBased": "Class-based chart of accounts: 8 account classes (1-8)",
+                    "smeFriendly": "SME-friendly: Simplified reporting for small enterprises",
+                    "legal": "Legal enforceability: OHADA rulings supersede national laws"
+                  },
+                  "application": {
+                    "title": "OHADA & Central Bank Application",
+                    "intro": "In member countries across West and Central Africa, regional banking regulators (such as COBAC for CEMAC or BCEAO for WAEMU) require all financial institutions to:",
+                    "syscohada": "Use SYSCOHADA chart of accounts",
+                    "quarterly": "Submit quarterly financial statements in OHADA format",
+                    "comply": "Comply with OHADA accounting principles",
+                    "audit": "Obtain OHADA-compliant audits"
+                  }
+                },
+                "cta": {
+                  "title": "Simplify Dual Compliance with TIKARI",
+                  "description": "Stop juggling spreadsheets and manual mappings. TIKARI automates AAOIFI-to-OHADA reconciliation, generates both statement formats, and keeps you compliant with regional central bank and Shariah requirements.",
+                  "button": "Book a Demo"
+                }
+              },
+              "relatedArticles": {
+                "title": "Related Articles",
+                "articles": {
+                  "whatIsIslamic": {
+                    "title": "What is Islamic Finance?",
+                    "description": "Introduction to Shariah-compliant banking principles",
+                    "duration": "15 min read"
+                  },
+                  "murabaha": {
+                    "title": "Understanding Murabaha Financing",
+                    "description": "Step-by-step breakdown of cost-plus sale financing",
+                    "duration": "12 min read"
+                  },
+                  "psr": {
+                    "title": "Profit-Sharing Ratio Disclosure",
+                    "description": "How to properly disclose PSR to customers",
+                    "duration": "8 min read"
+                  }
+                }
+              }
             }
   },
   "privacy": {

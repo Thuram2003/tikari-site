@@ -3901,6 +3901,121 @@
               }
             }
           }
+        },
+        "aaoifiVsOhada": {
+          "metadata": {
+            "title": "Guide des Normes Comptables AAOIFI vs OHADA | TIKARI",
+            "description": "Guide complet pour réconcilier les normes comptables islamiques AAOIFI avec les exigences régionales OHADA. Découvrez les stratégies de double conformité pour la finance islamique dans les États membres de l'OHADA."
+          },
+          "hero": {
+            "backLink": "Retour",
+            "badge": {
+              "level": "Avancé",
+              "duration": "15 min de lecture",
+              "updated": "Mis à jour août 2026"
+            },
+            "title": "Normes AAOIFI vs OHADA",
+            "subtitle": "Réconciliation des normes comptables islamiques AAOIFI avec les exigences régionales OHADA : un guide complet de double conformité pour les institutions financières."
+          },
+          "tableOfContents": {
+            "introduction": "Introduction",
+            "aaoifiOverview": "Qu'est-ce que l'AAOIFI ?",
+            "ohadaOverview": "Qu'est-ce que l'OHADA ?",
+            "keyDifferences": "Différences Clés",
+            "chartOfAccounts": "Correspondance du Plan Comptable",
+            "financialStatements": "Exigences des États Financiers",
+            "dualCompliance": "Stratégie de Double Conformité",
+            "practicalImplementation": "Mise en Œuvre Pratique",
+            "softwareSolutions": "Solutions Technologiques"
+          },
+          "content": {
+            "introduction": {
+              "leadParagraph": "Les institutions financières islamiques opérant dans les États membres de l'OHADA font face à un défi unique : elles doivent se conformer à la fois aux normes comptables islamiques AAOIFI et aux réglementations comptables régionales OHADA. Ce cadre de double conformité nécessite une réconciliation minutieuse pour satisfaire les conseils de la Charia, les régulateurs et les parties prenantes.",
+              "paragraph2": "Cet article fournit un guide complet pour comprendre les différences entre ces deux cadres et mettre en œuvre des stratégies pratiques pour répondre simultanément aux deux ensembles d'exigences.",
+              "whyMatters": {
+                "title": "Pourquoi C'est Important",
+                "regulatory": "Conformité réglementaire : Les banques centrales régionales exigent des rapports conformes à l'OHADA",
+                "shariah": "Conformité à la Charia : Les opérations islamiques exigent les normes AAOIFI",
+                "stakeholder": "Confiance des parties prenantes : Des rapports transparents renforcent la confiance des investisseurs et des clients",
+                "efficiency": "Efficacité opérationnelle : Un mappage approprié évite la duplication du travail et les erreurs"
+              }
+            },
+            "aaoifiOverview": {
+              "title": "Qu'est-ce que l'AAOIFI ?",
+              "intro": "L'Organisation de Comptabilité et d'Audit pour les Institutions Financières Islamiques (AAOIFI) est un organisme international de normalisation de la finance islamique créé en 1990 à Bahreïn.",
+              "scope": {
+                "title": "Portée des Normes AAOIFI",
+                "intro": "L'AAOIFI émet des normes dans quatre domaines :",
+                "fas": "Normes de Comptabilité Financière (FAS) : Plus de 30 normes couvrant la comptabilisation, la mesure et la divulgation des transactions islamiques",
+                "ss": "Normes de la Charia (SS) : Directives sur les structures et contrats de produits islamiques",
+                "gs": "Normes de Gouvernance (GS) : Gouvernance d'entreprise et exigences du conseil de la Charia",
+                "as": "Normes d'Audit (AS) : Procédures d'audit spécifiques aux institutions islamiques"
+              },
+              "principles": {
+                "title": "Principes Clés de l'AAOIFI",
+                "substance": "Substance sur forme : La réalité économique prime sur la forme juridique",
+                "shariah": "Conformité à la Charia : Toutes les transactions doivent être conformes à la loi islamique",
+                "transparency": "Transparence : Divulgation complète des ratios de partage des bénéfices, des risques d'investissement et de l'approbation de la Charia",
+                "stakeholder": "Protection des parties prenantes : Attention particulière aux droits des titulaires de comptes d'investissement (IAH)"
+              },
+              "adoption": {
+                "title": "Statut d'Adoption",
+                "text": "Les normes AAOIFI sont obligatoires au Bahreïn, en Jordanie, au Liban, au Qatar, au Soudan et en Syrie. Elles sont recommandées ou partiellement adoptées dans plus de 45 pays, y compris de nombreux pays africains développant leurs secteurs de finance islamique."
+              }
+            },
+            "ohadaOverview": {
+              "title": "Qu'est-ce que l'OHADA ?",
+              "intro": "L'Organisation pour l'Harmonisation en Afrique du Droit des Affaires (OHADA) est un système harmonisant le droit des affaires dans 17 pays d'Afrique de l'Ouest et du Centre, y compris les États membres de la CEMAC et de l'UEMOA.",
+              "framework": {
+                "title": "Cadre Comptable OHADA",
+                "intro": "L'Acte Uniforme OHADA sur la Comptabilité et le Reporting Financier normalise :",
+                "chart": "Plan comptable (SYSCOHADA) : Système de numérotation de compte standardisé",
+                "formats": "Formats d'états financiers : Bilan, compte de résultat, tableau de flux de trésorerie et notes",
+                "principles": "Principes comptables : Comptabilité d'exercice, continuité d'exploitation, cohérence, prudence",
+                "disclosure": "Exigences de divulgation : Notes détaillées aux états financiers"
+              },
+              "features": {
+                "title": "Caractéristiques Clés de l'OHADA",
+                "francophone": "Focus francophone : Toute la documentation est en français",
+                "classBased": "Plan comptable par classes : 8 classes de comptes (1-8)",
+                "smeFriendly": "Adapté aux PME : Rapports simplifiés pour les petites entreprises",
+                "legal": "Applicabilité juridique : Les décisions OHADA prévalent sur les lois nationales"
+              },
+              "application": {
+                "title": "OHADA et Application de la Banque Centrale",
+                "intro": "Dans les pays membres d'Afrique de l'Ouest et du Centre, les régulateurs bancaires régionaux (tels que la COBAC pour la CEMAC ou la BCEAO pour l'UEMOA) exigent que toutes les institutions financières :",
+                "syscohada": "Utilisent le plan comptable SYSCOHADA",
+                "quarterly": "Soumettent des états financiers trimestriels au format OHADA",
+                "comply": "Se conforment aux principes comptables OHADA",
+                "audit": "Obtiennent des audits conformes à l'OHADA"
+              }
+            },
+            "cta": {
+              "title": "Simplifiez la Double Conformité avec TIKARI",
+              "description": "Arrêtez de jongler avec les feuilles de calcul et les mappages manuels. TIKARI automatise la réconciliation AAOIFI-OHADA, génère les deux formats d'états et vous maintient conforme aux exigences de la banque centrale régionale et de la Charia.",
+              "button": "Réserver une Démo"
+            }
+          },
+          "relatedArticles": {
+            "title": "Articles Connexes",
+            "articles": {
+              "whatIsIslamic": {
+                "title": "Qu'est-ce que la Finance Islamique ?",
+                "description": "Introduction aux principes bancaires conformes à la Charia",
+                "duration": "15 min de lecture"
+              },
+              "murabaha": {
+                "title": "Comprendre le Financement Murabaha",
+                "description": "Analyse détaillée du financement par vente à prix majoré",
+                "duration": "12 min de lecture"
+              },
+              "psr": {
+                "title": "Divulgation du Ratio de Partage des Bénéfices",
+                "description": "Comment divulguer correctement le RPB aux clients",
+                "duration": "8 min de lecture"
+              }
+            }
+          }
         }
   },
   "support": {

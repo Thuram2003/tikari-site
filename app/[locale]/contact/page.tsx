@@ -40,26 +40,45 @@ export default function ContactPage() {
     e.preventDefault();
     setFormState('submitting');
 
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    
-    // In production, send to your API endpoint
-    console.log('Form submitted:', formData);
-    
-    setFormState('success');
-    
-    // Reset form after success
-    setTimeout(() => {
-      setFormData({
-        name: '',
-        organization: '',
-        email: '',
-        phone: '',
-        subject: '',
-        message: ''
+    try {
+      const response = await fetch("/api/send", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          type: "contact",
+          data: formData,
+        }),
       });
-      setFormState('idle');
-    }, 3000);
+
+      if (!response.ok) {
+        throw new Error("Failed to send email");
+      }
+
+      setFormState('success');
+      
+      // Reset form after success
+      setTimeout(() => {
+        setFormData({
+          name: '',
+          organization: '',
+          email: '',
+          phone: '',
+          subject: '',
+          message: ''
+        });
+        setFormState('idle');
+      }, 3000);
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      setFormState('error');
+      
+      // Reset error state after 5 seconds
+      setTimeout(() => {
+        setFormState('idle');
+      }, 5000);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {

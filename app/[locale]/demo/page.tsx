@@ -33,10 +33,23 @@ export default function DemoPage() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate API call
-    setTimeout(() => {
+    try {
+      const response = await fetch("/api/send", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          type: "demo",
+          data: formData,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to send email");
+      }
+
       setSubmitted(true);
-      setIsSubmitting(false);
       setFormData({
         firstName: "",
         lastName: "",
@@ -47,7 +60,12 @@ export default function DemoPage() {
         estimatedCapital: "",
         message: "",
       });
-    }, 1200);
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      alert("Failed to submit form. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (

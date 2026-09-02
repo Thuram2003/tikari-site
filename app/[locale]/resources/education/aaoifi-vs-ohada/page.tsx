@@ -10,65 +10,53 @@ import {
 import Link from "next/link";
 import { Button } from "@/components/ui";
 import ScrollSpyContent from "../components/ScrollSpyContent";
+import { useTranslations } from "next-intl";
+import { getTranslations } from 'next-intl/server';
 
-export const metadata: Metadata = {
-  title: "AAOIFI vs OHADA Accounting Standards Guide | TIKARI",
-  description: "Comprehensive guide to reconciling AAOIFI Islamic accounting standards with regional OHADA requirements. Learn dual compliance strategies for Islamic finance in OHADA member states.",
-  keywords: [
-    "AAOIFI standards",
-    "OHADA accounting",
-    "Islamic accounting",
-    "regulatory compliance",
-    "dual compliance",
-    "Islamic financial reporting",
-    "AAOIFI vs OHADA",
-    "OHADA Islamic finance",
-    "Shariah accounting",
-    "chart of accounts"
-  ],
-  openGraph: {
-    title: "AAOIFI vs OHADA: Accounting Standards Reconciliation Guide",
-    description: "Learn how to reconcile AAOIFI Islamic accounting standards with OHADA requirements for dual compliance.",
-    type: "article",
-    publishedTime: "2024-02-01T00:00:00.000Z",
-    authors: ["TIKARI Shariah Team"],
-  },
-  alternates: {
-    canonical: "/resources/education/aaoifi-vs-ohada"
-  }
-};
+type Params = Promise<{ locale: string }>;
+
+export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'education.aaoifiVsOhada' });
+  
+  return {
+    title: t('metadata.title'),
+    description: t('metadata.description'),
+  };
+}
 
 export default function AAOIFIvsOHADAPage() {
+  const t = useTranslations('education.aaoifiVsOhada');
   const tableOfContents = [
-    { id: "introduction", title: "Introduction" },
-    { id: "aaoifi-overview", title: "What is AAOIFI?" },
-    { id: "ohada-overview", title: "What is OHADA?" },
-    { id: "key-differences", title: "Key Differences" },
-    { id: "chart-of-accounts", title: "Chart of Accounts Mapping" },
-    { id: "financial-statements", title: "Financial Statement Requirements" },
-    { id: "dual-compliance", title: "Dual Compliance Strategy" },
-    { id: "practical-implementation", title: "Practical Implementation" },
-    { id: "software-solutions", title: "Technology Solutions" },
+    { id: "introduction", title: t('tableOfContents.introduction') },
+    { id: "aaoifi-overview", title: t('tableOfContents.aaoifiOverview') },
+    { id: "ohada-overview", title: t('tableOfContents.ohadaOverview') },
+    { id: "key-differences", title: t('tableOfContents.keyDifferences') },
+    { id: "chart-of-accounts", title: t('tableOfContents.chartOfAccounts') },
+    { id: "financial-statements", title: t('tableOfContents.financialStatements') },
+    { id: "dual-compliance", title: t('tableOfContents.dualCompliance') },
+    { id: "practical-implementation", title: t('tableOfContents.practicalImplementation') },
+    { id: "software-solutions", title: t('tableOfContents.softwareSolutions') },
   ];
 
   const relatedArticles = [
     {
-      title: "What is Islamic Finance?",
-      description: "Introduction to Shariah-compliant banking principles",
+      title: t('relatedArticles.articles.whatIsIslamic.title'),
+      description: t('relatedArticles.articles.whatIsIslamic.description'),
       href: "/resources/education/what-is-islamic-finance",
-      duration: "15 min read"
+      duration: t('relatedArticles.articles.whatIsIslamic.duration')
     },
     {
-      title: "Understanding Murabaha Financing",
-      description: "Step-by-step breakdown of cost-plus sale financing",
+      title: t('relatedArticles.articles.murabaha.title'),
+      description: t('relatedArticles.articles.murabaha.description'),
       href: "/resources/education/understanding-murabaha",
-      duration: "12 min read"
+      duration: t('relatedArticles.articles.murabaha.duration')
     },
     {
-      title: "Profit-Sharing Ratio Disclosure",
-      description: "How to properly disclose PSR to customers",
+      title: t('relatedArticles.articles.psr.title'),
+      description: t('relatedArticles.articles.psr.description'),
       href: "/resources/education/profit-sharing-ratio",
-      duration: "8 min read"
+      duration: t('relatedArticles.articles.psr.duration')
     }
   ];
 
@@ -82,22 +70,22 @@ export default function AAOIFIvsOHADAPage() {
             className="inline-flex items-center gap-2 text-tikari-gold hover:text-tikari-gold/80 text-sm font-semibold mb-8 transition-colors"
           >
             <ArrowRight className="h-4 w-4 rotate-180" weight="bold" />
-            Back
+            {t('hero.backLink')}
           </Link>
           
           <div className="flex flex-wrap items-center gap-3 mb-8">
             <span className="bg-tikari-gold/20 text-tikari-gold px-3 py-1 rounded-full text-xs font-semibold border border-tikari-gold/30">
-              Advanced
+              {t('hero.badge.level')}
             </span>
-            <span className="text-white/70 text-sm">15 min read</span>
-            <span className="text-white/70 text-sm">Updated Aug 2026</span>
+            <span className="text-white/70 text-sm">{t('hero.badge.duration')}</span>
+            <span className="text-white/70 text-sm">{t('hero.badge.updated')}</span>
           </div>
 
           <h1 className="text-4xl lg:text-5xl font-bold leading-tight tracking-tight mb-6">
-            AAOIFI vs OHADA Standards
+            {t('hero.title')}
           </h1>
           <p className="text-lg lg:text-xl text-white/85 leading-relaxed max-w-3xl">
-            Reconciling AAOIFI Islamic accounting standards with regional OHADA requirements: a comprehensive dual compliance guide for financial institutions.
+            {t('hero.subtitle')}
           </p>
         </div>
       </section>
@@ -134,100 +122,100 @@ export default function AAOIFIvsOHADAPage() {
                 {/* Introduction */}
                 <div id="introduction">
                   <p className="text-xl lg:text-2xl text-tikari-green-dark font-semibold leading-relaxed mb-8 !mt-0">
-                    Islamic financial institutions operating in OHADA member states face a unique challenge: they must comply with both AAOIFI Islamic accounting standards and OHADA regional accounting regulations. This dual compliance framework requires careful reconciliation to satisfy Shariah boards, regulators, and stakeholders.
+                    {t('content.introduction.leadParagraph')}
                   </p>
 
                   <p>
-                    This article provides a comprehensive guide to understanding the differences between these two frameworks and implementing practical strategies to meet both sets of requirements simultaneously.
+                    {t('content.introduction.paragraph2')}
                   </p>
 
                   <div className="not-prose my-8 p-6 bg-tikari-gold/10 border-l-4 border-tikari-gold rounded-r-2xl">
-                    <h4 className="text-lg font-bold text-tikari-green-dark mb-3">Why This Matters</h4>
+                    <h4 className="text-lg font-bold text-tikari-green-dark mb-3">{t('content.introduction.whyMatters.title')}</h4>
                     <ul className="space-y-2 text-tikari-sage">
                       <li className="flex gap-2">
                         <CheckCircle className="h-5 w-5 text-tikari-green-dark flex-shrink-0 mt-0.5" weight="bold" />
-                        <span><strong>Regulatory compliance:</strong> Regional central banks require OHADA-compliant reporting</span>
+                        <span><strong>Regulatory compliance:</strong> {t('content.introduction.whyMatters.regulatory')}</span>
                       </li>
                       <li className="flex gap-2">
                         <CheckCircle className="h-5 w-5 text-tikari-green-dark flex-shrink-0 mt-0.5" weight="bold" />
-                        <span><strong>Shariah compliance:</strong> Islamic operations demand AAOIFI standards</span>
+                        <span><strong>Shariah compliance:</strong> {t('content.introduction.whyMatters.shariah')}</span>
                       </li>
                       <li className="flex gap-2">
                         <CheckCircle className="h-5 w-5 text-tikari-green-dark flex-shrink-0 mt-0.5" weight="bold" />
-                        <span><strong>Stakeholder confidence:</strong> Transparent reporting builds trust with investors and customers</span>
+                        <span><strong>Stakeholder confidence:</strong> {t('content.introduction.whyMatters.stakeholder')}</span>
                       </li>
                       <li className="flex gap-2">
                         <CheckCircle className="h-5 w-5 text-tikari-green-dark flex-shrink-0 mt-0.5" weight="bold" />
-                        <span><strong>Operational efficiency:</strong> Proper mapping prevents duplicate work and errors</span>
+                        <span><strong>Operational efficiency:</strong> {t('content.introduction.whyMatters.efficiency')}</span>
                       </li>
                     </ul>
                   </div>
                 </div>
 
                 {/* AAOIFI Overview */}
-                <h2 id="aaoifi-overview" className="font-bold text-xl pt-4">What is AAOIFI?</h2>
+                <h2 id="aaoifi-overview" className="font-bold text-xl pt-4">{t('content.aaoifiOverview.title')}</h2>
                 <p>
-                  The <strong>Accounting and Auditing Organization for Islamic Financial Institutions (AAOIFI)</strong> is an international Islamic finance standard-setting body established in 1990 in Bahrain.
+                  {t('content.aaoifiOverview.intro')}
                 </p>
 
-                <h3 className="pt-2 font-bold text-lg">Scope of AAOIFI Standards</h3>
+                <h3 className="pt-2 font-bold text-lg">{t('content.aaoifiOverview.scope.title')}</h3>
                 <p>
-                  AAOIFI issues standards across four domains:
+                  {t('content.aaoifiOverview.scope.intro')}
                 </p>
                 <ul>
-                  <li><strong>Financial Accounting Standards (FAS):</strong> 30+ standards covering Islamic transaction recognition, measurement, and disclosure</li>
-                  <li><strong>Shariah Standards (SS):</strong> Guidelines on Islamic product structures and contracts</li>
-                  <li><strong>Governance Standards (GS):</strong> Corporate governance and Shariah board requirements</li>
-                  <li><strong>Audit Standards (AS):</strong> Auditing procedures specific to Islamic institutions</li>
+                  <li><strong>Financial Accounting Standards (FAS):</strong> {t('content.aaoifiOverview.scope.fas')}</li>
+                  <li><strong>Shariah Standards (SS):</strong> {t('content.aaoifiOverview.scope.ss')}</li>
+                  <li><strong>Governance Standards (GS):</strong> {t('content.aaoifiOverview.scope.gs')}</li>
+                  <li><strong>Audit Standards (AS):</strong> {t('content.aaoifiOverview.scope.as')}</li>
                 </ul>
 
-                <h3 className="font-bold text-lg pt-2">Key AAOIFI Principles</h3>
+                <h3 className="font-bold text-lg pt-2">{t('content.aaoifiOverview.principles.title')}</h3>
                 <ul>
-                  <li><strong>Substance over form:</strong> Economic reality takes precedence over legal form</li>
-                  <li><strong>Shariah compliance:</strong> All transactions must align with Islamic law</li>
-                  <li><strong>Transparency:</strong> Full disclosure of profit-sharing ratios, investment risks, and Shariah approval</li>
-                  <li><strong>Stakeholder protection:</strong> Special attention to Investment Account Holders (IAH) rights</li>
+                  <li><strong>Substance over form:</strong> {t('content.aaoifiOverview.principles.substance')}</li>
+                  <li><strong>Shariah compliance:</strong> {t('content.aaoifiOverview.principles.shariah')}</li>
+                  <li><strong>Transparency:</strong> {t('content.aaoifiOverview.principles.transparency')}</li>
+                  <li><strong>Stakeholder protection:</strong> {t('content.aaoifiOverview.principles.stakeholder')}</li>
                 </ul>
 
-                <h3 className="font-bold text-lg pt-2">Adoption Status</h3>
+                <h3 className="font-bold text-lg pt-2">{t('content.aaoifiOverview.adoption.title')}</h3>
                 <p>
-                  AAOIFI standards are <strong>mandatory</strong> in Bahrain, Jordan, Lebanon, Qatar, Sudan, and Syria. They are <strong>recommended or partially adopted</strong> in over 45 countries, including many African nations developing Islamic finance sectors.
+                  {t('content.aaoifiOverview.adoption.text')}
                 </p>
 
                 {/* OHADA Overview */}
-                <h2 id="ohada-overview" className="font-bold text-xl pt-4">What is OHADA?</h2>
+                <h2 id="ohada-overview" className="font-bold text-xl pt-4">{t('content.ohadaOverview.title')}</h2>
                 <p>
-                  The <strong>Organisation pour l'Harmonisation en Afrique du Droit des Affaires (OHADA)</strong> is a system harmonizing business law across 17 West and Central African countries, including both CEMAC and WAEMU member states.
+                  {t('content.ohadaOverview.intro')}
                 </p>
 
-                <h3 className="font-bold text-lg pt-2">OHADA Accounting Framework</h3>
+                <h3 className="font-bold text-lg pt-2">{t('content.ohadaOverview.framework.title')}</h3>
                 <p>
-                  OHADA's <strong>Uniform Act on Accounting and Financial Reporting</strong> standardizes:
+                  {t('content.ohadaOverview.framework.intro')}
                 </p>
                 <ul>
-                  <li><strong>Chart of accounts (SYSCOHADA):</strong> Standardized account numbering system</li>
-                  <li><strong>Financial statement formats:</strong> Balance sheet, income statement, cash flow statement, and notes</li>
-                  <li><strong>Accounting principles:</strong> Accrual basis, going concern, consistency, prudence</li>
-                  <li><strong>Disclosure requirements:</strong> Detailed notes to financial statements</li>
+                  <li><strong>Chart of accounts (SYSCOHADA):</strong> {t('content.ohadaOverview.framework.chart')}</li>
+                  <li><strong>Financial statement formats:</strong> {t('content.ohadaOverview.framework.formats')}</li>
+                  <li><strong>Accounting principles:</strong> {t('content.ohadaOverview.framework.principles')}</li>
+                  <li><strong>Disclosure requirements:</strong> {t('content.ohadaOverview.framework.disclosure')}</li>
                 </ul>
 
-                <h3 className="font-bold text-lg pt-2">OHADA Key Features</h3>
+                <h3 className="font-bold text-lg pt-2">{t('content.ohadaOverview.features.title')}</h3>
                 <ul>
-                  <li><strong>Francophone focus:</strong> All documentation is in French</li>
-                  <li><strong>Class-based chart of accounts:</strong> 8 account classes (1-8)</li>
-                  <li><strong>SME-friendly:</strong> Simplified reporting for small enterprises</li>
-                  <li><strong>Legal enforceability:</strong> OHADA rulings supersede national laws</li>
+                  <li><strong>Francophone focus:</strong> {t('content.ohadaOverview.features.francophone')}</li>
+                  <li><strong>Class-based chart of accounts:</strong> {t('content.ohadaOverview.features.classBased')}</li>
+                  <li><strong>SME-friendly:</strong> {t('content.ohadaOverview.features.smeFriendly')}</li>
+                  <li><strong>Legal enforceability:</strong> {t('content.ohadaOverview.features.legal')}</li>
                 </ul>
 
-                <h3 className="font-bold text-lg pt-2">OHADA & Central Bank Application</h3>
+                <h3 className="font-bold text-lg pt-2">{t('content.ohadaOverview.application.title')}</h3>
                 <p>
-                  In member countries across West and Central Africa, regional banking regulators (such as <strong>COBAC</strong> for CEMAC or <strong>BCEAO</strong> for WAEMU) require all financial institutions to:
+                  {t('content.ohadaOverview.application.intro')}
                 </p>
                 <ul>
-                  <li>Use SYSCOHADA chart of accounts</li>
-                  <li>Submit quarterly financial statements in OHADA format</li>
-                  <li>Comply with OHADA accounting principles</li>
-                  <li>Obtain OHADA-compliant audits</li>
+                  <li>{t('content.ohadaOverview.application.syscohada')}</li>
+                  <li>{t('content.ohadaOverview.application.quarterly')}</li>
+                  <li>{t('content.ohadaOverview.application.comply')}</li>
+                  <li>{t('content.ohadaOverview.application.audit')}</li>
                 </ul>
 
                 <h2 id="key-differences" className="font-bold text-xl pt-4">Key Differences Between AAOIFI and OHADA</h2>
@@ -626,16 +614,16 @@ export default function AAOIFIvsOHADAPage() {
                   <div className="flex items-start gap-4">
                     <FileText className="h-8 w-8 text-tikari-green-dark flex-shrink-0 mt-1" weight="bold" />
                     <div>
-                      <h4 className="text-xl font-bold text-tikari-green-dark mb-3">Simplify Dual Compliance with TIKARI</h4>
+                      <h4 className="text-xl font-bold text-tikari-green-dark mb-3">{t('content.cta.title')}</h4>
                       <p className="text-tikari-sage text-base leading-relaxed mb-4">
-                        Stop juggling spreadsheets and manual mappings. TIKARI automates AAOIFI-to-OHADA reconciliation, generates both statement formats, and keeps you compliant with regional central bank and Shariah requirements.
+                        {t('content.cta.description')}
                       </p>
                       <Button
                         variant="primary"
                         size="lg"
                         href="/demo"
                       >
-                        Book a Demo
+                        {t('content.cta.button')}
                         <ArrowRight className="ml-2 h-4 w-4" weight="bold" />
                       </Button>
                     </div>
@@ -651,7 +639,7 @@ export default function AAOIFIvsOHADAPage() {
       {/* Related Articles */}
       <section className="py-16 lg:py-20 px-6 bg-tikari-cream/30">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-tikari-green-dark mb-8">Related Articles</h2>
+          <h2 className="text-3xl font-bold text-tikari-green-dark mb-8">{t('relatedArticles.title')}</h2>
           <div className="grid md:grid-cols-3 gap-6">
             {relatedArticles.map((article, idx) => (
               <Link
