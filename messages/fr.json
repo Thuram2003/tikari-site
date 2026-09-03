@@ -1,17 +1,17 @@
 {
   "layout": {
-    "title": "TIKARI Finance - Infrastructure Financière Sans Intérêt et Conforme à la Foi",
-    "description": "Découvrez une banque qui respecte votre foi. Registres sans intérêt certifiés AAOIFI, outils d'investissement Murabaha et épargne Wadiah."
+    "title": "TIKARI Finance - Cœur Bancaire Islamique et Infrastructure Financière Participative",
+    "description": "La plateforme bancaire centrale conforme à la Charia de référence en Afrique. Grand livre certifié AAOIFI, financements Mourabaha, pools Moudarabah, dépôts Wadiah et reporting réglementaire pour banques centrales."
   },
   "home": {
     "hero": {
-      "title": "Banque sans intérêt. Conformité sans doute.",
-      "subtitle": "La seule plateforme de base conçue pour la microfinance sans intérêt. Des décaissements Murabaha à la réconciliation GL prête pour les régulateurs, vos auditeurs et votre conseil Shariah obtiennent la même réponse.",
-      "bookDemo": "Réserver une démo",
+      "title": "Cœur Bancaire Moderne Conçu pour la Finance Islamique",
+      "subtitle": "La plateforme financière complète et conforme à la Charia pour banques participatives, institutions de microfinance et guichets islamiques en Afrique. Automatisez vos opérations Mourabaha, Moudarabah, Moucharakah et Wadiah avec calculs du partage des bénéfices, double grand livre AAOIFI-OHADA en temps réel et déclarations prudentielles pour banques centrales.",
+      "bookDemo": "Réserver une démo en direct",
       "badges": {
-        "centralBank": "Licencié Banque Centrale",
-        "regulator": "Conforme Régulateur Bancaire",
-        "aaoifi": "Normes AAOIFI & OHADA"
+        "shariah": "Gouvernance 100% Conforme Charia",
+        "aaoifi": "Double Grand Livre AAOIFI & OHADA",
+        "centralBank": "Prêt pour Banques Centrales"
       }
     },
     "trustBar": {
@@ -47,7 +47,7 @@
     "problem": {
       "badge": "Pourquoi les systèmes existants échouent",
       "title": "Les systèmes conventionnels n'ont pas été conçus pour cela",
-      "subtitle": "Symphonie, Delta, Temenos T24. Ces plateformes ont été conçues pour la banque basée sur l'intérêt et équipées de modules de produits islamiques après coup.",
+      "subtitle": "Les plateformes bancaires centrales traditionnelles ont été conçues exclusivement pour la finance basée sur l'intérêt, avec des modules islamiques ajoutés après coup.",
       "issues": {
         "income": {
           "title": "Reconnaissance des revenus mal étiquetée",
@@ -222,7 +222,7 @@
         },
         "migration": {
           "title": "Chemin de migration depuis les systèmes hérités",
-          "desc": "Nous avons aidé des institutions à migrer depuis Symphonie, Delta et des systèmes hérités sans perte de données et sans temps d'arrêt pendant les heures ouvrables. Nous gérons le mappage des données. Votre équipe gère la communication client."
+          "desc": "Nous avons aidé des institutions financières à migrer en toute sécurité depuis des logiciels bancaires hérités et des feuilles de calcul disparates sans perte de données ni interruption de service. Nous gérons le mappage des données pendant que votre équipe se concentre sur les relations clients."
         }
       },
       "metrics": {
@@ -294,7 +294,7 @@
         "migration": {
           "num": "02",
           "title": "Mappage et migration des données",
-          "desc": "Notre équipe examine votre système de base actuel (Symphonie, Delta ou hérité), mappe votre plan comptable à la structure AAOIFI et produit un calendrier de migration détaillé aligné sur les exigences régulateur bancaire."
+          "desc": "Notre équipe examine en détail l'architecture de votre système bancaire existant, mappe votre plan comptable à la double structure AAOIFI/OHADA et établit un calendrier de migration précis aligné sur les exigences réglementaires."
         },
         "parallel": {
           "num": "03",
@@ -4622,8 +4622,8 @@
         "title": "Migration et Intégration",
         "articles": {
           "dataMapping": "Mappage des données depuis les systèmes existants",
-          "symphonie": "Migration depuis Symphonie",
-          "delta": "Migration depuis Delta",
+          "legacyCore": "Migration depuis des systèmes bancaires centraux traditionnels",
+          "customDatabases": "Migration depuis des bases de données et tableurs personnalisés",
           "parallelRun": "Meilleures pratiques pour l'exécution parallèle",
           "cutover": "Liste de contrôle du basculement et mise en service"
         }

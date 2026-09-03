@@ -1,17 +1,17 @@
 {
   "layout": {
-    "title": "TIKARI Finance - Non-Interest & Faith-Based Financial Infrastructure",
-    "description": "Experience banking that honors your faith. Certified AAOIFI non-interest ledgers, Murabaha investment tools, and Wadiah savings."
+    "title": "TIKARI Finance - Islamic Core Banking & Non-Interest Financial Infrastructure",
+    "description": "Africa's leading Shariah-compliant core banking platform. Certified AAOIFI general ledger, Murabaha financing, Mudarabah profit pools, Wadiah deposits, and central bank regulatory reporting."
   },
   "home": {
     "hero": {
-      "title": "Banking without interest. Compliance without doubt.",
-      "subtitle": "Regulator-compliant core platform for Islamic banking across Africa. From Murabaha disbursements to central-bank-ready GL reconciliation, your auditors and your Shariah board get the same answer.",
-      "bookDemo": "Book a demo",
+      "title": "Modern Core Banking Built for Islamic Finance",
+      "subtitle": "The complete financial operating platform for Islamic banks, microfinance institutions, and non-interest windows across Africa. Powering Murabaha, Mudarabah, Musharakah, and Wadiah operations with automated profit-sharing ratios, real-time AAOIFI-OHADA general ledgers, and central bank regulatory reporting.",
+      "bookDemo": "Book a live demo",
       "badges": {
-        "centralBank": "Central Bank Compliant",
-        "regulator": "Banking Regulator Certified",
-        "aaoifi": "AAOIFI & OHADA Standards"
+        "shariah": "100% Shariah Governance",
+        "aaoifi": "AAOIFI & OHADA Dual Ledger",
+        "centralBank": "Central Bank Ready"
       }
     },
     "trustBar": {
@@ -47,7 +47,7 @@
     "problem": {
       "badge": "Why existing systems fail",
       "title": "Conventional cores weren't built for this",
-      "subtitle": "Symphonie, Delta, Temenos T24. These platforms were engineered for interest-based banking and retrofitted with Islamic product modules as an afterthought.",
+      "subtitle": "Traditional core banking platforms were engineered strictly for interest-based finance, with Islamic product modules retrofitted as an afterthought.",
       "issues": {
         "income": {
           "title": "Income recognition mislabeled",
@@ -222,7 +222,7 @@
         },
         "migration": {
           "title": "Migration path from legacy cores",
-          "desc": "We have helped institutions move from Symphonie, Delta, and legacy systems with zero data loss and no downtime during business hours. We handle the data mapping. Your team handles customer communication."
+          "desc": "We have helped financial institutions seamlessly transition from legacy core banking software and disparate spreadsheets with zero data loss and no downtime during business hours. We handle the data mapping while your team focuses on customer relationships."
         }
       },
       "metrics": {
@@ -294,7 +294,7 @@
         "migration": {
           "num": "02",
           "title": "Data mapping and migration",
-          "desc": "Our team reviews your current core system (Symphonie, Delta, or legacy), maps your chart of accounts to the AAOIFI structure, and produces a detailed migration timeline aligned with your regulatory requirements."
+          "desc": "Our team conducts a thorough review of your existing core banking architecture and database schemas, maps your chart of accounts to the dual AAOIFI/OHADA structure, and delivers a clear migration roadmap aligned with central bank regulations."
         },
         "parallel": {
           "num": "03",
@@ -4538,6 +4538,175 @@
                 }
               }
             }
+  },
+  "support": {
+    "hero": {
+      "badge": "Help Center",
+      "title": "How can we help you?",
+      "subtitle": "Search our knowledge base, browse help articles, or get in touch with our team.",
+      "searchPlaceholder": "Search for help...",
+      "search": "Search"
+    },
+    "quickLinks": {
+      "title": "Quick Links",
+      "gettingStarted": {
+        "title": "Getting Started",
+        "desc": "Installation, configuration, and first steps"
+      },
+      "userGuides": {
+        "title": "User Guides",
+        "desc": "Step-by-step tutorials for all core features"
+      },
+      "apiDocs": {
+        "title": "API Documentation",
+        "desc": "Technical integration guides and endpoints"
+      },
+      "faq": {
+        "title": "FAQ",
+        "desc": "Frequently asked questions"
+      }
+    },
+    "categories": {
+      "title": "Browse by Category",
+      "accountSetup": {
+        "title": "Account & Setup",
+        "articles": {
+          "installation": "TIKARI Platform Installation",
+          "firstLogin": "First login & organization setup",
+          "userManagement": "Adding users and assigning roles",
+          "branchSetup": "Multi-branch configuration",
+          "permissions": "Understanding permissions and roles"
+        }
+      },
+      "banking": {
+        "title": "Banking Operations",
+        "articles": {
+          "customerOnboarding": "Customer onboarding & KYC",
+          "accounts": "Opening Wadiah & Mudarabah accounts",
+          "njangi": "Community savings groups (Njangi)",
+          "interbank": "Interbank transfers and settlement",
+          "teller": "Teller operations and cash management"
+        }
+      },
+      "financing": {
+        "title": "Islamic Financing",
+        "articles": {
+          "murabaha": "Creating Murabaha financing contracts",
+          "mudarabah": "Mudarabah profit pool management",
+          "musharakah": "Musharakah partnership financing",
+          "ijara": "Ijara leasing operations",
+          "earlySettlement": "Early settlement and Ibra"
+        }
+      },
+      "compliance": {
+        "title": "Compliance & Reporting",
+        "articles": {
+          "regulatoryReturns": "Generating regulatory returns",
+          "aaoifi": "AAOIFI financial statements",
+          "shariahBoard": "Shariah Board approvals & Fatwa management",
+          "aml": "AML/CFT transaction monitoring",
+          "auditTrail": "Audit trail and compliance reports"
+        }
+      },
+      "technical": {
+        "title": "Technical Support",
+        "articles": {
+          "backup": "Backup and disaster recovery",
+          "eod": "End-of-day batch processing",
+          "troubleshooting": "Common troubleshooting steps",
+          "performance": "Performance optimization",
+          "updates": "System updates and maintenance"
+        }
+      },
+      "migration": {
+        "title": "Migration & Integration",
+        "articles": {
+          "dataMapping": "Data mapping from existing systems",
+          "legacyCore": "Migration from traditional core banking systems",
+          "customDatabases": "Migration from custom databases and spreadsheets",
+          "parallelRun": "Parallel run best practices",
+          "cutover": "Cutover checklist and go-live"
+        }
+      }
+    },
+    "popularArticles": {
+      "title": "Popular Articles",
+      "howToMurabaha": {
+        "title": "How to create a Murabaha financing contract",
+        "views": "12,450 views"
+      },
+      "eodProcess": {
+        "title": "Understanding the End-of-Day Process",
+        "views": "10,230 views"
+      },
+      "njangiManagement": {
+        "title": "Managing Community Savings Groups (Njangi Cycles)",
+        "views": "8,910 views"
+      },
+      "regulatoryReporting": {
+        "title": "Generating Regulatory Returns",
+        "views": "7,650 views"
+      }
+    },
+    "contactSupport": {
+      "title": "Need additional help?",
+      "subtitle": "Our support team is available to assist you.",
+      "methods": {
+        "email": {
+          "title": "Email Support",
+          "desc": "Get help via email",
+          "value": "support@tikari.cm",
+          "response": "Response within 24 hours"
+        },
+        "phone": {
+          "title": "Phone Support",
+          "desc": "Speak with our team",
+          "value": "+237 677 777 777",
+          "hours": "Mon-Fri, 8am-6pm WAT"
+        },
+        "chat": {
+          "title": "Live Chat",
+          "desc": "Chat with support",
+          "value": "Available during business hours",
+          "status": "Mon-Fri, 8am-6pm WAT"
+        }
+      },
+      "enterprise": {
+        "title": "Enterprise Support",
+        "desc": "Priority support with a dedicated account manager",
+        "learnMore": "Learn more"
+      }
+    },
+    "trainingResources": {
+      "title": "Training & Resources",
+      "subtitle": "Get the most out of TIKARI",
+      "webinars": {
+        "title": "Live Webinars",
+        "desc": "Join our weekly interactive training sessions",
+        "cta": "View Schedule"
+      },
+      "videoTutorials": {
+        "title": "Video Tutorials",
+        "desc": "Step-by-step video walk-throughs",
+        "cta": "Watch Now"
+      },
+      "documentation": {
+        "title": "Documentation",
+        "desc": "Comprehensive technical documentation",
+        "cta": "Read Docs"
+      }
+    },
+    "systemStatus": {
+      "title": "System Status",
+      "allOperational": "All systems operational",
+      "viewStatus": "View detailed status"
+    },
+    "cta": {
+      "title": "Can't find what you're looking for?",
+      "subtitle": "Our support team is ready to help you with any questions.",
+      "contactSupport": "Contact Support",
+      "bookDemo": "Book a Demo"
+    }
   },
   "privacy": {
     "header": {

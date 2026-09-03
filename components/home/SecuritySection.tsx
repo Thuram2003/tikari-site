@@ -73,7 +73,7 @@ export default function SecuritySection() {
             <div className="absolute inset-0 bg-tikari-green/5 rounded-2xl" />
 
             <Image
-              src="/bnw-muslim.jpg"
+              src="/image1.jpg"
               alt={t("imageCaption")}
               fill
               className="object-cover rounded-2xl"

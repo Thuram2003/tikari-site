@@ -78,7 +78,7 @@ export default function ProblemSection() {
             <div className="sticky top-24 space-y-4">
               <div className="relative h-[400px] lg:h-[600px] overflow-hidden border border-tikari-green/10 bg-white rounded-2xl">
                 <Image
-                  src="/compliance.jpg"
+                  src="/image3.jpg"
                   alt="Cameroon Islamic Banking Operations"
                   fill
                   className="object-cover rounded-2xl"

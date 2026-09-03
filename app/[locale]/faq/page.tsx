@@ -12,7 +12,7 @@ export default function FAQPage() {
     },
     {
       q: "What legacy banking systems can TIKARI migrate from?",
-      a: "We provide structured migration pathways with zero data loss from popular legacy core banking systems in French-speaking Africa, including Symphonie, Delta, BankOne, and custom database solutions."
+      a: "We provide structured, audit-ready migration pathways with zero data loss from legacy core banking platforms, on-premise ERPs, and custom spreadsheet solutions across West and Central Africa."
     },
     {
       q: "How does the maker-checker engine enforce Shariah governance?",
